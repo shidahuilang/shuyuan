@@ -11,3 +11,11 @@ https://ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/%F0%9F%8C%9
 ```
 https://ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/reader%E4%B9%A6%E6%BA%90-20220411_183419.json
 ```
+````
+导入地址:
+https://gitee.com/BigFanTu/XsRead/tree/master/Novel
+https://gitee.com/BigFanTu/XsRead/tree/master/comic
+https://gitee.com/BigFanTu/XsRead/tree/master/Movie
+https://gitee.com/BigFanTu/XsRead/tree/master/Music
+  直接复制该链接,点击同步即可!
+````
