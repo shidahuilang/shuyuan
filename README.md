@@ -37,7 +37,7 @@ https://gitee.com/namofree/yuedu3/raw/legado3booksource/legado3_booksource_by_Na
 http://shuyuan.miaogongzi.site/shuyuan/1614645247.json
 
 8个书源
-http://no-mystery.gitee.io/shuyuan/%E7%B2%BE%E6%A0%A1%E4%B9%A6%E6%BA%90%E5%90%88%E9%9B%86.json
+
 
 https://cdn.jsdelivr.net/gh/yeyulingfeng01/yuedu.github.io@1.1/202003.txt
 
