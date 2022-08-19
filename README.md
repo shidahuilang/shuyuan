@@ -18,23 +18,6 @@ https://ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/reader%E4%B
 ```
 - 书香之家书源
 ```
-34个书源
-https://github.com/aikankankanhhh998/shuxiangzhijiayuan/blob/main/All.json
-
-230个订阅源
-https://github.com/aikankankanhhh998/shuxiangyuedudingyueyuan/raw/main/dingyueyuan.json
-
-2666个书源
-http://yuedu.miaogongzi.site/shuyuan/2666shuyuan.json
-
-2916个书源
-http://yuedu.miaogongzi.site/shuyuan/2916shuyuan.json
-
-28个书源
-https://gitee.com/namofree/yuedu3/raw/legado3booksource/legado3_booksource_by_Namo.json
-
-308个书源
-http://shuyuan.miaogongzi.site/shuyuan/1614645247.json
 
 8个书源
 
