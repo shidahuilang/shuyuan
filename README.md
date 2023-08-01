@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
 https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/sourceModelList.xbs
 ```
 
-影视书源
+#### 🚩 影视书源
 ```
 97kp(优质源)包含国内外影视剧 解析快-资源一般
 https://github.com/xiaohucode/xiangse/raw/main/TV/97kp.xbs
@@ -75,15 +75,15 @@ https://github.com/xiaohucode/xiangse/raw/main/TV/18av.xbs
 hanime动漫🔞 H动漫;懂得都懂(萪敩仩蛧)
 https://github.com/xiaohucode/xiangse/raw/main/TV/hanime.xbs
 ```
-最新3.0书源修复
+#### 🚩 最新3.0书源修复
 ```
 https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/3.0.json
 ```
-- 安卓阅读书源集成板
+#### 🚩 安卓阅读书源集成板
 ```
 https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/reader%E4%B9%A6%E6%BA%90-20220411_183419.json
 ```
-- 书香之家书源
+#### 🚩  书香之家书源
 ```
 
 https://cdn.jsdelivr.net/gh/yeyulingfeng01/yuedu.github.io@1.1/202003.txt
