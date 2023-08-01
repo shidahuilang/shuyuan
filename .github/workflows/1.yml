@@ -44,12 +44,7 @@ jobs:
         USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
         
     - name: Send Telegram notification
-      if: startsWith(github.ref, 'refs/heads/')
-      env:
-        BRANCH: ${{ github.ref }}
       run: |
-        branch="${{ env.BRANCH }}"
-        branch="${{ branch/refs\/heads\// }}"
-        curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-        -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-        -d "text=书源更新完成!分支：${{ branch }}"
+       curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+       -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+       -d "text=书源更新完成!分支：${{ github.ref }}"   
