@@ -3,8 +3,17 @@
 
 name: update xbs
 
-on:
-  workflow_dispatch:
+on: 
+  schedule:
+    - cron: "*/2 * * * *"
+  push:
+    branches: [ "shuyuan" ]
+    paths:
+      - 'xsreader/new/sources.json'
+  pull_request:
+    branches: [ "shuyuan" ]
+    paths:
+      - 'xsreader/new/sources.json'
 
 jobs:
   build:
