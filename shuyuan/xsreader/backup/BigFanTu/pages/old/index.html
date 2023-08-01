@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>香色HTML快转分类</title>
+    <link rel="shortcut icon" href="./yd.png">
+    <style type="text/css">
+        body {
+            background-color: rgb(190, 176, 222);
+        }
+        .bdcard{
+                box-shadow: 0 6px 12px 0 #ffc0cb;
+                border-radius: 15px;
+                border: 1px solid #ebeef5;
+                background-color: #fff;
+                overflow: hidden;
+                color: #303133;
+                transition: .3s;
+                margin: 3vw 0;
+            }
+        #fast{
+            text-align: center;
+        }                   
+        textarea {
+            width: 99%;
+            height: 100%;
+            box-sizing: border-box;
+            border: none;
+            resize: none;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 0px #ccc;
+        }
+        .textarea {
+                border-radius: 5px;
+                padding: 5px 15px;
+                /*border: 0 solid #dcdfe6*/
+            }
+            
+            .textarea:focus {
+            outline: none;
+        }
+        .button {
+                display: inline-block;
+                line-height: 1;
+                white-space: nowrap;
+                cursor: pointer;
+                background: #fff;
+                border: 1px solid #dcdfe6;
+                color: #606266;
+                -webkit-appearance: none;
+                text-align: center;
+                box-sizing: border-box;
+                outline: none;
+                /*margin-top: 4px;*/
+                margin-left: 8px;
+                margin-bottom: 8px;
+                transition: .1s;
+                font-weight: 500;
+
+                padding: 12px 20px;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+        .button:hover{
+            color: #409eff;
+                border-color: #c6e2ff;
+                background-color: #ecf5ff;
+        }
+        .button:focus{
+            color: #409eff;
+            border-color: #c6e2ff;
+            background-color: #ecf5ff;
+        }
+        
+        .body-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        background-color: #fff;
+}
+    </style>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="body-bg">
+        <div class="bdcard">
+            <p id="fast">快速分类</p>
+            <div>
+                <label >
+                    <textarea rows="10" class="textarea" id="textarea" placeholder="格式化发现：请输入带html标签的发现内容"></textarea>
+                </label>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;准备工作(转换为分类格式)：<br>
+                <button type="button" class="button" onclick="getInput()" id="bt1"><span>HTML快转简易</span></button>
+                <button type="button" class="button" onclick="getInputNew()" id="bt2"><span>HTML快转简易【加\n】</span></button>
+                <button type="button" class="button" onclick="getInputJson()" id="bt7"><span>快转为旧版</span></button>
+                <button type="button" class="button" onclick="deleHost()" id="bt3"><span>删除Config.host</span></button><br>
+
+                <button type="button" class="button" onclick="copyToClipBoard()" id="bt4"><span>复制结果</span></button>
+            </div>
+            <div style="background:#fff">&nbsp;&nbsp;&nbsp;&nbsp;使用教程：<br>
+                <button type="button" class="button" onclick="window.open('https\://www.bilibili.com/video/BV1na411q77A?p=8')" id="bt8"><span>视频教程</span></button>
+                <button type="button" class="button" onclick="window.open('https\://gitee.com/BigFanTu/XsRead/blob/master/backup/moreKeys.json')" id="bt5"><span>分类Json</span></button>
+                <button type="button" class="button" onclick="jump()" id="bt6"><span>在线正则网站</span></button>
+
+            </div>
+        </div>
+            
+    </div>
+</body>
+<script type="text/javascript">
+    function getInput(){
+        var btn = document.getElementById("bt1");
+        var  text = document.getElementById("textarea").value;
+        const list = text.match(/<a.*?href="([^"]+)".*?>([\s\S]+?)<\/a>/g);
+
+        if(  list == null || list.length === 0) {
+
+            document.getElementById("textarea").value = "格式化失败！！！请检查是否为带html标签";
+        } else {
+
+                document.getElementById("textarea").value = '';
+        }
+        var a;
+        var b;
+        for(const i in list) {
+
+            b = list[i].replace(/<div.*?>|<\/div>/g,"");
+            // console.log(b)
+            // b = b.replace(/[\s|\S]{7,8}[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\.?/g,"");
+            a = b.match(/<a.*?href="([^"]+)".*?>([\s\S]+?)<\/a>/);
+
+            document.getElementById("textarea").value += a[2] + "::" + a[1] + "\n"
+
+            }
+        
+        
+        
+    }
+    function getInputNew(){
+        var btn = document.getElementById("bt2");
+        //text是原本显示的文本
+        var  text = document.getElementById("textarea").value;
+
+        if(text.match(/::/g)==null){
+            var list = text.match(/<a.*?href="([^"]+)".*?>([\s\S]+?)<\/a>/g);
+            if(  list == null || list.length === 0) {
+                document.getElementById("textarea").value = "格式化失败！！！请检查是否为带html标签";
+            } else {
+
+            document.getElementById("textarea").value = '';
+
+            }
+            var a;
+            var b;
+            for(const i in list) {
+                b = list[i].replace(/<div.*?>|<\/div>/g,"");
+                console.log(b)
+                a = b.match(/<a.*?href="([^"]+)".*?>([\s\S]+?)<\/a>/);
+                document.getElementById("textarea").value += a[2] + "::" + a[1] + "\\n"
+                }
+        }else if(text.match(/::/g)!=null && text.match(/\\n/g)==null){
+        var result;
+        var res = ""
+        if(text.match(/::/g)){
+            result =text.match(/.*::.*/g);
+            for(const j in result){
+            res += result[j].match(/(.*)::(.*)/)[1]+"::"+result[j].match(/(.*)::(.*)/)[2]+"\\n"
+            }
+            document.getElementById("textarea").value = "type\\n"+res;
+        }
+        else{
+
+            document.getElementById("textarea").value = text;
+        }
+        
+        
+    }
+}
+    function deleHost(){
+        var btn = document.getElementById("bt3");
+        var  text = document.getElementById("textarea").value;
+        const list =  text.replace(/(http|https):\/\/(www.)?(\w+(\.)?)+/g,"");
+        document.getElementById("textarea").value = list
+        
+    }
+    function copyToClipBoard(){
+        var btn = document.getElementById("bt4");
+        var content = document.getElementById('textarea'); 
+        //console.log(content)
+        if(content.value=="" ||content.value=="格式化失败！！！请检查是否为带html标签"){
+            return '';
+        }else{
+        content.select();
+        document.execCommand('copy');
+        alert("Copied!");
+        }
+
+        
+    }
+    function jump(){
+        var btn = document.getElementById("bt6");
+        window.open("https://c.runoob.com/front-end/854/");
+    }
+
+    //转换为老版JSON
+    function getInputJson(){
+        let btn = document.getElementById("bt7");
+        let result = '';
+        getInput();
+        let  text = document.getElementById("textarea").value;//textarea的文本内容
+        // console.log(text);
+        if(text.match(/::/g)){
+
+            result =text.match(/.*::.*/g).map(item => ({
+            title: item.match(/(.*)::(.*)/)[1],
+            value: item.match(/(.*)::(.*)/)[2],
+        }))
+
+        /* 补充为完整的JSON格式
+        let tmp =`{"pageSize": "10","requestFilters": [{"key": "type","items": `;
+        result = tmp + JSON.stringify(result)+"}]}"
+        document.getElementById("textarea").value = result.replaceAll("},", "},\n");*/
+        document.getElementById("textarea").value = JSON.stringify(result).replaceAll("},", "},\n")
+        }
+        
+
+    }
+                    
+</script>
+
+</html>
