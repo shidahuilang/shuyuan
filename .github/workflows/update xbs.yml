@@ -14,7 +14,8 @@ on:
     branches: [ "shuyuan" ]
     paths:
       - 'xsreader/new/sources.json'
-
+  workflow_dispatch:
+  
 jobs:
   build:
 
