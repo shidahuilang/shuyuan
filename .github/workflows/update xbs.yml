@@ -51,4 +51,4 @@ jobs:
       run: |
        curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
        -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-       -d "text=openwrt插件库源码更新完成，分支：${{ matrix.target }}"    
+       -d "text=书源更新完成，分支：shuyuan
