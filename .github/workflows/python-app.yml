@@ -3,17 +3,16 @@
 
 name: update xbs
 
-on: 
-  #schedule:
-   # - cron: "*/2 * * * *"
-  #push:
-   # branches: [ "shuyuan" ]
-   # paths:
-    #  - 'xsreader/new/sources.json'
+on:
+  push:
+    branches: [ "shuyuan" ]
+    paths:
+      - 'xsreader/new/sources.json'
   pull_request:
     branches: [ "shuyuan" ]
     paths:
       - 'xsreader/new/sources.json'
+
 
 jobs:
   build:
