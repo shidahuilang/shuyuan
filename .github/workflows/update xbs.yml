@@ -1,6 +1,3 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
 name: update xbs
 
 on: 
@@ -18,7 +15,6 @@ on:
   
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -40,15 +36,14 @@ jobs:
       run: |
         git config user.email github-actions
         git config user.name github-actions@github.com
-        git config user.password ${USER_PASSWORD}
         git add .
         git commit -m "auto update|自动更新" -a
         git push
       env:
-        USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
         
     - name: Send Telegram notification
       run: |
        curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
        -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-       -d "text=书源更新完成!分支：${{ matrix.target }}"   
+       -d "text=书源更新完成!分支：${{ github.ref }}"   
