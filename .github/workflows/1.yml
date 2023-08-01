@@ -1,4 +1,4 @@
-name: 1
+name: update xbs
 
 on: 
   schedule:
@@ -47,4 +47,4 @@ jobs:
       run: |
        curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
        -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-       -d "text=书源更新完成!分支：${{ github.ref.split('/')[2] }}"
+       -d "text=书源更新完成!分支：${{ github.ref.split('/')[2] }}"   
