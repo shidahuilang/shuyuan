@@ -5,7 +5,7 @@ name: update xbs
 
 on: 
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 4 * * *"
   push:
     branches: [ "shuyuan" ]
     paths:
