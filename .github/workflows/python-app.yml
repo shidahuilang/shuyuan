@@ -7,11 +7,11 @@ on:
   schedule:
     - cron: "0 0 * * 1"
   push:
-    branches: [ "main" ]
+    branches: [ "shuyuan" ]
     paths:
       - 'xsreader/new/sources.json'
   pull_request:
-    branches: [ "main" ]
+    branches: [ "shuyuan" ]
     paths:
       - 'xsreader/new/sources.json'
 
