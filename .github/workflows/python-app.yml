@@ -4,14 +4,7 @@
 name: update xbs
 
 on:
-  push:
-    branches: [ "shuyuan" ]
-    paths:
-      - 'xsreader/new/sources.json'
-  pull_request:
-    branches: [ "shuyuan" ]
-    paths:
-      - 'xsreader/new/sources.json'
+  workflow_dispatch:
 
 
 jobs:
