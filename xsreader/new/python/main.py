@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @Time ： 2022/12/18 15:41
-@Auth ： zqzess
+@Auth ： shidahuilang
 @File ：main.py
 @FileDesc ：
 @IDE ：PyCharm
@@ -76,7 +76,7 @@ def checkxbsName(name):
 # 检查仓库作者名字，忽略整合搬运fork源作者仓库
 def checkUserName(name):
     isAbandon = False
-    list = ['shidahuilang', 'jumpli', 'ThorJsbox', 'TinhoXu', 'zqzess', 'tickmao', 'Cyril0563', 'lTbgykio', 'Dujltqzv']
+    list = ['shidahuilang', 'jumpli', 'ThorJsbox', 'TinhoXu', 'shidahuilang', 'tickmao', 'Cyril0563', 'lTbgykio', 'Dujltqzv']
     for value in list:
         if re.search(value, name):
             printLog('发现黑名单内的作者: ' + name + '  , 丢弃', 'warn')
@@ -95,7 +95,7 @@ def startWork():
         user = i[0]
         repo = i[1]  # 仓库链接
         srcUrl = i[2]  # 资源链接
-        nowPath = '../repo/' + user + '/'  # 路径拼接，../repo/zqzess
+        nowPath = '../repo/' + user + '/'  # 路径拼接，../repo/shidahuilang
 
         if checkUserName(user):
             # 该作者仓库疑似搬运，跳过
