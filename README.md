@@ -5,7 +5,7 @@
 **自动更新时间** 2023-08-04 18:13:49 CST+0800
 
 
-#### 🚩 整合源链接:
+#### 🚩 更新书源链接:
  ``` bash
 https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
