@@ -16,16 +16,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "12"
+          node-version: "16"
           
+      - name: Install dependencies
+        run: npm install --no-package-lock
+        
       - name: Create books directory
         run: |
           if [ ! -d "3.0" ]; then
             mkdir 3.0
           fi
 
-      - name: Install dependencies
-        run: npm install --no-package-lock
+
 
       - name: Pull 3.0
         run: |
