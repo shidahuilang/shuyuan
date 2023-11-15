@@ -70,3 +70,9 @@ jobs:
         run: |
           git commit -m "Merge books"
           git -c credential.helper="store --file=.git-credentials" push
+          
+      - name: Send Telegram notification
+        run: |
+         curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+         -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+         -d "text=3.0阅读书源更新完成!分支：${{ github.ref }}"   
