@@ -44,13 +44,13 @@ jobs:
         run: |
           cd 3.0
 
-          # Delete the existing merged_books.json file
+
           rm -f *.json
 
           # Initialize merged_books.json as an empty array
           echo '[]' > merged_books.json
 
-          # Merge the pulled book JSON files into merged_books.json
+
           for file in *.json; do
             jq --slurpfile input "$file" '. + $input[0]' merged_books.json > merged.tmp && mv merged.tmp merged_books.json
           done
