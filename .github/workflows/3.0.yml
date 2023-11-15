@@ -47,7 +47,7 @@ jobs:
           cd 3.0
 
 
-          rm -f *.json
+          rm -f merged_books.json
 
           # Initialize merged_books.json as an empty array
           echo '[]' > merged_books.json
