@@ -31,9 +31,9 @@ jobs:
           cd 4.0
 
           # 下载 JSON 文件
-          #curl -O https://testingcf.jsdelivr.net/gh/mumuceo/file01/202311/3289_2d1ceb82e5cf2efcf81ca4d086d9b76e.json
-          #curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202311/3351_9c22facf74af60698a8b25b0edcadeec.json
-          #curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/3264_0740c7c5849bc070697ced91537ff4ee.json
+          curl -O https://testingcf.jsdelivr.net/gh/mumuceo/file01/202311/3289_2d1ceb82e5cf2efcf81ca4d086d9b76e.json
+          curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202311/3351_9c22facf74af60698a8b25b0edcadeec.json
+          curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/3264_0740c7c5849bc070697ced91537ff4ee.json
 
       - name: Merge books
         run: |
