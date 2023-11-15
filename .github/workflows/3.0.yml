@@ -1,6 +1,7 @@
 name: Pull and Merge Book Sources
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 
