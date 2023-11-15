@@ -79,7 +79,7 @@ jobs:
       - name: Delete merged files
         run: |
           cd 3.0
-          rm -f !(merged_books.json)
+          find . -type f ! -name 'merged_books.json' -delete
           
       - name: Send Telegram notification
         run: |
