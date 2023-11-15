@@ -19,9 +19,9 @@ https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyu
 ```
 
 
-#### 🚩 最新3.0书源修复
+#### 🚩 最新3.0书源修复-每隔3天自动更新一次
 ```
-https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/3.0.json
+https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/merged_books.json
 ```
 #### 🚩 安卓阅读书源集成板
 ```
