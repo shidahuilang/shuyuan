@@ -44,3 +44,10 @@ jobs:
           git add merged_books.json
           git commit -m "Merge books"
           git -c credential.helper="store --file=.git-credentials" push
+
+      - name: Clean up untracked files
+        run: |
+         rm .git-credentials
+         rm 180.json
+         rm package-lock.json
+
