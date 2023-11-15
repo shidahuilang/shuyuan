@@ -81,7 +81,7 @@ jobs:
         run: |
           cd 3.0
           find . -type f ! -name 'merged_books.json' -name '*.json' -exec rm -f {} \;
-          shell: bash
+
           
       - name: Send Telegram notification
         run: |
