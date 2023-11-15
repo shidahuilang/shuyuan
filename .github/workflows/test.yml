@@ -1,0 +1,61 @@
+name: test
+
+on: 
+  schedule:
+    - cron: "0 10 */3 * *"
+  push:
+    branches: [ "shuyuan" ]
+
+
+  pull_request:
+    branches: [ "shuyuan" ]
+
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests pytz
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Create books directory
+      run: |
+          if [ ! -d "4.0" ]; then
+            mkdir 4.0
+          fi
+          
+    - name: Pull 4.0
+      run: |
+          cd 4.0
+
+
+          curl -O https://testingcf.jsdelivr.net/gh/mumuceo/file01/202311/3289_2d1ceb82e5cf2efcf81ca4d086d9b76e.json
+          curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202311/3351_9c22facf74af60698a8b25b0edcadeec.json
+          curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/3264_0740c7c5849bc070697ced91537ff4ee.jso
+          
+    - name: Commit changes
+      run: |
+        git config user.email github-actions
+        git config user.name github-actions@github.com
+        git add .
+        git commit -m "auto update|自动更新" -a
+        git push
+      env:
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+        
+    - name: Send Telegram notification
+      run: |
+       curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+       -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+       -d "text=书源更新完成!分支：${{ github.ref }}"   
