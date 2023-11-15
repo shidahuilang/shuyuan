@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "12"
           
       - name: Create books directory
         run: |
@@ -25,7 +25,7 @@ jobs:
           fi
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-package-lock
 
       - name: Pull 3.0
         run: |
