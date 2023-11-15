@@ -63,6 +63,8 @@ jobs:
         run: |
           git add .git-credentials
           git add 3.0/merged_books.json
+          git add books/*.json
+
 
       - name: Commit and push changes
         run: |
