@@ -36,7 +36,7 @@ jobs:
 
       - name: Merge books
         run: |
-          cd 3.0
+          cd 4.0
 
           # 删除已存在的 merged_books.json 文件
           rm -f merged_books.json
