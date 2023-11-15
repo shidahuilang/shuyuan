@@ -13,7 +13,7 @@ https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyu
 
 #### 🚩 最新阅读3.0书源修复-每隔3天自动更新一次（读不舍手通用）
 ```
-https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/merged_books.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/merged_books.json
 ```
 
 
