@@ -69,17 +69,18 @@ jobs:
           git add .git-credentials
           git add 3.0/merged_books.json
           git add 3.0/*.json
-
+          
+      - name: Delete merged files
+        run: |
+          cd 3.0
+          find . -type f ! -name 'merged_books.json' -exec rm -f {} \;
 
       - name: Commit and push changes
         run: |
           git commit --allow-empty -m "Merge books"
           git -c credential.helper="store --file=.git-credentials" push
           
-      - name: Delete merged files
-        run: |
-          cd 3.0
-          find . -type f ! -name 'merged_books.json' -exec rm -f {} \;
+
           
       - name: Send Telegram notification
         run: |
