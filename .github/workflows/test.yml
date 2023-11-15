@@ -14,7 +14,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: "3.10"  # 替换为你想要使用的 Python 版本
+          python-version: "3.10"
 
       - name: Create books directory
         run: |
@@ -23,7 +23,7 @@ jobs:
           fi
 
       - name: Install dependencies
-        run: pip install -r requirements.txt  # 替换为你的依赖项安装命令
+        run: pip install -r requirements.txt
 
       - name: Pull 4.0
         run: |
@@ -39,13 +39,13 @@ jobs:
           cd 4.0
 
           # 删除已存在的 merged_books.json 文件
-          rm -f merged_books.json
+          rm -f *.json
 
           # 初始化 merged_books.json 为空数组
           echo '[]' > merged_books.json
 
           # 将下载的书籍 JSON 文件合并到 merged_books.json
-          python merge_books.py  # 替换为你的合并脚本命令
+          python merge_books.py
 
       - name: Configure Git
         run: |
@@ -59,7 +59,7 @@ jobs:
           git add .git-credentials
           git add 4.0/merged_books.json
           git add 4.0/*.json
-
+ 
       - name: Commit and push changes
         run: |
           git commit -m "Merge books"
