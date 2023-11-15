@@ -25,6 +25,7 @@ jobs:
         run: |
           # Replace the URLs with the actual book source URLs you want to pull
           curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
+          curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
           # Add more curl commands for additional book sources
 
       - name: Merge books
