@@ -26,17 +26,21 @@ jobs:
           # Replace the URLs with the actual book source URLs you want to pull
           curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/1935_9862a49a0063d95f9abc729c15992948.json
           curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202310/2948_6d4e3f2cb45e82ab05970a5173e6bd5b.json
-        
-          # Add more curl commands for additional book sources
           
+          # Add more curl commands for additional book sources
+
       - name: Merge books
         run: |
           # Delete the existing merged_books.json file
           rm -f merged_books.json
 
-          # Merge the pulled book JSON files into a single file
-          cat *.json > merged_books.json
+          # Initialize merged_books.json as an empty array
+          echo '[]' > merged_books.json
 
+          # Merge the pulled book JSON files into merged_books.json
+          for file in *.json; do
+            jq --slurpfile input "$file" '. + $input[0]' merged_books.json > merged.tmp && mv merged.tmp merged_books.json
+          done
 
       - name: Configure Git
         run: |
@@ -48,7 +52,7 @@ jobs:
       - name: Add files to Git
         run: |
           git add .git-credentials
-          git add *.json
+          git add merged_books.json
 
       - name: Commit and push changes
         run: |
