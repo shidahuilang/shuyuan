@@ -76,6 +76,11 @@ jobs:
           git commit --allow-empty -m "Merge books"
           git -c credential.helper="store --file=.git-credentials" push
           
+      - name: Delete merged files
+        run: |
+          cd 3.0
+          rm -f !merged_books.json
+          
       - name: Send Telegram notification
         run: |
          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
