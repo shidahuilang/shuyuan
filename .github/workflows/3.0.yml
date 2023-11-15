@@ -17,7 +17,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "12"
-
+          
+      - name: Create books directory
+        run: mkdir 3.0
 
       - name: Install dependencies
         run: npm install --no-package-lock
