@@ -38,9 +38,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Download book sources
         uses: actions/download-artifact@v2
         with:
@@ -55,9 +52,13 @@ jobs:
         run: git status
 
       - name: Add merged_books.json
-        run: git add .
+        run: git add merged_books.json
 
       - name: Push changes
         env:
           REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-        run: git push origin shuyuan
+        run: |
+          git config user.email "${{ secrets.USER_EMAIL }}"
+          git config user.name "${{ secrets.USER_NAME }}"
+          git commit -m "Merge books"
+          git push origin HEAD:shuyuan
