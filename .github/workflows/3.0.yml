@@ -32,8 +32,11 @@ jobs:
           cd 3.0
 
 
-          curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/1935_9862a49a0063d95f9abc729c15992948.json
-          curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202310/2948_6d4e3f2cb45e82ab05970a5173e6bd5b.json
+          curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202311/3351_9c22facf74af60698a8b25b0edcadeec.json
+          curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202311/3289_2d1ceb82e5cf2efcf81ca4d086d9b76e.json
+          curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/1975_345c5fbfc831fb1ca39d0e9a6c28d70f.json
+          curl -O https://fastly.jsdelivr.net/gh/mumuceo/file01/202311/3237_7679fb78d98ffeeed2509a321b138652.json
+          
           
 
 
