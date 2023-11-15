@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: "12"
 
       - name: Install dependencies
         run: npm install
@@ -28,29 +28,15 @@ jobs:
           curl -O https://cdn.jsdelivr.net/gh/mumuceo/file01/202310/2948_6d4e3f2cb45e82ab05970a5173e6bd5b.json
         
           # Add more curl commands for additional book sources
-
-      - name: Merge and Write JSON
+          
+      - name: Merge books
         run: |
-          const fs = require('fs');
+          # Delete the existing merged_books.json file
+          rm -f merged_books.json
 
-          // 读取每个 JSON 文件的内容
-          const file1 = fs.readFileSync('file1.json', 'utf8');
-          const file2 = fs.readFileSync('file2.json', 'utf8');
-          // ...
+          # Merge the pulled book JSON files into a single file
+          cat *.json > merged_books.json
 
-          // 去除开头的 `[` 和结尾的 `]` 符号
-          const content1 = file1.slice(1, -1);
-          const content2 = file2.slice(1, -1);
-          // ...
-
-          // 将每个文件的内容以逗号分隔拼接在一起
-          const mergedContent = `${content1},${content2},...`;
-
-          // 在最终的合并结果的末尾添加一个逗号
-          const finalContent = `[${mergedContent},]`;
-
-          // 将合并后的内容写入一个新的 JSON 文件
-          fs.writeFileSync('merged.json', finalContent)
 
       - name: Configure Git
         run: |
