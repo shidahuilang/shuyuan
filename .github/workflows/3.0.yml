@@ -19,7 +19,7 @@ jobs:
           node-version: "12"
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-package-lock
 
       - name: Pull books
         run: |
