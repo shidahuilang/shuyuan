@@ -60,4 +60,4 @@ jobs:
       - name: Push changes
         env:
           REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-        run: git push origin main
+        run: git push origin shuyuan
