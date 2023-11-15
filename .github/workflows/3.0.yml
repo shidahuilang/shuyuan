@@ -73,7 +73,7 @@ jobs:
       - name: Delete merged files
         run: |
           cd 3.0
-          find . -type f ! -name 'merged_books.json' -exec rm -f {} \;
+          find . -type f ! -name 'merged_books.json' -delete
 
       - name: Commit and push changes
         run: |
