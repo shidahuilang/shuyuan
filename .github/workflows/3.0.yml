@@ -1,0 +1,46 @@
+name: Pull Books
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Pull books
+        run: |
+          # Replace the URLs with the actual book source URLs you want to pull
+          curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
+          # Add more curl commands for additional book sources
+
+      - name: Merge books
+        run: |
+          # Merge the pulled book JSON files into a single file
+          cat *.json > merged_books.json
+
+      - name: Configure Git
+        run: |
+         git config --local user.email "${{ secrets.USER_EMAIL }}"
+         git config --local user.name "${{ secrets.USER_NAME }}"
+         git config --local credential.helper store --file=.git-credentials
+         echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
+
+      - name: Commit and push changes
+        run: |
+          git add merged_books.json
+          git commit -m "Merge books"
+          git -c credential.helper="store --file=.git-credentials" push
