@@ -57,7 +57,7 @@ jobs:
       - name: Add files to Git
         run: |
           git add .git-credentials
-          git add books/merged_books.json
+          git add 3.0/merged_books.json
 
       - name: Commit and push changes
         run: |
