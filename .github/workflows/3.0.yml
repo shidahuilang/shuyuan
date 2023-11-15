@@ -45,7 +45,7 @@ jobs:
           cd 3.0
 
           # Delete the existing merged_books.json file
-          rm -f merged_books.json
+          rm -f *.json
 
           # Initialize merged_books.json as an empty array
           echo '[]' > merged_books.json
