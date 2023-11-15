@@ -1,46 +1,47 @@
-name: Pull and Merge Book Sources
+name: Pull and Merge Books
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 
 jobs:
-  build:
+  pull_books:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Pull and Merge Book Sources
+      - name: Pull books
         run: |
-          # 创建一个空的合并结果文件
-          echo "[" > merged_sources.json
+          curl -o book1.json http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
+          curl -o book2.json http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
+          # Add more curl commands for additional book sources if needed
 
-          # 遍历书源 URL 列表
-          for url in "http://www.yckceo.com/yuedu/shuyuans/json/id/180.json" "http://www.yckceo.com/yuedu/shuyuans/json/id/185.json" "http://www.yckceo.com/yuedu/shuyuans/json/id/190.json"
-          do
-            # 拉取书源内容并追加到合并结果文件
-            curl -s $url >> merged_sources.json
-            echo "," >> merged_sources.json
-          done
+      - name: Merge books
+        run: |
+          cat book*.json > merged_books.json
 
-          # 移除最后一个逗号
-          sed -i '$ s/,$//' merged_sources.json
+  commit_changes:
+    needs: pull_books
+    runs-on: ubuntu-latest
 
-          # 添加合并结果的结尾
-          echo "]" >> merged_sources.json
-
+    steps:
       - name: Configure Git
         run: |
-         git config --local user.email "${{ secrets.USER_EMAIL }}"
-         git config --local user.name "${{ secrets.USER_NAME }}"
-         git config --local credential.helper store --file=.git-credentials
-         echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
+          git config user.email "${{ secrets.USER_EMAIL }}"
+          git config user.name "${{ secrets.USER_NAME }}"
 
-      - name: Commit and push changes
+      - name: Add changes to Git
         run: |
           git add merged_books.json
+
+      - name: Commit changes
+        run: |
           git commit -m "Merge books"
-          git -c credential.helper="store --file=.git-credentials" push
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.REPO_TOKEN }}
+          branch: main
