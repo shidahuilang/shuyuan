@@ -19,7 +19,10 @@ jobs:
           node-version: "16"
           
       - name: Create books directory
-        run: mkdir 3.0
+        run: |
+          if [ ! -d "3.0" ]; then
+            mkdir 3.0
+          fi
 
       - name: Install dependencies
         run: npm install --no-package-lock
