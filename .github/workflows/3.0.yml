@@ -1,7 +1,6 @@
-name: Pull Books
+name: Pull and Merge Book Sources
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 
@@ -11,26 +10,26 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "12"
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Pull books
+      - name: Pull and Merge Book Sources
         run: |
-          # Replace the URLs with the actual book source URLs you want to pull
-          curl -O "http://www.yckceo.com/yuedu/shuyuans/json/id/180.json" "http://www.yckceo.com/yuedu/shuyuans/json/id/185.json" "http://www.yckceo.com/yuedu/shuyuans/json/id/191.json"
-          # Add more curl commands for additional book sources
+          # 创建一个空的合并结果文件
+          echo "[" > merged_sources.json
 
-      - name: Merge books
-        run: |
-          # Merge the pulled book JSON files into a single file
-          cat *.json > merged_books.json
+          # 遍历书源 URL 列表
+          for url in "http://www.yckceo.com/yuedu/shuyuans/json/id/180.json" "http://www.example.com/book_source2.json" "http://www.example.com/book_source3.json"
+          do
+            # 拉取书源内容并追加到合并结果文件
+            curl -s $url >> merged_sources.json
+            echo "," >> merged_sources.json
+          done
+
+          # 移除最后一个逗号
+          sed -i '$ s/,$//' merged_sources.json
+
+          # 添加合并结果的结尾
+          echo "]" >> merged_sources.json
 
       - name: Configure Git
         run: |
