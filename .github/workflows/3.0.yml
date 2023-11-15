@@ -1,4 +1,4 @@
-name: Pull and Merge Books
+name: Pull Books
 
 on:
   workflow_dispatch:
@@ -6,59 +6,41 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  pull_books:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Set up Git
-        run: |
-          git config user.email "${{ secrets.USER_EMAIL }}"
-          git config user.name "${{ secrets.USER_NAME }}"
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "12"
 
-      - name: Download book sources
+      - name: Install dependencies
+        run: npm install
+
+      - name: Pull books
         run: |
+          # Replace the URLs with the actual book source URLs you want to pull
           curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
-          curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
-          # Add more curl commands for other book sources
-
-      - name: Archive book sources
-        uses: actions/upload-artifact@v2
-        with:
-          name: book-sources
-          path: |
-            180.json
-            185.json
-            # Add more file paths for other book sources
-
-  merge_books:
-    needs: pull_books
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download book sources
-        uses: actions/download-artifact@v2
-        with:
-          name: book-sources
+          # Add more curl commands for additional book sources
 
       - name: Merge books
         run: |
-          cat 180.json 185.json > merged_books.json
-          # Add more cat commands for merging other book sources
+          # Merge the pulled book JSON files into a single file
+          cat *.json > merged_books.json
 
-      - name: Show working tree status
-        run: git status
-
-      - name: Add merged_books.json
-        run: git add merged_books.json
-
-      - name: Push changes
-        env:
-          REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+      - name: Configure Git
         run: |
-          git config user.email "${{ secrets.USER_EMAIL }}"
-          git config user.name "${{ secrets.USER_NAME }}"
+         git config --local user.email "${{ secrets.USER_EMAIL }}"
+         git config --local user.name "${{ secrets.USER_NAME }}"
+         git config --local credential.helper store --file=.git-credentials
+         echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
+
+      - name: Commit and push changes
+        run: |
+          git add merged_books.json
           git commit -m "Merge books"
-          git push origin HEAD:shuyuan
+          git -c credential.helper="store --file=.git-credentials" push
