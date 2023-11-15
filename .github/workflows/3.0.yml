@@ -30,8 +30,8 @@ jobs:
     steps:
       - name: Configure Git
         run: |
-          git config user.email "${{ secrets.USER_EMAIL }}"
-          git config user.name "${{ secrets.USER_NAME }}"
+         git config --local user.email "${{ secrets.USER_EMAIL }}"
+         git config --local user.name "${{ secrets.USER_NAME }}"
 
       - name: Add changes to Git
         run: |
