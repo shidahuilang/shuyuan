@@ -13,10 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
+      #- name: Set up Node.js
+        #uses: actions/setup-node@v2
+        #with:
+          #node-version: "16"
           
       - name: Create books directory
         run: |
