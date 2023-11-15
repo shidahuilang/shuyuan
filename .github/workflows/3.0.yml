@@ -10,39 +10,54 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Pull books
-        run: |
-          curl -o book1.json http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
-          curl -o book2.json http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
-          # Add more curl commands for additional book sources if needed
-
-      - name: Merge books
-        run: |
-          cat book*.json > merged_books.json
-
-  commit_changes:
-    needs: pull_books
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Configure Git
+      - name: Set up Git
         run: |
           git config user.email "${{ secrets.USER_EMAIL }}"
           git config user.name "${{ secrets.USER_NAME }}"
 
-      - name: Add changes to Git
+      - name: Download book sources
         run: |
-          git add merged_books.json
+          curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
+          curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
+          # Add more curl commands for other book sources
 
-      - name: Commit changes
+      - name: Archive book sources
+        uses: actions/upload-artifact@v2
+        with:
+          name: book-sources
+          path: |
+            180.json
+            185.json
+            # Add more file paths for other book sources
+
+  merge_books:
+    needs: pull_books
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Download book sources
+        uses: actions/download-artifact@v2
+        with:
+          name: book-sources
+
+      - name: Merge books
         run: |
-          git commit -m "Merge books"
+          cat 180.json 185.json > merged_books.json
+          # Add more cat commands for merging other book sources
+
+      - name: Show working tree status
+        run: git status
+
+      - name: Add merged_books.json
+        run: git add .
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.REPO_TOKEN }}
-          branch: main
+        env:
+          REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+        run: git push origin main
