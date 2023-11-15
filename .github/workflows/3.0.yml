@@ -74,7 +74,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git commit -m "Merge books"
-          git -c credential.helper="store --file=.git-credentials" push
+          git -c credential.helper="store --file=.git-credentials" push || true
           
       - name: Send Telegram notification
         run: |
