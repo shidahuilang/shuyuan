@@ -27,7 +27,17 @@ jobs:
           curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
           curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
           # Add more curl commands for additional book sources
+      - name: Add files to Git
+        run: |
+         git add .git-credentials
+         git add 180.json
+         git add 185.json
 
+      - name: Commit and push changes
+        run: |
+         git commit -m "Merge books"
+         git -c credential.helper="store --file=.git-credentials" push
+         
       - name: Merge books
         run: |
           # Merge the pulled book JSON files into a single file
