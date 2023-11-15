@@ -19,7 +19,7 @@ jobs:
           echo "[" > merged_sources.json
 
           # 遍历书源 URL 列表
-          for url in "http://www.yckceo.com/yuedu/shuyuans/json/id/180.json" "http://www.example.com/book_source2.json" "http://www.example.com/book_source3.json"
+          for url in "http://www.yckceo.com/yuedu/shuyuans/json/id/180.json" "http://www.yckceo.com/yuedu/shuyuans/json/id/185.json" "http://www.yckceo.com/yuedu/shuyuans/json/id/190.json"
           do
             # 拉取书源内容并追加到合并结果文件
             curl -s $url >> merged_sources.json
