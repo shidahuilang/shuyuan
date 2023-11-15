@@ -43,7 +43,7 @@ jobs:
       - name: Add files to Git
         run: |
           git add .git-credentials
-
+          git add *.json
 
       - name: Commit and push changes
         run: |
