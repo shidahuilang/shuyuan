@@ -1,4 +1,4 @@
-name: Pull Books
+name: Pull and Merge Books
 
 on:
   workflow_dispatch:
@@ -6,48 +6,43 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  build:
+  pull_books:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-
-      - name: Install dependencies
-        run: npm install
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
       - name: Pull books
         run: |
-          # Replace the URLs with the actual book source URLs you want to pull
-          curl -O http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
-          # Add more curl commands for additional book sources
+          curl -o book1.json http://www.yckceo.com/yuedu/shuyuans/json/id/180.json
+          curl -o book2.json http://www.yckceo.com/yuedu/shuyuans/json/id/185.json
+          # Add more curl commands for additional book sources if needed
 
       - name: Merge books
         run: |
-          # Merge the pulled book JSON files into a single file
-          cat *.json > merged_books.json
+          cat book*.json > merged_books.json
 
+  commit_changes:
+    needs: pull_books
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Configure Git
         run: |
-         git config --local user.email "${{ secrets.USER_EMAIL }}"
-         git config --local user.name "${{ secrets.USER_NAME }}"
-         git config --local credential.helper store --file=.git-credentials
-         echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
+          git config user.email "${{ secrets.USER_EMAIL }}"
+          git config user.name "${{ secrets.USER_NAME }}"
 
-      - name: Commit and push changes
+      - name: Add changes to Git
         run: |
           git add merged_books.json
-          git commit -m "Merge books"
-          git -c credential.helper="store --file=.git-credentials" push
 
-      - name: Clean up untracked files
+      - name: Commit changes
         run: |
-         rm .git-credentials
-         rm 180.json
-         rm package-lock.json
+          git commit -m "Merge books"
 
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.REPO_TOKEN }}
+          branch: main
