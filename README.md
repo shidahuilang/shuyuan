@@ -12,11 +12,11 @@ https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyu
 
 
 #### 🚩 最新阅读3.0书源修复-每隔3天自动更新一次（读不舍手通用）已效验源
+
+![3.0.png](3.0.png)
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/merged_books.json
 ```
-![3.0.png](3.0.png)
-
 #### 🚩 其他一些书源
 香色闺阁集成多书源（小说，听说，漫画，电影，电视剧，音乐）已整理
 ```
