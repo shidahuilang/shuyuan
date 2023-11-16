@@ -1,27 +1,17 @@
-#
-#
-# 说明：
-# 
-# ‘删除在github空间的老固件’ 删除12小时之前的一切固件，保留数设置没效，一删除就会把在删除时间段内的固件全部删除
-#
-# ‘删除自动发布的老固件’ 每次启动都生效，可以设置保留数
-#
-# 手动按钮启动时候修改true为false也就关闭某项生效，env:下面的开关为定时删除时候分别控制开关
-
 
 name: 清理Actions
 on:
   workflow_dispatch:
 
- # schedule:
-  #  - cron: 0 3 */3 * *
+  schedule:
+    - cron: 0 3 */3 * *
 
 jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
-        uses: Mattraks/delete-workflow-runs@main
+        uses: Mattraks/delete-workflow-runs@v2
         with:
           token: ${{ secrets.REPO_TOKEN }}
           repository: ${{ github.repository }}
