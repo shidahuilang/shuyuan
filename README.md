@@ -7,7 +7,7 @@
 https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/xsreader/new/resources.txt
  ```
  ``` bash
-https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
 
 
