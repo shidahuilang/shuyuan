@@ -6,6 +6,7 @@
 
 
 #### 🚩 更新书源链接:
+![xiangse.png](xiangse.png)
  ``` bash
 https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
