@@ -80,7 +80,7 @@ jobs:
       - name: Delete JSON files
         run: |
           cd 3.0
-          sudo find . -type f ! -name 'merged_books.json' -name '*.json' -exec rm -f {} \;
+          find . -type f ! -name 'merged_books.json' -name '*.json' -exec rm -f {} +
 
           
       - name: Send Telegram notification
