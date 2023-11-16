@@ -1,12 +1,11 @@
-#### 🚩 香色闺阁
-
-#### 🚩每隔3天自动更新一次
+#### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2023-11-13 18:15:40 CST+0800
 
-
 #### 🚩 更新书源链接:
-
+ ``` bash
+https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/xsreader/new/resources.txt
+ ```
  ``` bash
 https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
