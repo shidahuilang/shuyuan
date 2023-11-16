@@ -15,7 +15,7 @@ https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyu
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/3.0/merged_books.json
 ```
-
+![3.0.png](3.0.png)
 
 #### 🚩 其他一些书源
 香色闺阁集成多书源（小说，听说，漫画，电影，电视剧，音乐）已整理
