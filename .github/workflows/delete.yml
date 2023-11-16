@@ -1,20 +1,18 @@
-name: Delete Workflow Runs
-
+name: 清理Actions
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: 0 3 */3 * *
+
 jobs:
-  delete_runs:
+  del_runs:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Delete Workflow Runs
+      - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repository: shidahuilang/shuyuan
+          token: ${{ secrets.REPO_TOKEN }}
+          repository: ${{ github.repository }}
           keep_minimum_runs: 0
-          baseUrl: https://api.github.com
+          retain_days: ${{ env.retain_days }}
