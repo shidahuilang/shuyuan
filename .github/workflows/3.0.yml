@@ -80,6 +80,11 @@ jobs:
       - name: Delete JSON files
         run: |
          cd 3.0
+         find . -type f -not -name 'merged_books.json' -name '*.json' -exec rm -f {} +
+         find . -type f ! -name 'merged_books.json' -exec rm -f {} +
+         find . -type f ! -name 'merged_books.json' -name '*.json' -exec rm -f {} +
+         find . -type f ! -name 'merged_books.json' -name '*.json' -delete
+         find . -type f ! -name 'merged_books.json' -name '*.json' -print0 | xargs -0 rm -f
          find . -type f ! -name 'merged_books.json' -name '*.json' -exec rm -f {} \;
 
           
