@@ -15,4 +15,4 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
           repository: ${{ github.repository }}
           keep_minimum_runs: 0
-          retain_days: ${{ env.retain_days }}
+          retain_main: ${{ env.retain_main }}
