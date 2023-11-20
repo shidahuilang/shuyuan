@@ -1,112 +1,34 @@
-name: Fetch File Links
-
+name: Download JSON files
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - shuyuan
+  schedule:
+    - cron: '0 0 * * *'    # Runs every day
 
 jobs:
-  fetch_links:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repo
         uses: actions/checkout@v2
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.8
 
-      - name: Install dependencies
-        run: python -m pip install requests beautifulsoup4
-
-      - name: Fetch file links
-        id: fetch_file_links
+      - name: Install Dependencies
         run: |
-          python3 -m pip install requests beautifulsoup4
-          python3 - <<EOF
-          from datetime import datetime, timedelta
-          from bs4 import BeautifulSoup
-          import requests
+          python -m pip install --upgrade pip
+          pip install requests bs4
 
-          # 读取网页内容
-          url = "https://www.yckceo.com/yuedu/shuyuans/index.html"
-          response = requests.get(url)
-          soup = BeautifulSoup(response.text, "html.parser")
+      - name: Run Script
+        run: python book.py
 
-          # 获取最近3天的文件链接
-          file_links = []
-          today = datetime.now().date()
-          for link in soup.find_all("a"):
-              href = link.get("href")
-              if href.endswith(".json"):
-                  file_date_str = href.split("/")[-1].split(".")[0]
-                  file_date = datetime.strptime(file_date_str, "%Y%m%d").date()
-                  if (today - file_date) <= timedelta(days=3):
-                      file_links.append(href)
-
-          # 打印文件链接
-          for i, link in enumerate(file_links):
-              print(f"url{i+1}={link}", flush=True)
-
-          # 设置输出变量
-          if len(file_links) >= 1:
-              print(f"::set-output name=url1::{file_links[0]}", flush=True)
-          if len(file_links) >= 2:
-              print(f"::set-output name=url2::{file_links[1]}", flush=True)
-          if len(file_links) >= 3:
-              print(f"::set-output name=url3::{file_links[2]}", flush=True)
-          EOF
-
-
-
-
-      - name: Create books directory
-        run: |
-          if [ ! -d "3.0" ]; then
-            mkdir 3.0
-          fi
-
-      - name: Pull files to 3.0 folder
-        run: |
-          cd 3.0 || exit
-          curl -L -O "${{ steps.fetch_file_links.outputs.url1 }}"
-          curl -L -O "${{ steps.fetch_file_links.outputs.url2 }}"
-          curl -L -O "${{ steps.fetch_file_links.outputs.url3 }}"
-          shell: /usr/bin/bash -e {0}
-
-      - name: Merge books
-        run: |
-          cd 3.0
-          rm -f merged_books.json
-          # Initialize merged_books.json as an empty array
-          echo '[]' > merged_books.json
-          for file in *.json; do
-            jq --slurpfile input "$file" '. + $input[0]' merged_books.json > merged.tmp && mv merged.tmp merged_books.json
-          done
-
-      - name: Configure Git
+      - name: Commit files
         run: |
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "${{ secrets.USER_NAME }}"
-          git config --local credential.helper store --file=.git-credentials
           echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
-
-      - name: Add files to Git
-        run: |
-          git add .git-credentials
-          git add 3.0/merged_books.json
-          git add 3.0/*.json
-
-      - name: Commit and push changes
-        run: |
-          git commit --allow-empty -m "Merge books"
-          git -c credential.helper="store --file=.git-credentials" push
-
-      - name: Send Telegram notification
-        run: |
-          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-          -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d "text=3.0阅读书源更新完成!分支：${{ github.ref }}"
+          git add .
+          git commit -m "Add new JSON files" || echo "No changes to commit"
+          git push
