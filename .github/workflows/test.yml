@@ -55,10 +55,12 @@ jobs:
 
       - name: Pull files to 3.0 folder
         run: |
-          cd 3.0
-          curl -O "${{ steps.fetch_file_links.outputs.url1 }}"
-          curl -O "${{ steps.fetch_file_links.outputs.url2 }}"
-          curl -O "${{ steps.fetch_file_links.outputs.url3 }}"
+         cd 3.0
+         curl -O "${{ steps.fetch_file_links.outputs.url1 }}"
+         curl -O "${{ steps.fetch_file_links.outputs.url2 }}"
+         curl -O "${{ steps.fetch_file_links.outputs.url3 }}"
+         shell: /usr/bin/bash -e {0}
+  
       - name: Merge books
         run: |
           cd 3.0
