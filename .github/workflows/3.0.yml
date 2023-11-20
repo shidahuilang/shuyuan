@@ -27,60 +27,75 @@ jobs:
             mkdir 3.0
           fi
 
+      - name: Fetch file links
+        id: fetch_file_links
+        run: |
+          python - <<EOF
+          import requests
 
+          urls = [
+              "https://www.yckceo.com/yuedu/shuyuans/json/id/206.json",
+              "https://www.yckceo.com/yuedu/shuyuans/json/id/200.json",
+              "https://www.yckceo.com/yuedu/shuyuans/json/id/201.json"
+          ]
 
-      - name: Pull 3.0
+          # 存储所有链接的真实链接
+          final_urls = []
+
+          # 遍历所有链接并获取真实链接
+          for url in urls:
+              response = requests.head(url, allow_redirects=True)
+              final_url = response.url
+              final_urls.append(final_url)
+
+          # 打印所有链接的真实链接
+          for url, final_url in zip(urls, final_urls):
+              print(f"{url} -> {final_url}")
+
+          # 设置输出变量
+          print(f"::set-output name=url1::{final_urls[0]}")
+          print(f"::set-output name=url2::{final_urls[1]}")
+          print(f"::set-output name=url3::{final_urls[2]}")
+          EOF
+
+      - name: Pull files to 3.0 folder
         run: |
           cd 3.0
-
-
-          curl -O https://www.yckceo.com/yuedu/shuyuans/json/id/206.json
-          curl -O https://www.yckceo.com/yuedu/shuyuans/json/id/200.json
-          curl -O https://www.yckceo.com/yuedu/shuyuans/json/id/201.json
-
-          
-          
-
-
+          curl -O "${{ steps.fetch_file_links.outputs.url1 }}"
+          curl -O "${{ steps.fetch_file_links.outputs.url2 }}"
+          curl -O "${{ steps.fetch_file_links.outputs.url3 }}"
+        shell: /usr/bin/bash -e {0}
+  
       - name: Merge books
         run: |
           cd 3.0
-
-
           rm -f merged_books.json
-
           # Initialize merged_books.json as an empty array
           echo '[]' > merged_books.json
-
-
           for file in *.json; do
             jq --slurpfile input "$file" '. + $input[0]' merged_books.json > merged.tmp && mv merged.tmp merged_books.json
           done
 
       - name: Configure Git
         run: |
-         git config --local user.email "${{ secrets.USER_EMAIL }}"
-         git config --local user.name "${{ secrets.USER_NAME }}"
-         git config --local credential.helper store --file=.git-credentials
-         echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
+          git config --local user.email "${{ secrets.USER_EMAIL }}"
+          git config --local user.name "${{ secrets.USER_NAME }}"
+          git config --local credential.helper store --file=.git-credentials
+          echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
 
       - name: Add files to Git
         run: |
           git add .git-credentials
           git add 3.0/merged_books.json
           git add 3.0/*.json
-          
-
 
       - name: Commit and push changes
         run: |
           git commit --allow-empty -m "Merge books"
           git -c credential.helper="store --file=.git-credentials" push
-          
 
-          
       - name: Send Telegram notification
         run: |
-         curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
-         -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-         -d "text=3.0阅读书源更新完成!分支：${{ github.ref }}"   
+          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+          -d "text=3.0阅读书源更新完成!分支：${{ github.ref }}"
