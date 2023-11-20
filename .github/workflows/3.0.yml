@@ -1,99 +1,38 @@
 name: 3.0阅读
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 10 */3 * *"
+    - cron: '0 0 * * *'    # Runs every day
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          node-version: "18.17.0"
-          
-      - name: Install dependencies
-        run: npm install -g npm
-        
-      - name: Create books directory
+          python-version: 3.8
+
+      - name: Install Dependencies
         run: |
-          if [ ! -d "3.0" ]; then
-            mkdir 3.0
-          fi
+          python -m pip install --upgrade pip
+          pip install requests bs4
 
-      - name: Fetch file links
-        id: fetch_file_links
-        run: |
-          python - <<EOF
-          import requests
+      - name: Run Script
+        run: python fetch_urls.py
 
-          urls = [
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/206.json",
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/200.json",
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/201.json"
-          ]
-
-          # 存储所有链接的真实链接
-          final_urls = []
-
-          # 遍历所有链接并获取真实链接
-          for url in urls:
-              response = requests.head(url, allow_redirects=True)
-              final_url = response.url
-              final_urls.append(final_url)
-
-          # 打印所有链接的真实链接
-          for url, final_url in zip(urls, final_urls):
-              print(f"{url} -> {final_url}")
-
-          # 设置输出变量
-          print(f"::set-output name=url1::{final_urls[0]}")
-          print(f"::set-output name=url2::{final_urls[1]}")
-          print(f"::set-output name=url3::{final_urls[2]}")
-          EOF
-
-      - name: Pull files to 3.0 folder
-        run: |
-          cd 3.0
-          curl -O "${{ steps.fetch_file_links.outputs.url1 }}"
-          curl -O "${{ steps.fetch_file_links.outputs.url2 }}"
-          curl -O "${{ steps.fetch_file_links.outputs.url3 }}"
-        shell: /usr/bin/bash -e {0}
-  
-      - name: Merge books
-        run: |
-          cd 3.0
-          rm -f merged_books.json
-          # Initialize merged_books.json as an empty array
-          echo '[]' > merged_books.json
-          for file in *.json; do
-            jq --slurpfile input "$file" '. + $input[0]' merged_books.json > merged.tmp && mv merged.tmp merged_books.json
-          done
-
-      - name: Configure Git
+      - name: Commit files
         run: |
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "${{ secrets.USER_NAME }}"
-          git config --local credential.helper store --file=.git-credentials
           echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
-
-      - name: Add files to Git
-        run: |
-          git add .git-credentials
-          git add 3.0/merged_books.json
-          git add 3.0/*.json
-
-      - name: Commit and push changes
-        run: |
-          git commit --allow-empty -m "Merge books"
-          git -c credential.helper="store --file=.git-credentials" push
-
+          git add .
+          git commit -m "Add new JSON files" || echo "No changes to commit"
+          git push
+          
       - name: Send Telegram notification
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
