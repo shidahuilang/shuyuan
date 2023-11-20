@@ -30,28 +30,33 @@ jobs:
       - name: Fetch file links
         id: fetch_file_links
         run: |
-          python - <<EOF
-          import requests
+         python - <<EOF
+         import requests
 
-          urls = [
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/206.json",
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/200.json",
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/201.json"
-          ]
+         urls = [
+        "https://www.yckceo.com/yuedu/shuyuans/json/id/206.json",
+        "https://www.yckceo.com/yuedu/shuyuans/json/id/200.json",
+        "https://www.yckceo.com/yuedu/shuyuans/json/id/201.json"
+    ]
 
-          # 存储所有链接的真实链接
-          final_urls = []
+    # 存储所有链接的真实链接
+    final_urls = []
 
-          # 遍历所有链接并获取真实链接
-          for url in urls:
-              response = requests.head(url, allow_redirects=True)
-              final_url = response.url
-              final_urls.append(final_url)
+    # 遍历所有链接并获取真实链接
+    for url in urls:
+        response = requests.head(url, allow_redirects=True)
+        final_url = response.url
+        final_urls.append(final_url)
 
-          # 打印所有链接的真实链接
-          for url, final_url in zip(urls, final_urls):
-              print(f"{url} -> {final_url}")
-          EOF
+    # 打印所有链接的真实链接
+    for url, final_url in zip(urls, final_urls):
+        print(f"{url} -> {final_url}")
+
+    # 设置输出变量
+    print(f"::set-output name=url1::{final_urls[0]}")
+    print(f"::set-output name=url2::{final_urls[1]}")
+    print(f"::set-output name=url3::{final_urls[2]}")
+    EOF
 
       - name: Pull files to 3.0 folder
         run: |
