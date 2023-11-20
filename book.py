@@ -21,11 +21,14 @@ def parse_page():
             href = link['href']
             link_date_str = date_element.text.strip()
 
-            # Use regex to extract the number of days or hours
-            match = re.search(r'(\d+)(天前|小时前)', link_date_str)
+            # Use regex to extract the number of days, hours, or minutes
+            match = re.search(r'(\d+)(天前|小时前|分钟前)', link_date_str)
             if match:
                 value, unit = match.group(1, 2)
-                if unit == '小时前':
+                if unit == '分钟前':
+                    # For minutes, consider them as 1 day
+                    days_ago = 1
+                elif unit == '小时前':
                     # For hours, consider them as 1 day
                     days_ago = 1
                 else:
@@ -49,10 +52,6 @@ def get_redirected_url(url):
     return final_url.url if final_url else None
 
 def download_json(url, output_dir='3.0'):
-    # Check if the output directory exists, create it if not
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
     # Get the redirected URL
     final_url = get_redirected_url(url)
     
@@ -80,6 +79,9 @@ def download_json(url, output_dir='3.0'):
 
                 output_path = os.path.join(output_dir, f'{id}.json')
 
+                # Ensure the output directory exists, create it if not
+                os.makedirs(output_dir, exist_ok=True)
+
                 with open(output_path, 'w') as f:
                     json.dump(json_content, f, indent=2, ensure_ascii=False)
                 print(f"Downloaded {id}.json to {output_dir}")
@@ -92,21 +94,25 @@ def download_json(url, output_dir='3.0'):
     else:
         print(f"Error getting redirected URL for {url}")
 
+def clean_old_files(directory='3.0'):
+    # Create the directory if it doesn't exist
+    os.makedirs(directory, exist_ok=True)
+
+    for filename in os.listdir(directory):
+        file_path = os.path.join(directory, filename)
+        # Exclude me.json from deletion
+        if filename.endswith('.json') and filename != 'me.json':
+            os.remove(file_path)
+            print(f"Deleted old file: {filename}")
+
 def merge_json_files(input_dir='3.0', output_file='merged.json'):
     all_data = []
-
-    # Check if the merged.json file already exists
-    if os.path.exists(output_file):
-        with open(output_file) as f:
-            all_data = json.load(f)
 
     for filename in os.listdir(input_dir):
         if filename.endswith('.json'):
             with open(os.path.join(input_dir, filename)) as f:
                 data = json.load(f)
                 all_data.extend(data)
-            # Delete the processed JSON file
-            os.remove(os.path.join(input_dir, filename))
 
     with open(output_file, 'w') as f:
         # Write JSON content with the outermost square brackets
@@ -114,10 +120,11 @@ def merge_json_files(input_dir='3.0', output_file='merged.json'):
 
 def main():
     urls = parse_page()
+    clean_old_files()  # Clean old files before downloading new ones
     for url, _ in urls:
         download_json(url)
 
-    merge_json_files()
+    merge_json_files()  # Merge downloaded JSON files
 
 if __name__ == "__main__":
     main()
