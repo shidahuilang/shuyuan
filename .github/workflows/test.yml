@@ -1,4 +1,4 @@
-name: Download JSON files
+name: 3.0阅读
 on:
   workflow_dispatch:
   schedule:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -22,7 +22,7 @@ jobs:
           pip install requests bs4
 
       - name: Run Script
-        run: python book.py
+        run: python fetch_urls.py
 
       - name: Commit files
         run: |
@@ -32,3 +32,9 @@ jobs:
           git add .
           git commit -m "Add new JSON files" || echo "No changes to commit"
           git push
+          
+      - name: Send Telegram notification
+        run: |
+          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+          -d "text=3.0阅读书源更新完成!分支：${{ github.ref }}"
