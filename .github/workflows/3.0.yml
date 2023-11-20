@@ -2,7 +2,7 @@ name: 3.0阅读
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'    # Runs every day
+    - cron: "0 10 */3 * *"
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.10
 
       - name: Install Dependencies
         run: |
@@ -22,7 +22,7 @@ jobs:
           pip install requests bs4
 
       - name: Run Script
-        run: python fetch_urls.py
+        run: python book.py
 
       - name: Commit files
         run: |
