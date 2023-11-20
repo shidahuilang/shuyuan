@@ -34,7 +34,7 @@ jobs:
           import requests
 
           urls = [
-              "https://www.yckceo.com/yuedu/shuyuans/json/id/203.json",
+              "https://www.yckceo.com/yuedu/shuyuans/json/id/206.json",
               "https://www.yckceo.com/yuedu/shuyuans/json/id/200.json",
               "https://www.yckceo.com/yuedu/shuyuans/json/id/201.json"
           ]
@@ -59,7 +59,6 @@ jobs:
           curl -O "${{ steps.fetch_file_links.outputs.url1 }}"
           curl -O "${{ steps.fetch_file_links.outputs.url2 }}"
           curl -O "${{ steps.fetch_file_links.outputs.url3 }}"
-
       - name: Merge books
         run: |
           cd 3.0
