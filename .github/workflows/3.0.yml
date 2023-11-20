@@ -37,4 +37,4 @@ jobs:
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
           -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d "text=3.0阅读书源更新合并过完成!分支：${{ github.ref }}"
+          -d "text=3.0阅读书源更新合并完成!分支：${{ github.ref }}"
