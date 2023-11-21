@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import re
 
 def parse_page():
-    url = 'https://www.yckceo.com/yuedu/shuyuans/index.html'
+    url = os.getenv('URL_SECRET')
     response = requests.get(url, verify=False)
     soup = BeautifulSoup(response.text, 'html.parser')
 
