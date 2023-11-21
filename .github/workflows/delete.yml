@@ -9,8 +9,8 @@ jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete workflow runs
-        uses: small-5/delete-workflow-runs@main
+      - name: Delete GitHub Actions workflow runs
+        uses: JuvenileQ/delete-workflow-runs@v1.0.0
         with:
           token: ${{ secrets.REPO_TOKEN }}
           repository: ${{ github.repository }}
