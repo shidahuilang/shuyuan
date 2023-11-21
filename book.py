@@ -7,6 +7,7 @@ import re
 
 def parse_page():
     url = os.getenv('URL_SECRET')  # 从环境变量获取 URL 值
+    print("URL:", url)  # 打印 URL 值
     response = requests.get(url, verify=False)
     soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -21,7 +22,7 @@ def parse_page():
             href = link['href']
             link_date_str = date_element.text.strip()
 
-            # Use regex to extract the number of days, hours, or minutes
+            
             match = re.search(r'(\d+)(天前|小时前|分钟前)', link_date_str)
             if match:
                 value, unit = match.group(1, 2)
@@ -52,7 +53,7 @@ def get_redirected_url(url):
     return final_url.url if final_url else None
 
 def download_json(url, output_dir='3.0'):
-    # Get the redirected URL
+   
     final_url = get_redirected_url(url)
     
     if final_url:
@@ -61,13 +62,13 @@ def download_json(url, output_dir='3.0'):
         # Download the JSON content from the final URL
         response = requests.get(final_url)
 
-        # Check if the request was successful (status code 200)
+        
         if response.status_code == 200:
             try:
                 json_content = response.json()
                 id = final_url.split('/')[-1].split('.')[0]
 
-                # Use the provided date if available, otherwise use today
+                
                 link_date = None
                 for _, date in parse_page():
                     if _ == url:
@@ -79,7 +80,7 @@ def download_json(url, output_dir='3.0'):
 
                 output_path = os.path.join(output_dir, f'{id}.json')
 
-                # Ensure the output directory exists, create it if not
+                
                 os.makedirs(output_dir, exist_ok=True)
 
                 with open(output_path, 'w') as f:
