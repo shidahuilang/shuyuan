@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import re
 
 def parse_page():
-    url = os.getenv('URL_SECRET')
+    url = os.getenv('URL_SECRET')  # 从环境变量获取 URL 值
     response = requests.get(url, verify=False)
     soup = BeautifulSoup(response.text, 'html.parser')
 
