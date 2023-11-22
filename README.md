@@ -15,10 +15,10 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
 
 ![3.0.png](3.0.png)
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/merged.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuans_data.json
 ```
 ```
-https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/merged.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuan_data.json
 ```
 #### 🚩 其他一些书源
 香色闺阁集成多书源（小说，听说，漫画，电影，电视剧，音乐）已整理
