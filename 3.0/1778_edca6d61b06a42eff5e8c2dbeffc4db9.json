@@ -1,0 +1,212 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "自建",
+    "bookSourceName": "三一小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.31xs.com",
+    "bookUrlPattern": "https://m.31xs.com/\\d+/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "[\n{\n\t\"title\":\"奇魔玄幻\",\n\t\"url\":\"/list/1/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"仙侠修真\",\n\t\"url\":\"/list/2/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"都市现代\",\n\t\"url\":\"/list/3/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"军史穿越\",\n\t\"url\":\"/list/4/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"竞技网游\",\n\t\"url\":\"/list/5/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"恐怖科幻\",\n\t\"url\":\"/list/6/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"同人次元\",\n\t\"url\":\"/list/7/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"综合言情\",\n\t\"url\":\"/list/8/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"浪漫青春\",\n\t\"url\":\"/list/9/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"现代言情\",\n\t\"url\":\"/list/10/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"古代言情\",\n\t\"url\":\"/list/11/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t},\n{\n\t\"title\":\"幻想言情\",\n\t\"url\":\"/list/12/\",\n\t\"style\":{\"layout_flexBasisPercent\":0.4,\n\t\"layout_flexGrow\":1\n\t}\n\t}\n]",
+    "header": "{\n\t\"User-Agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1\"\n}",
+    "lastUpdateTime": 1663662524050,
+    "loginUrl": "https://m.31xs.com/login.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&\n[property=\"og:novel:status\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "{{baseUrl}}index.htm",
+      "wordCount": "[property=\"og:novel:update_time\"]@content##\\s##,"
+    },
+    "ruleContent": {
+      "content": "class.am-article-bd@p@html",
+      "replaceRegex": "##xiaoshuting\\.cc|xiaoshuting\\.info"
+    },
+    "ruleExplore": {
+      "author": ".author@text##.*：",
+      "bookList": "class.hot_sale",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "img@src",
+      "intro": ".review@textNodes",
+      "name": ".title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "dd@p.0@text##作者.",
+      "bookList": "class.user-bookcase@dl",
+      "bookUrl": "dt@a@href",
+      "coverUrl": "dt@a@href##.*/(\\d+)/(\\d+)/##https://style.31xs.net/img/$1/$2/$2s.jpg",
+      "kind": "dd@p.2@text##更新.",
+      "lastChapter": "dd@p.1@a@text",
+      "name": "dt@a@text##\\[连载\\]|\\[完结\\]",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.am-list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "https://m.31xs.com/search.php,{\n\t\"method\": \"POST\",\n\t\"body\": \"keyword={{key}}\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "//加载较慢，偶尔超时宕机。",
+    "bookSourceGroup": "自建",
+    "bookSourceName": "爱下电子书8",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ixdzs8.com",
+    "bookUrlPattern": "https?://ixdzs8.com/read/\\d+/",
+    "customOrder": 37,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/sort/1/\n武侠小说::/sort/10/\n修真仙侠::/sort/2/\n都市青春::/sort/3/\n军事历史::/sort/4/\n网游竞技::/sort/5/\n科幻灵异::/sort/6/\n言情穿越::/sort/7/\n耽美同人::/sort/8/\n台言古言::/sort/9/\n其他小说::/sort/0/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1698411494781,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",w:\"span.nsize@text\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "{{java.put(\"url\",baseUrl);\n\t\"https://ixdzs8.com/novel/clist/\"}},{\n  \"body\": \"bid={{baseUrl.match(/(\\d+).$/)[1]}}\",\n  \"headers\": {\n    \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\n    \"X-Requested-With\": \"XMLHttpRequest\",\n    \"Referer\":\"{{baseUrl}}\"\n    },\n  \"method\": \"POST\"\n}",
+      "wordCount": "@get:{w}"
+    },
+    "ruleContent": {
+      "content": "article.page-content section>p@textNodes"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".u-list li",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "p.1@text",
+      "kind": "span.2:-1@text",
+      "lastChapter": "a.-1@text",
+      "name": "h3@text",
+      "wordCount": "span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "$.data",
+      "chapterName": "$.title",
+      "chapterUrl": "@get:{url}p{{$.ordernum}}.html"
+    },
+    "searchUrl": "https://ixdzs8.com/bsearch?q={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "自建",
+    "bookSourceName": "云中书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.yunxs.cc",
+    "bookUrlPattern": "http://m.yunxs.cc/\\w+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n玄幻::/xuanhuan/\n仙侠::/xianxia/\n都市::/dushi/\n穿越::/chuanyue/\n科幻::/kehuan/\n同人::/tongren/\n全本::/over.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1696252290368,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".book_box span.0@text",
+      "coverUrl": ".cover img@src",
+      "intro": ".book_about dd@text\n##最新章节推荐地址.*",
+      "kind": ".book_box span.1:2:-2@text\n##分类：|状态：|更新：",
+      "lastChapter": ".book_box a.-1@text",
+      "name": ".name@text",
+      "wordCount": ".book_box span.3@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##（本章未完.*继续阅读）|云中书库阅读网址.*|{{ try{chapter.title}catch(e){\"\"} }}|\\(第\\d.+页\\)"
+    },
+    "ruleExplore": {
+      "author": "span@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "kind": ".cat@text##分类：",
+      "lastChapter": "a.-1@text",
+      "name": "h4@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".book_last.1@dl dd a",
+      "chapterName": "text##^\\d+、",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "@js:\nvar url=source.key;\nvar web=java.webView(null,url,null);\nvar html=web;\nvar j=org.jsoup.Jsoup.parse(html);\nvar f=j.select('form');\nvar p=f.select(\"input\")\nvar a=f.attr(\"action\")\nvar list=[];\nif(web&&html){\n\tlength=p.length>3?2:p.length;\n\tfor(i=0;i<length;i++){\n\tname=p[i].attr(\"name\")\n\tvalue=p[i].attr(\"value\")\n\tclas=p[i].attr(\"class\")\n\tif(value!=\"\"){\n\tadd=`${name}=${value}`\n\t}else if(clas==\"text\"){\n\t\tadd=`${name}=${key}`}\n\t//java.log(add)\n\tlist.push(add)}\n\tso=list.join(\"&\")\n\ta+\"?\"+so;\n\t}else{java.toast(\"搜索链接获取失败！\")}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "电信ban",
+    "bookSourceGroup": "自建",
+    "bookSourceName": "燃文小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.778buy.cc/",
+    "bookUrlPattern": "",
+    "customOrder": -2086092165,
+    "enabled": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1697242797859,
+    "respondTime": 2508,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&div.body@tr.1@td.9@text",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "@css:[property=og:novel:read_url]@content"
+    },
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "class.odd.1@text",
+      "bookList": "class.grid@tag.tr!0",
+      "bookUrl": "class.odd.0@tag.a.0@href",
+      "coverUrl": "class.odd.0@tag.a.0@href<js>\nvar id = result.match(/info_(\\d{3,})/)[1];\nvar iid = parseInt(id/1000);\nsource.bookSourceUrl + 'files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "kind": "td.5@text",
+      "lastChapter": "class.even.0@tag.a.0@text",
+      "name": "class.odd.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.defaulthtml4@tag.td@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "modules/article/sf.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=articlename\"\n}",
+    "weight": 0
+  }
+]
