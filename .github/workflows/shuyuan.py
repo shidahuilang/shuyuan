@@ -22,7 +22,7 @@ jobs:
           pip install requests bs4
 
       - name: Run Script
-        run: python test.py
+        run: python shuyuan.py
 
       - name: Commit files
         run: |
