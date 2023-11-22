@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写1118",
+    "bookSourceName": "江印小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sinicprint.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1700539512685,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": ".intro@text",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": ".update-text@a@text",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "[property=\"og:novel:read_url\"]@content"
+    },
+    "ruleContent": {
+      "content": "id.txt@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".search-list@ul@li!0",
+      "bookUrl": ".s2@a@href",
+      "name": ".s2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".book-chapter-list@ul!0@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://so.biqusoso.com/s2.php?siteid=sinicprint.com&q={{key}},{'charset': 'gbk'}",
+    "weight": 0
+  }
+]
