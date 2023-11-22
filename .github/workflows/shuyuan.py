@@ -1,4 +1,4 @@
-name: 3.0阅读
+name: 书源
 on:
   workflow_dispatch:
   schedule:
