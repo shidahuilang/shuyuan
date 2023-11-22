@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "备用:https://m.1688ts.net/",
+    "bookSourceGroup": "精品书源1119,自写1118",
+    "bookSourceName": "奇快中文[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.7kzww1.com/",
+    "bookUrlPattern": "",
+    "customOrder": 615,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::https://m.7kzww1.com/\n排行::https://m.7kzww1.com/ph/0/\n玄幻排行::https://m.7kzww1.com/ph/1/\n修真排行::https://m.7kzww1.com/ph/2/\n都市排行::https://m.7kzww1.com/ph/3/\n穿越排行::https://m.7kzww1.com/ph/4/\n网游排行::https://m.7kzww1.com/ph/5/\n科幻排行::https://m.7kzww1.com/ph/6/\n其它排行::https://m.7kzww1.com/ph/7/\n分类::https://m.7kzww1.com/xclass/0/\n玄幻分类::https://m.7kzww1.com/xclass/1/\n修真分类::https://m.7kzww1.com/xclass/2/\n都市分类::https://m.7kzww1.com/xclass/3/\n穿越分类::https://m.7kzww1.com/xclass/4/\n网游分类::https://m.7kzww1.com/xclass/5/\n科幻分类::https://m.7kzww1.com/xclass/6/\n其它分类::https://m.7kzww1.com/xclass/7/\n完本::https://m.7kzww1.com/wanben/0/\n玄幻完本::https://m.7kzww1.com/wanben/1/\n修真完本::https://m.7kzww1.com/wanben/2/\n都市完本::https://m.7kzww1.com/wanben/3/\n穿越完本::https://m.7kzww1.com/wanben/4/\n网游完本::https://m.7kzww1.com/wanben/5/\n科幻完本::https://m.7kzww1.com/wanben/6/\n其它完本::https://m.7kzww1.com/wanben/7/",
+    "lastUpdateTime": 1696845146060,
+    "loginUrl": "",
+    "respondTime": 14337,
+    "ruleBookInfo": {
+      "author": ".author@a@text",
+      "coverUrl": "id.thumb@img@src",
+      "init": "",
+      "intro": ".review@text",
+      "kind": ".sort@span@text",
+      "lastChapter": "id.chapterlist@p.0@text",
+      "name": ".title@text",
+      "tocUrl": "text.查看完整目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": ".author@a.1@text",
+      "bookList": ".hot_sale||.index_sort1@a",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": ".review@text",
+      "kind": ".sort@text",
+      "lastChapter": "",
+      "name": ".title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".hot_sale",
+      "bookUrl": "a.0@href",
+      "coverUrl": "",
+      "kind": "",
+      "lastChapter": "a.3@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterlist@p!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://m.7kzww1.com/search.php?keyword={{key}}",
+    "weight": 0
+  }
+]

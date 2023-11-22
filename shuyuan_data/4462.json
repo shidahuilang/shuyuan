@@ -1,0 +1,64 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "精品书源1119,自写1118",
+    "bookSourceName": "创世中文网[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://chuangshi.qq.com",
+    "customOrder": 493,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::https://chuangshi.qq.com/\n玄幻::https://chuangshi.qq.com/tab/20001\n武侠::https://chuangshi.qq.com/tab/20010\n历史::https://chuangshi.qq.com/tab/20028\n科幻::https://chuangshi.qq.com/tab/20042\n游戏::https://chuangshi.qq.com/tab/20050\n轻小说::https://chuangshi.qq.com/tab/20059",
+    "header": "{\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 EdgA/116.0.1938.64\",\n\"Referer\": \"{{baseUrl}}\"\n\t}",
+    "lastUpdateTime": 1695478456457,
+    "respondTime": 5745,
+    "ruleBookInfo": {
+      "author": ".book-info__author@text",
+      "coverUrl": "img@src",
+      "init": "",
+      "intro": ".intro-content@text",
+      "kind": ".category@text",
+      "lastChapter": ".book-info__lastChapter@text",
+      "name": ".book-info__title@text",
+      "tocUrl": "{{baseUrl.replace(/detail/,\"chapter\")+`,{\n\t\"headers\": {\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36\"} }`}}",
+      "wordCount": ".book-info__categories@span@text"
+    },
+    "ruleContent": {
+      "content": "id.article@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": ".book-li||.finished-list@li||.free-list@li",
+      "bookUrl": ".book-head@a@href||.book-vertical@a@href",
+      "coverUrl": ".book-simple@a.0@div@style||.book-vertical@a.0@div@style",
+      "intro": ".book-intro@text",
+      "kind": ".rect.0@text||.book-cate@text",
+      "lastChapter": ".book-chapter@a@text",
+      "name": ".book-title@text",
+      "wordCount": ".rect.2@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".book-list",
+      "bookUrl": ".book-head@a@href",
+      "coverUrl": "book-simple@src",
+      "intro": ".book-intro@text",
+      "kind": ".rect.0@text",
+      "lastChapter": "",
+      "name": "h4@text",
+      "wordCount": ".rect.2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".list",
+      "chapterName": ".item@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "",
+      "updateTime": ".update-time@text"
+    },
+    "searchUrl": "https://chuangshi.qq.com/search/{{key}}",
+    "weight": 0
+  }
+]

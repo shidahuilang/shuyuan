@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceName": "全本小说网yyds",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qb5.ac/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/fenlei/1_{{page}}/\r\n修真小说::/fenlei/2_{{page}}/\r\n都市小说::/fenlei/3_{{page}}/\r\n历史小说::/fenlei/4_{{page}}/\r\n网游小说::/fenlei/5_{{page}}/\r\n科幻小说::/fenlei/6_{{page}}/\r\n完本小说::/quanben/\r\n热门小说::/top/monthvisit/",
+    "lastUpdateTime": 1700126496281,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "id.intro@textNodes",
+      "kind": "[property~ =category|statuslupdate_time]@content",
+      "lastChapter": "[property$=latest chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "{{baseUrl}}##.html$##/"
+    },
+    "ruleContent": {
+      "content": "id.content@html##全本小说网.*最新章节！|uu看书.*com|请记住本书首发域名\\：\\。|手机版更新最快网址：",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "class.author@text",
+      "bookList": "li div",
+      "bookUrl": "a@href",
+      "lastChapter": "class.zz@a@text",
+      "name": "a.name@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td:nth-of-type(3)@text",
+      "bookList": "class.grid@tr@td",
+      "bookUrl": "class.odd.0@a@href",
+      "checkKeyWord": "",
+      "lastChapter": "class.even.0@a@text",
+      "name": "class.odd.0@text",
+      "wordCount": "td:nth-of-type(4)@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.zjlist@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}&submit=%CB%D1%CB%F7,{\n\"charset\": \"gbk\"\n\t}",
+    "weight": 0
+  }
+]

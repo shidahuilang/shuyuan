@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "海棠文化線上文學城\n请登机\n*登个录先\n*搜索间隔30秒",
+    "bookSourceGroup": "成人内容",
+    "bookSourceName": "✈️ 海棠",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ebook.longmabook.com",
+    "customOrder": 9,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort=[];\npush=(title,url,type)=> sort.push({\n    title: title,\n\t\t url: url,\n\t\t style: {\n\t\t \t    layout_flexGrow: 1,\n\t\t \t    layout_flexBasisPercent: type\n\t\t \t}\n});\npush(\"- 点击签到\",`/signinset.php`,0.4);\npush(\"- 我的书柜\",`/?act=managemybookcase&pages={{page}}`,0.4);\npush(\"• 榜单控专用 •\",null,1);\n[[\"百大热文VIP(日排行)\",\"ranking-v-day\"],[\"百大热文(日排行)\",\"ranking-day\"],[\"百大热文VIP(月排行)\",\"ranking-v-month\"],[\"百大热文(月排行)\",\"ranking-month\"],[\"百大热文VIP(季排行)\",\"ranking-v-year\"],[\"百大热文(季排行)\",\"ranking-year\"],[\"最新耽美完结作品\",\"finshbooklist-a\"],[\"最新言情完结作品\",\"finshbooklist-b\"],[\"最新同人/综合/轻小说完结作品\",\"finshbooklist-c\"],[\"耽美最新章节Top 600\",\"newbooklist-all\"],[\"耽美最新章节601-1200\",\"newbooklist-pb-all\"],[\"耽美最新章节1201-1800\",\"newbooklist-pc-all\"],[\"耽美最新章节1801-2400\",\"newbooklist-pd-all\"],[\"言情最新章节\",\"newbooklist-b-all\"],[\"同人/综合/轻小说最新章节\",\"newbooklist-c-all\"],[\"本周读者热推榜\",\"userrecommend-all\"]].map([title,a]=>{\n    push(title,`/?act=rankingall&ranktype=${a}`,null)\n});\nJSON.stringify(sort);",
+    "lastUpdateTime": 1700322216529,
+    "loginUrl": "/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "h4.1@a@text",
+      "canReName": "1",
+      "intro": "div:has(.uk-label)@textNodes##^.*\\s*.*|\\s*\\)",
+      "kind": ".uk-label,[color=\"#800080\"]@text##\\s\\/\\s##,",
+      "name": "h4.2@text",
+      "tocUrl": "@js:\nid=baseUrl.replace(/(.*)bookid=(.*?)&(.*)/, '$2');\n`/showbooklist.php,{\"method\":\"POST\",\"body\":\"ebookid=${id}&pages=1&showbooklisttype=1\"}`"
+    },
+    "ruleContent": {
+      "content": "@js:\nid=baseUrl.replace(/.*paperid=/g,\"\");\nv=/vercodechk/.test(result)?result.match(/vercodechk.*?'([^']+)'/)[1]:\"\";\nurl=source.key+`/showpapercolor.php,{\"method\":\"POST\",\"body\":\"paperid=${id}&vercodechk=${v}\"}`;\nart=java.ajax(url);\nsay=java.getString(\"@@#colorpanelwritersay@textNodes\");\negg=java.getString(\"@@.uk-placeholder.-1@textNodes\");\negg=egg!=\"加載中...\"&&egg!=say?\"【彩蛋内容：】\\n\"+egg:\"\";\nart+say+egg",
+      "replaceRegex": "##^<img[\\s\\S]*?>|^\\.\\.$"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text||a.1@text\n@js:\n/mybookcase/.test(baseUrl)?java.getString(\"a.0@text\"):result",
+      "bookList": ".uk-table@tr\n@js:\nif(/signinset/.test(baseUrl)){\n  /簽到/.test(java.ajax(baseUrl))?java.toast(\"已签到\"):java.toast(\"未登录\")\n}else{result}",
+      "bookUrl": "a[href*=bookid]@href",
+      "checkKeyWord": "",
+      "intro": "textNodes##.*?\\n",
+      "kind": "{{@@td>font.-1:-2@text||font@text##^\\*\\s*}},{{@@td>font!-1:-2@text}}##\\s\\/\\s##,\n@js:\n/mybookcase/.test(baseUrl)?String(java.getString(\"td@ownText\")).replace(/【(.*?)】\\s最新更新：\\s(.*)/,\"$1,$2\"):result",
+      "lastChapter": "@js:\n/mybookcase/.test(baseUrl)?java.getString(\"a.2@text\"):\"\"",
+      "name": "a[href*=bookid]@text",
+      "wordCount": "textNodes##\\n[\\s\\S]*"
+    },
+    "ruleToc": {
+      "chapterList": "li:has(span)",
+      "chapterName": "a@text||text",
+      "chapterUrl": "a@href",
+      "isVolume": "@js:java.getString(\"a@href\")==\"\"?true:false",
+      "nextTocUrl": "##onclick=showbooklistpage\\('(\\d*)','(\\d*)'\\)##/showbooklist.php,{\"method\":\"POST\",\"body\":\"ebookid=$1&pages=$2&showbooklisttype=1\"}###",
+      "updateTime": "textNodes##^\\s*"
+    },
+    "searchUrl": "@js:\nt=\"&searchmode=book\";\na=\"fixlangsnd=FsedAjjT6&fixlangact=edit\";\nb=\"&selbooktypeb=all&selsexytype=all&selages=all&selstylesa=all&selstylesb=all&selbookpoststats=all\";\npage==1?`/searchlist.php?${a}&searchkeyword={{key}}${t}${b}`:`/?act=searchlist${t}&selbooktype=all&searchkeyword={{key}}${b}&searchkpage={{page}}&${a}`",
+    "weight": 0
+  }
+]

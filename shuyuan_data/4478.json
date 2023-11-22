@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "地址经常变动",
+    "bookSourceGroup": "精品书源1119",
+    "bookSourceName": "多多书院txtduo[修复]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.txtduo.net/",
+    "bookUrlPattern": "",
+    "customOrder": 773,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1700321743353,
+    "loginUrl": "",
+    "respondTime": 2875,
+    "ruleBookInfo": {
+      "author": "#info@p.0@text##作\\s者：",
+      "coverUrl": "#fmimg@img.0@src",
+      "init": "",
+      "intro": "#intro@p.1@text##简介:.*：.*：",
+      "kind": "#info@p.1:3@text##类.*别：|\\(.*\\)|更新时间：",
+      "lastChapter": "#list@dd.-1@a@text",
+      "name": "#info@h1.0@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.content@p@html",
+      "imageStyle": "0"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "##作者：([^<]+)<##$1###",
+      "bookList": "id.alistbox",
+      "bookUrl": "h2@tag.a@href",
+      "coverUrl": "img@src",
+      "intro": "class.intro@text",
+      "kind": "",
+      "lastChapter": "class.sys@a@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search.html,{\n'method': 'POST',\n'body': 'searchkey={{key}}&searchtype=all&Submit=',\n'webView': true\n}",
+    "weight": 0
+  }
+]
