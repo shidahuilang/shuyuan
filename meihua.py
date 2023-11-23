@@ -15,19 +15,15 @@ def format_and_convert_unicode(input_folder, output_folder, replace_original=Fal
             with open(input_file, 'r') as file:
                 json_data = file.read()
 
-            # 将JSON字符串解析为Python对象
             parsed_json = json.loads(json_data)
 
-            # 使用json.dumps将Python对象转换为格式化的JSON字符串，同时处理Unicode转义字符
             formatted_json = json.dumps(parsed_json, indent=4, ensure_ascii=False)
 
-            # 写入到输出文件夹
             with open(output_file, 'w', encoding='utf-8') as file:
                 file.write(formatted_json)
 
             print("已成功转换Unicode并美化保存文件：", output_file)
 
-            # 替换原始文件（如果指定了替换原始文件的选项）
             if replace_original:
                 os.remove(input_file)
                 os.rename(output_file, input_file)
@@ -45,4 +41,4 @@ input_folder = os.path.join(script_directory, input_folder_name)
 output_folder = os.path.join(script_directory, output_folder_name)
 
 # 调用函数转换Unicode并美化JSON文件
-format_and_convert_unicode(input_folder, output_folder, replace_original=True)
+format_and_convert_unicode(input_folder, output_folder, replace_original=False)
