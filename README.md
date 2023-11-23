@@ -12,7 +12,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
  ```
 
 
-#### 🚩 最新阅读3.0书源修复-每隔3天自动更新一次（读不舍手通用）已效验源
+#### 🚩 最新阅读3.0书源修复-每隔3天自动更新一次（读不舍手通用）二维码可以同时添加
 
 ![shuyuans.png](img/shuyuans.PNG) ![shuyuan.png](img/shuyuan.PNG
 )
