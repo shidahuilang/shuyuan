@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "鲜果小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xianguoxs.com",
+    "bookUrlPattern": "https?://m.xianguoxs.com/\\w+.html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/list/0_3_0_0_{{page}}_0_0.html\n玄幻小说::/list/0_3_0_0_{{page}}_0_1.html\n仙侠小说::/list/0_3_0_0_{{page}}_0_2.html\n游戏异界::/list/0_3_0_0_{{page}}_0_3.html\n科幻灵异::/list/0_3_0_0_{{page}}_0_4.html\n穿越重生::/list/0_3_0_0_{{page}}_0_5.html\n都市言情::/list/0_3_0_0_{{page}}_0_6.html\n青春小说::/list/0_3_0_0_{{page}}_0_7.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1700449005979,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nt:\"text.目录@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}"
+    },
+    "ruleContent": {
+      "content": "@js:\nurl=\"https:\"+result.match(/initTxt\\(\"([^\"]+)\",\"[^\"]+\"\\)/)[1];\nr=String(java.ajax(url).match(/_txt_call\\(([\\s\\S]+\\})\\)/)[1]);\nvar r = eval('(' + r + ')');\n\t\t\t\tif(r.content!=null){\t\t\t\t\n      var e = r.replace;\n\t\t\t\tfor (var n in e) {\n\t\t\t\t\tvar i = new RegExp(e[n], \"ig\");\n\t\t\t\t\tr.content = r.content.replace(i, n)\n\t\t\t\t}\n\t\t\t\tresult=r.content\n\t\t\t\t\t}else{result=\"章节加载失败，或者内容正在手打中，请稍后访问~\"}"
+    },
+    "ruleExplore": {
+      "author": "span.0@text##\\/",
+      "bookList": ".list-item",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@data-lazy",
+      "intro": "",
+      "kind": "p.1@text&&span.1@text",
+      "lastChapter": "p.-1@ownText##\\/",
+      "name": "p.0@ownText"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.1@text",
+      "bookList": ".search-card",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "剑来",
+      "intro": ".sc-content@text",
+      "kind": "span.-1@text",
+      "lastChapter": "span.-2@text",
+      "name": "a.0@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".chapter-list li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下页@href"
+    },
+    "searchUrl": "/search/,{\n  \"body\": \"keyword={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
