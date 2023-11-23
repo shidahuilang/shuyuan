@@ -76,7 +76,7 @@ def checkxbsName(name):
 # 检查仓库作者名字，忽略整合搬运fork源作者仓库
 def checkUserName(name):
     isAbandon = False
-    list = ['shidahuilang', 'jumpli', 'ThorJsbox', 'TinhoXu', 'shidahuilang', 'tickmao', 'Cyril0563', 'lTbgykio', 'Dujltqzv']
+    list = ['jumpli', 'ThorJsbox', 'TinhoXu', 'tickmao', 'Cyril0563', 'lTbgykio', 'Dujltqzv']
     for value in list:
         if re.search(value, name):
             printLog('发现黑名单内的作者: ' + name + '  , 丢弃', 'warn')
