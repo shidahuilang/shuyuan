@@ -7,7 +7,8 @@ import re
 import urllib3
 import urllib.parse
 import shutil
-
+import pytz
+import time
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 urls = [
@@ -228,12 +229,32 @@ def merge_json_files(input_dir='', output_file='merged.json', root_dir=''):
 
         beautify_json_files(f"{dir_name}.json", root_dir)
 
+def updateDate(readMePath):
+    text_list = []
+    tz = pytz.timezone('Asia/Shanghai')  # 东八区
+    dateNow = datetime.fromtimestamp(int(time.time()), tz).strftime('%Y-%m-%d %H:%M:%S %Z%z')
+
+    with open(readMePath, 'r', encoding="UTF-8") as f:
+        for lineTmp in f.readlines():
+            if re.search('自动更新时间', lineTmp):
+                printLog('旧的: \t' + lineTmp, 'pink')
+                lineTmp = '**自动更新时间** ' + dateNow + '\n'
+                text_list.append(lineTmp)
+            else:
+                text_list.append(lineTmp)
+
+    with open(readMePath, 'w+', encoding="UTF-8") as f2:
+        for text in text_list:
+            f2.write(text)
+            
 def main():
 
     root_dir = os.getcwd()
 
-    
+    # 合并 JSON 文件
     merge_json_files(root_dir=root_dir)
-
+    readMePath = "README.md"
+    updateDate(readMePath)
+    
 if __name__ == "__main__":
     main()
