@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceName": "无忧小说yyds",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.51eshu.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/allsort/{{page}}.html\n玄幻::/XuanHuan/{{page}}.html\n奇幻::/QiHuan/{{page}}.html\n武侠::/WuXia/{{page}}.html\n都市::/DuShi/{{page}}.html\n历史::/LiShi/{{page}}.html\n军事::/JunShi/{{page}}.html\n悬疑::/XuanYi/{{page}}.html\n游戏::/YouXi/{{page}}.html\n科幻::/KeHuan/{{page}}.html\n体育::/TiYu/{{page}}.html\n古言::/GuYan/{{page}}.html\n现言::/XianYan/{{page}}.html\n幻言::/HuanYan/{{page}}.html\n仙侠::/XianXia/{{page}}.html\n青春::/QinɡChun/{{page}}.html\n穿越::/ChuanYue/{{page}}.html\n女生::/NuShenɡ/{{page}}.html\n其他::/QiTa/{{page}}.html",
+    "lastUpdateTime": 1700549218924,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nt:\".now a@href\"}",
+      "intro": "@get:{i}##无忧小说网.+观看小说:",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "{{baseUrl}}",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.content@p@html",
+      "nextContentUrl": "",
+      "replaceRegex": "##喜欢.*请大家收藏：(www.51eshu.com)七神闯荡六界无忧小说网更新速度全网最快。##"
+    },
+    "ruleExplore": {
+      "author": ".s4@a@text",
+      "bookList": "li",
+      "bookUrl": ".s2@ahref",
+      "kind": "li:nth-of-type(n+2) span.s1@text",
+      "lastChapter": ".s3@a@text",
+      "name": ".s2@a@text",
+      "wordCount": "li:nth-of-type(n+2) span.s5@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "dd:nth-of-type(2)@span:nth-of-type(1)@text",
+      "bookList": "dl",
+      "bookUrl": "h3@a@href",
+      "coverUrl": "dt@a@img@src",
+      "intro": "dt@dd.book_desa@text",
+      "kind": "span:nth-of-type(3)@text",
+      "lastChapter": ".book_other@a@text",
+      "name": "h3@a@text",
+      "wordCount": "span:nth-of-type(4)@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "@js:\nvar url=source.getKey();\ncookie.removeCookie(url)\nvar so=\"/search.html\",\nbody=\"searchtype=all&searchkey=\"+key;\nurl+=so; body=String(body);\npost=java.post(url,body,{}).header(\"Location\");\nString(post).replace(/\\d+.html/,page+\".html\");",
+    "weight": 0
+  }
+]

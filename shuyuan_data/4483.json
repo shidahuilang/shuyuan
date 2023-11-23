@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写1118",
+    "bookSourceName": "笔趣阁aishangba4[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.aishangba4.com",
+    "bookUrlPattern": "",
+    "customOrder": -2085978395,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/xclass/1/1.html\n武侠仙侠::/xclass/2/1.html\n都市言情::/xclass/3/1.html\n历史军事::/xclass/4/1.html\n网游竞技::/xclass/6/1.html\n科幻灵异::/xclass/5/1.html\n女频频道::/xclass/7/1.html\n完本小说::/quanben/\n排行榜单::/xbqgph.html",
+    "lastUpdateTime": 1700482768949,
+    "loginUrl": "",
+    "respondTime": 16778,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "id.content@textNodes##新笔趣阁为你提供最快的.*更新，|第\\d+章| .*免费阅读。|https://www.aishangba8.com|https://m.aishangba.org|请退出转码页面，请下载好阅小说app 阅读最新章节。|网页版章节内容慢，请下载好阅小说app阅读最新内容|由于各种问题xxbiquge.com地址更改为aishangba.org请大家收藏新地址避免迷路|m.aishangba.org"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": ".l@ul@li&&.r@ul@li&&.item||.novelslist2@ul@li!0",
+      "bookUrl": "dl@dt@a@href||.s2@a@href",
+      "coverUrl": "img@src",
+      "kind": "",
+      "lastChapter": ".s3@a@text",
+      "name": ".s2@a@text||dl@dt@a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".result-game-item-info-tag.0@span.1@text",
+      "bookList": "class.result-item result-game-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": ".result-game-item-desc@text",
+      "kind": ".result-game-item-info-tag-title.2@text",
+      "lastChapter": ".result-game-item-info-tag-item@text",
+      "name": ".result-game-item-title-link@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dl@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search.php?keyword={{key}},{'webView': true}",
+    "weight": 0
+  }
+]
