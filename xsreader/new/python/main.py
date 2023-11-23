@@ -268,7 +268,7 @@ def downloadResource(path, srcUrl):
                 # urllib.request.urlretrieve(srcUrl, path, download_progress_hook)
             except Exception as e:
                 printLog(srcUrl + '  下载出错,重试', 'warn')
-                if index > 5:
+                if index > 2:
                     printLog('已重试达到最大次数，停止！', 'error')
                     break
                 time.sleep(1)
