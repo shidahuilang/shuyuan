@@ -15,7 +15,8 @@
     "repo": "shuyuan",
     "sourceurl": [
         "https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xiangse.xbs",
-        "https://github.com/shidahuilang/shuyuan/raw/main/sourceModelList.xbs"
+        "https://github.com/shidahuilang/shuyuan/raw/main/sourceModelList.xbs",
+        "https://github.com/shidahuilang/shuyuan/tree/main"
     ]
     },
 
@@ -24,11 +25,11 @@
     "repo": "xiangsesource",
     "sourceurl": "https://github.com/haitang-blossoms/xiangsesource/blob/main/haitang-source.xbs"
   },
-  {
-    "user": "My-naevis",
-    "repo": "xiangseguige",
-    "sourceurl": "https://github.com/My-naevis/xiangseguige"
-  },
+  #{
+   # "user": "My-naevis",
+   # "repo": "xiangseguige",
+   # "sourceurl": "https://github.com/My-naevis/xiangseguige"
+  #},
   {
     "user": "Fantuan-cell",
     "repo": "XsRead",
@@ -52,9 +53,9 @@
     "repo": "xiangseguige",
     "sourceurl": "https://github.com/UFOAlastor/xiangseguige/blob/main/%E4%B9%A6%E6%BA%90/Bato.To.xbs"
  },
-  {
-    "user": "jiahanwen95",
-    "repo": "xiangse12-5",
-    "sourceurl": "https://github.com/jiahanwen95/xiangse12-5"
-  }
+  #{
+    #"user": "jiahanwen95",
+    #"repo": "xiangse12-5",
+    #"sourceurl": "https://github.com/jiahanwen95/xiangse12-5"
+  #}
 ]
