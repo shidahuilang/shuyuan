@@ -4,7 +4,7 @@
 
 #### 🚩 更新书源链接:
  ``` bash
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xiangse.800+.xbs
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xiangse.xbs
 
  ```
  ``` bash
