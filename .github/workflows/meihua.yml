@@ -1,8 +1,8 @@
-name: 3.0阅读
+name: 美化
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 10 */3 * *"
+  #schedule:
+    #- cron: "0 10 */3 * *"
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.8
 
@@ -22,7 +22,7 @@ jobs:
           pip install requests bs4
 
       - name: Run Script
-        run: python book.py
+        run: python meihua.py
 
       - name: Commit files
         run: |
@@ -37,4 +37,4 @@ jobs:
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
           -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d "text=3.0阅读书源更新合并完成!分支：${{ github.ref }}"
+          -d "text=书源格式美化完成!分支：${{ github.ref }}"
