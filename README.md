@@ -4,7 +4,8 @@
 
 #### 🚩 更新书源链接:
  ``` bash
-https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/xsreader/new/resources.txt
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xiangse.800+.xbs
+
  ```
  ``` bash
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
