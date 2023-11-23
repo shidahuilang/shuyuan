@@ -237,7 +237,7 @@ def updateDate(readMePath):
     with open(readMePath, 'r', encoding="UTF-8") as f:
         for lineTmp in f.readlines():
             if re.search('自动更新时间', lineTmp):
-                printLog('旧的: \t' + lineTmp, 'pink')
+                print('旧的: \t' + lineTmp)
                 lineTmp = '**自动更新时间** ' + dateNow + '\n'
                 text_list.append(lineTmp)
             else:
