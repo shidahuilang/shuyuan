@@ -1,18 +1,18 @@
 [
   {
     "bookSourceComment": "同站一大堆",
-    "bookSourceGroup": "源仓库,整理检验,自制,网页源",
-    "bookSourceName": "笔趣阁67",
+    "bookSourceGroup": "源仓库,自制,网页源,搜索失效",
+    "bookSourceName": "笔趣阁3",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://m.bqg67.com",
-    "bookUrlPattern": "https?://m.bqg67.com/book/\\d+/",
+    "bookSourceUrl": "https://m.bige3.cc",
+    "bookUrlPattern": "https?://m.bige3.cc/book/\\d+/",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": false,
     "enabledExplore": true,
     "exploreUrl": "玄幻::/xuanhuan/<,{{page}}.html>\n武侠::/wuxia/<,{{page}}.html>\n都市::/dushi/<,{{page}}.html>\n历史::/lishi/<,{{page}}.html>\n网游::/wangyou/<,{{page}}.html>\n科幻::/kehuan/<,{{page}}.html>\n女生::/mm/<,{{page}}.html>\n全本::/finish/<,{{page}}.html>",
     "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
-    "lastUpdateTime": 1700050380703,
+    "lastUpdateTime": 1700718645925,
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "[property$=author]@content",
@@ -27,7 +27,7 @@
     "ruleContent": {
       "content": "#chaptercontent@html",
       "nextContentUrl": "text.下一@href",
-      "replaceRegex": "##\\s*（.*阅读模式.*）\\s*|\\s*请收藏.*com"
+      "replaceRegex": "##\\s*（.*阅读模式.*）\\s*|\\s*请收藏.*(cc|com)\\s*"
     },
     "ruleExplore": {
       "author": "",
