@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuan_data.json
 #### 🚩 其他一些书源
 香色闺阁集成多书源（小说，听说，漫画，电影，电视剧，音乐）已整理
 ```
-https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/main/sourceModelList.xbs
+https://github.com/shidahuilang/shuyuan/raw/main/sourceModelList.xbs
 ```
 ```
 #### 🚩  书香之家书源
