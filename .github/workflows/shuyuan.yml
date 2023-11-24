@@ -11,20 +11,20 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 设置Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
 
-      - name: Install Dependencies
+      - name: 安装依赖项
         run: |
           python -m pip install --upgrade pip
           pip install requests bs4 pytz
 
-      - name: Run Script
+      - name: 运行脚本
         run: python shuyuan.py
 
-      - name: Commit files
+      - name: 提交文件
         run: |
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "${{ secrets.USER_NAME }}"
@@ -34,7 +34,7 @@ jobs:
           git commit -m "Add new JSON files" || echo "No changes to commit"
           git push
           
-      - name: Send Telegram notification
+      - name: Telegram通知
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
           -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
