@@ -3,10 +3,7 @@
 **自动更新时间** 2023-11-23 22:00:29 CST+0800
 
 #### 🚩 更新书源链接:
- ``` bash
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xiangse.xbs
-
- ```
+ 
  ``` bash
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
