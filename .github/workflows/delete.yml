@@ -1,4 +1,4 @@
-name: Delete old workflow runs
+name: Delete workflow
 on:
   workflow_dispatch:
   schedule:
