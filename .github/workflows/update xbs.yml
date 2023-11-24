@@ -1,4 +1,4 @@
-name: update xbs
+name: 香色闺阁
 
 on: 
   schedule:
@@ -23,16 +23,16 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: Install dependencies
+    - name: 安装依赖项
       run: |
         python -m pip install --upgrade pip
         pip install requests pytz
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: do work
+    - name: 运行脚本
       run: |
         cd xsreader/new/python
         python main.py
-    - name: Commit changes
+    - name: 提交文件
       run: |
         git config user.email github-actions
         git config user.name github-actions@github.com
@@ -42,7 +42,7 @@ jobs:
       env:
         REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
         
-    - name: Send Telegram notification
+    - name: Telegram通知
       run: |
         curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
          -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
