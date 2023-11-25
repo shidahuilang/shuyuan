@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "哇叽文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://q.yfwaji.com",
+    "bookUrlPattern": "http://q.yfwaji.com/book/\\d+/",
+    "customOrder": 61,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔幻::http://q.yfwaji.com/sort/1_{{page}}.html\n古代架空::http://q.yfwaji.com/sort/2_{{page}}.html\n现代情缘::http://q.yfwaji.com/sort/3_{{page}}.html\n穿越重生::http://q.yfwaji.com/sort/4_{{page}}.html\n悬疑灵异::http://q.yfwaji.com/sort/5_{{page}}.html\n幻想未来::http://q.yfwaji.com/sort/6_{{page}}.html\n仙侠武侠::http://q.yfwaji.com/sort/7_{{page}}.html\n美文小说::http://q.yfwaji.com/sort/8_{{page}}.html\n最新小说::http://q.yfwaji.com/top/lastupdate_{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1700798826916,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": ".chapter_content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##您现在阅读的是哇叽文学.*|\\s*.*本章未完.*\\s*|【请收藏本站.*】"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".newbook_author@text",
+      "bookList": ".newbook_list",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": ".newbook_intor@text",
+      "kind": "span@text",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "ul.1@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/search.php,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

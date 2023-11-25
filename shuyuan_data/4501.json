@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写1118",
+    "bookSourceName": "图书迷",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tushumi.org/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1700837459201,
+    "respondTime": 5703,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "#content@p@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "#alistbox",
+      "bookUrl": "h2@a@href",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "lastChapter": ".sys@li@a@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list@dl@dd!0:1:2:3:4:5:6:7:8:9:10:11@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search.html,{\n\t\"method\": \"post\",\n\t\"body\": \"searchkey={{key}}&searchtype=all&Submit=\"\n\t}",
+    "weight": 0
+  }
+]
