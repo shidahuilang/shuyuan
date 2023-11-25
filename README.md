@@ -11,7 +11,8 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
 
 #### 🚩 最新阅读3.0书源修复-每隔3天自动更新一次（读不舍手-源阅读通用）二维码可以同时添加
 **自动更新时间** 2023-11-24 12:37:56 CST+0800
-
+<!-- 更新位置开始 -->
+<!-- 更新位置结束 -->
 ![shuyuans.png](img/shuyuans.PNG) ![shuyuan.png](img/shuyuan.PNG
 )
 ```
