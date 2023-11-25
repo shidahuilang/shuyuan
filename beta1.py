@@ -174,11 +174,7 @@ class BookSourceChecker:
         if start_index != -1 and end_index != -1:
             # 构建要插入的内容
             content_to_append = (
-                f"\n\n#### 实际书源数值\n\n"
-                f"- 书源总数：{total_sources}\n"
-                f"- 有效书源数：{len(good_sources)}\n"
-                f"- 无效书源数：{len(error_sources)}\n"
-                f"- 重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}"
+                f"\n阅读源总数: {total_sources} 有效书源数: {len(good_sources)} 无效书源数: {len(error_sources)} 重复书源数: {(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未检测'}\n"
             )
 
             # 更新新内容到 README.md 文件中
@@ -214,10 +210,10 @@ def main():
 
     # 写入环境文件
     with open("env.txt", "w") as f:
-        f.write(f"书源总数：{total_sources}\n")
+        f.write(f"阅读源总数：{total_sources}\n")
         f.write(f"有效书源数：{len(good_sources)}\n")
         f.write(f"无效书源数：{len(error_sources)}\n")
-        f.write(f"重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}\n")
+        f.write(f"重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未检测'}\n")
 
     # 将 env.txt 文件的内容追加到 README.md 文件的指定位置
     with open("env.txt", "r") as f:
@@ -225,7 +221,7 @@ def main():
     books_checker.append_to_readme(env_content, total_sources, good_sources, error_sources)
 
     # 发送Telegram通知
-    message = f"成果报表\n书源总数：{total_sources}\n有效书源数：{len(good_sources)}\n无效书源数：{len(error_sources)}\n重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}\n"
+    message = f"成果报表\n阅读源总数：{total_sources}\n有效书源数：{len(good_sources)}\n无效书源数：{len(error_sources)}\n重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}\n"
 
     # 发送Telegram通知
     books_checker.send_telegram_notification(message)
