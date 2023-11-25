@@ -174,7 +174,9 @@ class BookSourceChecker:
         if start_index != -1 and end_index != -1:
             # 构建要插入的内容
             content_to_append = (
-                f"\n阅读源总数: {total_sources} 有效书源数: {len(good_sources)} 无效书源数: {len(error_sources)} 重复书源数: {(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未检测'}\n"
+                f"\n| 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |\n"
+                f"|------------|------------|------------|--------------|\n"
+                f"| <span style=\"color:green;\">{total_sources}</span> | <span style=\"color:blue;\">{len(good_sources)}</span> | <span style=\"color:red;\">{len(error_sources)}</span> | <span style=\"color:orange;\">{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未检测'}</span> |\n"
             )
 
             # 更新新内容到 README.md 文件中
@@ -189,6 +191,7 @@ class BookSourceChecker:
                 f.write(updated_content)
         else:
             logging.warning("README.md 中没有找到更新位置的标记。请确保在 README.md 文件中包含 <!-- 更新位置开始 --> 和 <!-- 更新位置结束 -->。")
+
 
 def main():
     input_path = 'xiaoyan/shuru'
