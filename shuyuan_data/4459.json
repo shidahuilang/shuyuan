@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceGroup": "自制,女频,源仓库,网页源",
+    "bookSourceName": "一页书小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.yiyeshu.cc",
+    "bookUrlPattern": "https?://www.yiyeshu.cc/go/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部小说::/all<,-{{page}}>.html\n玄幻小说::/xuanhuan<,-{{page}}>.html\n仙侠小说::/xianxia<,-{{page}}>.html\n都市小说::/dushi<,-{{page}}>.html\n军史小说::/junshi<,-{{page}}>.html\n网游小说::/wangyou<,-{{page}}>.html\n科幻小说::/kehuan<,-{{page}}>.html\n灵异小说::/lingyi<,-{{page}}>.html\n言情小说::/yanqing<,-{{page}}>.html\n其他小说::/qita<,-{{page}}>.html\n全本小说::/wanben/{{page}}",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1700309162800,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"p.bookintro@textNodes\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}##章节目录",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": ".readcontent@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author.0@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "快穿",
+      "coverUrl": "a.0@href##((\\d+)\\d{3})##/files/article/image/$2/$1/$1s.jpg###",
+      "intro": ".update@ownText",
+      "kind": "span.0@text",
+      "lastChapter": "a.1@text",
+      "name": "h4@text",
+      "wordCount": ".author.1@text##字数："
+    },
+    "ruleToc": {
+      "chapterList": "#list-chapterAll dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/modules/article/search1.php,{\n  \"body\": \"searchkey={{key}}&action=login\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

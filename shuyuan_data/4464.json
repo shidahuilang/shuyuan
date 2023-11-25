@@ -1,0 +1,73 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写1118",
+    "bookSourceName": "短篇小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.txt818.com",
+    "bookUrlPattern": "",
+    "customOrder": 103,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/sort/{{page}}\n知乎::/sort/1/{{page}}/\n头条::/sort/2/{{page}}/\n最右::/sort/3/{{page}}/\nUC::/sort/4/{{page}}/\n老福::/sort/5/{{page}}/\n黑岩::/sort/6/{{page}}/\n蓝鲸::/sort/7/{{page}}/\n朵米::/sort/8/{{page}}/\n野象::/sort/9/{{page}}/\n看点::/sort/10/{{page}}/\n海星::/sort/11/{{page}}/\n有糖::/sort/12/{{page}}/\n竹节::/sort/13/{{page}}/\n鹿糖::/sort/14/{{page}}/\n冰甜::/sort/15/{{page}}/\n熊猫::/sort/16/{{page}}/\n其他::/sort/20/{{page}}/\n全本::/quanben/sort/{{page}}\n知乎::/quanben/sort/1/{{page}}/\n头条::/quanben/sort/2/{{page}}/\n最右::/quanben/sort/3/{{page}}/\nUC::/quanben/sort/4/{{page}}/\n老福::/quanben/sort/5/{{page}}/\n黑岩::/quanben/sort/6/{{page}}/\n蓝鲸::/quanben/sort/7/{{page}}/\n朵米::/quanben/sort/8/{{page}}/\n野象::/quanben/sort/9/{{page}}/\n看点::/quanben/sort/10/{{page}}/\n海星::/quanben/sort/11/{{page}}/\n有糖::/quanben/sort/12/{{page}}/\n竹节::/quanben/sort/13/{{page}}/\n鹿糖::/quanben/sort/14/{{page}}/\n冰甜::/quanben/sort/15/{{page}}/\n熊猫::/quanben/sort/16/{{page}}/\n其他::/quanben/sort/20/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.3.1212.666 Safari/537.36\"}",
+    "lastUpdateTime": 1697875068337,
+    "loginUrl": "",
+    "respondTime": 7636,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "canReName": "",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "",
+      "wordCount": ".am-text-sm@span.0@text"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@p!0:-1@text",
+      "imageStyle": "",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".book-list-1-author@text##\\ /.*",
+      "bookList": ".book-list-1",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-src",
+      "intro": ".book-list-1-intro@text",
+      "kind": ".book-list-1-tag@span.0@text",
+      "lastChapter": ".book-list-1-tag@span.2@text",
+      "name": "h4@text",
+      "wordCount": ".book-list-1-tag@span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".am-list-news-bd@ul@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "option@value",
+      "updateTime": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}https://www.txt818.com/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "//加载较慢，网站很不稳定，经常宕机很久",
+    "bookSourceGroup": "自写1119",
+    "bookSourceName": "搜猫小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.soumal.com",
+    "bookUrlPattern": "",
+    "customOrder": 353,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": 1700385531281,
+    "respondTime": 67673,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".pt-read-cont@p@textNodes##全本小说网 soumal，最快更新.* ！",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".pt-rank-detail",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "class.compulsory-row fl w100 color5 desc@text",
+      "kind": "a.3@text",
+      "lastChapter": "a.4@text",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.pt-chapter-cont-detail full@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "updateTime": ""
+    },
+    "searchUrl": "/search/result.html?searchkey={{key}}",
+    "weight": 0
+  }
+]

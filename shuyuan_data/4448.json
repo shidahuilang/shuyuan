@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceName": "E小说yyds",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.exs99.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/xuanhuan/{{page}}.html\n武侠::/wuxia/{{page}}.html\n都市::/dushi/{{page}}.html\n历史::/lishi/{{page}}.html\n网游::/wangyou/{{page}}.html\n科幻::/kehuan/{{page}}.html\n女生::/mm/{{page}}.html\n完本::/finish/{{page}}.html",
+    "header": "",
+    "jsLib": "",
+    "lastUpdateTime": 1700126952657,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~ =category|statuslupdate_time]@content",
+      "lastChapter": "[property$=latest chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "{{baseUrl}}##.html$##/"
+    },
+    "ruleContent": {
+      "content": "class.content@id.chaptercontent@html",
+      "title": "h1@text"
+    },
+    "ruleExplore": {
+      "author": "span@text",
+      "bookList": "div.item",
+      "bookUrl": "dt@a@href",
+      "coverUrl": ".image@img@src",
+      "intro": "dd@text",
+      "name": "dt@a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": "class.wrap@class.type_show@class.bookbox",
+      "bookUrl": "class.bookbox@class.bookname@a@href",
+      "coverUrl": ".bookimg@img@src",
+      "intro": ".uptime@text",
+      "name": "class.bookbox@class.bookname@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".listmain@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://www.exs99.com/s?q={{key}},{\n\"webView\": true\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceName": "爱奇文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.iqwx.com",
+    "customOrder": 25,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\"\n}",
+    "lastUpdateTime": 1700100560509,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": ".book_info .pic@img@src",
+      "intro": "#info .bookinfo_intro@html",
+      "kind": "{{@@#info .booktag .blue@text##人气：##🔥}},⌚️{{@@#info .update@ownText##最新章节：（20(23-11-15)\\s.*##$1}}",
+      "lastChapter": ""
+    },
+    "ruleContent": {
+      "content": "#htmlContent@all##爱奇文学\\s+www\\.iqwx\\.com，最快更新.*最新章节！"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".odd.1@text",
+      "bookList": ".grid@tbody@tr!0",
+      "bookUrl": ".odd.0@a@href",
+      "checkKeyWord": "穿越",
+      "kind": ".even.2@text##完成##完结",
+      "lastChapter": "{{@@.even.0@a@text}} · {{@@.odd.2@text}}\n<js>result.replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(\\{（｛【].*[求更谢乐发推票盟补加字Kk\\/].*[\\)\\}）｝】]/g,'').replace(/^(\\d+)、第.+章/,'第$1章').replace(/^(\\d+)、\\d+、/,'第$1章 ').replace(/^(\\d+)、\\d+/,'第$1章').replace(/^(第.+章)\\s?\\d+\\s/,'$1 ').replace(/^(\\d+)(、|. ?)/,'第$1章 ').replace(/^(第.+章)\\s?第.+章/,'$1').replace(/第\\s(.+)\\s章/,'第$1章').replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/(章)([^\\s]+)(\\s·)*/,'$1 $2$3').replace(/第([零一二三四五六七八九十百千]+)章/g,java.toNumChapter(result)).replace(/第0+/,'第').replace(/(第\\d+章)\\s\\d+(.*)/,'$1$2')</js>",
+      "name": ".odd.0@a@text",
+      "wordCount": ".even.1@text##^##字数："
+    },
+    "ruleToc": {
+      "chapterList": ".chapterlist.1@li!0@a",
+      "chapterName": "text",
+      "chapterUrl": "href##^##{{baseUrl}}",
+      "isVolume": ""
+    },
+    "searchUrl": "http://www.iqwx.com/modules/article/search.php?searchkey={{key}}&submit=%CB%D1%CB%F7,{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]

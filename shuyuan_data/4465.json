@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783\n需要代理访问",
+    "bookSourceGroup": "自写1118",
+    "bookSourceName": "一乐阅读[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.kfqwx.com",
+    "customOrder": 102,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1697459462953,
+    "respondTime": 15539,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": ".bookmore@a.2@href",
+      "wordCount": ".booktag@span.1@text"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@p@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "small@text",
+      "bookList": ".book-coverlist",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@style##.*\\(|\\)",
+      "intro": "p@text",
+      "name": "h4@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".col-sm-4@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search.php?searchkey={{key}},{'webView': true}",
+    "weight": 0
+  }
+]

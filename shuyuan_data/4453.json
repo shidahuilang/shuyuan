@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceGroup": "🔰 普通",
+    "bookSourceName": "🔰 狗狗搜书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://book.gouyg.com",
+    "customOrder": 833,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻魔法\",\"url\":\"https://m.gouyg.com/book/001/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"武侠仙侠\",\"url\":\"https://m.gouyg.com/book/002/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"穿越架空\",\"url\":\"https://m.gouyg.com/book/003/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"青春言情\",\"url\":\"https://m.gouyg.com/book/004/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市异能\",\"url\":\"https://m.gouyg.com/book/005/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"星际科幻\",\"url\":\"https://m.gouyg.com/book/006/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"军旅战争\",\"url\":\"https://m.gouyg.com/book/007/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"竞技游戏\",\"url\":\"https://m.gouyg.com/book/008/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖悬疑\",\"url\":\"https://m.gouyg.com/book/009/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"文学名著\",\"url\":\"https://m.gouyg.com/book/0010/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"管理教育\",\"url\":\"https://m.gouyg.com/book/0011/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"休闲美文\",\"url\":\"https://m.gouyg.com/book/0012/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"生活时尚\",\"url\":\"https://m.gouyg.com/book/0013/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"小说合集\",\"url\":\"https://m.gouyg.com/book/000/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"后宫小说\",\"url\":\"https://m.gouyg.com/book/0014/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"下载排行\",\"url\":\"https://m.gouyg.com/pub/hots/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "lastUpdateTime": 1700213398986,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "body > div.container > div:nth-child(3) > div > div > div.panel-body > ul > li:nth-child(3) > a@text||body > div:nth-child(5) > blockquote@text##[\\s\\S]*作者(:|：)|分类(:|：)[\\s\\S]*",
+      "name": "body > div.container > div:nth-child(3) > div > div > div.panel-heading > h3@text||\nbody > div:nth-child(5) > h1@text",
+      "tocUrl": "body > div.container > div:nth-child(3) > div > div > div.panel-body > ul > li:nth-child(6) > p:nth-child(5) > a@href\n@js:\nurl1=result;\nif (url1!==\"\") {\nurl1;\n}else{\nur=java.getString(\"body > div:nth-child(5) > a@href\");\nht=java.ajax(\"https://m.gouyg.com\"+ur);\nurl2=java.getString(\"body > div:nth-child(5) > p:nth-child(10) > a@href\",ht);\nurl2;}"
+    },
+    "ruleContent": {
+      "content": "#body@textNodes",
+      "replaceRegex": "##第(.+?)章"
+    },
+    "ruleExplore": {
+      "bookList": "body > div:nth-child(5) > div.panel.panel-success > ul > li",
+      "bookUrl": "a:nth-child(3)@href",
+      "kind": "body > div:nth-child(5) > div.panel.panel-success > ul > li:nth-child(3) > a:nth-child(2)@text",
+      "name": "a:nth-child(3)@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "div.panel-body > p.field-info.text-error > small > span:nth-child(3) > a@text",
+      "bookList": "body > div.container > div:nth-child(3) > div:nth-child(2) > div",
+      "bookUrl": "div.panel-heading > a@href",
+      "kind": "div.panel-body > p.field-info.text-error > small > span:nth-child(1) > a@text",
+      "name": "div.panel-heading > a > h4@text##\\d+\\. |\\[.*\\]|《|》|全集",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:// 章节目录规则\n// 章节开始\nvar star = baseUrl+\"&page=1\";\nvar start = 1;\nstart = Number(start);\n// 章节末尾|最新章节\nvar end = java.getString(\"#last_link@href\");\nvar ends = end.match(/page=(\\d+)$/);\nif (ends) {\nends = ends[1];\n} else {\njava.toast(\"此书籍无法在线阅读\");\n}\nends = Number(ends);\n// 初始化章节列表\nvar list = [];\n// 判断目录数量\nif (ends - start < 15000) {\n    for (i = 1; start <= ends; i++, start++) {\n        name = `第${i}章`;\n        link = String(star).replace(/&page=\\d+$/, `&page=${start}`);\n        list.push({ text: name, href: link });\n    }\n    list;\n} else {\n    java.toast(\"目录异常，章节列表获取失败！\");\n    list = [{ text: \"正文\", href: star }];\n}\nlist;",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "https://book.gouyg.com/?f=_all&q={{key}}&m=yes",
+    "weight": 0
+  }
+]

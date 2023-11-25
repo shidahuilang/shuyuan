@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "画影锦绣/笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.huayingjx.com",
+    "bookUrlPattern": "http://www.huayingjx.com/book/\\d-/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/sort/1/week/\n武侠仙侠::/sort/2/week/\n都市言情::/sort/3/week/\n历史军事::/sort/4/week/\n科幻灵异::/sort/5/week/\n网游竞技::/sort/6/week/\n女生频道::/sort/7/week/\n完本小说::/wanbenxiaoshuo/week/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1700111699875,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "p.author@text",
+      "bookList": "ul.list-1 li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@data-src",
+      "intro": ".desc@text",
+      "kind": "0",
+      "name": "h3.name@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span.author@text##\\/",
+      "bookList": ".list li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "剑来",
+      "kind": "span.1@text&&i.time@text##\\[|\\]",
+      "name": "p.name@ownText"
+    },
+    "ruleToc": {
+      "chapterList": "#main ul.list li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/ar.php,{\n  \"body\": \"keyWord={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

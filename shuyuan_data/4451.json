@@ -1,0 +1,25 @@
+[
+  {
+    "bookSourceGroup": "5、名著",
+    "bookSourceName": "笔趣阁™",
+    "bookSourceType": "",
+    "bookSourceUrl": "https://www.bequgew.com",
+    "enable": true,
+    "httpUserAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/99.0 Safari/537.36",
+    "ruleBookContent": "id.book_text@textNodes",
+    "ruleChapterList": ":href=\"(/\\d+/\\d+.html)\">([^<]*)",
+    "ruleChapterName": "$2",
+    "ruleChapterUrl": "",
+    "ruleChapterUrlNext": "",
+    "ruleContentUrl": "$1",
+    "ruleSearchAuthor": "$5",
+    "ruleSearchCoverUrl": "https://www.bequgew.com/files/article/image/$1/$1$2/$1$2s.jpg",
+    "ruleSearchLastChapter": "$4",
+    "ruleSearchList": ":odd\"><a[^\\d]*(\\d{1,2})(\\d{1,4})[^>]*>([^<]*)[^_]*[^>]*>([^<]*)[^=]*[^>]*>([^<]*)",
+    "ruleSearchName": "$3",
+    "ruleSearchNoteUrl": "https://www.bequgew.com/$1$2/",
+    "ruleSearchUrl": "/modules/article/search.php?searchkey=searchKey",
+    "serialNumber": 948,
+    "weight": 9
+  }
+]

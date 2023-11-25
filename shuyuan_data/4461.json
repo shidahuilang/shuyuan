@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "/*eval(String(source.bookSourceComment))\n*/\n\t\nvar error=/503 Service Temporarily Unavailable/;\nwhile(error.test(result)){\n cookie.removeCookie(baseUrl);\n\tresult=java.ajax(baseUrl);\n\t}\n\t\tresult;",
+    "bookSourceGroup": "自写1118",
+    "bookSourceName": "笔尖中文xbiquzw[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xbiquzw.com/",
+    "customOrder": 780,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n玄幻小说::/list/1_{{page}}.html\n修真小说::/list/2_{{page}}.html\n都市小说::/list/3_{{page}}.html\n穿越小说::/list/4_{{page}}.html\n网游小说::/list/5_{{page}}.html\n科幻小说::/list/6_{{page}}.html\n排行榜单::/paihangbang_allvisit/{{page}}.html\n全本小说::/wanjiexiaoshuo/{{page}}",
+    "lastUpdateTime": 1697544903620,
+    "respondTime": 21961,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "<js>\neval(String(source.bookSourceComment))\n</js>",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "<js>\neval(String(source.bookSourceComment))\n</js>id.content@textNodes"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "ul!0:1@li||id.main@ul@li&&.item&&.top",
+      "bookUrl": "a@href",
+      "name": "a@text||a.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.odd.1@text",
+      "bookList": "<js>\neval(String(source.bookSourceComment))\n</js>class.grid@tag.tr!0",
+      "bookUrl": "class.odd.0@tag.a@href",
+      "lastChapter": "class.even.0@tag.a@text",
+      "name": "class.odd.0@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\neval(String(source.bookSourceComment))\n</js>id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "http://www.xbiquzw.com/modules/article/search.php?searchkey={{key}}",
+    "weight": 0
+  }
+]
