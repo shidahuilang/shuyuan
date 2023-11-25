@@ -18,8 +18,8 @@ urls = [
 
 # 定义不同网址对应的时间范围，单位为天
 time_ranges = {
-    'https://www.yckceo.com/yuedu/shuyuan/index.html': (1, 3),
-    'https://www.yckceo.com/yuedu/shuyuans/index.html': (1, 4),
+    'https://www.yckceo.com/yuedu/shuyuan/index.html': (1, 5),
+    'https://www.yckceo.com/yuedu/shuyuans/index.html': (1, 5),
 }
 
 def parse_page(url):
@@ -247,14 +247,36 @@ def updateDate(readMePath):
         for text in text_list:
             f2.write(text)
             
-def main():
+def merge_book_json(root_dir=''):
+    shuyuan_data_path = os.path.join(root_dir, 'shuyuan_data.json')
+    shuyuans_data_path = os.path.join(root_dir, 'shuyuans_data.json')
+    book_path = os.path.join(root_dir, 'book.json')
 
+    try:
+        with open(shuyuan_data_path, 'r') as shuyuan_file, open(shuyuans_data_path, 'r') as shuyuans_file:
+            shuyuan_data = json.load(shuyuan_file)
+            shuyuans_data = json.load(shuyuans_file)
+
+            book_data = shuyuan_data + shuyuans_data
+
+            with open(book_path, 'w') as book_file:
+                json.dump(book_data, book_file, indent=2, ensure_ascii=False)
+                print(f"合并的数据保存到 {book_path}")
+
+    except Exception as e:
+        print(f"合并JSON文件时发生错误：{e}")
+
+def main():
     root_dir = os.getcwd()
 
     # 合并 JSON 文件
     merge_json_files(root_dir=root_dir)
+
+    # 合并 shuyuan_data.json 和 shuyuans_data.json 为 book.json
+    merge_book_json(root_dir=root_dir)
+
     readMePath = "README.md"
     updateDate(readMePath)
-    
+
 if __name__ == "__main__":
     main()
