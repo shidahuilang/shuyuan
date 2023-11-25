@@ -9,6 +9,10 @@
 <!-- 更新位置结束 -->
 ![shuyuan.png](img/shuyuan.png)
 ```
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
+```
+- 未效验书源
+```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuans_data.json
 ```
 ```
