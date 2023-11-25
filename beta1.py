@@ -5,7 +5,7 @@ import logging
 from urllib3 import disable_warnings
 from requests import get
 from concurrent.futures import ThreadPoolExecutor
-import subprocess
+
 # 禁用 SSL 警告
 disable_warnings()
 
@@ -157,7 +157,7 @@ class BookSourceChecker:
         if response.status_code != 200:
             logging.warning(f"Telegram notification failed. Status code: {response.status_code}")
 
-    def append_to_readme(self, content):
+    def append_to_readme(self, content, total_sources, good_sources, error_sources):
         readme_path = 'README.md'
 
         # 读取 README.md 文件的内容
@@ -165,19 +165,34 @@ class BookSourceChecker:
             readme_content = f.read()
 
         # 根据需要插入的位置，将内容插入到读取的内容中
-        insertion_point = readme_content.find('<!-- 插入位置 -->')
-        if insertion_point != -1:
-            updated_content = (
-                readme_content[:insertion_point]
-                + content
-                + readme_content[insertion_point:]
-            )
-        else:
-            updated_content = readme_content + content
+        start_marker = '<!-- 更新位置开始 -->'
+        end_marker = '<!-- 更新位置结束 -->'
 
-        # 将新的内容写回到 README.md 文件中
-        with open(readme_path, 'w', encoding='utf-8') as f:
-            f.write(updated_content)
+        start_index = readme_content.find(start_marker)
+        end_index = readme_content.find(end_marker)
+
+        if start_index != -1 and end_index != -1:
+            # 构建要插入的内容
+            content_to_append = (
+                f"\n\n#### 实际书源数值\n\n"
+                f"- 书源总数：{total_sources}\n"
+                f"- 有效书源数：{len(good_sources)}\n"
+                f"- 无效书源数：{len(error_sources)}\n"
+                f"- 重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}"
+            )
+
+            # 更新新内容到 README.md 文件中
+            updated_content = (
+                readme_content[:start_index + len(start_marker)]
+                + content_to_append
+                + readme_content[end_index:]
+            )
+
+            # 将新的内容写回到 README.md 文件中
+            with open(readme_path, 'w', encoding='utf-8') as f:
+                f.write(updated_content)
+        else:
+            logging.warning("README.md 中没有找到更新位置的标记。请确保在 README.md 文件中包含 <!-- 更新位置开始 --> 和 <!-- 更新位置结束 -->。")
 
 def main():
     input_path = 'xiaoyan/shuru'
@@ -207,7 +222,7 @@ def main():
     # 将 env.txt 文件的内容追加到 README.md 文件的指定位置
     with open("env.txt", "r") as f:
         env_content = f.read()
-    books_checker.append_to_readme(env_content)
+    books_checker.append_to_readme(env_content, total_sources, good_sources, error_sources)
 
     # 发送Telegram通知
     message = f"成果报表\n书源总数：{total_sources}\n有效书源数：{len(good_sources)}\n无效书源数：{len(error_sources)}\n重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}\n"
