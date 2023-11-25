@@ -7,7 +7,7 @@
 |------------|------------|------------|--------------|
 | <span style="color:green;">635</span> | <span style="color:blue;">534</span> | <span style="color:red;">101</span> | <span style="color:orange;">0</span> |
 <!-- 更新位置结束 -->
-![shuyuans.png](img/shuyuans.PNG) ![shuyuan.png](img/shuyuan.PNG
+![shuyuan.png](img/shuyuan.PNG
 )
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuans_data.json
