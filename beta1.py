@@ -125,13 +125,11 @@ class BookSourceChecker:
         return [books[i] for i in flag]
 
     def write_output_files(self, good_sources, error_sources):
-        if not os.path.exists(self.output_path):
-            os.makedirs(self.output_path)
-
-        with open(os.path.join(self.output_path, 'good.json'), 'w', encoding='utf-8') as f:
+        # 输出文件直接在根目录
+        with open('good.json', 'w', encoding='utf-8') as f:
             json.dump(good_sources, f, ensure_ascii=False, indent=4, sort_keys=False)
 
-        with open(os.path.join(self.output_path, 'error.json'), 'w', encoding='utf-8') as f:
+        with open('error.json', 'w', encoding='utf-8') as f:
             json.dump(error_sources, f, ensure_ascii=False, indent=4, sort_keys=False)
 
     def print_validation_summary(self, total_sources, good_sources, error_sources):
@@ -194,8 +192,9 @@ class BookSourceChecker:
 
 
 def main():
-    input_path = 'xiaoyan/shuru'
-    output_path = 'xiaoyan/shuchu'
+    # 修改为根目录下的 book.json 文件夹
+    input_path = 'book.json'
+    output_path = ''  # 输出文件直接在根目录
 
     books_checker = BookSourceChecker(input_path, output_path)
     results = books_checker.check_books()
