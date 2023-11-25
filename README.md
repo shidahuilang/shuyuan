@@ -9,15 +9,13 @@
 <!-- 更新位置结束 -->
 ![shuyuan.png](img/shuyuan.png)
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
 - 未效验书源
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuans_data.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
 ```
-```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuan_data.json
-```
+
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2023-11-25 18:58:52 CST+0800
