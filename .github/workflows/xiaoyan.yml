@@ -37,7 +37,6 @@ jobs:
         run: |
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "${{ secrets.USER_NAME }}"
-          echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
           git add .
           git commit -m "Add new JSON files" || echo "No changes to commit"
           git push
