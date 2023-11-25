@@ -5,7 +5,7 @@ import logging
 from urllib3 import disable_warnings
 from requests import get
 from concurrent.futures import ThreadPoolExecutor
-
+import subprocess
 # 禁用 SSL 警告
 disable_warnings()
 
@@ -16,6 +16,10 @@ class BookSourceChecker:
         self.type = self.recog_type(self.input_path)
         self.telegram_bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
         self.telegram_chat_id = os.getenv('TELEGRAM_CHAT_ID')
+
+        # 输出 Telegram Bot Token 和 Chat ID 信息
+        logging.info(f"TELEGRAM_BOT_TOKEN: {self.telegram_bot_token}")
+        logging.info(f"TELEGRAM_CHAT_ID: {self.telegram_chat_id}")
 
     def recog_type(self, path: str):
         if path.startswith('http'):
@@ -145,9 +149,35 @@ class BookSourceChecker:
             'text': message
         }
 
+        logging.info(f"Sending Telegram notification. Message: {message}")
+
         response = get(url, params=data)
+        logging.info(f"Telegram notification response: {response.text}")
+
         if response.status_code != 200:
             logging.warning(f"Telegram notification failed. Status code: {response.status_code}")
+
+    def append_to_readme(self, content):
+        readme_path = 'README.md'
+
+        # 读取 README.md 文件的内容
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            readme_content = f.read()
+
+        # 根据需要插入的位置，将内容插入到读取的内容中
+        insertion_point = readme_content.find('<!-- 插入位置 -->')
+        if insertion_point != -1:
+            updated_content = (
+                readme_content[:insertion_point]
+                + content
+                + readme_content[insertion_point:]
+            )
+        else:
+            updated_content = readme_content + content
+
+        # 将新的内容写回到 README.md 文件中
+        with open(readme_path, 'w', encoding='utf-8') as f:
+            f.write(updated_content)
 
 def main():
     input_path = 'xiaoyan/shuru'
@@ -167,8 +197,22 @@ def main():
     # 打印检验总结
     books_checker.print_validation_summary(total_sources, len(good_sources), len(error_sources))
 
+    # 写入环境文件
+    with open("env.txt", "w") as f:
+        f.write(f"书源总数：{total_sources}\n")
+        f.write(f"有效书源数：{len(good_sources)}\n")
+        f.write(f"无效书源数：{len(error_sources)}\n")
+        f.write(f"重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}\n")
+
+    # 将 env.txt 文件的内容追加到 README.md 文件的指定位置
+    with open("env.txt", "r") as f:
+        env_content = f.read()
+    books_checker.append_to_readme(env_content)
+
     # 发送Telegram通知
     message = f"成果报表\n书源总数：{total_sources}\n有效书源数：{len(good_sources)}\n无效书源数：{len(error_sources)}\n重复书源数：{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}\n"
+
+    # 发送Telegram通知
     books_checker.send_telegram_notification(message)
 
 if __name__ == "__main__":
