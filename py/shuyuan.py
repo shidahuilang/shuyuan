@@ -41,23 +41,34 @@ def parse_page(url):
             if match:
                 value, unit = match.group(1, 2)
                 if unit == '分钟前':
-                    # For minutes, consider them as 1 day
                     days_ago = 1
                 elif unit == '小时前':
-                    # For hours, consider them as 1 day
                     days_ago = 1
                 else:
                     days_ago = int(value)
 
                 link_date = today - timedelta(days=days_ago)
-
-                # Check if the link is within the specified time range for the current URL
                 time_range = time_ranges.get(url, (0, float('inf')))
                 if time_range[0] <= days_ago <= time_range[1]:
                     json_url = f'https://www.yckceo.com{href.replace("content", "json")}'
                     relevant_links.append((json_url, link_date))
+            else:
+                # Try to parse the date in the format MM/DD HH:MM
+                try:
+                    date_format = "%m/%d %H:%M"
+                    link_date = datetime.strptime(link_date_str, date_format)
+                    link_date = link_date.replace(year=today.year)  # Assume the year is the same as today's year
+
+                    # Check if the link is within the specified time range for the current URL
+                    time_range = time_ranges.get(url, (0, float('inf')))
+                    if today - link_date.date() <= timedelta(days=time_range[1]):
+                        json_url = f'https://www.yckceo.com{href.replace("content", "json")}'
+                        relevant_links.append((json_url, link_date.date()))
+                except ValueError as e:
+                    print(f"Error parsing date for {url}: {e}")
 
     return relevant_links
+
 
 def get_redirected_url(url):
     session = requests.Session()
