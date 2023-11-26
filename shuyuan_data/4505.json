@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "就爱言情",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.92yanqing.com",
+    "bookUrlPattern": "https?://m.92yanqing.com/read/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部分类::/list/{{page}}.html\n玄幻魔法::/list/1-{{page}}.html\n武侠修真::/list/2-{{page}}.html\n都市言情::/list/3-{{page}}.html\n历史军事::/list/4-{{page}}.html\n科幻灵异::/list/6-{{page}}.html\n游戏竞技::/list/5-{{page}}.html\n女生耽美::/list/7-{{page}}.html\n其他类型::/list/8-{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1700973762587,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent>p@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "p.author@text##（.*）",
+      "bookList": ".hot_sale",
+      "bookUrl": "a@href",
+      "coverUrl": "a@href##\\D*((\\d+)\\d{3})\\D*$##https://img.92txt.cc/image/$2/$1/$1s.jpg###",
+      "intro": "p.review@text##简介： ",
+      "kind": "p.author@text##.*（|）",
+      "name": "p.title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author.0@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "kind": ".author.1@text##类型：",
+      "lastChapter": "a.-1@text",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".directoryArea.1@p a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search/,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
