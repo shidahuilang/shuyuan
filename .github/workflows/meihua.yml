@@ -21,7 +21,7 @@ jobs:
           pip install requests bs4
 
       - name: 运行脚本
-        run: python meihua.py
+        run: python py/meihua.py
 
       - name: 提交文件
         run: |
