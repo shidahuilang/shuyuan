@@ -37,7 +37,7 @@ jobs:
         git config user.email github-actions
         git config user.name github-actions@github.com
         git add .
-        git commit -m "auto update|自动更新" -a
+        git commit -m "香色闺阁|自动更新" -a
         git push
       env:
         REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
