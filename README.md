@@ -8,10 +8,11 @@
 | <span style="color:green;">2897</span> | <span style="color:blue;">2213</span> | <span style="color:red;">684</span> | <span style="color:orange;">0</span> |
 <!-- 更新位置结束 -->
 ![shuyuan.png](img/shuyuan.png)
+- 效验书源链接
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
-- 未效验书源
+- 未效验书源链接
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
 ```
