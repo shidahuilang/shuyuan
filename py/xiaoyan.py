@@ -174,7 +174,7 @@ class BookSourceChecker:
             content_to_append = (
                 f"\n| 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |\n"
                 f"|------------|------------|------------|--------------|\n"
-                f"| <span style=\"color:green;\">{total_sources}</span> | <span style=\"color:blue;\">{len(good_sources)}</span> | <span style=\"color:red;\">{len(error_sources)}</span> | <span style=\"color:orange;\">{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未检测'}</span> |\n"
+                f"| <span style=\"color:green;\">{total_sources}</span> | <span style=\"color:blue;\">{len(good_sources)}</span> | <span style=\"color:red;\">{len(error_sources)}</span> | <span style=\"color:orange;\">{(total_sources - len(good_sources) - len(error_sources)) if len(error_sources) > 0 else '未选择去重'}</span> |\n"
             )
 
             # 更新新内容到 README.md 文件中
