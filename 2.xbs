@@ -1,0 +1,20 @@
+[
+  {
+    "chapterContent": {
+      "parserID": "DOM",
+      "actionID": "chapterContent",
+      "validConfig": "",
+      "responseFormatType": "html",
+      "content": "//div[@class='content']"
+    },
+    "chapterList": {
+      "parserID": "DOM",
+      "actionID": "chapterList",
+      "validConfig": "",
+      "requestInfo": "https://novel-source.com/chapterlist?bookId=%@bookId",
+      "list": "//ul[@class='chapter-list']/li",
+      "title": "//a",
+      "url": "//a/@href"
+    }
+  }
+]
