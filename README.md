@@ -26,5 +26,8 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
  ``` bash
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
-
+#### 🚩 爱阅书香书源
+ ``` bash
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/aiyueshuxiang.ibs
+ ```
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
