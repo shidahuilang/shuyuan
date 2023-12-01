@@ -4,15 +4,15 @@
         "enableJs": true,
         "enabled": true,
         "loadWithBaseUrl": true,
-        "ruleArticles": "$.list[*]",
-        "ruleContent": "<js>result</js>",
-        "ruleImage": "$.pic",
-        "ruleLink": "$.url",
-        "rulePubDate": "$.time",
-        "ruleTitle": "$.title",
-        "sourceGroup": "VIP",
-        "sourceIcon": "https://gitee.com/alanskycn/yuedu/raw/master/JS/icon.jpg",
-        "sourceName": "dingyue",
+        "ruleArticles": ".article",
+        "ruleContent": ".content",
+        "ruleImage": ".image",
+        "ruleLink": "a.link",
+        "rulePubDate": ".date",
+        "ruleTitle": ".title",
+        "sourceGroup": "Custom", 
+        "sourceIcon": "https://gitee.com/alanskycn/yuedu/raw/master/JS/icon.jpg", 
+        "sourceName": "dingyue",  // 订阅源的名称
         "sourceUrl": "https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json"
     }
 ]
