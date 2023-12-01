@@ -1,20 +1,18 @@
-name: Dingyue Subscription Rule
-url: https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
-customOrder: -9999
-enableJs: true
-enabled: true
-loadWithBaseUrl: true
-
-extract:
-  articles: $.list[*]
-  content: <js>result</js>
-  image: $.pic
-  link: $.url
-  pubDate: $.time
-  title: $.title
-
-source:
-  group: VIP
-  icon: https://gitee.com/alanskycn/yuedu/raw/master/JS/icon.jpg
-  name: dingyue
- 
+[
+    {
+        "customOrder": -9999,
+        "enableJs": true,
+        "enabled": true,
+        "loadWithBaseUrl": true,
+        "ruleArticles": "$.list[*]",
+        "ruleContent": "<js>result</js>",
+        "ruleImage": "$.pic",
+        "ruleLink": "$.url",
+        "rulePubDate": "$.time",
+        "ruleTitle": "$.title",
+        "sourceGroup": "VIP",
+        "sourceIcon": "https://gitee.com/alanskycn/yuedu/raw/master/JS/icon.jpg",
+        "sourceName": "dingyue",
+        "sourceUrl": "https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json"
+    }
+]
