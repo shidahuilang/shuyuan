@@ -10,11 +10,11 @@
 ![shuyuan.png](img/shuyuan.png)
 - 效验书源链接
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
 - 未效验书源链接
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
 ```
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
