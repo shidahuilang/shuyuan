@@ -28,6 +28,6 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/aiyueshuxiang.ibs
+https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/aiyueshuxiang.ibs
  ```
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
