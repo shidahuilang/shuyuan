@@ -1,0 +1,43 @@
+name: 书源
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 10 */3 * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+         python-version: "3.10"
+
+      - name: 安装依赖项
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests bs4 pytz
+
+      - name: 运行脚本
+        run: python py/shuyuan.py && python py/xiaoyan.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: 提交文件
+        run: |
+          git config --local user.email "${{ secrets.USER_EMAIL }}"
+          git config --local user.name "${{ secrets.USER_NAME }}"
+          #echo "https://github.com/${{ github.repository }}:${{ secrets.REPO_TOKEN }}" > .git-credentials
+          git add .
+          git commit -m "书源|自动更新" -a
+          git commit -m "Add new JSON files" || echo "No changes to commit"
+          git push
+          
+      - name: Telegram通知
+        run: |
+          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+          -d "text=3.0阅读书源更新合并完成!分支：${{ github.ref }}"
