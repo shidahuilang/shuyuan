@@ -44,10 +44,12 @@ def get_channel_type_header(channel_name):
         return '央视频道'
     elif '卫视' in channel_name:
         return '卫视频道'
+    elif '香港' in channel_name or '澳门' in channel_name or '凤凰' in channel_name:
+        return '港澳频道'
     else:
-        return ''  # 如果频道类型不匹配，返回空字符串
+        return ''
 
-# 指定输出文件名
+
 output_file_path = 'iptv.txt'
 
 extract_tv_links_from_url('https://raw.githubusercontent.com/qist/tvbox/master/tvlive.txt', output_file_path)
