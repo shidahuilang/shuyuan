@@ -30,4 +30,10 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
  ``` bash
 https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/aiyueshuxiang.ibs
  ```
+
+#### 🚩 IPTV源
+筛选后
+ ```
+https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
+ ```
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
