@@ -15,9 +15,15 @@ def extract_tv_links_from_url(url, output_file_path):
             pattern = re.compile(r'([^,]+(?:CCTV|卫视|香港|澳门|台湾|凤凰)[^\n,]*[^,]*),(https://[^\s]+)')
             matches = re.findall(pattern, text)
 
+            channel_types_written = set()
             if matches:
                 for tv_channel, link in matches:
-                    output_file.write(f'{tv_channel},{link} ')
+                    if not should_exclude_channel(tv_channel):
+                        header = get_channel_type_header(tv_channel)
+                        if header and header not in channel_types_written:
+                            output_file.write(f'{header},#genre#\n')
+                            channel_types_written.add(header)
+                        output_file.write(f'{tv_channel},{link}\n')
                 print(f'Successfully extracted and saved TV links.')
             else:
                 print('No TV links found.')
@@ -25,7 +31,32 @@ def extract_tv_links_from_url(url, output_file_path):
     except Exception as e:
         print(f'Error: {e}')
 
+def should_exclude_channel(channel_name):
+    # 判断是否要排除特定类型的频道，可以根据需要进行修改
+    excluded_keywords = ['台湾女歌手龙飘飘珍藏版HD', '湖南-凤凰古城', '香港佛陀']
+    for keyword in excluded_keywords:
+        if keyword in channel_name:
+            return True
+    return False
 
-output_file_path = 'tvlive.txt'
+def get_channel_type_header(channel_name):
+    if 'CCTV' in channel_name:
+        return '央视频道'
+    elif '卫视' in channel_name:
+        return '卫视频道'
+    else:
+        return ''  # 如果频道类型不匹配，返回空字符串
+
+# 指定输出文件名
+output_file_path = 'iptv.txt'
 
 extract_tv_links_from_url('https://raw.githubusercontent.com/qist/tvbox/master/tvlive.txt', output_file_path)
+
+with open(output_file_path, 'r', encoding='utf-8') as file:
+    content = file.read()
+
+content = re.sub(r'#genre#(\s+#genre#)+', '#genre#', content)
+content = re.sub(r'\n\s*\n', '\n', content)
+
+with open(output_file_path, 'w', encoding='utf-8') as file:
+    file.write(content)
