@@ -1,12 +1,16 @@
-name: 美化
+name: ipa
 on:
   workflow_dispatch:
-  #schedule:
-    #- cron: "0 10 */3 * *"
+  schedule:
+    - cron: "0 */20 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      USER_EMAIL: "you@example.com"
+      USER_NAME: "Your Name"
 
     steps:
       - uses: actions/checkout@v3
@@ -18,22 +22,25 @@ jobs:
       - name: 安装依赖项
         run: |
           python -m pip install --upgrade pip
-          pip install requests bs4
+          pip install requests
 
       - name: 运行脚本
-        run: python py/meihua.py
+        run: python ipa.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
-      - name: 提交文件
+      - name: Set up Git identity
         run: |
-          git config --local user.email "${{ secrets.USER_EMAIL }}"
-          git config --local user.name "${{ secrets.USER_NAME }}"
-          git add .
-          git commit -m "json格式美化|Unicode自动转换" -a
-          git commit -m "Add new JSON files" || echo "No changes to commit"
-          git push
-          
+          git config --local user.email "${{ env.USER_EMAIL }}"
+          git config --local user.name "${{ env.USER_NAME }}"
+
+      - name: 检查是否有文件变更
+        run: |
+          git diff --quiet || git add . && git commit -m "ipa应用合并" && git push
+
       - name: Telegram通知
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
           -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d "text=书源格式美化完成!分支：${{ github.ref }}"
+          -d "text=ipa应用合并更新合并完成!分支：${{ github.ref }}"
