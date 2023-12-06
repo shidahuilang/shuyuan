@@ -1,0 +1,66 @@
+{
+  "customOrder": 0,
+  "enableJs": true,
+  "enabled": true,
+  "loadWithBaseUrl": true,
+  "ruleArticles": "$.list[*]",
+  "ruleContent": "<js>result</js>",
+  "ruleImage": "$.pic",
+  "ruleLink": "$.url",
+  "rulePubDate": "$.time",
+  "ruleTitle": "$.title",
+  "sourceGroup": "VIP",
+  "sourceIcon": "https://gitee.com/alanskycn/yuedu/raw/master/JS/icon.jpg",
+  "sourceName": "阅读3.0",
+  "sourceUrl": "https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/shuyuan_data/4512.json",
+  "header": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  },
+  "lastUpdateTime": 0,
+  "respondTime": 180000,
+  "ruleBookInfo": {
+    "author": "$.author",
+    "coverUrl": "$.pic",
+    "init": "$.data.bookInfo",
+    "intro": "$.desc##\\\\r\\\\n##<br>",
+    "kind": "{{$.category.name}}\n{{java.timeFormat(java.getString('$.lastestChapter.createDate'))}}",
+    "lastChapter": "$.lastestChapter.title",
+    "name": "$.title@put:{bid:$.bookId}",
+    "tocUrl": "http://iyc.ifeng.com/fhxw/bookshelf/directory,{\"body\":\"bookId={{$.bookId}}&chapterNum=0&isNext=1&getNum=10000\",\"method\":\"POST\"}",
+    "wordCount": "$.category.books_count"
+  },
+  "ruleContent": {
+    "content": "$.data.txt"
+  },
+  "ruleExplore": {
+    "author": ".book-detail@h4@text##作者 ",
+    "bookList": ".booklist@li||.bookList@ul@li",
+    "bookUrl": "a.0@href##.*book\\\/(\\d+).*##http:\/\/iyc.ifeng.com\/api\/books\/$1##",
+    "coverUrl": ".book-cover@img@src",
+    "intro": ".book-detail@h5@text",
+    "kind": "",
+    "lastChapter": "",
+    "name": ".book-detail@h3@text||strong@text"
+  },
+  "ruleReview": {},
+  "ruleSearch": {
+    "author": ".book_title@em@text",
+    "bookList": ".ser_book&&.ser_book_grey",
+    "bookUrl": "a.0@href##.*book\\\/(\\d+).*##http:\/\/iyc.ifeng.com\/api\/books\/$1##",
+    "coverUrl": ".bookCover@img@src",
+    "intro": ".bookIntro@text",
+    "kind": ".book_detail@em@text",
+    "lastChapter": ".lastUpdate@a@text",
+    "name": ".book_title@h3@text",
+    "wordCount": ".book_detail@span.-1@text"
+  },
+  "ruleToc": {
+    "chapterList": "$.data.chapterList",
+    "chapterName": "chapterName",
+    "chapterUrl": "http:\/\/iyc.ifeng.com\/api\/books\/@get:{bid}\/chapters\/{{$.chapterNum}}\/content",
+    "formatJs": "",
+    "isVip": "isVipChapte"
+  },
+  "searchUrl": "\/book\/search\/,{\"method\":\"post\",\"body\":\"query={{key}}\"}",
+  "weight": 0
+}
