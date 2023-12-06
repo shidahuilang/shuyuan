@@ -1,16 +1,71 @@
 {
-    "customOrder": 0,
-    "enableJs": true,
-    "enabled": true,
-    "loadWithBaseUrl": true,
-    "ruleArticles": "$.list[*]",
-    "ruleContent": "<js>result</js>",
-    "ruleImage": "$.pic",
-    "ruleLink": "$.url",
-    "rulePubDate": "$.time",
-    "ruleTitle": "$.title",
-    "sourceGroup": "VIP",
-    "sourceIcon": "https://gitee.com/alanskycn/yuedu/raw/master/JS/icon.jpg",
-    "sourceName": "阅读3.0",
-    "sourceUrl": "https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json"
+  "customOrder": 0,
+  "enableJs": true,
+  "enabled": true,
+  "loadWithBaseUrl": true,
+  "ruleArticles": "$.articles[*]",
+  "ruleContent": "$.content",
+  "ruleImage": "$.image",
+  "ruleLink": "$.url",
+  "rulePubDate": "$.pubDate",
+  "ruleTitle": "$.title",
+  "sourceGroup": "MySubscriptions",
+  "sourceIcon": "https://example.com/icon.jpg",
+  "sourceName": "CustomSubscription",
+  "sourceUrl": "https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json",
+  "header": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  },
+  "lastUpdateTime": 0,
+  "respondTime": 180000,
+  "ruleBookInfo": {
+    "author": "$.author",
+    "coverUrl": "$.cover",
+    "init": "$.bookInfo",
+    "intro": "$.description",
+    "kind": "$.genre",
+    "lastChapter": "$.lastChapter.title",
+    "name": "$.bookName@put:{bid:$.bookId}",
+    "tocUrl": "$.tocUrl",
+    "wordCount": "$.wordCount"
+  },
+  "ruleContent": {
+    "content": "$.content"
+  },
+  "ruleExplore": {
+    "author": ".book-author@text",
+    "bookList": ".book-list@li",
+    "bookUrl": "a@href",
+    "coverUrl": "img@src",
+    "intro": ".book-intro@text",
+    "kind": ".book-genre@text",
+    "lastChapter": ".book-last-chapter@text",
+    "name": ".book-title@text"
+  },
+  "ruleReview": {
+    "reviewList": ".review-list@li",
+    "reviewAuthor": ".review-author@text",
+    "reviewContent": ".review-content@text",
+    "reviewPubDate": ".review-pub-date@text"
+  },
+  "ruleSearch": {
+    "author": ".search-result-author@text",
+    "bookList": ".search-result-item",
+    "bookUrl": "a@href",
+    "coverUrl": "img@src",
+    "intro": ".search-result-intro@text",
+    "kind": ".search-result-genre@text",
+    "lastChapter": ".search-result-last-chapter@text",
+    "name": ".search-result-title@text",
+    "wordCount": ".search-result-word-count@text"
+  },
+  "ruleToc": {
+    "chapterList": "$.chapters[*]",
+    "chapterName": "$.title",
+    "chapterUrl": "$.url",
+    "formatJs": "",
+    "isVip": "$.isVip"
+  },
+  "searchUrl": "/search?query={key}",
+  "weight": 0
 }
