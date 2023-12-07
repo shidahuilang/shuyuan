@@ -16,7 +16,10 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 ```
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
 ```
-
+- TTS-19种语音包
+```
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
+```
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2023-12-07 18:15:45 CST+0800
