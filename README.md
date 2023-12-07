@@ -23,8 +23,6 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2023-12-07 18:15:45 CST+0800
-
-#### 🚩 更新书源链接:
  
  ``` bash
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
