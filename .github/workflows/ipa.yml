@@ -31,7 +31,7 @@ jobs:
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "${{ secrets.USER_NAME }}"
           git add .
-          git commit -m "ipa应用合并" -a || true
+          git commit -m "ipa应用商店合并" -a || true
           git commit -m "Add new JSON files" || echo "No changes to commit"
           git push
           
@@ -39,4 +39,4 @@ jobs:
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
           -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d "text=ipa应用更新合并完成!分支：${{ github.ref }}"
+          -d "text=ipa应用商店更新合并完成!分支：${{ github.ref }}"
