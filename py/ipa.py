@@ -16,27 +16,29 @@ def merge_libraries(library1, library2):
     return merged_library
 
 def main():
+    # 更改本地路径
+    new_test_path = 'ipa/test.json'
+    new_local_path = 'ipa/apps.json'
     remote_url = 'https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/apps.json'
-    local_path = 'apps.json'
     
     # Download remote file
-    download_remote_file(remote_url, local_path)
+    download_remote_file(remote_url, new_local_path)
 
     # Continue with your existing merge logic
     try:
-        with open('test.json', 'r', encoding='utf-8') as test_file:
+        with open(new_test_path, 'r', encoding='utf-8') as test_file:
             test_content = json.load(test_file)
             if 'apps' not in test_content:
                 test_content['apps'] = []
     except (json.JSONDecodeError, FileNotFoundError) as e:
-        print(f"Error loading test.json: {e}")
+        print(f"Error loading {new_test_path}: {e}")
         test_content = {'apps': []}
 
     try:
-        with open(local_path, 'r', encoding='utf-8') as file2:
+        with open(new_local_path, 'r', encoding='utf-8') as file2:
             library2 = json.load(file2)
     except (json.JSONDecodeError, FileNotFoundError) as e:
-        print(f"Error loading {local_path}: {e}")
+        print(f"Error loading {new_local_path}: {e}")
         library2 = {'apps': []}
 
     merged_library = merge_libraries(test_content, library2)
