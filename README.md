@@ -39,6 +39,6 @@ https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
 #### 🚩 ESign/AltStore/SideStore 巨魔商店应用
 导入链接
 ```
-https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/lang.json
+https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/ipa.json
 ```
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
