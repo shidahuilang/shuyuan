@@ -43,7 +43,7 @@ def main():
 
     merged_library = merge_libraries(test_content, library2)
 
-    with open('lang.json', 'w', encoding='utf-8') as merged_file:
+    with open('ipa.json', 'w', encoding='utf-8') as merged_file:
         json.dump(merged_library, merged_file, ensure_ascii=False, indent=4)
 
     print('Merged library successfully.')
