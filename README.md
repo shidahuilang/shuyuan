@@ -7,7 +7,7 @@
 |------------|------------|------------|--------------|
 | <span style="color:green;">8827</span> | <span style="color:blue;">5921</span> | <span style="color:red;">2906</span> | <span style="color:orange;">2271</span> |
 <!-- 更新位置结束 -->
-![shuyuan.png](img/shuyuan.png)
+![shuyuan.png](icons/shuyuan.png)
 - 效验书源链接
 ```
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
