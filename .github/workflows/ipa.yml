@@ -21,7 +21,7 @@ jobs:
           pip install requests
 
       - name: 运行脚本
-        run: python ipa.py
+        run: python ipa/ipa.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
