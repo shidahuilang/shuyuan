@@ -4,6 +4,28 @@
     "sourceURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/apps.json",
     "apps": [
         {
+            "name": "DuolingoPremium",
+            "bundleIdentifier": "com.duolingo.DuolingoMobile",
+            "version": "7.2.0",
+            "versionDate": "2023-12-07",
+            "size": 130365521,
+            "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-07-2023/DuolingoPremium-7.2.0.ipa",
+            "developerName": "",
+            "localizedDescription": "",
+            "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.duolingo.DuolingoMobile.png"
+        },
+        {
+            "name": "Mangayomi",
+            "bundleIdentifier": "com.kodjodevf.mangayomi",
+            "version": "0.1.25",
+            "versionDate": "2023-12-07",
+            "size": 93304657,
+            "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-07-2023/Mangayomi-0.1.25.ipa",
+            "developerName": "",
+            "localizedDescription": "",
+            "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.kodjodevf.mangayomi.png"
+        },
+        {
             "name": "FacebookWolf",
             "bundleIdentifier": "com.facebook.Facebook",
             "version": "443.0.2",
