@@ -1,3 +1,4 @@
+https://github.com/shidahuilang/shuyuan/blob/main/xiangse/xs%E5%90%88%E9%9B%86.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/%E6%BC%AB%E7%94%BB%E6%BA%90/686%E6%BC%AB%E7%94%BB.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/%E6%BC%AB%E7%94%BB%E6%BA%90/cc%E6%BC%AB%E7%94%BB.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/%E6%BC%AB%E7%94%BB%E6%BA%90/%E4%BD%8E%E8%B0%83%E6%BC%AB%E7%94%BB.xbs
