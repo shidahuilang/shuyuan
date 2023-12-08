@@ -27,7 +27,7 @@ https://github.com/shidahuilang/shuyuan/blob/main/%E4%B9%A6%E6%BA%90/%E8%A8%80%E
 https://github.com/shidahuilang/shuyuan/blob/main/%E4%B9%A6%E6%BA%90/%E8%B5%B7%E8%88%9E%E4%B8%AD%E6%96%87.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/%E4%B9%A6%E6%BA%90/%E9%98%85%E5%8F%8B%E5%B0%8F%E8%AF%B4.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/%E4%B9%A6%E6%BA%90/%E9%A3%8E%E7%AD%9D%E5%B0%8F%E8%AF%B4.xbs
-https://github.com/shidahuilang/shuyuan/blob/shuyuan/xiangse.xbs
+https://github.com/shidahuilang/shuyuan/blob/main/xiangse/xiangse.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/xiangse/%E9%AC%BC%E4%B9%A6%E9%9B%86%E9%98%85%E8%AF%BB.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/xiangse/%E9%A3%8E%E7%AD%9D%E5%B0%8F%E8%AF%B4%EF%BC%88%E8%BD%BB%E5%B0%8F%E8%AF%B4%EF%BC%89.xbs
 https://github.com/shidahuilang/shuyuan/blob/main/xiangse/%E9%A1%B6%E7%82%B9%E5%B0%8F%E8%AF%B4.xbs
