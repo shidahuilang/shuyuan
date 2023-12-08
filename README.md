@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/reso
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/aiyueshuxiang.ibs
+http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
  ```
 
 #### 🚩 IPTV源
