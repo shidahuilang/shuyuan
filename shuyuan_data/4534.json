@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "笔趣阁photoskycn",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.photoskycn.com",
+    "bookUrlPattern": "http://www.photoskycn.com/bqg/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n排行::/hot/\n完本::/wanbenxiaoshuo/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1702003427207,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "canReName": "1",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": ".home-card-con a||ul.txt-list li",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-src",
+      "kind": "tag.i.-1@text",
+      "name": "h3@text||span@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "text##.*\\/",
+      "bookList": ".home-card a",
+      "bookUrl": "href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "@js:\"https://www.jsqsjn.com/img/nopic.gif\"",
+      "kind": "text##\\[|\\].*",
+      "name": "text##.*\\]|\\/.*"
+    },
+    "ruleToc": {
+      "chapterList": "#main ul li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/ar.php,{\n  \"body\": \"keyWord={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

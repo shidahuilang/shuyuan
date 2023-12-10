@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceGroup": "自己",
+    "bookSourceName": "笔趣阁fd80",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.fd80.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1701791089095,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".infotype p:nth-of-type(1) a@text",
+      "coverUrl": "img@src",
+      "intro": ".intro p@text",
+      "kind": ".infotype p:nth-of-type(2)@text##类型：",
+      "lastChapter": ".infotype p:nth-of-type(4)@text##最新章节：",
+      "name": ".cataloginfo h3@text",
+      "tocUrl": ".gochapter a@href"
+    },
+    "ruleContent": {
+      "content": "div.articlecontent@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "p.author a@text",
+      "bookList": "div.branch_menu div.article",
+      "bookUrl": "h6 a@href",
+      "coverUrl": "img@src",
+      "intro": "p.simple@text",
+      "name": "h6 a@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.chapters li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href",
+      "preUpdateJs": "div.main"
+    },
+    "searchUrl": "http://www.fd80.com/search,{\"method\":\"post\",\"body\":\"searchkey={{key}}\",\"webView\": true}",
+    "weight": 0
+  }
+]

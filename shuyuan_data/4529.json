@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "搜索间隔30s",
+    "bookSourceGroup": "-自制,第1组,⭐️小说",
+    "bookSourceName": "耽美网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.dmxso.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻奇幻\",\"url\":\"/class/1/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"武侠修真\",\"url\":\"/class/2/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/class/3/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史军事\",\"url\":\"/class/4/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻异能\",\"url\":\"/class/5/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"游戏竞技\",\"url\":\"/class/6/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"灵异悬疑\",\"url\":\"/class/7/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"女生耽美\",\"url\":\"/class/8/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"轻小说\",\"url\":\"/class/9/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他类型\",\"url\":\"/class/10/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"全本\",\"url\":\"/class/quanben/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"书库\",\"url\":\"/class/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"总排行榜\",\"url\":\"/rank/allvisit/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"月排行榜\",\"url\":\"/rank/monthvisit/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"周排行榜\",\"url\":\"/rank/weekvisit/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"日排行榜\",\"url\":\"/rank/dayvisit/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "lastUpdateTime": 1701785417517,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".book-info@.info@span.1@a@text",
+      "canReName": "",
+      "coverUrl": ".book-info@img@src",
+      "downloadUrls": "",
+      "init": "",
+      "intro": ".book-info@.intro@.content@text",
+      "kind": ".book-info@.info@span.0@a@text&&.book-info@.info@span.4@text##更新：",
+      "lastChapter": "ul.clearfix.0@li.0@a@text",
+      "name": ".book-info@h2@text",
+      "tocUrl": ".book-info@.btns@li.1@a@href",
+      "wordCount": ".book-info@.info@span.2@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chapterContent@p@text",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": "li@a.1@text&&.x-info_author@a@.type@text",
+      "bookList": ".clearfix@li&&.x-rank_list@.x-book",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "li@.info@.finish@text&&li@.info@.type@text&&.x-info_author@span.1@text",
+      "name": "li@.tit@text&&.x-info_name@text",
+      "wordCount": ".info@.word@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".info@span@text##作者：",
+      "bookList": ".search-list@li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "重生后",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": ".info@.finish@text&&.info@.type@text",
+      "name": ".tit@text",
+      "wordCount": ".info@.word@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapter-list@li",
+      "chapterName": "text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url);\njava.ajax(url).match(/form.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  }
+]

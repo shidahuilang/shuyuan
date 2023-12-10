@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写1128",
+    "bookSourceName": "换源小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.huanyuan.app",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "完本::/over/{{page}}.html\n排行榜::/top/\n总点击小说榜::/top/allvisit.html\n月点击小说榜::/top/monthvisit.html\n周点击小说榜::/top/weekvisit.html\n日点击小说榜::/top/dayvisit.html\n总推荐小说榜::/top/votenum.html\n总收藏小说榜::/top/marknum.html\n总下载小说榜::/top/downnum.html\n最近更新榜::/top/lastupdate.html\n入库新书榜::/top/postdate.html\n小说分类::/shuku/\n书库大全::/sort/all_0_0_lastupdate_{{page}}.html",
+    "lastUpdateTime": 1702018628654,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.查看目录@href"
+    },
+    "ruleContent": {
+      "content": "id.bodybox@p@textNodes##【】",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "tr@a.-1@text||.author@a@text||.author@text",
+      "bookList": ".layui-table@tbody@tr||class.list bg rank@li||.mini@li||.library@li||class.rank zoom@li",
+      "bookUrl": "tr@a.1@href||.bookname@href||li@a@href",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "tr@a.0@text||.light@text",
+      "lastChapter": "tr@a.2@text||.chapter@text",
+      "name": "tr@a.1@text||.bookname@text||li@a@text||li@a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".library@li",
+      "bookUrl": ".bookname@href",
+      "checkKeyWord": "",
+      "coverUrl": ".bookimg@img@src",
+      "intro": ".intro@text",
+      "kind": "p@a.1@text",
+      "lastChapter": ".chapter@text",
+      "name": ".bookname@text"
+    },
+    "ruleToc": {
+      "chapterList": ".read@dd@a",
+      "chapterName": "textNodes",
+      "chapterUrl": "href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/so/search.html?searchkey={{key}}&token=fb9ca6eee16eb628",
+    "weight": 0
+  }
+]

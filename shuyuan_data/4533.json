@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "/*\nBy_zhbyjm7783\neval(String(source.bookSourceComment))\n*/\n\t\nvar error=/429 Too Many Requests/;\nwhile(error.test(result)){\n\tcookie.removeCookie(baseUrl);\n\tresult=java.ajax(baseUrl);\n\t}\n\t\tresult;",
+    "bookSourceGroup": "自写1128",
+    "bookSourceName": "69书吧[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://69shu.net",
+    "bookUrlPattern": "https://69shu.net/\\d+.html",
+    "customOrder": -240,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n排行::/top/lastupdate/{{page}}/\n周点击榜::/top/weekvisit/{{page}}/\n月点击榜::/top/monthvisit/{{page}}/\n总点击榜::/top/allvisit/{{page}}/\n推荐榜::/top/allvote/{{page}}/\n必看榜::/hot/\n完本::/quanben/{{page}}/",
+    "header": "",
+    "lastUpdateTime": 1701848258494,
+    "loginUrl": "",
+    "respondTime": 77787,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=status|update_time]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "",
+      "wordCount": ".word-count@text"
+    },
+    "ruleContent": {
+      "content": "<js>\neval(String(source.bookSourceComment))\n</js>.novelcontent@html"
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": ".xbk",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@data-src",
+      "intro": ".intro@text",
+      "name": ".listtext@h2@a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "em@text",
+      "bookList": ".search_list",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "a@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar idi=(id)\nvar iid = parseInt(idi/1000);\n'https://img.69shu.net/'+iid+'/'+idi+'/'+idi+'s.jpg';\n</js>",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\neval(String(source.bookSourceComment))\n</js>.p2.1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "https://69shu.net/s.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"s={{key}}&type=articlename\"\n}",
+    "weight": 0
+  }
+]
