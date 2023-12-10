@@ -10,7 +10,7 @@
 ![shuyuan.png](icons/shuyuan.png)
 - 效验书源链接
 ```
-https://cf.dalang.workers.dev/proxy/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
 - 未效验书源链接
 ```
@@ -27,11 +27,11 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 **自动更新时间** 2023-12-08 12:57:52 CST+0800
  
  ``` bash
-https://cf.dalang.workers.dev/proxy/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-https://cf.dalang.workers.dev/proxy/http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
+http://mirror.ghproxy.com/http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
  ```
 
 #### 🚩 IPTV源
@@ -42,6 +42,6 @@ https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
 #### 🚩 ESign/AltStore/SideStore 巨魔商店应用
 导入链接
 ```
-https://cf.dalang.workers.dev/proxy/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
 ```
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
