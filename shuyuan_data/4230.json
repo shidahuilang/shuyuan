@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783\n20231210 搜索\"_token=\"自动获取",
+    "bookSourceGroup": "精品书源1210,地址变动1210",
+    "bookSourceName": "一米小说yimixs[自写][变动]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.yimixs.cc/",
+    "customOrder": 147,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"全部\",\"url\":\"/shuku?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"玄幻奇幻\",\"url\":\"/xuanhuan?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/xianxia?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/dushi?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/lishi?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻传奇\",\"url\":\"/kehuan?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"恐怖灵异\",\"url\":\"/kongbu?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他类型\",\"url\":\"/qita?order=allvisit&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1702304627304,
+    "respondTime": 8302,
+    "ruleBookInfo": {
+      "author": ".author@a@text",
+      "coverUrl": "img@src",
+      "intro": ".desc@text",
+      "kind": ".info@a.0@text",
+      "lastChapter": ".abook_contents_list@a.0@text",
+      "name": ".tit_bg@h2@text",
+      "tocUrl": "text.查看全部章节@href",
+      "wordCount": ".info@li.1@text"
+    },
+    "ruleContent": {
+      "content": ".article-body@p@text",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span.0@text",
+      "bookList": ".lazyload_box@li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": ".desc@text",
+      "kind": "",
+      "lastChapter": "span.1@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".catalog_list@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "@js:\nsource.key+\"/search,\"+JSON.stringify({\n  \"body\": \"_token={org.jsoup.Jsoup.parse(java.ajax(source.key)).select('input[name=_token]').attr('value')}&keyword={{key}}\",\n  \"method\": \"POST\"\n})",
+    "weight": 0
+  }
+]
