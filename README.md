@@ -1,11 +1,11 @@
-**自动更新时间** 2023-12-13 18:15:45 CST+0800
+**自动更新时间** 2023-12-13 23:13:35 CST+0800
 #### 🚩 最新阅读书源修复-每隔3天自动更新一次（读不舍手-源阅读+花火阅读通用）
 #### 🚩 获取后的书源会自动效验
 
 <!-- 更新位置开始 -->
 | 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |
 |------------|------------|------------|--------------|
-| <span style="color:green;">5402</span> | <span style="color:blue;">3773</span> | <span style="color:red;">1629</span> | <span style="color:orange;">1410</span> |
+| <span style="color:green;">9134</span> | <span style="color:blue;">6033</span> | <span style="color:red;">3101</span> | <span style="color:orange;">2453</span> |
 <!-- 更新位置结束 -->
 ![shuyuan.png](icons/shuyuan.png)
 - 效验书源链接
@@ -24,7 +24,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
-**自动更新时间** 2023-12-13 18:15:45 CST+0800
+**自动更新时间** 2023-12-13 23:13:35 CST+0800
  
  ``` bash
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
