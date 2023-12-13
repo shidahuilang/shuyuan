@@ -31,7 +31,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-http://mirror.ghproxy.com/http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
+http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
  ```
 
 #### 🚩 IPTV源
