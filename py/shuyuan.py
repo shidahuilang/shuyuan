@@ -24,6 +24,9 @@ time_ranges = {
 
 def parse_page(url):
     response = requests.get(url, verify=True)
+    if response.status_code != 200:
+        print(f'Access {url}: response.status_code')
+        return []
     soup = BeautifulSoup(response.text, 'html.parser')
 
     relevant_links = []
