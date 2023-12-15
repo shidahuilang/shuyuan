@@ -4,6 +4,177 @@
   "sourceURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/apps.json",
   "apps": [
     {
+      "name": "CallAssist",
+      "bundleIdentifier": "com.apple.mobilephone-call",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.apple.mobilephone-call.png",
+      "versions": [
+        {
+          "version": "14.15",
+          "date": "2023-12-15",
+          "size": 3424925,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-15-2023/CallAssist-14.15.ipa"
+        }
+      ]
+    },
+    {
+      "name": "Grammarly",
+      "bundleIdentifier": "com.grammarly.keyboard",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.grammarly.keyboard.png",
+      "versions": [
+        {
+          "version": "4.0.0",
+          "date": "2023-12-15",
+          "size": 156360115,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-15-2023/Grammarly-4.0.0.ipa"
+        }
+      ]
+    },
+    {
+      "name": "ipogo",
+      "bundleIdentifier": "com.nianticlabs.pokemongo",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.nianticlabs.pokemongo.png",
+      "versions": [
+        {
+          "version": "3.2.1",
+          "date": "2023-12-15",
+          "size": 128405035,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-15-2023/ipogo-3.2.1.ipa"
+        },
+        {
+          "version": "3.2.0",
+          "date": "2023-11-28",
+          "size": 127955571,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-28-2023/ipogo-3.2.0.ipa"
+        },
+        {
+          "version": "3.1.9",
+          "date": "2023-11-24",
+          "size": 127974496,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-24-2023/ipogo-3.1.9.ipa"
+        },
+        {
+          "version": "3.1.8",
+          "date": "2023-11-12",
+          "size": 129188645,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-12-2023/ipogo-3.1.8.ipa"
+        },
+        {
+          "version": "3.1.7",
+          "date": "2023-10-29",
+          "size": 129089719,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-29-2023/ipogo-3.1.7.ipa"
+        },
+        {
+          "version": "3.1.5",
+          "date": "2023-10-17",
+          "size": 127860610,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-17-2023/ipogo-3.1.5.ipa"
+        },
+        {
+          "version": "3.1.1",
+          "date": "2023-09-23",
+          "size": 127591654,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/09-23-2023/ipogo-3.1.1.ipa"
+        }
+      ]
+    },
+    {
+      "name": "Mangayomi",
+      "bundleIdentifier": "com.kodjodevf.mangayomi",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.kodjodevf.mangayomi.png",
+      "versions": [
+        {
+          "version": "0.1.4",
+          "date": "2023-12-15",
+          "size": 93319936,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-15-2023/Mangayomi-0.1.4.ipa"
+        },
+        {
+          "version": "0.1.35",
+          "date": "2023-12-08",
+          "size": 93308009,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-08-2023/Mangayomi-0.1.35.ipa"
+        },
+        {
+          "version": "0.1.25",
+          "date": "2023-12-07",
+          "size": 93304657,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-07-2023/Mangayomi-0.1.25.ipa"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2023-11-29",
+          "size": 93143303,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-29-2023/Mangayomi-0.1.1.ipa"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2023-11-24",
+          "size": 93145110,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-24-2023/Mangayomi-0.1.0.ipa"
+        },
+        {
+          "version": "0.0.8",
+          "date": "2023-11-19",
+          "size": 93060349,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-19-2023/Mangayomi-0.0.8.ipa"
+        }
+      ]
+    },
+    {
+      "name": "QuizletPlus",
+      "bundleIdentifier": "com.quizlet.quizlet",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.quizlet.quizlet.png",
+      "versions": [
+        {
+          "version": "8.16",
+          "date": "2023-12-15",
+          "size": 54774996,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-15-2023/QuizletPlus-8.16.ipa"
+        },
+        {
+          "version": "8.15",
+          "date": "2023-12-08",
+          "size": 54568872,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-08-2023/QuizletPlus-8.15.ipa"
+        },
+        {
+          "version": "8.14",
+          "date": "2023-12-01",
+          "size": 54472832,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-01-2023/QuizletPlus-8.14.ipa"
+        },
+        {
+          "version": "8.12",
+          "date": "2023-11-10",
+          "size": 59917069,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-10-2023/QuizletPlus-8.12.ipa"
+        },
+        {
+          "version": "8.8",
+          "date": "2023-10-20",
+          "size": 57483552,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-20-2023/QuizletPlus-8.8.ipa"
+        },
+        {
+          "version": "8.6",
+          "date": "2023-10-14",
+          "size": 57652265,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-14-2023/QuizletPlus-8.6.ipa"
+        }
+      ]
+    },
+    {
       "name": "BeRealBea",
       "bundleIdentifier": "AlexisBarreyat.BeReal",
       "developerName": "",
@@ -3946,45 +4117,6 @@
       ]
     },
     {
-      "name": "Mangayomi",
-      "bundleIdentifier": "com.kodjodevf.mangayomi",
-      "developerName": "",
-      "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.kodjodevf.mangayomi.png",
-      "versions": [
-        {
-          "version": "0.1.35",
-          "date": "2023-12-08",
-          "size": 93308009,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-08-2023/Mangayomi-0.1.35.ipa"
-        },
-        {
-          "version": "0.1.25",
-          "date": "2023-12-07",
-          "size": 93304657,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-07-2023/Mangayomi-0.1.25.ipa"
-        },
-        {
-          "version": "0.1.1",
-          "date": "2023-11-29",
-          "size": 93143303,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-29-2023/Mangayomi-0.1.1.ipa"
-        },
-        {
-          "version": "0.1.0",
-          "date": "2023-11-24",
-          "size": 93145110,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-24-2023/Mangayomi-0.1.0.ipa"
-        },
-        {
-          "version": "0.0.8",
-          "date": "2023-11-19",
-          "size": 93060349,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-19-2023/Mangayomi-0.0.8.ipa"
-        }
-      ]
-    },
-    {
       "name": "MeituPlusPlus",
       "bundleIdentifier": "com.meitu.mtxx",
       "developerName": "",
@@ -4047,45 +4179,6 @@
           "date": "2023-09-30",
           "size": 142729185,
           "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/09-30-2023/MemrisePremium-2023.9.15.ipa"
-        }
-      ]
-    },
-    {
-      "name": "QuizletPlus",
-      "bundleIdentifier": "com.quizlet.quizlet",
-      "developerName": "",
-      "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.quizlet.quizlet.png",
-      "versions": [
-        {
-          "version": "8.15",
-          "date": "2023-12-08",
-          "size": 54568872,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-08-2023/QuizletPlus-8.15.ipa"
-        },
-        {
-          "version": "8.14",
-          "date": "2023-12-01",
-          "size": 54472832,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-01-2023/QuizletPlus-8.14.ipa"
-        },
-        {
-          "version": "8.12",
-          "date": "2023-11-10",
-          "size": 59917069,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-10-2023/QuizletPlus-8.12.ipa"
-        },
-        {
-          "version": "8.8",
-          "date": "2023-10-20",
-          "size": 57483552,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-20-2023/QuizletPlus-8.8.ipa"
-        },
-        {
-          "version": "8.6",
-          "date": "2023-10-14",
-          "size": 57652265,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-14-2023/QuizletPlus-8.6.ipa"
         }
       ]
     },
@@ -5700,51 +5793,6 @@
           "date": "2023-08-16",
           "size": 51651080,
           "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/08-16-2023/CarrotWeatherUltra-5.11.2.ipa"
-        }
-      ]
-    },
-    {
-      "name": "ipogo",
-      "bundleIdentifier": "com.nianticlabs.pokemongo",
-      "developerName": "",
-      "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.nianticlabs.pokemongo.png",
-      "versions": [
-        {
-          "version": "3.2.0",
-          "date": "2023-11-28",
-          "size": 127955571,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-28-2023/ipogo-3.2.0.ipa"
-        },
-        {
-          "version": "3.1.9",
-          "date": "2023-11-24",
-          "size": 127974496,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-24-2023/ipogo-3.1.9.ipa"
-        },
-        {
-          "version": "3.1.8",
-          "date": "2023-11-12",
-          "size": 129188645,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-12-2023/ipogo-3.1.8.ipa"
-        },
-        {
-          "version": "3.1.7",
-          "date": "2023-10-29",
-          "size": 129089719,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-29-2023/ipogo-3.1.7.ipa"
-        },
-        {
-          "version": "3.1.5",
-          "date": "2023-10-17",
-          "size": 127860610,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-17-2023/ipogo-3.1.5.ipa"
-        },
-        {
-          "version": "3.1.1",
-          "date": "2023-09-23",
-          "size": 127591654,
-          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/09-23-2023/ipogo-3.1.1.ipa"
         }
       ]
     },
