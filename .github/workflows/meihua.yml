@@ -30,7 +30,7 @@ jobs:
           git add .
           git commit -m "json格式美化|Unicode自动转换" -a
           git commit -m "Add new JSON files" || echo "No changes to commit"
-          git push
+          git push --force
           
       - name: Telegram通知
         run: |
