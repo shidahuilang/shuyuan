@@ -48,6 +48,6 @@ https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
 ```
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
 ```
-如果您对项目感兴趣可以进行捐赠，一遍项目可以稳定的运行下去！
+如果您对项目感兴趣可以进行捐赠，以便项目可以稳定的运行下去！
 ![weixin.png](icons/weixin.jpg)![zhidubao.png](icons/zhifubao.jpg)
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
