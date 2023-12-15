@@ -3,9 +3,7 @@
 #### 🚩 获取后的书源会自动效验
 
 <!-- 更新位置开始 -->
-| 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |
-|------------|------------|------------|--------------|
-| <span style="color:green;">9134</span> | <span style="color:blue;">6033</span> | <span style="color:red;">3101</span> | <span style="color:orange;">2453</span> |
+
 <!-- 更新位置结束 -->
 ![shuyuan.png](icons/shuyuan.png)
 #### 🚩 效验书源链接
