@@ -49,5 +49,5 @@ https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
 ```
 请我喝红牛
-![weixin.png](icons/weixin.jpg)![zhidubao.png](icons/zhifubao.jpg)
+
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
