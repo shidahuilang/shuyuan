@@ -34,6 +34,7 @@ jobs:
           git add .
           git commit -m "书源|自动更新" -a || true
           git commit -m "Add new JSON files" || echo "No changes to commit"
+          git pull origin shuyuan
           git push
           
       - name: Telegram通知
