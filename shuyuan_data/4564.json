@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "笔趣阁tkxyk",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tkxyk.com",
+    "bookUrlPattern": "https?://www.tkxyk.com/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/category/xhtxt/{{page}}.html\n武侠::/category/wxtxt/{{page}}.html\n都市::/category/dstxt/{{page}}.html\n历史::/category/lstxt/{{page}}.html\n网游::/category/wytxt/{{page}}.html\n科幻::/category/khtxt/{{page}}.html\n其它::/category/qttxt/{{page}}.html\n女生::/category/nstxt/{{page}}.html\n",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9; MIX 2 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1702715501999,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=lastest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nt:\"text.更多章节@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}"
+    },
+    "ruleContent": {
+      "content": "#nr1@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "p.2@text",
+      "bookList": ".block",
+      "bookUrl": "h2 a@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "p.-1@text",
+      "kind": "p.3@text##.*：",
+      "name": "h2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search,{\n  \"body\": \"searchkey={{key}}&searchtype=all&t_btnsearch=搜索\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

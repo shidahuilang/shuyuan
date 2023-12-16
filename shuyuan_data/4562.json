@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "API1212",
+    "bookSourceName": "熊猫看书http[api]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://anduril.xmkanshu.com",
+    "bookUrlPattern": "",
+    "customOrder": 66,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "                           男频榜单                           ::\n在读榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=read&date_type=week&page_id=1&page_size=50\n畅销榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=order&date_type=week&page_id=1&page_size=50\n好评榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=comment&date_type=week&page_id={{page}}&page_size=50\n新书榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=newbook&date_type=week&page_id={{page}}&page_size=50\n完结榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=endbook&date_type=week&page_id={{page}}&page_size=50\n追更榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=adherent&date_type=week&page_id={{page}}&page_size=50\n推荐榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=recommend&date_type=week&page_id={{page}}&page_size=50\n月票榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=ticket&date_type=month&page_id={{page}}&page_size=50\n打赏榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=donate&date_type=week&page_id={{page}}&page_size=50\n勤更榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=update&date_type=week&page_id={{page}}&page_size=50\n纵横榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=boy&rank_type=zongheng&date_type=week&page_id={{page}}&page_size=50\n                           女频榜单                           ::\n在读榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=read&date_type=week&page_id={{page}}&page_size=50\n畅销榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=order&date_type=week&page_id=1&page_size=50\n好评榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=comment&date_type=week&page_id={{page}}&page_size=50\n新书榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=newbook&date_type=week&page_id={{page}}&page_size=50\n完结榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=endbook&date_type=week&page_id={{page}}&page_size=50\n追更榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=adherent&date_type=week&page_id={{page}}&page_size=50\n推荐榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=recommend&date_type=week&page_id={{page}}&page_size=50\n月票榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=ticket&date_type=month&page_id=1&page_size=50\n打赏榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=donate&date_type=week&page_id={{page}}&page_size=50\n勤更榜::https://anduril.xmkanshu.com/v1/rank/get_rank_data?column_type=girl&rank_type=update&date_type=week&page_id={{page}}&page_size=50",
+    "lastUpdateTime": 1702658799261,
+    "respondTime": 3996,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "$.result.bookcover",
+      "intro": "",
+      "kind": "",
+      "name": "$.result.bookname",
+      "tocUrl": "https://anduril.xmkanshu.com/v3/book/get_last_chapter_list?&bookid=@get:{book}&page=0&page_size=10000&lastchapterid=0"
+    },
+    "ruleContent": {
+      "content": "@js:result"
+    },
+    "ruleExplore": {
+      "author": "book_author",
+      "bookList": "$.result",
+      "bookUrl": "https://anduril.xmkanshu.com/v3/book/get_last_chapter_list?&bookid={{$.book_id}}&page=0&page_size=10000&lastchapterid=0",
+      "coverUrl": "frontcover",
+      "intro": "book_desc",
+      "kind": "$.book_score&&$.read_number",
+      "name": "book_name@put:{book:book_id}"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "author_name",
+      "bookList": "$.result.books",
+      "bookUrl": "https://anduril.xmkanshu.com/v3/book/get_last_chapter_list?&bookid={{$.book_id}}&page=0&page_size=10000&lastchapterid=0",
+      "coverUrl": "cover_picture",
+      "intro": "book_desc",
+      "kind": "book_type_name",
+      "name": "book_name##\\（.*|\\）@put:{book:book_id}"
+    },
+    "ruleToc": {
+      "chapterList": "$.result.pageList",
+      "chapterName": "chapter_name##.*_##",
+      "chapterUrl": "https://dl.xmkanshu.com/download/file/@get:{book}-{{$.chapter_id}}.zip",
+      "nextTocUrl": "<js>\nvar a = 'https://anduril.xmkanshu.com/v3/book/get_last_chapter_list?&bookid=@get:{book}&page=0&page_size=10000&lastchapterid=';\nvar r = [];\nfor(var i=1;i<10;i++){\n    r.push(a + parseInt(i*300));\n}\nr\n</js>"
+    },
+    "searchUrl": "/v4/search/get_result?keyword={{key}}&page_number={{page}}&is_vip_free=0&page_size=40",
+    "weight": 0
+  }
+]
