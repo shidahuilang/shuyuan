@@ -22,7 +22,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 ```
 #### 🚩 TTS-70种语音包
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
 - 语音包生成[点我](https://tts.dalang.eu.org/)
 
