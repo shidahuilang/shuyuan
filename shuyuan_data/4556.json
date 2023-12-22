@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "涩文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://book.sewen6.club/",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n最近更新::/shuku/{{page}}\n现代都市::/list/1/{{page}}.html\n近亲乱伦::/list/2/{{page}}.html\n武侠情色::/list/3/{{page}}.html\n学生校园::/list/4/{{page}}.html\n玄幻灵异::/list/5/{{page}}.html\n言情纯爱::/list/6/{{page}}.html\n短篇小说::/dplist/1/{{page}}.html",
+    "header": "",
+    "lastUpdateTime": 1702448755151,
+    "loginCheckJs": "",
+    "loginUrl": "",
+    "respondTime": 77787,
+    "ruleBookInfo": {
+      "author": ".fix@p.0@text",
+      "coverUrl": ".imgbox img@src",
+      "init": "",
+      "intro": ".desc@text",
+      "kind": ".fix@p.1@text##.*：",
+      "lastChapter": ".section-list@li:last-child@a@text",
+      "name": "h1@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "title": ".title@text"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.item",
+      "bookUrl": "dt@a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@a@text",
+      "name": "dt@a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".txt-list > li:nth-child(n+2)",
+      "bookUrl": ".s2 > a@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": ".s1@text",
+      "lastChapter": ".s3 > a@text",
+      "name": ".s2 > a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n\"method\":\"post\",\n\"charset\":\"gbk\",\n\"body\":\"searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

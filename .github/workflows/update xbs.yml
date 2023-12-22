@@ -1,0 +1,49 @@
+name: 香色闺阁
+
+on: 
+  schedule:
+    - cron: "0 10 */3 * *"
+  push:
+    branches: [ "shuyuan" ]
+    paths:
+      - 'xsreader/new/sources.json'
+  pull_request:
+    branches: [ "shuyuan" ]
+    paths:
+      - 'xsreader/new/sources.json'
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: 安装依赖项
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests pytz
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: 运行脚本
+      run: |
+        cd xsreader/new/python
+        python main.py
+    - name: 提交文件
+      run: |
+        git config user.email github-actions
+        git config user.name github-actions@github.com
+        git add .
+        git commit -m "香色闺阁|自动更新" -a
+        git push
+      env:
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+        
+    - name: Telegram通知
+      run: |
+        curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+         -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+         -d "text=香色闺阁书源更新完成!分支：${{ github.ref }}"

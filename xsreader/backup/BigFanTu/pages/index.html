@@ -1,0 +1,732 @@
+<html>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1e2693a7eec853379d7d2f5ec7011f08";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>香色快速分类工具</title>
+    <meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="./yd.png">
+    <style>
+        .button {
+            display: inline-block;
+            line-height: 1;
+            white-space: nowrap;
+            cursor: pointer;
+            background: #06dcbc;
+            border: 1px solid #dcdfe6;
+            color: #606566;
+            -webkit-appearance: none;
+            text-align: center;
+            box-sizing: border-box;
+            outline: none;
+            /*margin-top: 4px;*/
+            margin-left: 8px;
+            margin-bottom: 8px;
+            transition: .1s;
+            font-weight: 500;
+
+            padding: 12px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            color: #8c40ff;
+            border-color: #c6e2ff;
+            background-color: #ecf5ff;
+        }
+
+        .button:focus {
+            color: #409eff;
+            border-color: #c6e2ff;
+            background-color: #ecf5ff;
+        }
+
+        .m10 {
+            margin-top: 10px;
+        }
+
+        .h32 {
+            height: 32px;
+        }
+
+        .dlb {
+            display: inline-block
+        }
+
+        .acen {
+            text-align: center;
+        }
+
+        .zhb {
+            padding: 0.5px 8px !important;
+            border-radius: 0 !important;
+        }
+
+        .enb {
+            padding: 2px 8px !important;
+            border-radius: 0 !important;
+        }
+
+        .center {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .rd {
+            border-radius: 10px;
+            padding: 5px;
+            resize: none;
+        }
+
+        .rdd {
+            border: #666666 dotted 1px;
+            border-radius: 10px;
+            padding: 5px;
+            resize: none;
+            width: 49%;
+            height: 100px;
+        }
+
+        .start {
+            margin-top: 10px;
+            -moz-box-shadow: inset 0 1px 0 0 #ffffff;
+            -webkit-box-shadow: inset 0 1px 0 0 #ffffff;
+            box-shadow: inset 0 1px 0 0 #ffffff;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+            background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+            background-color: #ffffff;
+            vertical-align: bottom;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            border: 1px solid #878787;
+            display: inline-block;
+            cursor: pointer;
+            color: #666666;
+            font-size: 15px;
+            padding: 5px 5px;
+            text-decoration: none;
+            text-shadow: 0 1px 0 #ffffff;
+        }
+
+        .start:hover {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+            background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff', GradientType=0);
+            background-color: #f6f6f6;
+        }
+
+        .start:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .select {
+            margin-top: -4px;
+            vertical-align: middle;
+            padding: 2px;
+            overflow: hidden;
+            background-color: #fff;
+            color: #555;
+            text-shadow: none;
+            border-radius: 6px;
+            transition: box-shadow 1s ease;
+            z-index: 2;
+        }
+
+        .select:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .select:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 1px solid transparent;
+            border-top-color: #ccc;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            z-index: -2;
+        }
+
+        .select select {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: transparent none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .select select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center" style="text-align: center;">
+
+        <button type="button" class="button" onclick="window.open('https\://www.bilibili.com/video/BV1na411q77A?p=10')"
+            id="bt8"><span>视频教程</span></button>
+        <button type="button" class="button" onclick="window.open('https\://bigfantu.gitee.io/xsread/old/index.html')"
+            id="bt9"><span>旧版分类工具</span></button>
+    </div>
+    <div class="center" style="height: 200px">
+        <div class="center" style="position: fixed">
+            <div id="toast_mess" class="center" style="position:relative;width:200px" hidden="">
+                <span id="t_mess"
+                    style="position: absolute;top:200px;z-index: 100;width: 200px;height: 30px;text-align: center;border-radius: 30px;line-height: 30px"></span>
+            </div>
+        </div>
+        <textarea class="rd" id="text_input" style="width:100%;height: 100%;"
+            placeholder="请输入获取的分类标签;此工具仅支持格式形如a::b转化输出  默认去除空字符，如需保留空符，请选无  源数据在转换一次后生效 支持a,option标签 自动分组时只需输入匹配值，不需要替换值 建议采用替换完成分组  完成后可点击生成，生成moreKeys及参考请求，请求需自己完善"></textarea>
+    </div>
+    <div class="center acen">
+        <select id="select" class="select h32 acen">
+            <option value="true" selected>去空</option>
+            <option value="false">无
+            </option>
+        </select>
+        <button class="start" onclick="start()">转换</button>
+        <button class="start" onclick="pre()">撤销</button>
+        <button class="start" onclick="org_d()">源数据</button>
+        <button class="start" onclick="del_host()">删除host</button>
+        <button class="start" onclick="decode()">解码</button>
+        <button class="start" onclick="GetToJson()">GET参数转JSON</button>
+        <button class="start" onclick="del_x('text_input')">清空输入</button>
+        <button class="start" onclick="copy('text_input')">复制</button>
+    </div>
+    <div class="center m10">
+        <textarea class="rd m10" id="text_reg" onchange="reg_change()" style="width:100%;height: 60px"
+            placeholder="请输入正则表达式"></textarea>
+        <div style="margin-bottom: 0">
+            快捷正则：
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="(.*?)">(.*?)</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="(\w*?)">(\w*?)</button>
+            <button class="start zhb" onclick="quick_input(this,'text_reg')" value="([\u4e00-\u9fa5]*?)">中文</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="::">::</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="|">|</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="/">/</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="\">\</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="*">*</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value=".">.</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="+">+</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="?">?</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="_">_</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="-">-</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="[">[</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="]">]</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value="(">(</button>
+            <button class="start enb" onclick="quick_input(this,'text_reg')" value=")">)</button>
+            <button class="start zhb" onclick="del_x('text_reg')">清空输入</button>
+        </div>
+        <div style="margin-top: 10px;">
+            <textarea class="rdd" disabled="" id="reg_result_match" placeholder="此处显示正则匹配结果,每行均进行替换"></textarea>
+            <textarea class="rdd" disabled="" id="reg_result_var" style="float: right;"
+                placeholder="此处$1-$9仅显示第一次匹配结果作为参考"></textarea>
+        </div>
+        <textarea class="rd m10" placeholder="请输入需替换的数据，支持$1-$9" id="text_change"
+            style="width:100%;height: 60px"></textarea>
+        <div>
+            快捷正则：
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="$1">$1</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="$2">$2</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="$3">$3</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="$4">$4</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="$5">$5</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="\n">\n</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="::">::</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="|">|</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="/">/</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="\">\</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="(">(</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value=")">)</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="_">_</button>
+            <button class="start enb" onclick="quick_input(this,'text_change')" value="-">-</button>
+            <button class="start zhb" onclick="del_x('text_change')">清空输入</button>
+        </div>
+    </div>
+    <div class="center acen">
+        <button class="start m10" onclick="reg_exchange_g()">分组</button>
+        <button class="start m10" onclick="reg_exchange()">替换</button>
+    </div>
+    <div class="center acen">
+        <textarea class="rdd m10" id="text_filters" style="float:left" placeholder="此处为生成的moreKeys信息"></textarea>
+        <textarea class="rdd m10" id="text_filters_r" style="float:right" placeholder="此处为生成的请求信息，仅作为参考"></textarea>
+    </div>
+    <div class="center acen">
+        <button class="start" onclick="copy('text_filters')">复制Filters</button>
+        <button class="start" onclick="get_filters()">生成</button>
+        <button class="start" onclick="copy('text_filters_r')">复制请求</button>
+    </div>
+    <div class="center">
+        <textarea class="rd m10" style="width:100%;height: 60px" id="req_org" placeholder="构造请求信息"></textarea>
+        <div id="req_button">
+            快捷输入：
+            <button class="start enb" onclick="quick_input(this,'req_org')" value="${config.host}">host</button>
+            <button class="start zhb" onclick="quick_input(this,'req_org')" value="${params.pageIndex}">页码</button>
+            <button id="rc_clear" class="start  zhb" onclick="del_x('req_org')">清空输入</button>
+        </div>
+        <div>
+            <div class="dlb m10">连接符：</div>
+            <input class="dbl m10 h32" type="text" placeholder="类间" id="req_con" style="width:40px">
+            <input class="h32 dlb m10" type="text" placeholder="值间" id="req_con_v" style="width: 40px">
+            <div class="dlb m10">&nbsp;&nbsp;请求:</div>
+            <select id="req_p" class="select m10 h32 dlb acen">
+                <option value="get" selected>GET</option>
+                <option value="post">POST</option>
+            </select>
+            <div class="dlb m10">&nbsp;&nbsp;编码URL:</div>
+            <select id="req_en" class="select h32 m10 dlb acen">
+                <option value="false" selected>否</option>
+                <option value="true">是</option>
+            </select>
+            <div class="dlb m10">&nbsp;&nbsp;剔除:</div>
+            <input class="h32 m10 dlb" type="text" placeholder="剔除值" id="req_d" style="width: 70px">
+            <div class="dlb m10">&nbsp;&nbsp;尾部:</div>
+            <input class="h32 m10 dlb" type="text" placeholder="尾部值" id="req_e" style="width: 70px">
+            <div class="dlb m10">&nbsp;&nbsp;页码:</div>
+            <input class="h32 m10 dlb" type="text" placeholder="页码符" id="req_pg" style="width: 70px">
+            <div class="center acen">
+                <div class="dlb m10">&nbsp;&nbsp;防冲突:</div>
+                <select id="var_p" class="select h32 m10 dlb acen">
+                    <option value="true" selected>是</option>
+                    <option value="false">否</option>
+                </select>
+                <button class="start" onclick="update_req(false)">预览URL</button>
+                <button class="start" onclick="open_req('req_cre')">打开URL</button>
+                <button class="start" onclick="update_req(true)">更新请求</button>
+            </div>
+            <textarea class="rd m10" style="width:100%;height: 60px;margin-bottom: 30px" id="req_cre"
+                placeholder="预览请求信息"></textarea>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let org_data = "";
+        let cache_input = "";
+        let cache_filters = [];
+        let cache_a_filters = [];
+        let cache_filter_data_cg = [];
+
+        function quick_input(d, tag) {
+            let value = d.value;
+            let el_tag = document.getElementById(tag);
+            let pos = el_tag.selectionStart;
+            let pos_end = el_tag.selectionEnd;
+            el_tag.value = el_tag.value.slice(0, pos) + value + el_tag.value.slice(pos_end);
+            el_tag.focus();
+            el_tag.setSelectionRange(pos + value.length, pos + value.length);
+            reg_change();
+        }
+
+        function del_x(x) {
+            if (x === "text_input") {
+                document.getElementById(x).value = "";
+                text_reg.value = "";
+                text_change.value = "";
+                text_filters.value = "";
+                text_filters_r.value = "";
+                org_data = "";
+            }
+            else if (x === "ff") {
+                text_filters.value = "";
+                text_filters_r.value = "";
+            }
+            else {
+                document.getElementById(x).value = "";
+            }
+        }
+
+        function GetToJson() {
+            var sstr = text_input.value;
+
+            // sstr = sstr.replace(/&/g, '","').replace(/;/g, '","').replace(/=/g, '":"'); //未取出url
+            let url = sstr.match(/(https?.*?)\?/)[1];
+            sstr = sstr.replace(url + "?", "").replace(/&/g, '","').replace(/;/g, '","').replace(/=/g, '":"');
+            sstr = '{"' + sstr + '"}';
+            let text = `@js:\n\n let url = "${url}";\n\n let hp = ${sstr}; \n\n return {'url':url,'POST':false,'httpParams':hp,'httpHeaders':config.httpHeaders,'cacheTime':3600}`
+
+            text_input.value = text;
+
+        }
+        function decode() {
+            text_input.value = decodeURI(text_input.value);
+        }
+
+        function del_host() {
+            text_input.value = text_input.value.replace(/https?:\/\/(www.)?(\w+(\.)?)+/g, "");
+        }
+
+        function start() {
+            try {
+                if (org_data === "") {
+                    org_data = text_input.value;
+                }
+                let arr = text_input.value.match(/<(a|option)[\s\S]*?(href|value)\s*?=\s*?["'][\s\S]*?["'][\s\S]*?>[\s\S]*?<\/(a|option)>/g);
+                let result = [];
+                let del_blank = select.value === "true";
+                for (let i = 0; i < arr.length; i++) {
+                    //正则除span标签、div标签
+                    let tmp = arr[i].replace(/<(span.*?|\/span|div.*?|\/div)>/g, "");
+                    let list = tmp.match(/<(a|option)[\s\S]*?(href|value)\s*?=\s*?["']([\s\S]*?)["'][\s\S]*?>([\s\S]*?)<\/(a|option)>/);
+                    if (del_blank) {
+                        result.push(list[4].trim() + "::" + list[3].trim())
+                    } else {
+                        result.push(list[4] + "::" + list[3])
+                    }
+                }
+                text_input.value = result.join("\n").replace(/^(\\n)*/, "");
+            } catch (e) {
+                if (/\n/.test(text_input.value)) {
+                    text_input.value = text_input.value.replace(/\n/g, "\\n").replace(/^(\\n)*/, "").replace(/(\\n)*$/, "");
+                }
+                else if (/\\n/.test(text_input.value)) {
+                    text_input.value = text_input.value.replace(/\\n/g, "\n").replace(/^(\n)*/, "").replace(/(\n)*$/, "");
+                }
+                else {
+                    toast("操作未完成", "", "white");
+                }
+            }
+        }
+
+        function reg_exchange() {
+            try {
+                save_cache();
+                let reg = new RegExp(text_reg.value, "g");
+                text_input.value = text_input.value.replace(reg, text_change.value);
+                reg_change();
+            } catch (e) {
+                toast("操作未完成", "", "white");
+            }
+        }
+
+        function reg_exchange_g() {
+            try {
+                save_cache();
+                let regs = "(" + text_reg.value + ")(::.*?::)(\\w*)";
+                let isok = false;
+                let data = text_input.value;
+                let reg = new RegExp(regs, "g");
+                if (/\n/.test(data)) {
+                    isok = true;
+                    data = data.replace(/\n/g, "\\n");
+                }
+                let replace_text = "\\n$3\\n$1$2$3";
+                if (isok) {
+                    text_input.value = data.replace(reg, replace_text).replace(/^\\n/, "").replace(/\\n/g, "\n");
+                }
+                else {
+                    text_input.value = data.replace(reg, replace_text).replace(/^\\n/, "");
+                }
+                reg_change();
+            } catch (e) {
+                toast("操作未完成", "", "white");
+            }
+        }
+
+        function reg_change() {
+            try {
+                let reg = new RegExp(text_reg.value, "g");
+                let arr = text_input.value.match(reg);
+                if (text_reg.value === "") {
+                    reg_result_match.value = null;
+                }
+                else {
+                    reg_result_match.value = arr.join("\n");
+                }
+                let list = reg.exec(text_input.value);
+                let vars = [];
+                for (let j = 0; j < list.length; j++) {
+                    if (j > 0) {
+                        vars.push(`$${j}: ${list[j]}`)
+                    }
+                }
+                if (vars.length > 0) {
+                    reg_result_var.value = "以下只显示第一次匹配结果作为参考\n" + vars.join("\n");
+                }
+                else {
+                    reg_result_var.value = null;
+                }
+            } catch (e) {
+                reg_result_match.value = null;
+                reg_result_var.value = null;
+            }
+        }
+
+        function save_cache() {
+            cache_input = text_input.value;
+        }
+
+        function pre() {
+            text_input.value = cache_input;
+        }
+
+        function org_d() {
+            text_input.value = org_data;
+        }
+
+        function get_filters() {
+            try {
+                let data = text_input.value;
+                if (/\n/.test(data)) {
+                    data = data.replace(/\n/g, "\\n");
+                }
+                data = data.replace(/^(\\n)*/, "");
+                let text_filters_t = [];
+                let data_cg = [];
+                let mac_f = data.match(/(\\n)?(\S)+?(\\n|$)/g);
+                let first_g = false;
+                for (let i = 0; i < mac_f.length; i++) {
+                    let mac_f_k = mac_f[i].match(/(\\n)?(\S)+?(\\n|$)/);
+                    data_cg.push(mac_f_k[0]);
+                    if (!/::/.test(mac_f_k[0])) {
+                        if ((!/^\\n/.test(mac_f_k[0]) && i !== 0) || /^(\\n\\n)/.test(mac_f_k[0])) {
+                            del_x("ff");
+                            return toast("组名错误，请修改后重试", "", "white", 1000);
+                        }
+                        if (/[\u4e00-\u9fa5]/.test(mac_f_k[0])) {
+                            del_x("ff");
+                            return toast("组名不能为中文", "", "white", 1000);
+                        }
+                        if (!/::/.test(mac_f[i + 1].match(/(\\n)?(\S)+?(\\n|$)/)[0])) {
+                            del_x("ff");
+                            return toast("不能有空组名", "", "white", 1000);
+                        }
+                        text_filters_t.push(mac_f_k[0].replace(/\\n/g, ""))
+                    }
+                    else if (/^\\n/.test(mac_f_k[0])) {
+                        del_x("ff");
+                        return toast("不能有空组名", "", "white", 1000);
+                    }
+                    else if (i === 0) {
+                        first_g = true;
+                    }
+                }
+                if (text_filters_t.length !== 0 && first_g) {
+                    del_x("ff");
+                    return toast("组名错误，请修改后重试", "", "white", 1000);
+                }
+                let text_filters_t_s = new Set();
+                text_filters_t.forEach((x) => {
+                    text_filters_t_s.add(x);
+                });
+                if (text_filters_t.length !== text_filters_t_s.size) {
+                    del_x("ff");
+                    return toast("组名重复，请修改", "", "white", 1000);
+                }
+                if (text_filters_t.length === 0) {
+                    text_filters_t.push("type");
+                    data_cg.unshift("type\\n");
+                }
+                cache_filter_data_cg = data_cg;
+                let filters = [];
+                let all_fi = [];
+                let tmp_f_mb = {};
+                let tmp_f_mb_v = [];
+                for (let i = 0; i < data_cg.length; i++) {
+                    let x = data_cg[i].replace(/\\n/g, "");
+                    if (!/::/.test(x)) {
+                        if (filters.length > 0) {
+                            tmp_f_mb = { name: filters[filters.length - 1].name, value: tmp_f_mb_v };
+                            all_fi.push(tmp_f_mb);
+                        }
+                        filters.push({ name: x, value: x });
+                        tmp_f_mb_v = [];
+                    }
+                    else if (/::/.test(x)) {
+                        tmp_f_mb_v.push(x.replace(/.*::/, ""));
+                    }
+                    if (i === data_cg.length - 1) {
+                        tmp_f_mb = { name: filters[filters.length - 1].name, value: tmp_f_mb_v };
+                        all_fi.push(tmp_f_mb);
+                    }
+                }
+                cache_a_filters = all_fi;
+                cache_filters = filters;
+                let req = `@js:\nlet url="";\nlet hp=params.filters;\nreturn {url:url,POST:false,httpParams:hp}`;
+                text_filters.value = `{\n"pageSize":30,\n"requestFilters":"${data_cg.join("")}"\n}`;
+                text_filters_r.value = req;
+                req_butt(filters);
+                toast("成功", "#3bffa2");
+            } catch (e) {
+                toast("操作未完成", "", "white", 1000);
+            }
+        }
+
+        function copy(x) {
+            let content = document.getElementById(x);
+            content.select();
+            document.execCommand("Copy");
+            toast("已复制", "#3bffa2");
+            content.setSelectionRange(0, 0);
+        }
+
+        function req_butt(filters) {
+            try {
+                let rm_node = document.getElementById("tmp");
+                if (rm_node) {
+                    rm_node.parentNode.removeChild(rm_node)
+                }
+                let ele = document.getElementById("req_button");
+                let tmp = document.createElement("tmp");
+                tmp.setAttribute("style", "margin-right:5px");
+                tmp.setAttribute("id", "tmp");
+                let tmp_child = [];
+                filters.forEach((x) => {
+                    tmp_child.push(`<button class="start enb" onclick="quick_input(this,'req_org')" value="$\{${x.value}\}">${x.name}</button>`)
+                });
+                tmp.innerHTML = tmp_child.join("\n");
+                ele.insertBefore(tmp, rc_clear)
+            } catch (e) {
+                toast("操作未完成", "", "white", 1000);
+            }
+        }
+
+        function update_req(isupdate) {
+            try {
+                let req_org_e = document.getElementById("req_org");
+                let req_org = req_org_e.value;
+                let _req_con = req_con.value;
+                let _req_con_v = req_con_v.value;
+                let _req_p = req_p.value;
+                let _req_en = req_en.value;
+                let _req_d = req_d.value;
+                let _req_e = req_e.value;
+                let _req_pg = req_pg.value;
+                let params = { filters: {}, pageIndex: 1 };
+                let encode = _req_en === "true" ? "\nurl=encodeURI(url);" : "";
+                cache_a_filters.forEach((x) => {
+                    params.filters[x.name] = x.value[Math.floor(Math.random() * x.value.length)]
+                });
+                let pg = "";
+                if (_req_pg !== "") {
+                    pg = `\nhp.${_req_pg}=params.pageIndex;`;
+                }
+                if (_req_con !== "" && _req_con_v !== "") {
+                    if (isupdate) {
+                        text_filters.value = `{\n"pageSize":30,\n"requestFilters":"${cache_filter_data_cg.join("")}"\n}`;
+                        text_filters_r.value = `@js:\nlet url="${req_org}";\nlet hp=params.filters;${pg}\nfor(let i in hp){\n if(hp[i]=="${_req_d}"){\n  delete hp[i]\n }\n};\nlet arr=[];\nfor(let i in hp){\n arr.push(i+"${_req_con_v}"+hp[i])\n}\nurl=url+arr.join("${_req_con}")+"${_req_e}";${encode}\nreturn {url:url}`;
+                        toast("成功", "#3bffa2");
+                    }
+                    else {
+                        req_cre.value = eval(`let url="${req_org}";\nlet hp=params.filters;${pg}\nfor(let i in hp){\n if(hp[i]=="${_req_d}"){\n  delete hp[i]\n }\n};\nlet arr=[];\nfor(let i in hp){\n arr.push(i+"${_req_con_v}"+hp[i])\n}\nurl=url+arr.join("${_req_con}")+"${_req_e}";${encode}\nurl`);
+                    }
+                }
+                else {
+                    if (!/\${.*?}/.test(req_org)) {
+                        let post = _req_p === "post";
+                        if (isupdate) {
+                            text_filters.value = `{\n"pageSize":30,\n"requestFilters":"${cache_filter_data_cg.join("")}"\n}`;
+                            text_filters_r.value = `@js:\nlet url="${req_org}";\nlet hp=params.filters;${pg}\nfor(let i in hp){\n if(hp[i]=="${_req_d}"){\n  delete hp[i]\n }\n};\nreturn {url:url,POST:${post},httpParams:hp}`;
+                            toast("成功", "#3bffa2");
+                        }
+                        else {
+                            if (post) {
+                                req_cre.value = eval(`let url="${req_org}";\nlet hp=params.filters;${pg}\nfor(let i in hp){\n if(hp[i]=="${_req_d}"){\n  delete hp[i]\n }\n};\nlet arr=[];\nfor(let i in hp){\n arr.push(i+"="+hp[i])\n};\n"【url】："+url+"\\n【body】："+arr.join("&")`);
+                            }
+                            else {
+                                req_cre.value = eval(`let url="${req_org}";\nlet hp=params.filters;${pg}\nfor(let i in hp){\n if(hp[i]=="${_req_d}"){\n  delete hp[i]\n }\n};\nlet arr=[];\nfor(let i in hp){\n arr.push(i+"="+hp[i])\n}\nurl=url+"?"+arr.join("&");\nurl`);
+                            }
+                        }
+                    }
+                    else {
+                        let data = "";
+                        let filters = [];
+                        let p_a = var_p.value === "true" ? "_" : "";
+                        for (let i = 0; i < cache_filter_data_cg.length; i++) {
+                            let x = cache_filter_data_cg[i].replace(/\\n/g, "");
+                            let y = cache_filter_data_cg[i];
+                            if (!/::/.test(x)) {
+                                filters.push(p_a + x);
+                                let regx = new RegExp(`\\$\{(${x}?)\}`, "g");
+                                req_org = req_org.replace(regx, `\$\{${p_a}$1\}`);
+                                if (i === 0) {
+                                    data += p_a + x + "\\n";
+                                }
+                                else {
+                                    data += "\\n" + p_a + x + "\\n";
+                                }
+                            }
+                            else {
+                                data += y;
+                            }
+                        }
+                        let t_filters = `{\n"pageSize":30,\n"requestFilters":"${data}"\n}`;
+                        cache_a_filters.forEach((x) => {
+                            params.filters[p_a + x.name] = x.value[Math.floor(Math.random() * x.value.length)]
+                        });
+                        let fil = `let {${filters.join(",")}}=params.filters`;
+                        let r_end = req_org.split("}")[req_org.split("}").length - 1];
+                        let reg_le = [".", "$", "(", ")", "*", "+", "[", "?", "^", "{", "|", "\\"];
+                        let d_req_org = "";
+                        if (_req_con_v.length === 2) {
+                            let l0 = reg_le.includes(_req_con_v[0]) ? "\\" + _req_con_v[0] : _req_con_v[0];
+                            let l1 = reg_le.includes(_req_con_v[1]) ? "\\" + _req_con_v[1] : _req_con_v[1];
+                            let _rr = new RegExp(`\\w+${l1}${l0}`, "g");
+                            let _rr_end = new RegExp(`${l0}\\w+${l1}${r_end}`);
+                            d_req_org = `\nurl=url.replace(${_rr},"").replace(${_rr_end},"${r_end}");`;
+                        }
+                        if (isupdate) {
+                            text_filters.value = t_filters;
+                            text_filters_r.value = `@js:\n${fil}\nlet url=\`${req_org}\`;${d_req_org}\n${encode}\nreturn {url:url}`;
+                            toast("成功", "#3bffa2");
+                        }
+                        else {
+                            req_cre.value = eval(`${fil}\nlet url=\`${req_org}\`;${d_req_org}\n${encode}\nurl`);
+                        }
+                    }
+                }
+            } catch (e) {
+                if (/SyntaxError/.test(e)) {
+                    toast("尝试打开防冲突", "", "white", 1000);
+
+                }
+                else {
+                    toast("操作未完成", "", "white", 1000);
+                }
+            }
+        }
+        function open_req(ele) {
+            let d = document.getElementById(ele);
+            if (/^https?/.test(d.value) && !/\n/.test(d.value)) {
+                window.open(d.value, "_blank");
+            }
+        }
+        function toast(t, c, cc, delay) {
+            t_mess.style.backgroundColor = c || "red";
+            t_mess.style.color = cc || "black";
+            t_mess.textContent = t || "未完成";
+            toast_mess.hidden = false;
+            setTimeout(() => {
+                toast_mess.hidden = true;
+            }, delay || 500);
+        }
+    </script>
+</body>
+
+</html>

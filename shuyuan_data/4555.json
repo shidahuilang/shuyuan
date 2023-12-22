@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "//搜索间隔30秒",
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "白灵小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.plmzw.com",
+    "bookUrlPattern": "https?://www.plmzw.com/[\\d/]+",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/sort/1_{{page}}/\n修真小说::/sort/2_{{page}}/\n都市小说::/sort/3_{{page}}/\n历史小说::/sort/4_{{page}}/\n网游小说::/sort/5_{{page}}/\n科幻小说::/sort/6_{{page}}/\n竞技小说::/sort/7_{{page}}/\n言情小说::/sort/8_{{page}}/\n其他小说::/sort/9_{{page}}/",
+    "header": "{\"referer\": \"{{source.getKey()}}/\",\n\"x-requested-with\": \"mark.via\",\n\"accept-language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\",\n\"user-agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1702440319317,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".tab p.0@text",
+      "coverUrl": ".tu > img@src",
+      "downloadUrls": "",
+      "intro": ".jj > p.p2@text",
+      "kind": ".tab1 p.0:1@text",
+      "lastChapter": ".tab > p.p3 > a@text",
+      "name": "h1.1@text",
+      "wordCount": ".tab1 p.-1@text##万"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@html",
+      "nextContentUrl": "text.下一@href"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".list_xm li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "a.1@href##(\\d+)/(\\d+)##/files/article/image/$1/$2/$2s.jpg###",
+      "kind": "a.0@text",
+      "name": "a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.-1@text",
+      "bookList": ".search_box p",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href##(\\d+)/(\\d+)##/files/article/image/$1/$2/$2s.jpg###",
+      "kind": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.p2.1@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/search.php,{\n  \"body\": \"searchkey={{key}}&type=articlename\",\n  \"method\": \"POST\",\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "分享收藏，来自论坛\n20231104 制作该源-尐哖",
+    "bookSourceGroup": "轻小说",
+    "bookSourceName": "📖 花火文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.huahuo6.com##@尐哖",
+    "customOrder": 34,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"🔖全部分类🔖\",\"url\":\"https://api.huahuo6.com/api/novel/list?source=0&order=0&index={{page}}&size=10&_t={{Math.round(new Date())}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}}\n]",
+    "lastUpdateTime": 1702354555048,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.userVo.name",
+      "coverUrl": "https://img.huahuo6.com/{{$.coverImageVo.path}}",
+      "init": "$.data",
+      "intro": "&nbsp;简介🎊🎊🎉：\n{{$.intro}}",
+      "kind": "{{$.updatedAt##\\s.*}}\n{{$.tagVos[*].title}}",
+      "lastChapter": "$.volumeVos[-1].chapterVos[-1].title",
+      "name": "$.title"
+    },
+    "ruleContent": {
+      "content": "$.data.content"
+    },
+    "ruleExplore": {
+      "author": "$.userVo.name",
+      "bookList": "$.data.result",
+      "bookUrl": "https://api.huahuo6.com/api/novel/detail?id={{$.id}}&_t={{Math.round(new Date())}}",
+      "coverUrl": "https://img.huahuo6.com/{{$.coverImageVo.path}}",
+      "intro": "&nbsp;简介🎊🎊🎉：\n{{$.intro}}",
+      "kind": "$.tagVos[*].title",
+      "lastChapter": "$.updatedAt",
+      "name": "$.title"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a",
+      "bookList": "<js>\ndata=JSON.parse(String(java.getElements('script.-1')).replace(/<\\/?script>/g,'').replace(/window\\.__pinia=/,''));\nlist=[];\nfor(d of data.my.search.novelList.result){\n\tll={};\n\tk=\"\";\n\tll.n=d.title;\n\tll.a=d.userVo.name;\n\tfor(t of d.tagVos){\n\t\tk+=t.title+',';\n\t}\n\tll.k=String(k).replace(/\\,$/,'');\n\tll.l=d.updatedAt;\n\tll.i=d.intro;\t\n\tll.c='https://img.huahuo6.com/'+d.coverImageVo.path;\tll.b='https://api.huahuo6.com/api/novel/detail?id=' + d.id+'&_t='+Math.round(new Date());\n\tlist.push(ll)\n}\nlist\n</js>",
+      "bookUrl": "b",
+      "checkKeyWord": "",
+      "coverUrl": "c",
+      "intro": "i",
+      "kind": "k",
+      "lastChapter": "l",
+      "name": "n"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\ndata=JSON.parse(src).data;\nlist=[];\nfor(v of data.volumeVos){\n\tlist.push({\"text\":v.title,\"vo\":1})\n\tfor(c of v.chapterVos){\th=\"https://api.huahuo6.com/api/novel/read?chapterId=\"+c.id+\"&_t=\"+Math.round(new Date);\n\t\tlist.push({\"text\":c.title,\"href\":h})\n\t}\n}\nlist\n</js>",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVolume": "vo"
+    },
+    "searchUrl": "https://m.huahuo6.com/search?queryTitle={{key}}",
+    "weight": 0
+  }
+]

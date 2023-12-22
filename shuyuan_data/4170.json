@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "69书吧",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.69shuba.com/",
+    "bookUrlPattern": "https://www.69shuba.com/txt/\\d+.htm",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"榜单\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"全部小说\",\"url\":\"allvote_0_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"总人气榜\",\"url\":\"/weekvisit_0_2_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"总推荐榜\",\"url\":\"/allvote_0_2_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"最近更新\",\"url\":\"/newhot_0_2_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"新书热榜\",\"url\":\"/newhot_0_1_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"全本小说\",\"url\":\"/weekvisit_0_1_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"玄幻魔法\",\"url\":\"/weekvisit_1_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"修真武侠\",\"url\":\"/weekvisit_2_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"言情小说\",\"url\":\"/weekvisit_3_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"历史军事\",\"url\":\"/weekvisit_4_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"游戏竞技\",\"url\":\"/weekvisit_5_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"科幻空间\",\"url\":\"/weekvisit_6_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"悬疑惊悚\",\"url\":\"/weekvisit_7_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"同人小说\",\"url\":\"/weekvisit_8_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"都市小说\",\"url\":\"/weekvisit_9_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"官场职场\",\"url\":\"/weekvisit_10_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"穿越时空\",\"url\":\"/weekvisit_11_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"青春校园\",\"url\":\"/weekvisit_12_0_{{page}}.htm\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "",
+    "lastUpdateTime": 1701402937799,
+    "loginUrl": "",
+    "respondTime": 510,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "&nbsp;☁️ 更新：\n{{@@[property$=update_time]@content}}\n👻  简介：\n{{@@class.navtxt@p.0@html}}",
+      "kind": "[property~=category|status|update_time]@content&&.infolist@li.1@text##节数",
+      "lastChapter": "[property$=chapter_name]@content\n##\\d+\\.|（.*|\\(.*|【.*|(零|一|二|三|四|五|六|七|八|九|十|百|千|万)(.|\\s)*章|“|”\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(\\{（｛【].*[求更谢乐发推票盟补加字Kk\\/].*[\\)\\}）｝】]/g,'')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.完整目录@href||class.btn more-btn@href##.*?com",
+      "wordCount": ".infolist@li.0@textNodes"
+    },
+    "ruleContent": {
+      "content": "class.txtnav@textNodes",
+      "replaceRegex": "##{{book.durChapterTitle}}|.*作者：.*|\\(本章完\\)|PS：.*求推荐！|PS：.*求收藏！|.*第.*章.*|感谢.*打赏.*|感谢.*推荐票.*|感谢.*月票.*|（.*月票.*）|（为大家的.*票加更.*）|第二更在.*"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.label.0@text",
+      "bookList": "class.newbox@ul@li",
+      "bookUrl": "a.0@href##.*?com",
+      "coverUrl": "img@data-src",
+      "intro": "ol@text",
+      "kind": "tag.label.1@text&&tag.label.2@text",
+      "lastChapter": "{{@@p.-1@textNodes}}･{{@@span.-2@text}}\n##\\d+\\.|（.*|\\(.*|【.*|(零|一|二|三|四|五|六|七|八|九|十|百|千|万)(.|\\s)*章|“|”\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(\\{（｛【].*[求更谢乐发推票盟补加字Kk\\/].*[\\)\\}）｝】]/g,'')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "#catalog@ul@li@a",
+      "chapterName": "text\n##\\d+\\.|（.*|\\(.*|【.*|(零|一|二|三|四|五|六|七|八|九|十|百|千|万)(.|\\s)*章|“|”\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(\\{（｛【].*[求更谢乐发推票盟补加字Kk\\/].*[\\)\\}）｝】]/g,'')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "chapterUrl": "href##.*?com"
+    },
+    "searchUrl": "https://www.69shuba.com/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=all\"\n}",
+    "weight": 0
+  }
+]

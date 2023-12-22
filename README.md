@@ -1,78 +1,53 @@
-# shuyuan
-香色闺阁集成多书源（小说，听说，漫画，电影，电视剧，音乐）已整理
+**自动更新时间** 2023-12-22 18:15:06 CST+0800
+#### 🚩 最新阅读书源修复-每隔3天自动更新一次（读不舍手-源阅读+花火阅读通用）
+#### 🚩 获取后的书源会自动效验
+
+<!-- 更新位置开始 -->
+| 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |
+|------------|------------|------------|--------------|
+| <span style="color:green;">5492</span> | <span style="color:blue;">3655</span> | <span style="color:red;">1837</span> | <span style="color:orange;">1233</span> |
+<!-- 更新位置结束 -->
+![shuyuan.png](icons/shuyuan.png)
+#### 🚩 效验书源链接
 ```
-https://ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/sourceModelList.xbs
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
-
-影视书源
+- 未效验书源链接
 ```
-97kp(优质源)包含国内外影视剧 解析快-资源一般
-https://github.com/xiaohucode/xiangse/raw/main/TV/97kp.xbs
-
-555电影(优质源)包含国内外影视剧-Netflix蓝光,福利 
-https://github.com/xiaohucode/xiangse/raw/main/TV/555dy.xbs
-
-饭团影视(优质源) 包含国内外影视剧动漫综艺
-https://github.com/xiaohucode/xiangse/raw/main/TV/fantuan.xbs
-
-星空影视(优质源) 包含国内外影视剧-资源全
-https://github.com/xiaohucode/xiangse/raw/main/TV/xkys.xbs
-
-zzzfun番剧(优质源)APP源
-https://github.com/xiaohucode/xiangse/raw/main/TV/zzzfun.xbs
-
-大师兄影视(优质源) 包含国内外影视剧-资源全
-https://github.com/xiaohucode/xiangse/raw/main/TV/dsxys.xbs
-
-厂长资源
-https://github.com/xiaohucode/xiangse/raw/main/TV/czzy.xbs
-
-大米星球(优质源)
-https://github.com/xiaohucode/xiangse/raw/main/TV/dmxq.xbs
-
-动漫巴士
-https://github.com/xiaohucode/xiangse/raw/main/TV/dmbs.xbs
-
-6动漫(优质源)
-https://github.com/xiaohucode/xiangse/raw/main/TV/6dm.xbs
-
-樱花动漫
-https://github.com/xiaohucode/xiangse/raw/main/TV/yhdm.xbs
-
-独播库(优质源)资源更新快,需要(萪敩仩蛧)
-https://github.com/xiaohucode/xiangse/raw/main/TV/duboku.xbs
-
-AnFuns动漫(优质源)蓝光无修番剧(极品)非大陆IP会触发CF 
-https://github.com/xiaohucode/xiangse/raw/main/TV/AnFuns.xbs
-
-芒果TV(优) 
-https://github.com/xiaohucode/xiangse/raw/main/TV/mgtv.xbs
-
-天空影视 解析一般,容易失效
-https://github.com/xiaohucode/xiangse/raw/main/TV/tkys.xbs
-
-快猫APP🔞 (app源) 抓的APP数据,破解金币视频
-https://github.com/xiaohucode/xiangse/raw/main/TV/kuaimao.xbs
-
-18av🔞 中文字幕H动漫.更新播放快(萪敩仩蛧)
-https://github.com/xiaohucode/xiangse/raw/main/TV/18av.xbs
-
-hanime动漫🔞 H动漫;懂得都懂(萪敩仩蛧)
-https://github.com/xiaohucode/xiangse/raw/main/TV/hanime.xbs
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
 ```
-最新3.0书源修复
+#### 🚩 规则净化
 ```
-https://ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/3.0.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
-- 安卓阅读书源集成板
+#### 🚩 TTS-70种语音包
 ```
-https://ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/reader%E4%B9%A6%E6%BA%90-20220411_183419.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
-- 书香之家书源
-```
+- 语音包生成[点我](https://tts.dalang.eu.org/)
 
-https://cdn.jsdelivr.net/gh/yeyulingfeng01/yuedu.github.io@1.1/202003.txt
+#### 🚩 香色闺阁-每隔3天自动更新一次
 
-https://cdn.jsdelivr.net/gh/yeyulingfeng01/yuedu.github.io/yeudu3.0-202005.json
+**自动更新时间** 2023-12-22 18:15:06 CST+0800
+ 
+ ``` bash
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+ ```
+#### 🚩 爱阅书香书源
+ ``` bash
+http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
+ ```
 
+#### 🚩 IPTV源
+筛选后
+ ```
+https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
+ ```
+#### 🚩 ESign/AltStore/SideStore 巨魔商店应用
+导入链接
 ```
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
+```
+请我喝红牛
+
+[![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)

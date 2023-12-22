@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "搜索间隔30秒",
+    "bookSourceGroup": "",
+    "bookSourceName": "E小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.eexiaoshuo.co",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.212.400 QQBrowser/12.0.5443.400\"}",
+    "lastUpdateTime": 1702466780081,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".info-main@.dispc.0@span@a@text",
+      "coverUrl": ".info-main@.lazy@data-original",
+      "init": "",
+      "intro": ".info-main-intro@text",
+      "kind": "",
+      "lastChapter": ".info-main@.dispc.1@a@text##最新章节：##",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "id.article@html",
+      "nextContentUrl": "#next_url@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".commend-title@span@text",
+      "bookList": ".category-commend@.category-div",
+      "bookUrl": ".commend-title@a@href",
+      "coverUrl": ".lazy@data-original",
+      "intro": ".intro@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": ".commend-title@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".info-chapters.1@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]
