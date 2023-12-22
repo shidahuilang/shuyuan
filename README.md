@@ -18,7 +18,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 ```
 #### 🚩 规则净化
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 #### 🚩 TTS-70种语音包
 ```
@@ -31,11 +31,11 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 **自动更新时间** 2023-12-22 18:15:06 CST+0800
  
  ``` bash
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/main/aiyueshuxiang.ibs
+https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
 
 #### 🚩 IPTV源
@@ -46,7 +46,7 @@ https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
 #### 🚩 ESign/AltStore/SideStore 巨魔商店应用
 导入链接
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
 ```
 请我喝红牛
 
