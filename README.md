@@ -48,6 +48,5 @@ https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
 ```
-请我喝红牛
 
 [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
