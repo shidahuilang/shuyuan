@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceName": "小说阅读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m1.qqdu.cc/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻修真::http://m1.qqdu.cc/1_{{page}}/\n都市商战::http://m1.qqdu.cc/2_{{page}}/\n历史军事::http://m1.qqdu.cc/3_{{page}}/\n网游科幻::http://m1.qqdu.cc/4_{{page}}/\n悬疑推理::http://m1.qqdu.cc/5_{{page}}/\n穿越架空::http://m1.qqdu.cc/6_{{page}}/\n古典言情::http://m1.qqdu.cc/7_{{page}}/\n现代言情::http://m1.qqdu.cc/8_{{page}}/\n耽美同人::http://m1.qqdu.cc/9_{{page}}/\n综合其他::http://m1.qqdu.cc/10_{{page}}/",
+    "lastUpdateTime": 1702975360846,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "span.1@text",
+      "intro": "class.des",
+      "name": "a.7@text"
+    },
+    "ruleContent": {
+      "content": "id.ctxt@all"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "intro": "class.des@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "class.round",
+      "bookUrl": "a@href",
+      "intro": "class.des@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "tag.dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://m1.qqdu.cc/s/?wd={{key}}",
+    "weight": 0
+  }
+]

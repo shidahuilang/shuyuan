@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceName": "明智屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.mingzw.net/",
+    "bookUrlPattern": "https://www.mingzw.net/mzwbook/\\d+.html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/mzwlist/玄幻_{{page}}.html\n奇幻::/mzwlist/奇幻_{{page}}.html\n武侠::/mzwlist/武侠_{{page}}.html\n仙侠::/mzwlist/仙侠_{{page}}.html\n都市::/mzwlist/都市_{{page}}.html\n言情::/mzwlist/言情_{{page}}.html\n历史::/mzwlist/历史_{{page}}.html\n军事::/mzwlist/军事_{{page}}.html\n游戏::/mzwlist/游戏_{{page}}.html\n竞技::/mzwlist/竞技_{{page}}.html\n科幻::/mzwlist/科幻_{{page}}.html\n灵异::/mzwlist/灵异_{{page}}.html\n完本小说::/mzwlist/全本_{{page}}.html\n穿越架空::/mzwlist/穿越_{{page}}.html",
+    "lastUpdateTime": 1703050623263,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "#novel-detail@a.1@text",
+      "coverUrl": "#novel-detail@img@src",
+      "intro": ".desc@text",
+      "kind": "#novel-detail@a.5@text",
+      "lastChapter": "#novel-detail@a.7@text",
+      "name": "class.novel-name",
+      "tocUrl": "text.查看目录@href"
+    },
+    "ruleContent": {
+      "content": "class.contents@html",
+      "replaceRegex": "##设置X|手机扫码阅读.*|推荐小说.*|新入庫小說.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "dd.0@text",
+      "bookList": "class.figure-horizontal figure-1",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "lastChapter": "a.2@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.content gclearfix@ul@li!-1:-2:-3",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://www.mingzw.net/mzwlist/{{key}}.html",
+    "weight": 0
+  }
+]

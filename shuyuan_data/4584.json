@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "2023.12.20修复搜索，添加发现–zhbyjm7783",
+    "bookSourceGroup": "源仓库&论坛1208",
+    "bookSourceName": "神书网pi12345[修复]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.pi12345.com",
+    "customOrder": -459,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/category/1/1.html\n武侠::/category/2/1.html\n都市::/category/3/1.html\n历史::/category/4/1.html\n网游::/category/5/1.html\n科幻::/category/6/1.html\n其它::/category/7/1.html\n女生::/category/8/1.html\n全部::/category/all/1.html",
+    "lastUpdateTime": 1703080669530,
+    "loginCheckJs": "",
+    "respondTime": 4854,
+    "ruleBookInfo": {
+      "author": "//meta[@property=\"og:novel:author\"]/@content",
+      "coverUrl": "//meta[@property=\"og:image\"]/@content##.*nocover.*",
+      "init": "",
+      "intro": "//meta[@property=\"og:description\"]/@content",
+      "kind": "//meta[@property=\"og:novel:category\"]/@content",
+      "lastChapter": "//meta[@property=\"og:novel:lastest_chapter_name\"]/@content&&//meta[@property=\"og:novel:update_time\"]/@content##\\n##•",
+      "name": "//meta[@property=\"og:title\"]/@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "id.content@p@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.a.1@text",
+      "bookList": "class.CGsectionTwo-right-content-unit",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "",
+      "intro": "p.-2@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "tag.a.0@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.BCsectionTwo-top-chapter@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search/,{\n\t\"method\":\"POST\",\n\t\"body\":\"searchkey={{key}}&searchtype=all&t_btnsearch=\",\n\t\"webView\": true\n\t}",
+    "weight": 0
+  }
+]
