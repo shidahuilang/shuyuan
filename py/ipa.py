@@ -19,10 +19,10 @@ def main():
     # 更改本地路径
     new_test_path = 'ipa/test.json'
     new_local_path = 'ipa/apps.json'
-    remote_url = 'https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/apps.json'
+    #remote_url = 'https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/apps.json'
     
     # Download remote file
-    download_remote_file(remote_url, new_local_path)
+    #download_remote_file(remote_url, new_local_path)
 
     # Continue with your existing merge logic
     try:
