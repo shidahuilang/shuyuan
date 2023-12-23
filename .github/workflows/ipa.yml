@@ -1,4 +1,5 @@
 name: ipa
+
 on:
   workflow_dispatch:
   schedule:
@@ -9,33 +10,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
-         python-version: "3.10"
+          python-version: "3.10"
 
-      - name: 安装依赖项
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: 运行脚本
+      - name: Run script
         run: python py/ipa.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
-      - name: 提交文件
+      - name: Configure Git
         run: |
           git config --local user.email "${{ secrets.USER_EMAIL }}"
           git config --local user.name "${{ secrets.USER_NAME }}"
-          git add .
-          git commit -m "ipa应用商店合并" -a || true
-          git commit -m "Add new JSON files" || echo "No changes to commit"
+
+      - name: Commit and push changes
+        run: |
+          git add -u
+          git commit -m "ipa应用商店更新合并"
           git push
-          
-      - name: Telegram通知
+
+      - name: Telegram Notification
         run: |
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
           -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
