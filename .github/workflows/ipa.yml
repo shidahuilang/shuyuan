@@ -21,7 +21,7 @@ jobs:
           pip install requests bs4 pytz
 
       - name: 运行脚本
-        run: python py/shuyuan.py && python py/xiaoyan.py
+        run: python py/ipa.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
