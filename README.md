@@ -43,7 +43,7 @@ https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
 https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
  ```
-#### 🚩 ESign/AltStore/SideStore 巨魔商店应用
+#### 🚩 ESign/AltStore/SideStore/锤子助手 巨魔商店应用
 导入链接
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
