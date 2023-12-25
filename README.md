@@ -39,7 +39,6 @@ https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
 
 #### 🚩 IPTV源
-筛选后
  ```
 http://2280.eu.org:3008/cn.m3u
  ```
