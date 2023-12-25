@@ -41,6 +41,9 @@ https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
 #### 🚩 IPTV源
 筛选后
  ```
+http://2280.eu.org:3008/cn.m3u
+ ```
+ ```
 https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
  ```
 #### 🚩 ESign/AltStore/SideStore/锤子助手 巨魔商店应用
