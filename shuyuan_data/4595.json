@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceName": "稷下书院",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.novel543.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.detail@class.author@text",
+      "coverUrl": "id.detail@class.cover@tag.img@src",
+      "intro": "id.detail@class.intro@text",
+      "kind": "id.detail@class.meta@tag.a@text",
+      "name": "id.detail@class.title@text",
+      "tocUrl": "id.detail@class.chaplist@class.more@tag.a.0@href"
+    },
+    "ruleContent": {
+      "content": "class.content@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": "class.media",
+      "bookUrl": "tag.h3@tag.a@href",
+      "coverUrl": "tag.img@src",
+      "intro": "tag.p@text",
+      "name": "tag.h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chaplist@tag.ul.1@tag.a",
+      "chapterUrl": "href",
+      "chapterName": "text"
+    },
+    "searchUrl": "https://www.novel543.com/search/{{key}}",
+    "weight": 0
+  }
+]

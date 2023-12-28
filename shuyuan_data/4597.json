@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceName": "笔趣鸽",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.ahfgb.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "enabledReview": true,
+    "header": "",
+    "lastUpdateTime": 1703779676368,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.block_txt2@tag.p.2@text",
+      "intro": "class.intro_info@text",
+      "kind": "class.block_txt2@tag.p.3@tag.a.0@text",
+      "lastChapter": "class.block_txt2@tag.a.-1@text",
+      "name": "class.block_txt2@tag.a.1@text"
+    },
+    "ruleContent": {
+      "content": "//div[@id='nr1']/text()",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": "class.bookbox",
+      "bookUrl": "tag.a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "class.intro_line@text",
+      "lastChapter": "class.update@text",
+      "name": "class.iTit@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapter@tag.li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href",
+      "updateTime": "class.block_txt2@tag.p.-2"
+    },
+    "searchUrl": "https://m.ahfgb.com/search.php?keyword={{key}}&submit={{key}}",
+    "weight": 0
+  }
+]
