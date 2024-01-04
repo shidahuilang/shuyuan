@@ -1,0 +1,37 @@
+[
+  {
+    "ruleSearch": {
+      "bookList": "class.search_box@tag.p",
+      "name": "tag.a.0@text",
+      "author": "tag.a.2@text",
+      "wordCount": "",
+      "lastChapter": "",
+      "bookUrl": "tag.a.0@href",
+      "kind": "tag.a.1@text"
+    },
+    "ruleBookInfo": {
+      "name": "class.catalog1@tag.h1@text",
+      "coverUrl": "class.catalog1@tag.img@src",
+      "author": "class.catalog1@class.tab@class.p1@text##作者：",
+      "lastChapter": "class.catalog1@class.tab@class.p3@tag.a@text",
+      "kind": "class.catalog1@class.tab@class.p4@text",
+      "wordCount": "class.catalog1@class.tab@class.p6@text",
+      "intro": "class.jj@class.p2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.info_chapters@tag.ul.1@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.listpage@class.right@tag.a@href"
+    },
+    "ruleContent": {
+      "content": "id.novelcontent@html"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "searchUrl": "s.php,{\n    \"charset\": \"gbk\",\n    \"body\": \"s={{key}}&type=articlename\",\n    \"method\": \"POST\"\n}",
+    "bookSourceUrl": "https://m.po18.info",
+    "bookSourceType": 0,
+    "bookSourceName": "PO18"
+  }
+]

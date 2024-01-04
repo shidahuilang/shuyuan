@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "更换网址：\nhttps://www.tinghaode123.com/\nhttps://www.verysadfun.com/",
+    "bookSourceGroup": "",
+    "bookSourceName": "🔞 挺好的",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tinghao8.com",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": -2086092163,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "[{\"title\":\"言情\",\"url\":\"/category/32705809293382/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"现言\",\"url\":\"/category/32707214946374/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"古言\",\"url\":\"/category/32707214909509/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"耽美\",\"url\":\"/category/32705809215557/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"同人\",\"url\":\"/category/32705809346631/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"综合\",\"url\":\"/category/32705811198022/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"/category/32707215024198/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"仙侠\",\"url\":\"/category/32707214917702/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"轻说\",\"url\":\"/category/32707214999624/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"游戏\",\"url\":\"/category/32707214921799/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"幻情\",\"url\":\"/category/32707214925895/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"悬疑\",\"url\":\"/category/32707214983240/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"青春\",\"url\":\"/category/32707214942278/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"现实\",\"url\":\"/category/32707216080968/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"短篇\",\"url\":\"/category/32707236253767/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"纯爱\",\"url\":\"/category/32707236339782/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.29}}]",
+    "header": "\"User-Agent\":\"Mozilla/5.0 (Linux; Android 7.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.3 SearchCraft/2.6.2 (baiduboxapp; P1 7.0)\";",
+    "lastUpdateTime": 1697074809022,
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 12784,
+    "ruleBookInfo": {
+      "author": ".author a@text",
+      "coverUrl": ".BGsectionOne-top-left img@src",
+      "intro": ".BGsectionTwo-bottom@html",
+      "kind": ".category a.0@text&&.category span.2@text&&.time span@text##\\s.*",
+      "lastChapter": ".newestChapter a@text##[\\(（【].*?[求更谢乐发订合补加].*?[】）\\)]",
+      "name": ".title@text",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "class.RBGsectionThree-content@html"
+    },
+    "ruleExplore": {
+      "author": ".b@text",
+      "bookList": ".CGsectionTwo-right-content-unit",
+      "bookUrl": ".title@href",
+      "coverUrl": "@js:\nvar doc = org.jsoup.Jsoup.parse(result)\nvar url = \"https://www.tinghaode8.com\"+doc.select(\"a\").get(0).attr(\"href\")\nvar all = org.jsoup.Jsoup.parse(java.ajax(url))\nresult = all.select(\".BGsectionOne-top-left\").select(\"img\").get(0).attr(\"src\")",
+      "intro": "tag.p.2@text",
+      "kind": "p.3@text##.*更新\\s",
+      "name": ".title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".SHsectionThree-middle p",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "马戏团",
+      "coverUrl": "",
+      "kind": "a.0@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".BCsectionTwo-top li a",
+      "chapterName": "text##[\\(（【].*?[求更谢乐发订合补加].*?[】）\\)]",
+      "chapterUrl": "href##$##,{'webView': true}",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/search/{{key}}/{{page}}",
+    "weight": 0
+  }
+]
