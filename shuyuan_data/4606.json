@@ -1,17 +1,18 @@
 [
   {
-    "bookSourceComment": "PS：排行榜调试访问超时！其他正常！",
+    "bookSourceComment": "",
     "bookSourceGroup": "★网页源",
-    "bookSourceName": "趣读小说网[繁体字]",
+    "bookSourceName": "趣读小说网[繁体搜索]",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.quduxsw.com",
+    "bookUrlPattern": "https://www.quduxsw.com/page/detail\\d+/",
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": false,
     "enabledExplore": true,
     "exploreUrl": "——————分类——————\n玄幻奇幻::/sort/1/{{page}}.html\n仙俠修真::/sort/2/{{page}}.html\n都市言情::/sort/3/{{page}}.html\n軍史穿越::/sort/4/{{page}}.html\n網遊競技::/sort/5/{{page}}.html\n科幻靈異::/sort/6/{{page}}.html\n女生頻道::/sort/7/{{page}}.html\n其它綜合::/sort/8/{{page}}.html\n——————排行榜——————\n總排行榜::/rank/allvisit/{{page}}.html\n月排行榜::/rank/monthvisit/{{page}}.html\n周排行榜::/rank/weekvisit/{{page}}.html\n日排行榜::/rank/dayvisit/{{page}}.html\n收藏榜::/rank/goodnum/{{page}}.html\n字數榜::/rank/words/{{page}}.html\n推薦榜::/rank/allvote/{{page}}.html\n新書榜::/rank/postdate/{{page}}.html\n更新榜::/rank/lastupdate/{{page}}.html\n——————全本——————\n玄幻奇幻::/full/xuanhuan/{{page}}.html\n仙俠修真::/full/xianxia/{{page}}.html\n都市言情::/full/dushi/{{page}}.html\n軍史穿越::/full/junshi/{{page}}.html\n網遊競技::/full/wangyou/{{page}}.html\n科幻靈異::/full/kehuan/{{page}}.html\n女生頻道::/full/nvsheng/{{page}}.html\n其它綜合::/full/qita/{{page}}.html",
     "header": "@js:JSON.stringify({\"referer\":baseUrl})",
-    "lastUpdateTime": 1704258845871,
+    "lastUpdateTime": 1704429989454,
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "[property$=author]@content",
@@ -43,7 +44,7 @@
       "chapterName": "text",
       "chapterUrl": "href",
       "nextTocUrl": "option@value",
-      "preUpdateJs": "Java.refreshTocUrl()"
+      "preUpdateJs": "java.refreshTocUrl()"
     },
     "searchUrl": "https://www.quduxsw.com/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
     "weight": 0
