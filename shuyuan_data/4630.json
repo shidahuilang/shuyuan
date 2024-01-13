@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "基于By~江湖源码修改",
+    "bookSourceGroup": "",
+    "bookSourceName": "键盘小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.janpn.net/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "<li class=\"col-xs-foot text-center\">\n<a href=\"(.*?)\" rel=\"nofollow\">(.*?)</a>\n</li>",
+    "lastUpdateTime": 1705027016477,
+    "loginUrl": "",
+    "respondTime": 1076,
+    "ruleBookInfo": {
+      "author": ".col-md-12@p.0@text##by|著",
+      "coverUrl": "img@src",
+      "init": "",
+      "intro": "p.bookIntro@text",
+      "kind": "h3@text&&.col-md-12 p.1@text@js:\nlet tag = []\nfor(let i in result){tag.push(String(result[i]))}\nif(!tag[0].startsWith(\"《\")){\n  tag[0] = tag[0].replace(/小说.*/,\"\")\n  tag[1] = tag[1].replace(/更新时间：/,\"\")\n  tag\n}else{\n\ttag[1].replace(/更新时间：/,\"\")\n\t}",
+      "lastChapter": "i.fa-refresh + a@text",
+      "name": "h3@text##.*《|》.*",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.htmlContent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.shop-info.1@text##\\[著\\]",
+      "bookList": "class.list@a",
+      "bookUrl": "href@js:\nlet href = String(result)\ntry{\nif(!href.match(/www/)){\n\t  \"/book/\"+ href.match(/\\/\\/(.*)\\.janpn/)[1] + \".html\"\n\t}\n\t}\n\tcatch(e){href}\n",
+      "checkKeyWord": "我的",
+      "lastChapter": "class.shop-info.2@span@text",
+      "name": "class.shop-info.0@b@text##《|》"
+    },
+    "ruleToc": {
+      "chapterList": "ul.panel-chapterlist a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://www.janpn.net/search.php?q={{key}}=15947871991047423724",
+    "weight": 0
+  }
+]

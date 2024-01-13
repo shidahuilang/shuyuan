@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceName": "69书吧",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.69shuba.com/",
+    "bookUrlPattern": "https://www.69shuba.com/txt/\\d+.htm",
+    "customOrder": 1202,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1695050349739,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.booknav2@a.1@text",
+      "coverUrl": "",
+      "init": "",
+      "intro": "class.navtxt@html",
+      "kind": "class.booknav2@a.2@text",
+      "lastChapter": "class.qustime@li.0@span@text",
+      "name": "class.booknav2@h1@a@text",
+      "tocUrl": "text.完整目录@href",
+      "wordCount": "class.booknav2@p.2@text##(?<=字).*"
+    },
+    "ruleContent": {
+      "content": "class.txtnav@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.labelbox@tag.label.0@text",
+      "bookList": "class.newbox@tag.li",
+      "bookUrl": "h3@tag.a.0@href",
+      "coverUrl": "img.0@src",
+      "intro": "class.ellipsis_2@text",
+      "lastChapter": "tag.p.2@a@text",
+      "name": "h3@text",
+      "kind": "class.labelbox@tag.label.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.catalog@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.69shuba.com/modules/article/search.php,{\n\"charset\": \"cp936\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}&submit=Search\"\n}",
+    "weight": 0
+  }
+]
