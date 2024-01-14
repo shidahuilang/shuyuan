@@ -2,7 +2,7 @@ name: 书源
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/25 10,10/3 * * *"
+    - cron: "0 10 */3 * *"
 
 jobs:
   build:
