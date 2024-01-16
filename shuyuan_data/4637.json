@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783\n章节URL规则和正文下一页URL规则代码By_柚屿☆",
+    "bookSourceGroup": "自写0111",
+    "bookSourceName": "龙渊书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.lysw1.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "                          首页                                 ::/\n                          分类                                 ::/tvb/{{page}}/\n玄幻小说::/tvb/xhxs/{{page}}/\n仙侠小说::/tvb/xxxs/{{page}}/\n都市小说::/tvb/dsxs/{{page}}/\n历史小说::/tvb/lsxs/{{page}}/\n网游小说::/tvb/wyxs/{{page}}/\n科幻小说::/tvb/khxs/{{page}}/\n灵异小说::/tvb/lyxs/{{page}}/\n言情小说::/tvb/yqxs/{{page}}/\n其他小说::/tvb/qtxs/{{page}}/\n                          排行榜                              ::/tnt/\n总排行榜::/tnt/allvisit/?page={{page}}\n月排行榜::/tnt/monthvisit/?page={{page}}\n周排行榜::/tnt/weekvisit/?page={{page}}\n日排行榜::/tnt/dayvisit/?page={{page}}\n收藏榜::/tnt/goodnum/?page={{page}}\n字数榜::/tnt/size/?page={{page}}\n新书榜::/tnt/toptime/?page={{page}}\n新书上架::/tnt/postdate/?page={{page}}\n更新榜::/tnt/lastupdate/?page={{page}}\n                          全本                                 ::/quanben/tvb/{{page}}/\n玄幻小说::/quanben/tvb/xhxs/{{page}}/\n仙侠小说::/quanben/tvb/xxxs/{{page}}/\n都市小说::/quanben/tvb/dsxs/{{page}}/\n历史小说::/quanben/tvb/lsxs/{{page}}/\n网游小说::/quanben/tvb/wyxs/{{page}}/\n科幻小说::/quanben/tvb/khxs/{{page}}/\n灵异小说::/quanben/tvb/lyxs/{{page}}/\n言情小说::/quanben/tvb/yqxs/{{page}}/\n其他小说::/quanben/tvb/qtxs/{{page}}/",
+    "lastUpdateTime": 1705106475859,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "class.btn btn-primary@href",
+      "wordCount": "class.btn btn-xs btn-primary@text"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@p!0:-1:-2@text",
+      "nextContentUrl": "id.next_url@onclick##.+'(.+)'##$1,{'webView': true}###",
+      "webJs": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".book-fa63f2a3",
+      "bookUrl": "h4@a@href",
+      "coverUrl": "img@data-src",
+      "intro": ".intro@text",
+      "kind": ".label-info@text",
+      "name": "h4@a@text",
+      "wordCount": ".label-default@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.col-sm-6 col-md-3 chapter-fa63f2a3@a",
+      "chapterName": "text",
+      "chapterUrl": "onclick##.+'(.+)'##$1,{'webView': true}###",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "http://www.lysw1.com/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]
