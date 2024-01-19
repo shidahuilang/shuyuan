@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceName": "废文网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.mysadfun.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "header": "",
+    "lastUpdateTime": 1705578757015,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.author@text",
+      "intro": "class.BGsectionTwo-bottom@text",
+      "kind": "class.category@tag.a.0@text",
+      "lastChapter": "class.newestChapter@text",
+      "name": "class.BGsectionOne-top-right@text",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "class.RBGsectionThree-content@text"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.SHsectionThree-middle@tag.p",
+      "bookUrl": "tag.a.1@href",
+      "checkKeyWord": "",
+      "kind": "tag.a.0@text",
+      "name": "tag.a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.BCsectionTwo-top@tag.a",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href##$##,{\"webView\": true}",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.mysadfun.com/search/{{key}}",
+    "weight": 0
+  }
+]

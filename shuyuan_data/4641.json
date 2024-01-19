@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceName": "笔下生花",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.bixiashenghua.com",
+    "bookUrlPattern": "https?://m.bixiashenghua.com/d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1705416566861,
+    "respondTime": 182628,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "",
+      "downloadUrls": "",
+      "init": "@put:{\nn:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=\u0001image]@content\",\nt:\"text.章节目录@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "{{$.}}dir.html"
+    },
+    "ruleContent": {
+      "content": ".pt-read-cont@html##最新网址：bixiashenghua.c o m",
+      "title": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".color5@a@title",
+      "bookList": ".pt-recomment-cont",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "@img@src",
+      "intro": ".compulsory-row@html",
+      "kind": ".pt-recomment-label@text",
+      "lastChapter": "",
+      "name": ".size14@a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".chapter-list",
+      "chapterName": "a@title",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/search/result.html?searchkey={{key}}",
+    "weight": 0
+  }
+]
