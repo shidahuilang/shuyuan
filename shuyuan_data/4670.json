@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "笔趣阁wduec",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wduec.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::/sort/xuanhuan/\n武侠修真::/sort/wuxia/\n都市言情::/sort/dushi/\n历史军事::/sort/lishi/\n科幻灵异::/sort/kehuan/\n游戏竞技::/sort/youxi/\n排行榜单::/top/\n完本小说::/wanben/\n阅读记录::/history.html",
+    "header": "",
+    "lastUpdateTime": 1706242423762,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=lastest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#article@html"
+    },
+    "ruleExplore": {
+      "author": ".s4@text||.s5@text",
+      "bookList": "#newscontent li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "{{\"/static/nocover.jpg\"}}",
+      "kind": "span.0:4@text##\\[|\\]",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".search-list > ul > li!0",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "@js:\"/static/nocover.jpg\"",
+      "kind": "span.0:-1:-2@text",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list dl dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.wduec.com/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

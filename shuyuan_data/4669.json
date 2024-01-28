@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "读吧读/大佬读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.du8du.com",
+    "bookUrlPattern": "https?://m.du8du.com/\\w+",
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::https://m.du8du.com/sort/1/{{page}}/\n武侠修真::https://m.du8du.com/sort/2/{{page}}/\n都市言情::https://m.du8du.com/sort/3/{{page}}/\n历史军事::https://m.du8du.com/sort/4/{{page}}/\n科幻灵异::https://m.du8du.com/sort/5/{{page}}/\n游戏竞技::https://m.du8du.com/sort/6/{{page}}/\n纯爱耽美::https://m.du8du.com/sort/7/{{page}}/\n综合其他::https://m.du8du.com/sort/8/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1706234066411,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "p.gray@ownText##著.*",
+      "canReName": "1",
+      "coverUrl": "img.cover_l@src",
+      "intro": "#introa@textNodes",
+      "kind": "h4 span@text##\\[|\\]",
+      "lastChapter": ".blockc a.-1@text",
+      "name": "h4@textNodes",
+      "tocUrl": "text.全部章节@href",
+      "wordCount": ".row_textl span.1@text##字"
+    },
+    "ruleContent": {
+      "content": "#acontent@html"
+    },
+    "ruleExplore": {
+      "author": "p@text##\\|(.+?)\\s##$1###",
+      "bookList": ".c_row",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "p@text##.*\\|.*\\s",
+      "kind": "p@ownText##\\|.*",
+      "name": "h4@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "p@ownText##\\|.*",
+      "bookList": ".c_row",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": "p@ownText##.*\\|\\s*",
+      "kind": "0",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href\n@js:\nvar url=[],\nnext=result[0];\nem=java.getString(\"em#pagestats@textNodes\");\npage=em.match(/\\d+/);\nys=page?page[0]:null;\nif(ys>2){\n\tfor(i=2;i<=ys;i++){\n\t\tlink=String(next).\n\t\treplace(/\\d+.asc/,\n\t\t\ti+\"/asc\");\n\t\t\turl.push(link)\n\t\t}\n\t}else{url=result}\nurl;",
+      "updateTime": "title"
+    },
+    "searchUrl": "https://m.du8du.com/search/all/{{java.encodeURI(key,\"gbk\")}}/{{page}}.html",
+    "weight": 0
+  }
+]

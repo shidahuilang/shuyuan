@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "/*1.21 修复换源出错\n\tlegado&&coolapk by:\nyouke2580||游客2580\n登录设置繁简转换，默认关闭*/",
+    "bookSourceGroup": "源仓库,优质,整理校验,自制,网页源,69sx",
+    "bookSourceName": "69書吧(繁体)x",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://69shux.com",
+    "bookUrlPattern": "https?://69shux.com/book/\\d+.html",
+    "customOrder": 77,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部分类::https://69shux.com/novels/class/0_{{page}}.html\n玄幻奇幻::https://69shux.com/novels/class/1_{{page}}.html\n武侠仙侠::https://69shux.com/novels/class/2_{{page}}.html\n现代都市::https://69shux.com/novels/class/3_{{page}}.html\n历史军事::https://69shux.com/novels/class/4_{{page}}.html\n科幻小说::https://69shux.com/novels/class/5_{{page}}.html\n游戏竞技::https://69shux.com/novels/class/6_{{page}}.html\n恐怖灵异::https://69shux.com/novels/class/7_{{page}}.html\n言情小说::https://69shux.com/novels/class/8_{{page}}.html\n动漫同人::https://69shux.com/novels/class/9_{{page}}.html\n其他类型::https://69shux.com/novels/class/10_{{page}}.html\n完本小说::https://69shux.com/novels/full/0_{{page}}.html\n玄幻奇幻::https://69shux.com/novels/full/1_{{page}}.html\n武侠仙侠::https://69shux.com/novels/full/2_{{page}}.html\n现代都市::https://69shux.com/novels/full/3_{{page}}.html\n历史军事::https://69shux.com/novels/full/4_{{page}}.html\n科幻小说::https://69shux.com/novels/full/5_{{page}}.html\n游戏竞技::https://69shux.com/novels/full/6_{{page}}.html\n恐怖灵异::https://69shux.com/novels/full/7_{{page}}.html\n言情小说::https://69shux.com/novels/full/8_{{page}}.html\n动漫同人::https://69shux.com/novels/full/9_{{page}}.html\n其他类型::https://69shux.com/novels/full/10_{{page}}.html\n小说排行::/novels/newhot_0_0_{{page}}.html\n玄幻奇幻::/novels/newhot_1_0_{{page}}.html\n武侠仙侠::/novels/newhot_2_0_{{page}}.html\n现代都市::/novels/newhot_3_0_{{page}}.html\n历史军事::/novels/newhot_4_0_{{page}}.html\n科幻小说::/novels/newhot_5_0_{{page}}.html\n游戏竞技::/novels/newhot_6_0_{{page}}.html\n恐怖灵异::/novels/newhot_7_0_{{page}}.html\n言情小说::/novels/newhot_8_0_{{page}}.html\n动漫同人::/novels/newhot_9_0_{{page}}.html\n其他类型::/novels/newhot_10_0_{{page}}.html\n不限::/novels/newhot_0_0_{{page}}.html\n连载::/novels/newhot_0_0_{{page}}.html\n全本::/novels/newhot_0_1_{{page}}.html\n人气::/novels/weekvisit_0_0_{{page}}.html\n推荐::/novels/allvote_0_0_{{page}}.html\n新书::/novels/newhot_0_0_{{page}}.html\n最近更新::/last\n都市::/newtag/都市/{{page}}\n重生::/newtag/重生/{{page}}\n系统::/newtag/系統/{{page}}\n求生::/newtag/求生/{{page}}\n穿越异世::/newtag/穿越异世/{{page}}\n签到::/newtag/簽到/{{page}}\n娱乐圈::/newtag/娛樂圈/{{page}}\n爽文::/newtag/爽文/{{page}}\n御兽::/newtag/御獸/{{page}}\n空间::/newtag/空間/{{page}}\n三国::/newtag/三國/{{page}}\n穿越::/newtag/穿越/{{page}}\n精灵::/newtag/精靈/{{page}}\n武道::/newtag/武道/{{page}}\n游戏::/newtag/遊戲/{{page}}\n女儿::/newtag/女兒/{{page}}\n医术::/newtag/醫術/{{page}}\n末日::/newtag/末日/{{page}}\n恐怖::/newtag/恐怖/{{page}}\n明星::/newtag/明星/{{page}}\n女強::/newtag/女強/{{page}}\n轻松::/newtag/輕鬆/{{page}}\n魔法::/newtag/魔法/{{page}}\n异世::/newtag/異世/{{page}}\n养成::/newtag/養成/{{page}}\n豪门::/newtag/豪門/{{page}}\n修仙::/newtag/修仙/{{page}}\n平凡::/newtag/平凡/{{page}}\n王朝::/newtag/王朝/{{page}}\n时代::/newtag/時代/{{page}}\n法师::/newtag/法師/{{page}}\n无敌::/newtag/無敵/{{page}}\n未来::/newtag/未來/{{page}}\n虐渣::/newtag/虐渣/{{page}}\n万界::/newtag/萬界/{{page}}\n无限::/newtag/無限/{{page}}\n娱乐::/newtag/娛樂/{{page}}\n人生::/newtag/人生/{{page}}\n离婚::/newtag/離婚/{{page}}\n命运::/newtag/命運/{{page}}\n传说::/newtag/傳說/{{page}}\n总裁::/newtag/總裁/{{page}}\n剑道::/newtag/剑道/{{page}}\n爆笑::/newtag/爆笑/{{page}}\n同人::/newtag/同人/{{page}}",
+    "header": "@js:\n(()=>{\nvar v=source.getVariable(),\ngo=v==1?\"s\":\"t\";\nhead={\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\n\t\"Cookie\": `zh_choose=${go}`,\n\t\"Referer\": baseUrl};\n\treturn JSON.stringify(head)\n})()",
+    "lastUpdateTime": 1705841169599,
+    "loginUi": "[\n    {\n        name: \"设置繁简转换\",\n        type: \"button\",\n        action: \"java.toast('设置后刷新生效')\"\n    },\n    {\n        name: \"开启繁简转换\",\n        type: \"button\",\n        action: \"set(1)\"\n    },\n    {\n        name: \"关闭繁简转换\",\n        type: \"button\",\n        action: \"set(0)\"\n    },\n    {\n        name: \"显示当前状态\",\n        type: \"button\",\n        action: \"get(v)\"\n    }\n]",
+    "loginUrl": "//获取繁简转换设置\nvar v=source.getVariable();\n//判断设置是否为空\nif(v==null||v==\"\"){\n\tv=0;\n\tsource.setVariable(v);\n\tjava.toast(\"未设置繁简转换，默认关闭。\");\n\t}else{v=v};\n//保存设置\nfunction set(num){\n\tmsg=num==1||0?\n\t\"已开启繁简转换！\":\"已关闭繁简转换！\";\n\ttips=\"\\n刷新后生效。\"\n\tjava.longToast(\"设置成功：\\n\"+\n\t\tmsg+tips);\n\treturn source.setVariable(num);\n\t}\n//获取设置\nfunction get(v){\n\tmsg=v==1||0?\n\t\"繁简转换开启！\":\"繁简转换关闭！\";\n\tjava.longToast(\"当前状态：\\n\"+msg);\n\treturn;\n}\n//按设置执行\nvar tzs=v==1?true:false;\ntzs?java.t2s(result):result;",
+    "respondTime": 8447,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "canReName": "",
+      "coverUrl": "@get:{c}",
+      "init": "<js>z=eval(String(source.loginUrl));\njava.setContent(z)</js>\n@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nw:\"ul.infolist > li.0@textNodes\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\".navtxt > p.0@text\",\nc:\"[property$=image]@content\",\nu:\"a.btn.more-btn@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{u},{'webView': true}",
+      "wordCount": "@get:{w}"
+    },
+    "ruleContent": {
+      "content": ".txtnav@textNodes",
+      "replaceRegex": "##{{try{title}catch(e){\"\"} }}|.本章完(.|\\s)*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "label.0@text||h4@text",
+      "bookList": "<js>\nso=/search.php/.test(baseUrl);\nif(!so){\n\tresult=java.webView(null,baseUrl,null);\n}\nresult\n</js>\n.newbox li||.mybox li||li",
+      "bookUrl": "h3 a@href||a.0@href\n##$##,{'webView': true}",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@data-src||img@src",
+      "intro": "ol@text##《.*》推荐！",
+      "kind": "label.1:2@text||span@text",
+      "lastChapter": "p.-1@a@textNodes||a.1@text##^\\d+\\.",
+      "name": "h3@text||a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "#catalog ul li a",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{'webView': true}",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "https://69shux.com/modules/article/search.php,{\n  \"body\": \"searchkey={{key}}&submit=Search\",\n  \"method\": \"POST\",\n  \"webView\": true\n}",
+    "variableComment": "0：关闭繁简转换\n1：开启繁简转换",
+    "weight": 0
+  }
+]

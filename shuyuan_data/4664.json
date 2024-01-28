@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "//部分章节需要登录后才能看",
+    "bookSourceGroup": "源仓库,整理校验,自制,网页源",
+    "bookSourceName": "爱巴士",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.ibus2333.com",
+    "bookUrlPattern": "https://www.ibus2333.com/novel/\\w+",
+    "customOrder": 759,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "现代耽美::/rankingtop/301?tt=null\n古耽架空::/rankingtop/302?tt=null\n穿越重生::/rankingtop/303?tt=null\n BL 同人::/rankingtop/304?tt=null\n GL 百合::/rankingtop/305?tt=null\n玄幻科幻::/rankingtop/306?tt=null\n都市言情::/rankingtop/307?tt=null\n古代言情::/rankingtop/308?tt=null\n推理悬疑::/rankingtop/310?tt=null\n网游竞技::/rankingtop/309?tt=null\n书友推荐::/rankingtop/311?tt=null\n站内推荐::/rankingtop/312?tt=null\n小妈文学::/rankingtop/313?tt=null\n蛇耽系列::/rankingtop/314?tt=null\n追夫火葬场::/rankingtop/315?tt=null\n久别重逢::/rankingtop/316?tt=null\n虫族系列::/rankingtop/317?tt=null\n键盘网游::/rankingtop/318?tt=null\n校园文学::/rankingtop/319?tt=null\n人外系列::/rankingtop/320?tt=null",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\n\t\"Referer\":\"{{baseUrl}}\"\n\t}",
+    "lastUpdateTime": 1698892809900,
+    "loginUrl": "https://www.ibus2333.com/user/login",
+    "respondTime": 7703,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "intro": ".intro p@text",
+      "kind": "[property$=category]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": ".g-nav-control a.0@href"
+    },
+    "ruleContent": {
+      "content": ".article@html||.content_zanzhu@html",
+      "payAction": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "em@data-auth",
+      "bookList": ".g-list li",
+      "bookUrl": "a@href",
+      "intro": ".info@text",
+      "kind": ".tags@span@text",
+      "name": "h2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".list li a",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{'webView': true}",
+      "nextTocUrl": ".section-list li a@href"
+    },
+    "searchUrl": "https://www.ibus2333.com/search?name={{key}}&tags=&type=3,{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]
