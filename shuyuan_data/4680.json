@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "api·凡",
+    "bookSourceName": "花生小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://api.wan123x.com/",
+    "customOrder": 20,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\": \"男频分类\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=all&fullflag=all&sort=all&page={{page}}\",\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"都市生活\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=%E9%83%BD%E5%B8%82%E7%94%9F%E6%B4%BB&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"重生艺术\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=%E9%87%8D%E7%94%9F%E5%BC%82%E6%9C%AF&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"玄幻武侠\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=%E7%8E%84%E5%B9%BB%E6%AD%A6%E4%BE%A0&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"穿越科幻\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=%E7%A9%BF%E8%B6%8A%E7%A7%91%E5%B9%BB&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"悬疑灵异\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=%E6%82%AC%E7%96%91%E7%81%B5%E5%BC%82&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"游戏动漫\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=1&category=%E6%B8%B8%E6%88%8F%E5%8A%A8%E6%BC%AB&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"女生分类\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=2&category=all&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"现代言情\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=2&category=%E7%8E%B0%E4%BB%A3%E8%A8%80%E6%83%85&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"古代言情\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=2&category=%E5%8F%A4%E4%BB%A3%E8%A8%80%E6%83%85&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"种田经商\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=2&category=%E7%A7%8D%E7%94%B0%E7%BB%8F%E5%95%86&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0.25,\n\"layout_flexBasisPercent\": -1\n}},\n{\"title\": \"重生异能\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=2&category=%E9%87%8D%E7%94%9F%E5%BC%82%E8%83%BD&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"悬疑灵异\",\"url\": \"https://api.wan123x.com/book/getBooksByParams?subsite=2&category=%E6%82%AC%E7%96%91%E7%81%B5%E5%BC%82&fullflag=all&sort=all&page={{page}}\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 0.29\n}}\n]",
+    "lastUpdateTime": 1663995372086,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "init": "",
+      "lastChapter": "$.data[-1].chapter_name",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "$..content"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleSearch": {
+      "author": "$.author_name",
+      "bookList": "$.data[*]",
+      "bookUrl": "https://api.wan123x.com/read/getCatalog?book_id={{$.book_id}}&catalog_order=asc",
+      "coverUrl": "$.cover_url",
+      "intro": "$.introduce",
+      "kind": "$.category1&&$.category2&&$.role&&$.ability",
+      "lastChapter": "",
+      "name": "$.book_name",
+      "wordCount": "$.words"
+    },
+    "ruleToc": {
+      "chapterList": "$.data[*]",
+      "chapterName": "$.chapter_name",
+      "chapterUrl": "@js:\nn=baseUrl.match(/book_id=(\\d+)/)[1];\nresult='https://api.wan123x.com/read/getChapterDetail?book_id='+n+'&chapter_id={{$.chapter_id}}'",
+      "updateTime": ""
+    },
+    "searchUrl": "https://api.wan123x.com/search/getList?keyword={{key}}",
+    "weight": 0
+  }
+]

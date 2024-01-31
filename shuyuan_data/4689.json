@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "【小说1书源】",
+    "bookSourceName": "完本神站",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wbsz.org",
+    "bookUrlPattern": "https?://[mw]+.wbsz.org/\\d+/",
+    "customOrder": -141,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": 1704522334505,
+    "respondTime": 1731,
+    "ruleBookInfo": {
+      "author": ".writer@text",
+      "coverUrl": ".detailTopLeft img@src",
+      "init": "",
+      "intro": "tbody td.-1@text",
+      "kind": "tbody a.1@text&&\n.detailTopLeft span@text",
+      "lastChapter": ".chapterTitle a.0@text",
+      "name": "h1@text",
+      "tocUrl": "",
+      "wordCount": "{{@@tbody td.-3@text}}字"
+    },
+    "ruleContent": {
+      "content": ".raderCon@textNodes||.readerCon@html",
+      "nextContentUrl": "text.下一@href",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "p.author@text",
+      "bookList": ".resultLeft li||.sortList li",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "a>img@src",
+      "intro": "p.intro@text",
+      "kind": "span.-1@text##时间：",
+      "lastChapter": "a.-1@text",
+      "name": "h3@text",
+      "wordCount": "p.words@textNodes##字"
+    },
+    "ruleToc": {
+      "chapterList": ".chapterList ul a||.chapter li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}\nhttps://www.wbsz.org/modules/article/search.php,{\n  \"charset\": \"GBK\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]
