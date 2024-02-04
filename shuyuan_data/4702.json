@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceGroup": "⭐️盐笙 精选",
+    "bookSourceName": "天籁小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.tlaibook.cc/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "周榜::https://m.tlaibook.cc/rank/0/{{page}}.html\n月榜::https://m.tlaibook.cc/rank/month/0/{{page}}.html\n总榜::https://m.tlaibook.cc/rank/all/0/{{page}}.html",
+    "lastUpdateTime": 1706971354713,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.author@text",
+      "intro": "class.BGsectionTwo-bottom@text",
+      "lastChapter": "class.newestChapter@text",
+      "name": "class.title@text",
+      "tocUrl": "class.BGsectionThree@tag.a.-1@href"
+    },
+    "ruleContent": {
+      "content": "@js:\ntry{\n\td=(a,b)=>{\n\t\tb = java.md5Encode(b);\n   var d = b.substring(0,16);\n   var e = b.substring(16);\n   type = \"AES/CBC/PKCS7Padding\";\n  cipher=java.createSymmetricCrypto(\n  \ttype,e,d);\n   \treturn cipher.decryptStr(a);\n   }\n   code=src.match(/html\\((d\\(.+\\))\\)/)[1];\n   //java.log(code)\n\t\tresult=eval(code);\n\t}catch(e){\n\t\tjava.log(e)\n\t\t//如果解密出错，使用动态解密\n\t\tweb=java.webView(null,baseUrl,null);\n\t\tjava.setContent(web);\n\t\tcontent=java.getElement(\n\t\t\t\".RBGsectionThree-content\");\n\t\t\tresult=content.html();\n\t\t}finally{\n\t\t\tresult\n\t\t\t}"
+    },
+    "ruleExplore": {
+      "author": "tag.a.1@text",
+      "bookList": "class.CGsectionTwo-right-content-unit",
+      "bookUrl": "tag.a.0@href",
+      "intro": "tag.p.2@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.SHsectionThree-middle@p",
+      "bookUrl": "tag.a.1@href",
+      "checkKeyWord": "炮灰",
+      "name": "tag.a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.BCsectionTwo-top@a",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href",
+      "nextTocUrl": "id.next@href"
+    },
+    "searchUrl": "https://m.tlaibook.cc/search/{{key}}/{{page}}",
+    "weight": 0
+  }
+]
