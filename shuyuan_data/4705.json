@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "斗破苍穹小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.doupocangqiong.cc",
+    "bookUrlPattern": "http://m.doupocangqiong.cc/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/sort/xuanhuan/{{page}}.html\n奇幻::/sort/qihuan/{{page}}.html\n武侠::/sort/wuxia/{{page}}.html\n仙侠::/sort/xianxia/{{page}}.html\n都市::/sort/dushi/{{page}}.html\n历史::/sort/lishi/{{page}}.html\n军事::/sort/junshi/{{page}}.html\n游戏::/sort/youxi/{{page}}.html\n竞技::/sort/jingji/{{page}}.html\n科幻::/sort/kehuan/{{page}}.html\n灵异::/sort/lingyi/{{page}}.html\n同人::/sort/tongren/{{page}}.html\n女生::/sort/nvsheng/{{page}}.html\n其他::/sort/qita/{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1707195028718,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "{{$.}}list/"
+    },
+    "ruleContent": {
+      "content": "#articlecon>p@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##.*\\(第\\d+.*页\\)|\\s*.*本章未完.*\\s*",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".pt-card li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "kind": "a.-1@text",
+      "name": "a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".pt-card li",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "斗破苍穹",
+      "coverUrl": "img@src",
+      "kind": ".pt-info@text",
+      "lastChapter": "a.-1@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".pt-dir li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".pt-dir-sel a@href"
+    },
+    "searchUrl": "http://m.doupocangqiong.cc/search.html?searchkey={{key}}",
+    "weight": 0
+  }
+]
