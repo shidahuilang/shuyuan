@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "*参数参考\ncategory=分类\norderType=排序0相关性1上架时间3收听量4收藏量5评分\nexcludeTags=屏蔽标签\nincludeTags=标签\nfinished=0连载1完结\nsource=1原创首发2会员上传\n\n*若要使用自己账号，请用浏览器打开UAA官网(https://www.uaa.com)登录，推荐使用Reqable软件抓包自己账号的token，把本源的↓请求头↓的token换掉即可。",
+    "bookSourceGroup": "有声,R18",
+    "bookSourceName": "UAA有声",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.uaa.com/api/audio/app/audio/",
+    "customOrder": 15,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\n$ = (x) => `search?${x}&orderType=2&page={{page}}&searchType=1&size=40`;\nu = source.key;\npush(\"• 排行榜 •\", null, 1);\n[\"周榜\", \"月榜\", \"年榜\", \"总榜\"].map((p, q) => {\n  push(p, `rank?type=${q + 1}`, null);\n});\n[[\"题材\", \"category\"],\n[\"CV\", \"author\"]].map([a, b] => {\n  push(`• ${a} •`, $(\"\"), 1);\n  d = /y/.test(b) ? \"categories\": \"authors\";\n  c = JSON.parse(java.ajax(u + d)).model;\n  for (i = 0; i < c.length; i++) {\n    push(\n      c[i].name,\n      $(b + \"=\" + encodeURIComponent(c[i].name)),\n      null\n    );\n  };\n});\nJSON.stringify(sort);",
+    "header": "{\"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODYwNzIxNzA0MDMxMzU4OTc2LCJ0eXBlIjoiY3VzdG9tZXIiLCJ0aW1lc3RhbXAiOjE2ODUzNzg1MTE1NzQsImV4cCI6MTY4NTk4MzMxMX0.-FX7rOJP7I10ApjeM5NVaGj57aeYnkVyopniC7U_Dv8\"}",
+    "lastUpdateTime": 1708069137530,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".authors",
+      "canReName": "1",
+      "coverUrl": ".coverUrl",
+      "init": "",
+      "intro": "&nbsp;{{$..brief}}\n&shy;\n开坑：{{$..createTime##(.*?)T(.*?)\\.##$1 $2###}}\n更新：{{$..updateTime##(.*?)T(.*?)\\.##$1 $2###}}\n{{$..categories&&.tags##,|\\n##&nbsp;}}\n##^&nbsp;\\n&shy;",
+      "kind": "{{java.getString('.finished')==1?\"完结\":\"连载\"}}",
+      "lastChapter": ".latestUpdate",
+      "tocUrl": ".id##^##catalog/",
+      "wordCount": ".durationFormat##00:00:00"
+    },
+    "ruleContent": {
+      "content": ".url",
+      "replaceRegex": "##[\\s\\S]*本文来自：.*，请访问源网站！[\\s\\S]*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "authors\n@js:\nr = result;\nr != \"\" ? r: \"UAA\";",
+      "bookList": ".[?(@.title)]",
+      "bookUrl": "id||audioId##^##intro?id=",
+      "checkKeyWord": "",
+      "coverUrl": "coverUrl",
+      "intro": "brief##\\s*",
+      "kind": "{{$.finished##1##完结}},{{$.categories&&tags&&updateTimeFormat}}##^0,##连载,",
+      "lastChapter": "latestUpdate",
+      "name": "title",
+      "wordCount": "durationFormat##00:00:00"
+    },
+    "ruleToc": {
+      "chapterList": ".[?(@.title)]",
+      "chapterName": "title",
+      "chapterUrl": "@js:\n`../chapter?force=false&id={{$.id}}&offset=0&viewId=` + new Date().getTime() + Math.round(Math.random() * (9999 - 1000) + 1000);",
+      "isPay": "purchased",
+      "isVip": "vip",
+      "isVolume": "",
+      "preUpdateJs": "",
+      "updateTime": "{{$.price}}U币  {{$.onlineTime##(.*?)T(.*?)\\.##$1 $2###}}##^0.0U币\\s*"
+    },
+    "searchUrl": "@js:\nu = source.key;\nu + `search?keyword={{encodeURIComponent(key)}}&orderType=0&page={{page}}&searchType=1&size=42`;",
+    "weight": 0
+  }
+]

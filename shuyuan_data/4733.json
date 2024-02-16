@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "category=分类\norderType=排序0相关性1上架时间2更新时间3观看量4收藏量\nexcludeTags=屏蔽标签\nincludeTags=标签\nfinished=0连载1完结\nsource=1原创首发2会员上传\n\n*若要使用自己账号，请用浏览器打开UAA官网(https://www.uaa.com)登录，推荐使用Reqable软件抓包自己账号的token，把本源的↓请求头↓的token换掉即可。",
+    "bookSourceGroup": "漫画,R18",
+    "bookSourceName": "UAA禁漫",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.uaa.com/api/comic/app/comic/",
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\n$ = (x) => `search?${x}&orderType=1&page={{page}}&searchType=1&size=36`;\nu = source.key;\npush(\"• 排行榜 •\", null, 1);\n[\"周榜\", \"月榜\", \"年榜\", \"总榜\"].map((p, q) => {\n  push(p, `rank?type=${q + 1}`, null);\n});\n[\"日本\", \"韩国\"].map((o, r) => {\n  g = r + 1;\n  push(`【${o}H漫】`, $(`origin=` + g), 1);\n  [[\"分类\", \"category\"],\n  [\"标签\", \"includeTags\"]].map([a, b] => {\n    push(`• ${a} •`, $(\"\"), 1);\n    d = /y/.test(b) ? \"categories\": \"tags\";\n    c = JSON.parse(java.ajax(u + d + `?type=` + g)).model;\n    for (i = 0; i < c.length; i++) {\n      push(\n        c[i].name,\n        $(b + \"=\" + encodeURIComponent(c[i].name)),\n        null\n      );\n    };\n  });\n});\nJSON.stringify(sort);",
+    "header": "{\"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODYwNzIxNzA0MDMxMzU4OTc2LCJ0eXBlIjoiY3VzdG9tZXIiLCJ0aW1lc3RhbXAiOjE2ODUzNzg1MTE1NzQsImV4cCI6MTY4NTk4MzMxMX0.-FX7rOJP7I10ApjeM5NVaGj57aeYnkVyopniC7U_Dv8\"}",
+    "lastUpdateTime": 1708069303683,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".authors",
+      "canReName": "1",
+      "coverUrl": ".coverUrl",
+      "init": "",
+      "intro": "&nbsp;{{$..brief}}\n&shy;\n开坑：{{$..createTime##(.*?)T(.*?)\\.##$1 $2###}}\n更新：{{$..updateTime##(.*?)T(.*?)\\.##$1 $2###}}\n{{$..categories&&.tags##\\n|,##&nbsp;}}\n##^&nbsp;\\n&shy;",
+      "kind": "{{java.getString('.finished')==1?\"完结\":\"连载\"}}",
+      "lastChapter": ".latestUpdate",
+      "tocUrl": ".id##^##catalog/",
+      "wordCount": ".imageCount##$##P"
+    },
+    "ruleContent": {
+      "content": ".images[*]\n@js:\nresult.split('\\n').map(\n  x => `<img src=\"${x}\">`\n).join('\\n');",
+      "replaceRegex": "##[\\s\\S]*本文来自.*，请访问源网站！[\\s\\S]*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "authors\n@js:\nr = result;\nr != \"\" ? r: \"UAA\";",
+      "bookList": ".[?(@.title)]",
+      "bookUrl": "id||comicId##^##intro?id=",
+      "checkKeyWord": "",
+      "coverUrl": "coverUrl",
+      "intro": "brief##\\s*",
+      "kind": "{{$.finished##1##完结}},{{$.categories&&tags&&updateTimeFormat}}##^0,##连载,",
+      "lastChapter": "latestUpdate",
+      "name": "title",
+      "wordCount": "imageCount##$##P\n<js>##^P</js>"
+    },
+    "ruleToc": {
+      "chapterList": ".[?(@.title)]",
+      "chapterName": "title",
+      "chapterUrl": "@js:\n`../chapter?force=false&id={{$.id}}&offset=0&viewId=` + new Date().getTime() + Math.round(Math.random() * (9999 - 1000) + 1000);",
+      "isPay": "purchased",
+      "isVip": "vip",
+      "isVolume": "",
+      "updateTime": "{{$.price}}U币  {{$.onlineTime##(.*?)T(.*?)\\.##$1 $2###}}##^0.0U币\\s*"
+    },
+    "searchUrl": "@js:\nu = source.key;\nu + `search?category=&keyword={{encodeURIComponent(key)}}&orderType=0&page={{page}}&searchType=1&size=36`;",
+    "weight": 0
+  }
+]
