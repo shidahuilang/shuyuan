@@ -1,5 +1,59 @@
 [
   {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "3q读书{修改}",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://sk.3qdu.com",
+    "bookUrlPattern": "https?://sk.3qdu.com/xiaoshuo/\\d+/",
+    "customOrder": 5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/xuanhuan/<,{{page}}/>\n仙侠小说::/wuxia/<,{{page}}/>\n都市小说::/dushi/<,{{page}}/>\n历史小说::/junshi/<,{{page}}/>\n游戏小说::/wangyou/<,{{page}}/>\n科幻小说::/kehuan/<,{{page}}/>\n女生小说::/mm/<,{{page}}/>\n其他小说::/qita/<,{{page}}/>\n",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1708091206321,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "downloadUrls": "@get:{d}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nd:\"text.TXT下载@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".fl_list .tt",
+      "bookUrl": "a.1@href",
+      "kind": "p.p2@text",
+      "name": "a.1@text",
+      "wordCount": "{{@@p.p3@text}}字"
+    },
+    "ruleSearch": {
+      "author": "0",
+      "bookList": ".search_box p",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "kind": "0",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.p2.1@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://sk.3qdu.com/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "category=分类\norderType=排序0相关性1上架时间2更新时间3观看量5评分6肉量7字数\nexcludeTags=屏蔽标签\nincludeTags=标签\nfinished=0连载1完结\nspace=1短篇小说（小于10万字）2中篇小说（10-100万字）3长篇小说（大于100万字）\nsource=1原创首发2会员上传\n\n*若要使用自己账号，请用浏览器打开UAA官网(https://www.uaa.com)登录，推荐使用Reqable软件抓包自己账号的token，把本源的↓请求头↓的token换掉即可。",
     "bookSourceGroup": "R18",
     "bookSourceName": "UAA文学",
@@ -56,6 +110,62 @@
     },
     "searchUrl": "@js:\nu = source.key;\nu + `search?category=&excludeTags=&keyword={{encodeURIComponent(key)}}&orderType=0&page={{page}}&searchType=1&size=40`;",
     "variableComment": "",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "剑来/顶点小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.jianlai.cc",
+    "bookUrlPattern": "https?://m.jianlai.cc/bqg/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/fenlei/1/{{page}}/\n武侠::/fenlei/2/{{page}}/\n都市::/fenlei/3/{{page}}/\n历史::/fenlei/4/{{page}}/\n科幻::/fenlei/5/{{page}}/\n游戏::/fenlei/6/{{page}}/\n女生::/fenlei/7/{{page}}/\n全本::/quanben/fenlei/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1708145550953,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".dd_box span.0@text",
+      "coverUrl": ".cover img@src",
+      "intro": ".book_about dd@text\n##各位书友如果觉得.*",
+      "kind": ".dd_box span.1:2:-1@text##.*：",
+      "lastChapter": ".book_last a.0@text",
+      "name": ".name@text",
+      "wordCount": ".dd_box span.-2@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chaptercontent>p@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "span@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "kind": ".cat@text##.*：",
+      "lastChapter": "a.-1@text",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".book_last dl.1@dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
     "weight": 0
   },
   {
@@ -116,52 +226,48 @@
   },
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "自制,源仓库,网页源",
-    "bookSourceName": "笔趣阁tkxyk",
+    "bookSourceGroup": "1",
+    "bookSourceName": "红人小说网",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.tkxyk.com",
-    "bookUrlPattern": "https?://www.tkxyk.com/\\d+/",
-    "customOrder": 60,
+    "bookSourceUrl": "https://www.hongrenxs.com/",
+    "customOrder": 392,
     "enabled": true,
     "enabledCookieJar": false,
     "enabledExplore": true,
-    "exploreUrl": "玄幻::/category/xhtxt/{{page}}.html\n武侠::/category/wxtxt/{{page}}.html\n都市::/category/dstxt/{{page}}.html\n历史::/category/lstxt/{{page}}.html\n网游::/category/wytxt/{{page}}.html\n科幻::/category/khtxt/{{page}}.html\n其它::/category/qttxt/{{page}}.html\n女生::/category/nstxt/{{page}}.html",
-    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9; MIX 2 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36\"}",
-    "lastUpdateTime": 1707898760840,
-    "respondTime": 3821,
+    "exploreUrl": "[{\"title\":\"高辣小说\",\"url\":\"sort/1/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"百合小说\",\"url\":\"sort/2/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"情欲小说\",\"url\":\"sort/4/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"耽美小说\",\"url\":\"sort/6/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}}]",
+    "lastUpdateTime": 1677727750748,
+    "respondTime": 8156,
     "ruleBookInfo": {
-      "author": "@get:{a}",
-      "coverUrl": "@get:{c}",
-      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=lastest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nt:\"text.章节目录@href\"}",
-      "intro": "@get:{i}",
-      "kind": "@get:{k}",
-      "lastChapter": "@get:{l}",
-      "name": "@get:{n}",
-      "tocUrl": "@get:{t}"
+      "tocUrl": "text.章节目录@href"
     },
     "ruleContent": {
-      "content": "#content@html",
+      "content": "#nr1@html",
       "nextContentUrl": "text.下一页@href"
     },
-    "ruleExplore": [],
+    "ruleExplore": {
+      "author": ".mr15@text##作者:##",
+      "bookList": ".list-item",
+      "bookUrl": ".article@a.0@href",
+      "coverUrl": "img.0@src",
+      "intro": ".fs12.1@text",
+      "name": ".article@a.0@text"
+    },
     "ruleReview": [],
     "ruleSearch": {
-      "author": "a.-1@text",
-      "bookList": ".CGsectionTwo-right-content-unit",
-      "bookUrl": "a.0@href",
-      "checkKeyWord": "剑来",
-      "coverUrl": "a.0@href\n@js:\n$=result.match(/\\D*((\\d{3})\\d+)\\D*/);\n$1=Number($[1]-8);\n$2=$[2];\n`/image/${$2}/${$1}/${$1}s.jpg`",
-      "intro": "p.-2@text",
-      "kind": "p.-1@text##.*：",
-      "name": "a.0@text"
+      "author": ".mr15@text##作者:##",
+      "bookList": ".list-item",
+      "bookUrl": ".article@a.0@href",
+      "checkKeyWord": "都市",
+      "intro": ".fs12.1@text",
+      "name": ".article@a.0@text"
     },
     "ruleToc": {
-      "chapterList": "ol li a",
-      "chapterName": "text",
-      "chapterUrl": "href",
-      "nextTocUrl": "option@value||text.下一页@href"
+      "chapterList": ".last9 li!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
     },
-    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search,{\n  \"body\": \"searchkey={{key}}&searchtype=all\",\n  \"method\": \"POST\"\n}",
+    "searchUrl": "https://www.hongrenxs.com/search/,{\"method\":\"POST\",\"body\":\"searchkey={{key}}&searchtype=all&t_btnsearch=\"}",
     "weight": 0
   },
   {

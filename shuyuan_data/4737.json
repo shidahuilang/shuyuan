@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "3q读书{修改}",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://sk.3qdu.com",
+    "bookUrlPattern": "https?://sk.3qdu.com/xiaoshuo/\\d+/",
+    "customOrder": 5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/xuanhuan/<,{{page}}/>\n仙侠小说::/wuxia/<,{{page}}/>\n都市小说::/dushi/<,{{page}}/>\n历史小说::/junshi/<,{{page}}/>\n游戏小说::/wangyou/<,{{page}}/>\n科幻小说::/kehuan/<,{{page}}/>\n女生小说::/mm/<,{{page}}/>\n其他小说::/qita/<,{{page}}/>\n",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1708091206321,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "downloadUrls": "@get:{d}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nd:\"text.TXT下载@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".fl_list .tt",
+      "bookUrl": "a.1@href",
+      "kind": "p.p2@text",
+      "name": "a.1@text",
+      "wordCount": "{{@@p.p3@text}}字"
+    },
+    "ruleSearch": {
+      "author": "0",
+      "bookList": ".search_box p",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "kind": "0",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.p2.1@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://sk.3qdu.com/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

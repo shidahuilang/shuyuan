@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "剑来/顶点小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.jianlai.cc",
+    "bookUrlPattern": "https?://m.jianlai.cc/bqg/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/fenlei/1/{{page}}/\n武侠::/fenlei/2/{{page}}/\n都市::/fenlei/3/{{page}}/\n历史::/fenlei/4/{{page}}/\n科幻::/fenlei/5/{{page}}/\n游戏::/fenlei/6/{{page}}/\n女生::/fenlei/7/{{page}}/\n全本::/quanben/fenlei/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1708145550953,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".dd_box span.0@text",
+      "coverUrl": ".cover img@src",
+      "intro": ".book_about dd@text\n##各位书友如果觉得.*",
+      "kind": ".dd_box span.1:2:-1@text##.*：",
+      "lastChapter": ".book_last a.0@text",
+      "name": ".name@text",
+      "wordCount": ".dd_box span.-2@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chaptercontent>p@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "span@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "kind": ".cat@text##.*：",
+      "lastChapter": "a.-1@text",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".book_last dl.1@dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

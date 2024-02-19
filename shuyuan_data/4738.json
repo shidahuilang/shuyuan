@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "1",
+    "bookSourceName": "红人小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.hongrenxs.com/",
+    "customOrder": 392,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"高辣小说\",\"url\":\"sort/1/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"百合小说\",\"url\":\"sort/2/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"情欲小说\",\"url\":\"sort/4/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"耽美小说\",\"url\":\"sort/6/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}}]",
+    "lastUpdateTime": 1677727750748,
+    "respondTime": 8156,
+    "ruleBookInfo": {
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "#nr1@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".mr15@text##作者:##",
+      "bookList": ".list-item",
+      "bookUrl": ".article@a.0@href",
+      "coverUrl": "img.0@src",
+      "intro": ".fs12.1@text",
+      "name": ".article@a.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".mr15@text##作者:##",
+      "bookList": ".list-item",
+      "bookUrl": ".article@a.0@href",
+      "checkKeyWord": "都市",
+      "intro": ".fs12.1@text",
+      "name": ".article@a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".last9 li!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.hongrenxs.com/search/,{\"method\":\"POST\",\"body\":\"searchkey={{key}}&searchtype=all&t_btnsearch=\"}",
+    "weight": 0
+  }
+]
