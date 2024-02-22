@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "网络",
+    "bookSourceName": "🍊落霞小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.luoxia123.com/",
+    "bookUrlPattern": "https://www.luoxia123.com/.*/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"玄幻仙侠\",\"url\":\"/xuanhuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"都市言情\",\"url\":\"/yanqing/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"穿越架空\",\"url\":\"/chuanyue/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"历史军事\",\"url\":\"/lishi/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"科幻灵异\",\"url\":\"/lingyi/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"网游竞技\",\"url\":\"/wangyou/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"耽美同人\",\"url\":\"/danmei/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n{\"title\":\"文学经典\",\"url\":\"/wenxue/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}\n]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1708450447164,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "small@text",
+      "coverUrl": "img@src",
+      "intro": ".m-summary@text",
+      "name": "h1@textNodes",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.content@html",
+      "nextContentUrl": "text.下一章@href||class.m-page@a.-1@href"
+    },
+    "ruleExplore": {
+      "author": "td.1@text",
+      "bookList": "tbody>tr",
+      "bookUrl": " a.0@href",
+      "kind": "td.2@text",
+      "name": "td.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.2@text",
+      "bookList": "tbody>tr",
+      "bookUrl": " a.0@href",
+      "kind": "td.-1@text",
+      "lastChapter": "td.1@text",
+      "name": "td.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.list-group@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.luoxia123.com/e/search/index.php,{\n  \"body\": \"tbname=bookname&show=title,writer&tempid=1&keyboard={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

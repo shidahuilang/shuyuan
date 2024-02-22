@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "南屯小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.zmdy8.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"言情\",\"url\":\"https://www.zmdy8.com/class/yanqing/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻\",\"url\":\"https://www.zmdy8.com/class/xuanhuan/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市\",\"url\":\"https://www.zmdy8.com/class/dushi/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠\",\"url\":\"https://www.zmdy8.com/class/wuxia/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"耽美\",\"url\":\"https://www.zmdy8.com/class/danmei/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"https://www.zmdy8.com/class/kehuan/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"轻小说\",\"url\":\"https://www.zmdy8.com/class/lightnovel/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史\",\"url\":\"https://www.zmdy8.com/class/lishi/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"全本\",\"url\":\"https://www.zmdy8.com/quanben/class/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1708580279195,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@p.0@text",
+      "coverUrl": "img@data-original",
+      "intro": "&nbsp;&nbsp;🕰️{{@@id.info@p.-1@text}}\n📜简介：{{@@id.intro@text}}##《{{book.name}}》.*",
+      "kind": "id.info@p.1:3@text##状态|：",
+      "lastChapter": "id.info@p.-2@text##最新章节：",
+      "name": "h1@text",
+      "tocUrl": "text.章节目录@href||class.chapterlist@href",
+      "wordCount": "id.info@p.2@text##字数：|\\s"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@html##本章未完.*继续阅读",
+      "nextContentUrl": "rel.next@href||text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": "class.l@li",
+      "bookUrl": "a.0@href",
+      "kind": ".s1@text&&.s5@text",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text"
+    },
+    "ruleSearch": {
+      "author": ".btm@textNodes",
+      "bookList": ".item",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": "dd@text",
+      "lastChapter": "",
+      "name": "dt@text",
+      "wordCount": "em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.content_1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/souba82.html?searchkey={{key}}",
+    "weight": 0
+  }
+]
