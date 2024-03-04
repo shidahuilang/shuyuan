@@ -1,91 +1,6 @@
 [
   {
     "bookSourceComment": "",
-    "bookSourceName": "猫番国漫(推荐)",
-    "bookSourceId": "http://122.228.8.21:3333",
-    "bookSourceType": 2,
-    "bookSourceUrl": "http://122.228.8.21:3333",
-    "bookSourceCoverUrl": "https://maofan-1316464103.cos.ap-nanjing.myqcloud.com/source_maofan.png",
-    "header": "{\n  \"cookie\": \"PHPSESSID=tv1vbrstqej6c32a81vqfp68d3; uloginid=398364979bf-9de7-a9ea-bbb2-123b76b12fb0\"\n}",
-    "customOrder": -10,
-    "from": 1,
-    "sourceOrigin": "clipboard",
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "enabledReview": false,
-    "exploreType": null,
-    "exploreUrl": "最近更新::/books?page={{page}}&sort=pub_time&&热门榜::/books?page={{page}}&sort=hot&&收藏榜::/books?page={{page}}&sort=collections&&人气榜::/books?page={{page}}&sort=score",
-    "lastUpdateTime": 1666573793921,
-    "respondTime": 8535,
-    "bookSourceStyle": {
-      "colors": [
-        "#e8ac3a",
-        "#e8ac3a"
-      ],
-      "size": 2
-    },
-    "ruleBookInfo": {
-      "author": "authorName",
-      "coverUrl": "",
-      "intro": "intro",
-      "kind": "",
-      "lastChapter": "latestChapterName",
-      "name": "bookName##<[^>]+>##",
-      "tocUrl": "bookId##(.*)##http://122.228.8.21:3333/ms?id=$1###"
-    },
-    "ruleContent": {
-      "content": "items.url",
-      "replaceRegex": "",
-      "nextContentUrl": null,
-      "contentParseUrl": null,
-      "waitTocs": null,
-      "comicUrlJsDealer": null,
-      "provider": null,
-      "contentDecodeParam": "",
-      "jsFunc": ""
-    },
-    "ruleExplore": {
-      "jsonContent": "",
-      "author": "authorName",
-      "bookList": "items",
-      "bookUrl": "bookId##(.*)##http://122.228.8.21:3333/booksinfo?bookId=$1###",
-      "coverUrl": "coverUrl##https://cover.miaowumh.com/(.*)##http://39.99.239.44/mw/mw.php?url=https://39e3lsm4h5s27hcnuea71sxhu0nj7da8-cdn.imgresovrces.net:23647/$1###",
-      "intro": "latestChapterName",
-      "name": "bookName##<[^>]+>##",
-      "display": null,
-      "type": null,
-      "lastChapter": "latestChapterName",
-      "kind": "categoryName"
-    },
-    "ruleReview": [],
-    "ruleSearch": {
-      "jsonContent": "",
-      "author": null,
-      "bookList": "data",
-      "bookUrl": "relationId##(.*)##http://122.228.8.21:3333/booksinfo?bookId=$1###",
-      "coverUrl": "relationId##(.*)##http://39.99.239.44/mw/mw.php?url=https://39e3lsm4h5s27hcnuea71sxhu0nj7da8-cdn.imgresovrces.net:23647/cover/comic/$1.webp###",
-      "intro": null,
-      "name": "key##<[^>]+>##",
-      "display": null,
-      "type": null,
-      "lastChapter": null,
-      "kind": null
-    },
-    "ruleToc": {
-      "jsonContent": null,
-      "chapterList": "chapters",
-      "chapterName": "chapterName##<[^>]+>##",
-      "chapterUrl": "chapterId&&volumnName##(.*)\\n(.*)##http://122.228.8.21:3333/Img?bookId=$2&chapterId=$1###",
-      "nextTocUrl": "",
-      "contentDecodeParam": null,
-      "jsFunc": null
-    },
-    "searchUrl": "/search?key={{key}}",
-    "localName": null
-  },
-  {
-    "bookSourceComment": "",
     "bookSourceGroup": "🍿 日常,🎨 漫画",
     "bookSourceName": "🎨皮皮漫画💞",
     "bookSourceType": 2,
@@ -899,6 +814,45 @@
     },
     "searchUrl": "<js>\nvar _0x58a6=['\\x62\\x47\\x39\\x6e\\x61\\x57\\x35\\x56\\x63\\x6d\\x77\\x3d','\\x63\\x32\\x56\\x68\\x63\\x6d\\x4e\\x6f\\x58\\x31\\x52\\x44','\\x61\\x57\\x35\\x6b\\x5a\\x58\\x68\\x50\\x5a\\x67\\x3d\\x3d','\\x63\\x7a\\x4a\\x30','\\x63\\x6d\\x56\\x77\\x62\\x47\\x46\\x6a\\x5a\\x51\\x3d\\x3d','\\x65\\x77\\x6f\\x67\\x49\\x43\\x41\\x67\\x49\\x6d\\x4e\\x6f\\x59\\x58\\x4a\\x7a\\x5a\\x58\\x51\\x69\\x4f\\x69\\x4a\\x56\\x56\\x45\\x59\\x74\\x4f\\x43\\x49\\x73\\x43\\x69\\x41\\x67\\x49\\x43\\x41\\x69\\x61\\x47\\x56\\x68\\x5a\\x47\\x56\\x79\\x63\\x79\\x49\\x36\\x65\\x77\\x6f\\x67\\x49\\x43\\x41\\x67\\x49\\x43\\x41\\x69\\x55\\x6d\\x56\\x6d\\x5a\\x58\\x4a\\x6c\\x63\\x69\\x49\\x36\\x49\\x67\\x3d\\x3d','\\x64\\x58\\x4a\\x73','\\x4c\\x32\\x31\\x68\\x62\\x6d\\x64\\x68\\x4c\\x32\\x78\\x70\\x59\\x6e\\x4a\\x68\\x63\\x6e\\x6b\\x69\\x4c\\x41\\x6f\\x67\\x49\\x43\\x41\\x67\\x49\\x43\\x41\\x69\\x51\\x32\\x39\\x76\\x61\\x32\\x6c\\x6c\\x49\\x6a\\x6f\\x69\\x49\\x67\\x6f\\x67\\x49\\x43\\x41\\x67\\x66\\x51\\x6f\\x67\\x49\\x48\\x30\\x3d','\\x4c\\x32\\x31\\x68\\x62\\x6d\\x64\\x68\\x4c\\x33\\x4e\\x6c\\x59\\x58\\x4a\\x6a\\x61\\x44\\x39\\x72\\x5a\\x58\\x6c\\x33\\x62\\x33\\x4a\\x6b\\x50\\x51\\x3d\\x3d'];var _0x4a99=function(_0x58a65c,_0x4a99e5){_0x58a65c=_0x58a65c-0x0;var _0x28cefe=_0x58a6[_0x58a65c];if(_0x4a99['SQDXlX']===undefined){(function(){var _0xcf2edf=function(){var _0x334a11;try{_0x334a11=Function('return\\x20(function()\\x20'+'{}.constructor(\\x22return\\x20this\\x22)(\\x20)'+');')();}catch(_0x483cb6){_0x334a11=window;}return _0x334a11;};var _0x509571=_0xcf2edf();var _0x1b8031='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x509571['atob']||(_0x509571['atob']=function(_0x2402b8){var _0x26a272=String(_0x2402b8)['replace'](/=+$/,'');var _0x1d5555='';for(var _0x461cf6=0x0,_0x4f96fa,_0x524cbd,_0x4d9d6f=0x0;_0x524cbd=_0x26a272['charAt'](_0x4d9d6f++);~_0x524cbd&&(_0x4f96fa=_0x461cf6%0x4?_0x4f96fa*0x40+_0x524cbd:_0x524cbd,_0x461cf6++%0x4)?_0x1d5555+=String['fromCharCode'](0xff&_0x4f96fa>>(-0x2*_0x461cf6&0x6)):0x0){_0x524cbd=_0x1b8031['indexOf'](_0x524cbd);}return _0x1d5555;});}());_0x4a99['WoivNy']=function(_0x35378e){var _0x5af2c5=atob(_0x35378e);var _0x150a1a=[];for(var _0x5a05da=0x0,_0x591f4a=_0x5af2c5['length'];_0x5a05da<_0x591f4a;_0x5a05da++){_0x150a1a+='%'+('00'+_0x5af2c5['charCodeAt'](_0x5a05da)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x150a1a);};_0x4a99['ryZdeS']={};_0x4a99['SQDXlX']=!![];}var _0x511861=_0x4a99['ryZdeS'][_0x58a65c];if(_0x511861===undefined){_0x28cefe=_0x4a99['WoivNy'](_0x28cefe);_0x4a99['ryZdeS'][_0x58a65c]=_0x28cefe;}else{_0x28cefe=_0x511861;}return _0x28cefe;};eval(String(source[_0x4a99('\\x30\\x78\\x30')]));(function(_0x461cf6){if(Get(_0x4a99('\\x30\\x78\\x31'))==!![]||_0x461cf6[_0x4a99('\\x30\\x78\\x32')]('\\x54\\x43')>-0x1){_0x461cf6=String(java[_0x4a99('\\x30\\x78\\x33')](_0x461cf6))[_0x4a99('\\x30\\x78\\x34')](/TC/,'');}option=_0x4a99('\\x30\\x78\\x35')+Get(_0x4a99('\\x30\\x78\\x36'))+_0x4a99('\\x30\\x78\\x37');return Get(_0x4a99('\\x30\\x78\\x36'))+_0x4a99('\\x30\\x78\\x38')+_0x461cf6+'\\x2c'+option;}(key));\n</js>",
     "variableComment": "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",
+    "weight": 0
+  },
+  {
+    "bookSourceName": "憩心阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qixinge.cc/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1709373230560,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "class.size16 color5 pt-read-text@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##本章未完.[\\s\\S]*\\(\\^ \\^\\)|\\(本章完\\)"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.fl color7@tag.a.0@text",
+      "bookList": "class.pt-rank-detail",
+      "bookUrl": "class.pt-rank-detail@tag.a@href",
+      "checkKeyWord": "大宋神探志",
+      "coverUrl": "class.pt-rank-detail@tag.img@src",
+      "intro": "class.compulsory-row fl w100 color5 desc@text",
+      "kind": "class.fl color7@tag.a.-1@text",
+      "lastChapter": "class.color2 mr20@text",
+      "name": "class.fl mr60@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.compulsory-row-one",
+      "chapterName": "tag.span@text##\\d\\.",
+      "chapterUrl": "@href",
+      "nextTocUrl": "class.pt-dir-sel@tag.a@href"
+    },
+    "searchUrl": "https://www.qixinge.cc/search/result.html?searchkey={{key}} &page={{page}}",
     "weight": 0
   },
   {
