@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceGroup": "A级",
+    "bookSourceName": "侠客小说网（修复正文乱序）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tcknh.com/",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{ \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36\"}",
+    "lastUpdateTime": 1709536014385,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@tag.a.0@text",
+      "coverUrl": "id.mainpic@tag.img@src",
+      "intro": "class.intro@text",
+      "kind": "id.info@tag.a.1@text",
+      "lastChapter": "id.info@tag.a.-2@text",
+      "name": "id.wrapper@tag.h1@html",
+      "tocUrl": "class.article@class.indent.-1@tag.a.-1@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\nvar arr_id = java.getElements('#txt@dd')\nvar arr_data_id =  java.getStringList('#txt@dd@data-id')\nvar len = arr_id.length\nvar arr = ''\nfor(let i=0; i<len; i++) {\nfor(let j=0; j<arr_data_id.length; j++) {\n\nif(i.toString() == arr_data_id[j].toString()){\n\narr+=arr_id[j]\n}\n}}\narr\n</js>"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.pub@tag.a.0@text",
+      "bookList": "class.subject-item",
+      "bookUrl": "class.info@tag.h2@tag.a@href",
+      "coverUrl": "class.pic@tag.img@src",
+      "intro": "tag.p@html",
+      "kind": "class.pub@tag.a.1@text",
+      "lastChapter": "class.market-info@text",
+      "name": "class.info@tag.h2@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapter",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search/?keyword={{key}}&t=0&page={{page}}",
+    "weight": 0
+  }
+]

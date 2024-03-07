@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceGroup": "自制,女频,源仓库,网页源",
+    "bookSourceName": "晋南言情",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.jinnanyq.com",
+    "bookUrlPattern": "https?://www.jinnanyq.com/yq/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n排行::/paihangbang/\n完本::/quanben/\n阅读记录::/bookcase.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1709683218756,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "canReName": "1",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#content@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##(https?://\\w+.)?jinnanyq.com"
+    },
+    "ruleExplore": {
+      "author": ".s4@text||.s5@text||\nspan.0@text",
+      "bookList": "ul.txt-list li||.item",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src||a.0@href\n@js:\ntry{\n\t$1=result.match(/(\\d+).?$/)[1]\n\t$2=parseInt($1/1000);\n\timg=`/img/${$2}/${$1}.jpg`\n\t}catch(e){\n\t\t//java.log(e)\n\t\timg=result\n\t}finally{img}",
+      "intro": "a.2@text",
+      "kind": "span.0:4@text##\\[|\\]",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text||a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".txt-list li!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "快穿",
+      "coverUrl": "a.0@href\n@js:\n$1=result.match(/(\\d+).?$/)[1];\n$2=parseInt($1/1000);\n`/img/${$2}/${$1}.jpg`",
+      "intro": "",
+      "kind": ".s1@text&&.s5@text##\\[|\\]",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.section-list.1@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "https://www.jinnanyq.com/search.php?keyword={{key}}&Submit=搜索",
+    "weight": 0
+  }
+]

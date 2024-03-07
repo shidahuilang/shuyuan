@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceName": "清河文学网yyds",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.qhyrzs.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/list/1_{{page}}.html\n仙侠::/list/2_{{page}}.html\n都市::/list/3_{{page}}.html\n穿越::/list/4_{{page}}.html\n网游::/list/5_{{page}}.html\n科技::/list/6_{{page}}.html\n恐怖::/list/7_{{page}}.html\n言情::/list/8_{{page}}.html\n其他::/list/9_{{page}}.html\n完本::/wanben/{{page}}.html",
+    "lastUpdateTime": 1709700410525,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".xx li:nth-child(3) > a@text",
+      "coverUrl": "img@src",
+      "intro": ".jianjie@text",
+      "kind": ".xx li:nth-child(2) > a@text",
+      "lastChapter": "ul:nth-child(1) > li:nth-child(6) > a@text",
+      "name": "h1@text",
+      "tocUrl": "{{baseUrl}}##.html$##/"
+    },
+    "ruleContent": {
+      "content": "#nr1@html"
+    },
+    "ruleExplore": {
+      "author": "span.1@a@text",
+      "bookList": "class.xbk",
+      "bookUrl": "class.xsm@a@href",
+      "coverUrl": "li@a@img@src",
+      "intro": "span.2@text",
+      "kind": "",
+      "name": "class.xsm@a@text"
+    },
+    "ruleSearch": {
+      "author": ".xbk:nth-child(n+2) .xsm:nth-child(2) font@text",
+      "bookList": ".xbk:nth-child(n+2)",
+      "bookUrl": "class.xsm@a@href",
+      "checkKeyWord": "遮天",
+      "coverUrl": "img@src",
+      "intro": "",
+      "lastChapter": ".xbk:nth-child(n+2) .xsm:nth-child(3) > a@text",
+      "name": ".xbk:nth-child(n+2) .xsm:nth-child(1) font@text"
+    },
+    "ruleToc": {
+      "chapterList": ".zxjz:nth-child(5) li:nth-child(n+1) > a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/s.php,{\r\n\"charset\": \"UTF-8\",\r\n\"method\": \"POST\",\r\n\"body\": \"submit=&type=articlename&searchkey={{key}}\"\r\n}",
+    "weight": 0
+  }
+]
