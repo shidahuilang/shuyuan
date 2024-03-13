@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "/*\nlegado&&coolapk by:xsw8093\n下面的不可删除\n*/\nvar su=source.key;\ncookie.removeCookie(su)\nso=su+`s21082201.php?keyword=${key}&captcha=${java.getVerificationCode(su+\"/captcha.php\")}`\nso;",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍊完本神站[自写/码]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.wbsz.org/",
+    "bookUrlPattern": "",
+    "customOrder": -25586,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "                                             男生                                     ::\n玄幻小说::/all/1_lastupdate_0_0_{{page}}.html\n奇幻小说::/all/2_lastupdate_0_0_{{page}}.html\n武侠小说::/all/3_lastupdate_0_0_{{page}}.html\n仙侠小说::/all/4_lastupdate_0_0_{{page}}.html\n都市小说::/all/5_lastupdate_0_0_{{page}}.html\n军事小说::/all/6_lastupdate_0_0_{{page}}.html\n历史小说::/all/7_lastupdate_0_0_{{page}}.html\n游戏小说::/all/8_lastupdate_0_0_{{page}}.html\n竞技小说::/all/9_lastupdate_0_0_{{page}}.html\n科幻小说::/all/10_lastupdate_0_0_{{page}}.html\n悬疑小说::/all/11_lastupdate_0_0_{{page}}.html\n灵异小说::/all/12_lastupdate_0_0_{{page}}.html\n其他::/all/13_lastupdate_0_0_{{page}}.html\n\n                                             女生                                     ::\n古代言情::/all/14_lastupdate_0_0_{{page}}.html\n仙侠奇缘::/all/15_lastupdate_0_0_{{page}}.html\n现代言情::/all/16_lastupdate_0_0_{{page}}.html\n浪漫青春::/all/17_lastupdate_0_0_{{page}}.html\n玄幻言情::/all/18_lastupdate_0_0_{{page}}.html\n悬疑灵异::/all/19_lastupdate_0_0_{{page}}.html\n科幻空间::/all/20_lastupdate_0_0_{{page}}.html\n游戏竞技::/all/21_lastupdate_0_0_{{page}}.html\nBL文::/all/22_lastupdate_0_0_{{page}}.html\nGL文::/all/23_lastupdate_0_0_{{page}}.html\n二次元::/all/24_lastupdate_0_0_{{page}}.html",
+    "header": "<js>\nfirstTime=java.getCookie(\"https://m.wbsz.org/\",\"Hm_lpvt_e1709c49ffb4ecc0667e282d2f801546\")\n\ntwoTime=java.getCookie(\"https://m.wbsz.org/\",\"Hm_lvt_e1709c49ffb4ecc0667e282d2f801546\")\n</js>\n{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\",\"Hm_lvt_e1709c49ffb4ecc0667e282d2f801546\":\"twoTime\",\"Hm_lpvt_e1709c49ffb4ecc0667e282d2f801546\":\"firstTime\"}",
+    "lastUpdateTime": 1710245736510,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".detailTop .bookPhrMid p.0@text",
+      "coverUrl": ".bookImg img@src",
+      "intro": ".bookInfo span@html",
+      "kind": ".detailTop .bookPhrMid p.2@text",
+      "lastChapter": ".category .otherTitle a@text",
+      "name": ".detailTop h2@text",
+      "tocUrl": "@js:\nbaseUrl+\"all.html\"",
+      "wordCount": ".detailTop .state .words@text"
+    },
+    "ruleContent": {
+      "content": ".raderCon@html",
+      "nextContentUrl": "text.下一页@href||text.下一章@href\n@js:\nif(result){\n\tresult=result[0].includes(\"_\")?result:\"\";\n\t}"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "h5@text",
+      "bookList": "<js>\nwhile(/验证码/.test(result)){\n\tkey=java.get(\"key\");\n\tjava.toast(\"验证码错误，重新输入！\");\n\teval(String(source.bookSourceComment));\n\tresult=java.ajax(so);\n\t}\n\tresult\n</js>\n.listBottom ul a",
+      "bookUrl": "a@href",
+      "checkKeyWord": "快穿",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "kind": "",
+      "lastChapter": "@js:\n\"进入详情查看\"",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapterList ul a",
+      "chapterName": "li@text",
+      "chapterUrl": "@href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "@js:\njava.put(\"key\",key);\neval(String(source.bookSourceComment))",
+    "variableComment": "",
+    "weight": 0
+  }
+]
