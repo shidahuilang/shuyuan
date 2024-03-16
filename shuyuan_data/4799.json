@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "//简单修复，网站搜索功能关闭，借助百度搜索实现网站书籍搜索，书籍搜索最好使用书籍名字全称，暂时未找到百度搜索页面跳转，只能实现加载第一页数据",
+    "bookSourceName": "零点砍树",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.hujuge.com",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "最近更新::/\n玄幻奇幻::/xuanhuanxiaoshuo/1_{{page}}.html\n修真仙侠::/xiuzhenxiaoshuo/1_{{page}}.html\n都市青春::/dushixiaoshuo/1_{{page}}.html\n历史穿越::/chuanyuexiaoshuo/1_{{page}}.html\n网游竞技::/wangyouxiaoshuo/1_{{page}}.html\n科幻灵异::/kehuanxiaoshuo/1_{{page}}.html\n其他小说::/qitaxiaoshuo/1_{{page}}.html\n完本小说::/wanben/1_{{page}}/",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\"}",
+    "lastUpdateTime": 1710424772447,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.bookdetail.0@id.info.0@tag.p.0@tag.a.0@text",
+      "init": "",
+      "intro": "id.bookdetail.0@id.intro.0@textNodes",
+      "kind": "class.box_ton.0@tag.a.0@text",
+      "name": "id.bookdetail.0@id.info.0@tag.h1.0@text",
+      "tocUrl": "<js>\njava.get('realUrl');\n</js>"
+    },
+    "ruleContent": {
+      "content": "<js>\nvar url = baseUrl.replace('www.baidu.com','www.hujuge.com')\njava.ajax(url)\n</js>\nid.content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##章节错误.*"
+    },
+    "ruleExplore": {
+      "author": "class.s4.0@text",
+      "bookList": "id.newscontent.0@class.l.0@tag.li",
+      "bookUrl": "class.s2.0@tag.a.0@href",
+      "kind": "class.s1.0@text##\\[|\\]",
+      "lastChapter": "class.s3.0@tag.a.0@text",
+      "name": "class.s2.0@tag.a.0@text"
+    },
+    "ruleSearch": {
+      "author": "author##作者：",
+      "bookList": "<js>\nfunction headUrl(url){\n    var count = url.split('/').length-1;\n    var a=url.slice(23,url.indexOf('/',23));\n     return 'https://www.hujuge.com/'+a+'/1/index.html';\n}\njava.setContent(result,null);\nlet a1=java.getElement('class.result c-container xpath-log new-pmd').toString().split('<div class=\"result c-container xpath-log new-pmd\"').map(value => '<div class=\"result c-container xpath-log new-pmd\"' + value);\nlet a2=java.getElement('class.result-op c-container xpath-log new-pmd').toString().split('<div class=\"result-op c-container xpath-log new-pmd\"').map(value => '<div class=\"result-op c-container xpath-log new-pmd\"' + value);\nlet a=a1.concat(a2);\njava.log(a.length);\nvar b = [];\nfor (let i =0;i<a.length;i++) {\n    var str =org.jsoup.Jsoup.parse(a[i]);\n    var list={};\n    let realU=str.select('span.c-color-gray').text();\n    if(!realU.includes('hujuge')){\n        continue;\n    }else{\n        list[\"title\"]=str.select('h3').select('a').text();\n        java.log(list[\"title\"]);\n        list[\"author\"]=str.select('span.c-font-normal c-color-gray2 article-span_UGCkY').text();\n        java.log(list[\"author\"]);\n        list[\"intro\"]=str.select('span.content-right_8Zs40').html();\n        if(list[\"intro\"]==null||list[\"intro\"]==''){\n         list[\"intro\"]=str.select('span.text_2NOr6').html();\n        }\n        java.log(list[\"intro\"]);\n        list[\"url\"]=str.select('div[mu]').attr('mu').toString();\n        list[\"url\"] =headUrl(list[\"url\"]);\n        java.log(list[\"url\"]);\n        b.push(list);\n    }\n}\nb;\n</js>",
+      "bookUrl": "url",
+      "checkKeyWord": "大宋神探志",
+      "intro": "intro",
+      "lastChapter": "",
+      "name": "title##最新章节.*|章节列表.*"
+    },
+    "ruleToc": {
+      "chapterList": "class.section-box.1@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.middle@tag.option@value",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "https://www.baidu.com/s?wd={{key}}%20site:www.hujuge.com,{\n    \"headers\": {\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\"},\n    \"webView\": true\n}",
+    "weight": 0
+  }
+]
