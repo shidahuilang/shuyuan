@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "寻味书屋 xunweibook.com",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xunweibook.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::sort/1<,/{{page}}.html>\n武侠修真::sort/2<,/{{page}}.html>\n都市言情::sort/3<,/{{page}}.html>\n历史军事::sort/4<,/{{page}}.html>\n侦探推理::sort/5<,/{{page}}.html>\n网游动漫::sort/6<,/{{page}}.html>\n科幻小说::sort/7<,/{{page}}.html>\n恐怖灵异::sort/8<,/{{page}}.html>\n散文诗词::sort/9<,/{{page}}.html>\n其他类型::sort/10<,/{{page}}.html>",
+    "lastUpdateTime": 1710819633854,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "meta[property$=author]@content",
+      "coverUrl": "meta[property~=image]@content",
+      "intro": "meta[property~=description]@content",
+      "kind": "meta[property~=category|status|update]@content",
+      "lastChapter": "meta[property~=chapter_name]@content",
+      "name": "meta[property~=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "h5@text",
+      "bookList": "div[class*=col-12]",
+      "bookUrl": "a@href",
+      "checkKeyWord": "凡人修仙",
+      "coverUrl": "img@data-original||img@src",
+      "intro": "p@text",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".list-group@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "@js:\nvar bUrl = source.getKey();\nbUrl = bUrl .slice(0, bUrl .indexOf(\"#\"));\nimg = bUrl + \"/captcha.php\";\nvar verify = java.getVerificationCode(img);\nvar so =  \"search=\"+key+\"&captcha=\"+verify;\noption={\n\t\"method\":\"POST\",\n\t\"body\":so\n\t}\nurl=bUrl+\"/xw12.php,\"+JSON.stringify(option);",
+    "weight": 0
+  }
+]

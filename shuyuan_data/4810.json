@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceGroup": "自制",
+    "bookSourceName": "🐼大熊猫文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dxmwx.org/",
+    "bookUrlPattern": "https://www.dxmwx.org/book/\\d+.html",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"榜单\",\"url\":\"https://www.dxmwx.org/list/topall__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"新书\",\"url\":\"https://www.dxmwx.org/list/topnew__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"完本\",\"url\":\"https://www.dxmwx.org/list/topend__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"更新\",\"url\":\"https://www.dxmwx.org/list/topupdate__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"月点击\",\"url\":\"https://www.dxmwx.org/list/topmonth__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"周点击\",\"url\":\"https://www.dxmwx.org/list/topweek__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"女生\",\"url\":\"https://www.dxmwx.org/list/topmm__{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻\",\"url\":\"https://www.dxmwx.org/list/topall_%E7%8E%84%E5%B9%BB_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"奇幻\",\"url\":\"https://www.dxmwx.org/list/topall_%E5%A5%87%E5%B9%BB_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"武侠\",\"url\":\"https://www.dxmwx.org/list/topall_%E6%AD%A6%E4%BE%A0_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"仙侠\",\"url\":\"https://www.dxmwx.org/list/topall_%E4%BB%99%E4%BE%A0_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"都市\",\"url\":\"https://www.dxmwx.org/list/topall_%E9%83%BD%E5%B8%82_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"言情\",\"url\":\"https://www.dxmwx.org/list/topall_%E8%A8%80%E6%83%85_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"历史\",\"url\":\"https://www.dxmwx.org/list/topall_%E5%8E%86%E5%8F%B2_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"军事\",\"url\":\"https://www.dxmwx.org/list/topall_%E5%86%9B%E4%BA%8B_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"游戏\",\"url\":\"https://www.dxmwx.org/list/topall_%E6%B8%B8%E6%88%8F_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"科幻\",\"url\":\"https://www.dxmwx.org/list/topall_%E7%A7%91%E5%B9%BB_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"灵异\",\"url\":\"https://www.dxmwx.org/list/topall_%E7%81%B5%E5%BC%82_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"二次元\",\"url\":\"https://www.dxmwx.org/list/topall_%E4%BA%8C%E6%AC%A1%E5%85%83_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1710690320495,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "span[style=\"padding-right: 5px;\"].0@text",
+      "coverUrl": "class.imgwidth@src##^##https://www.dxmwx.org",
+      "intro": "&nbsp;&nbsp;&nbsp;🕰️{{@@span[style=\"padding-right: 5px;\"].1@text}}\n&nbsp;🏷️标签：{{@@.typebut@a@text##\\n##,}}\n📜简介：{{@@div[style$=\"100px;\"]@text}}",
+      "kind": "",
+      "name": "span[style$=\"bold;\"]@text",
+      "tocUrl": "a[href^=\"/chapter/\"]@href||text.阅读目录@href"
+    },
+    "ruleContent": {
+      "content": "#Lab_Contents@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a[style$=\"14px;\"]@text",
+      "bookList": "div[style^=\"margin:\"]",
+      "bookUrl": ".fonttext@href",
+      "coverUrl": "img@src",
+      "intro": ".neirongh5@text",
+      "kind": ".lefth5@text",
+      "lastChapter": "span[style$=\"5px;\"]@text",
+      "name": ".fonttext@text"
+    },
+    "ruleToc": {
+      "chapterList": "a[href^=\"/read/\"]||span[style*=\"padding-right:20px;\"]@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/list/topall_{{key}}_{{page}}.html",
+    "weight": 0
+  }
+]

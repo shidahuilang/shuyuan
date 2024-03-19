@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "悦听吧[自写]",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://www.yuetingba.cn",
+    "customOrder": 3750,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "最新::/top/latest/{{page}}\n推荐::/top/recommend/{{page}}\n玄幻::/book/1/{{page}}\n历史::/book/2/{{page}}\n武侠::/book/3/{{page}}\n都市::/book/4/{{page}}\n科幻::/book/5/{{page}}\n名著::/book/6/{{page}}\n女频::/book/7/{{page}}\n社科::/book/8/{{page}}\n儿童::/book/9/{{page}}",
+    "lastUpdateTime": 1710682444936,
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "<js>result</js>",
+      "sourceRegex": ".*\\.(mp3|mp4).*",
+      "webJs": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".box-list-item-text-autspeaker@tag.span@title",
+      "bookList": ".section-box-list-item",
+      "bookUrl": ".box-list-item-text-title@tag.a@href",
+      "coverUrl": ".box-list-item-img@tag.a@tag.img@src",
+      "intro": ".text-desc-content@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": ".box-list-item-text-title@tag.a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".ting-list-content .col-md-3||.ting-list-content .col-xs-12",
+      "chapterName": ".ting-list-content-item .col-md-10 a@text||.ting-list-content-item .col-xs-10 a@text",
+      "chapterUrl": ".ting-list-content-item@id\n@js:\nresult=\"http://www.yuetingba.cn/book/ting/\"+result.replace(\"item_\", \"\")+',{\"webView\":true}'\nresult",
+      "nextTocUrl": ".nav-tabs li a@href"
+    },
+    "searchUrl": "http://www.yuetingba.cn/Search?name={{key}}",
+    "weight": 0
+  }
+]

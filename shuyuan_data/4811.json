@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "2024.3.15",
+    "bookSourceGroup": "网络,自制",
+    "bookSourceName": "🔝顶点小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.23uswx.org/ ",
+    "bookUrlPattern": "http://m.23uswx.org/book/\\d+/",
+    "customOrder": 190,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"周榜\",\"url\":\"http://m.23uswx.org/ph/week_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻\",\"url\":\"http://m.23uswx.org/ph/week1_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"修真\",\"url\":\"http://m.23uswx.org/ph/week2_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"都市\",\"url\":\"http://m.23uswx.org/ph/week3_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"穿越\",\"url\":\"http://m.23uswx.org/ph/week4_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"网游\",\"url\":\"http://m.23uswx.org/ph/week5_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"科幻\",\"url\":\"http://m.23uswx.org/ph/week6_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"月榜\",\"url\":\"http://m.23uswx.org/ph/month_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻\",\"url\":\"http://m.23uswx.org/ph/month1_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"修真\",\"url\":\"http://m.23uswx.org/ph/month2_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"都市\",\"url\":\"http://m.23uswx.org/ph/month3_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"穿越\",\"url\":\"http://m.23uswx.org/ph/month4_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"网游\",\"url\":\"http://m.23uswx.org/ph/month5_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"科幻\",\"url\":\"http://m.23uswx.org/ph/month6_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"总榜\",\"url\":\"http://m.23uswx.org/ph/all_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻\",\"url\":\"http://m.23uswx.org/ph/all1_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"修真\",\"url\":\"http://m.23uswx.org/ph/all2_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"都市\",\"url\":\"http://m.23uswx.org/ph/all3_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"穿越\",\"url\":\"http://m.23uswx.org/ph/all4_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"网游\",\"url\":\"http://m.23uswx.org/ph/all5_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"科幻\",\"url\":\"http://m.23uswx.org/ph/all6_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1710777005579,
+    "respondTime": 10611,
+    "ruleBookInfo": {
+      "author": ".author@text",
+      "coverUrl": ".synopsisArea_detail@img@src",
+      "intro": ".review@text",
+      "kind": "p.2:3@text##类别：|状态：",
+      "lastChapter": "",
+      "name": ".title@text",
+      "tocUrl": "text.查看完整目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@textNodes##.*点击下一页继续.*|{{title}}|\\(第\\d+/\\d+页\\)|\\n\\s*\\(本章完\\)$",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": "#main>div",
+      "bookUrl": "a[href^=\"/book/\"]@href",
+      "coverUrl": "img@data-original",
+      "intro": ".review@text",
+      "name": ".title@text"
+    },
+    "ruleSearch": {
+      "author": ".author.0@text##^(.*)作者：",
+      "bookList": ".hot_sale",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "kind": ".author@text##\\|(.*)$",
+      "lastChapter": ".author.-1@text##^(.*)\\更新：",
+      "name": ".title@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterlist@a!0",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"keyword={{key}}&t=1\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

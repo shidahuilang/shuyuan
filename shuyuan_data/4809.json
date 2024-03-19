@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceGroup": "自制",
+    "bookSourceName": "肉体中文网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.rtzw.co/",
+    "customOrder": 73,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"排行榜\",\"url\":\"https://www.rtzw.co/topallvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"月排行\",\"url\":\"https://www.rtzw.co/topmonthvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"周排行\",\"url\":\"https://www.rtzw.co/topweekvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"总推荐\",\"url\":\"https://www.rtzw.co/topallvote/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"收藏榜\",\"url\":\"https://www.rtzw.co/topgoodnum/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"字数榜\",\"url\":\"https://www.rtzw.co/topsize/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"更新榜\",\"url\":\"https://www.rtzw.co/toplastupdate/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"最新\",\"url\":\"https://www.rtzw.co/toppostdate/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻\",\"url\":\"https://www.rtzw.co/fenlei1/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"修真\",\"url\":\"https://www.rtzw.co/fenlei2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"都市\",\"url\":\"https://www.rtzw.co/fenlei3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"历史\",\"url\":\"https://www.rtzw.co/fenlei4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"网游\",\"url\":\"https://www.rtzw.co/fenlei5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},{\"title\":\"科幻\",\"url\":\"https://www.rtzw.co/fenlei6/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1710738612720,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "h1 a@text",
+      "coverUrl": "class.img-thumbnail@src",
+      "intro": "#bookIntro@text",
+      "kind": "span@class.blue@text##：",
+      "lastChapter": ".col-md-10 p.1@text",
+      "name": "h1@ownText"
+    },
+    "ruleContent": {
+      "content": "#htmlContent@textNodes##.*www\\.rtzw\\.co.*|\\-\\-\\>\\>|\\s最新章节！|记住网址.*|首发网址.*",
+      "nextContentUrl": "#linkNext@href||text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.3@text",
+      "bookList": "tbody>tr!0",
+      "bookUrl": "td.1@a@href",
+      "kind": "td.0@text",
+      "lastChapter": "td.2@text##最新章节：",
+      "name": "td.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list-chapterAll a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVolume": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/modules/article/search.php?searchkey={{key}}&page={{page}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]
