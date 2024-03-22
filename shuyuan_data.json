@@ -1,47 +1,6 @@
 [
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "",
-    "bookSourceName": "悦听吧[自写]",
-    "bookSourceType": 1,
-    "bookSourceUrl": "http://www.yuetingba.cn",
-    "customOrder": 3750,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "最新::/top/latest/{{page}}\n推荐::/top/recommend/{{page}}\n玄幻::/book/1/{{page}}\n历史::/book/2/{{page}}\n武侠::/book/3/{{page}}\n都市::/book/4/{{page}}\n科幻::/book/5/{{page}}\n名著::/book/6/{{page}}\n女频::/book/7/{{page}}\n社科::/book/8/{{page}}\n儿童::/book/9/{{page}}",
-    "lastUpdateTime": 1710682444936,
-    "respondTime": 180000,
-    "ruleBookInfo": [],
-    "ruleContent": {
-      "content": "<js>result</js>",
-      "sourceRegex": ".*\\.(mp3|mp4).*",
-      "webJs": ""
-    },
-    "ruleExplore": [],
-    "ruleReview": [],
-    "ruleSearch": {
-      "author": ".box-list-item-text-autspeaker@tag.span@title",
-      "bookList": ".section-box-list-item",
-      "bookUrl": ".box-list-item-text-title@tag.a@href",
-      "coverUrl": ".box-list-item-img@tag.a@tag.img@src",
-      "intro": ".text-desc-content@text",
-      "kind": "",
-      "lastChapter": "",
-      "name": ".box-list-item-text-title@tag.a@text",
-      "wordCount": ""
-    },
-    "ruleToc": {
-      "chapterList": ".ting-list-content .col-md-3||.ting-list-content .col-xs-12",
-      "chapterName": ".ting-list-content-item .col-md-10 a@text||.ting-list-content-item .col-xs-10 a@text",
-      "chapterUrl": ".ting-list-content-item@id\n@js:\nresult=\"http://www.yuetingba.cn/book/ting/\"+result.replace(\"item_\", \"\")+',{\"webView\":true}'\nresult",
-      "nextTocUrl": ".nav-tabs li a@href"
-    },
-    "searchUrl": "http://www.yuetingba.cn/Search?name={{key}}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "",
     "bookSourceGroup": "🔭 其他,🎨 漫画",
     "bookSourceName": "🎨亲亲漫画💞",
     "bookSourceType": 2,
@@ -1717,6 +1676,49 @@
       "chapterUrl": "href"
     },
     "searchUrl": "http://33txs.com/xiaoshuo/search?searchkey={{key}},{\n  \"charset\": \"UTF-8\",\n  \"method\": \"GET\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "禁漫",
+    "bookSourceName": "（禁漫）三四娱乐",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.san449.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "美女写真::https://www.san449.com/meinv/page/{{page}}\n连载漫画::https://www.san449.com/item/%e8%bf%9e%e8%bd%bd/page/{{page}}\n完结漫画::https://www.san449.com/item/%e5%ae%8c%e7%bb%93/page/{{page}}\n短篇漫画::https://www.san449.com/item/%e7%9f%ad%e7%af%87%e6%bc%ab%e7%94%bb/page/{{page}}",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 12; 2112123AC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36\",\"Referer\":\"https://www.san449.com/\"}",
+    "lastUpdateTime": 1711120424425,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.c-img@img@src",
+      "intro": "class.dis@text",
+      "kind": "rel.category tag@text",
+      "lastChapter": "class.subtitle.0@text",
+      "name": "class.article-title@a.0@text"
+    },
+    "ruleContent": {
+      "content": "class.alignnone@all"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "rel.tag@text",
+      "bookList": "class.box@class.excerpt excerpt-one",
+      "bookUrl": "h2@a@href",
+      "checkKeyWord": "行动扫码",
+      "coverUrl": "img@data-original",
+      "intro": "class.post-tags@text",
+      "kind": "class.cat@text",
+      "lastChapter": "class.subtitle@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.article-paging@span.0&&class.article-paging@a[!-1]",
+      "chapterName": "span.0@text",
+      "chapterUrl": "href<js>result==null?result=baseUrl:result</js>"
+    },
+    "searchUrl": "https://www.san449.com/?s={{key}}",
     "weight": 0
   },
   {

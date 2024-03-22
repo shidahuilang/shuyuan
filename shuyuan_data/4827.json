@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceGroup": "禁漫",
+    "bookSourceName": "（禁漫）三四娱乐",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.san449.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "美女写真::https://www.san449.com/meinv/page/{{page}}\n连载漫画::https://www.san449.com/item/%e8%bf%9e%e8%bd%bd/page/{{page}}\n完结漫画::https://www.san449.com/item/%e5%ae%8c%e7%bb%93/page/{{page}}\n短篇漫画::https://www.san449.com/item/%e7%9f%ad%e7%af%87%e6%bc%ab%e7%94%bb/page/{{page}}",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 12; 2112123AC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36\",\"Referer\":\"https://www.san449.com/\"}",
+    "lastUpdateTime": 1711120424425,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.c-img@img@src",
+      "intro": "class.dis@text",
+      "kind": "rel.category tag@text",
+      "lastChapter": "class.subtitle.0@text",
+      "name": "class.article-title@a.0@text"
+    },
+    "ruleContent": {
+      "content": "class.alignnone@all"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "rel.tag@text",
+      "bookList": "class.box@class.excerpt excerpt-one",
+      "bookUrl": "h2@a@href",
+      "checkKeyWord": "行动扫码",
+      "coverUrl": "img@data-original",
+      "intro": "class.post-tags@text",
+      "kind": "class.cat@text",
+      "lastChapter": "class.subtitle@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.article-paging@span.0&&class.article-paging@a[!-1]",
+      "chapterName": "span.0@text",
+      "chapterUrl": "href<js>result==null?result=baseUrl:result</js>"
+    },
+    "searchUrl": "https://www.san449.com/?s={{key}}",
+    "weight": 0
+  }
+]
