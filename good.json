@@ -1959,47 +1959,6 @@
   },
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "🔰  海棠",
-    "bookSourceName": "PO18",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.po18.info",
-    "customOrder": 17,
-    "enabled": true,
-    "enabledExplore": true,
-    "lastUpdateTime": 0,
-    "respondTime": 43087,
-    "ruleBookInfo": {
-      "author": "class.catalog1@class.tab@class.p1@text##作者：",
-      "coverUrl": "class.catalog1@tag.img@src",
-      "intro": "class.jj@class.p2@text",
-      "kind": "class.catalog1@class.tab@class.p4@text",
-      "lastChapter": "class.catalog1@class.tab@class.p3@tag.a@text",
-      "name": "class.catalog1@tag.h1@text",
-      "wordCount": "class.catalog1@class.tab@class.p6@text"
-    },
-    "ruleContent": {
-      "content": "id.novelcontent@html"
-    },
-    "ruleSearch": {
-      "author": "tag.a.2@text",
-      "bookList": "class.search_box@tag.p",
-      "bookUrl": "tag.a.0@href",
-      "kind": "tag.a.1@text",
-      "lastChapter": "",
-      "name": "tag.a.0@text",
-      "wordCount": ""
-    },
-    "ruleToc": {
-      "chapterList": "class.info_chapters@tag.ul.1@tag.li",
-      "chapterName": "tag.a@text",
-      "chapterUrl": "tag.a@href",
-      "nextTocUrl": "class.listpage@class.right@tag.a@href"
-    },
-    "searchUrl": "s.php,{\n    \"charset\": \"gbk\",\n    \"body\": \"s={{key}}&type=articlename\",\n    \"method\": \"POST\"\n}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "",
     "bookSourceGroup": "🎉 精选",
     "bookSourceName": "🎉 米读看书",
     "bookSourceType": 0,
