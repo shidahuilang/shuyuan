@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "自用，注意该站阅读需科学上网。\n为方便阅读，可以科学上网缓存后关闭书籍更新即可随时阅读。\n相较AO3-1 1、修正了字数显示；2、不登录可直接阅读成人向作品",
+    "bookSourceGroup": "ao3",
+    "bookSourceName": "AO3-2",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://archiveofourown.org",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "enabledReview": false,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": 1711019876054,
+    "loginUrl": "https://archiveofourown.org/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "tag.blockquote@html&&class.fandom@text&&class.relationship@text&&class.character@text&&class.freeform@text&&class.hits@text",
+      "lastChapter": "class.stats.-1@class.chapters.-1@text",
+      "tocUrl": "@js:if(result.match(/Proceed/)){result=result.match(/href=\"([^\"]+)\".*?Proceed/)[1]}else{result=baseUrl}\nresult+\"?view_adult=true/,{\\\"webView\\\":true}\"",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.chapters@tag.p@text"
+    },
+    "ruleExplore": {
+      "lastChapter": "\n"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "//h4/a[2]/text()",
+      "bookList": "//*[@id=\"main\"]/ol/li",
+      "bookUrl": "h4@tag.a.0@href",
+      "checkKeyWord": "",
+      "intro": "tag.blockquote@text",
+      "kind": "class.tags commas@tag.li@class.characters@text&&class.tags commas@tag.li@class.relationships@text## - Relationship",
+      "name": "//h4/a[1]/text()",
+      "wordCount": "//dl/dd[2]/text()"
+    },
+    "ruleToc": {
+      "chapterList": "tag.select@option||tag.html",
+      "chapterName": "class.title heading@text||text",
+      "chapterUrl": "value@js:if(baseUrl.match(/\\d+/)){\nUrl=baseUrl.match(/(.*?\\d+)/)[1];\nresult=Url+\"/chapters/\"+result}else{result=baseUrl};"
+    },
+    "searchUrl": "/works/search?utf8=%E2%9C%93&work_search%5Bquery%5D={{key}}&page={{page}}",
+    "weight": 0
+  }
+]
