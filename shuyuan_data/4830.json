@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "20240104 修缮整理-尐哖\n20230725 制作该源-尐哖\n换皮网站：\nwww与m通用\n笔趣阁：http://www.biquge77.net\n搜索不同：\n顶点小说：http://www.456.lol\n品书网：https://www.vodtw.la\n36小说备用站：https://www.biquge123.cc",
+    "bookSourceGroup": "杂",
+    "bookSourceName": "✨笔趣阁⁷⁷",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.biquge77.net##@尐哖",
+    "bookUrlPattern": "https:\\/\\/[wm]+\\.(456|vodtw|biquge77|biquge123)\\.(cc|com|net|la|org|la)\\/(html|xs|book)\\/\\d+(\\/|_)\\d+\\/?",
+    "customOrder": 302,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "@js:\nJSON.stringify({\n\t\"Referer\": source.getKey().match(/([^\\#]+)\\#/)[1]\n});",
+    "lastUpdateTime": 1705191227065,
+    "loginCheckJs": "",
+    "loginUrl": "",
+    "respondTime": 3461,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": ".container@img@src",
+      "intro": "class.desc xs-hidden@html",
+      "kind": "[property~=category|status|update_time]@content##\\s.*",
+      "lastChapter": "[property*=\"_chapter_name\"]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#content@html##^\\s*第[\\d零一二三四五六七八九十百千]+章.*\\n",
+      "nextContentUrl": "@js:\nf=java.getElements('.section-opt a.2');\n/下一页/.test(f.text())?f.attr('href'):''",
+      "replaceRegex": "##\\n\\s*\\(本章完\\)$",
+      "webJs": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".container ul@li!0",
+      "bookUrl": ".s2 a@href",
+      "checkKeyWord": "全民觉醒，我却开精灵宠物店",
+      "kind": ".s1@text##\\[|\\]",
+      "lastChapter": "{{@@.s3 a@text}} • {{@@.s5@text}}",
+      "name": ".s2 a@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.-1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "select@option!0@value"
+    },
+    "searchUrl": "{{source.getKey().match(/([^\\#]+)\\#/)[1]}}/search/,{\n  \"body\": \"searchkey={{key}}&Submit=搜索\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
