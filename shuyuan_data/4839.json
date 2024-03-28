@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "修复优化,源仓库",
+    "bookSourceName": "苏明小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sumingxs.com",
+    "bookUrlPattern": "https?://www.sumingxs.com/\\w+/\\d+/",
+    "customOrder": 250,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/xiaoshuo/<,1-{{page}}.html>",
+    "header": "{\"user-agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"\n\t}",
+    "lastUpdateTime": 1711608519282,
+    "respondTime": 190258,
+    "ruleBookInfo": {
+      "author": "text.作者@text",
+      "coverUrl": ".item@img@src",
+      "intro": ".des@text",
+      "kind": ".itemtxt@span@text",
+      "lastChapter": ".itemtxt@li.0@a@text",
+      "name": "h3@text"
+    },
+    "ruleContent": {
+      "content": ".con@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "kind": "span@text",
+      "name": "a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": ".MjjYud",
+      "bookUrl": "//a[@role=\"presentation\"]/@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "//div[@role=\"link\"]/text()"
+    },
+    "ruleToc": {
+      "chapterList": "#list@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href##$##,{'webView': true}",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "https://www.google.com/search?q=site%3Awww.sumingxs.com {{key}}",
+    "variableComment": "",
+    "weight": 0
+  }
+]
