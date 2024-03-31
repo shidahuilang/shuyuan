@@ -1,7 +1,7 @@
 [
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "修复优化,源仓库",
+    "bookSourceGroup": "苏明小说",
     "bookSourceName": "苏明小说",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.sumingxs.com",
@@ -12,7 +12,7 @@
     "enabledExplore": true,
     "exploreUrl": "全部::/xiaoshuo/<,1-{{page}}.html>",
     "header": "{\"user-agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"\n\t}",
-    "lastUpdateTime": 1711608519282,
+    "lastUpdateTime": 1711682723368,
     "respondTime": 190258,
     "ruleBookInfo": {
       "author": "text.作者@text",
@@ -23,8 +23,9 @@
       "name": "h3@text"
     },
     "ruleContent": {
-      "content": ".con@html",
-      "nextContentUrl": "text.下一页@href"
+      "content": ".con@p@text@js:\nresult = (function (content) {\n    try {\n        const chapterUrl = chapter.url.substring(0, chapter.url.length() - \",{'webView': true}\".length);\n        let elements = content.split('\\n');\n        var tag = \"SMXSEE\";\n        let ps = [];\n        for (let i = 0; i < elements.length; i++) {\n            if (elements[i].trim().startsWith(tag)) {\n                ps[i] = '内容被加密,请访问->' + chapter.baseUrl + chapterUrl;\n            } else {\n                ps[i] = elements[i].trim()\n            }\n        }\n        return '<p>' + ps.join('</p><p>') + '</p>';\n    } catch (e) {\n        return  \"--------eeee------\" + e;\n    }\n})(result);",
+      "nextContentUrl": "text.下一页@href||text.下页@href",
+      "webJs": ""
     },
     "ruleExplore": {
       "author": "a.2@text",
@@ -36,7 +37,7 @@
     },
     "ruleReview": [],
     "ruleSearch": {
-      "author": "",
+      "author": "div@div@div@div.1@div@div@text@js:result=/苏明小说网提供(.*)创作的玄幻小说/.exec(result);\nresult=result?result[1]:'';",
       "bookList": ".MjjYud",
       "bookUrl": "//a[@role=\"presentation\"]/@href",
       "checkKeyWord": "",
@@ -49,7 +50,7 @@
     "ruleToc": {
       "chapterList": "#list@li",
       "chapterName": "a@text",
-      "chapterUrl": "a@href##$##,{'webView': true}",
+      "chapterUrl": "a@href@js:result=result.replace('$','')+\",{'webView': true}\";",
       "nextTocUrl": "option@value||text.下一页@href"
     },
     "searchUrl": "https://www.google.com/search?q=site%3Awww.sumingxs.com {{key}}",
@@ -132,62 +133,99 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "源失效的话，\n可以酷安搜 哈哈嗝额 可以联系我修复哦🥳",
-    "bookSourceGroup": "动漫💦",
-    "bookSourceName": "🥣AGE动漫",
+    "bookSourceComment": "// Error: Timed out waiting for 1000 ms\n\n-从登录选项卡进一下网站，不用登录账号，否则看不了封面",
+    "bookSourceGroup": "校验超时",
+    "bookSourceName": "🔥BestGirlSex⚠️看注释",
     "bookSourceType": 2,
-    "bookSourceUrl": "https://m.agedm.org/",
-    "customOrder": 0,
+    "bookSourceUrl": "https://bestgirlsexy.com/",
+    "customOrder": 5068,
     "enabled": false,
-    "enabledCookieJar": true,
+    "enabledCookieJar": false,
     "enabledExplore": true,
-    "exploreUrl": "[\n{\"title\":\"𓆡𓆝𓆟地ོ区ོ​​𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"❄️全部地区\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"❄️中国\",\"url\":\"https://api.agedm.org/v2/catalog?region=中国&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"❄️日本\",\"url\":\"https://api.agedm.org/v2/catalog?region=日本&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"❄️欧美\",\"url\":\"https://api.agedm.org/v2/catalog?region=欧美&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n\n{\"title\":\"𓆡𓆝𓆟版ོ本ོ​​𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"💦TV\",\n\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=TV&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},\n\n{\"title\":\"💦剧场版\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=剧场版&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},\n\n{\"title\":\"💦OVA\",\n\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=OVA&letter=all&year=all&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},\n\n{\"title\":\"𓆡𓆝𓆟季ོ度ོ​​𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"🍋1月\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=1&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🍋4月\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=4&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🍋7月\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=7&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🍋10月\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=10&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n\n{\"title\":\"𓆡𓆝𓆟状ོ态ོ𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"🪣连载\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=连载&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"🪣完结\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=完结&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"🪣未播\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=未播放&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n\n{\"title\":\"𓆡𓆝𓆟资ོ源ོ𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"⭐BDRIP\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=BDRIP&order=time&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"⭐AGERIP\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=AGERIP&order=time&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.4}},\n\n\n{\"title\":\"𓆡𓆝𓆟排ོ序ོ𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"🍊更新\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=time&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"🍈名称\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=name&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"🥚点击\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=all&resource=all&order=hits&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n\n{\"title\":\"𓆡𓆝𓆟年ོ份ོ𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"💧2024\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2024&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2023\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2023&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2022\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2022&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2021\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2021&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2020\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2020&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2019\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2019&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2018\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2018&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2017\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2017&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2016\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2016&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2015\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2015&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2014\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2014&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2013\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2013&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2012\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2012&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2011\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2011&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2010\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2010&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2009\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2009&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2008\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2008&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2007\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2007&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2006\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2006&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2005\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2005&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2004\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2004&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2003\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2003&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2002\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2002&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"💧2001\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2001&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"☀️2000☀️\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=2000&season=all&status=all&label=all&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n\n{\"title\":\"𓆡𓆝𓆟喜ོ好ོ𓆟𓆜𓆞\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"搞笑🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=搞笑&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"励志🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=励志&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"热血🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=热血&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"战斗🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=战斗&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"竞技🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=竞技&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"校园🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=校园&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"青春🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=青春&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"爱情🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=爱情&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"恋爱🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=恋爱&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"冒险🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=冒险&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"冒险🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=冒险&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"后宫🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=后宫&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"百合🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=百合&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"治愈🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=治愈&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"萝莉🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=萝莉&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"魔法🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=魔法&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"悬疑🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=悬疑&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"推理🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=推理&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"奇幻🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=奇幻&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"科幻🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=科幻&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"游戏🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=游戏&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"神魔🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=神魔&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"恐怖🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=恐怖&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"血腥🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=血腥&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"机战🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=机战&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"战争🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=战争&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"犯罪🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=犯罪&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"历史🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=历史&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"社会🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=社会&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"职场🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=职场&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"剧情🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=剧情&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"伪娘🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=伪娘&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"耽美🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=耽美&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"童年🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=童年&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"教育🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=教育&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"亲子🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=亲子&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"真人🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=真人&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n\n{\"title\":\"歌舞🌙\",\"url\":\"https://api.agedm.org/v2/catalog?region=all&genre=all&letter=all&year=all&season=all&status=all&label=歌舞&resource=all&order=all&page={{page}}&size=10\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}}\n]",
-    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36\",\n\t\t\"Referer\":\"https://m.agedm.org/\",\n\t\"Origin\": \"https://m.agedm.org\",\n\t\"authority\":\"upos-sz-mirrorhw.bilivideo.com\"\n}",
-    "lastUpdateTime": 1711347082141,
-    "respondTime": 180000,
+    "exploreUrl": "[\n{'title':'最新','url':'/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'Cosplay','url':'/cosplay/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Korean','url':'/korean/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Europe','url':'/eu-girls/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Japan','url':'/japan/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'China','url':'/china/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},{'title':'Beautyleg','url':'/china/beautyleg/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Candy网红馆','url':'/china/candy/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'FeiLin嗲囡囡','url':'/china/feilin/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'HuaYang花漾Show','url':'/china/huayang/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'IMiss爱蜜社','url':'/china/imiss/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'MiStar魅妍社','url':'/china/mistar/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'MiiTao蜜桃社','url':'/china/miitao/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'MFStar模范学院','url':'/china/mfstar/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'MyGirl美媛馆','url':'/china/mygirl/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Ugirls尤果圈','url':'/china/ugirls/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'XiaoYu语画界','url':'/china/xiaoyu/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'XiuRen秀人网','url':'/china/xiuren/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'YALAYI雅拉伊','url':'/china/yalayi/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'YouMi尤蜜荟','url':'/china/youmi/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Goddes','url':'/china/goddes/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'IShow','url':'/china/ishow/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'Ligui丽柜','url':'/china/ligui/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'MTYH','url':'/china/mtyh/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'PANS写真','url':'/china/pans%e5%86%99%e7%9c%9f/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'XingYan星颜社','url':'/china/xingyan/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'TouTiao Girls','url':'/china/toutiao-girls/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'YouMei尤美','url':'/china/youmei/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'YouWu尤物馆','url':'/china/youwu/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},{'title':'AIModel','url':'/aimodel/page/{{page}}/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}}]",
+    "lastUpdateTime": 1692604041211,
+    "loginUrl": "https://bestgirlsexy.com/",
+    "respondTime": 2199,
     "ruleBookInfo": {
-      "author": "$.video.writer",
-      "canReName": "",
-      "coverUrl": "$.video.cover",
-      "downloadUrls": "",
-      "init": "",
-      "intro": "$.video.intro",
-      "kind": "$.video.tags",
-      "lastChapter": "$.video.uptodate",
-      "name": "$.video.name",
-      "tocUrl": "$.video.playlists\n@js:\n//java.log(result)\nu=java.get(\"u\"),q=result.match(/\".*?\"/g)\nh=[],n=[],o=1,x=0\nfor(i=0;i<q.length/2;i++)\n{\n\tn.push(q[x].match(/\".*?\"/)[0])\n\th.push('\"'+u+q[o].match(/\"(.*?\")/)[1])\n\to=o+2;x=x+2\n}\njava.put(\"n\",n),java.put(\"h\",h)\nresult=null",
-      "wordCount": "$.player_jx\n@js:\nu=result.match(/h.*?=/)[0]\njava.put(\"u\",u)\nresult=null"
+      "kind": "span.elementor-post-info__terms-list.0@a@text"
     },
     "ruleContent": {
-      "content": "@js:\nif(book.durChapterIndex==chapter.index)\n{\n\t\t java.startBrowser(baseUrl,title)\n\t\t java.toast(title)\n}"
+      "content": ".elementor-widget-container p img@data-src@js:\nresult.split(\"\\n\").map(x=>'<img src=\"'+x+'\">').join(\"\\n\")",
+      "imageStyle": "full"
     },
-    "ruleExplore": {
-      "author": "$.writer",
-      "bookList": "$.videos",
-      "bookUrl": "$.id\n@js:\n\"https://api.agedm.org/v2/detail/\"+result",
-      "coverUrl": "$.cover",
-      "intro": "$.intro",
-      "kind": "$.tags",
-      "lastChapter": "$.uptodate",
-      "name": "$.name"
-    },
+    "ruleExplore": [],
+    "ruleReview": [],
     "ruleSearch": {
-      "author": "$.writer",
-      "bookList": "$.data.videos",
-      "bookUrl": "$.id\n@js:\n\"https://api.agedm.org/v2/detail/\"+result",
-      "checkKeyWord": "",
-      "coverUrl": "$.cover",
-      "intro": "$.intro",
-      "kind": "$.tags",
-      "lastChapter": "$.uptodate",
-      "name": "$.name"
+      "bookList": "article",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "cosplay",
+      "coverUrl": "img@src",
+      "name": "a.1@text",
+      "wordCount": "span@text"
     },
     "ruleToc": {
-      "chapterList": "@js:\na=java.get(\"h\"),b=java.get(\"n\"),url=[]\nh=a.match(/\".*?\"/g),n=b.match(/\".*?\"/g)\nfor(i=0;i<h.length;i++)\n{\n\turl[i]=\n\t\t{\n\t\t\t\"Name\":\"🥣\"+n[i].match(/\"(.*?)\"/)[1],\n\t\t\t\"URL\":h[i].match(/\"(.*?)\"/)[1]\n\t\t\t}\n}\nurl",
-      "chapterName": "Name",
-      "chapterUrl": "URL"
+      "chapterList": "h1.1&&.elementor-portfolio.-1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "",
+      "isVolume": ""
     },
-    "searchUrl": "https://api.agedm.org/v2/search?query={{key}}&page={{page}}",
+    "searchUrl": "/pge/{{page}}/?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceName": "九妖漫画👙",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://cloudflare.fw-91mh-912023.xyz",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": " 全部::https://cloudflare.fw-91mh-912023.xyz/category/order/addtime/page/{{page}}/&&韓漫::https://cloudflare.fw-91mh-912023.xyz/category/list/2/page/{{page}}/&&出版::https://cloudflare.fw-91mh-912023.xyz/category/list/4/page/{{page}}/&&3D漫畫::https://cloudflare.fw-91mh-912023.xyz/category/list/1/page/{{page}}/&&單本::https://cloudflare.fw-91mh-912023.xyz/category/list/3/page/{{page}}/&&其它::https://cloudflare.fw-91mh-912023.xyz/category/list/5/page/{{page}}/&&更新::https://cloudflare.fw-91mh-912023.xyz/custom/update/order/addtime/page/{{page}}/&&熱門人氣::https://cloudflare.fw-91mh-912023.xyz/category/order/hits/page/{{page}}/&&最高評分::https://cloudflare.fw-91mh-912023.xyz/category/order/score/page/{{page}}/&&最多收藏::https://cloudflare.fw-91mh-912023.xyz/category/order/shits/page/{{page}}/&&新漫入庫::https://cloudflare.fw-91mh-912023.xyz/category/order/id/page/{{page}}/&&今日人氣::https://cloudflare.fw-91mh-912023.xyz/category/order/rhits/page/{{page}}/",
+    "lastUpdateTime": 1711865825511,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".name@text",
+      "coverUrl": ".lazy@src",
+      "intro": ".intro@text",
+      "kind": ".text@text##题材:",
+      "lastChapter": ".update-time@text",
+      "name": ".j-comic-title@text",
+      "tocUrl": "{{baseUrl}}"
+    },
+    "ruleContent": {
+      "content": ".lazy-read@data-original",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": "class.updata@text",
+      "bookList": "class.cate-comic-list@class.common-comic-item",
+      "bookUrl": "a[0]@href",
+      "coverUrl": ".lazy@data-original",
+      "intro": ".comic-feature@text",
+      "kind": "li.biaoqian@a@text",
+      "lastChapter": ".comic-update@text##更至：",
+      "name": ".comic__title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.cate-comic-list@class.common-comic-item",
+      "bookUrl": "a@href",
+      "coverUrl": ".lazy@data-original",
+      "intro": ".comic-feature@text",
+      "kind": "",
+      "lastChapter": ".comic-update@text",
+      "name": ".comic__title@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter__list@ul@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "https://cloudflare.fw-91mh-912023.xyz/index.php/search/{{Key}}/{{Page}}",
     "weight": 0
   },
   {
@@ -261,200 +299,120 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "",
-    "bookSourceGroup": "🗨️ 🥣 漫画💬",
-    "bookSourceName": "🥣YYDS漫画💬",
-    "bookSourceType": 2,
-    "bookSourceUrl": "https://www.yydsmh.com/",
+    "bookSourceComment": "/*\n\t源网址后面不要加##，没做兼容\n\t\n\t发布页\n\thttps://qoqoqo.xyz/\n\thttps://永远的神.com/（Punycode ==> https://xn--5rwq3tukc919a.com/）\n*/\n//获取当前地址\nlet index = 0;\n(_geturl = () => {\n\tif(index<3){\n\t\tindex++;\n\t\ttry {\n\t\t\tlet data = JSON.parse(source.getVariable());\n\t\t\tif (!data.loaded || !data.url) {\n\t\t\t\t//初始化\n\t\t\t\teval(String(source.loginUrl));\n\t\t\t\t_init();\n\t\t\t\treturn _geturl();\n\t\t\t}\n\t\t\treturn data.url;\n\t\t} catch (err) {\n\t\t\t//初始化\n\t\t\teval(String(source.loginUrl));\n\t\t\t_init();\n\t\t\treturn _geturl();\n\t\t}\n\t}else{\n\t\tjava.toast(\"初始化失败\");\n\t\treturn null;\n\t}\n})()",
+    "bookSourceGroup": "R18",
+    "bookSourceName": "🔞🔲第一版主",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://永远的神.com/",
+    "bookUrlPattern": "https://www.(\\d+yydstxt|diyibanzhu)\\d+.com/\\d+/\\d+/",
+    "concurrentRate": "",
     "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "[\n{\"title\":\"𓆡𓆝𓆟地ོ区ོ​​𓆟𓆜𓆞\",\"url\":\"\",\"style\":\n{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n\n{\"title\":\"🥣日漫\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=日漫&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"🥣港台\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=港台&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"🥣美漫\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=美漫&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"🥣国漫\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=国漫&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"🥣韩漫\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=韩漫&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n\n{\"title\":\"𓆡𓆝𓆟进ོ度ོ​​𓆟𓆜𓆞\",\"url\":\"\",\"style\":\n{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n\n{\"title\":\"🥣连载中\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=连载中&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🥣已完结\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=已完结&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n\n{\"title\":\"𓆡𓆝𓆟喜ོ好ོ​​𓆟𓆜𓆞\",\"url\":\"\",\"style\":\n{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n\n{\"title\":\"💫全部🥣\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=全部&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"🥣大女主\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=大女主&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"🥣性转换\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=性转换&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🥣异世界\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=异世界&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🥣轻小说\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=轻小说&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"🥣欢乐向\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=欢乐向&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.4}},\n\n{\"title\":\"💫热血₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=热血&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫长条₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=长条&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫百合₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=百合&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫耽美₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=耽美&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫纯爱₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=纯爱&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫后宫₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=后宫&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫韩漫₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=韩漫&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫奇幻₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=奇幻&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫生活₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=生活&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫悬疑₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=悬疑&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫格斗₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=搞笑&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫搞笑₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=搞笑&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫伪娘₯\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=伪娘&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫竞技⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=竞技&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫职场⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=职场&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫萌系⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=萌系&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫冒险⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=冒险&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫治愈⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=治愈&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫都市⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=都市&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫霸总⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=霸总&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫神鬼⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=神鬼&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫侦探⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=侦探&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫爱情⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=爱情&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫古风⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=古风&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫科幻⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=科幻&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫穿越⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=穿越&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫校园⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=校园&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫美食⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=美食&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫剧情⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=剧情&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫节操⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=节操&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫励志⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=励志&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫历史⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=历史&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫战争⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=战争&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"💫恐怖⚡︎\",\"url\":'https://www.yydsmh.com/api/comic/index/lists,{\"body\":\"area=9&tags=恐怖&full=3&page={{page}}\",\"method\":\"POST\"}',\n\"style\":{\"layout_flexGrow\":1,\n\"layout_flexBasisPercent\":0.25}}\n]",
-    "header": "{\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36\"\n}",
-    "lastUpdateTime": 1711212347954,
-    "respondTime": 7854,
-    "ruleBookInfo": {
-      "author": "#detail > div > div.book-name > h1 > span@text",
-      "coverUrl": "div.book-cover.comic-item > div > img@src",
-      "intro": "#js_desc_content@text",
-      "kind": "div.book-name > div > ul.types > li:nth-child(3) > a@text"
-    },
-    "ruleContent": {
-      "content": "#imgsec@html",
-      "imageStyle": "FULL"
-    },
-    "ruleExplore": {
-      "author": "$.author",
-      "bookList": "$.data",
-      "bookUrl": "$.info_url",
-      "coverUrl": "$.bcover",
-      "intro": "$.content",
-      "kind": "$.area",
-      "lastChapter": "$.lastchapter",
-      "name": "$.bname"
-    },
-    "ruleReview": [],
-    "ruleSearch": {
-      "bookList": "#js_comicSortList > li",
-      "bookUrl": "a@href",
-      "checkKeyWord": "",
-      "coverUrl": "a > div > img@src",
-      "lastChapter": "a > div > span@text",
-      "name": "a > p@text"
-    },
-    "ruleToc": {
-      "chapterList": "#js_chapters > li",
-      "chapterName": "a@text\n@js:\na=\"🥣\"+result",
-      "chapterUrl": "a@href"
-    },
-    "searchUrl": "{{cookie.removeCookie(source.getKey())}}\nhttps://www.yydsmh.com/search?searchkey={{key}}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "//by SunQAQ\n//需要登录一下，过掉网站的广告验证。\n//正文unicode编码，解码有点慢。",
-    "bookSourceGroup": "❤小说,☀其一",
-    "bookSourceName": "▲科趣看书网kequks",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.kequks.com",
-    "customOrder": 21,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": false,
-    "exploreUrl": "所有小说::/category/0_{{page}}_0_0_0_0_0.html\r\n仙侠小说::/category/0_{{page}}_0_0_0_413_0.html\r\n玄幻小说::/category/0_{{page}}_0_0_0_39_0.html\r\n架空历史::/category/0_{{page}}_0_0_0_405_0.html\r\n游戏异界::/category/0_{{page}}_0_0_0_137_0.html\r\n科幻灵异::/category/0_{{page}}_0_0_0_1121_0.html\r\n都市言情::/category/0_{{page}}_0_0_0_185_0.html\r\n都市生活::/category/0_{{page}}_0_0_0_169_0.html\r\n恐怖灵异::/category/0_{{page}}_0_0_0_2537_0.html",
-    "lastUpdateTime": 1710897383941,
-    "loginUrl": "https://m.kequks.com",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "coverUrl": "class.BGsectionOne-top-left@img@data-lazy##^##https:",
-      "tocUrl": "text.查看全部章节@href"
-    },
-    "ruleContent": {
-      "content": "class.wrap@tag.script.0@html\r\n<js>\r\nresult = \"https:\" + result.match(/initTxt\\(\\\"(.*?)\\\"/)[1] + \",{\\\"charset\\\":\\\"utf-8\\\"}\";\r\nresult = java.ajax(result);\r\nvar replacestr = \",\" + result.match(/replace\\\"\\:\\{(.*?)\\}/)[1];\r\nvar str = String(replacestr);\r\nvar str1 = str.match(/\\:\\\"(.*?)\\\"/g);\r\nvar str2 = str.match(/,\\\"(.*?)\\\"\\:/g);\r\nvar pattern = /\\\"|\\:|\\,|;/g;\r\nfor (var i = 3; i< str1.length; i++) {\r\n    str1[i] = str1[i].replace(pattern, '');\r\n    str2[i] = str2[i].replace(pattern, '');\r\n    result = result.replace(str1[i], str2[i]);\r\n}\r\nvar sohstr = '\u0001';\r\nvar stxstr = '\u0002';\r\nvar unicode = '\\\\u';\r\nvar pattern1 = /.*?content\\\":\\\"|\\\",\\\"replace.*/g;\r\nresult = result.replace(sohstr, unicode);\r\nresult = result.replace(stxstr, unicode);\r\nresult = String(result);\r\nresult = result.replace(pattern1, '');\r\nresult = JSON.parse('\"' + result + '\"');\r\nresult = result.replace(/;/g, '');\r\n</js>",
-      "nextContentUrl": ""
-    },
-    "ruleExplore": {
-      "author": "class.blue@text",
-      "bookList": "class.CGsectionTwo-right-content-unit",
-      "bookUrl": "class.title@href",
-      "kind": "class.tag@text",
-      "name": "class.title@text"
-    },
-    "ruleSearch": {
-      "author": "class.sc-title@a.1@text",
-      "bookList": "class.container search-card",
-      "bookUrl": "class.sc-title@a.0@href",
-      "intro": "class.search-bold sc-content@text",
-      "lastChapter": "class.sc-time@text",
-      "name": "class.sc-title@a.0@text"
-    },
-    "ruleToc": {
-      "chapterList": "class.BGsectionThree-content chapter-list@li@a",
-      "chapterName": "text",
-      "chapterUrl": "href",
-      "nextTocUrl": "text.下页@href"
-    },
-    "searchUrl": "/search/, {\n\t\"method\":\"post\",\n\t\"body\":\"keyword={{key}}&submit=\"}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "/*\nlegado&&coolapk by:\nxsw8093\n*/\n\t\nvar su=source.key;\ncookie.removeCookie(su)\nso=su+`/search/?searchkey=${key}&captcha=${java.getVerificationCode(su+\"/captcha.php\")}`\nso;",
-    "bookSourceGroup": "",
-    "bookSourceName": "🍊二次元小说网[自写/码]",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://www.acgread.cc",
-    "customOrder": -2085979430,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": false,
-    "exploreUrl": "",
-    "lastUpdateTime": 1711359372366,
-    "respondTime": 59034,
-    "ruleBookInfo": {
-      "author": "",
-      "coverUrl": ".novel_info_main@tag.img@src",
-      "init": "",
-      "intro": ".intro@text",
-      "lastChapter": ".novel_info_title@tag.div.0@a.text",
-      "name": ".novel_info_title h1@text",
-      "tocUrl": ""
-    },
-    "ruleContent": {
-      "content": "id.article@html||class.content@html",
-      "nextContentUrl": "text.下一页@href",
-      "replaceRegex": "",
-      "sourceRegex": "",
-      "webJs": ""
-    },
-    "ruleExplore": [],
-    "ruleReview": [],
-    "ruleSearch": {
-      "author": "tag.div.1@tag.p.0@textNodes",
-      "bookList": "<js>  \nwhile(/验证码/.test(result)){\r\n    key=java.get(\"key\");\r\n    java.toast(\"验证码错误，重新输入！\");\r\n    eval(String(source.bookSourceComment));\r\n    result=java.ajax(so);\r\n    }\r\n    result\r\n </js>\r\n  class.searchresult",
-      "bookUrl": "tag.a.0@href",
-      "checkKeyWord": "本武神",
-      "coverUrl": "img@src",
-      "intro": ".searchresult_p@text",
-      "kind": "tag.div.1@tag.p.0@tag.span@textNodes",
-      "lastChapter": "tag.div.1@tag.p.2@tag.a@textNodes",
-      "name": "h3@text"
-    },
-    "ruleToc": {
-      "chapterList": "id.ul_all_chapters@tag.li@tag.a",
-      "chapterName": "text",
-      "chapterUrl": "href",
-      "nextTocUrl": "option@value"
-    },
-    "searchUrl": "@js:\njava.put(\"key\",key);\neval(String(source.bookSourceComment))",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "20240104 修缮整理-尐哖\n20230725 制作该源-尐哖\n换皮网站：\nwww与m通用\n笔趣阁：http://www.biquge77.net\n搜索不同：\n顶点小说：http://www.456.lol\n品书网：https://www.vodtw.la\n36小说备用站：https://www.biquge123.cc",
-    "bookSourceGroup": "杂",
-    "bookSourceName": "✨笔趣阁⁷⁷",
-    "bookSourceType": 0,
-    "bookSourceUrl": "http://www.biquge77.net##@尐哖",
-    "bookUrlPattern": "https:\\/\\/[wm]+\\.(456|vodtw|biquge77|biquge123)\\.(cc|com|net|la|org|la)\\/(html|xs|book)\\/\\d+(\\/|_)\\d+\\/?",
-    "customOrder": 302,
     "enabled": true,
     "enabledCookieJar": false,
     "enabledExplore": true,
-    "header": "@js:\nJSON.stringify({\n\t\"Referer\": source.getKey().match(/([^\\#]+)\\#/)[1]\n});",
-    "lastUpdateTime": 1705191227065,
-    "loginCheckJs": "",
-    "loginUrl": "",
-    "respondTime": 3461,
+    "exploreUrl": "<js>\n//状态\nnovelState = [\n\t{\ttitle: '全部', type: 0},\n\t{\ttitle: '连载', type: 1},\n\t{\ttitle: '完结', type: 2}\n]\n//分类\nnovelSort = [\n\t{\ttitle: '　全部　', type: 0},\n\t{\ttitle: '玄幻奇幻', type: 1},\n\t{\ttitle: '仙侠武侠', type: 2},\n\t{\ttitle: '都市言情', type: 3},\n\t{\ttitle: '穿越历史', type: 4},\n\t{\ttitle: '科幻灵异', type: 5},\n\t{\ttitle: '  藏经阁  ', type: 6},\n\t{\ttitle: '其他类别', type: 7}\n]\n//排序\nnovelRank = [\n\t{ title: '  更新  ', type: 'lastupdate'},\n\t{ title: '总人气', type: 'allvisit'},\n\t{ title: '月人气', type: 'monthvisit'},\n\t{ title: '  字数  ', type: 'size'},\n\t{ title: '  新书  ', type: 'postdate'}\n]\n\nlist = [];\nformatUrl = (sort, rank, state) => {\n\treturn `{{eval(String(source.loginUrl));_getUrl();}}shuku/${sort}-${rank}-${state}-{{page}}.html`;\n}\npushItem = (title, url, basis) => {\n\tlist.push({\n\t\ttitle: title,\n\t\turl: url,\n\t\tstyle: {\n\t\t\tlayout_flexGrow: 1,\n\t\t\tlayout_flexBasisPercent: basis\n\t\t}\n\t});\n}\n\nfor (stateItem of novelState) {\n\tpushItem(`🚫小说状态---${stateItem.title}🚫`, \"\", 1);\n\tfor (rankItem of novelRank) {\n\t\tnovelSort[0].title = \"📫\" + rankItem.title;\n\t\tfor (sortItem of novelSort) {\n\t\t\tpushItem(`${sortItem.title}`, formatUrl(sortItem.type, rankItem.type, stateItem.type), sortItem.type > 5 ? 0.4 : 0.25);\n\t\t}\n\t}\n}\nJSON.stringify(list);\n</js>",
+    "header": "<js>\n(() => {\n\ttry {\n\t\tdata = JSON.parse(source.getVariable())\n\t} catch (err) {\n\t\tdata = {}\n\t}\n\tsessionID = data.sessionID||\"\";\n\tif (!sessionID) {\n\t\tchars = \"abcdefghijklmnopqrstuvwxyz123456789\";\n\t\tcharsLength = chars.length\n\t\tfor (i = 0; i < 26; i++) {\n\t\t\tsessionID += chars.charAt(Math.floor(Math.random() * charsLength))\n\t\t}\n\t\tdata.sessionID = sessionID\n\t\tsource.setVariable(JSON.stringify(data))\n\t}\n\treturn JSON.stringify({\n\t\t\"cookie\": \"PHPSESSID=\" + sessionID,\n\t\t\"User-Agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Snapchat/10.77.5.59 (like Safari/604.1)\"\n\t})\n})()\n</js>",
+    "jsLib": "",
+    "lastUpdateTime": 1711789013455,
+    "loginCheckJs": "//提取当前加载的域名\n_baseUrl = String(result.url()).replace(/(https?:\\/\\/.*?\\/).*/, \"$1\");\n//java.log(_baseUrl)\n//java.log(result.url())\n//java.log(baseUrl)\ntry {\n\t_data = JSON.parse(source.getVariable())\n} catch (err) {\n\t_data = {};\n}\n\t\nreSearch = false;//是否重新搜索\n//重定向\nif (_baseUrl.indexOf(baseUrl) == -1 && _data.url != _baseUrl) {\n\treSearch = true;\n\t_data.url = _baseUrl;\n\tsource.setVariable(JSON.stringify(_data));\n\tjava.log(\"重定向\");\n\tjava.key && java.initUrl();\n}\nurl = _data.url || _baseUrl;\nif (result.code() == 403) {\n\tlet _url = String(url + \",\" + JSON.stringify({\n\t\t\"method\": \"POST\",\n\t\t\"body\": \"action=1&v=1234\"\n\t}));\n\tlet checkres = java.ajax(_url);\n\tlet checkText = true;\n\tif (checkres == \"success\") checkText = checkres;\n\tjava.toast(\"自动验证：\" + checkText);\n\tresult = java.getStrResponse();\n\tjava.log(\"自动验证&重新获取：\" + checkText);\n} else if (reSearch && java.key) {\n\t//搜索时 重定向新网址需要重新获取搜索内容\n\tresult = java.getStrResponse();\n\tjava.log(\"重新搜索\");\n}\nresult",
+    "loginUi": "[\n\t{\n\t\tname: \"　 获取源网址 　\",\n\t\ttype: \"button\",\n\t\taction: \"_initSourceUrl()\"\n\t},\n\t{\n\t\tname: \"　　 初始化 　　\",\n\t\ttype: \"button\",\n\t\taction: \"_init()\"\n\t},\n\t{\n\t\tname: \"　　　　　  ◤ 更改源网址 ◥  　　　　　\",\n\t\ttype: \"button\",\n\t\taction: \"\"\n\t},\n\t\n\t{\n\t\tname: \"  选项①  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(0)\"\n\t},\n\t{\n\t\tname: \"  选项②  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(1)\"\n\t},\n\t{\n\t\tname: \"  选项③  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(2)\"\n\t},\n\t{\n\t\tname: \"  选项④  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(3)\"\n\t},\n\t{\n\t\tname: \"  选项⑤  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(4)\"\n\t},\n\t{\n\t\tname: \"  选项⑥  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(5)\"\n\t},\n\t{\n\t\tname: \"  选项⑦  \",\n\t\ttype: \"button\",\n\t\taction: \"_select(6)\"\n\t},\n\t{\n\t\tname: \"取消选择\",\n\t\ttype: \"button\",\n\t\taction: \"_cancel()\"\n\t},\n\t{\n\t\tname: \"确定更改\",\n\t\ttype: \"button\",\n\t\taction: \"_confirm()\"\n\t}\n]",
+    "loginUrl": "let log = (text) => {\n\tif (!text) return;\n\tjava.toast(text);\n\tjava.log(text);\n}\n\nlet _getData = () => {\n\ttry {\n\t\treturn JSON.parse(source.getVariable());\n\t} catch (err) {\n\t\treturn {};\n\t}\n}\n\nlet _setData = (obj) => {\n\tif (typeof obj == \"object\") {\n\t\tsource.setVariable(JSON.stringify(obj));\n\t}\n}\n\nlet _data = _getData();\n\nlet formatUrl = (string, replacement) => {\n\tlet replacementText = '/';\n\tif (replacement) replacementText += replacement;\n\treturn String(string).replace(/\\/?$/, replacementText);\n}\n\nlet ajax = (requestUrl) => {\n\tlet result = java.ajax(requestUrl);\n\t// 获取发布页通过<iframe>标签内嵌的发布页网址 https://xx/baidu.js\n\tlet _requestUrl = org.jsoup.Jsoup.parse(result).select(\"iframe\").attr(\"src\");\n\tif (result == '404') {\n\t\t// 发布页可直接访问，获取域名 https://xx/\n\t\tresult = java.ajax(requestUrl.replace(/(https?:\\/\\/.*?\\/).*/, \"$1\"));\n\t} else if (_requestUrl != \"\") {\n\t\t//发布页通过<iframe>标签内嵌网址\n\t\tresult = java.ajax(_requestUrl);\n\t}\n\treturn org.jsoup.Jsoup.parse(result).select(\".line a\");\n}\n\n//获取发布页列表\nlet _getPublishUrl = () => {\n\treturn [source.key, \"https://5s6s7s8s.com/\", \"https://qoqoqo.xyz/\", \"https://5m6m7m8m.com/\"];\n}\n\n//获取源网址列表\nlet _getSourceUrl = (urlList) => {\n\tlet logtext;\n\tlet total = 0;\n\tlet publishList = urlList ? urlList : _getPublishUrl();\n\tif (publishList.length > 0) {\n\t\tlet requestUrl = formatUrl(publishList[0], \"baidu.js\");\n\t\tlet eleObj = ajax(requestUrl);\n\n\t\tif (String(eleObj)) {\n\t\t\tfor (let _key in eleObj) {\n\t\t\t\tlet url = String(eleObj[_key].attr(\"href\"));\n\t\t\t\tif (url.trim() && _data.sourceUrl.indexOf(url) == -1) {\n\t\t\t\t\t_data.sourceUrl.push(url);\n\t\t\t\t\ttotal++;\n\t\t\t\t}\n\t\t\t}\n\t\t\tjava.log(`当前发布页${requestUrl}`);\n\t\t\tlogtext = `成功获取到${total}个源网址`;\n\t\t} else {\n\t\t\tjava.log(`当前发布页 ${requestUrl} 未获取到网址`);\n\t\t\tjava.log(`【删除当前发布页并重新获取】`);\n\t\t\treturn _getSourceUrl(publishList.slice(1));\n\t\t}\n\t} else {\n\t\tlogtext = `无可用发布页`;\n\t}\n\tlog(logtext);\n\treturn _setData(_data);\n}\n\n// 登录UI获取源网址\nlet _initSourceUrl = () => {\n\t_data.sourceUrl = [];\n\tlog(`【获取源网址中...】`);\n\t_getSourceUrl();\n}\n\n// 初始化\nlet _init = () => {\n\tlet obj1 = {\n\t\turl: \"\", //当前选中源网址\n\t};\n\tlet obj2 = {\n\t\tsourceUrl: [], //源网址列表\n\t\tsourceSelect: null, //\n\t\tloaded: true\n\t};\n\t_data = Object.assign({}, obj1, _data, obj2);\n\tlet separator = \"，\\n　\";\n\t_initSourceUrl();\n\tjava.log(_data.sourceUrl.join(separator));\n\tlog(`【选择默认源网址】`);\n\t_selectSourceUrl(0);\n}\n\nlet _selectSourceUrl = (index) => {\n\ttry {\n\t\tif (_data.sourceUrl[index] == undefined) {\n\t\t\tlog(`当前选项无可用源网址`);\n\t\t}else {\n\t\t\t_data.url = formatUrl(_data.sourceUrl[index]);\n\t\t\tlog(`切换源网址为${_data.url}`);\n\t\t}\n\t} catch (e) {\n\t\tlog(`当前选项无可用源网址`);\n\t}\n\t_data.sourceSelect = null;\n\treturn _setData(_data);\n}\n\nlet _select = (index) => {\n\tif (index == undefined) return;\n\tlet title = `[选项${(index + 1)}]`;\n\tlet logtext = `已选择${title}`;\n\n\tif (_data.sourceUrl[index] == undefined) {\n\t\tlogtext = `${title}不可使用`;\n\t\tindex = null;\n\t} else if (formatUrl(_data.sourceUrl[index]) == _data.url) {\n\t\tlogtext = `${title}源网址已在使用`;\n\t\tindex = null;\n\t} else if (_data.sourceSelect == index) {\n\t\tlogtext = `已取消选择${title}`;\n\t\tindex = null;\n\t}\n\n\t_data.sourceSelect = index;\n\tlog(logtext);\n\treturn _setData(_data);\n}\n\nlet _cancel = () => {\n\tlog(`已取消选择的选项`);\n\t_data.sourceSelect = null;\n\treturn _setData(_data);\n}\n\nlet _confirm = () => {\n\tif (_data.sourceSelect == null || _data.sourceSelect == undefined) {\n\t\treturn log(`请选择任意选项`);\n\t} else if (_data.sourceUrl[_data.sourceSelect] == undefined) {\n\t\tlog(`[选项${_data.sourceSelect + 1}]不可使用`);\n\t} else if (formatUrl(_data.sourceUrl[_data.sourceSelect]) == _data.url) {\n\t\tlog(`[选项${_data.sourceSelect + 1}]源网址已在使用`);\n\t} else {\n\t\treturn _selectSourceUrl(_data.sourceSelect);\n\t}\n\t_data.sourceSelect = null;\n\treturn _setData(_data);\n}\n\n\n//获取当前地址\nlet index = 0;\n_getUrl = () => {\n\tif(index<3){\n\t\tindex++;\n\t\ttry {\n\t\t\tif (!_data.loaded || !_data.url) {\n\t\t\t\t//初始化\n\t\t\t\t_init();\n\t\t\t\treturn _getUrl();\n\t\t\t}\n\t\t\treturn _data.url;\n\t\t} catch (err) {\n\t\t\t//初始化\n\t\t\t_init();\n\t\t\treturn _getUrl();\n\t\t}\n\t}else{\n\t\tjava.toast(\"初始化失败\");\n\t\treturn null;\n\t}\n}",
+    "respondTime": 180000,
     "ruleBookInfo": {
-      "author": "[property$=author]@content",
-      "coverUrl": ".container@img@src",
-      "intro": "class.desc xs-hidden@html",
-      "kind": "[property~=category|status|update_time]@content##\\s.*",
-      "lastChapter": "[property*=\"_chapter_name\"]@content",
-      "name": "[property$=book_name]@content"
+      "author": "##作者：(.*)<br\\s*/>##$1###",
+      "init": "@js:\nif (baseUrl != java.redirectUrl) {\n\t//重定向 重新设置书籍地址\n\t//java.setBaseUrl(java.redirectUrl)\n\t//java.getBook().bookUrl = java.redirectUrl\n\t//book.bookUrl = java.redirectUrl\n}\nresult",
+      "intro": ".bd.2@text##^|\\s##<br />",
+      "kind": "##类型：(.*)<br\\s*/>##$1###",
+      "lastChapter": "ul.list.0@li.0@text",
+      "name": "h1@text",
+      "tocUrl": "{{baseUrl}}",
+      "wordCount": "##字数：(.*)<br\\s*/>##$1###"
     },
     "ruleContent": {
-      "content": "#content@html##^\\s*第[\\d零一二三四五六七八九十百千]+章.*\\n",
-      "nextContentUrl": "@js:\nf=java.getElements('.section-opt a.2');\n/下一页/.test(f.text())?f.attr('href'):''",
-      "replaceRegex": "##\\n\\s*\\(本章完\\)$",
-      "webJs": ""
+      "content": "<js>\nfunction x(a, b) {\n\tresult = String(result).replace(a, b);\n}\n//debug\nfunction d(debug) {\n\tjava.log(\"\\r\\n\\n\");\n\tjava.log(debug);\n\tjava.log(result);\n\tjava.log(debug+'end==');\n}\n\nbaseUrl = java.redirectUrl;\n\n//同时加载多章时，自动验证成功后有的页面加载失败时重新获取\nif(/<div\\s*class=\"title\"\\s*>.*1234/.test(src)){\n \t//重新设置正文解析内容\n\tjava.setContent(java.ajax(baseUrl));\n}\n\n//获取正文内容\nresult = java.getString('.neirong@html');\n\n//大概第四页正文有切割，需要调接口获取这一页剩余正文\nif (/\\$.post\\('',{'j':'1'}/.test(src)) {\n\tresult += java.ajax(String(baseUrl + ',' + JSON.stringify({\n\t\t\"method\": \"POST\",\n\t\t\"body\": \"j=1\"\n\t})))\n}\n//x(/(<br\\/?>\\s*){2}/g,\"<br><br>\");\n//x(/<script.*<\\/script>/g,\"\")\n\ntry {\n\t// Aes解密\n\tsecret = src.match(/=\\s*secret\\(\\s*['\"](.+?)['\"],[\\s]*['\"](.+?)['\"],[^);]*?/);\n\tstring = secret[1]\n\tcode = java.md5Encode(secret[2]);\n\tiv = code.substring(0, 16);\n\tkey = code.substring(16);\n\t//java.log(baseUrl + \" Aes解密ok：\" + code + \"\\n\" + iv + \"\\n\" + key)\n\tresult = java.createSymmetricCrypto(\"AES/CBC/PKCS7Padding\", key, iv).decryptStr(string);\n} catch (err) {\n\ttry {\n\t\t// 乱序恢复\n\t\t//有问题修改下面正则 修正两个br标签换行显示\n\t\tx(/(<br\\/?>\\s*){2}/g,\"<br><br>\");\n\t\tns = java.base64Decode(src.match(/var ns='(.+?)';/)[1]).split(',');\n\t\t//java.log(baseUrl + \"乱序恢复ok\")\n\t\tparagraphArr = result.split(\"<br><br>\");\n\t\tresult = \"\";\n\t\tparagraphLength = paragraphArr.length\n\t\tfor (i = 1; i <= paragraphLength; i++) {\n\t\t\tresult += paragraphArr[ns[i] - ns[0]] + '<br><br>';\n\t\t}\n\t} catch (err) {\n\t\t//java.log(baseUrl + \"乱序恢复&Aes解密no\")\n\t}\n}\n//初始化图片链接\n//x(/[\\r\\n]?[\\t ]*<img .+?toimg\\/data\\/([^\\.]+)[^>]+>[\\t ]*[\\r\\n]?/g, \"#$1#\");\nx(/[\\r\\n]?[\\t ]*<img\\s*src=['\"]\\/toimg\\/data\\/([^\\.]+)[^>]+>[\\t ]*[\\r\\n]?/g, \"#$1#\");\n//初始化字体格式的文字,匹配<i>&#xe800</i>\nx(/<i>(.*?)<\\/i>/g, function(str, p1) {\n\t//java.log(p1.charCodeAt().toString(16));\n\t//返回16进制，例：p1=&#xe800 返回格式#e800#\n\treturn '#' + p1.charCodeAt().toString(16) + '#'\n})\n\n//转换空格\nx(/&nbsp;/g, ' ');\n//初始化分段准备\nx(/[\\t  ]{2,2}/g, \"　\");\n\n//去掉标签里的属性\nx(/(\\<|&lt;)([^\\>]*?)(\\s|&nbsp;)[^\\>]*(\\>|&gt;)/g, \"<$2>\");\n//段落换行\nx(/\\s*(\\n|<br\\/?>)+\\s*(　{2,})?/gi, \"\\r\\n\");\n//去掉不需要的标签\nx(/([\\r\\n　]*\\<\\/?([A-Za-z]*)?\\>[\\r\\n　]*)/gi, \"\");\n\n//引号替换\nx(/‘/g, \"『\");\nx(/’/g, \"』\");\nx(/“/g, \"「\");\nx(/”/g, \"」\");\n\nif (/(Undefined|(^\\s*$))/.test(result)) {\n\tresult =\n\t\t\"<br/>　　网站分页有时有问题不可用，速度慢的时候就会是现在这样了，网站速度快的时候就没事了。<br/>　　换个时间刷新试试！！！<br/>　　换个时间刷新试试！！！<br/>　　换个时间刷新试试！！！<br/>\" + result;\n}\n\n\"\\r\\n\" + result + \"hereispagebreak\";\n</js>",
+      "imageStyle": "TEXT",
+      "nextContentUrl": "<js>\nresult = java.getStringList(`.chapterPages@tag.a!0@href`);\nfor (let i in result) {\n\tresult[i] = String(result[i]).replace(/.+?\\('\\d+','\\d+','(\\d+)','(\\d+)'\\).+?/, `$1_$2.html`);\n}\nresult\n</js>",
+      "replaceRegex": "<js>\nfunction d(debug) {\n\tjava.log(debug);\n\tjava.log(result);\n}\nfunction x(a, b, c) {\n\tif (!c) return replace(a, b);\n\twhile (c.exec(result)) {\n\t\treplace(a, b)\n\t}\n}\nfunction replace(a, b) {\n\tresult = String(result).replace(a, b);\n}\n\n// 拼音还原\n// 逐条添加：x(/#正则#/gi,\"文本\");\nx(/#(3452829630|3734280203|7160647985)#/gi, \"毛\");\nx(/#(0465229144|3916380979|9904598393)#/gi, \"鹏\");\nx(/#(6810021581|4074851758|8625748415)#/gi, \"熟\");\nx(/#(4830525755|4247282819|2472759648)#/gi, \"潮\");\nx(/#(8186728471|4190571012|9063255411)#/gi, \"出\");\nx(/#(0774208243|1312563809|5558441730)#/gi, \"介\");\nx(/#(2159282507|7334347774|3996916798)#/gi, \"玉\");\nx(/#(3987221833|0592893886|7075168225)#/gi, \"穴\");\nx(/#(2623901427|2222207117|8254683485)#/gi, \"嫩\");\nx(/#(2624694117|3597754944|5845812256)#/gi, \"缝\");\nx(/#(0733848743|0271250302|5047557824)#/gi, \"锡\");\nx(/#(6115586454|6800261922|3774281334)#/gi, \"吸\");\nx(/#(1042838226|5141468309|9332720497)#/gi, \"足\");\nx(/#(5446146111|4608623657|0951783242)#/gi, \"露\");\nx(/#(4915941086|8963596058|7177706034)#/gi, \"西\");\nx(/#(5268319798|7390498076|1461142782)#/gi, \"房\");\nx(/#(6310792342|7801094435|6357713966)#/gi, \"阴\");\nx(/#(4847629361|0902772900|0692957361)#/gi, \"春\");\nx(/#(0117530724|3534031771|2383311784)#/gi, \"棍\");\nx(/#(9100236271|0543813166|5242240437)#/gi, \"兽\");\nx(/#(7454910199|8728327662|1141551481)#/gi, \"乳\");\nx(/#(3518213323|6184831247|3672519671)#/gi, \"勃\");\nx(/#(3561353475|2406299329|5218315173)#/gi, \"眼\");\nx(/#(3841393519|7880862058|7912251525)#/gi, \"舔\");\nx(/#(2641673291|0230924173|2378569828)#/gi, \"共\");\nx(/#(1078667735|9818286580|5314593750)#/gi, \"扎\");\nx(/#(3785706613|4594920519|7875951963)#/gi, \"四\");\nx(/#(2333744551|5405095624|7230561098)#/gi, \"活\");\nx(/#(5219037129|5032489262|5061449905)#/gi, \"搞\");\nx(/#(7756664002|4896650341|8374219522)#/gi, \"色\");\nx(/#(6153774070|5604308767|0453641548)#/gi, \"颅\");\nx(/#(1257558943|8134092417|8285637025)#/gi, \"容\");\nx(/#(5570002531|1886709496|0744258594)#/gi, \"粉\");\nx(/#(9145127477|3023538105|9078990437)#/gi, \"席\");\nx(/#(5865212886|5050246827|4820521578)#/gi, \"里\");\nx(/#(4633423952|1484832267|7092415778)#/gi, \"头\");\nx(/#(5366920169|5200837531|3997708706)#/gi, \"干\");\nx(/#(2226143209|7084008153|0747467933)#/gi, \"蜜\");\nx(/#(0665756424|4606314618|7950018257)#/gi, \"胸\");\nx(/#(7106060561|5554918885|1007046559)#/gi, \"夫\");\nx(/#(3091089594|8706852605|5034321418)#/gi, \"流\");\nx(/#(0602771294|8371203386|8650024872)#/gi, \"妈\");\nx(/#(1993443364|6972560942|5548249566)#/gi, \"亲\");\nx(/#(7645727085|5896195606|4380620349)#/gi, \"私\");\nx(/#(4333336968|8431794980|0399680202)#/gi, \"唇\");\nx(/#(3620919708|4829671606|1613331912)#/gi, \"宰\");\nx(/#(7979336243|9707609372|1330289459)#/gi, \"丝\");\nx(/#(5947057862|5412723094|9364129810)#/gi, \"丁\");\nx(/#(1167260777|5978095077|9885014626)#/gi, \"腿\");\nx(/#(7049694563|2610770243|5125861477)#/gi, \"坑\");\nx(/#(2845054079|1782605261|8662428266)#/gi, \"漪\");\nx(/#(2038870549|5765697086|9150071773)#/gi, \"爱\");\nx(/#(3540936540|0744208851|1969781516)#/gi, \"一\");\nx(/#(6312544120|4102627444|1644155001)#/gi, \"腐\");\nx(/#(1431765711|5797973848|5909889921)#/gi, \"伦\");\nx(/#(2132128883|5067461841|9498890427)#/gi, \"菊\");\nx(/#(8465027396|1110350989|7971728127)#/gi, \"杜\");\nx(/#(9784824665|8212084865|6581803664)#/gi, \"屁\");\nx(/#(2552707218|3554203860|2113285564)#/gi, \"死\");\nx(/#(9480765147|8748613862|0123303427)#/gi, \"厥\");\nx(/#(1992295418|6834531826|4654336320)#/gi, \"尿\");\nx(/#(3895473218|0010005960|9350080768)#/gi, \"下\");\nx(/#(0517159832|8431104929|5985086913)#/gi, \"舌\");\nx(/#(7478986526|6942262704|7168606002)#/gi, \"鸡\");\nx(/#(3061193484|4500574558|2211806946)#/gi, \"人\");\nx(/#(3609388116|5527272297|5887114772)#/gi, \"乱\");\nx(/#(1851372601|2537989817|6661319734)#/gi, \"党\");\nx(/#(5382174556|3750225803|8210855360)#/gi, \"交\");\nx(/#(3462784021|2398210818|9065740329)#/gi, \"射\");\nx(/#(5241270215|7352867298|3654555607)#/gi, \"址\");\nx(/#(8710918821|7373168399|4738148856)#/gi, \"办\");\nx(/#(2825234303|3326385285|6092378237)#/gi, \"版\");\nx(/#(2846608968|5825662041|6630583610)#/gi, \"白\");\nx(/#(8794230418|2857703127|4609698611)#/gi, \"法\");\nx(/#(9093172577|5473638027|3236560627)#/gi, \"胎\");\nx(/#(3186999824|2886155750|1398281412)#/gi, \"棒\");\nx(/#(5738418978|6189237176|2105123431)#/gi, \"氓\");\nx(/#(6356531709|6338842694|8240041430)#/gi, \"排\");\nx(/#(7140597939|0665889261|3205881331)#/gi, \"蛋\");\nx(/#(9312787093|5814392141|8500738501)#/gi, \"七\");\nx(/#(4463549087|3955350664|4072862874)#/gi, \"吞\");\nx(/#(6202025318|7093253691|8604758995)#/gi, \"代\");\nx(/#(6543501150|9993921948|0899255392)#/gi, \"局\");\nx(/#(9144615555|7175324752|2116155892)#/gi, \"妇\");\nx(/#(3027722189|7614765414|3891562379)#/gi, \"斩\");\nx(/#(8208577763|7366713478|3851298429)#/gi, \"买\");\nx(/#(5427613105|4364293920|9633654504)#/gi, \"公\");\nx(/#(5934682064|1221601598|9260450717)#/gi, \"二\");\nx(/#(6577306817|7421367031|2346301295)#/gi, \"剖\");\nx(/#(0570562432|6582446880|8443857439)#/gi, \"插\");\nx(/#(0277593854|6039632604|7071132422)#/gi, \"湿\");\nx(/#(1909221781|7406513426|2386447352)#/gi, \"毒\");\nx(/#(4281755712|9875422061|9465258920)#/gi, \"凌\");\nx(/#(2733856399|0698278491|4188337959)#/gi, \"首\");\nx(/#(0132292497|8774556813|6534980771)#/gi, \"台\");\nx(/#(3473128666|5287671279|9030340049)#/gi, \"性\");\nx(/#(3028548732|4463833256|8023457557)#/gi, \"逼\");\nx(/#(3511096181|7138983218|6345580535)#/gi, \"摇\");\nx(/#(6965515376|0203769080|1957086454)#/gi, \"丰\");\nx(/#(3269935019|5954911131|8370627720)#/gi, \"光\");\nx(/#(6602934344|3679503296|5637260964)#/gi, \"轮\");\nx(/#(4323477214|4870547767|7412915922)#/gi, \"发\");\nx(/#(7641707176|5947611027|3928911332)#/gi, \"甲\");\nx(/#(8454668064|2218308069|4208731327)#/gi, \"未\");\nx(/#(0832215510|0855781973|7068856042)#/gi, \"合\");\nx(/#(0902926171|7582804185|6921916056)#/gi, \"龟\");\nx(/#(4973271227|8715410257|8377724925)#/gi, \"呻\");\nx(/#(7354186984|3087672465|7889416076)#/gi, \"五\");\nx(/#(2773399424|4763085099|7902010953)#/gi, \"九\");\nx(/#(0739597541|7873389278|2321223621)#/gi, \"朱\");\nx(/#(5071472241|8522399281|5515430018)#/gi, \"妹\");\nx(/#(0188589055|4378132885|0689040939)#/gi, \"炸\");\nx(/#(5117051722|4215887283|3887706975)#/gi, \"温\");\nx(/#(1970298383|8739167787|2642204389)#/gi, \"处\");\nx(/#(5025986971|6695940412|8780685079)#/gi, \"锦\");\nx(/#(8870572165|8755875442|4426733800)#/gi, \"秽\");\nx(/#(1949866581|4474051358|7614763772)#/gi, \"水\");\nx(/#(3323959507|9131928994|5126322372)#/gi, \"硬\");\nx(/#(8406787204|2279922761|4055228760)#/gi, \"退\");\nx(/#(4412323691|7177895002|2676668403)#/gi, \"虐\");\nx(/#(4465328127|0312005842|4656222554)#/gi, \"六\");\nx(/#(3817726133|1212982941|3573763138)#/gi, \"最\");\nx(/#(1790668606|3720176816|6817781912)#/gi, \"高\");\nx(/#(0407334288|2572476976|5077961297)#/gi, \"涛\");\nx(/#(6472284406|4029006589|2877274169)#/gi, \"辱\");\nx(/#(1689714497|1834872811|0587188979)#/gi, \"吟\");\nx(/#(5040723321|8242185966|7888067492)#/gi, \"动\");\nx(/#(8244230680|1916417096|2735853814)#/gi, \"独\");\nx(/#(9884662704|5287254025|2836910644)#/gi, \"撸\");\nx(/#(0528649589|9261732995|8421964095)#/gi, \"臀\");\nx(/#(8553796321|3926979151|6179042850)#/gi, \"尸\");\nx(/#(3909511071|2522832594|2791601284)#/gi, \"枪\");\nx(/#(4081174270|0965662198|1605992686)#/gi, \"件\");\nx(/#(0902364778|3684012410|3332912323)#/gi, \"十\");\nx(/#(3292843358|2660141736|8294761359)#/gi, \"亡\");\nx(/#(7887536384|1117966584|8482091824)#/gi, \"江\");\nx(/#(1315163785|0355171744|4100571969)#/gi, \"地\");\nx(/#(8590038166|5227025337|0682651127)#/gi, \"酸\");\nx(/#(5185348413|5051383838|6457819129)#/gi, \"嫡\");\nx(/#(2546160883|5964092977|8804400892)#/gi, \"上\");\nx(/#(6546197987|2953530793|6956001608)#/gi, \"花\");\nx(/#(6261906167|7224150395|9572922210)#/gi, \"布\");\nx(/#(6385481463|9440082131|7544658985)#/gi, \"生\");\nx(/#(4207051000|1533431667|5537116184)#/gi, \"嫂\");\nx(/#(0948398955|4691614404|9986630664)#/gi, \"漏\");\nx(/#(0286099622|6695148880|0851402991)#/gi, \"美\");\nx(/#(3761170223|5174870454|6874325047)#/gi, \"操\");\nx(/#(2378050882|3390508734|6813919707)#/gi, \"纪\");\nx(/#(b69322714b|a85090415a|c81498104c)#/gi, \"日\");\nx(/#(7691109819|2814245110|1809149563)#/gi, \"含\");\nx(/#(6764978449|0894532232|9386124353)#/gi, \"儿\");\nx(/#(1165271020|8353295295|1901233548)#/gi, \"暴\");\nx(/#(3928657599|8620217283|8770568739)#/gi, \"肉\");\nx(/#(7662722126|2472677945|5093089507)#/gi, \"马\");\nx(/#(1354231266|7506204301|6843073930)#/gi, \"指\");\nx(/#(8836471562|2885608989|5618127868)#/gi, \"中\");\nx(/#(4179250285|6076847362|9075956636)#/gi, \"迷\");\nx(/#(9652486924|5958823569|2563690011)#/gi, \"麻\");\nx(/#(7402244018|9217862382|7337698464)#/gi, \"宫\");\nx(/#(5091848517|0978291143|9588077975)#/gi, \"幼\");\nx(/#(1690746609|1509162328|4574361464)#/gi, \"义\");\nx(/#(1090502360|8735858515|1190111324)#/gi, \"第\");\nx(/#(8457823464|5761080466|0990372354)#/gi, \"淫\");\nx(/#(0897088508|9209363567|6146409280)#/gi, \"粗\");\nx(/#(8519707329|9574018318|2954536573)#/gi, \"杀\");\nx(/#(7160038829|1782567235|8773645769)#/gi, \"情\");\nx(/#(4808657706|2876804651|8358388359)#/gi, \"顶\");\nx(/#(7118332370|7279115113|6261439078)#/gi, \"贱\");\nx(/#(4602423928|2148844516|3948875377)#/gi, \"茎\");\nx(/#(7650648460|9218945420|9478849035)#/gi, \"波\");\nx(/#(5111229895|8208727967|8806967364)#/gi, \"奸\");\nx(/#(5264533408|3187883344|5844292263)#/gi, \"园\");\nx(/#(1020382214|4304523715|6149826374)#/gi, \"三\");\nx(/#(2508447790|8899305652|9600739652)#/gi, \"骚\");\nx(/#(8554004725|9123535704|4837206388)#/gi, \"洞\");\nx(/#(6598183488|1466119857|2347547983)#/gi, \"弹\");\nx(/#(5942653794|2453282069|5798715549)#/gi, \"山\");\nx(/#(8637348340|6385714697|2044276277)#/gi, \"精\");\nx(/#(9293860947|2444390640|4598856392)#/gi, \"弟\");\nx(/#(2479341369|1625785675|1164260008)#/gi, \"帮\");\nx(/#(1128608327|2352694038|4080685678)#/gi, \"偷\");\nx(/#(9102602793|6269512667|7615188907)#/gi, \"天\");\nx(/#(1019435523|9513785378|7185542494)#/gi, \"胡\");\nx(/#(4813465063|7080698327|1748611635)#/gi, \"炮\");\nx(/#(2166433573|2757781217|9655348333)#/gi, \"妓\");\nx(/#(7806997609|5119090656|8487710161)#/gi, \"灭\");\nx(/#(7808420336|9767114503|7814833369)#/gi, \"荡\");\nx(/#(7666628481|3211393926|4472105527)#/gi, \"学\");\nx(/#(9806206863|3691658535|8660416328)#/gi, \"做\");\nx(/#(5853540975|9942269763|6187610487)#/gi, \"浪\");\nx(/#(4065205050|6325155879|5167141579)#/gi, \"奶\");\nx(/#(7270938794|8019581819|3835404789)#/gi, \"大\");\nx(/#(0818169035|9045509252|7450445747)#/gi, \"挤\");\nx(/#(8202714140|2125923322|1341427057)#/gi, \"东\");\nx(/#(4199839723|8986539842|0494725103)#/gi, \"证\");\nx(/#(6258129695|8191231978|6077837752)#/gi, \"欲\");\nx(/#(6720400310|1527556132|2491143861)#/gi, \"元\");\nx(/#(5847243892|3770724478|3697158622)#/gi, \"主\");\nx(/#(5310232896|6143300813|3309407590)#/gi, \"咪\");\nx(/#(2123405327|4177639527|0835270647)#/gi, \"八\");\nx(/#(9294600366|5794932762|2056942298)#/gi, \"巴\");\nx(/#(4221946546|0038716011|5504072831)#/gi, \"裸\");\nx(/#(9073248466|7230730327|2968320736)#/gi, \"血\");\nx(/#(0817898144|2043405379|4170964036)#/gi, \"民\");\nx(/#(8001980049|0343310657|3246642373)#/gi, \"国\");\nx(/#(5205548090|0872283620|1894022554)#/gi, \"泽\");\nx(/#(2485220834|8576438185|6198192490)#/gi, \"童\");\nx(/#(9934161012|5134244742|8897428624)#/gi, \"婊\");\nx(/#(5041330601|5385687355|2628020990)#/gi, \"药\");\nx(/#(8771907310|2088765670|2642397267)#/gi, \"狗\");\nx(/#(5118765982|8779415131|8180918630)#/gi, \"网\");\nx(/#(0462284997|6347202533|7980237169)#/gi, \"内\");\nx(/#(6445315584|3047720382|2095040384)#/gi, \"肛\");\nx(/#(7227745529|5655070942|3924123605)#/gi, \"奴\");\nx(/#(8165804057|0304558987|4707263212)#/gi, \"母\");\nx(/#(1776326009|2403603674|8381351178)#/gi, \"具\");\nx(/#(8605843019|8838087473|0983658750)#/gi, \"香\");\nx(/#(4852882191|8652744697)#/gi, \"妊\");\nx(/#8665933801#/gi, \"铀\");\nx(/#6927308149#/gi, \"漆\");\nx(/#9009691548#/gi, \"…\");\n\n//字体格式文字替换\n//替换格式规则  x(/#正则#/gi,\"文本\");\n//例：一般在字体编辑器复制出来对应的编号 uniE800或者$E800为\"的\"这个字,  正则替换格式：x(/#e800#/gi,\"的\");\nx(/#e800#/gi, \"的\");\nx(/#e801#/gi, \"一\");\nx(/#e802#/gi, \"是\");\nx(/#e803#/gi, \"了\");\nx(/#e804#/gi, \"我\");\nx(/#e805#/gi, \"不\");\nx(/#e806#/gi, \"人\");\nx(/#e807#/gi, \"在\");\nx(/#e808#/gi, \"他\");\nx(/#e809#/gi, \"有\");\nx(/#e80A#/gi, \"这\");\nx(/#e80B#/gi, \"个\");\nx(/#e80C#/gi, \"上\");\nx(/#e80D#/gi, \"们\");\nx(/#e80E#/gi, \"来\");\nx(/#e80F#/gi, \"到\");\nx(/#e810#/gi, \"时\");\nx(/#e811#/gi, \"大\");\nx(/#e812#/gi, \"地\");\nx(/#e813#/gi, \"为\");\nx(/#e814#/gi, \"子\");\nx(/#e815#/gi, \"中\");\nx(/#e816#/gi, \"你\");\nx(/#e817#/gi, \"说\");\nx(/#e818#/gi, \"生\");\nx(/#e819#/gi, \"国\");\nx(/#e81A#/gi, \"年\");\nx(/#e81B#/gi, \"着\");\nx(/#e81C#/gi, \"就\");\nx(/#e81D#/gi, \"那\");\nx(/#e81E#/gi, \"和\");\nx(/#e81F#/gi, \"要\");\nx(/#e820#/gi, \"她\");\nx(/#e821#/gi, \"出\");\nx(/#e822#/gi, \"也\");\nx(/#e823#/gi, \"得\");\nx(/#e824#/gi, \"里\");\nx(/#e825#/gi, \"后\");\nx(/#e826#/gi, \"自\");\nx(/#e827#/gi, \"以\");\nx(/#e828#/gi, \"会\");\nx(/#e829#/gi, \"家\");\nx(/#e82A#/gi, \"可\");\nx(/#e82B#/gi, \"下\");\nx(/#e82C#/gi, \"而\");\nx(/#e82D#/gi, \"过\");\nx(/#e82E#/gi, \"天\");\nx(/#e82F#/gi, \"去\");\nx(/#e830#/gi, \"能\");\nx(/#e831#/gi, \"对\");\nx(/#e832#/gi, \"小\");\nx(/#e833#/gi, \"多\");\nx(/#e834#/gi, \"然\");\nx(/#e835#/gi, \"于\");\nx(/#e836#/gi, \"心\");\nx(/#e837#/gi, \"学\");\nx(/#e838#/gi, \"么\");\nx(/#e839#/gi, \"之\");\nx(/#e83A#/gi, \"都\");\nx(/#e83B#/gi, \"好\");\nx(/#e83C#/gi, \"看\");\nx(/#e83D#/gi, \"起\");\nx(/#e83E#/gi, \"发\");\nx(/#e83F#/gi, \"当\");\nx(/#e840#/gi, \"没\");\nx(/#e841#/gi, \"成\");\nx(/#e842#/gi, \"只\");\nx(/#e843#/gi, \"如\");\nx(/#e844#/gi, \"事\");\nx(/#e845#/gi, \"把\");\nx(/#e846#/gi, \"还\");\nx(/#e847#/gi, \"用\");\nx(/#e848#/gi, \"第\");\nx(/#e849#/gi, \"样\");\nx(/#e84A#/gi, \"道\");\nx(/#e84B#/gi, \"想\");\nx(/#e84C#/gi, \"作\");\nx(/#e84D#/gi, \"种\");\nx(/#e84E#/gi, \"开\");\nx(/#e84F#/gi, \"美\");\nx(/#e850#/gi, \"总\");\nx(/#e851#/gi, \"从\");\nx(/#e852#/gi, \"无\");\nx(/#e853#/gi, \"情\");\nx(/#e854#/gi, \"己\");\nx(/#e855#/gi, \"面\");\nx(/#e856#/gi, \"最\");\nx(/#e857#/gi, \"女\");\nx(/#e858#/gi, \"但\");\nx(/#e859#/gi, \"现\");\nx(/#e85A#/gi, \"前\");\nx(/#e85B#/gi, \"些\");\nx(/#e85C#/gi, \"所\");\nx(/#e85D#/gi, \"同\");\nx(/#e85E#/gi, \"日\");\nx(/#e85F#/gi, \"手\");\nx(/#e860#/gi, \"又\");\nx(/#e861#/gi, \"行\");\nx(/#e862#/gi, \"意\");\nx(/#e863#/gi, \"动\");\n\n//净化替换\nx(/([^\\n]*?(手.?机.?看.?[小片](.?[书说])?|搜?.{0,4}索?.{0,4}第.{0,4}一.{0,4}版.{0,4}主)[^\\n]*)/gi,\"\");\nx(/([^\\n]*([最樶]新.?)?[地网].?[址祉阯].?[发發沷].?[布怖].?[页頁]?[\\:：]?[1１4４]?[^\\n]*)/g,\"\");\nx(/([^\\n]*([最寻找发].{0,3}[新回].{0,3}[网地{0,3}[址阯].*)[^\\n]*)/gi,\"\");\nx(/([^\\n]*\\\\u5730\\\\u5740\\\\u767c\\\\u5e03\\\\u9801[^\\n]*)/gi,\"\");\nx(/([^\\n]*[1１][a-zA-Zａ-ｚＡ-Ｚ][2２][a-zA-Zａ-ｚＡ-Ｚ][3３][a-zA-Zａ-ｚＡ-Ｚ]([4４][a-zA-Zａ-ｚＡ-Ｚ])?[^<\\r\\n]*)/gi,\"\");\nx(/([^\\n]*ＹＹＤＳＴxＴ(．ＣＣ)?[^\\n]*)/,\"\");\nx(/(.*[0０][1１][bЪｂ][ｚz].*)/gi,\"\");\nx(/(.*[真发即百更].?[正送可度多].?[网电获搜精].?[站子得索彩].?\\s?[请邮最第小].*)/gi,\"\");\nx(/([^<\\n]*?手.机.看.小.[书说][^\\n]*)/gi,\"\");\nx(/(ｂｚ２０２１)[^<\\n]+/gi,\"\");\nx(/(手机阅读小说：７７７８８７７[^\\n]*)/gi,\"\");\nx(/(diyibanzhu@gmail.com)/gi,\"\");\n(/((（待续）|(地~址~)|(手机看片))[^\\n]*)/gi,\"\");\nx(/([^\\n]*#chao#.+?#lian#.+?#jie#[^\\n]*)/gi,\"\");\nx(/([^\\n]*[wШЩ]*?.*[c℃ㄈＣ][oО⊙ò〇Ο０][mмМＭΜ][^\\n]*)/gi,\"\");\nx(/([^\\n]*使用chrome谷歌浏览[^\\n]*)/gi,\"\");\n\n//分页后的断行还原\nx(/([\\r\\n]?\\s*(hereispagebreak)[\\r\\n]?\\s*)/gi, \"\");\n\n//35字换行排版恢复\nx(/([\\r\\n])((tjjtds)?.{33,39}[，、．～…“：；‘—『「\\u4e00-\\u9fa5][\\r\\n])\\s{2}/gi, \"$1$2tjjtds\", /([\\r\\n])((tjjtds)?.{33,39}[，、．～…“：；‘—『「\\u4e00-\\u9fa5][\\r\\n])\\s{2}/g);\nx(/[\\r\\n](tjjtds|　+?[\\r\\n])/g, \"\");\n//为防万一，去掉汉字之间的空格\nx(/([\\u4e00-\\u9fa5])[ 　]+([\\u4e00-\\u9fa5])/g, '$1$2');\n//去掉多余换行\nx(/[\\r\\n]{2,}/g, \"\\r\\n\")\n\nx(/([\\u4e00-\\u9fa5][『「][^，。？！：；]{1,12}[」』])\\s+/g, \"$1\");\nx(/[。！？…]([『「])/g, \"！\\r\\n　　$1\");\nresult;\n</js>"
     },
-    "ruleExplore": [],
+    "ruleExplore": {
+      "author": ".info@a.0@text",
+      "bookList": ".bd@.column-2",
+      "bookUrl": ".name@href",
+      "intro": "p.info.1@text",
+      "kind": "span.0@text&&p.info.1@text##更新：",
+      "lastChapter": ".update@a@text",
+      "name": ".name@text",
+      "wordCount": ".info@span@text##字数："
+    },
+    "ruleReview": [],
     "ruleSearch": {
-      "author": ".s4@text",
-      "bookList": ".container ul@li!0",
-      "bookUrl": ".s2 a@href",
-      "checkKeyWord": "全民觉醒，我却开精灵宠物店",
-      "kind": ".s1@text##\\[|\\]",
-      "lastChapter": "{{@@.s3 a@text}} • {{@@.s5@text}}",
-      "name": ".s2 a@text"
+      "author": ".info.0@text##\\s+字数：.*",
+      "bookList": ".column-2 ",
+      "bookUrl": ".right@.name@href",
+      "checkKeyWord": "清茗学院重置版",
+      "lastChapter": ".update@a@text",
+      "name": ".right@.name@text",
+      "wordCount": ".info@span@text##字数："
     },
     "ruleToc": {
-      "chapterList": "ul.-1@li",
+      "chapterList": ".chapter-list.1@li",
       "chapterName": "a@text",
       "chapterUrl": "a@href",
-      "nextTocUrl": "select@option!0@value"
+      "nextTocUrl": ".endPage@href##_(\\d+)/##$1###\n<js>\nmaxPage = result[0];\nurls = [];\nurl = baseUrl.replace(/(_\\d+)?\\/?$/, '_');\nfor (i = 2; i <= maxPage; i++) urls.push(url + i + '/');\nurls\n</js>",
+      "preUpdateJs": ""
     },
-    "searchUrl": "{{source.getKey().match(/([^\\#]+)\\#/)[1]}}/search/,{\n  \"body\": \"searchkey={{key}}&Submit=搜索\",\n  \"method\": \"POST\"\n}",
+    "searchUrl": "{{eval(String(source.loginUrl));_getUrl();}}s.php,{\n\t\"charset\": \"GBK\",\n\t\"method\": \"POST\",\n\t\"body\": \"objectType=2&type=articlename&s={{key}}&page={{page}}\"\n}",
+    "variableComment": "url:当前选中源网址\nsourceUrl:源网址列表\nsourceSelect:选中选项\nloaded:是否已初始化 true:是 false:否",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "// Error: Timed out waiting for 1000 ms\n\n-正文获取不到图片或者几k/s就翻墙\n☑️url前加baseurl：\n@js:'{{baseUrl}}'+result\n或##^##{{baseUrl}}",
+    "bookSourceGroup": "🧜‍♀️,自制,校验超时",
+    "bookSourceName": "🔥HotAsiaGirl⚠️看注释",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://hotgirl.asia/",
+    "customOrder": 1459,
+    "enabled": false,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{'title':'☑️排行','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'今日最多观看&最高评分','url':'/','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'周观看','url':'/top-week-viewed/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'月观看','url':'/top-month-viewed/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'年观看','url':'/top-year-viewed/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Cosplay','url':'/tag/cosplay-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'☑️Chinese Girls','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'全部','url':'/genre/china/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'XIUREN','url':'/tag/xiuren/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'FEILIN','url':'/tag/feilin/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'HUAYAN','url':'/tag/huayan/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'LEYUAN','url':'/tag/leyuan/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'XINGYAN','url':'/tag/xingyan星颜社/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'YOUMI','url':'/tag/youmi/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'MFSTAR','url':'/tag/mfstar/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'UGIRLS','url':'/tag/ugirls/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'IMISS','url':'/tag/imiss/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'XIAOYU','url':'/tag/xiaoyu/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'LIGUI','url':'/tag/ligui/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'MYGIRL','url':'/tag/mygirl/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'DKGIRL','url':'/tag/dkgirl/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'CANDY','url':'/tag/candy/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'MiStar','url':'/tag/mistar/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'YouWu','url':'/tag/youwu尤物馆/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Beauty Leg','url':'/genre/taiwan-hongkong-beauty/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Beauty Photo','url':'/tag/chinese-beauty-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Big Chest','url':'/tag/big-chest-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Underwear','url':'/tag/underwear-beauty-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Cosplay','url':'/tag/cosplay-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Maid Photo','url':'/tag/maid-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}}]",
+    "lastUpdateTime": 1692604134720,
+    "respondTime": 2002,
+    "ruleBookInfo": {
+      "kind": "",
+      "wordCount": ".mvici-left@p.0@text##Views:(.*)##👁$1"
+    },
+    "ruleContent": {
+      "content": ".galeria_img@img@src@js:\nresult.split(\"\\n\").map(x=>'<img src=\"'+x+'\">').join(\"\\n\")",
+      "imageStyle": "full",
+      "nextContentUrl": "ul.pagination li a@href"
+    },
+    "ruleExplore": {
+      "bookList": "a[href~=topview]&&id.topview-today@.ml-item&&a[href~=top-rating]&&id.top-rating@.ml-item&&.ml-item",
+      "bookUrl": "a.0@href||text",
+      "coverUrl": "img@src",
+      "intro": ".f-desc+p@text",
+      "kind": ".mli-eps@text##ic",
+      "name": "{{@@h2@text}}{{@@text}}🏆🏆",
+      "wordCount": ".mli-quality@text##^##👁"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": ".ml-item",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "korean",
+      "coverUrl": "img@src",
+      "intro": "",
+      "kind": "span.0@text##ic",
+      "name": "h2@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".main-content",
+      "chapterName": "h3@text",
+      "chapterUrl": ".btn.btn-success@href##^##{{baseUrl}}"
+    },
+    "searchUrl": "/page/{{page}}/?s={{key}}",
     "weight": 0
   },
   {
@@ -532,56 +490,6 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "//by SunQAQ\n//登录使用，没有账号就去注册。\r\n//发现要刷新才能用。\r\n//网络不稳定，有时候需要开梯子。\r\n//var authorization = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmQ5NTI0NzY4M2FlMzFkOThjNGU3NGQiLCJlbWFpbCI6IjI3NDk3ODg4NyIsInJvbGUiOiJtZW1iZXIiLCJuYW1lIjoiU3VuUSIsInZlcnNpb24iOiIyLjIuMS4zLjMuNCIsImJ1aWxkVmVyc2lvbiI6IjQ1IiwicGxhdGZvcm0iOiJhbmRyb2lkIiwiaWF0IjoxNzEwMTQzMTU1LCJleHAiOjE3MTA3NDc5NTV9.IyHHyZUSGTfmFVCcFBwHAqiWFDbVp4IP1yOP5oGO4pw\";\nauthorization = cache.get(\"authorization\");\r\nvar appleKillFlag = 'C69BAF41DA5ABD1FFEDC6D2FEA56B';\r\nvar appleVerSion = '~d}$Q7$eIni=V)9\\\\RK/P.RM4;9[7|@/CA}b~OW!3?EV`:<>M7pddUBL5n|0/*Cn';\r\nvar nonce = \"mhadwk5fxhrwktzsrtre8rkbj5r6hd2r\";\r\nvar setTime = (new Date().getTime() / 1000).toFixed(0);\r\nfunction getsignature(pathname, ts, method) {\r\n    var raw = pathname + ts + \"mhadwk5fxhrwktzsrtre8rkbj5r6hd2r\" + method + appleKillFlag;\r\n    raw = raw.toLowerCase();\r\n    return java.HMacHex(raw, \"HmacSHA256\", appleVerSion);\r\n}\r\nfunction getheaders(setTime, nonce, signature) {\r\n    var header = \"\\\"Time\\\":\\\"\" + setTime + \"\\\",\\\"Content-Type\\\":\\\"application/json; charset=UTF-8\\\",\\\"nonce\\\":\\\"\" + nonce + \"\\\", \\\"signature\\\":\\\"\" + signature + \"\\\",\\\"Accept\\\":\\\"application/vnd.picacomic.com.v1+json\\\",\\\"app-uuid\\\":\\\"webUUID\\\",\\\"authorization\\\":\\\"\" + authorization + \"\\\",\\\"app-platform\\\":\\\"android\\\",\\\"app-channel\\\":\\\"1\\\",\\\"Host\\\":\\\"api.manhuapica.com\\\",\\\"User-Agent\\\":\\\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0\\\"\";\r\n    return header;\r\n}",
-    "bookSourceGroup": "💜漫画,💕涩涩,☀其一",
-    "bookSourceName": "✈▲哔咔哔咔manhuapica",
-    "bookSourceType": 2,
-    "bookSourceUrl": "https://manhuapica.com",
-    "customOrder": 149,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "<js>\neval(String(source.bookSourceComment));\nfunction explore(a, b, c, d, e) {\n  style = \"{title: \\\"\" + a + \"\\\",url: \\\"\" + b + \"\\\",style: {layout_flexGrow:\" + c + \",layout_flexBasisPercent:\" + d + \",layout_wrapBefore: \" + e + \"}}\";\n  return style;\n}\nvar exploreUrl = [];\ntitle = [\"本日排行\", \"本周排行\", \"本月排行\"];\ntype = [\"tt=H24&ct=VC\", \"tt=D7&ct=VC\", \"tt=D30&ct=VC\"];\nfor (i in title) {\n  var pathname = \"comics/leaderboard?\" + type[i];\n  var method = \"GET\";\n  var signature = getsignature(pathname, setTime, method);\n  var headers = getheaders(setTime, nonce, signature).replace(/\\\"/g, '\\\\\\\"');\n  var url = \"https://api.manhuapica.com/\" + pathname + \",{\\\\\\\"method\\\\\\\":\\\\\\\"GET\\\\\\\",\\\\\\\"headers\\\\\\\":{\" + headers + \"}}\";\n  exploreUrl.push(explore(title[i], url, 0x1, 0.25, ![]));\n}\nexploreUrl.splice(0x0, 0x0, explore(\"༺ˇ»`ʚ 　  ✨排行榜✨  　 ɞ´«ˇ༻\", '', 0x1, 0x1, ![]));\nvar exploreUrlStr = '[' + exploreUrl.slice(0, 4).join(',') + ']';\nexploreUrlStr;</js>",
-    "lastUpdateTime": 1710152149474,
-    "loginUi": "[\r\n    {\r\n        \"name\": \"账号：\",\r\n        \"type\": \"text\"\r\n    },\r\n    {\r\n        \"name\": \"密码：\",\r\n        \"type\": \"password\"\r\n    },\r\n    {\r\n        \"name\": \"                           登录                           \",\r\n        \"type\": \"button\",\r\n        \"action\": \"Login()\"\r\n    }\r\n]",
-    "loginUrl": "eval(String(source.bookSourceComment));\r\nfunction Login() {\r\n    Account = result['账号：'] ? result['账号：'] : source.getLoginInfoMap()[\"账号：\"];\r\n    Password = result['密码：'] ? result['密码：'] : source.getLoginInfoMap()[\"密码：\"];\r\n    if (Account == '' && Password == '') {\r\n        login('【登录提示】' + '\\n\\n请输入账号和密码');\r\n    } else if (Account == '') {\r\n        login('【登录提示】' + '\\n\\n请输入账号');\r\n    } else if (Password == '') {\r\n        login('【登录提示】' + '\\n\\n请输入密码');\r\n    } else {\r\n        //请求路径：/auth/sign-in\r\n        var pathname = 'auth/sign-in';\r\n        //请求方式：POST\r\n        var method = \"POST\";\r\n        //请求体：{\"email\":\"274978887\",\"password\":\"sq123456789,.\"}\r\n        var requestBody = '{\"email\":\"' + Account + '\",\"password\":\"' + Password + '\"}';\r\n        //请求头：使用源注释辅助生成\r\n        var signature = getsignature(pathname, setTime, method);\r\n        var headers = \"\\{\\\"time\\\":\\\"\" + setTime + \"\\\",\\\"Content-Type\\\":\\\"application/json; charset=UTF-8\\\",\\\"nonce\\\":\\\"\" + nonce + \"\\\", \\\"signature\\\":\\\"\" + signature + \"\\\",\\\"Accept\\\":\\\"application/vnd.picacomic.com.v1+json\\\",\\\"app-uuid\\\":\\\"webUUID\\\"\\}\";\r\n        var option = {\r\n            \"method\": String(method),\r\n            \"body\": String(requestBody),\r\n            \"headers\": String(headers)\r\n        };\r\n        Response = java.ajax('https://api.go2778.com/auth/sign-in,' + JSON.stringify(option));\r\n        if (JSON.parse(Response).code == 200) {\r\n            let jsondata = JSON.parse(Response);\r\n            let token = jsondata.data.token;\r\n            cache.put(\"authorization\", token);\r\n            java.log(Response);\r\n            login('【登录提示】\\n\\n┏┅━┅━┅━┅━┅┅━┅━┅━┅━┅┓\\n┋┋' + '\\n' + Account + '\\n┋┋' + '\\n❤️登录成功❤️\\n┋┋' + '\\n┗┅━┅━┅━┅━┅┅━┅━┅━┅━┅┛');\r\n        } else {\r\n            java.log(Response);\r\n            login('【登录提示】' + '\\n' + Account + '\\n♣️登录失败♣️\\n\\n请检查账号和密码');\r\n        }\r\n    }\r\n}\r\n\r\nfunction login(e) {\r\n    if (e == undefined) {\r\n        return;\r\n    }\r\n    java.longToast(e);\r\n}",
-    "respondTime": 180000,
-    "ruleBookInfo": [],
-    "ruleContent": {
-      "content": "$..docs.[*].media.path##tobeimg##https\\:\\/\\/img.go2778.com",
-      "imageStyle": "full",
-      "replaceRegex": "##(https\\:(.*?)(?:jpg|png))##<img src=\\\"$1\\\">"
-    },
-    "ruleExplore": {
-      "author": "author",
-      "bookList": "$..comics.[*]",
-      "bookUrl": "<js>\neval(String(source.bookSourceComment));\nvar pathname = \"comics/\" + '@get:{id}' + \"/eps?page=1\";\nvar method = \"GET\";\nvar signature = getsignature(pathname, setTime, method);\nvar headers = getheaders(setTime, nonce, signature);\nend = \"https://api.manhuapica.com/\" + pathname + \",{\\\"method\\\":\\\"GET\\\",\\\"headers\\\":{\" + headers + \"}}\";\nend;\n</js>",
-      "coverUrl": "thumb.path##tobeimg##https\\:\\/\\/img.go2778.com",
-      "kind": "categories",
-      "name": "title",
-      "wordCount": "@put:{id:$._id}"
-    },
-    "ruleSearch": {
-      "author": "author",
-      "bookList": "$..docs.[*]",
-      "bookUrl": "<js>\neval(String(source.bookSourceComment));\nvar pathname = \"comics/\" + '@get:{id}' + \"/eps?page=1\";\nvar method = \"GET\";\nvar signature = getsignature(pathname, setTime, method);\nvar headers = getheaders(setTime, nonce, signature);\nend = \"https://api.manhuapica.com/\" + pathname + \",{\\\"method\\\":\\\"GET\\\",\\\"headers\\\":{\" + headers + \"}}\";\nend;\n</js>",
-      "coverUrl": "thumb.path##tobeimg##https\\:\\/\\/img.go2778.com",
-      "intro": "description",
-      "kind": "tags",
-      "lastChapter": "created_at",
-      "name": "title",
-      "wordCount": "@put:{id:$._id}"
-    },
-    "ruleToc": {
-      "chapterList": "$..docs.[*]\n@js:\nresult.toArray().reverse().map(a => JSON.stringify(a));",
-      "chapterName": "title",
-      "chapterUrl": "order\n<js>\neval(String(source.bookSourceComment));\nvar id = '@get:{id}';\nvar order = result;\nvar pathname = \"comics/\" + id + \"/order/\" + order + \"/pages?page=1\";\nvar method = \"GET\";\nvar signature = getsignature(pathname, setTime, method);\nvar headers = getheaders(setTime, nonce, signature);\nvar end = \"https://api.manhuapica.com/\" + pathname + \",{\\\"method\\\":\\\"GET\\\",\\\"headers\\\":{\" + headers + \"}}\";\nresult = end;\n</js>",
-      "updateTime": "updated_at"
-    },
-    "searchUrl": "<js>\neval(String(source.bookSourceComment));\n(function searchComicList(searchKeys) {\n    var pathname = \"comics/advanced-search?page=\" + page + \"&s=dd\";\n    var method = \"POST\";\n    var body = \"\\{\\\"keyword\\\":\\\"\" + searchKeys + \"\\\",\\\"sort\\\":\\\"dd\\\"\\}\";\n    var signature = getsignature(pathname, setTime, method);\n    var headers = getheaders(setTime, nonce, signature);\n    end = \"https://api.manhuapica.com/\" + pathname + \",{\\\"method\\\":\\\"POST\\\",\\\"headers\\\":{\" + headers + \"},\\\"body\\\":'\" + body + \"'}\";\n    return end;\n}(key));\n</js>",
-    "weight": 0
-  },
-  {
     "bookSourceGroup": "自制,源仓库,网页源",
     "bookSourceName": "二次元小说网",
     "bookSourceType": 0,
@@ -628,6 +536,57 @@
       "nextTocUrl": "option@value||text.下一页@href"
     },
     "searchUrl": "https://www.sososhu.com/?q={{key}}&site=rcyxsw&Submit=搜索,{\n  \"webView\": true\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "繁体",
+    "bookSourceName": "UU看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.uukanshu.app/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\",\n\t\"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
+    "lastUpdateTime": 1711803635456,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.p_author@tag.a@text",
+      "coverUrl": "id.bookimg@tag.img@src",
+      "downloadUrls": "id.chapterList@tag.li@tag.a@href",
+      "intro": "id.bookintro@tag.p@text",
+      "kind": "id.count@tag.li.0@tag.span@text",
+      "lastChapter": "id.newlist@class.chaw@tag.li.0@tag.a@text",
+      "name": "tag.h1@text",
+      "tocUrl": "id.newlist@class.btn-block@tag.a@href",
+      "wordCount": "id.count@tag.li.1@tag.span@text"
+    },
+    "ruleContent": {
+      "content": "id.TextContent@html",
+      "nextContentUrl": "id.next_url@href",
+      "title": "tag.h1"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.book_other@tag.span.0@text",
+      "bookList": "tag.dl",
+      "bookUrl": "tag.h3@tag.a@href",
+      "checkKeyWord": "",
+      "coverUrl": "tag.dt.0@tag.img@src",
+      "intro": "class.book_des@text",
+      "kind": "tag.dt.0@tag.span@text",
+      "lastChapter": "class.book_other.1@tag.a@text",
+      "name": "tag.h3@tag.a@text",
+      "wordCount": "class.book_other.0@tag.span.2@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterList@tag.li@tag.a",
+      "chapterName": "@text",
+      "chapterUrl": "@href",
+      "nextTocUrl": "class.right@tag.a@href"
+    },
+    "searchUrl": "https://www.uukanshu.app/search,{\n\"method\": \"POST\", \n\"body\": \"searchkey={{java.encodeURI(key)}}\", \n\"headers\": {\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\"},\n\"webView\": true\n}",
     "weight": 0
   }
 ]

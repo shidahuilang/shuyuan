@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "// Error: Timed out waiting for 1000 ms\n\n-正文获取不到图片或者几k/s就翻墙\n☑️url前加baseurl：\n@js:'{{baseUrl}}'+result\n或##^##{{baseUrl}}",
+    "bookSourceGroup": "🧜‍♀️,自制,校验超时",
+    "bookSourceName": "🔥HotAsiaGirl⚠️看注释",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://hotgirl.asia/",
+    "customOrder": 1459,
+    "enabled": false,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{'title':'☑️排行','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'今日最多观看&最高评分','url':'/','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'周观看','url':'/top-week-viewed/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'月观看','url':'/top-month-viewed/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'年观看','url':'/top-year-viewed/','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Cosplay','url':'/tag/cosplay-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'☑️Chinese Girls','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'全部','url':'/genre/china/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'XIUREN','url':'/tag/xiuren/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'FEILIN','url':'/tag/feilin/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'HUAYAN','url':'/tag/huayan/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'LEYUAN','url':'/tag/leyuan/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'XINGYAN','url':'/tag/xingyan星颜社/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'YOUMI','url':'/tag/youmi/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'MFSTAR','url':'/tag/mfstar/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'UGIRLS','url':'/tag/ugirls/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'IMISS','url':'/tag/imiss/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'XIAOYU','url':'/tag/xiaoyu/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'LIGUI','url':'/tag/ligui/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'MYGIRL','url':'/tag/mygirl/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'DKGIRL','url':'/tag/dkgirl/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'CANDY','url':'/tag/candy/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'MiStar','url':'/tag/mistar/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'YouWu','url':'/tag/youwu尤物馆/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Beauty Leg','url':'/genre/taiwan-hongkong-beauty/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Beauty Photo','url':'/tag/chinese-beauty-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Big Chest','url':'/tag/big-chest-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Underwear','url':'/tag/underwear-beauty-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Cosplay','url':'/tag/cosplay-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}},\n{'title':'Maid Photo','url':'/tag/maid-photo/page/{{page}}','style':{layout_flexGrow:1,layout_flexBasisPercent:0.24}}]",
+    "lastUpdateTime": 1692604134720,
+    "respondTime": 2002,
+    "ruleBookInfo": {
+      "kind": "",
+      "wordCount": ".mvici-left@p.0@text##Views:(.*)##👁$1"
+    },
+    "ruleContent": {
+      "content": ".galeria_img@img@src@js:\nresult.split(\"\\n\").map(x=>'<img src=\"'+x+'\">').join(\"\\n\")",
+      "imageStyle": "full",
+      "nextContentUrl": "ul.pagination li a@href"
+    },
+    "ruleExplore": {
+      "bookList": "a[href~=topview]&&id.topview-today@.ml-item&&a[href~=top-rating]&&id.top-rating@.ml-item&&.ml-item",
+      "bookUrl": "a.0@href||text",
+      "coverUrl": "img@src",
+      "intro": ".f-desc+p@text",
+      "kind": ".mli-eps@text##ic",
+      "name": "{{@@h2@text}}{{@@text}}🏆🏆",
+      "wordCount": ".mli-quality@text##^##👁"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": ".ml-item",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "korean",
+      "coverUrl": "img@src",
+      "intro": "",
+      "kind": "span.0@text##ic",
+      "name": "h2@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".main-content",
+      "chapterName": "h3@text",
+      "chapterUrl": ".btn.btn-success@href##^##{{baseUrl}}"
+    },
+    "searchUrl": "/page/{{page}}/?s={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceName": "九妖漫画👙",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://cloudflare.fw-91mh-912023.xyz",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": " 全部::https://cloudflare.fw-91mh-912023.xyz/category/order/addtime/page/{{page}}/&&韓漫::https://cloudflare.fw-91mh-912023.xyz/category/list/2/page/{{page}}/&&出版::https://cloudflare.fw-91mh-912023.xyz/category/list/4/page/{{page}}/&&3D漫畫::https://cloudflare.fw-91mh-912023.xyz/category/list/1/page/{{page}}/&&單本::https://cloudflare.fw-91mh-912023.xyz/category/list/3/page/{{page}}/&&其它::https://cloudflare.fw-91mh-912023.xyz/category/list/5/page/{{page}}/&&更新::https://cloudflare.fw-91mh-912023.xyz/custom/update/order/addtime/page/{{page}}/&&熱門人氣::https://cloudflare.fw-91mh-912023.xyz/category/order/hits/page/{{page}}/&&最高評分::https://cloudflare.fw-91mh-912023.xyz/category/order/score/page/{{page}}/&&最多收藏::https://cloudflare.fw-91mh-912023.xyz/category/order/shits/page/{{page}}/&&新漫入庫::https://cloudflare.fw-91mh-912023.xyz/category/order/id/page/{{page}}/&&今日人氣::https://cloudflare.fw-91mh-912023.xyz/category/order/rhits/page/{{page}}/",
+    "lastUpdateTime": 1711865825511,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".name@text",
+      "coverUrl": ".lazy@src",
+      "intro": ".intro@text",
+      "kind": ".text@text##题材:",
+      "lastChapter": ".update-time@text",
+      "name": ".j-comic-title@text",
+      "tocUrl": "{{baseUrl}}"
+    },
+    "ruleContent": {
+      "content": ".lazy-read@data-original",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": "class.updata@text",
+      "bookList": "class.cate-comic-list@class.common-comic-item",
+      "bookUrl": "a[0]@href",
+      "coverUrl": ".lazy@data-original",
+      "intro": ".comic-feature@text",
+      "kind": "li.biaoqian@a@text",
+      "lastChapter": ".comic-update@text##更至：",
+      "name": ".comic__title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.cate-comic-list@class.common-comic-item",
+      "bookUrl": "a@href",
+      "coverUrl": ".lazy@data-original",
+      "intro": ".comic-feature@text",
+      "kind": "",
+      "lastChapter": ".comic-update@text",
+      "name": ".comic__title@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter__list@ul@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "https://cloudflare.fw-91mh-912023.xyz/index.php/search/{{Key}}/{{Page}}",
+    "weight": 0
+  }
+]

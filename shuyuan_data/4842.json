@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceGroup": "繁体",
+    "bookSourceName": "UU看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.uukanshu.app/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\",\n\t\"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
+    "lastUpdateTime": 1711803635456,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.p_author@tag.a@text",
+      "coverUrl": "id.bookimg@tag.img@src",
+      "downloadUrls": "id.chapterList@tag.li@tag.a@href",
+      "intro": "id.bookintro@tag.p@text",
+      "kind": "id.count@tag.li.0@tag.span@text",
+      "lastChapter": "id.newlist@class.chaw@tag.li.0@tag.a@text",
+      "name": "tag.h1@text",
+      "tocUrl": "id.newlist@class.btn-block@tag.a@href",
+      "wordCount": "id.count@tag.li.1@tag.span@text"
+    },
+    "ruleContent": {
+      "content": "id.TextContent@html",
+      "nextContentUrl": "id.next_url@href",
+      "title": "tag.h1"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.book_other@tag.span.0@text",
+      "bookList": "tag.dl",
+      "bookUrl": "tag.h3@tag.a@href",
+      "checkKeyWord": "",
+      "coverUrl": "tag.dt.0@tag.img@src",
+      "intro": "class.book_des@text",
+      "kind": "tag.dt.0@tag.span@text",
+      "lastChapter": "class.book_other.1@tag.a@text",
+      "name": "tag.h3@tag.a@text",
+      "wordCount": "class.book_other.0@tag.span.2@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterList@tag.li@tag.a",
+      "chapterName": "@text",
+      "chapterUrl": "@href",
+      "nextTocUrl": "class.right@tag.a@href"
+    },
+    "searchUrl": "https://www.uukanshu.app/search,{\n\"method\": \"POST\", \n\"body\": \"searchkey={{java.encodeURI(key)}}\", \n\"headers\": {\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\"},\n\"webView\": true\n}",
+    "weight": 0
+  }
+]

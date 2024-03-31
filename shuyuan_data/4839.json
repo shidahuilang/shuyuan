@@ -1,7 +1,7 @@
 [
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "修复优化,源仓库",
+    "bookSourceGroup": "苏明小说",
     "bookSourceName": "苏明小说",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.sumingxs.com",
@@ -12,7 +12,7 @@
     "enabledExplore": true,
     "exploreUrl": "全部::/xiaoshuo/<,1-{{page}}.html>",
     "header": "{\"user-agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"\n\t}",
-    "lastUpdateTime": 1711608519282,
+    "lastUpdateTime": 1711682723368,
     "respondTime": 190258,
     "ruleBookInfo": {
       "author": "text.作者@text",
@@ -23,8 +23,9 @@
       "name": "h3@text"
     },
     "ruleContent": {
-      "content": ".con@html",
-      "nextContentUrl": "text.下一页@href"
+      "content": ".con@p@text@js:\nresult = (function (content) {\n    try {\n        const chapterUrl = chapter.url.substring(0, chapter.url.length() - \",{'webView': true}\".length);\n        let elements = content.split('\\n');\n        var tag = \"SMXSEE\";\n        let ps = [];\n        for (let i = 0; i < elements.length; i++) {\n            if (elements[i].trim().startsWith(tag)) {\n                ps[i] = '内容被加密,请访问->' + chapter.baseUrl + chapterUrl;\n            } else {\n                ps[i] = elements[i].trim()\n            }\n        }\n        return '<p>' + ps.join('</p><p>') + '</p>';\n    } catch (e) {\n        return  \"--------eeee------\" + e;\n    }\n})(result);",
+      "nextContentUrl": "text.下一页@href||text.下页@href",
+      "webJs": ""
     },
     "ruleExplore": {
       "author": "a.2@text",
@@ -36,7 +37,7 @@
     },
     "ruleReview": [],
     "ruleSearch": {
-      "author": "",
+      "author": "div@div@div@div.1@div@div@text@js:result=/苏明小说网提供(.*)创作的玄幻小说/.exec(result);\nresult=result?result[1]:'';",
       "bookList": ".MjjYud",
       "bookUrl": "//a[@role=\"presentation\"]/@href",
       "checkKeyWord": "",
@@ -49,7 +50,7 @@
     "ruleToc": {
       "chapterList": "#list@li",
       "chapterName": "a@text",
-      "chapterUrl": "a@href##$##,{'webView': true}",
+      "chapterUrl": "a@href@js:result=result.replace('$','')+\",{'webView': true}\";",
       "nextTocUrl": "option@value||text.下一页@href"
     },
     "searchUrl": "https://www.google.com/search?q=site%3Awww.sumingxs.com {{key}}",
