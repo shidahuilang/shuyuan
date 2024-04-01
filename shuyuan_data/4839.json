@@ -24,7 +24,6 @@
     },
     "ruleContent": {
       "content": ".con@p@text@js:\nresult = (function (content) {\n    try {\n        const chapterUrl = chapter.url.substring(0, chapter.url.length() - \",{'webView': true}\".length);\n        let elements = content.split('\\n');\n        var tag = \"SMXSEE\";\n        let ps = [];\n        for (let i = 0; i < elements.length; i++) {\n            if (elements[i].trim().startsWith(tag)) {\n                ps[i] = '内容被加密,请访问->' + chapter.baseUrl + chapterUrl;\n            } else {\n                ps[i] = elements[i].trim()\n            }\n        }\n        return '<p>' + ps.join('</p><p>') + '</p>';\n    } catch (e) {\n        return  \"--------eeee------\" + e;\n    }\n})(result);",
-      "nextContentUrl": "text.下一页@href||text.下页@href",
       "webJs": ""
     },
     "ruleExplore": {

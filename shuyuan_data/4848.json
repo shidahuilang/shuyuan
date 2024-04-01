@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "//by: youke2580\n//优化目录，发现翻页，加入分卷",
+    "bookSourceGroup": "修复优化,整理校验,源仓库,游客自用,自制,网页源",
+    "bookSourceName": "爱下电子书8@游客",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ixdzs8.com",
+    "bookUrlPattern": "https?://ixdzs8.com/read/\\d+/",
+    "customOrder": 14,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/sort/1/index-0-0-0-{{page}}.html\n武侠小说::/sort/10/index-0-0-0-{{page}}.html\n修真仙侠::/sort/2/index-0-0-0-{{page}}.html\n都市青春::/sort/3/index-0-0-0-{{page}}.html\n军事历史::/sort/4/index-0-0-0-{{page}}.html\n网游竞技::/sort/5/index-0-0-0-{{page}}.html\n科幻灵异::/sort/6/index-0-0-0-{{page}}.html\n言情穿越::/sort/7/index-0-0-0-{{page}}.html\n耽美同人::/sort/8/index-0-0-0-{{page}}.html\n台言古言::/sort/9/index-0-0-0-{{page}}.html\n其他小说::/sort/0/index-0-0-0-{{page}}.html\n完本小说::/end/?page={{page}}",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1710070697671,
+    "respondTime": 2149,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",w:\"span.nsize@text\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "{{java.put(\"url\",baseUrl);\n\t\"https://ixdzs8.com/novel/clist/\"}},{\n  \"body\": \"bid={{baseUrl.match(/(\\d+).$/)[1]}}\",\n  \"headers\": {\n    \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\n    \"X-Requested-With\": \"XMLHttpRequest\",\n    \"Referer\":\"{{baseUrl}}\"\n    },\n  \"method\": \"POST\"\n}",
+      "wordCount": "@get:{w}"
+    },
+    "ruleContent": {
+      "content": "article.page-content section>p@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".u-list li",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "p.1@text",
+      "kind": "span.2:-1@text",
+      "lastChapter": "a.-1@text",
+      "name": "h3@text",
+      "wordCount": "span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "$.data",
+      "chapterName": "$.title",
+      "chapterUrl": "@get:{url}p{{$.ordernum}}.html",
+      "isVolume": "$.ctype"
+    },
+    "searchUrl": "https://ixdzs8.com/bsearch?q={{key}}",
+    "weight": 0
+  }
+]
