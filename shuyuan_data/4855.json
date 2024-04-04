@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "//by:Zero World\n2024,3,30",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "笔趣阁bqzw789",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://wap.bqzw789.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1711818384953,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.catalog1@class.tab@tag.p.0@tag.a@text",
+      "coverUrl": "class.catalog1@class.tu@mip-img@src",
+      "init": "class.catalog",
+      "intro": "class.jj@class.p2@text## ##<br />",
+      "kind": "class.catalog1@class.tab@class.tab1@tag.p@text",
+      "lastChapter": "class.catalog1@class.p3@tag.a@text",
+      "name": "class.catalog1@tag.h1@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.novelcontent@html<js>\nm=[];n=[];\nfunction x(a,b){m.push(a);n.push(b)}\nx(/䗼/g,\"性\");\nfor(i in n){result=String(result).replace(m[i],n[i])}\n</js>",
+      "nextContentUrl": "##var\\sshortid\\s=\\s\\\"([0-9]+)\\\"\\,\\sarticleid\\s\\=\\s\\\"([0-9]+)\\\"\\,\\snext\\_chapterid\\s=\\s\\\"[0-9]+\\\"\\,\\snext\\_chapter\\_pageid\\s\\=\\s\\\"([0-9]+)\\\"\\,\\schapterid\\s\\=\\s\"([0-9]+)\\\"\\;##http://wap.bqzw789.com/$1/$2/$4_$3.html###",
+      "replaceRegex": "##笔趣阁原域名已被污染，请记住新域名.*?\\.com|（ 本书网址：.*?）\\n\\u3000{2}\\-\\-\\>\\>本章未完，点击下一页继续阅读\\n\\u3000{2}如果浏览不正常，请退出浏览器阅读模式。\\n\\u3000{2}退出阅读模式，可以使用书架，足迹等功能。\\n\\u3000{2}笔趣阁原域名已被污染，请记住新域名.*?\\.com\\n\\u3000{2}.*|喜欢.*请大家收藏：.*笔趣阁更新速度最快。\\n\\u3000{2}（ 本书网址：.*?）\\n\\u3000{2}本章完！|如果浏览不正常，请退出浏览器阅读模式。|　　请记住本书首发域名：.*笔趣阁手机版阅读网址：.*\\n\\u3000{2}（ 本书网址：.*? ）\\n\\u3000{2}本章完！|退出阅读模式，可以使用书架，足迹等功能。|（ 本书网址：.*?）\\n\\u3000{2}本章完！|(?m)顶点小说$"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.search_box@class.search_list",
+      "bookUrl": "tag.a.0@href",
+      "kind": "tag.a.1@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.info_chapters@class.p2.-1@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.pt-dir-sel@tag.ul@tag.li@tag.a@href"
+    },
+    "searchUrl": "/s.php,{\n  \"method\": \"POST\",\n   \"body\": \"s={{key}}&type=articlename\",\n    \"headers\":{\"Origin\": \"http://wap.bqzw789.com\",\"Referer\": \"http://wap.bqzw789.com/\"}\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "bookSourceComment": "//by:Zero World\n2024,4,4",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "斋书苑",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.zhaishuyuan.org/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1712162133255,
+    "respondTime": 180000,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "id.CongWenCha@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "class.bookinfo@class.author@tag.a@text",
+      "bookList": "class.book_slist@class.bookbox",
+      "bookUrl": "tag.a.0@href",
+      "intro": "class.bookinfo@class.intro_line@text##简介：",
+      "lastChapter": "class.bookinfo@class.update@text##最新：",
+      "name": "class.bookinfo@class.bookname@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterList@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search3f.html,{\n  \"method\": \"POST\",\n   \"body\": \"searchkey={{key}}&submit=\",\n    \"headers\":{\"Origin\": \"https://m.zhaishuyuan.org\",\"Referer\": \"https://m.zhaishuyuan.org/\"}\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "/*by:Zero World\n2024,4,4\n\t注：\n\t字体来源：\n\thttps://m.dfxsw.com/font.ttf\n*/\n//打不开挂梯\n",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "东方小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.dfxsw.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1712175710507,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.catalog1@class.tab@tag.p.0@tag.a@text",
+      "coverUrl": "class.catalog1@class.tu@mip-img@src",
+      "init": "class.catalog",
+      "intro": "class.jj@class.p2@text## ##<br />",
+      "kind": "class.catalog1@class.tab@class.tab1@tag.p@text",
+      "lastChapter": "class.catalog1@class.p3@tag.a@text",
+      "name": "class.catalog1@tag.h1@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\nm=[];n=[];\nfunction x(a,b){m.push(a);n.push(b)}\nx(/\\&\\#x/g,\"\");x(/东方小说网.*最新章节。/g,\"\");\nx(/e815/g,\"中\");x(/e818/g,\"生\");\nx(/e85c/g,\"所\");x(/e837/g,\"学\");\nx(/e84a/g,\"道\");x(/e84b/g,\"想\");\nx(/e81f/g,\"要\");x(/e822/g,\"也\");\nx(/e830/g,\"能\");x(/e82c/g,\"而\");\nx(/e842/g,\"只\");x(/e858/g,\"但\");\nx(/e841/g,\"成\");x(/e813/g,\"为\");\nx(/e824/g,\"里\");x(/e855/g,\"面\");\nx(/e838/g,\"么\");x(/e823/g,\"得\");\nx(/e817/g,\"说\");x(/e819/g,\"国\");\nx(/e829/g,\"家\");x(/e84d/g,\"种\");\nx(/e83b/g,\"好\");x(/e83a/g,\"都\");\nx(/e81b/g,\"着\");x(/e862/g,\"意\");\nx(/e85f/g,\"手\");x(/e83c/g,\"看\");\nx(/e846/g,\"还\");x(/e81c/g,\"就\");\nx(/e828/g,\"会\");x(/e810/g,\"时\");\nx(/e84e/g,\"开\");x(/e85b/g,\"些\");\nx(/e850/g,\"总\");x(/e848/g,\"第\");\nx(/e82a/g,\"可\");x(/e811/g,\"大\");\nx(/e834/g,\"然\");x(/e83f/g,\"当\");\nx(/e839/g,\"之\");x(/e857/g,\"女\");\nx(/e82f/g,\"去\");x(/e82b/g,\"下\");\nx(/e852/g,\"无\");x(/e849/g,\"样\");\nx(/e844/g,\"事\");x(/e83e/g,\"发\");\nx(/e85d/g,\"同\");x(/e820/g,\"她\");\nx(/e816/g,\"你\");x(/e860/g,\"又\");\nx(/e82d/g,\"过\");x(/e83d/g,\"起\");\nx(/e863/g,\"动\");x(/e81e/g,\"和\");\nx(/e843/g,\"如\");x(/e859/g,\"现\");\nx(/e814/g,\"长\");x(/e821/g,\"出\");\nx(/e84f/g,\"美\");x(/e812/g,\"地\");\nx(/e840/g,\"没\");x(/e833/g,\"多\");\nx(/e81d/g,\"那\");x(/e836/g,\"心\");\nx(/e825/g,\"后\");x(/e85a/g,\"前\");\nx(/e851/g,\"从\");x(/e826/g,\"自\");\nx(/e854/g,\"己\");x(/e82e/g,\"天\");\nx(/e827/g,\"以\");x(/e831/g,\"对\");\nx(/e835/g,\"于\");x(/e832/g,\"小\");\nx(/e853/g,\"情\");x(/e847/g,\"用\");\nx(/e81a/g,\"年\");x(/e856/g,\"最\");\nx(/e845/g,\"把\");x(/e861/g,\"行\");\nx(/e84c/g,\"作\");x(/e85e/g,\"日\");\nfor(i in n){result=String(result).replace(m[i],n[i])}\n</js>class.novelcontent@html",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.search_box@class.search_list",
+      "bookUrl": "tag.a.0@href",
+      "checkKeyWord": "",
+      "kind": "tag.a.1@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.info_chapters@class.p2.-1@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.pt-dir-sel@tag.ul@tag.li@tag.a@href"
+    },
+    "searchUrl": "/s.php,{\n\t \"charset\": \"gbk\",\n  \"method\": \"POST\",\n   \"body\": \"s={{key}}&type=articlename\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "自由人小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.zyr688.com/",
+    "customOrder": 17,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1708005969153,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "class.book-intro@text",
+      "kind": "class.info@tag.span.1:2:3@text"
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "nextContentUrl": "text.下一页@href",
+      "title": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.span@text##.*\\s\\/\\s",
+      "bookList": "class.home-card@tag.a",
+      "bookUrl": "href",
+      "checkKeyWord": "变身少女无限增殖，我的数量成灾了",
+      "kind": "tag.span@text##\\[|\\].*",
+      "name": "tag.span@text##.*\\]|\\s\\/\\s.*"
+    },
+    "ruleToc": {
+      "chapterList": "class.newlist@tag.ul@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "isVip": "[style=\"color:Gray;\"]@text@js:result?'1':'0'",
+      "nextTocUrl": "class.listpage@tag.select@option@value"
+    },
+    "searchUrl": "/ar.php,{\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\",\n  \"body\": \"keyWord={{key}}\"\n}",
+    "weight": 0
+  }
+]
