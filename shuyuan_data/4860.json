@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "来自boavine\n自用\n 需要阅读软件的用户代理与书源UA一致。\n我的→其他设置→用户代理\n改为：\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\n\n搜索时：xx对应检索书名及简介；@xx 对应检索书名；#xx对应检索简介；\n暂不支持搜索作者（不太方便整合到一起，如有需求请联系boavine@163.com）\ncloudflare验证弹窗后“验证”标题/请稍候变为正确显示后再点击确认\n换ip会需要重新验证\n有时需要多试几次",
+    "bookSourceGroup": "fanfic",
+    "bookSourceName": "fanfiction电脑网页版",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.fanfiction.net/",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "coverDecodeJs": "",
+    "customOrder": -2085978627,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": 1712305674949,
+    "respondTime": 188973,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "init": "<js>\nJSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\"\n}})\nif(result.match(/Just a moment/)){\ncookie.removeCookie(baseUrl);\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "id.chap_select@option.-1@text",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.storytext@html",
+      "webJs": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(baseUrl);\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.a.!0@text##review.*",
+      "bookList": "<js>\nif(result.match(/Just a moment/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>\nclass.z-list",
+      "bookUrl": "class.stitle@href",
+      "checkKeyWord": "@Timely",
+      "coverUrl": "img@data-original",
+      "intro": "class.z-indent z-padtop@text",
+      "kind": "class.z-padtop2 xgray@text##- Chapter.*",
+      "lastChapter": "a.-3@href",
+      "name": "a.0@text",
+      "wordCount": "class.z-padtop2 xgray@text##.*(?=Words:)|-.*"
+    },
+    "ruleToc": {
+      "chapterList": "tag.select@option",
+      "chapterName": "option@text",
+      "chapterUrl": "value@js:if(baseUrl.match(/\\d+/)){\nUrl=baseUrl.match(/(.*?\\d+)/)[1];\nresult=Url+\"/\"+result+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36\"\n}})}else{result=baseUrl+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36\"\n}})};",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "@js:\nif(key.indexOf('@')==0){\nkey=encodeURI(key.match(/^@(.*)/)[1])\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&match=title&page=\"}\nelse if(key.indexOf('#')==0){\nkey=encodeURI(key.match(/^#(.*)/)[1])\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&match=summary&page=\"}\nelse{\nvar rurl=SourceUrl+\"search/?keywords=\"+key+\"&ready=1&type=story&page=\"}\njava.put(\"url\",String(rurl+\"search/?keywords=\"+key+\"&ready=1&type=story&page=\"+page+\",\"+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\"\n}})))\n",
+    "weight": 0
+  }
+]

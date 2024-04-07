@@ -1,0 +1,39 @@
+[
+  {
+    "ruleSearch": {
+      "bookList": "id.alist@id.alistbox",
+      "name": "class.title@tag.a@text",
+      "bookUrl": "class.title@tag.a@href",
+      "author": "class.title@tag.span@text",
+      "lastChapter": "class.sys@tag.a@text",
+      "checkKeyWord": "我的"
+    },
+    "ruleBookInfo": {
+      "name": "id.info@tag.h1@text",
+      "author": "id.info@tag.p.0@tag.a@text",
+      "lastChapter": "id.info@tag.p.4@tag.a@text",
+      "coverUrl": "id.fmimg@tag.img@src"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "ruleReview": [],
+    "ruleExplore": {
+      "name": "",
+      "author": "",
+      "lastChapter": "",
+      "coverUrl": ""
+    },
+    "searchUrl": "/search.html,{\nmethod:\"POST\",\nbody:\"searchkey={{key}}\"\n}",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.88xiaoshuo.net",
+    "bookSourceName": "88小说网",
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "enabled": true
+  }
+]

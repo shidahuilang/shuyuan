@@ -1,0 +1,35 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": "tag.li",
+      "name": "class.search_list@tag.a@text",
+      "author": "tag.em@text",
+      "bookUrl": "class.search_list@tag.a@href"
+    },
+    "ruleBookInfo": {
+      "name": "class.tab@tag.h1@text",
+      "author": "class.writer@tag.a@text",
+      "intro": "class.text@tag.p@text",
+      "lastChapter": "class.info_chapters@tag.li.0@text",
+      "coverUrl": "class.bookcover@tag.img@src"
+    },
+    "ruleToc": {
+      "chapterList": "class.info_chapters@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.right@tag.a@href"
+    },
+    "ruleContent": {
+      "content": "tag.p@textNodes"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://69shu.net",
+    "bookSourceName": "69书吧",
+    "searchUrl": "/s.php,{\n\"charset\": \"gbk\",\n\"method\": \"post\",\n\"body\": \"s={{key}}&type=articlename\"}",
+    "enabled": true
+  }
+]
