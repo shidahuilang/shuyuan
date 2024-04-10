@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceName": "香书小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xbiqugu.org",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "#info > p:nth-child(2)@text",
+      "coverUrl": "#fmimg > img@src",
+      "intro": "#intro > p:nth-child(2)@text",
+      "lastChapter": "p:nth-child(5) > a@href",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "id.content@html##最新网址：www.xbiqugu.org"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".even:nth-child(3)@text",
+      "bookList": "tag.tr!0",
+      "bookUrl": ".even > a@href",
+      "checkKeyWord": "我的",
+      "kind": "",
+      "lastChapter": ".odd > a@text",
+      "name": ".even > a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/modules/article/waps.php,{\n\"method\": \"post\",\n\"body\": \"searchkey={{key}}\"}",
+    "weight": 0
+  }
+]

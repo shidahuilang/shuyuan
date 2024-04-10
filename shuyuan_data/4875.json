@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceName": "饭饭小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.fanfanbook.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "lastUpdateTime": 1712656917523,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.2@text",
+      "coverUrl": "id.fmimg@tag.img@src",
+      "intro": "id.intro@tag.p.0@text",
+      "kind": "id.info@tag.p.0@text##分类：",
+      "lastChapter": "id.info@tag.p.4@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": "class.bookbox",
+      "bookUrl": ".bookname > a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update > a@text",
+      "name": ".bookname > a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.listmain@tag.dd",
+      "chapterName": "tag.dd@tag.a.0@text",
+      "chapterUrl": "tag.dd@tag.a.0@href"
+    },
+    "searchUrl": "/gdsuisfguigsdugiusiuesu.php,{\n\"charset\": \"gbk\",\n\"method\": \"post\",\n\"body\": \"ie=gbk&q={{key}}\"}",
+    "weight": 0
+  }
+]
