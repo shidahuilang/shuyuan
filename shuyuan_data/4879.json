@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "API0407,自写0407",
+    "bookSourceName": "炎上书屋api",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://book.zri.moe/##zhbyjm7783",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"༺ˇ»`ʚ 书库 ɞ´«ˇ༻\",\"url\":\"https://book.zri.moe/api/book?page={{page}}&per=8&order_by=ct&desc=true\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}}]",
+    "lastUpdateTime": 1712741947424,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "https://book.zri.moe/api/book/{{$.id}}/cover",
+      "init": "meta",
+      "kind": "tags",
+      "name": ""
+    },
+    "ruleContent": {
+      "content": "body"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "userInfo.username",
+      "bookList": "data[*]",
+      "bookUrl": "https://book.zri.moe/api/book/{{$.id}}",
+      "checkKeyWord": "寻找克里斯Q",
+      "coverUrl": "https://book.zri.moe/api/book/{{$.id}}/cover",
+      "intro": "introduction",
+      "kind": "",
+      "lastChapter": "lastChapterInfo.title",
+      "name": "title"
+    },
+    "ruleToc": {
+      "chapterList": "sections[*].chapters[*]",
+      "chapterName": "title",
+      "chapterUrl": "https://book.zri.moe/api/book/{{$.book_id}}/chapter/{{$.id}}"
+    },
+    "searchUrl": "https://book.zri.moe/api/book?page=1&per=8&order_by=ct&desc=true&keywords=[\"{{key}}\"]",
+    "weight": 0
+  }
+]

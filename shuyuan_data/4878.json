@@ -1,0 +1,42 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": ".bookbox",
+      "name": ".bookname > a@text",
+      "author": ".author@text",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update > a@text",
+      "bookUrl": ".bookname > a@href",
+      "coverUrl": ".bookimg > a@tag.img@src"
+    },
+    "ruleBookInfo": {
+      "name": ".name@text",
+      "author": ".dd_box:nth-child(2) > span:nth-child(1)@text",
+      "kind": ".dd_box:nth-child(2) > span:nth-child(2)@text##分类：",
+      "wordCount": ".dd_box:nth-child(3) > span:nth-child(2)@text",
+      "intro": ".book_about dd@text",
+      "lastChapter": "dd:nth-child(2) > a@text",
+      "coverUrl": "tag.img@src",
+      "tocUrl": ".book_more > a@href"
+    },
+    "ruleToc": {
+      "chapterList": ".book_last@tag.dd",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@html",
+      "nextContentUrl": "class.Readpage@tag.a.2@href",
+      "replaceRegex": "##（本章未完，请点击下一页继续阅读）\n　　手机版阅读网址：wap.99mk.cc"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceType": 0,
+    "searchUrl": "/search.php,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "bookSourceUrl": "http://wap.99mk.cc",
+    "bookSourceName": "鸟书网（自制）",
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "enabled": true
+  }
+]

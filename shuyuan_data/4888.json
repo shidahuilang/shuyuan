@@ -1,0 +1,36 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": "tag.tr!0",
+      "name": ".odd > a@text",
+      "author": ".odd:nth-child(3)@text",
+      "lastChapter": ".even:nth-child(2)@text",
+      "bookUrl": ".odd > a@href",
+      "wordCount": ".even:nth-child(4)"
+    },
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "author": "#info > p:nth-child(2)@text",
+      "lastChapter": "p:nth-child(5) > a@text",
+      "kind": "#info > p:nth-child(3)@text##类  别：",
+      "intro": "#intro > p:nth-child(1)@text",
+      "coverUrl": "#fmimg > img@src"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "ruleContent": {
+      "content": "id.content@html##最新网址：www.uuwx.la"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceType": 0,
+    "searchUrl": "/modules/article/search.php,{\n\"method\": \"post\",\n\"body\": \"searchkey={{key}}\"}",
+    "bookSourceUrl": "http://www.uuwx.la",
+    "bookSourceName": "uu小说",
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+  }
+]

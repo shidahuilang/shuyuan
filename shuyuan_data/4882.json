@@ -1,0 +1,65 @@
+[
+  {
+    "bookSourceComment": "by：zhbyjm7783 2024.03.22 发现\nby：遇知 2024.03.22 制作\nby：landseer 2023.10.15 原作\n根据序号设置书籍变量来切换来源(默认0)\n遇知请求头：\n{\"uid\":\"205060\",\"token\":\"3ab82de59915806c247730199954268e\"}",
+    "bookSourceGroup": "精选常用,APP0408",
+    "bookSourceName": "换源APP[免费]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://121.62.23.33:8898",
+    "customOrder": 13,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort=[];\nburl=source.getKey();\npush=(title,url,type1,type2)=>sort.push({\n\t\ttitle: title,\n\t\turl: url,\n\t\tstyle: {\n\t\t\t\tlayout_flexGrow: type1,\n\t\t\t\tlayout_flexBasisPercent: type2\n\t\t\t}\n\t});\n\npush(\"༺ˇ»`ʚ 排行 ɞ´«ˇ༻\", null, 1, 1);\n\n [[\"最多阅读\",\"allvisit\"],\n[\"最近更新\",\"book_uptime\"],\n[\"最多收藏\",\"allcollect\"],\n[\"最高评分\",\"book_score\"],\n[\"最多搜索\",\"book_search_num\"],\n[\"最多评论\",\"allcomment\"]].map([title,sort]=>{\t   \n\t\t\n\t      \turl = `/api.php/Book/getList,{\"body\": {\"cid\":\"0\",\"sort\":\"${sort}\",\"status\":0,\"size\":0,\"page\":\"{{page}}\",\"action\":\"category\"},\"method\": \"POST\"}`;\n\t      \tpush(title, url, 1, 0.25);\n        }); \n        \npush(\"༺ˇ»`ʚ 分类 ɞ´«ˇ༻\", null, 1, 1);  \n\npush(\"完本\", '/api.php/Book/getList,{\"body\": {\"cid\":\"0\",\"sort\":\"\",status\":\"2\",\"size\":0,\"page\":\"{{page}}\",\"action\":\"category\"},\"method\": \"POST\"}', 1, 0.25);      \n           \n [[\"玄幻\",15],[\"奇幻\",16],[\"武侠\",17],[\"仙侠\",18],[\"都市\",19],[\"历史\",20],[\"军事\",21],[\"游戏\",22],[\"体育\",32],[\"科幻\",33],[\"诸天\",46],[\"悬疑\",34],[\"其他\",35],\n[\"古代言情\",24],[\"现代言情\",25],[\"玄幻言情\",26],[\"仙侠奇缘\",27],[\"浪漫青春\",28],[\"游戏竞技\",29],[\"科幻空间\",30],[\"悬疑灵异\",36],[\"耽美文\",38],[\"百合文\",39],[\"轻小说\",37],[\"次元未分类\",40],[\"原生幻想\",42],[\"恋爱日常\",43],[\"衍生同人\",44],[\"搞笑吐槽\",45]].map([name,categoryId]=>{\t \n\t  \t   \t\n\t      \turl = `/api.php/Book/getList,{\"body\": {\"cid\":\"${categoryId}\",\"sort\":\"\",status\":0,\"size\":0,\"page\":\"{{page}}\",\"action\":\"category\"},\"method\": \"POST\"}`;\n\t      \tpush(name, url, 1, 0.25);\n        });\n\nJSON.stringify(sort);",
+    "header": "{\n\"uid\": \"176366\",\"token\": \"47a580ac287cff71203b241ad6344f36\",\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; rv:46.0) Gecko/20100101 Firefox/46.0\",\n\"Content-Type\":\"application/json\"\n}",
+    "jsLib": "",
+    "lastUpdateTime": 1712835625122,
+    "respondTime": 73913,
+    "ruleBookInfo": {
+      "author": "$.book_author",
+      "canReName": "",
+      "coverUrl": "$.book_pic",
+      "init": "@js:\nresult = JSON.parse(result).data.info;\nsource_url = baseUrl.replace('getBookInfo','getResources');\n$ = JSON.parse(java.ajax(source_url)).data.resources;\n\n//初始化\nn = 0;\nv = String(book.getVariable(\"custom\"));\nx = v.match(/^\\d+$/)?v:n;\nx = parseInt(x)<$.length?x:n;\n\nresult.book_uptimeStr = $[x].sourceLastChapterUpdate;\nresult.book_lastchapter = $[x].sourceLastChapter;\ncharset = $[x].encoded;\nchapterPageUrl = $[x].chapterPageUrl;\nresult.tocUrl = chapterPageUrl+`,{\"charset\":\"${charset}\"}`;\n\n\n//目录规则使用\nchapterPageBeat = $[x].chapterPageBeat.rule;\nchapterUrl = $[x].chapterUrl.rule;\nchapterName = $[x].chapterName.rule;\njava.put(\"chapterPageBeat\",chapterPageBeat);\njava.put(\"chapterUrl\",chapterUrl);\njava.put(\"chapterName\",chapterName);\n\n//正文规则使用\nchapterText=$[x].chapterText.rule.replace(/\\s+/g, \" \");\nchapterText_replace=$[x].chapterText.replace.replace(/=>=>(\\s+)?/g, \"|\");\n\njava.put(\"chapterText\",chapterText);\njava.put(\"chapterText_replace\",chapterText_replace);\n\nif($.length>1){\n\t\ty = '\\n📌使用说明： 根据序号设置书籍变量来切换来源(默认0)\\n🎯当前源：序号🔺'+x+'🔻【'+$[x].sourceDesc+'】'+(x==0?' (默认)':'');\nfor(i in $){\n\t\ty += '\\n❤序号🔺'+i+'🔻【'+$[i].sourceDesc+'】 \\n网站：'+$[i].sourceName+' \\n更新时间： '+$[i].sourceLastChapterUpdate+'\\n最新章节： '+$[i].sourceLastChapter;\n\t}\nresult.book_intro += y\n}\nresult = JSON.stringify(result);",
+      "intro": "📂 简介：{{$.book_intro}}##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "{{r=String(java.getString('$.book_score'));r==''?'':r+ '分'}}\n{{$.book_uptimeStr}}\n{{$.book_keywords}}",
+      "lastChapter": "$.book_lastchapter",
+      "name": "$.book_name",
+      "tocUrl": "$.tocUrl",
+      "wordCount": "$.book_size"
+    },
+    "ruleContent": {
+      "content": "@js:\nchapterText = java.get(\"chapterText\");\nchapterText_replace = java.get(\"chapterText_replace\");\njava.log(chapterText)\ntry{\ncontent = String(result).replace(/\\s+/g, \" \").match(chapterText)[1].replace(new RegExp(chapterText_replace,\"g\"), \"\");\n}\ncatch(e){content = java.getElement(\"#content\");}",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "$.book_author",
+      "bookList": "$.data.list[*]||$.data[*]",
+      "bookUrl": "@js:\nu=\"http://121.62.23.33:8898/api.php/Book/getBookInfo\";\na=String({{$.book_id}});\nb=JSON.stringify({\"bookId\":a});\nu+`,{\"method\":\"post\",\"body\":${b}}`",
+      "checkKeyWord": "深空彼岸",
+      "coverUrl": "$.book_pic",
+      "intro": "$.book_intro",
+      "kind": "{{$.categoryName}}\n{{r=String(java.getString('$.book_score'));r==''?'':r+ '分'}}",
+      "lastChapter": "$.book_lastchapter",
+      "name": "$.book_name@put:{id:book_id}",
+      "wordCount": "$.book_size"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nchapterPageBeat = java.get(\"chapterPageBeat\");\nchapterUrl = java.get(\"chapterUrl\");\nchapterName = java.get(\"chapterName\");\n\nsourceUrl1 = baseUrl.match(/(http[s]?:\\/\\/[\\.a-zA-Z0-9_-]+)(\\/)/)[1];\njava.log(sourceUrl1);\nsourceUrl2 = baseUrl.match(/(http[s]?:\\/\\/[\\.a-zA-Z0-9_-]+\\/[\\/a-zA-Z0-9_-]+)(\\/)/)[1]\njava.log(sourceUrl2);\n\nif(chapterPageBeat!=\"\"){\nf=new RegExp(chapterPageBeat,\"i\");\ncont=String(result).replace(/\\s+/g, \" \").match(f)[1];\n}\nelse{cont=String(result).replace(/\\s+/g, \" \").replace(/>\\s+</g, \"><\");}\n\nvar chapterList = [];\nname = cont.match(new RegExp(chapterName,\"g\"));\nurl = cont.match(new RegExp(chapterUrl,\"g\"));\n\nfor(var i = 0; i < name.length; i ++){\ntext = name[i].match(chapterName)[1];\nuri = url[i].match(chapterUrl)[1];\n\nif(uri.indexOf(\"/\") == -1){\n\t \thref=sourceUrl2 +\"/\"+ uri;\n\t \t}else{href = sourceUrl1 + uri;}\n\t \thref = href +\",\"+ JSON.stringify({\"headers\":{\"Referer\":href}})\n\t \t\nchapterList.push({\n\t\t \t  text: text,\n\t\t  \t href: href\t\n      \t})            \n }\n\nchapterList\n</js>",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "preUpdateJs": "java.refreshTocUrl();"
+    },
+    "searchUrl": "/api.php/Book/getSearchBook,{\n\"method\":\"post\",\n\"body\":{{JSON.stringify({\"keyword\":key,\"page\":page})}}\n}",
+    "weight": 0
+  }
+]

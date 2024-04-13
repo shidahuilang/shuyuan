@@ -1,19 +1,19 @@
 [
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "",
+    "bookSourceGroup": "【小说3书源】",
     "bookSourceName": "🍩爱宝贝[自写/码]",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.ibabyjoy.com",
     "bookUrlPattern": "",
     "concurrentRate": "",
-    "customOrder": -32226,
+    "customOrder": 2001,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
     "exploreUrl": "[\n{\"title\":\"🎖 排行榜 🎖\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"总排行榜\",\"url\":\"/rank/allvisit/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"月排行榜\",\"url\":\"/rank/monthvisit/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"周排行榜\",\"url\":\"/rank/weekvisit/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"🍀全部🎀分类🍀\",\"url\":\"/txt/all/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"玄幻魔幻\",\"url\":\"/txt/xhtxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"武侠仙侠\",\"url\":\"/txt/wxtxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"都市言情\",\"url\":\"/txt/dstxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"历史军事\",\"url\":\"/txt/lstxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"网游竞技\",\"url\":\"/txt/wytxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"科幻灵异\",\"url\":\"/txt/khtxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"其它类型\",\"url\":\"/txt/qttxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"女生频道\",\"url\":\"/txt/nstxt/1.html\",\"style\":{\"layout_flexGrow\":1}},\n]\n\n",
     "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 12; Nexus 5X Build/NRD90M); wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36\",\"referer\": \"https://www.ibabyjoy.com/\"}",
-    "lastUpdateTime": 1712581512757,
+    "lastUpdateTime": 1712895877741,
     "loginUrl": "",
     "respondTime": 181445,
     "ruleBookInfo": {
@@ -46,7 +46,7 @@
     "ruleReview": [],
     "ruleSearch": {
       "author": "text.作者@text##作者：",
-      "bookList": "<js>\n// java.log(result)\nvar su=source.key;\nif(/验证码/.test(result)){\n\timgurl = `${su}/searchVerify/captcha`;\n        img = java.ajax(imgurl)\n\tcode=java.getVerificationCode(img)\n       result=java.post(`${su}/search`,`searchkey=${java.get('key')}&code=${code}`,{}).body()\n}\n</js>\n.CGsectionTwo-right-content>.CGsectionTwo-right-content-unit",
+      "bookList": "<js>\n// java.log(result)\nvar su=source.key;\nfunction fn(value){\nif(/验证码/.test(value)){\n\t      imgurl = `${su}/searchVerify/captcha`;\n       img = java.ajax(imgurl)\n\t      code=java.getVerificationCode(img)\n       data=java.post(`${su}/search`,`searchkey=${java.get('key')}&code=${code}`,{}).body()\n       return fn(data)\n   }else{\n    return value\n   }\n}\nresult = fn(result)\n</js>\n.CGsectionTwo-right-content>.CGsectionTwo-right-content-unit",
       "bookUrl": "##<a.*?href=\"([^\"]+)\"##$1###",
       "checkKeyWord": "剑来",
       "coverUrl": "##<a.*?href=\"([^\"]+)\"##{{source.bookSourceUrl}}$1###\n<js>java.ajax(result);</js>\n##og:image\"[^\"]+\"([^\"]*)##$1###",
@@ -63,7 +63,7 @@
       "formatJs": "",
       "nextTocUrl": "##href=\"([^\"]+)\"[^>]*>下一页<##$1###"
     },
-    "searchUrl": "@js:\njava.put(\"key\",key);\nvar su=source.key;\n\nck=cookie.getCookie(su);\ncookie.setCookie(su,String(ck).replace(/dx_session=.*/,\"\"));\n\t\n//cookie.removeCookie(su)\n\nso=su+`/search,`+JSON.stringify({\n        \"charset\":\"utf-8\",\n\t\"method\":\"post\",\n\t\"body\":`searchkey=${key}&searchtype=all&t_btnsearch=`\n})",
+    "searchUrl": "@js:\njava.put(\"key\",key);\nvar su=source.key;\n\nck=cookie.getCookie(su);\ncookie.setCookie(su,String(ck).replace(/dx_session=.*/,\"\"));\n\t\n//cookie.removeCookie(su)\n\nso=su+`/search,`+JSON.stringify({\n  \"charset\":\"utf-8\",\n\t\"method\":\"post\",\n\t\"body\":`searchkey=${key}&searchtype=all&t_btnsearch=`\n})",
     "weight": 0
   }
 ]

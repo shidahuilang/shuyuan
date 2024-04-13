@@ -1,6 +1,6 @@
 [
   {
-    "bookSourceComment": "来自boavine\n自用\n 需要阅读软件的用户代理与书源UA一致。\n我的→其他设置→用户代理\n改为：\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\n搜索时：xx对应检索书名及简介；@xx 对应检索书名；#xx对应检索简介；\n暂不支持搜索作者（不太方便整合到一起，如有需求请联系boavine@163.com）\ncloudflare验证弹窗后“验证”标题/请稍候变为正确显示后再点击确认\n换ip会需要重新验证，需要点一下人机 之后通常不会弹窗\n有时需要刷新一下详情页 若多试几次仍失败请清除cookie",
+    "bookSourceComment": "来自boavine（boavine@163.com）\n自用\n 需要阅读软件的用户代理与书源UA一致。\n我的→其他设置→用户代理\n改为：\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\n搜索时：xx对应检索书名及简介；@xx 对应检索书名；#xx对应检索简介；~对应搜用户主页（所著书籍及收藏书籍）\n搜索用户请输入准确名字！！\ncloudflare验证弹窗后“验证”标题/请稍候变为正确显示后再点击确认\n换ip会需要重新验证，需要点一下人机 之后通常不会弹窗\n有时需要刷新一下详情页 若多试几次仍失败请清除cookie\n--添加发现\n方式一：用户名::/~用户名（去空格）\n方式二：Yonghu ming::/u/userid/Yonghu-ming（仅示例）",
     "bookSourceGroup": "fanfic",
     "bookSourceName": "fanfiction电脑网页版",
     "bookSourceType": 0,
@@ -11,17 +11,16 @@
     "customOrder": 0,
     "enabled": true,
     "enabledCookieJar": false,
-    "enabledExplore": false,
-    "enabledReview": false,
-    "exploreUrl": "",
+    "enabledExplore": true,
+    "exploreUrl": "mine::/~mine\nmissmusicluver::/u/3380788/missmusicluver",
     "header": "",
     "lastUpdateTime": 1712327711606,
     "respondTime": 183169,
     "ruleBookInfo": {
-      "author": "",
+      "author": "id.profile_top@a.0@text",
       "coverUrl": "",
       "init": "<js>\nJSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\"\n}})\nif(result.match(/Just a moment/)){\ncookie.removeCookie(baseUrl);\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>",
-      "intro": "",
+      "intro": "{{@@id.profile_top@div.xcontrast_txt@text}}\n<br>&lrm;<br>\n🔖{{@@id.profile_top@class.xgray xcontrast_txt@text}}\n<br>&lrm;<br>\n--复制下面的文字，可将用户添加发现或者订阅--\n📖\n@js:\nh1=java.getElements(\"@@id.profile_top@a.0\").text();\nh2=java.getString(\"@@id.profile_top@a.0@href\");\nresult.replace(\"📖\",h1+\"::\"+h2)",
       "kind": "",
       "lastChapter": "id.chap_select@option.-1@text",
       "name": "//*[@id=\"profile_top\"]/b/text()",
@@ -31,13 +30,22 @@
       "content": "id.storytext@html",
       "webJs": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(baseUrl);\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>"
     },
-    "ruleExplore": [],
-    "ruleReview": [],
+    "ruleExplore": {
+      "author": "{{@@tag.a.!0@text##review.*}} ",
+      "bookList": "<js>\nif(result.match(/Just a moment/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n/*\n列表原则最后一行可修改：\nid.st@class.z-list 该作者所著书籍\nid.fs@class.z-list 该用户收藏\nclass.z-list 所著书籍及收藏书籍\n*作者与发现页一致时不显示\n*/\n</js>\nid.st@class.z-list",
+      "bookUrl": "class.stitle@href",
+      "coverUrl": "img@data-original",
+      "intro": "class.z-indent z-padtop@text",
+      "kind": "class.z-padtop2 xgray@text##- Chapter.*",
+      "lastChapter": "class.z-padtop2 xgray@text##.*(?=Chapters:)|-.*",
+      "name": "a.0@text",
+      "wordCount": "class.z-padtop2 xgray@text##.*(?=Words:)|-.*"
+    },
     "ruleSearch": {
       "author": "tag.a.!0@text##review.*",
       "bookList": "<js>\nif(result.match(/Just a moment/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>\nclass.z-list",
       "bookUrl": "class.stitle@href",
-      "checkKeyWord": "@Timely",
+      "checkKeyWord": "time",
       "coverUrl": "img@data-original",
       "intro": "class.z-indent z-padtop@text",
       "kind": "class.z-padtop2 xgray@text##- Chapter.*",
@@ -51,7 +59,7 @@
       "chapterUrl": "value@js:if(baseUrl.match(/\\d+/)){\nUrl=baseUrl.match(/(.*?\\d+)/)[1];\nresult=Url+\"/\"+result+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36\"\n}})}else{result=baseUrl+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36\"\n}})};",
       "preUpdateJs": ""
     },
-    "searchUrl": "@js:\nif(key.indexOf('@')==0){\nkey=encodeURI(key.match(/^@(.*)/)[1])\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&match=title&page=\"}\nelse if(key.indexOf('#')==0){\nkey=encodeURI(key.match(/^#(.*)/)[1])\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&match=summary&page=\"}\nelse{\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&page=\"}\njava.put(\"url\",String(rurl+\"search/?keywords=\"+key+\"&ready=1&type=story&page=\"+page+\",\"+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\"\n}})))\n",
+    "searchUrl": "@js:\nif(key.indexOf('~')==0){\njava.log(key)\nkey=encodeURI(key.replace(/\\s/g,''))\njava.log(key)\nvar rurl=\"/\"+key}\nelse if(key.indexOf('@')==0){\nkey=encodeURI(key.match(/^@(.*)/)[1])\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&match=title&ppage=\"+page}\nelse if(key.indexOf('#')==0){\nkey=encodeURI(key.match(/^#(.*)/)[1])\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&match=summary&ppage=\"+page}\nelse{\nvar rurl=\"search/?keywords=\"+key+\"&ready=1&type=story&ppage=\"+page}\njava.put(\"url\",String(rurl+\",\"+JSON.stringify({\n\t\t\"headers\":{\n\"user-agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1788.0\"\n}})))\n",
     "weight": 0
   }
 ]
