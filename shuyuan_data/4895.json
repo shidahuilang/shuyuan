@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "书趣阁（修复4.14）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xshuquge.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\n\t\"title\":\"玄幻魔法\",\n\"url\":\"/sort/1/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"武侠修真\",\n\"url\":\"/sort/2/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"都市言情\",\n\"url\":\"/sort/3/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"历史军事\",\n\"url\":\"/sort/4/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"侦探推理\",\n\"url\":\"/sort/5/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"网游动漫\",\n\"url\":\"/sort/6/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"科幻灵异\",\n\"url\":\"/sort/7/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"其他类型\",\n\"url\":\"/sort/8/0_1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"✘全本✘\",\n\"url\":\"quanben/1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"————————排行————————\",\n\"url\":\"\",\"style\":{\"layout_flexGrow\":99,\"layout_flexBasisPercent\": -1}},\n{\"title\":\"日点击榜\",\n\"url\":\"store/dayvisit-1{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"周点击榜\",\n\"url\":\"store/weekvisit-1{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"月点击榜\",\n\"url\":\"store/monthvisit-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"总点击榜\",\n\"url\":\"store/allvisit-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"总收藏榜\",\n\"url\":\"/store/goodnum-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"字数排行\",\n\"url\":\"/store/size-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"日推荐榜\",\n\"url\":\"/store/size-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"周推荐榜\",\n\"url\":\"store/weekvote-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"月推荐榜\",\n\"url\":\"/store/monthvote-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"总推荐榜\",\n\"url\":\"store/allvote-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"最新入库\",\n\"url\":\"store/postdate-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}},\n{\"title\":\"最近更新\",\n\"url\":\"store/lastupdate-1{{page}}.html\",\"style\":{\"layout_flexGrow\":0.25}}\n]",
+    "lastUpdateTime": 1687547691662,
+    "respondTime": 186362,
+    "ruleBookInfo": {
+      "author": ".small > span:nth-child(1)@text",
+      "coverUrl": "img:nth-child(1)@src",
+      "init": "",
+      "intro": ".intro@text## 展开.*",
+      "kind": ".small > span:nth-child(2)@text##分类：",
+      "lastChapter": ".last > a@text",
+      "name": "h2@text",
+      "tocUrl": "",
+      "wordCount": "span:nth-child(4)@text##字数："
+    },
+    "ruleContent": {
+      "content": "id.content@html##最新网址：www.xshuquge.net|http://www.xshuquge.net.*|请记住本书首发域名.*|fri.*",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "@html##(.*)(a>)(.*)(</p>)##$3",
+      "bookList": "class.cover@class.line",
+      "bookUrl": "class.blue.0@href",
+      "coverUrl": "class.blue.0@href##/s/([0-9]{1,3})(.*).html##https://www.ishuquge.la/files/article/image/$1/$1$2/$1$2s.jpg",
+      "intro": "",
+      "kind": "a.0@textNodes",
+      "name": "class.blue.0@textNodes"
+    },
+    "ruleSearch": {
+      "author": ".author.0@text",
+      "bookList": "class.bookbox",
+      "bookUrl": ".bookname > a.0@href",
+      "coverUrl": "",
+      "lastChapter": "class.update.0@tag.a@text",
+      "name": ".bookname > a.0@text",
+      "checkKeyWord": "我的",
+      "kind": "class.cat.0@text##分类："
+    },
+    "ruleToc": {
+      "chapterList": "class.listmain@tag.dl@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/search.php,{\n\"method\" :\"POST\",\n\"body\": \"searchkey={{key}}&submit=\"}",
+    "weight": 0
+  }
+]

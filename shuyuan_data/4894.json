@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceName": "三叶屋小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.3yewu.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "#info > p:nth-child(2)@text",
+      "coverUrl": "#fmimg > img@src",
+      "intro": "#intro > p:nth-child(1)@text",
+      "lastChapter": "#info > p:nth-child(4) > a@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "id.content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.span.0@text",
+      "bookList": "class.item@tag.dl",
+      "bookUrl": "tag.a.0@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "",
+      "intro": "tag.dd.0@text",
+      "name": "tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list.1@tag.dl@tag.dd",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=3yewu",
+    "weight": 0
+  }
+]

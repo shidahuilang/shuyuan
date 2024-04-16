@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceGroup": "自制",
+    "bookSourceName": "23书吧",
+    "bookSourceUrl": "https://23shu8.net",
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "奇幻::/qihuan/{{page}}/\n玄幻::/xuanhuan/{{page}}/\n言情::/yanqing/{{page}}/\n都市::/dushi/{{page}}/\n游戏::/youxi/{{page}}/\n竞技::/jingji/{{page}}/\n武侠::/wuxia/{{page}}/\n修真::/xiuzhen/{{page}}/\n历史::/lishi/{{page}}/\n军事::/junshi/{{page}}/\n科幻::/kehuan/{{page}}/\n灵异::/lingyi/{{page}}/\n同人::/tongren/{{page}}/\n校园::/xiaoyuan/{{page}}/\n官场::/guanchang/{{page}}/\n商战::/shangzhan/{{page}}/\n职场::/zhichang/{{page}}/\n二次元::/erciyuan/{{page}}/\n其他::/qita/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0\", \"Connection\":\"keep-alive\",  \"Referer\":\"{{baseUrl}}\"}",
+    "lastUpdateTime": 1698659567803,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "name": "[property$=book_name]@content",
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content"
+    },
+    "ruleContent": {
+      "content": "#content@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": ".content",
+      "name": "a.0@text",
+      "bookUrl": "a.0@href",
+      "author": "a.2@text",
+      "coverUrl": "",
+      "kind": "li.-1@text",
+      "intro": "",
+      "wordCount": "p.1@span@text##字数：",
+      "lastChapter": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".catalogs@li a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s_{{key}}",
+    "weight": 0
+  }
+]

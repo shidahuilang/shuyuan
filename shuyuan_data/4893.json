@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceName": "无双小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.buxia.org",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".red@text## 著",
+      "coverUrl": ".bookcover > .thumbnail@src",
+      "intro": ".bookintromore@text",
+      "kind": "li:nth-child(2) > a@text",
+      "lastChapter": ".bookchapter@text",
+      "name": ".booktitle@text"
+    },
+    "ruleContent": {
+      "content": "id.txt@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author > a.0@text",
+      "bookList": "class.bookbox",
+      "bookUrl": ".bookname > a.0@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "class.num@tag.a@tag.img.0@src",
+      "kind": "",
+      "lastChapter": ".cat > a.0@text",
+      "name": ".bookname > a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": " id.showmore01@tag.dd",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n\"method\": \"post\",\n\"body\": \"searchkey={{key}}&action=login&submit=\"}",
+    "weight": 0
+  }
+]
