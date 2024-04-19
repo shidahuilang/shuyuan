@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceName": "69书吧自制",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.69shu.cc",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1713454345818,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "h1@text##(.*) / (.*)##$2",
+      "coverUrl": "img@src",
+      "intro": ".bookinfo_intro@text",
+      "kind": ".nav-mbx > a:nth-child(3)@text",
+      "lastChapter": ".update > a@text",
+      "name": "h1@text##(.*) / (.*)##$1"
+    },
+    "ruleContent": {
+      "content": "id.htmlContent@html##.*最快更新.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.2@text",
+      "bookList": ".grid@tbody@tr!0",
+      "bookUrl": "td.0@a@href",
+      "checkKeyWord": "我的",
+      "lastChapter": "td.1@text",
+      "name": "td.0@text",
+      "wordCount": "td.3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapterlist.1@tag.li!0",
+      "chapterName": "a.0@text",
+      "chapterUrl": "a.0@href"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}},{\n\"charset\": \"gbk\"}",
+    "weight": 0
+  }
+]

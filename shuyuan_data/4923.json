@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "⚡ 追书网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.zhuishu.la",
+    "customOrder": 24,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "lastUpdateTime": 1713515408959,
+    "respondTime": 180511,
+    "ruleBookInfo": {
+      "author": ".fix > p:nth-child(1)@text",
+      "coverUrl": "img:nth-child(1)@src",
+      "init": "",
+      "intro": ".desc@text",
+      "kind": "",
+      "lastChapter": "p:nth-child(6) > a@text",
+      "name": ".top > h1@text"
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "nextContentUrl": "text.下一页@href##$##,{'webView': true}",
+      "replaceRegex": "##.*\\(第\\d/\\d页\\)|.*点击下一页.*"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": "class.layout layout2 layout-co18@class.txt-list txt-list-row5@tag.li!0",
+      "bookUrl": "a@href##$##,{'webView': true}",
+      "checkKeyWord": "我的",
+      "coverUrl": "a.0@href##.+\\D((\\d+)\\d{3})\\D##http://www.zhuishu.la/files/article/image/$2/$1/$1s.jpg###",
+      "kind": ".s1@text##\\[(.*)\\]##$1",
+      "lastChapter": ".s3@a.0@text",
+      "name": ".s2@a.0@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.section-list fix.1@tag.li",
+      "chapterName": "a.0@text",
+      "chapterUrl": "a.0@href##$##,{'webView': true}",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/ar.php?keyWord={{key}},{'webView':true}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "笔趣中文/爱笔楼",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.ibiquzw.org",
+    "bookUrlPattern": "",
+    "customOrder": 16,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "exploreUrl": "全部::/xclass/0/{{page}}.html\n玄幻奇幻::/xclass/1/{{page}}.html\n修真仙侠::/xclass/2/{{page}}.html\n都市青春::/xclass/3/{{page}}.html\n历史军事::/xclass/4/{{page}}.html\n网游竞技::/xclass/5/{{page}}.html\n科幻灵异::/xclass/6/{{page}}.html\n其它::/xclass/7/{{page}}.html\n全本::/quanben0_{{page}}.html\n其它::/quanben7_{{page}}.html\n玄幻奇幻::/quanben1_{{page}}.html\n修真仙侠::/quanben2_{{page}}.html\n都市青春::/quanben3_{{page}}.html\n历史军事::/quanben4_{{page}}.html\n网游竞技::/quanben5_{{page}}.html\n科幻灵异::/quanben6_{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1713512769928,
+    "respondTime": 181043,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "id.content@html##.*无广告！|章节错误.*",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##{{try{chapter.title}catch(e){\"\"} }}|\n\\(第\\d+.+页\\)"
+    },
+    "ruleExplore": {
+      "author": "p.author@text",
+      "bookList": ".hot_sale",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": "p.-1@text##简介：",
+      "kind": ".score@text",
+      "name": "p.title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4 > a.0@text",
+      "bookList": "class.novelslist2@tag.ul@tag.li!0",
+      "bookUrl": ".s2 > a.0@href",
+      "checkKeyWord": "我的",
+      "kind": "",
+      "lastChapter": ".s3 > a.0@text",
+      "name": ".s2 > a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "dt:nth-of-type(2) ~ DD",
+      "chapterName": "a.0@text",
+      "chapterUrl": "a.0@href"
+    },
+    "searchUrl": "/search.html?name={{key}}",
+    "weight": 0
+  }
+]
