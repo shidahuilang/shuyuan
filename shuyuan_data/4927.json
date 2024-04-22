@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "HINOTORI改：添加请求头，修复乱码",
+    "bookSourceGroup": "",
+    "bookSourceName": "🎉 键盘小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.janpn.info",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/xuanhuanqihuan/list-1-{{page}}.html\r\n修真::/wuxiaxiuzhen/list-2-{{page}}.html\r\n都市::/xiandaidushi/list-3-{{page}}.html\r\n军史::/lishijunshi/list-4-{{page}}.html\r\n网游::/youxijingji/list-5-{{page}}.html\r\n科幻::/kehuanlingyi/list-6-{{page}}.html\r\n言情::/nvshengyanqing/list-7-{{page}}.html\r\n其他::/qitaleixing/list-8-{{page}}.html",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; PAHM00 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": 1713773162164,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.col-md-12@tag.p.0@text##by|\\s著",
+      "coverUrl": "",
+      "intro": "//*[@name='description']/@content",
+      "kind": "class.col-md-12@tag.p.1@text##更新时间：",
+      "name": "class.breadcrumb@textNodes##>",
+      "tocUrl": "class.btn btn-primary@href"
+    },
+    "ruleContent": {
+      "content": "id.htmlContent@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.list@a",
+      "bookUrl": "a@href",
+      "lastChapter": "class.glyphicon glyphicon-bullhorn@text",
+      "name": "a@title"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.shop-info!0:2@text##\\[.*$",
+      "bookList": "class.list@a",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "lastChapter": "class.glyphicon glyphicon-bullhorn@text",
+      "name": "a@title"
+    },
+    "ruleToc": {
+      "chapterList": "class.panel-body panel-chapterlist@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "http://www.janpn.info/search.php?q={{key}}",
+    "weight": 0
+  }
+]
