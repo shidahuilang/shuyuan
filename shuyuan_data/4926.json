@@ -9,8 +9,8 @@
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
-    "exploreUrl": "玄幻::/sort/1_{{page}}/\n武侠::/sort/2_{{page}}/\n都市::/sort/3_{{page}}/\n历史::/sort/4_{{page}}/\n科幻::/sort/5_{{page}}/\n游戏::/sort/6_{{page}}/\n女生::/sort/9_{{page}}/\n其他::/sort/10_{{page}}/\n热门::/rank/allvisit/\n",
-    "lastUpdateTime": 1713756844263,
+    "exploreUrl": "玄幻::/sort/1_{{page}}/\n武侠::/sort/2_{{page}}/\n都市::/sort/3_{{page}}/\n历史::/sort/4_{{page}}/\n科幻::/sort/5_{{page}}/\n游戏::/sort/6_{{page}}/\n女生::/sort/9_{{page}}/\n其他::/sort/10_{{page}}/\n热门::/rank/allvisit/]",
+    "lastUpdateTime": 1713936290086,
     "respondTime": 180000,
     "ruleBookInfo": {
       "author": "id.info@p@a@text",
@@ -46,7 +46,7 @@
       "wordCount": "class.btm@em.0@text"
     },
     "ruleToc": {
-      "chapterList": "<js>\nhtml=result.replace(/最新章节.+目录章节/g,'');\nresult=html;\n</js>\nid.list@a",
+      "chapterList": "<js>\nhtml=result.replace(/最新章节<\\/dt(.|\\r|\\n)*目录章节/g,\"\");\nresult=html;\n</js>\nid.list@dl@a",
       "chapterName": "@text",
       "chapterUrl": "@href"
     },

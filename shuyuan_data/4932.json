@@ -1,0 +1,34 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "僕",
+      "bookList": "class.NewBox_borderSize-bb-m__wEqyb",
+      "name": "class. Gap_size-4s__F67Nf Gap_direction-x__RsHk8@text",
+      "author": "class.WorkTitle_workLabelAuthor__Kxy5E@children@text",
+      "bookUrl": "class. Gap_size-4s__F67Nf Gap_direction-x__RsHk8@tag.a@href",
+      "kind": "class.Meta_metaTruncatedItem__X_PoQ@text",
+      "wordCount": "class.WorkMetaBasicInformation_bg-none__s41TO@children@children@class.Meta_metaItemWrapper__JzV2P.3@children@text"
+    },
+    "ruleBookInfo": {
+      "intro": "class.CollapseTextWithKakuyomuLinks_lineHeight-m__sr9Tu@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.WorkTocSection_link__ocg9K",
+      "chapterName": "class.WorkTocSection_title__H2007@text##《　|　》",
+      "chapterUrl": "tag.a@href",
+      "isVolume": ""
+    },
+    "ruleContent": {
+      "content": "class.widget-episode-inner@tag.p@text"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceUrl": "https://kakuyomu.jp/",
+    "bookSourceType": 0,
+    "bookSourceName": "カクヨム",
+    "searchUrl": "/search?q={{key}}&page={{page}}",
+    "enabled": true,
+    "bookSourceGroup": "日文生肉网站",
+    "bookSourceComment": "使用记得开魔法。目前只支持搜索书名，最好直接去搜全名。只搜部分的话会容易被海量无关结果淹没。。。\n还待添加的功能：支持卷名、支持简介分段、搜索结果二次筛选、搜索为空时给予反馈"
+  }
+]
