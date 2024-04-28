@@ -109,6 +109,41 @@
     "weight": 0
   },
   {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": "class.listbox@class.clearfix",
+      "name": "id.CListTitle.0@tag.a@tag.b@text",
+      "bookUrl": "id.CListTitle.0@tag.a@href",
+      "author": "",
+      "kind": "id.CListTitle.0@tag.a.2@text",
+      "lastChapter": "id.CListTitle.0@tag.a.3@text",
+      "intro": "id.CListText@text"
+    },
+    "ruleBookInfo": {
+      "name": "p:nth-child(2) > a@text",
+      "author": "class.info@p.0@span@text##文 / ",
+      "intro": "class.intro@text## 飞速中文网.*",
+      "lastChapter": "p:nth-child(10) > a@text",
+      "coverUrl": "a > img@src"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapterlist@class.clearfix@tag.li",
+      "chapterName": "tag.a.0@text",
+      "chapterUrl": "tag.a.0@href"
+    },
+    "ruleContent": {
+      "content": "id.content@html##飞速中文.com 中文域名一键直达|最快更新.*|手机请访问.*",
+      "nextContentUrl": ""
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceType": 0,
+    "bookSourceName": "飞速中文",
+    "searchUrl": "/book/search.aspx?SearchKey={{key}}&SearchClass=1&SeaButton=,{\"charset\": \"gbk\"}",
+    "bookSourceUrl": "https://feibzw.com",
+    "enabled": true
+  },
+  {
     "bookSourceName": "83中文",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.83zws.com",
@@ -151,59 +186,101 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "",
-    "bookSourceGroup": "",
-    "bookSourceName": "爱看书/零点小说",
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写0424",
+    "bookSourceName": "勤书网",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.lingdxsw.org",
-    "bookUrlPattern": "",
-    "customOrder": 49,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": false,
-    "exploreUrl": "玄幻 ::/list/1-{{page}}.html\n仙侠 ::/list/2-{{page}}.html\n言情 ::/list/3-{{page}}.html\n历史 ::/list/4-{{page}}.html\n网游 ::/list/5-{{page}}.html\n科幻 ::/list/6-{{page}}.html\n恐怖 ::/list/7-{{page}}.html\n其他 ::/list/8-{{page}}.html\n总排行榜::/book/allvisit-{{page}}.html\n本周排行榜::/book/weekvisit-{{page}}.html\n当月排行榜::/book/monthvisit-{{page}}.html\n总推荐榜::/book/allvote-{{page}}.html\n本周推荐榜::/book/weekvote-{{page}}.html\n当月推荐榜::/book/monthvote-{{page}}.html",
-    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-    "lastUpdateTime": 1713780666816,
-    "respondTime": 180022,
+    "bookSourceUrl": "http://member.iqinshu.cn/##zhbyjm7783",
+    "customOrder": 0,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"探秘\",\"url\":\"/culture\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"悬疑\",\"url\":\"/suspense\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/live\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"书库\",\"url\":\"/book/index?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1714095263062,
+    "respondTime": 180000,
     "ruleBookInfo": {
-      "author": "@get:{a}",
-      "coverUrl": "@get:{c}",
-      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
-      "intro": "@get:{i}",
-      "kind": "@get:{k}",
-      "lastChapter": "@get:{l}",
-      "name": "@get:{n}",
-      "wordCount": ".blue:nth-child(3)"
+      "author": "h3@text",
+      "coverUrl": "img@src",
+      "init": ".cons_cont",
+      "intro": "class.zp_p interceptString@text",
+      "kind": ".lzz@text&&text.点击：@p@text",
+      "name": "h2@text",
+      "tocUrl": "text.目录@a@href",
+      "wordCount": "text.字数：@p@text##字数："
     },
     "ruleContent": {
-      "content": "id.htmlContent@html##本章未完，点击下一页继续阅读|(.*/.*)",
-      "nextContentUrl": "text.下一页@href"
+      "content": "id.d_kzFont@p@text"
     },
     "ruleExplore": {
-      "author": "a.2@text",
-      "bookList": ".media||.article li",
+      "author": ".book-author@text||dl@a.1@text##作者：",
+      "bookList": ".content-wrap@ul@li||.diary@dl",
       "bookUrl": "a@href",
-      "coverUrl": "img@src",
-      "kind": "0",
-      "name": "h4@text||a@text"
+      "coverUrl": "img@data-original",
+      "intro": ".book-info@text",
+      "lastChapter": "dl@a.-1@text##最新：",
+      "name": ".book-name@text||dl@a.0@text",
+      "wordCount": "text.字数：@span@text##字数："
     },
     "ruleReview": [],
     "ruleSearch": {
-      "author": "tag.li.2@text",
-      "bookList": "class.mySearch@ul",
-      "bookUrl": "tag.li.0@tag.a@href",
-      "checkKeyWord": "我的",
-      "kind": "",
-      "lastChapter": "tag.li.1@tag.a@text",
-      "name": "tag.li.0@tag.a@text",
-      "wordCount": "tag.li.3@text##大小："
+      "author": ".s_name@text##作者：",
+      "bookList": "class.s_dl clearfix",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": ".col898989@text",
+      "kind": ".s_gxin@text",
+      "name": ".cola21812@text"
     },
     "ruleToc": {
-      "chapterList": "class.panel-body panel-chapterlist.1@dd",
-      "chapterName": "a.0@text",
-      "chapterUrl": "a.0@href"
+      "chapterList": ".read_cont@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "b[style=\"color:#ae2a22;\"]@all",
+      "isVolume": ""
     },
-    "searchUrl": "/modules/article/search.php?searchkey={{key}},{\"charset\": \"gbk\"}",
+    "searchUrl": "http://member.iqinshu.cn/book/search?s={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "随便吧",
+    "bookSourceName": "广安中文网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.tianshuwx.org",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1713971954914,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@class.s1@a@text",
+      "coverUrl": "id.fmimg@img@src",
+      "downloadUrls": "@js:\n//java.log(baseUrl);\nvar id=baseUrl.match(/\\/\\d+/); \nresult=\"http://down.tianshuwx.org/txtdown\"+id+\".html\";",
+      "intro": "id.intro@text",
+      "lastChapter": "id.info@class.s2@a@text",
+      "name": "id.info@h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.content@html",
+      "replaceRegex": "##更多精彩小说请.+|广安中文.+|最新网址.+|\\-{8,}"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.s4@text",
+      "bookList": ".novelslist3 > ul > li:nth-child(n+2)",
+      "bookUrl": "class.s1.1@a@href",
+      "kind": "{{@@class.s1.0@text##\\[(.+)\\]##$1}}",
+      "lastChapter": "class.s3@text",
+      "name": "class.s2@text",
+      "wordCount": "class.s7@text##连载状态"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nhtml=result.replace(/最新章节<\\/dt(.|\\r|\\n)*正文<\\/dt>/g,\"\");\nresult=html;\n</js>\nid.list@dl@dd",
+      "chapterName": "@text",
+      "chapterUrl": "@a@href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n\"method\": \"POST\",\n\"body\": \"keyword={{key}}\"}",
     "weight": 0
   },
   {
@@ -261,123 +338,40 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "HINOTORI改：添加请求头，修复乱码",
-    "bookSourceGroup": "",
-    "bookSourceName": "🎉 键盘小说",
-    "bookSourceType": 0,
-    "bookSourceUrl": "http://www.janpn.info",
-    "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "玄幻::/xuanhuanqihuan/list-1-{{page}}.html\r\n修真::/wuxiaxiuzhen/list-2-{{page}}.html\r\n都市::/xiandaidushi/list-3-{{page}}.html\r\n军史::/lishijunshi/list-4-{{page}}.html\r\n网游::/youxijingji/list-5-{{page}}.html\r\n科幻::/kehuanlingyi/list-6-{{page}}.html\r\n言情::/nvshengyanqing/list-7-{{page}}.html\r\n其他::/qitaleixing/list-8-{{page}}.html",
-    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; PAHM00 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36\"\n}",
-    "lastUpdateTime": 1713773162164,
-    "respondTime": 180000,
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": "id.alist@id.alistbox",
+      "name": "class.title@h2@a.0@text",
+      "bookUrl": "class.title@h2@a.0@href",
+      "author": "class.title@span.0@text",
+      "lastChapter": "class.sys@li@a.0@text",
+      "intro": "class.intro.0@text",
+      "coverUrl": "class.pic@a.0@img@src"
+    },
     "ruleBookInfo": {
-      "author": "class.col-md-12@tag.p.0@text##by|\\s著",
-      "coverUrl": "",
-      "intro": "//*[@name='description']/@content",
-      "kind": "class.col-md-12@tag.p.1@text##更新时间：",
-      "name": "class.breadcrumb@textNodes##>",
-      "tocUrl": "class.btn btn-primary@href"
+      "name": "h1@text",
+      "author": "p:nth-child(2) > a@text",
+      "kind": ".con_top > a:nth-child(2)@text",
+      "lastChapter": "p:nth-child(6) > a@text",
+      "intro": ".introtxt@text##简介:",
+      "coverUrl": "img@src"
+    },
+    "ruleToc": {
+      "chapterList": "dt:nth-of-type(2) ~ DD",
+      "chapterName": "a.0@text",
+      "chapterUrl": "a.0@href"
     },
     "ruleContent": {
-      "content": "id.htmlContent@html"
-    },
-    "ruleExplore": {
-      "author": "",
-      "bookList": "class.list@a",
-      "bookUrl": "a@href",
-      "lastChapter": "class.glyphicon glyphicon-bullhorn@text",
-      "name": "a@title"
+      "content": "id.content@html##投推荐票.*"
     },
     "ruleReview": [],
-    "ruleSearch": {
-      "author": "class.shop-info!0:2@text##\\[.*$",
-      "bookList": "class.list@a",
-      "bookUrl": "a@href",
-      "coverUrl": "",
-      "lastChapter": "class.glyphicon glyphicon-bullhorn@text",
-      "name": "a@title"
-    },
-    "ruleToc": {
-      "chapterList": "class.panel-body panel-chapterlist@li",
-      "chapterName": "a@text",
-      "chapterUrl": "a@href"
-    },
-    "searchUrl": "http://www.janpn.info/search.php?q={{key}}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "如不能加载请尝试删除书籍，重新搜索添加",
-    "bookSourceGroup": "⑦📚  出版",
-    "bookSourceName": "📚豆瓣阅读",
+    "ruleExplore": [],
     "bookSourceType": 0,
-    "bookSourceUrl": "https://read.douban.com",
-    "customOrder": 86,
+    "bookSourceUrl": "https://www.25zw.la",
+    "bookSourceName": "25中文网",
+    "searchUrl": "/search.html,{\n\"method\": \"post\",\n\"body\": \"searchkey={{key}}&searchtype=searchtype&Submit=\"}",
     "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "[{'title':'言情小说','url':'https://read.douban.com/kind/501?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'女性小说','url':'https://read.douban.com/kind/532?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'悬疑小说','url':'https://read.douban.com/kind/508?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'科幻小说','url':'https://read.douban.com/kind/505?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'幻想小说','url':'https://read.douban.com/kind/506?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'文艺小说','url':'https://read.douban.com/kind/503?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'历史小说','url':'https://read.douban.com/kind/510?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'非小说','url':'https://read.douban.com/kind/516?start={{(page-1)*20}}&sort=hot&promotion_only=False&min_price=None&max_price=None&works_type=1,{\\'headers\\':\\'{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 8.1.0; JKM-AL00b Build/HUAWEIJKM-AL00b; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36\"}\\'}','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'生活悬疑','url':'https://read.douban.com/j/tag/生活悬疑?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'都市犯罪','url':'https://read.douban.com/j/tag/都市犯罪?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'社会事件','url':'https://read.douban.com/j/tag/社会事件?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'私家侦探','url':'https://read.douban.com/j/tag/私家侦探?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'职业女性','url':'https://read.douban.com/j/tag/职业女性?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'单身女性','url':'https://read.douban.com/j/tag/单身女性?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'女性成长','url':'https://read.douban.com/j/tag/女性成长?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'家庭故事','url':'https://read.douban.com/j/tag/家庭故事?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'时空穿越','url':'https://read.douban.com/j/tag/时空穿越?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'都市奇幻','url':'https://read.douban.com/j/tag/都市奇幻?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'脑洞故事','url':'https://read.douban.com/j/tag/脑洞故事?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'近未来','url':'https://read.douban.com/j/tag/近未来?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'青春成长','url':'https://read.douban.com/j/tag/青春成长?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'都市冷暖','url':'https://read.douban.com/j/tag/都市冷暖?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'漂泊故事','url':'https://read.douban.com/j/tag/漂泊故事?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'时代记忆','url':'https://read.douban.com/j/tag/时代记忆?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'武侠小说','url':'https://read.douban.com/j/tag/武侠小说?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'历史纪实','url':'https://read.douban.com/j/tag/历史纪实?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'历史言情','url':'https://read.douban.com/j/tag/历史言情?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}},\n{'title':'历史传奇','url':'https://read.douban.com/j/tag/历史传奇?start={{(page-1)*10}}&limit={{(page)*10}}&sort=top','style':{layout_flexGrow: 1,layout_flexBasisPercent:0.2}}]",
-    "header": "",
-    "lastUpdateTime": 1712108623937,
-    "loginCheckJs": "",
-    "loginUi": "",
-    "loginUrl": "https://read.douban.com/app",
-    "respondTime": 203289,
-    "ruleBookInfo": {
-      "init": "",
-      "kind": "",
-      "lastChapter": "class.current-price-count@text##^##全本定价:",
-      "name": "<js>\nr = result.match(/Ark.CSRF_TOKEN = '([^']+)'/)[1];\njava.put(\"X-CSRF-TOKEN\",r);\n\"\"\n</js>",
-      "tocUrl": "@js:id=baseUrl.match(/(\\d+)/)[1];\nif(baseUrl.match(/ebook/)){result=baseUrl}else{\nresult=\"https://read.douban.com/j/column_v2/\"+id+\"/chapters?start=0&limit=10000&latestFirst=0\";}"
-    },
-    "ruleContent": {
-      "content": "<js>\nc = cookie.getKey(\"https://read.douban.com\",\"dbcl2\")\n\ncok = String(/\\d+:/.test(c)?c.match(/(\\d+):/)[1]:\"anonymous\");\n\nt = java.getString(\"$.data\");\n\n\nscript = `<script>\nt = \"${t}\";\nfunction name(t){\n  const e = Uint8Array.from(window.atob(t), (t=>t.charCodeAt(0)))\n    , i = e.buffer\n    , u = e.length - 16 - 13\n    , d = new Uint8Array(i,u,16)\n    , p = new Uint8Array(i,0,u)\n    , f = {};\n    f.name = \"AES-CBC\",\n    f[\"iv\"] = d,\n  c = new TextEncoder().encode(\"${cok}\");\n  return window[\"crypto\"][\"subtle\"][\"digest\"](\"SHA-256\", c)\n  .then(t=>window[\"crypto\"][\"subtle\"][\"importKey\"](\"raw\", t, \"AES-CBC\", !0, [\"decrypt\"])\n  .then(t=>window[\"crypto\"][\"subtle\"][\"decrypt\"](f, t, p))\n  \n  .then(t=>JSON.parse((new TextDecoder).decode(t)))\n .then(t=>t.posts[0].contents));\n}\n(async function () {\n  result = await name(t)\n  })();\n</script>`;\nresult = java.webView(script,baseUrl,\"result\");\nresult = result.match(/\"(?:content|text)\":\"([\\s\\S]*?)\",\"/g).join(\"\\n\");\n</js>",
-      "imageStyle": "",
-      "nextContentUrl": "",
-      "payAction": "",
-      "replaceRegex": "##\"(?:content|text)\":\"\",\"|\"(?:content|text)\":\"|\",\"|\"\\},\"id\":(\\d+).*?,\".*",
-      "title": "",
-      "webJs": ""
-    },
-    "ruleExplore": {
-      "author": "class.author@text||$.author",
-      "bookList": "class.item||$.[?(@.alias_id)]",
-      "bookUrl": "href||https://read.douban.com/column/{$.alias_id}/",
-      "coverUrl": "img@src||$.cover",
-      "intro": "class.intro@text||$.abstract",
-      "kind": "{{@@class.tag@text}},{{@@class.score@text}},{{@@class.amount}},{{@@class.price@text}},{{$.kind&&$.category&&$.tags[*].tag&&$.kinds[*].shortName&&$.highlightTags[*].name}}##(\\d+\\.\\d{2})##$1元💰",
-      "name": "class.title@html||$.title##<span class=\"tag\">.*?</span>|<.*?>"
-    },
-    "ruleSearch": {
-      "author": "$.author",
-      "bookList": "<js>\nlist=JSON.parse(result);\nJson=[]\nfor(i in list){\nif(list[i].title.indexOf(java.get('key'))>-1){\nJson.push(list[i])\n}\n}\nresult=JSON.stringify(Json)\n</js>\n$.[*]",
-      "bookUrl": "$.reader_uri||https://read.douban.com/ebook/{$.id}/",
-      "checkKeyWord": "--https://read.douban.com/j/article_v2/get_reader_data,{\"method\":\"POST\",\"body\":\"aid=318723205\"}--https://read.douban.com/j/article_v2/get_reader_data,{\"method\":\"POST\",\"body\":\"aid=437666356\",\"headers\":{\"referer\":\"https://read.douban.com/reader/column/64487111/chapter/437666356/\",\"X-CSRF-TOKEN\":\".eJwFwQkBACAIBLAuJgA9QOIgT_8IbquhMmi3inQRRz3RyNPgAfu-kgSLW2F0xCPQb-tw4joO5fpX_hGn.ZgytIQ.4jtPZ_6NCwgPqpPXjGdgxmD677A\"}}",
-      "coverUrl": "$.cover",
-      "intro": "$.abstract",
-      "kind": "$.tags[*].tag&&$.kind&&$.category",
-      "lastChapter": "$.fixed_price&&$.price@js:\nif(result){\na=result.match(/(.*?)\\n(.*)/);\nb=a[1]/100?a[1]/100:0;\nc=a[2]/100?a[2]/100:0;\nresult=\"原价:\"+b+\"元\"+\"💡特价:\"+c+\"元\"}",
-      "name": "$.title",
-      "wordCount": ""
-    },
-    "ruleToc": {
-      "chapterList": "class.story-item.0@a||$.list[*]",
-      "chapterName": "text||$.title",
-      "chapterUrl": "<js>\naid = \"{{$.id}}\"==\"\"?\"{{@@href}}\".match(/ebook\\/(\\d+)/)[1]:\"{{$.id}}\";\nurl = \"https://read.douban.com/j/article_v2/get_reader_data\";\nbody = \"aid=\"+aid;\nresult = url +\",\"+ JSON.stringify({\n\t\"method\":\"POST\",\n\t\"body\":String(body),\n\t\"headers\":{\n\t\t\"referer\":\"https://read.douban.com/reader/column/{{baseUrl.match(/\\/(\\d+)\\//)[1]}}/chapter/\"+aid+\"/\",\n\t\t\"X-CSRF-TOKEN\":java.get(\"X-CSRF-TOKEN\")\n\t\t}\n\t});\n</js>",
-      "formatJs": "",
-      "isPay": "",
-      "isVip": "$.price",
-      "isVolume": "",
-      "nextTocUrl": "",
-      "preUpdateJs": "",
-      "updateTime": ""
-    },
-    "searchUrl": "https://read.douban.com/j/search?start={{(page-1)*10}}&limit=10&query={{key}}\n@js:java.put('key',key);result",
-    "variableComment": "",
-    "weight": 0
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
   },
   {
     "ruleSearch": {

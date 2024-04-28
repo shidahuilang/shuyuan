@@ -1,0 +1,38 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": "id.alist@id.alistbox",
+      "name": "class.title@h2@a.0@text",
+      "bookUrl": "class.title@h2@a.0@href",
+      "author": "class.title@span.0@text",
+      "lastChapter": "class.sys@li@a.0@text",
+      "intro": "class.intro.0@text",
+      "coverUrl": "class.pic@a.0@img@src"
+    },
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "author": "p:nth-child(2) > a@text",
+      "kind": ".con_top > a:nth-child(2)@text",
+      "lastChapter": "p:nth-child(6) > a@text",
+      "intro": ".introtxt@text##简介:",
+      "coverUrl": "img@src"
+    },
+    "ruleToc": {
+      "chapterList": "dt:nth-of-type(2) ~ DD",
+      "chapterName": "a.0@text",
+      "chapterUrl": "a.0@href"
+    },
+    "ruleContent": {
+      "content": "id.content@html##投推荐票.*"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.25zw.la",
+    "bookSourceName": "25中文网",
+    "searchUrl": "/search.html,{\n\"method\": \"post\",\n\"body\": \"searchkey={{key}}&searchtype=searchtype&Submit=\"}",
+    "enabled": true,
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+  }
+]
