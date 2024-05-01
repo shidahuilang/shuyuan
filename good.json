@@ -10736,6 +10736,52 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "",
+    "bookSourceName": "86读书🎃",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.86dushu.com#🎃",
+    "customOrder": 329,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "言情小说::http://www.86dushu.com/yanqing/{{page}}.html\n玄幻小说::http://www.86dushu.com/xuanhuan/{{page}}.html\n武侠小说::http://www.86dushu.com/wuxia/{{page}}.html\n历史小说::http://www.86dushu.com/lishi/{{page}}.html\n网游竞技::http://www.86dushu.com/wangyou/{{page}}.html\n科幻小说::http://www.86dushu.com/kehuan/{{page}}.html\n恐怖小说::http://www.86dushu.com/kongbu/{{page}}.html\n穿越小说::http://www.86dushu.com/chuanyue/{{page}}.html\n文学名著::http://www.86dushu.com/wenxue/{{page}}.html\n激情小说::http://www.86dushu.com/jiqing/{{page}}.html\n其他电子书::http://www.86dushu.com/qita/{{page}}.html",
+    "lastUpdateTime": 0,
+    "respondTime": 5356,
+    "ruleBookInfo": {
+      "coverUrl": "class.left@tag.img@src",
+      "intro": "id.con_one_1@text",
+      "name": "class.left@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "class.chapter@textNodes"
+    },
+    "ruleExplore": {
+      "bookList": "class.list@class.listable",
+      "bookUrl": "class.dysx1@tag.a@href",
+      "coverUrl": "class.listable-l@tag.img@src",
+      "name": "class.dysx1@tag.a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": "class.list@tag.table",
+      "bookUrl": "class.name@tag.a@href",
+      "coverUrl": "class.cover@tag.img@src",
+      "intro": "class.book@class.intro@text",
+      "name": "class.name@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "http://www.86dushu.com/search.php?keyword={{key}}&submit=,{\n\"charset\":\"gbk\"\n}",
+    "weight": 0,
+    "bookUrlPattern": "",
+    "header": "",
+    "loginUrl": ""
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
     "bookSourceName": "绾书文学🎃#2",
     "bookSourceType": 0,
     "bookSourceUrl": "http://app.wanshu.com#🎃",
@@ -11625,65 +11671,6 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "",
-    "bookSourceName": "香书小说🎃",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://www.ibiquges.info#🎃",
-    "customOrder": 354,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "[{\"title\":\"玄幻小说\",\"url\":\"/fenlei/1_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"修真小说\",\"url\":\"/fenlei/2_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市小说\",\"url\":\"/fenlei/3_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"穿越小说\",\"url\":\"/fenlei/4_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游小说\",\"url\":\"/fenlei/5_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/fenlei/6_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
-    "lastUpdateTime": 0,
-    "respondTime": 5672,
-    "ruleBookInfo": {
-      "author": "//meta[@property='og:novel:author']/@content",
-      "coverUrl": "//meta[@property='og:image']/@content",
-      "intro": "//meta[@property='og:description']/@content",
-      "kind": "[property~=status|category|update_time]@content&&id.info@p.2@text##.*：",
-      "lastChapter": "id.info.0@tag.a.-1@text",
-      "name": "//meta[@property='og:novel:book_name']/@content"
-    },
-    "ruleContent": {
-      "content": "id.content.0@textNodes",
-      "replaceRegex": "##.*第.*章.*\\s"
-    },
-    "ruleExplore": {
-      "author": "class.s5.0@text",
-      "bookList": "class.l@li",
-      "bookUrl": "class.s2.0@tag.a.0@href",
-      "coverUrl": "",
-      "intro": "",
-      "kind": "",
-      "lastChapter": "class.s3.0@tag.a.0@text",
-      "name": "class.s2.0@tag.a.0@text"
-    },
-    "ruleReview": {},
-    "ruleSearch": {
-      "author": "tag.td.2@text",
-      "bookList": "tag.tbody.0@tag.tr.!0",
-      "bookUrl": "tag.td.0@tag.a.0@href",
-      "coverUrl": "tag.td.0@tag.a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\nsource.bookSourceUrl + 'files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
-      "kind": "",
-      "lastChapter": "tag.td.1@text",
-      "name": "tag.td.0@text"
-    },
-    "ruleToc": {
-      "chapterList": "id.list.0@a",
-      "chapterName": "text",
-      "chapterUrl": "href"
-    },
-    "searchUrl": "/modules/article/waps.php?searchkey={{key}}",
-    "weight": 0,
-    "bookUrlPattern": "",
-    "header": "",
-    "loginUrl": "",
-    "loginUi": "",
-    "concurrentRate": "",
-    "loginCheckJs": ""
-  },
-  {
-    "bookSourceComment": "",
-    "bookSourceGroup": "",
     "bookSourceName": "云读小说网🎃",
     "bookSourceType": 0,
     "bookSourceUrl": "https://m.yundu9.com#🎃",
@@ -11837,68 +11824,6 @@
     "searchUrl": "https://so.html5.qq.com/ajax/real/search_result?tabId=360&q={{key}}",
     "weight": 100,
     "header": "@js:\nJSON.stringify({\n    \"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 13; zh-cn; V2183A Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 MQQBrowser/13.4 Mobile Safari/537.36 COVC/046223\",\n    \"Referer\": source.bookSourceUrl,\n    \"Q-GUID\": \"0ee63838b72eb075f63e93ae0bc288cb\",\n    \"QIMEI36\": \"8ff310843a87a71101958f5610001e316a11\"\n})"
-  },
-  {
-    "bookSourceComment": "",
-    "bookSourceGroup": "",
-    "bookSourceName": "Lofter🎃",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://newsmiss.lofter.com#🎃",
-    "customOrder": 359,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "♧                              标  签                             ♧::\n \n B L 原 创 ::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=耽美原创&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n B L 小 说 ::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=耽美小说&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n B L 漫 画 ::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=耽美漫画&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n 19天 ::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=19天&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n 漫画 ::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=漫画&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n 插画 :::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=插画&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n 同人 ::https://api.lofter.com/oldapi/tagPosts.api?product=lofter-android-6.13.0&method=newTagSearch&offset={{(page-1) *22}}&limit=22&firstpermalink=null&tag=同人&type=new,{\"method\": \"POST\",\"body\":\"null\"}\n\n\n♧                              用  户                             ♧::\n妙殊::http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\":\"POST\",\"body\":\"supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain=wisely1229.lofter.com&offset={{(page-1)*20}}&method=getPostLists&postdigestnew=1&returnData=1&limit=18&checkpwd=1&needgetpoststat=1\"}\n\n北望司::http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\":\"POST\",\"body\":\"supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain=futaningmengcha991.lofter.com&offset={{(page-1)*18}}&method=getPostLists&postdigestnew=1&returnData=1&limit=18&checkpwd=1&needgetpoststat=1\"}\n\n下饭吃::http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\":\"POST\",\"body\":\"supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain=pinkyee.lofter.com&offset={{(page-1)*18}}&method=getPostLists&postdigestnew=1&returnData=1&limit=18&checkpwd=1&needgetpoststat=1\"}\n\n钉砸::http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\":\"POST\",\"body\":\"supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain=dingzi1007.lofter.com&offset={{(page-1)*18}}&method=getPostLists&postdigestnew=1&returnData=1&limit=18&checkpwd=1&needgetpoststat=1\"}",
-    "lastUpdateTime": 0,
-    "respondTime": 5810,
-    "ruleBookInfo": {
-      "author": "$.response.blogInfo.blogNickName||$.response.posts[0].post.blogInfo.blogNickName",
-      "coverUrl": "$.response.collection.coverUrl@put:{page:$.response.blogInfo.blogStat.publicPostCount}",
-      "intro": "@js:\na='{{$.response.collection.description}}';\nb='{{$.response.blogInfo.blogNickName}}';\nc=java.getString('$.response.posts[0].post.digest',false);\nif(!c){\nresult=a+'\\n'+String(book.intro).replace(/@.*?::/,b?b+'::':book.author+'::');\n}else{result=c}",
-      "name": "$.response.collection.name",
-      "tocUrl": "$.response.blogsetting.blogId\n@js:\nif(result){\nid='{{$.response.blogsetting.blogId}}';\nlink='{{$.response.blogLink}}';\nurl='http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,';\npost={\"method\": \"POST\",\n\"body\": \"targetblogid=\"+id+\"&supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain=\"+link+\"&offset=0&method=getPostLists&postdigestnew=1&returnData=1&limit=50&checkpwd=1&needgetpoststat=1\"}\nresult=url+JSON.stringify(post);\njava.put('url',result)}else if(baseUrl.match(/detail/)){\nresult='{{$.response.posts[0].post.blogPageUrl}}'\n}",
-      "canReName": "1"
-    },
-    "ruleContent": {
-      "content": "@css:.g-mnc,div[class~=cont],.main\n.box,.ct@html##(.*?class=\"nctitle\">|<!-- Pager -->)[\\s\\S]+|(?<=\\<p\\>)(\\s|&nbsp;)*",
-      "replaceRegex": "",
-      "imageStyle": "full",
-      "sourceRegex": ""
-    },
-    "ruleExplore": {
-      "author": "$.post.blogInfo.blogNickName",
-      "bookList": "<js>result.replace(/null/g,'')</js>\n$.response.items[*]||$.response.posts[*]",
-      "bookUrl": "@js:url='{{$.post.blogPageUrl}}';\nid='{{$.post.id}}';\nif(url.match(/_blogid_\\d+/)){\nmain=url.match(/(_blogid_.*?)\\//)[1];\nbody=\"blogdomain=\"+main+\"&postid=\"+id;\nresult='https://api.lofter.com/oldapi/post/detail.api?product=lofter-android-6.11.3,{\"method\":\"POST\",\"body\":\"'+String(body)+'\"}';\n}else{result=url}",
-      "coverUrl": "$.post\n@js:if(result.match(/firstImageUrl=\\[\"\",\"\"\\]/)){\nresult=result.match(/bigAvaImg=(.*?),/)?result.match(/bigAvaImg=(.*?),/)[1]:'';}else{\nresult=result.match(/firstImageUrl=\\[\"([^\"]+)\"/)[1]\n}",
-      "intro": "{{$.post.digest}}\n★★★★★★★★★★★★★★★★★★★★\n复制下面的文字，可将用户添加发现或者订阅\n★★★★★★★★★★★★★★★★★★★★\n{{$.post.blogInfo.blogNickName}}::http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\":\"POST\",\"body\":\"targetblogid={{$.post.blogInfo.blogId}}&supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain={{$.post.blogInfo.blogName}}.lofter.com&offset={{'\\{\\{(page-1)*18\\}\\}&method=getPostLists&postdigestnew=1&returnData=1&limit=18&checkpwd=1&needgetpoststat=1\"}'}}",
-      "kind": "$.post.tag",
-      "lastChapter": "$.post.publishTime\n@js:result=java.timeFormat(parseInt(result));\njava.put('time',result)",
-      "name": "$.post.title||$.post.digest||$.post.blogInfo.blogId||$.post.blogPageUrl##</*\\w.*?>"
-    },
-    "ruleReview": {},
-    "ruleSearch": {
-      "author": "$.blogInfo.blogNickName||$.blogName",
-      "bookList": "$.data.posts[*]||$.data.blogs[*]||$.data.collections[*]",
-      "bookUrl": "$.postPageUrl\n@js:\nif(!result){\nif(!'{{$.name}}'){\nid='{{$.blogId}}';\nresult='http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\": \"POST\",\"body\":\"targetblogid='+id+'&method=getBlogInfoDetail&returnData=1&checkpwd=1&needgetpoststat=1\"}'}else{\nblogid='{{$.blogId}}';\nid='{{$.id}}';\nname='{{$.blogName}}';\njava.put('name',name);\nresult='https://api.lofter.com/v1.1/postCollection.api?product=lofter-android-6.11.1,{\"method\": \"POST\",\"body\":\"blogdomain='+name+'.lofter.com&method=getCollectionSimple&offset=0&limit=2000&blogid='+blogid+'&collectionid='+id+'&order=1\"}'\n}}else{result=result};",
-      "coverUrl": "$.firstImageUrl[0]||$.blogInfo.bigAvaImg||$.bigAvaImg||$.coverUrl",
-      "intro": "{{$.digest}}\n★★★★★★★★★★★★★★★★★★★★\n复制下面的文字，可将用户添加发现或者订阅\n★★★★★★★★★★★★★★★★★★★★\n@{{$.blogInfo.blogNickName||$.blogNickName||$.blogName}}::http://api.lofter.com/v2.0/blogHomePage.api?product=lofter-android-6.9.2,{\"method\":\"POST\",\"body\":\"supportposttypes=1%2C2%2C3%2C4%2C5%2C6&blogdomain={{$.blogName||$.blogInfo.blogName}}.lofter.com&offset={{'\\{\\{(page-1)*18\\}\\}&method=getPostLists&postdigestnew=1&returnData=1&limit=18&checkpwd=1&needgetpoststat=1\"}'}}",
-      "kind": "$.tagList||$.tags",
-      "lastChapter": "$.publishTime\n<js>\nif(result){\nresult?result=java.timeFormat(parseInt(result)):'';\njava.put('time',result)}else{\nresult=java.getString('$.posts[0].title||$.posts[0].digest',false)\n}</js>\n##</*\\w+.*?>",
-      "name": "$.title||$.digest||$.blogInfo.blogNiceName||$.blogNickName||$.name##</*\\w.*?>",
-      "wordCount": ""
-    },
-    "ruleToc": {
-      "chapterList": "$..posts[*]||$.response.items[*]\n@js:if(String(result).match(/blogPageUrl/)==null){java.getElements('@@tag.html')}else{result=result}",
-      "chapterName": "$.post.title||$.post.digest||$.post.blogInfo.blogNickName\n<js>if(result){\nresult=result\n}else{result=book.name}\nString(result).replace(/<\\/*\\w.*?>/g,'')\n</js>\n##(^.{1,25})##$1###",
-      "chapterUrl": "$.post.blogPageUrl\n@js:\nif(baseUrl.indexOf('postCollection')>-1){'https://'+java.get('name')+'.lofter.com/post/{{$.post..permalink}}'}else{result=result}",
-      "nextTocUrl": "<js>\npages=java.get('page');\npage=parseInt(pages/50);\nurl=String(java.get('url'));\nlist=[];\nif(page>6){\npage=6\n}else{page=page}\nfor(i=1;i<=page;i++){\nlist.push(url.replace(/offset=\\d+/,'offset='+(parseInt(i)*50)))\n}\nlist\n</js>",
-      "updateTime": "$.post.publishTime\n@js:result?java.timeFormat(parseInt(result)):java.get('time')"
-    },
-    "searchUrl": "@js:\nif(key.match(/@/)){\nresult='https://api.lofter.com/newsearch/blog.json?key='+encodeURI(key.match(/^@(.*)/)[1])+'&offset={\\{(page-1) *20}\\}'}else if(key.indexOf('#')==0){\nresult='https://api.lofter.com/newsearch/collection.json?key='+encodeURI(key.match(/^#(.*)/)[1])+'&offset={\\{(page-1) *20}\\}'\n}else{\nresult='https://api.lofter.com/newsearch/post.json?key='+key+'&offset={\\{(page-1) *20}\\}&limit=20'\n}",
-    "weight": 0,
-    "bookUrlPattern": "",
-    "header": "{\n\"Content-Type\": \"application/x-www-form-urlencoded;charset=utf-8\"}",
-    "loginUrl": "https://newsmiss.lofter.com"
   },
   {
     "bookSourceComment": "",
@@ -14681,6 +14606,55 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "",
+    "bookSourceName": "永远的神小说🎃",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.yydsxs.com#🎃",
+    "customOrder": 438,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"完本\",\"url\":\"http://www.yydsxs.com/wanben/1\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻奇幻\",\"url\":\"/fenlei/1-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"武侠仙侠\",\"url\":\"/fenlei/2-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"都市青春\",\"url\":\"/fenlei/3-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"科幻悬疑\",\"url\":\"/fenlei/4-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"穿越历史\",\"url\":\"/fenlei/5-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"浪漫浓情\",\"url\":\"/fenlei/6-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"游戏竞技\",\"url\":\"/fenlei/7-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"精品其他\",\"url\":\"/fenlei/8-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"藏经阁\",\"url\":\"/fenlei/9-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"综合其他\",\"url\":\"/fenlei/10-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"排行榜\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"总点击榜\",\"url\":\"/allvisit-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"月点击榜\",\"url\":\"/monthvisit-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"周点击榜\",\"url\":\"/weekvisit-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"总推荐榜\",\"url\":\"/allvote-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"月推荐榜\",\"url\":\"/monthvote-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"收藏排行\",\"url\":\"/goodnum-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"最近更新\",\"url\":\"/lastupdate-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"新书上架\",\"url\":\"/postdate-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"字数排行\",\"url\":\"/size-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 0,
+    "respondTime": 6760,
+    "ruleBookInfo": {
+      "author": ".booktag a@text",
+      "coverUrl": "class.bookcover hidden-xs@img@src",
+      "intro": ".bookintro@text",
+      "name": ".booktitle@text",
+      "wordCount": ".blue.0@text"
+    },
+    "ruleContent": {
+      "content": "class.readcontent@tag.div.3@html"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author a@text",
+      "bookList": "class.bookbox@class.p10",
+      "bookUrl": ".bookname a@href",
+      "intro": ".update@textNodes",
+      "lastChapter": ".cat a@text",
+      "name": ".bookname a@text",
+      "wordCount": ".author.1@text##字数："
+    },
+    "ruleToc": {
+      "chapterList": "id.list-chapterAll@tag.dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href##.*?(\\d+).*?(\\d+).*##/go/$1/$2.html###",
+      "isVolume": "//javascript:gotochapter('2332','577419')"
+    },
+    "searchUrl": "http://www.yydsxs.com/searchok.html,{\n'charset': 'utf-8',\n'method': 'POST',\n'body': 'token=&searchkey={{key}}&action=login&submit='\n}",
+    "weight": 0,
+    "bookUrlPattern": "",
+    "header": "",
+    "loginUrl": "",
+    "loginUi": "",
+    "concurrentRate": "",
+    "loginCheckJs": ""
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
     "bookSourceName": "玄幻阁🎃",
     "bookSourceType": 0,
     "bookSourceUrl": "http://www.xuanyge.net#🎃",
@@ -14769,64 +14743,6 @@
     "weight": 0,
     "bookUrlPattern": "",
     "header": "",
-    "loginUrl": ""
-  },
-  {
-    "bookSourceComment": "",
-    "bookSourceGroup": "",
-    "bookSourceName": "悠久小说🎃#2",
-    "bookSourceType": 0,
-    "bookSourceUrl": "http://www.ujxs.com#🎃",
-    "customOrder": 443,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "玄幻奇幻::/xuanhuan/{{page}}/\n仙侠修真::/wuxia/{{page}}/\n都市青春::/dushi/{{page}}/\n历史军事::/lishi/{{page}}/\n游戏动漫::/youxi/{{page}}/\n科幻灵异::/kehuan/{{page}}/\n女生言情::/yanqing/{{page}}/",
-    "lastUpdateTime": 0,
-    "respondTime": 6825,
-    "ruleBookInfo": {
-      "author": ".d_title@tag.a.0@text",
-      "coverUrl": "#bookimg img@src",
-      "intro": "#bookintro div@text##【展开】|【收起】",
-      "kind": "#count@tag.span.0@text&&.new@tag.span.1@text##更新时间.",
-      "lastChapter": ".new@tag.a.0@text##正文.|正文卷.|VIP章节.|免费章节.|VIP卷.|默认卷.|章节目录.",
-      "name": ".d_title h1@text##作者.*|\\s",
-      "tocUrl": ".motion@tag.a.0@href",
-      "wordCount": "#count@tag.span.4@text"
-    },
-    "ruleContent": {
-      "content": ".read-content@html",
-      "replaceRegex": "##.*免费阅读！|佰度搜索.*|.*悠久小说.*|",
-      "imageStyle": "0"
-    },
-    "ruleExplore": {
-      "author": "tag.a.2@text",
-      "bookList": "#sitembox dl",
-      "bookUrl": "tag.a.1@href",
-      "coverUrl": "img@src",
-      "intro": "tag.dd.2@text",
-      "kind": "tag.span.1:-1@text##\\s.*",
-      "lastChapter": "tag.a.3@text##正文卷\\s|正文\\s",
-      "name": "tag.a.1@text"
-    },
-    "ruleReview": {},
-    "ruleSearch": {
-      "author": "tag.a.2@text",
-      "bookList": ".shulist ul",
-      "bookUrl": "tag.a.0@href",
-      "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##http://www.ujxs.com/files/article/image/$2/$1/$1s.jpg###",
-      "kind": "tag.li.1:5:4@text",
-      "lastChapter": "tag.a.1@text##正文卷\\s|正文\\s",
-      "name": "tag.a.0@text"
-    },
-    "ruleToc": {
-      "chapterList": "#readerlist li a",
-      "chapterName": "text##正文卷\\s|正文\\s",
-      "chapterUrl": "href"
-    },
-    "searchUrl": "/searchbooks.php?searchkey={{key}}",
-    "weight": 0,
-    "bookUrlPattern": "",
     "loginUrl": ""
   },
   {
@@ -14990,6 +14906,54 @@
     },
     "searchUrl": "/s.html,{\n  \"charset\": \"gbk\",\n  \"method\": \"post\",\n  \"body\": \"s={{key}}&type=articlename\"\n}",
     "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "笔趣阁🎃#30",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.biqugecom.cc#🎃",
+    "customOrder": 449,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻小说\",\"url\":\"/fenlei1/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"修真小说\",\"url\":\"/fenlei2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市小说\",\"url\":\"/fenlei3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史小说\",\"url\":\"/fenlei4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游小说\",\"url\":\"/fenlei5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/fenlei6/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"完本小说\",\"url\":\"/wanben/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}}]",
+    "lastUpdateTime": 0,
+    "respondTime": 6919,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#htmlContent@html",
+      "replaceRegex": "##笔趣阁.*最新章节！",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "td.-2@text",
+      "bookList": "class.table@tbody@tr!0",
+      "bookUrl": "a.0@href",
+      "kind": "td.0:-1@text",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text",
+      "checkKeyWord": "剑来"
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0,
+    "bookUrlPattern": "https://www.biqugecom.cc/book.*",
+    "header": "{ \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}"
   },
   {
     "bookSourceComment": "",
