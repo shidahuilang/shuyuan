@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceName": "笔趣阁（搜书大师不可用，原因未知）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.biqu520.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "#fmimg > img@src",
+      "intro": "#intro > p@text",
+      "name": "h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "p:nth-child(n+1)@text",
+      "title": "h1@text"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "tr:nth-child(n+2) > .odd:nth-child(1)",
+      "bookUrl": "a@href",
+      "checkKeyWord": "轮回乐园",
+      "lastChapter": "tr:nth-child(2) > .even > a@text",
+      "name": "a@text",
+      "wordCount": "tr:nth-child(2) > .even:nth-child(4)@text"
+    },
+    "ruleToc": {
+      "chapterList": "dd:nth-child(n+12)",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "isPay": "",
+      "isVip": "",
+      "isVolume": ""
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}",
+    "weight": 0
+  }
+]

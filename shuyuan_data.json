@@ -1,38 +1,86 @@
 [
   {
-    "ruleSearch": {
-      "checkKeyWord": "我的",
-      "bookList": "class.listbox@class.clearfix",
-      "name": "id.CListTitle.0@tag.a@tag.b@text",
-      "bookUrl": "id.CListTitle.0@tag.a@href",
-      "author": "",
-      "kind": "id.CListTitle.0@tag.a.2@text",
-      "lastChapter": "id.CListTitle.0@tag.a.3@text",
-      "intro": "id.CListText@text"
-    },
+    "bookSourceName": "笔趣阁（搜书大师不可用，原因未知）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.biqu520.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
     "ruleBookInfo": {
-      "name": "p:nth-child(2) > a@text",
-      "author": "class.info@p.0@span@text##文 / ",
-      "intro": "class.intro@text## 飞速中文网.*",
-      "lastChapter": "p:nth-child(10) > a@text",
-      "coverUrl": "a > img@src"
-    },
-    "ruleToc": {
-      "chapterList": "class.chapterlist@class.clearfix@tag.li",
-      "chapterName": "tag.a.0@text",
-      "chapterUrl": "tag.a.0@href"
+      "author": "",
+      "coverUrl": "#fmimg > img@src",
+      "intro": "#intro > p@text",
+      "name": "h1@text",
+      "tocUrl": ""
     },
     "ruleContent": {
-      "content": "id.content@html##飞速中文.com 中文域名一键直达|最快更新.*|手机请访问.*",
-      "nextContentUrl": ""
+      "content": "p:nth-child(n+1)@text",
+      "title": "h1@text"
     },
-    "ruleReview": [],
     "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "tr:nth-child(n+2) > .odd:nth-child(1)",
+      "bookUrl": "a@href",
+      "checkKeyWord": "轮回乐园",
+      "lastChapter": "tr:nth-child(2) > .even > a@text",
+      "name": "a@text",
+      "wordCount": "tr:nth-child(2) > .even:nth-child(4)@text"
+    },
+    "ruleToc": {
+      "chapterList": "dd:nth-child(n+12)",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "isPay": "",
+      "isVip": "",
+      "isVolume": ""
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceName": "69书吧自制",
     "bookSourceType": 0,
-    "bookSourceName": "飞速中文",
-    "searchUrl": "/book/search.aspx?SearchKey={{key}}&SearchClass=1&SeaButton=,{\"charset\": \"gbk\"}",
-    "bookSourceUrl": "https://feibzw.com",
-    "enabled": true
+    "bookSourceUrl": "https://www.69shu.top",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1713454345818,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "h1@text##(.*) / (.*)##$2",
+      "coverUrl": "img@src",
+      "intro": ".bookinfo_intro@text",
+      "kind": ".nav-mbx > a:nth-child(3)@text",
+      "lastChapter": ".update > a@text",
+      "name": "h1@text##(.*) / (.*)##$1"
+    },
+    "ruleContent": {
+      "content": "id.htmlContent@html##.*最快更新.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.2@text",
+      "bookList": ".grid@tbody@tr!0",
+      "bookUrl": "td.0@a@href",
+      "checkKeyWord": "我的",
+      "lastChapter": "td.1@text",
+      "name": "td.0@text",
+      "wordCount": "td.3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapterlist.1@tag.li!0",
+      "chapterName": "a.0@text",
+      "chapterUrl": "a.0@href"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}},{\n\"charset\": \"gbk\"}",
+    "weight": 0
   },
   {
     "bookSourceComment": "20240430By_zhbyjm7783\n搜索代码By_转义字符",
