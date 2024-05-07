@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "20240504By_zhbyjm7783",
+    "bookSourceGroup": "自写0424",
+    "bookSourceName": "笔趣阁biquge5",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.biquge5.la",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1714820979829,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "id.nr1@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "textNodes##\\[.*\\]|\\/",
+      "bookList": ".list-item",
+      "bookUrl": "a@href",
+      "kind": "textNodes##\\/.*|\\[|\\]",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".last9@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}https://m.biquge5.la/modules/article/search.php?searchtype=articlename&searchkey={{key}}&t_btnsearch=,{\"charset\": \"gbk\"}",
+    "weight": 0
+  }
+]
