@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "完本书籍，分页",
+    "bookSourceGroup": "☣️精选senhora",
+    "bookSourceName": ">耽美文库🌹",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dmwenba.com",
+    "bookUrlPattern": "https?://wap.dmwenku.com/\\w+.*html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "穿越重生::/chuanyuechongsheng/<,index_{{page}}.html>\n玄幻灵异::/xuanhuanlingyi/<,index_{{page}}.html>\n现代都市::/xiandaidushi/<,index_{{page}}.html>\n古代架空::/gudaijiakong/<,index_{{page}}.html>\n BL 同人::/tongrenxiaoshuo/<,index_{{page}}.html>\n网游竞技::/wangyoujingji/<,index_{{page}}.html>\n无限流派::/wuxianliupai/<,index_{{page}}.html>\n推理悬疑::/tuili/<,index_{{page}}.html>\n百合 GL ::/gl/<,index_{{page}}.html>\n最近更新::/gengxin/<,index_{{page}}.html>",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1715200995171,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "h3@textNodes##.*——",
+      "kind": "h3@span@text##时间：",
+      "name": "h3@textNodes##——.*"
+    },
+    "ruleContent": {
+      "content": "id.text@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##.*下一页 尾页\\s.*|"
+    },
+    "ruleExplore": {
+      "author": "a.-1@text##.*——",
+      "bookList": "class.box.0@td.0@ul@li",
+      "bookUrl": "a.-1@href",
+      "kind": "a.0@text##.*\\[|\\].*|——.*",
+      "lastChapter": "span@text",
+      "name": "a.-1@text##——.*"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a@text##.*——",
+      "bookList": "class.r",
+      "bookUrl": "a@href",
+      "checkKeyWord": "剧本组",
+      "kind": "span@text",
+      "lastChapter": "",
+      "name": "a@text##——.*"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\ndata=java.getString(\"@@a[title=Page]@text\");\nvar page=data.match(/\\/(\\d+)/)[1];\nvar url=baseUrl.replace(/.html/,\"_1.html\")\nvar list=[{text:\"第1页\",href:baseUrl}];\nif(data&&page){\n\tfor(i=2;i<=page;i++){\n\t\tlist.push({text:`第${i}页`,href:url.replace(/_1/,\"_\"+i)})\n\t\t}\n\t\tlist;\n\t}",
+      "chapterName": "text",
+      "chapterUrl": "href@js:'https://wap.dmwenba.com'+result"
+    },
+    "searchUrl": "https://www.dmwenba.com/e/search/index.php,{\"charset\":\"gb2312\",\"method\":\"post\",\"body\":\"keyboard={{key}}&show=title&tempid=1&tbname=article\",\"headers\":{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\",\"Referer\":\"https://www.dmwenba.com\"},\"webView\":true}",
+    "weight": 0
+  }
+]

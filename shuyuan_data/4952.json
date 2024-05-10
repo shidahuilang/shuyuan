@@ -6,17 +6,18 @@
     "bookSourceType": 0,
     "bookSourceUrl": "http://www.qiexs.com/",
     "bookUrlPattern": "http://www.qiexs.com/xiaoshuo/\\d+.html",
-    "customOrder": 0,
+    "customOrder": 1,
     "enabled": true,
     "enabledCookieJar": true,
     "enabledExplore": true,
-    "lastUpdateTime": 1715018299225,
-    "respondTime": 180000,
+    "exploreUrl": "[\r\n    {\r\n        \"title\": \"分类\",\r\n        \"url\": \"\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 1,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"玄幻奇幻\",\r\n        \"url\": \"/xuanhuanqihuan?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.25,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"武侠仙侠\",\r\n        \"url\": \"/wuxiaxianxia?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.25,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"都市言情\",\r\n        \"url\": \"/dushiyanqing?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.25,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"历史军事\",\r\n        \"url\": \"/lishijunshi?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.25,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"游戏竞技\",\r\n        \"url\": \"/youxijingji?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.25,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"科幻传奇\",\r\n        \"url\": \"/kehuanchuanqi?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.25,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"恐怖灵异\",\r\n        \"url\": \"/kongbulingyi?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 0.2,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"全本小说\",\r\n        \"url\": \"/quanbenxiaoshuo?page={{page}}\",\r\n        \"style\": {\r\n            \"layout_flexBasisPercent\": 1,\r\n            \"layout_flexGrow\": 1\r\n        }\r\n    }\r\n]",
+    "lastUpdateTime": 1715195928947,
+    "respondTime": 1646,
     "ruleBookInfo": {
       "author": "class.booktag@tag.a.0@text",
       "coverUrl": "class.text-muted@tag.img@src",
       "init": "",
-      "intro": "class.text-muted@text##\\s+积分规则\\s*都市言情推荐阅读",
+      "intro": "class.text-muted@text##\\s+积分规则\\s*[\\u4e00-\\u9fa5]{0,4}推荐阅读",
       "kind": "class.booktag@tag.a.1@text",
       "lastChapter": "class.text-danger@text##\\s*查看全部章节",
       "name": "h1@text",
@@ -25,18 +26,27 @@
     },
     "ruleContent": {
       "content": "class.panel-body contents@tag.p@text",
-      "nextContentUrl": "id.linkNext@href",
+      "nextContentUrl": "class.btn btn-default next_ye@href",
       "replaceRegex": "##.*最新章节.*([企鹅]|[小说]|[域名]|[章节]){2,}[^\\u4e00-\\u9fa5]+|喜欢看[\\u4e00-\\u9fa5]{2,9}.*吗.*那就记住.*([章节])[^\\u4e00-\\u9fa5]+",
       "title": "class.readTitle@text"
     },
-    "ruleExplore": [],
+    "ruleExplore": {
+      "author": "tag.td.2@text",
+      "bookList": "tag.tbody@tag.tr.!0",
+      "bookUrl": "tag.td.0@tag.a@href",
+      "coverUrl": "tag.td.0@tag.a@href\n@js: \nlet match = result.match(/(\\d+)/);\nlet number = match ? parseInt(match[0]) : 0;\n\nlet a;\nlet b = number - 100;\nif (b < 1000) { a = 0; } else { a = Math.floor(b / 1000); }\n\nlet jieguo = \"http://www.qiexs.com/images/\" + a + \"/\" + b + \"/\" + b + \"s.jpg\";\nlet jieguo1 = \"http://www.qiexs.com/images/\" + a + \"/\" + b + \"/\" + b + \"s.jpeg\";\nlet jieguo2 = \"http://www.qiexs.com/images/\" + a + \"/\" + b + \"/s.jpg\";\njieguo || jieguo1 || jieguo2",
+      "intro": "tag.td.0@tag.a@href\n@js:\r\nvar html = java.ajax(result);\r\ntext = org.jsoup.Jsoup.parse(html)\r\n    .select(\"p.text-muted#bookIntro\").first();\r\ntext;",
+      "kind": "",
+      "lastChapter": ".hidden-xs.0@text",
+      "name": "tag.td.0@text"
+    },
     "ruleReview": [],
     "ruleSearch": {
       "author": "class.booktag@text",
       "bookList": "class.panel panel-default@class.col-md-10",
       "bookUrl": "class.bookTitle@tag.a@href",
       "checkKeyWord": "我的",
-      "coverUrl": "",
+      "coverUrl": "class.bookTitle@tag.a@href\n@js: \nlet match = result.match(/(\\d+)/);\nlet number = match ? parseInt(match[0]) : 0;\n\nlet a;\nlet b = number - 100;\nif (b < 1000) { a = 0; } else { a = Math.floor(b / 1000); }\n\nlet jieguo = \"http://www.qiexs.com/images/\" + a + \"/\" + b + \"/\" + b + \"s.jpg\";\nlet jieguo1 = \"http://www.qiexs.com/images/\" + a + \"/\" + b + \"/\" + b + \"s.jpeg\";\nlet jieguo2 = \"http://www.qiexs.com/images/\" + a + \"/\" + b + \"/s.jpg\";\njieguo || jieguo1 || jieguo2",
       "intro": "class.text-muted hidden-xs@text",
       "lastChapter": "class.text-danger@text",
       "name": "class.bookTitle@text",
@@ -47,7 +57,7 @@
       "chapterName": "tag.dd@tag.a@text",
       "chapterUrl": "class.col-md-3@tag.a@href"
     },
-    "searchUrl": "@js:\r\nvar url=source.key,\r\nhtml=java.ajax(url);\r\ntoken=org.jsoup.Jsoup.parse(html)\r\n.select('input[name=_token]')\r\n.attr('value');\r\nbody=`_token=${token}&keyword=`+key;\r\nvar so=url+\"search,\"\r\nvar post={\r\n  \"body\": String(body),\r\n  \"method\": \"POST\"\r\n};\r\nso+JSON.stringify(post)",
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search/,{\n  \"body\": \"keyword={{key}}\",\n  \"method\": \"POST\"\n}",
     "weight": 0
   }
 ]
