@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "20240512By_zhbyjm7783",
+    "bookSourceGroup": "自写0510",
+    "bookSourceName": "笔趣阁tkxyk",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.tkxyk.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"总排行榜\",\"url\":\"/rank/allvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"月排行榜\",\"url\":\"/rank/monthvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"周排行榜\",\"url\":\"/rank/weekvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"玄幻\",\"url\":\"/category/xhtxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠\",\"url\":\"/category/wxtxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/category/dstxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/category/lstxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/category/wytxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/category/khtxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其它\",\"url\":\"/category/qttxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"女生\",\"url\":\"/category/nstxt/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本\",\"url\":\"/full/all/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1715517310693,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.全部章节@href"
+    },
+    "ruleContent": {
+      "content": "id.content@p@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.1@text",
+      "bookList": ".CGsectionTwo-right-content-unit",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href<js>java.ajax(\"http://www.tkxyk.com\"+result)</js>[property=\"og:image\"]@content",
+      "intro": "p.-2@text",
+      "kind": "p.-1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".BCsectionTwo-top-chapter@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}http://www.tkxyk.com/search/,{\n\t\"method\":\"post\",\n\t\"body\":\"searchkey={{key}}&searchtype=all&t_btnsearch=\"\n\t}",
+    "weight": 0
+  }
+]
