@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "20240504By_zhbyjm7783",
+    "bookSourceGroup": "自写0510",
+    "bookSourceName": "笔趣阁biquge5",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.biquge5.la",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/list/1_1.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修真\",\"url\":\"/list/2_1.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市\",\"url\":\"/list/3_1.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/list/4_1.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/list/5_1.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/list/6_1.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1715829079179,
+    "respondTime": 44940,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "{{baseUrl.replace(/m/,\"www\")}}"
+    },
+    "ruleContent": {
+      "content": "id.content@html##笔趣阁 www.biquge5.la，最快更新.* ！",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "textNodes##\\[.*\\]|\\/",
+      "bookList": ".list-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "kind": "textNodes##\\/.*|\\[|\\]|\\n",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dl@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/modules/article/search.php?searchtype=articlename&searchkey={{key}}&t_btnsearch=,{\"charset\": \"gbk\"}",
+    "weight": 0
+  }
+]

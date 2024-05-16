@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "20240513修复搜索书名规则\"深空彼岸\",添加搜索封面By_zhbyjm7783",
+    "bookSourceGroup": "0511",
+    "bookSourceName": "一米小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.yimixs.cc",
+    "bookUrlPattern": "https?://m.yimixs.cc/xs/\\w+.html",
+    "customOrder": 109,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"榜单\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"总点击榜\",\"url\":\"/rank?order=all?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"月点击榜\",\"url\":\"/rank?order=month?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"周点击榜\",\"url\":\"/rank?order=week?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"总推荐榜\",\"url\":\"/rank?order=vote?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"最新推荐\",\"url\":\"/rank?order=top?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"最近更新\",\"url\":\"/rank?order=update?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"最新入库\",\"url\":\"/rank?order=post?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻奇幻\",\"url\":\"/xuanhuan?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/xianxia?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/dushi?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/lishi?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻传奇\",\"url\":\"/kehuan?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"恐怖灵异\",\"url\":\"/kongbu?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他类型\",\"url\":\"/qita?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本小说\",\"url\":\"/quanben?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1715591781182,
+    "respondTime": 6715,
+    "ruleBookInfo": {
+      "author": ".info@a.0@text",
+      "coverUrl": ".base@img@src",
+      "init": "",
+      "intro": ".intro[0]@text##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": ".base@i@text&&.info@span.1:3@text##.*：",
+      "lastChapter": ".info@a.2@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": ".base@h2@text",
+      "tocUrl": "id.reading@href"
+    },
+    "ruleContent": {
+      "content": "id.txt@html",
+      "nextContentUrl": "@js:\nvar next=/next1.png/.test(src);\nvar code=src.match(/eval(\\(function.*)/);\nurl=next?eval(code[1]):\"\";\nurl?eval(url.replace(/var/,\"\")):\"\";",
+      "replaceRegex": "##Ｘ更新最快|[!！]?\\s*「[如章节缺失请退出#阅读模式].*」\\s*|【[本章节首发爱有声．,请记住网址（）].*】|.?最快更新最新章节！|一秒记住.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a@ownText##.*\\/",
+      "bookList": ".bd@li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "深空彼岸",
+      "coverUrl": "a@href<js>java.ajax(result)</js>.base@img@src",
+      "kind": "span@text##\\[|\\]|\\s",
+      "name": "a@em@text&&a@ownText##\\n|\\/.*"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapter@a",
+      "chapterName": "text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "@js:\nvar url=source.key;\nvar html=java.ajax(url);\ntoken=org.jsoup.Jsoup.parse(html).select('input[name=_token]').attr('value');\nvar so=\"/search,\";\nvar body=`_token=${token}&keyword=${key}`;\nvar post={\n  \"body\": String(body),\n  \"method\": \"POST\"\n}\nurl+so+JSON.stringify(post)",
+    "weight": 0
+  }
+]

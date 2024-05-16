@@ -1,0 +1,64 @@
+[
+  {
+    "bookSourceComment": "/*\n\t20230724 更新验证码获取逻辑，获取一次正确的验证码后，一段时间内无需再次获取-尐哖\n  20230723 修改发现为动态获取-尐哖\n\t可以手动切换\n\t改变源URL地址，网站就会切换\n\t下面套娃网站(m和www通用)\n\t偶然中文：https://m.or77.net\n\t希望中文：https://m.5xw.net\n\t滨州书站：https://m.binzhousz.com\n\t趣七书屋：https://m.qu7.net\n\t博趣中文：https://m.bq0.net\n\t洪都中文：https://m.hongduzw.com\n\t我来读：https://m.wolaidu1.com    \n\t益生原文学：https://m.cnyxfs.com(改为蓝海)\n\t蓝海中文：https://m.lanhaizw.com\n  齐齐读：https://m.qiqidu.net\n  博看小说网：https://m.bokanx.com\n  二品中文：https://m.2pzw.com\n  米特小说：https://m.mite1.com \n  读者吧：https://m.dzb8.com(失效)\n  飞阅读书：https://m.fy4.net\n  追书网：https://m.zhuis1.com\n  123读书：https://m.123du.vip\n  优读小说：https://m.5ud.net\n  盆友书屋：https://m.pyhtgytzy.com\n  UC小说：https://m.525uc.com\n  宝华书院：https://m.baohuasy.com\n  飞鸟中文：https://m.fn9.net\n  途阅文学：https://m.1ty.net\n  语录书院：https://m.jingdianyulu.org\n  松泰书院：https://m.hnsongtai.com\n  名书堂：https://m.mingshutang.net\n  天禄书院：https://m.mytilu.com\n  晨雨中文：https://m.80y.net\n  涛新书院：https://m.taoxinsy.com\n   三本小说：https://m.3bxs.com\n   https://m.hanbosy.com/\n*/\ntry{\n\tc2=result.match(/c2=\"(.*?)\"/)[1]\n\tu2=result.match(/src=\"(.*?)\"/)[1]\n\torigin=baseUrl.match(/[^.]+[^/]+/)[0]\n\tstr=java.ajax(origin+u2).match(/function.*\\(\\)\\}/)[0]\n\teval(str);temp=ajax(c2)\n\tjava.ajax(origin+temp)\n if(baseUrl.match(/sscc/)){\n \tu=java.get(\"url\")}else{u=baseUrl}\n \t//java.log(u)\n\tresult=java.ajax(u)\n}catch(err){result}",
+    "bookSourceGroup": "0511",
+    "bookSourceName": "希望中文5xw",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.hanbosy.com/",
+    "bookUrlPattern": "https?:\\/\\/[wm]+\\.(5xw|123du|binzhousz|or7|qu77|bq0|nchdzx|wolaidu|cnyxfs|lanhaizw|qiqidu|bokanx|2pzw|sxmiteer|dzb8|fy4|fsrxzs|ntpls|5ud|pyhtgytzy|525uc|baohuasy|taoxinsy|3bxs)\\.(com|net|vip)\\/(([\\da-z]+|[a-z]+-\\d+)\\/\\d+|[a-z]+-\\d+-\\d+)\\/?",
+    "customOrder": 331,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\n sort=[];\n push=(title,url,type)=>sort.push({\n\t\ttitle: title,\n\t\turl: url,\n\t\tstyle: {\n\t\t\t\tlayout_flexGrow: 1,\n\t\t\t\tlayout_flexBasisPercent: type\n\t\t\t}\n\t});\n\tu=source.getKey();\n\turl=u+\"/menu.html\";\n\tD=org.jsoup.Jsoup.parse(java.ajax(url));\n\tA=D.select('div[class=\"divmen\"] a');\n\tfor(i in A){\n\t\tif(i!=0&&i!=4&&i!=5){\n\t\t\tpush(A[i].text(),A[i].attr(\"href\"),\"0.25\")\n\t\t}\n\t}\n\tJSON.stringify(sort);",
+    "header": "",
+    "lastUpdateTime": 1715725112087,
+    "loginUrl": "",
+    "respondTime": 9379,
+    "ruleBookInfo": {
+      "author": "class.b0@tag.span.0@text##作者：",
+      "coverUrl": "class.b0@img@src",
+      "intro": "[property~=description]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|time]@content##.\\d{2}:.*",
+      "lastChapter": "class.b0@dd.-1@a@text",
+      "name": "class.FCol.0@text",
+      "tocUrl": "class.nrbt@tag.a.0@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\nif(result.match(/<title>\\d+</)){\ncookie.removeCookie(baseUrl)\nresult=java.ajax(baseUrl)\n}\neval(String(source.bookSourceComment))\ncc=String(cookie.getCookie(baseUrl)).replace(/\\%2C[^;]+/g,\"\")\ncookie.setCookie(baseUrl,cc)\njava.setContent(result)\nresult\n</js>\n#content@html||[class~=(?i)content]@html",
+      "nextContentUrl": "text.下—页@href||text.下一页@href",
+      "replaceRegex": "##\\s+\"\\n|\\s+本章(没|未)完，.*|(\\.\\n)?.*看完记得收藏.*|\\s+\\/\\d+\\/.*|\\s+。：.*|\\s+：。.*"
+    },
+    "ruleExplore": {
+      "author": "text.作者：@text##作者：",
+      "bookList": "dl[class=\"B\"]&&dl[class=\"S\"]",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src||img@data-src",
+      "intro": ".d2@text##简介：",
+      "kind": "{{@@span:contains(类别：)@text##^类别：}}\n{{@@dd:contains(更新时间：)@text##.*更新时间：}}",
+      "lastChapter": "{{@@dd.-1@a@text}} • {{@@class.ml@text||dd.-2@text##更新时间：|\\s.*}}",
+      "name": "a.1@text||a.0@text"
+    },
+    "ruleSearch": {
+      "author": "text.作者：@text##作者：",
+      "bookList": "<js>\neval(String(source.bookSourceComment))\ntry{\n\tactyzm=result.match(/actyzm\" value=\"([^\"]+)\"/)[1];\n\tbutton=result.match(/button\" value=\"([^\"]+)\"/)[1];\t\n\turl=java.get(\"url\");\n\tcode=String(url).replace(/\\/sscc.*/,'')+\"/member/getcode.asp\";\n\tyzco=source.getVariable();\n\tfunction getOption(str,co){\n  \thed={\"Referer\":url,\"Cookie\":co}\n  \treturn JSON.stringify({\"method\":\"POST\",\n\"charset\":\"gb2312\",\"body\":\"actyzm=\"+actyzm+\"&yzm=\"+str+\"&button=\"+button,\"headers\":hed});\n  }\n  function succes(){\n\t\tyzm=java.getVerificationCode(code);\n\t\turl+=\",\"+getOption(yzm,\"\");\n\t\thm=java.ajax(url);\n\t\tco=java.getCookie(url,\"g3jy9sqo0ws\");\n   source.setVariable(yzm+',g3jy9sqo0ws='+co)\n   return hm;\n  }\n\tif(yzco&&yzco!=''){\n\t\tv=String(yzco).split(',');\n\t\tu=url+\",\"+getOption(v[0],v[1]);\n\t\tresult=java.ajax(u);\n\t\tif(/请输入验证码/.test(result)){\n\t\t\tjava.longToast(\"  ！验证码过期或有误，重新获取  ！\")\n\t\t\tresult=succes();\n\t\t}\n\t}else{result=succes(\"\");}\nresult\n}catch(err){java.log(err);result}\n</js>\n.B",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src||img@data-src",
+      "intro": ".d2@text##简介：",
+      "kind": "class.js@text##类别：|\\/ 作者.*\\s.*",
+      "lastChapter": "{{@@dd.-1@a@text}} • {{@@class.ml@text##更新时间：}}",
+      "name": "a.1@text",
+      "wordCount": "@js:\ntry{\t\ncc=String(cookie.getCookie(baseUrl)).replace(java.get(\"key\"),\"\")\ncookie.setCookie(baseUrl,cc)\n}catch(e){\"\"}"
+    },
+    "ruleToc": {
+      "chapterList": "//*[@class=\"MLlist\"]/li/a||//dt[-1]/following-sibling::dd/a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "@js:\ntry{\nbUrl=source.getKey();\ncookie.removeCookie(bUrl)\ns=String(java.ajax(bUrl))\nact=s.match(/\"act\".*?\"(.{16})\"/)[1]\nsub=s.match(/name=\"submit\".*?value=\"(.*?)\"/)[1]\nbody=String(\"act=\"+act+\"&q=\"+key+\"&submit=\"+sub)\nxx=body.match(/[^&=]+/g)\nfor(i in xx){\nre=java.encodeURI(xx[i],\"gbk\")\nbody=body.replace(xx[i],re)\n }\nvar url=String(bUrl+\"/sscc/,\"+JSON.stringify({\n\t\"method\":\"POST\",\"body\":body}))\njava.put(\"key\",body.match(/q=([^&]*)/)[1]);\njava.put(\"url\",bUrl+\"/sscc/\"+java.post(bUrl+\"/sscc/\",body,{}).header(\"Location\"));\nurl\n}catch(e){java.longToast(\"获取失败\")}",
+    "variableComment": "",
+    "weight": 0
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ruleSearch": {
+      "bookList": ".secd-rank-list@dl",
+      "name": "dd@a.0@text",
+      "author": "dd@p.0@a.0@text",
+      "intro": ".big-book-info@text",
+      "bookUrl": "dd@a.0@href",
+      "coverUrl": "dt@img@data-original"
+    },
+    "ruleBookInfo": {
+      "name": ".name@text",
+      "author": ".author@text",
+      "tocUrl": ""
+    },
+    "ruleToc": {
+      "chapterList": ".cate-list@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "ruleContent": {
+      "content": ".j_readContent@p@text"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.69biubiu.com/",
+    "bookSourceName": "69笔趣阁",
+    "searchUrl": "http://m.69biubiu.com/home/search/index.html?keyword={{key}}"
+  }
+]
