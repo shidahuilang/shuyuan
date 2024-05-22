@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "20240519By_zhbyjm7783\n搜索有30秒限制",
+    "bookSourceGroup": "自写0510",
+    "bookSourceName": "搜书网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.soshuw.net/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1716082551559,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author.0@text##作者：",
+      "bookList": ".bookbox",
+      "bookUrl": ".bookname@a@href",
+      "checkKeyWord": "",
+      "kind": ".update@textNodes&&.author.2@text",
+      "lastChapter": ".cat@a@text",
+      "name": ".bookname@a@text",
+      "wordCount": ".author.1@text##字数："
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterlist@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search.html,{\n\t\"method\":\"post\",\n\t\"body\":\"searchkey={{key}}&submit=\"\n\t}",
+    "weight": 0
+  }
+]

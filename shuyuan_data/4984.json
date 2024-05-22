@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "https://mjjxs.net",
+    "bookSourceGroup": "icey125",
+    "bookSourceName": "聚合书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://bqg123.net/",
+    "bookUrlPattern": "https?://(mjjxs|bqg123).net/v3.+",
+    "customOrder": 22784,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n    \"User-Agent\": \"Mozilla/5.0 (Linux; Android 13; M2012K11AC Build/TKQ1.220829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36\",\n\"Referer\": \"{{baseUrl}}\"\n}",
+    "lastUpdateTime": 1710504690569,
+    "respondTime": 7433,
+    "ruleBookInfo": {
+      "author": ".info p.0@text",
+      "intro": ".intro@html##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": ".info p.-2:-3:-4:-5@text",
+      "lastChapter": ".info@a.0@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": ".info h1@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.nr1@p!0:-1@html##\\[.*\\]"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "<js>\npi=src.match(/search_book_str']=\"(.+)\"/)[1]\n//java.log(pi)\nvar je=java.base64Decode(pi,\"utf-8\")\nvar st=decodeURIComponent(je)\n//java.log(st)\nresult=st;\nresult;\n</js>\n$.book_list.*",
+      "bookUrl": "https://bqg123.net/v3_uni_0705?1#/v3/{{$.book_uni_id}}/{{$.book_id}}/,{'webView': true}",
+      "checkKeyWord": "剑来",
+      "coverUrl": "",
+      "kind": "@js:\nzjs=java.getString(\"$.chapter_count_geted\")\ndata=java.getString(\"$.time_update\");\nvar time=java.timeFormat(data);\nresult=String(`章节总数：共${zjs}章,更新时间：${time}`);\nresult;",
+      "lastChapter": "$.last_chapter_name",
+      "name": "$.book_name"
+    },
+    "ruleToc": {
+      "chapterList": "ul.1@.even",
+      "chapterName": "text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "{{@@a@href}},{\"webView\": true}",
+      "formatJs": ""
+    },
+    "searchUrl": "https://kt.bqg123a.top/v3/search1?ws=450241&pf=linux%20armv8l&keyword={{key}}",
+    "weight": 0
+  }
+]

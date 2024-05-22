@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "20240518By_zhbyjm7783",
+    "bookSourceGroup": "自写0510",
+    "bookSourceName": "笔趣阁xswang",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xswang.vip/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1716039889051,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content&&id.intro@text",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:update_time\"]@content&&text.书籍状态： @text##书籍状态： ",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.content@p@text##天才一秒记住本站地址：[笔趣阁小说] 最快更新！无广告！|ps：新书时期数据非常重要，求收藏，求追读，求月票！求大佬们支持啊！"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": "class.result f s0",
+      "bookUrl": "h3@a@href##(\\d+).html",
+      "coverUrl": "img@src",
+      "intro": "class.c-abstract@text",
+      "name": "h3@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://zhannei.baidu.com/cse/search?q={{key}}&click=1&entry=1&s=17140564799126009138&nsid=",
+    "weight": 0
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceComment": "/*legado xsw8093*/",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩搜书吧[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.soshu8.com/",
+    "bookUrlPattern": "",
+    "customOrder": -774,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36\",\"cookie\":0}",
+    "lastUpdateTime": 1716365346162,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}##^\\d+.",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#content@html||.showtxt@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##{{try{chapter.title}catch(e){\"\"} }}|\\(本章完\\)|『加入书签，方便阅读』"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text##作者：",
+      "bookList": ".bookinfo",
+      "bookUrl": ".bookname@a@href",
+      "checkKeyWord": "",
+      "coverUrl": ".bookimg@img@src",
+      "kind": ".cat@text##分类：",
+      "lastChapter": ".update@a@text",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".listmain@dd@a",
+      "chapterName": "text##^\\d+\\.",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "@js:\n\nvar url=source.getKey();\n\nvar html = java.ajax(url+\",\"+JSON.stringify({\n  \"webView\": true\n}));\n\nso = org.jsoup.Jsoup.parse(html).select('#sform').attr('action');\n\ncookie.removeCookie(url)\n\nurl+so+\"?ie=gbk&q={{key}},\"+JSON.stringify({\n  \"method\": \"GET\"\n})\n\n",
+    "weight": 0
+  }
+]
