@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "冷冷文学（原：灵梦/冷门小说）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.lengmen.org",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "原创小说::/category/168326864887877/{{page}}.html\n同人衍生::/category/168326864900166/{{page}}.html\nPO18::/category/168325583147077/{{page}}.html\n都市::/category/4497418743879/{{page}}.html\n玄幻::/category/4497418813510/{{page}}.html\n现代言情::/category/123687453134919/{{page}}.html\n古代言情::/category/123687453102149/{{page}}.html\n科幻::/category/4497418604613/{{page}}.html\n古言::/category/4497419206726/{{page}}.html\n现言::/category/4497418784838/{{page}}.html\n幻想言情::/category/123687453163590/{{page}}.html\n历史::/category/4497418846278/{{page}}.html\n悬疑::/category/4497418977350/{{page}}.html\n游戏::/category/4497418752070/{{page}}.html\n奇幻::/category/4497418838087/{{page}}.html\n同人::/category/123687453151304/{{page}}.html\n青春::/category/4497419108424/{{page}}.html\n武侠::/category/4497418797126/{{page}}.html\n仙侠::/category/4497418756166/{{page}}.html\n轻小说::/category/4497418735686/{{page}}.html\n幻情::/category/4497418879046/{{page}}.html\n竞技::/category/123695583178826/{{page}}.html\n军事::/category/4497419591752/{{page}}.html\n现实::/category/4497419587654/{{page}}.html\n体育::/category/4497418895432/{{page}}.html\n纯爱::/category/10322166141000/{{page}}.html\n短篇::/category/4497419214918/{{page}}.html\n其他::/category/123687454683208/{{page}}.html\n其他分类::/category/4497426522184/{{page}}.html",
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36",
+    "lastUpdateTime": 1716605066557,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.author@text",
+      "init": "",
+      "intro": "class.BGsectionTwo-bottom@text",
+      "kind": "class.category@text##类别：",
+      "lastChapter": "class.newestChapter@text##最新章节：",
+      "name": "class.title@text",
+      "tocUrl": "text.查看全部章节@href"
+    },
+    "ruleContent": {
+      "content": "class.RBGsectionThree-content@text"
+    },
+    "ruleExplore": {
+      "author": "class.b@text",
+      "bookList": "class.CGsectionTwo-right-content-unit",
+      "bookUrl": "class.title@href",
+      "kind": "",
+      "lastChapter": "",
+      "name": "class.title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.span.2@text",
+      "bookList": "class.SHsectionThree-middle@tag.p",
+      "bookUrl": "tag.span.1@tag.a@href",
+      "kind": "tag.span.0@text",
+      "name": "tag.span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.BCsectionTwo-top-chapter@tag.a",
+      "chapterName": "@text",
+      "chapterUrl": "@href##$##,{\"webView\": true}",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.lengmen.org/search/{{key}}",
+    "weight": 0
+  }
+]

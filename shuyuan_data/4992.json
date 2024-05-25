@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "💠小说",
+    "bookSourceName": "💠神仙书阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.shenxianfaka.top/",
+    "customOrder": 640,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻🪙::/list/1_{{page}}.html\n修真🪙::/list/2_{{page}}.html\n都市🪙::/list/3_{{page}}.html\n穿越🪙::/list/4_{{page}}.html\n网游🪙::/list/5_{{page}}.html\n科幻🪙::/list/6_{{page}}.html\n灵异🪙::/list/7_{{page}}.html\n女生🪙::/list/8_{{page}}.html\n其它🪙::/list/9_{{page}}.html\n完本🪙::/wanben_{{page}}.html",
+    "header": "{\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": 1716553001807,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.block_img2@img@src",
+      "intro": "div.intro_info@textNodes"
+    },
+    "ruleContent": {
+      "content": "#nr1@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##阅读提示.*浏览器阅读模式.|本章未完.*"
+    },
+    "ruleExplore": {
+      "author": "text.作者@text||.xsm.0@text##.*\\(|\\)",
+      "bookList": "ul.xbk",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": ".tjxs@span.1@text",
+      "kind": ".tjrs@text",
+      "lastChapter": ".xsm.1@text",
+      "name": ".xsm.0@text##\\(.*\n@js:\nresult.replace(/(.*$)/,\"$1\\t∽\\t💠神仙书阁\")"
+    },
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": "class.searchbook",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "class.bookimg@img@src",
+      "kind": "class.cat@text##分类：",
+      "lastChapter": "class.update@a@text",
+      "name": "h4@text\n@js:\nresult.replace(/(.*$)/,\"$1\\t∽\\t💠神仙书阁\")"
+    },
+    "ruleToc": {
+      "chapterList": "div.cover@ul.chapter.1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://m.richvv.com/search.html?ie=utf-8&word={{key}}&page={{page}}",
+    "weight": 0
+  }
+]

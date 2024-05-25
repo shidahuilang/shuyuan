@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "修复",
+    "bookSourceName": "读书族小说（修复搜索）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://wapk.tvguaa.com",
+    "customOrder": 151,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1716557359541,
+    "respondTime": 1267,
+    "ruleBookInfo": {
+      "author": "[property~=author]@content",
+      "coverUrl": "[property~=image]@content",
+      "intro": "[property~=description]@content",
+      "kind": "[property~=category|status]@content",
+      "lastChapter": "[property~=latest_chapter_name]@content##\\、",
+      "name": "[property~=book_name]@content",
+      "wordCount": "p.7@text"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\【本(.|\\n)*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".search_list",
+      "bookUrl": "a@href",
+      "checkKeyWord": "仙尊",
+      "lastChapter": "a.1@text##\\、",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.1@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/book/search.aspx,{\n  \"body\": \"key={{key}}&submit=\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

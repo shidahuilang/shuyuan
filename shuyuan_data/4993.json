@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "💠小说",
+    "bookSourceName": "💠宝来小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xinbaolaixsw.com",
+    "customOrder": 643,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部🪙::/allsort/{{page}}.html\n玄幻🪙::/xuanhuan/{{page}}.html\n武侠🪙::/wuxia/{{page}}.html\n都市🪙::/dushi/{{page}}.html\n历史🪙::/lishi/{{page}}.html\n游戏🪙::/youxi/{{page}}.html\n科幻🪙::/kehuan/{{page}}.html\n恐怖🪙::/xuanyi/{{page}}.html\n其他🪙::/qita/{{page}}.html\n古代🪙::/guyan/{{page}}.html\n现代🪙::/xianyan/{{page}}.html\n幻想🪙::/huanqing/{{page}}.html\n游戏🪙::/zongcai/{{page}}.html\n浪漫🪙::/qingchun/{{page}}.html\n言情🪙::/wangluo/{{page}}.html\n科幻🪙::/mmkehuan/{{page}}.html\n其他🪙::/mmqita/{{page}}.html",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36\",\n\t\"Referer\":\"https://m.xinbaolaixsw.com\"\n}",
+    "lastUpdateTime": 1716553007958,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "div.detail@img@src",
+      "tocUrl": "text.查看全部章节@href",
+      "wordCount": "text.字.0@text"
+    },
+    "ruleContent": {
+      "content": "div.content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##喜欢.*?收藏.*|尊贵特权.*|本章节内容正在手打中[\\s\\S]*|.*?下一页.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "p.data.0@a@text",
+      "bookList": "ul.list@li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": "p.intro@text",
+      "kind": "p.data.0@span@text",
+      "lastChapter": "p.data.1@text",
+      "name": "p.bookname@text\n@js:\nresult.replace(/(.*$)/,\"$1\\t∽\\t💠宝来小说\")"
+    },
+    "ruleToc": {
+      "chapterList": "ul.read@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "isPay": "",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "@js:\nu=\"https://m.xinbaolaixsw.com\"\n\na=java.post(\n\"https://m.xinbaolaixsw.com/search.html\",\n\"searchkey=\"+key,\n{\"Referer\":\"https://m.xinbaolaixsw.com\"}).headers(\"Location\")\n\nb=String(a).replace(/\\[/,\"\").replace(/(\\d+)\\..*?\\]/,\"\")\nurl=u+b+\"{{page}}\"+\".html\"",
+    "weight": 0
+  }
+]
