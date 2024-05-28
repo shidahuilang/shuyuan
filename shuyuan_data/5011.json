@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "20240525By_zhbyjm7783",
+    "bookSourceGroup": "",
+    "bookSourceName": "笔趣文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.sxslyt.cn/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1716652712684,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "text.作者：@a@text",
+      "coverUrl": ".block_img2@img@src",
+      "intro": ".intro_info@text",
+      "kind": "text.分类：@a@text&&text.状态：@p@text&&text.更新：@p@text##状态：|更新：",
+      "lastChapter": "text.最新：@a@text",
+      "name": ".block_txt2@h2@text"
+    },
+    "ruleContent": {
+      "content": "id.nr1@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".line",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "",
+      "kind": "a.0@text##\\[|\\]",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".page-list-box@li@a@href||text.下一页@href"
+    },
+    "searchUrl": "https://m.sxslyt.cn/s.php,{\n\t\"method\":\"post\",\n\t\"charset\":\"gbk\",\n\t\"body\":\"type=articlename&s={{key}}&submit=\"\n\t}",
+    "weight": 0
+  }
+]

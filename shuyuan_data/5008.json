@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "星辰影院\nhttps://www.gchaucer.com",
+    "bookSourceGroup": "",
+    "bookSourceName": "📺南瓜",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.nanguady.cc",
+    "customOrder": 1377,
+    "enabled": false,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n\"User-Agent\":\"Mozilla/5.0 (Linux; Android 11; Pixel 5;Windows NT 10.0; Trident/7.0; rv:11.0; Win64; x64) like Gecko AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": 1716619343722,
+    "respondTime": 2832,
+    "ruleBookInfo": {
+      "author": "class.product-excerpt.1@text## ##,\n<js>\nresult=result.replace(/主演：,/,'')\n</js>",
+      "intro": "class.product-excerpt.-1@span@text"
+    },
+    "ruleContent": {
+      "content": "text\n@js:\nif(result.match(/jiexi/)){\n\tresult=book.origin+result\n\t}\nif(book.durChapterIndex==chapter.index){\n\t\tjava.startBrowser(result,title)\n\t\tjava.toast('正在加载视频\\n视频加载较慢，请耐心等待')\n\t}\n'【刷新正文】播放\\n✅直链:\\n'+result"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": "class.lists-content@li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": "{{\"📺南瓜电影\"}}",
+      "kind": "class.orange@text",
+      "lastChapter": "class.note@text",
+      "name": "h2@text",
+      "wordCount": "class.rate@text##$##分"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nall=\"\"\n\n//线路个数\nlen=java.getElements('class.listab').length\n\nfor(i=1;i<=len;i++){\n\t\n\t//获取线路名称\nfrom=java.getElements('class.listab')[i-1].text()\n\n//获取线路的播放列表\nres=java.getElements('class.playlist')[i-1]\n\n//把线路名称插入列表里，在更新时间那里显示\nres=JSON.stringify(res).replace(/<\\/a>/g,'<p>'+'🎬'+from+'</p></a>')\n\nall+=JSON.parse(res)\n}\nall\n</js>\nclass.playlist@ul@li@a",
+      "chapterName": "ownText",
+      "chapterUrl": "onclick\n<js>\nnum=result.match(/play\\((\\d+),(\\d+)\\);/)\ni=++num[1]\nk=++num[2]\nbaseUrl+\"?sid=\"+i+\"&nid=\"+k\n</js>",
+      "preUpdateJs": "java.refreshTocUrl()",
+      "updateTime": "p@text"
+    },
+    "searchUrl": "/vodsearch/-------------.html?wd={{key}}",
+    "weight": 0
+  }
+]

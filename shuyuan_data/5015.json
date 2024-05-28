@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "20240527By_zhbyjm7783",
+    "bookSourceName": "笔趣阁yemangm",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.yemangm.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1716775275063,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "[class=\"novelcontent\"]@data-txt##\\【本章阅读完毕，更多请搜索笔趣阁;http:\\/\\/m.yemangm.com 阅读更多精彩小说\\】|内容未完，下一页继续阅读",
+      "nextContentUrl": "text.下一页@href##$##,{'webView': true}"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".search_list",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul[class=\"p2\"]@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{'webView': true}"
+    },
+    "searchUrl": "https://m.yemangm.com/book/search.aspx?key={{key}}&type=articlename",
+    "weight": 0
+  }
+]
