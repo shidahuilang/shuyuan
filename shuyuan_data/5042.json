@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "20240529By_zhbyjm7783",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "亿软小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.yiruan.info",
+    "customOrder": 235,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": 1716964969988,
+    "respondTime": 4437,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "id.novelcontent@textNodes||id.novelcontent@p@textNodes##\\（本章未完，请点击下一页继续阅读\\）|.*\\(第.*页\\)",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": ".author@a@text",
+      "bookList": ".sone",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "a.0@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".list_xm@ul@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/s.php,{\n  \"method\": \"post\",\n  \"body\": \"searchkey={{key}}&type=articlename\"\n}",
+    "weight": 0
+  }
+]

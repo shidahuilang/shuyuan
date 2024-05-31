@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceGroup": "haitaostyle",
+    "bookSourceName": "88小说网m站",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.88xiaoshuo.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+    "lastUpdateTime": 1716975025232,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//p[@class='author']/a/text()",
+      "coverUrl": "//div[@class='detail']/img/@src",
+      "intro": "//div[@class='intro']/p[1]/text()",
+      "kind": "//div[@class='detail']/p[3]/a/text()",
+      "lastChapter": "//p[@class='new']/a/text()",
+      "name": "//p[@class='name']/strong/text()",
+      "tocUrl": "//li[@class='now']/a/@href",
+      "wordCount": "//div[@class='detail']/p[3]/span[2]/text()"
+    },
+    "ruleContent": {
+      "content": "//div[@class='content']/html()"
+    },
+    "ruleExplore": {
+      "author": "//p[@class='data'][1]/a/text()",
+      "coverUrl": "//li/a[1]/img/@src",
+      "lastChapter": "//p[@class='data'][2]/a/text()",
+      "name": "//p[@class='bookname']/a/text()",
+      "bookList": "//ul[@class='list']/li",
+      "kind": "//p[@class='data'][1]/span[1]/text()",
+      "intro": "//p[@class='intro']/text()",
+      "bookUrl": "//li/a[1]/@href"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "//p[@class='data'][1]/a/text()",
+      "bookList": "//ul[@class='list']/li",
+      "bookUrl": "//li/a[1]/@href",
+      "checkKeyWord": "末世",
+      "coverUrl": "//li/a[1]/img/@src",
+      "intro": "//p[@class='intro']/text()",
+      "kind": "//p[@class='data'][1]/span[1]/text()",
+      "lastChapter": "//p[@class='data'][2]/a/text()",
+      "name": "//p[@class='bookname']/a/text()",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "//ul[@class='read']/li",
+      "chapterName": "//a/text()",
+      "chapterUrl": "//a/@href",
+      "nextTocUrl": "//option/@value"
+    },
+    "searchUrl": "/search.html,{\nmethod: \"post\",\nbody: \"searchkey={{key}}&searchtype=all\"\n}",
+    "weight": 0,
+    "exploreUrl": "[{\"title\":\"全部分类\",\"url\":\"/fenlei/0/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻魔法\",\"url\":\"/fenlei/1/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"武侠修真\",\"url\":\"/fenlei/2/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/fenlei/3/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/fenlei/4/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"侦探推理\",\"url\":\"/fenlei/5/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"网游动漫\",\"url\":\"/fenlei/6/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"科幻小说\",\"url\":\"/fenlei/7/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"恐怖灵异\",\"url\":\"/fenlei/8/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"散文诗词\",\"url\":\"/fenlei/9/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"其他类型\",\"url\":\"/fenlei/10/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}}]"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "20240529By_zhbyjm7783\n小说部落：\nhttp://m.xiaoshuobuluo.com\nhttps://m.xs86.net\n爱尚小说：\nhttp://m.aslwx.com",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "爱尚小说aslwx",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.aslwx.com/",
+    "bookUrlPattern": "",
+    "customOrder": 90,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": 1716965209076,
+    "loginUrl": "",
+    "respondTime": 36365,
+    "ruleBookInfo": {
+      "author": "[property=og:novel:author]@content",
+      "coverUrl": "[property=og:image]@content",
+      "init": "",
+      "intro": "[property=og:description]@content",
+      "kind": "[property=og:novel:update_time]@content&&\n[property=og:novel:category]@content&&\n[property=og:novel:status]@content",
+      "lastChapter": "[property=og:novel:latest_chapter_name]@content##免费章节 |正文卷 |正文 |VIP章节 ",
+      "name": "[property=og:novel:book_name]@content##|\\（.*|\\(.*|免费阅读|全文.*阅读|最新章节|小说|笔趣阁|免费.*",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.nr1@html##本章未完，点击下一页继续阅读",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "textNodes##\\[|.*\\]|\\/|\\n",
+      "bookList": ".list-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "textNodes##\\[|\\]|\\/.*|\\n",
+      "lastChapter": "",
+      "name": "a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".last9@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "modules/article/search.php?searchtype=articlename&searchkey={{key}}&t_btnsearch=,{\n  \"charset\": \"gbk\"\n}",
+    "weight": 0
+  }
+]

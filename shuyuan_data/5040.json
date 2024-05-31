@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "20240529By_zhbyjm7783\n目录下一页规则By_游客2580",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "全本小说网qb5",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.qb5.ac/",
+    "customOrder": 57,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": 1717038218443,
+    "respondTime": 40152,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.nr1@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "textNodes##\\[|.*\\]|\\/|\\n",
+      "bookList": ".list-item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "kind": "textNodes##\\[|\\]|\\/.*|\\n",
+      "lastChapter": "",
+      "name": "a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".last9@li!0@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isPay": "",
+      "isVip": "",
+      "nextTocUrl": "@js:\nvar list=[];\npage=src.match(/第\\d+页 \\/ 共(\\d+)页/)[1];\nfor(i=2;i<=page;i++){\n\tlist.push(baseUrl.replace(/\\/$/,\"/\"+i));\n}\nlist;"
+    },
+    "searchUrl": "https://m.qb5.ac/modules/article/search.php?searchtype=articlename&searchkey={{key}}&t_btnsearch=,{\n\"charset\": \"gbk\"\n\t}",
+    "weight": 0
+  }
+]
