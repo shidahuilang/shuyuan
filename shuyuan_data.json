@@ -317,64 +317,6 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "//同站一大堆\n以下同库网站可以自行替换网址\n\n笔趣阁(移动不能看)：\nhttps://m.bige3.cc\nhttps://m.quge7.cc\nhttps://m.bq9.cc\nhttps://m.bqg18.cc\nhttps://m.bqg67.com\nhttps://m.bqg113.com\nhttps://m.bqg119.com\nhttps://m.bqg121.com\nhttps://m.bqg122.com\nhttps://m.bqg220.com\nhttps://m.bqg227.com\nhttps://m.bqgll.com\nhttps://m.bqgtu.com\nhttps://m.bigee.cc\n\n番茄123：\nhttps://m.fqxs123.com\nE小说：  \nhttps://m.ecc6.com\n书汇小说：\nhttps://m.shuhui8.com\n海阅小说：\nhttps://m.haiyue8.com\n米读123：\nhttps://m.mdxs123.com\n米阅小说：\nhttps://m.miyuexiaoshuo.com\nOK小说：\nhttps://m.ok120.net\n全民小说：\nhttps://m.qmkan.cc\n无奈小说：\nhttps://m.wnxsw.cc\n王牌小说：\nhttps://m.wpxs.cc\n正品小说：\nhttps://m.zpxs8.cc\n傲风文学：\nhttps://m.aofce.com\n86文学：\nhttps://m.860bo.com",
-    "bookSourceGroup": "",
-    "bookSourceName": "🍁 笔趣阁(同站一大堆)",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.bigee.cc",
-    "bookUrlPattern": "https://m.bigee.cc/book/\\d+/",
-    "customOrder": 2916,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "玄幻::/xuanhuan/<,{{page}}.html>\n武侠::/wuxia/<,{{page}}.html>\n都市::/dushi/<,{{page}}.html>\n历史::/lishi/<,{{page}}.html>\n网游::/wangyou/<,{{page}}.html>\n科幻::/kehuan/<,{{page}}.html>\n女生::/mm/<,{{page}}.html>\n全本::/finish/<,{{page}}.html>",
-    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
-    "lastUpdateTime": 1716787484842,
-    "respondTime": 37215,
-    "ruleBookInfo": {
-      "author": "[property$=author]@content",
-      "coverUrl": "[property$=image]@content",
-      "intro": "[property$=description]@content",
-      "kind": "[property~=category|status|update_time]@content",
-      "lastChapter": "[property$=latest_chapter_name]@content",
-      "name": "[property$=book_name]@content",
-      "tocUrl": "{{$.}}list.html",
-      "wordCount": "{{@@text.字数@text##字数：}}"
-    },
-    "ruleContent": {
-      "content": "#chaptercontent@html",
-      "nextContentUrl": "text.下一@href",
-      "replaceRegex": "##{{chapter.title}}|（.*阅读模式.*）|请收藏.*cc"
-    },
-    "ruleExplore": {
-      "author": "",
-      "bookList": "",
-      "bookUrl": "",
-      "coverUrl": "",
-      "intro": "",
-      "kind": "",
-      "name": ""
-    },
-    "ruleReview": [],
-    "ruleSearch": {
-      "author": "span@text",
-      "bookList": ".item",
-      "bookUrl": "a.1@href",
-      "checkKeyWord": "剑来",
-      "coverUrl": "img@src",
-      "intro": "dd@text",
-      "kind": "0",
-      "name": "a.1@text"
-    },
-    "ruleToc": {
-      "chapterList": "dl@dd!0",
-      "chapterName": "a@text",
-      "chapterUrl": "a@href"
-    },
-    "searchUrl": "/s?q={{key}},{\n  \"webView\": true\n}",
-    "weight": 0
-  },
-  {
     "bookSourceComment": "",
     "bookSourceGroup": "",
     "bookSourceName": "书趣阁",
@@ -648,6 +590,50 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "20240531By_zhbyjm7783",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "笔趣阁biqige",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://wap.biqige.info/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1717167342709,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".tab@p.0@text##作者：",
+      "coverUrl": ".tu@img@data-original",
+      "init": "",
+      "intro": ".jj@p@text",
+      "kind": ".tab@p.1:2:3@text##类别：|状态：|更新：",
+      "lastChapter": ".tab@p.4@a@text",
+      "name": ".catalog1@h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.novelcontent@textNodes##\\（本章未完，请翻页\\） ",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".search_list",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "kind": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul[class=\"p2\"]@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/s.php,{\n\t\"charset\":\"gbk\",\n\t\"method\":\"post\",\n\t\"body\":\"s={{key}}&type=articlename\"\n\t}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "",
     "bookSourceGroup": "",
     "bookSourceName": "书趣阁",
@@ -752,6 +738,50 @@
     "searchUrl": "/search.html,{\nmethod: \"post\",\nbody: \"searchkey={{key}}&searchtype=all\"\n}",
     "weight": 0,
     "exploreUrl": "[{\"title\":\"全部分类\",\"url\":\"/fenlei/0/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻魔法\",\"url\":\"/fenlei/1/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"武侠修真\",\"url\":\"/fenlei/2/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/fenlei/3/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/fenlei/4/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"侦探推理\",\"url\":\"/fenlei/5/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"网游动漫\",\"url\":\"/fenlei/6/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"科幻小说\",\"url\":\"/fenlei/7/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"恐怖灵异\",\"url\":\"/fenlei/8/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"散文诗词\",\"url\":\"/fenlei/9/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"其他类型\",\"url\":\"/fenlei/10/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}}]"
+  },
+  {
+    "bookSourceComment": "20240601By_zhbyjm7783",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "晚安小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.wananxs.net/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1717228209825,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "id.txt@p@text",
+      "nextContentUrl": "text.下章@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".s3@a@text",
+      "bookList": ".sort_list@li",
+      "bookUrl": ".s2@a@href",
+      "checkKeyWord": "",
+      "kind": ".s1@text&&.s5@text##\\[|\\]",
+      "lastChapter": ".s4@a@text",
+      "name": ".s2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://m.wananxs.net/search.html,{\n\t\"method\":\"post\",\n\t\"body\":\"s={{key}}\"\n\t}",
+    "weight": 0
   },
   {
     "bookSourceName": "顶点小说",
@@ -1046,47 +1076,6 @@
       "nextTocUrl": "@js:\nvar list=[];\npage=src.match(/第\\d+页 \\/ 共(\\d+)页/)[1];\nfor(i=2;i<=page;i++){\n\tlist.push(baseUrl.replace(/\\/$/,\"/\"+i));\n}\nlist;"
     },
     "searchUrl": "https://m.qb5.ac/modules/article/search.php?searchtype=articlename&searchkey={{key}}&t_btnsearch=,{\n\"charset\": \"gbk\"\n\t}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "20240527By_zhbyjm7783",
-    "bookSourceName": "笔趣阁yemangm",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.yemangm.com/",
-    "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "lastUpdateTime": 1716775275063,
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "author": "[property=\"og:novel:author\"]@content",
-      "coverUrl": "[property=\"og:image\"]@content",
-      "intro": "[property=\"og:description\"]@content",
-      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
-      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
-      "name": "[property=\"og:novel:book_name\"]@content"
-    },
-    "ruleContent": {
-      "content": "[class=\"novelcontent\"]@data-txt##\\【本章阅读完毕，更多请搜索笔趣阁;http:\\/\\/m.yemangm.com 阅读更多精彩小说\\】|内容未完，下一页继续阅读",
-      "nextContentUrl": "text.下一页@href##$##,{'webView': true}"
-    },
-    "ruleExplore": [],
-    "ruleReview": [],
-    "ruleSearch": {
-      "author": "a.2@text",
-      "bookList": ".search_list",
-      "bookUrl": "a.0@href",
-      "checkKeyWord": "",
-      "lastChapter": "a.1@text",
-      "name": "a.0@text"
-    },
-    "ruleToc": {
-      "chapterList": "ul[class=\"p2\"]@li@a",
-      "chapterName": "text",
-      "chapterUrl": "href##$##,{'webView': true}"
-    },
-    "searchUrl": "https://m.yemangm.com/book/search.aspx?key={{key}}&type=articlename",
     "weight": 0
   },
   {
