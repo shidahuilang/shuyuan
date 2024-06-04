@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceComment": "senhora",
+    "bookSourceName": "三月天",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.3yt.org",
+    "customOrder": -2147483648,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "最新更新::https://m.3yt.org/top/lastupdate/{{page}}.html",
+    "lastUpdateTime": 1717443362532,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "",
+      "lastChapter": "[property~=og:novel:update_time]@content",
+      "tocUrl": "class.now@a@href"
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "class.data.0@a@text",
+      "bookList": "class.list@li",
+      "bookUrl": "a@href",
+      "coverUrl": "a@img@src",
+      "intro": "class.intro@text",
+      "kind": "span@text",
+      "lastChapter": "class.data.1@text##最新：",
+      "name": "class.bookname@text"
+    },
+    "ruleSearch": [],
+    "ruleToc": {
+      "chapterList": "class.read@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "option@value"
+    },
+    "weight": 0
+  }
+]
