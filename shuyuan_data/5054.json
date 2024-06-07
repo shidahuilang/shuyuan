@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "20240605By_zhbyjm7783",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "白鹤看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.baiheks.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1717684582292,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.全部章节@a@href",
+      "wordCount": ".caption-bookinfo@p@.btn-primary@text"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@p@textNodes##白鹤看书【baiheks.com】第一时间更新《.*》最新章节。若浏览器显示没有新章节了，请尝试点击右上角↗️或右下角↘️的菜单，退出阅读模式即可，谢谢！|\\(本章完\\)",
+      "nextContentUrl": "id.next_url@onclick@js:\nif(result[0]){\nvar next=result[0],\nlocation=url=>({href:url});\nu=eval(String(next));\nw=\",{'webView': true}\";\n/_\\d+.html?$/.test(u)&&u+w;\n}"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".book-coverlist",
+      "bookUrl": "h4@a@href",
+      "checkKeyWord": "深空彼岸",
+      "coverUrl": "img@data-src",
+      "intro": ".intro@text",
+      "kind": ".status@text",
+      "name": "h4@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".panel-chapterlist@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "onclick<js>##location.href='|'</js><js>##$##,{'webView': true}</js>",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "http://www.baiheks.com/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "日轻",
+    "bookSourceName": "神凑轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.shencou.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "日点击榜::http://m.shencou.com/top.php?type=dayvisit&page={{page}}\n周点击榜::http://m.shencou.com/top.php?type=weekvisit&page={{page}}\n月点击榜::http://m.shencou.com/top.php?type=monthvisit&page={{page}}\n总点击榜::http://m.shencou.com/top.php?type=allvisit&page={{page}}\n总收藏榜::http://m.shencou.com/top.php?type=goodnum&page={{page}}\n字数排行::http://m.shencou.com/top.php?type=size&page={{page}}\n日推荐榜::http://m.shencou.com/top.php?type=dayvote&page={{page}}\n周推荐榜::http://m.shencou.com/top.php?type=weekvote&page={{page}}\n月推荐榜::http://m.shencou.com/top.php?type=monthvote&page={{page}}\n电击文库::http://m.shencou.com/sort.php?sortid=1&page={{page}}\n富见文库::http://m.shencou.com/sort.php?sortid=2&page={{page}}\n角川文库::http://m.shencou.com/sort.php?sortid=3&page={{page}}\nMFJ文库::http://m.shencou.com/sort.php?sortid=4&page={{page}}\nFAMI通文::http://m.shencou.com/sort.php?sortid=5&page={{page}}\nGA文库::http://m.shencou.com/sort.php?sortid=6&page={{page}}\nHJ文库::http://m.shencou.com/sort.php?sortid=7&page={{page}}\n壹迅文库::http://m.shencou.com/sort.php?sortid=8&page={{page}}\n集英文库::http://m.shencou.com/sort.php?sortid=9&page={{page}}\n讲坛社库::http://m.shencou.com/sort.php?sortid=12&page={{page}}\n少女文库::http://m.shencou.com/sort.php?sortid=10&page={{page}}\nsf文库::http://m.shencou.com/sort.php?sortid=11&page={{page}}",
+    "header": "{'User-Agent': 'Mozilla/5.0 (linux; u; android 12; zh-cn; v1814a build/pkq1.180819.001) applewebkit/537.36 (khtml, like gecko) version/4.0 chrome/100.0.2987.108 quark/6.5.5.137 mobile safari/537.36'}",
+    "lastUpdateTime": 1717638851274,
+    "loginUrl": "https://m.shencou.com/mlooks.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".p1.0@text",
+      "coverUrl": ".tu@img@src",
+      "init": "",
+      "intro": ".p2.1@text",
+      "kind": "{{@@.catalog1@class.p4@text}},{{@@.p5@text}},{{@@.p2.1@text##：##:}}",
+      "lastChapter": ".info_chapters@.p2.0@li.0@text",
+      "name": ".inh1@text",
+      "tocUrl": "",
+      "wordCount": ".p6@text"
+    },
+    "ruleContent": {
+      "content": ".novelcontent@html"
+    },
+    "ruleExplore": {
+      "author": ".right@.p4@||.p4@text",
+      "bookList": ".fl_list@.tt||.content_link",
+      "bookUrl": ".p2@a@href||a@href",
+      "coverUrl": "a@href||.p2@a@href@js:\naid = result.match(/[0-9]+/); \nstr = \"http://www.shencou.com/files/article/image/\" +( String(aid).length > 3?   String(aid)[0]: \"0\")+ \"/\" + aid + \"/\" + aid +\"s.jpg\"; \nstr\n",
+      "intro": ".right@.p5@text",
+      "kind": ".right@.p2@text||.p1@text",
+      "name": ".right@.p1@text||.p2@text",
+      "wordCount": ".right@.p3@text||.p3@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".search_list",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "kind": "a.1@text",
+      "lastChapter": "",
+      "name": "a.0@text##《|》"
+    },
+    "ruleToc": {
+      "chapterList": ".info_chapters@.p2.1@li\n\n@js:\n\nlist=[]\nlis=result\nfor(i in lis) {\n    if(String(lis[i]).match(/href/)) {\n        lis[i].select(\"a\").forEach(a=>{\n            list.push({\n                text: a.text().match(/>(.*)/)[1],\n                href: a.attr(\"href\")\n            })\n        })\n    } else {\n        list.push({\n            text: \" 🏷️ \"+lis[i].text(),\n            vo: true\n        })\n    }\n}\nlist",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVolume": "vo",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "@js:\nvar url=source.getKey();\nvar so=url+\"/pserchs.php,\";\nbody=`s=${key}&type=articlename&submit`;\nvar head=source.header;\nvar post={\n\t\"body\": String(body),\"headers\": head,\n\t\"charset\":\"gbk\",\n  \"method\": \"POST\"\n  };\njava.put(\"url\",String(so+JSON.stringify(post)))",
+    "weight": 0
+  }
+]

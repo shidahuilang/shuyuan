@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "By_zhbyjm7783",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "起点笔下文学qdbxwx",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.qdbxwx.com/",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": 3679,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/fenlei1/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"修真\",\"url\":\"/fenlei2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"都市\",\"url\":\"/fenlei3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"历史\",\"url\":\"/fenlei4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"网游\",\"url\":\"/fenlei5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"科幻\",\"url\":\"/fenlei6/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"完本\",\"url\":\"/wanben/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"总排行榜\",\"url\":\"/topallvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"月排行榜\",\"url\":\"/topmonthvisit/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"本站推荐\",\"url\":\"/toptoptime/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"总推荐榜\",\"url\":\"/topallvote/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"月推荐榜\",\"url\":\"/topmonthvote/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}},{\"title\":\"收藏排行\",\"url\":\"/topgoodnum/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.29}}]",
+    "header": "",
+    "lastUpdateTime": 1717716805707,
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 11102,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:title\"]@content",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "#htmlContent@textNodes##起点笔下文学.*|第\\d+章|无错无删减全文免费阅读！",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": ".s4@text||td.2@text",
+      "bookList": ".news@ul@li||tbody@tr!0",
+      "bookUrl": ".s2@a@href||a.0@href",
+      "kind": ".s1@text",
+      "lastChapter": ".s3@text||a.1@text",
+      "name": ".s2@text||a.0@text",
+      "wordCount": "td.4@text"
+    },
+    "ruleSearch": {
+      "author": "td.2@text",
+      "bookList": "body@tr!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "kind": "",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text",
+      "wordCount": "td.3@text"
+    },
+    "ruleToc": {
+      "chapterList": ".panel-chapterlist@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}&submit=%CB%D1%CB%F7,{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]
