@@ -1,0 +1,51 @@
+[
+  {
+    "ruleContent": {
+      "content": "id.content@html##请记住本书首发域名：|.net。|顶点小说手机版阅读网址：|最新网址.*com"
+    },
+    "ruleExplore": {
+      "coverUrl": "img@src",
+      "author": "class.newbook_author@a@text",
+      "bookUrl": "class.newbook_title@a@href@js:'https://www.mayiwsk.com'+result",
+      "name": "class.newbook_title@a@text",
+      "bookList": "class.newbook_list",
+      "intro": "class.newbook_intor@text"
+    },
+    "weight": 0,
+    "bookSourceGroup": "[小说源]",
+    "loginUrl": "",
+    "searchUrl": "https://www.mayiwsk.com/modules/article/search.php?searchkey={{key}}",
+    "ruleSearch": {
+      "coverUrl": "tag.td.0@tag.a@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'https://www.mayiwsk.com/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "author": "tag.td.2@text",
+      "bookUrl": "tag.td.0@tag.a@href",
+      "name": "tag.td.0@tag.a@text",
+      "bookList": "class.grid@tag.tr!0",
+      "lastChapter": "tag.td.1@tag.a@text"
+    },
+    "enabledExplore": true,
+    "ruleBookInfo": {
+      "coverUrl": "id.fmimg@tag.img.0@src",
+      "author": "id.info@tag.p.0@text##作    者：",
+      "kind": "id.info@tag.p.2@text##最后更新：",
+      "name": "id.info@tag.h1.0@text",
+      "intro": "id.intro@text",
+      "lastChapter": "id.info@tag.p.3@a@text"
+    },
+    "ruleToc": {
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "chapterList": "id.list@tag.dd"
+    },
+    "bookSourceUrl": "https://www.mayiwsk.com/#♤pb",
+    "lastUpdateTime": 1681942741161,
+    "customOrder": 0,
+    "bookSourceType": 0,
+    "enabled": true,
+    "bookSourceName": "蚂蚁文学",
+    "bookSourceComment": "",
+    "respondTime": 6069,
+    "exploreUrl": "玄幻小说::https://m.mayiwsk.com/sort/1_{{page}}/\n修真小说::https://m.mayiwsk.com/sort/2_{{page}}/\n都市小说::https://m.mayiwsk.com/sort/3_{{page}}/\n穿越小说::https://m.mayiwsk.com/sort/4_{{page}}/\n网游小说::https://m.mayiwsk.com/sort/5_{{page}}/\n科幻小说::https://m.mayiwsk.com/sort/6_{{page}}/\n其他小说::https://m.mayiwsk.com/sort/7_{{page}}/\n女生频道::https://m.mayiwsk.com/sort/8_{{page}}/",
+    "bookUrlPattern": "https://www.mayiwsk.com/\\d+_\\d+/"
+  }
+]
