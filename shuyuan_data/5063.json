@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "20240612By_zhbyjm7783",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "笔趣阁88yuedu",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://88yuedu.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1718124947518,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".detailgame@.author@text",
+      "coverUrl": ".detailgame@img@src",
+      "intro": ".detailgame@.brief_text@text",
+      "kind": ".detailgame@a.1:2@text",
+      "lastChapter": ".chapter_name.-1@text",
+      "name": ".detailgame@.name@text",
+      "wordCount": ".detailgame@.hits@span.0@text"
+    },
+    "ruleContent": {
+      "content": ".read-content@p@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "p.0@a.0@text",
+      "bookList": ".secd-rank-list",
+      "bookUrl": "dd@a.0@href",
+      "coverUrl": "img@data-original",
+      "intro": ".big-book-info@text",
+      "kind": "p.0@textNodes&&p.0@a.1@text&&span.1@text##\\n|\\|",
+      "lastChapter": "p.2@a@text##最近更新 ",
+      "name": "dd@a.0@text",
+      "wordCount": ".clicknum@em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".cate-list@a",
+      "chapterName": ".chapter_name@text",
+      "chapterUrl": "href",
+      "updateTime": ".chapter_date@text"
+    },
+    "searchUrl": "http://88yuedu.com/search.html?keyword={{key}}",
+    "weight": 0
+  }
+]
