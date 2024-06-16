@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "免检",
+    "bookSourceName": "鲤鱼乡",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.liyuxiangall.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "现代耽美::https://www.danmei263.com/xiandai/\n穿越重生::https://www.danmei263.com/chuanyue/\n古代耽美::https://www.danmei263.com/gudai/\n灵异玄幻::https://www.danmei263.com/lingyi/\nBL小说::https://www.danmei263.com/bl/\nGL小说::https://www.danmei263.com/gl/\n腐文小说::https://www.danmei263.com/fuwen/",
+    "lastUpdateTime": 1718424312564,
+    "respondTime": 8993,
+    "ruleBookInfo": {
+      "author": ".book-describe@tag.p.0@text",
+      "coverUrl": ".book-img@tag.img@src",
+      "intro": ".m-bkcont@text",
+      "kind": ".book-describe@tag.p.2@tag.a@text",
+      "lastChapter": ".book-describe@tag.p.3@tag.a@text",
+      "name": ".book-describe@tag.h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": ".m-article-text@html"
+    },
+    "ruleExplore": {
+      "author": "null",
+      "bookList": ".m-list-top@tag.ul@tag.li",
+      "bookUrl": "tag.a@href",
+      "kind": ".m-listbook-title@tag.h3@text",
+      "name": "tag.a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".wid10@tag.b@text",
+      "bookList": ".clearfix@tag.li!0",
+      "bookUrl": ".wid35.0@tag.a@href",
+      "checkKeyWord": "魔道祖师",
+      "lastChapter": ".wid35.1@tag.a@text",
+      "name": ".wid35.0@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".book-list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/e/search/index.php,{\n \"method\": \"POST\",\n \"body\": \"keyboard={{key}}&tbname=bookname&show=title,writer&tempid=1&submit=搜索\"\n\t}",
+    "weight": 0
+  }
+]
