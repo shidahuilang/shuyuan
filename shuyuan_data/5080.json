@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "天天的鸟蛋蛋",
+    "bookSourceName": "仙域书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xianyuandisplay.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1718826209173,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "",
+      "name": "{{@@[property=\"og:title\"]@content}}"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href",
+      "replaceRegex": "##.*\\(第.*页\\)\\n|（本章未完，请点击下一页继续阅读）"
+    },
+    "ruleExplore": {
+      "intro": ""
+    },
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": "class.txt-list txt-list-row5@li!0",
+      "bookUrl": ".s2@a@href",
+      "coverUrl": "a.0@href\n@js:##.+\\D((\\d+)\\d{3})\\D##http://www.xianyuandisplay.com/files/article/image/$2/$1/$1s.jpg###",
+      "intro": "a.0@href<js>java.ajax('http://www.xianyuandisplay.com'+result)</js>[property=\"og:description\"]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "{{@@.s1@text##\\[|\\]}},{{@@.s5@text}}",
+      "lastChapter": "{{@@.s3@text}}·{{@@.s5@text}}",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.layout layout-col1@.section-box!0@ul@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search.php?keyWord={{key}}",
+    "weight": 0
+  }
+]

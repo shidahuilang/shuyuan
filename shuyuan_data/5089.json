@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "笔趣阁：\nhttps://m.bqg18.cc\nhttps://m.bq99.cc\nhttps://m.bqg113.com\nhttps://m.bqg119.com\nhttps://m.bqg121.com\nhttps://m.bq122.cc\nhttps://m.bqg220.com\nhttps://m.bqg222.com\nhttps://m.bqg223.cc\nhttps://m.bq227.cc\nhttps://m.bqg335.com\nhttps://m.bqgll.com\nhttps://m.bqgtu.com\nhttps://m.mfbqg.com\nhttps://m.bqlu.cc\nhttps://m.quge.cc\nhttps://m.bqgui.cc\nhttps://m.bigee.cc\n\n番茄123： https://m.fqxs123.com\n  E小说：   https://m.ecc6.com\n书汇小说：https://m.shuhui8.com\n海阅小说：https://m.haiyue8.com\n米读123： https://m.mdxs123.com\n傲风文学：https://m.aofce.com\n 86文学：  https://m.860bo.com\n云读小说：https://m.yundu9.com\n云海小说：https://m.yunhai9.com\n米阅小说：https://m.miyuexiaoshuo.com\nOK小说：  https://m.ok120.net\n 搜书网：   https://m.soushuwang.cc\n全民小说：https://m.qmkan.cc\n无奈小说：https://m.wnxsw.cc\n王牌小说：https://m.wpxs.cc\n正品小说：https://m.zpxs8.cc\n 69书吧：  https://m.69sb.cc",
+    "bookSourceGroup": "",
+    "bookSourceName": "同站一大堆",
+    "bookSourceType": 0,
+    "bookSourceUrl": "自己找个地址复制到这里，不推荐移动",
+    "bookUrlPattern": "/book/\\d+/",
+    "customOrder": 17075,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"武侠\",\"url\":\"/wuxia/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"都市\",\"url\":\"/dushi/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"历史\",\"url\":\"/lishi/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"网游\",\"url\":\"/wangyou/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"/kehuan/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"女生\",\"url\":\"/mm/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n{\"title\":\"全本\",\"url\":\"/finish/<,{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}}]",
+    "header": "{ \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1718993985979,
+    "loginUrl": "",
+    "respondTime": 22952,
+    "ruleBookInfo": {
+      "author": "text.作者@text",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "class.name@text",
+      "tocUrl": "{{$.}}list.html",
+      "wordCount": "text.字数@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一@href",
+      "replaceRegex": "##请收藏.*com|.*请关闭畅读或阅读模式.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "class.item",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/s?q={{key}},{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

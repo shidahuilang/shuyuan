@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "24.6.21\n搜索需要至少六个字",
+    "bookSourceGroup": "🏵",
+    "bookSourceName": "🏵饭饭小说8",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.ffxs8.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"༺ˇ»`ʚ分类ɞ´«ˇ༻\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"都市言情\",\"url\":\"dsyq/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"武侠修真\",\"url\":\"wxxz/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"玄幻奇幻\",\"url\":\"xhqh/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"穿越架空\",\"url\":\"cyjk/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"科幻竞技\",\"url\":\"khjj/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"鬼话悬疑\",\"url\":\"ghxy/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"军事历史\",\"url\":\"jsls/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"官场商战\",\"url\":\"guanchang/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"乡土风情\",\"url\":\"xtfq/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"耽美小说\",\"url\":\"dmtr/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"同人小说\",\"url\":\"trxs/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"总排行榜\",\"url\":\"sort/<,index_{{page}}.html>\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n]",
+    "lastUpdateTime": 1718966872840,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "##作者：([^<]+)<##$1###",
+      "canReName": "",
+      "coverUrl": ".cover@img@src",
+      "downloadUrls": "",
+      "intro": "&nbsp;🕰  更新时间：\n{{@@##时间：([^<]+)<##$1###}}\n📜  内容简介：\n{{@@.descInfo@p@html}}",
+      "kind": "{{@@##大小：([^<]+)<##$1###}}\n{{@@##分类：([^<]+)<##$1###}}\n{{@@##时间：([^<]+)<##$1###}}",
+      "lastChapter": "{{@@.catalog@ul.0@li.-1@text}}•{{@@##时间：([^<]+)<##$1###}}",
+      "name": ".desc-detail@h1@text##\\(\\d+\\-\\d+\\)|\\(全本\\)"
+    },
+    "ruleContent": {
+      "content": ".content@p@html"
+    },
+    "ruleExplore": {
+      "author": "##作者：([^<]+)<##$1###",
+      "bookList": ".list@ul.0@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": ".descript@a@html",
+      "kind": "{{@@span.0@textNodes##大小：}}\n{{@@##时间：([^<]+)<##$1###}}{{@@span.2@text}}",
+      "name": "strong@a@text##\\(\\d+\\-\\d+\\)|\\(全本\\)"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "##作者：([^<]+)<##$1###",
+      "bookList": ".list@ul.0@li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "从火影开始卖罐子",
+      "coverUrl": "img@src",
+      "intro": ".descript@a@html",
+      "kind": ".tips@span.-2:-1@text##.*：",
+      "name": "strong@a@text##\\(\\d+\\-\\d+\\)|\\(全本\\)"
+    },
+    "ruleToc": {
+      "chapterList": ".catalog@ul.0@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "e/search/index.php,{\n  \"body\": \"keyboard={{key}}&show=title\",\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

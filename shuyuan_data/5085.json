@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "稻草人书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dcrbk.com",
+    "bookUrlPattern": "https://www.dcrbk.com/book/\\w+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nvar book=[\n[\"女生·言情\",\"love\"],\n[\"耽美·纯爱\",\"bl\"],\n[\"奇幻·玄幻\",\"qihuan\"],\n[\"武侠·仙侠\",\"wuxia\"],\n[\"科幻·游戏\",\"kehuan\"],\n[\"都市·娱乐\",\"dushi\"],\n[\"历史·军事\",\"lishi\"],\n[\"悬疑·灵异\",\"kongbu\"],\n[\"轻小说\",\"light\"],\n[\"国外文学\",\"guowai\"],\n[\"现当代\",\"modern\"],\n[\"名著\",\"classics\"]];\nsort=book.map(([title,uri])=>\n\t({\n    \"title\": title,\n    \"url\": `/nav/${uri}\\-{{page}}.html`,\n    \"style\": {\n      \"layout_flexGrow\": 1,\n      \"layout_flexBasisPercent\": 0.4\n    }\n  })\n\t);\n\t\nJSON.stringify(sort)",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9; MIX 2 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1718897852366,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "canReName": "",
+      "coverUrl": "@get:{c}",
+      "downloadUrls": "@get:{d}\n<js>\n//var id=baseUrl.match(/\\d+/)[0],\n//url=book.origin+`/txt/${id}.html`;\nurl=book.origin+result;\njava.ajax(url)\n</js>\n.panel-default a.0@href\n##$##,{\"type\": \"zip\"}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\".book-detail@text\",\nc:\"[property$=image]@content\",\nd:\".reader-bar a.1@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": "#cont-body@html",
+      "nextContentUrl": ".page a@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": ".media",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": ".media-info@text",
+      "kind": "0",
+      "name": "h4@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.1@text",
+      "bookList": "tbody tr",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "七界传说",
+      "coverUrl": "a.0@href##\\D*(\\d+)\\D*##\n/uploads/cover/$1s.jpg###",
+      "kind": "0",
+      "name": "a.0@title"
+    },
+    "ruleToc": {
+      "chapterList": "#all-chapter a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/plus/search.php?q={{key}}",
+    "weight": 0
+  }
+]
