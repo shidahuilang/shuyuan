@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
-- 语音包生成[点我](https://tts.dalang.eu.org/)
+- TG交流群[点我](https://t.me/dahuilang888)
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
