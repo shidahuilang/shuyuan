@@ -1,0 +1,222 @@
+[
+  {
+    "bookSourceComment": "by 阿鬼",
+    "bookSourceGroup": "★笔趣阁,★网页源",
+    "bookSourceName": "🔞笔趣阁xsbqg.net[24.06.24已修]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xsbqg.net",
+    "bookUrlPattern": "http://www.xsbqg.net/\\d+_\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "—————————常规分类—————————\n玄幻::/class/xuanhuan/{{page}}/\n武侠::/class/wuxia/{{page}}/\n都市::/class/dushi/{{page}}/\n历史::/class/lishi/{{page}}/\n科幻::/class/kehuan/{{page}}/\n游戏::/class/youxi/{{page}}/\n女生::/class/nvsheng/{{page}}/\n其他::/class/qita/{{page}}/\n—————————排行榜—————————\n总排行榜::/rank/allvisit/\n月排行榜::/rank/monthvisit/\n周排行榜::/rank/weekvisit/\n总收藏榜::/rank/goodnum/\n—————————连载&完本—————————\n连载::/class/<,{{page}}/>\n完本::/quanben/class/<,{{page}}/>",
+    "header": "{\"referer\": \"{{source.getKey()}}/\",\n\"x-requested-with\": \"mark.via\",\n\"accept-language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\",\n\"user-agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1719230787805,
+    "loginUrl": "http://www.xsbqg.net/login/",
+    "respondTime": 4649,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nc:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content\",\nd:\"[property$=description]@content\",\ni:\"[property$=image]@content\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": ".chapter-content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##最近转码严重.*"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".book-author@text",
+      "bookList": ".book-li",
+      "bookUrl": "a@href",
+      "coverUrl": ".book-cover@img@src",
+      "intro": ".book-desc@text",
+      "kind": ".tag-small.gray@text&&.tag-small.red@text",
+      "name": ".book-title@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list a[9:]",
+      "chapterName": "dd@text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://www.xxbqg.org/soso5cac6.html,{\n  \"body\": \"searchtype=all&searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by 阿鬼\n原网站的搜索似乎用不了！\n网址发布页：https://hongxiuzh.com/",
+    "bookSourceGroup": "★不可说系列,★红袖招",
+    "bookSourceName": "🔞红袖招com[24.06.24已修]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://hongxiuf.com/",
+    "bookUrlPattern": "https://hongxiuf.com/\\w+",
+    "customOrder": 63,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "———————常规分类———————\n都市激情::/category/1/<,{{page}}/2/0>\n腐小说::/category/3/<,{{page}}/2/0>\n武侠古典::/category/2/<,{{page}}/2/0>\n家庭伦理::/category/5/<,{{page}}/2/0>\n校园春色::/category/4/<,{{page}}/2/0>\n言情小说::/category/6/<,{{page}}/2/0>\n凌虐调教::/category/7/<,{{page}}/2/0>\n肉文合集::/category/8/<,{{page}}/2/0>\n玄幻其他::/category/9/<,{{page}}/2/0>\n————————标签墙————————\n耽美::/tags/%e8%80%bd%e7%be%8e<,/{{page}}>\n百合::/tags/%e7%99%be%e5%90%88<,/{{page}}>\n肉文::/tags/%e8%82%89%e6%96%87<,/{{page}}>\n重生::/tags/%e9%87%8d%e7%94%9f<,/{{page}}>\n穿越::/tags/%e7%a9%bf%e8%b6%8a<,/{{page}}>\n网游::/tags/%e7%bd%91%e6%b8%b8<,/{{page}}>\n种田::/tags/%e7%a7%8d%e7%94%b0<,/{{page}}>\n师生::/tags/%e5%b8%88%e7%94%9f<,/{{page}}>\n乱伦::/tags/%e4%b9%b1%e4%bc%a6<,/{{page}}>\n双性::/tags/%e5%8f%8c%e6%80%a7<,/{{page}}>\n强受::/tags/%e5%bc%ba%e5%8f%97<,/{{page}}>\n人兽::/tags/%e4%ba%ba%e5%85%bd<,/{{page}}>\nSM::/tags/SM<,/{{page}}>\n末世::/tags/%e6%9c%ab%e4%b8%96<,/{{page}}>\n兄弟::/tags/%e5%85%84%e5%bc%9f<,/{{page}}>\n萌文::/tags/%e8%90%8c%e6%96%87<,/{{page}}>\n虐身虐心::/tags/%e8%99%90%e8%ba%ab%e8%99%90%e5%bf%83<,/{{page}}>\n美攻::/tags/%e7%be%8e%e6%94%bb<,/{{page}}>\n年上::/tags/%e5%b9%b4%e4%b8%8a<,/{{page}}>\n年下::/tags/%e5%b9%b4%e4%b8%8b<,/{{page}}>\n1V1::/tags/1V1<,/{{page}}>\n校园::/tags/%e6%a0%a1%e5%9b%ad<,/{{page}}>\n狗血::/tags/%e7%8b%97%e8%a1%80<,/{{page}}>\n同人::/tags/%e5%90%8c%e4%ba%ba<,/{{page}}>\n奇幻::/tags/%e5%a5%87%e5%b9%bb<,/{{page}}>\n仙侠修真::/tags/%e4%bb%99%e4%be%a0%e4%bf%ae%e7%9c%9f<,/{{page}}>\n娱乐圈::/tags/%e5%a8%b1%e4%b9%90%e5%9c%88<,/{{page}}>\n爽文::/tags/%e7%88%bd%e6%96%87<,/{{page}}>\n悲剧::/tags/%e6%82%b2%e5%89%a7<,/{{page}}>\n暗黑::/tags/%e6%9a%97%e9%bb%91<,/{{page}}>\n甜文::/tags/%e7%94%9c%e6%96%87<,/{{page}}>\nBG::/tags/BG<,/{{page}}>\nBL::/tags/BL<,/{{page}}>\nNP::/tags/NP<,/{{page}}>\n高H::/tags/%e9%ab%98H<,/{{page}}>\n强强::/tags/%e5%bc%ba%e5%bc%ba<,/{{page}}>\n系统::/tags/%e7%b3%bb%e7%bb%9f<,/{{page}}>\n日韩::/tags/%e6%97%a5%e9%9f%a9<,/{{page}}>\n名著::/tags/%e5%90%8d%e8%91%97<,/{{page}}>\n港台::/tags/%e6%b8%af%e5%8f%b0<,/{{page}}>\n古风::/tags/%e5%8f%a4%e9%a3%8e<,/{{page}}>\n现代::/tags/%e7%8e%b0%e4%bb%a3<,/{{page}}>\n纯爱::/tags/%e7%ba%af%e7%88%b1<,/{{page}}>\n女尊::/tags/%e5%a5%b3%e5%b0%8a<,/{{page}}>\n废土::/tags/%e5%ba%9f%e5%9c%9f<,/{{page}}>\n短篇::/tags/%e7%9f%ad%e7%af%87<,/{{page}}>\n三观不正::/tags/%e4%b8%89%e8%a7%82%e4%b8%8d%e6%ad%a3<,/{{page}}>\n霸道总裁::/tags/%e9%9c%b8%e9%81%93%e6%80%bb%e8%a3%81<,/{{page}}>\n车技高::/tags/%e8%bd%a6%e6%8a%80%e9%ab%98<,/{{page}}>\n脑洞大::/tags/%e8%84%91%e6%b4%9e%e5%a4%a7<,/{{page}}>\n暗恋::/tags/%e6%9a%97%e6%81%8b<,/{{page}}>\n渣攻贱受::/tags/%e6%b8%a3%e6%94%bb%e8%b4%b1%e5%8f%97<,/{{page}}>\n玛丽苏::/tags/%e7%8e%9b%e4%b8%bd%e8%8b%8f<,/{{page}}>\n乡村::/tags/%e4%b9%a1%e6%9d%91<,/{{page}}>\n美受::/tags/%e7%be%8e%e5%8f%97<,/{{page}}>\n帅攻::/tags/%e5%b8%85%e6%94%bb<,/{{page}}>\n帅受::/tags/%e5%b8%85%e5%8f%97<,/{{page}}>\n强攻::/tags/%e5%bc%ba%e6%94%bb<,/{{page}}>\n青春::/tags/%e9%9d%92%e6%98%a5<,/{{page}}>\n主受::/tags/%e4%b8%bb%e5%8f%97<,/{{page}}>\n主攻::/tags/%e4%b8%bb%e6%94%bb<,/{{page}}>\n金手指::/tags/%e9%87%91%e6%89%8b%e6%8c%87<,/{{page}}>\n沙雕::/tags/%e6%b2%99%e9%9b%95<,/{{page}}>\n搞笑::/tags/%e6%90%9e%e7%ac%91<,/{{page}}>\n逗比攻::/tags/%e9%80%97%e6%af%94%e6%94%bb<,/{{page}}>\n科幻::/tags/%e7%a7%91%e5%b9%bb<,/{{page}}>\n三角::/tags/%e4%b8%89%e8%a7%92<,/{{page}}>\n互攻::/tags/%e4%ba%92%e6%94%bb<,/{{page}}>\n主仆::/tags/%e4%b8%bb%e4%bb%86<,/{{page}}>\n无限流::/tags/%e6%97%a0%e9%99%90%e6%b5%81<,/{{page}}>\n尬癌晚期::/tags/%e5%b0%ac%e7%99%8c%e6%99%9a%e6%9c%9f<,/{{page}}>\n相爱相杀::/tags/%e7%9b%b8%e7%88%b1%e7%9b%b8%e6%9d%80<,/{{page}}>\n武林::/tags/%e6%ad%a6%e6%9e%97<,/{{page}}>\n灵异神怪::/tags/%e7%81%b5%e5%bc%82%e7%a5%9e%e6%80%aa<,/{{page}}>\n悬疑::/tags/%e6%82%ac%e7%96%91<,/{{page}}>\n养成::/tags/%e5%85%bb%e6%88%90<,/{{page}}>\n修真::/tags/%e4%bf%ae%e7%9c%9f<,/{{page}}>\n玄幻::/tags/%e7%8e%84%e5%b9%bb<,/{{page}}>\n傻白甜::/tags/%e5%82%bb%e7%99%bd%e7%94%9c<,/{{page}}>\n深井病::/tags/%e6%b7%b1%e4%ba%95%e7%97%85<,/{{page}}>\n轻松::/tags/%e8%bd%bb%e6%9d%be<,/{{page}}>\n温馨::/tags/%e6%b8%a9%e9%a6%a8<,/{{page}}>\n暴力血腥::/tags/%e6%9a%b4%e5%8a%9b%e8%a1%80%e8%85%a5<,/{{page}}>\n青梅竹马::/tags/%e9%9d%92%e6%a2%85%e7%ab%b9%e9%a9%ac<,/{{page}}>\n破镜重圆::/tags/%e7%a0%b4%e9%95%9c%e9%87%8d%e5%9c%86<,/{{page}}>\n打脸::/tags/%e6%89%93%e8%84%b8<,/{{page}}>\n睡前读物::/tags/%e7%9d%a1%e5%89%8d%e8%af%bb%e7%89%a9<,/{{page}}>\n直掰弯::/tags/%e7%9b%b4%e6%8e%b0%e5%bc%af<,/{{page}}>\n纯纯地污::/tags/%e7%ba%af%e7%ba%af%e5%9c%b0%e6%b1%a1<,/{{page}}>\n升级流::/tags/%e5%8d%87%e7%ba%a7%e6%b5%81<,/{{page}}>\n变态::/tags/%e5%8f%98%e6%80%81<,/{{page}}>\n一见钟情::/tags/%e4%b8%80%e8%a7%81%e9%92%9f%e6%83%85<,/{{page}}>\n圣母::/tags/%e5%9c%a3%e6%af%8d<,/{{page}}>\nHE::/tags/HE<,/{{page}}>\nBE::/tags/BE<,/{{page}}>\nOE::/tags/OE<,/{{page}}>\n攻宠受::/tags/%e6%94%bb%e5%ae%a0%e5%8f%97<,/{{page}}>\n父子::/tags/%e7%88%b6%e5%ad%90<,/{{page}}>\n母子::/tags/%e6%af%8d%e5%ad%90<,/{{page}}>\n兄妹::/tags/%e5%85%84%e5%a6%b9<,/{{page}}>\n姐弟::/tags/%e5%a7%90%e5%bc%9f<,/{{page}}>\n痴情::/tags/%e7%97%b4%e6%83%85<,/{{page}}>\n人妻::/tags/%e4%ba%ba%e5%a6%bb<,/{{page}}>\n骚操作::/tags/%e9%aa%9a%e6%93%8d%e4%bd%9c<,/{{page}}>\n套路::/tags/%e5%a5%97%e8%b7%af<,/{{page}}>\n反套路::/tags/%e5%8f%8d%e5%a5%97%e8%b7%af<,/{{page}}>\n异装::/tags/%e5%bc%82%e8%a3%85<,/{{page}}>\n历史::/tags/%e5%8e%86%e5%8f%b2<,/{{page}}>\n受追攻::/tags/%e5%8f%97%e8%bf%bd%e6%94%bb<,/{{page}}>\n暧昧::/tags/%e6%9a%a7%e6%98%a7<,/{{page}}>\n架空::/tags/%e6%9e%b6%e7%a9%ba<,/{{page}}>\n禁欲::/tags/%e7%a6%81%e6%ac%b2<,/{{page}}>\n互宠::/tags/%e4%ba%92%e5%ae%a0<,/{{page}}>\n大叔::/tags/%e5%a4%a7%e5%8f%94<,/{{page}}>\n电竞::/tags/%e7%94%b5%e7%ab%9e<,/{{page}}>\n万人迷::/tags/%e4%b8%87%e4%ba%ba%e8%bf%b7<,/{{page}}>\n受宠攻::/tags/%e5%8f%97%e5%ae%a0%e6%94%bb<,/{{page}}>\n偏执狂::/tags/%e5%81%8f%e6%89%a7%e7%8b%82<,/{{page}}>\nABO::/tags/ABO<,/{{page}}>\n调教::/tags/%e8%b0%83%e6%95%99<,/{{page}}>\n先婚后爱::/tags/%e5%85%88%e5%a9%9a%e5%90%8e%e7%88%b1<,/{{page}}>\n都市::/tags/%e9%83%bd%e5%b8%82<,/{{page}}>\n激情::/tags/%e6%bf%80%e6%83%85<,/{{page}}>\n伦理::/tags/%e4%bc%a6%e7%90%86<,/{{page}}>\n凌虐::/tags/%e5%87%8c%e8%99%90<,/{{page}}>\n官场::/tags/%e5%ae%98%e5%9c%ba<,/{{page}}>\n长篇::/tags/%e9%95%bf%e7%af%87<,/{{page}}>\n明星::/tags/%e6%98%8e%e6%98%9f<,/{{page}}>\n烂尾::/tags/%e7%83%82%e5%b0%be<,/{{page}}>\n快穿::/tags/%e5%bf%ab%e7%a9%bf<,/{{page}}>\n严肃文学::/tags/%e4%b8%a5%e8%82%83%e6%96%87%e5%ad%a6<,/{{page}}>\n吸血鬼::/tags/%e5%90%b8%e8%a1%80%e9%ac%bc<,/{{page}}>\n小白文::/tags/%e5%b0%8f%e7%99%bd%e6%96%87<,/{{page}}>\n职场::/tags/%e8%81%8c%e5%9c%ba<,/{{page}}>\n日系::/tags/%e6%97%a5%e7%b3%bb<,/{{page}}>\n治愈::/tags/%e6%b2%bb%e6%84%88<,/{{page}}>\n文笔赞::/tags/%e6%96%87%e7%ac%94%e8%b5%9e<,/{{page}}>\n宅斗::/tags/%e5%ae%85%e6%96%97<,/{{page}}>\n苏爽::/tags/%e8%8b%8f%e7%88%bd<,/{{page}}>\n恐怖::/tags/%e6%81%90%e6%80%96<,/{{page}}>\n推理::/tags/%e6%8e%a8%e7%90%86<,/{{page}}>\n慢热::/tags/%e6%85%a2%e7%83%ad<,/{{page}}>\n剧情流::/tags/%e5%89%a7%e6%83%85%e6%b5%81<,/{{page}}>\n经典::/tags/%e7%bb%8f%e5%85%b8<,/{{page}}>\nNTR::/tags/NTR<,/{{page}}>\n克苏鲁::/tags/%e5%85%8b%e8%8b%8f%e9%b2%81<,/{{page}}>\n重口味::/tags/%e9%87%8d%e5%8f%a3%e5%91%b3<,/{{page}}>\n神话::/tags/%e7%a5%9e%e8%af%9d<,/{{page}}>\n侦探::/tags/%e4%be%a6%e6%8e%a2<,/{{page}}>\n神反转::/tags/%e7%a5%9e%e5%8f%8d%e8%bd%ac<,/{{page}}>\n谍战::/tags/%e8%b0%8d%e6%88%98<,/{{page}}>\n老师::/tags/%e8%80%81%e5%b8%88<,/{{page}}>\n学生::/tags/%e5%ad%a6%e7%94%9f<,/{{page}}>\n女神::/tags/%e5%a5%b3%e7%a5%9e<,/{{page}}>\n快节奏::/tags/%e5%bf%ab%e8%8a%82%e5%a5%8f<,/{{page}}>\n正能量::/tags/%e6%ad%a3%e8%83%bd%e9%87%8f<,/{{page}}>\n民国::/tags/%e6%b0%91%e5%9b%bd<,/{{page}}>\n隋唐::/tags/%e9%9a%8b%e5%94%90<,/{{page}}>\n大宋::/tags/%e5%a4%a7%e5%ae%8b<,/{{page}}>\n明朝::/tags/%e6%98%8e%e6%9c%9d<,/{{page}}>\n竹马::/tags/%e7%ab%b9%e9%a9%ac<,/{{page}}>\n商战::/tags/%e5%95%86%e6%88%98<,/{{page}}>\n失忆梗::/tags/%e5%a4%b1%e5%bf%86%e6%a2%97<,/{{page}}>\n假戏真做::/tags/%e5%81%87%e6%88%8f%e7%9c%9f%e5%81%9a<,/{{page}}>\n男神::/tags/%e7%94%b7%e7%a5%9e<,/{{page}}>\n励志::/tags/%e5%8a%b1%e5%bf%97<,/{{page}}>\n湾湾风::/tags/%e6%b9%be%e6%b9%be%e9%a3%8e<,/{{page}}>\n豪门世家::/tags/%e8%b1%aa%e9%97%a8%e4%b8%96%e5%ae%b6<,/{{page}}>\n宫庭::/tags/%e5%ae%ab%e5%ba%ad<,/{{page}}>\n花季雨季::/tags/%e8%8a%b1%e5%ad%a3%e9%9b%a8%e5%ad%a3<,/{{page}}>\n基建流::/tags/%e5%9f%ba%e5%bb%ba%e6%b5%81<,/{{page}}>\n制服情缘::/tags/%e5%88%b6%e6%9c%8d%e6%83%85%e7%bc%98<,/{{page}}>\n江湖::/tags/%e6%b1%9f%e6%b9%96<,/{{page}}>\n合集::/tags/%e5%90%88%e9%9b%86<,/{{page}}>\nGL::/tags/GL<,/{{page}}>\n欧美::/tags/%e6%ac%a7%e7%be%8e<,/{{page}}>\n军事战争::/tags/%e5%86%9b%e4%ba%8b%e6%88%98%e4%ba%89<,/{{page}}>\n刑侦::/tags/%e5%88%91%e4%be%a6<,/{{page}}>\n直播::/tags/%e7%9b%b4%e6%92%ad<,/{{page}}>\n日常::/tags/%e6%97%a5%e5%b8%b8<,/{{page}}>\n扮猪吃虎::/tags/%e6%89%ae%e7%8c%aa%e5%90%83%e8%99%8e<,/{{page}}>\n宗教::/tags/%e5%ae%97%e6%95%99<,/{{page}}>\n权谋::/tags/%e6%9d%83%e8%b0%8b<,/{{page}}>\n女王::/tags/%e5%a5%b3%e7%8e%8b<,/{{page}}>\n美强::/tags/%e7%be%8e%e5%bc%ba<,/{{page}}>\n弱弱::/tags/%e5%bc%b1%e5%bc%b1<,/{{page}}>\n未来::/tags/%e6%9c%aa%e6%9d%a5<,/{{page}}>\n浪漫::/tags/%e6%b5%aa%e6%bc%ab<,/{{page}}>\n现实主义::/tags/%e7%8e%b0%e5%ae%9e%e4%b8%bb%e4%b9%89<,/{{page}}>\n人鱼::/tags/%e4%ba%ba%e9%b1%bc<,/{{page}}>\n乔装改扮::/tags/%e4%b9%94%e8%a3%85%e6%94%b9%e6%89%ae<,/{{page}}>\n天作之合::/tags/%e5%a4%a9%e4%bd%9c%e4%b9%8b%e5%90%88<,/{{page}}>\n完结::/tags/%e5%ae%8c%e7%bb%93<,/{{page}}>\n中篇::/tags/%e4%b8%ad%e7%af%87<,/{{page}}>\n父女::/tags/%e7%88%b6%e5%a5%b3<,/{{page}}>\n影视剧本::/tags/%e5%bd%b1%e8%a7%86%e5%89%a7%e6%9c%ac<,/{{page}}>\n星际::/tags/%e6%98%9f%e9%99%85<,/{{page}}>\n游戏::/tags/%e6%b8%b8%e6%88%8f<,/{{page}}>\n传记::/tags/%e4%bc%a0%e8%ae%b0<,/{{page}}>\n三国::/tags/%e4%b8%89%e5%9b%bd<,/{{page}}>\n言情::/tags/%e8%a8%80%e6%83%85<,/{{page}}>\n东方::/tags/%e4%b8%9c%e6%96%b9<,/{{page}}>\n西方::/tags/%e8%a5%bf%e6%96%b9<,/{{page}}>\n白月光::/tags/%e7%99%bd%e6%9c%88%e5%85%89<,/{{page}}>\n炮灰攻::/tags/%e7%82%ae%e7%81%b0%e6%94%bb<,/{{page}}>\n种马::/tags/%e7%a7%8d%e9%a9%ac<,/{{page}}>\n炮灰受::/tags/%e7%82%ae%e7%81%b0%e5%8f%97<,/{{page}}>\n异术超能::/tags/%e5%bc%82%e6%9c%af%e8%b6%85%e8%83%bd<,/{{page}}>\n热血::/tags/%e7%83%ad%e8%a1%80<,/{{page}}>\n异界::/tags/%e5%bc%82%e7%95%8c<,/{{page}}>\n轻小说::/tags/%e8%bd%bb%e5%b0%8f%e8%af%b4<,/{{page}}>\n二次元::/tags/%e4%ba%8c%e6%ac%a1%e5%85%83<,/{{page}}>\n软饭流::/tags/%e8%bd%af%e9%a5%ad%e6%b5%81<,/{{page}}>\n无敌流::/tags/%e6%97%a0%e6%95%8c%e6%b5%81<,/{{page}}>\n魔法::/tags/%e9%ad%94%e6%b3%95<,/{{page}}>\n逆袭::/tags/%e9%80%86%e8%a2%ad<,/{{page}}>\n清朝::/tags/%e6%b8%85%e6%9c%9d<,/{{page}}>\n蒸汽朋克::/tags/%e8%92%b8%e6%b1%bd%e6%9c%8b%e5%85%8b<,/{{page}}>\n探险::/tags/%e6%8e%a2%e9%99%a9<,/{{page}}>\n风水::/tags/%e9%a3%8e%e6%b0%b4<,/{{page}}>\n春秋::/tags/%e6%98%a5%e7%a7%8b<,/{{page}}>\n第一人称::/tags/%e7%ac%ac%e4%b8%80%e4%ba%ba%e7%a7%b0<,/{{page}}>\n大秦::/tags/%e5%a4%a7%e7%a7%a6<,/{{page}}>\n滥竽充数::/tags/%e6%bb%a5%e7%ab%bd%e5%85%85%e6%95%b0<,/{{page}}>\n微H::/tags/%e5%be%aeH<,/{{page}}>\n情有独钟::/tags/%e6%83%85%e6%9c%89%e7%8b%ac%e9%92%9f<,/{{page}}>\n综漫::/tags/%e7%bb%bc%e6%bc%ab<,/{{page}}>\n师徒::/tags/%e5%b8%88%e5%be%92<,/{{page}}>\n不伦之恋::/tags/%e4%b8%8d%e4%bc%a6%e4%b9%8b%e6%81%8b<,/{{page}}>\n腹黑::/tags/%e8%85%b9%e9%bb%91<,/{{page}}>\n强制爱::/tags/%e5%bc%ba%e5%88%b6%e7%88%b1<,/{{page}}>\n自虐::/tags/%e8%87%aa%e8%99%90<,/{{page}}>\n隐婚::/tags/%e9%9a%90%e5%a9%9a<,/{{page}}>\n女配::/tags/%e5%a5%b3%e9%85%8d<,/{{page}}>\n鬼畜::/tags/%e9%ac%bc%e7%95%9c<,/{{page}}>\n包养::/tags/%e5%8c%85%e5%85%bb<,/{{page}}>\n古穿今::/tags/%e5%8f%a4%e7%a9%bf%e4%bb%8a<,/{{page}}>\n今穿古::/tags/%e4%bb%8a%e7%a9%bf%e5%8f%a4<,/{{page}}>\n黑帮::/tags/%e9%bb%91%e5%b8%ae<,/{{page}}>\n两小无猜::/tags/%e4%b8%a4%e5%b0%8f%e6%97%a0%e7%8c%9c<,/{{page}}>\n忠犬::/tags/%e5%bf%a0%e7%8a%ac<,/{{page}}>\n强暴::/tags/%e5%bc%ba%e6%9a%b4<,/{{page}}>\n衍生::/tags/%e8%a1%8d%e7%94%9f<,/{{page}}>\n傲娇::/tags/%e5%82%b2%e5%a8%87<,/{{page}}>\n日久生情::/tags/%e6%97%a5%e4%b9%85%e7%94%9f%e6%83%85<,/{{page}}>\n戏精::/tags/%e6%88%8f%e7%b2%be<,/{{page}}>\n竞技::/tags/%e7%ab%9e%e6%8a%80<,/{{page}}>\n体育::/tags/%e4%bd%93%e8%82%b2<,/{{page}}>\n婚恋情缘::/tags/%e5%a9%9a%e6%81%8b%e6%83%85%e7%bc%98<,/{{page}}>\n上古洪荒::/tags/%e4%b8%8a%e5%8f%a4%e6%b4%aa%e8%8d%92<,/{{page}}>\n进化::/tags/%e8%bf%9b%e5%8c%96<,/{{page}}>\n召唤::/tags/%e5%8f%ac%e5%94%a4<,/{{page}}>\n兵王::/tags/%e5%85%b5%e7%8e%8b<,/{{page}}>\n废柴::/tags/%e5%ba%9f%e6%9f%b4<,/{{page}}>\n单女主::/tags/%e5%8d%95%e5%a5%b3%e4%b8%bb<,/{{page}}>\n多女主::/tags/%e5%a4%9a%e5%a5%b3%e4%b8%bb<,/{{page}}>\n宠物::/tags/%e5%ae%a0%e7%89%a9<,/{{page}}>\n科技::/tags/%e7%a7%91%e6%8a%80<,/{{page}}>\n无女主::/tags/%e6%97%a0%e5%a5%b3%e4%b8%bb<,/{{page}}>\n智商在线::/tags/%e6%99%ba%e5%95%86%e5%9c%a8%e7%ba%bf<,/{{page}}>\n三观正::/tags/%e4%b8%89%e8%a7%82%e6%ad%a3<,/{{page}}>\n三教九流::/tags/%e4%b8%89%e6%95%99%e4%b9%9d%e6%b5%81<,/{{page}}>\n社会科学::/tags/%e7%a4%be%e4%bc%9a%e7%a7%91%e5%ad%a6<,/{{page}}>\n哲学::/tags/%e5%93%b2%e5%ad%a6<,/{{page}}>\n美食::/tags/%e7%be%8e%e9%a3%9f<,/{{page}}>\n朝堂::/tags/%e6%9c%9d%e5%a0%82<,/{{page}}>\n女装大佬::/tags/%e5%a5%b3%e8%a3%85%e5%a4%a7%e4%bd%ac<,/{{page}}>\n幻想::/tags/%e5%b9%bb%e6%83%b3<,/{{page}}>\n喜剧::/tags/%e5%96%9c%e5%89%a7<,/{{page}}>\n高富帅::/tags/%e9%ab%98%e5%af%8c%e5%b8%85<,/{{page}}>\n综穿::/tags/%e7%bb%bc%e7%a9%bf<,/{{page}}>\n欢喜冤家::/tags/%e6%ac%a2%e5%96%9c%e5%86%a4%e5%ae%b6<,/{{page}}>\n绿帽::/tags/%e7%bb%bf%e5%b8%bd<,/{{page}}>\n动漫::/tags/%e5%8a%a8%e6%bc%ab<,/{{page}}>\n露出::/tags/%e9%9c%b2%e5%87%ba<,/{{page}}>\n多人::/tags/%e5%a4%9a%e4%ba%ba<,/{{page}}>",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1719232985470,
+    "loginCheckJs": "",
+    "loginUrl": "https://hongxiuf.com/User/Login.aspx",
+    "respondTime": 11068,
+    "ruleBookInfo": {
+      "author": ".author@text##著",
+      "coverUrl": "img@src",
+      "intro": ".summery@text##作品简介：|\\[.*",
+      "kind": "p.1@a@textNodes",
+      "name": "h1@text",
+      "tocUrl": "",
+      "wordCount": "p.1@textNodes##[| .* |]"
+    },
+    "ruleContent": {
+      "content": ".article-content@p!0@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "<js>\ni=[\"%uE290\",\"%uE291\",\"%uE292\",\"%uE293\",\"%uE294\",\"%uE295\",\"%uE296\",\"%uE297\",\"%uE298\",\"%uE299\",\"%uE29A\",\"%uE29B\",\"%uE29C\",\"%uE29D\",\"%uE29E\",\"%uE29F\",\"%uE2A0\",\"%uE2A1\",\"%uE2A2\",\"%uE2A3\",\"%uE2A5\",\"%uE2A7\",\"%uE2A8\",\"%uE2A9\",\"%uE2AA\",\"%uE2AB\",\"%uE2AC\",\"%uE2AD\",\"%uE2AE\",\"%uE2AF\",\"%uE2B0\",\"%uE2B1\",\"%uE2B2\",\"%uE2B3\",\"%uE2B4\",\"%uE2B5\",\"%uE2B6\",\"%uE2B7\",\"%uE2B8\",\"%uE2B9\",\"%uE2BA\",\"%uE2BB\",\"%uE2BC\",\"%uE2BD\",\"%uE2BE\",\"%uE2BF\",\"%uE2C0\",\"%uE2C1\",\"%uE2C2\",\"%uE2C3\",\"%uE2C4\",\"%uE2C5\",\"%uE2C6\",\"%uE2C7\",\"%uE2C8\",\"%uE2C9\",\"%uE2CA\",\"%uE2CB\",\"%uE2CC\",\"%uE2CD\",\"%uE2CE\",\"%uE2CF\",\"%uE2D0\",\"%uE2D1\",\"%uE2D2\",\"%uE2D3\",\"%uE2D4\",\"%uE2D5\",\"%uE2D6\",\"%uE2D7\",\"%uE2D8\",\"%uE2D9\",\"%uE2DA\",\"%uE2DB\",\"%uE2DC\",\"%uE2DD\",\"%uE2DE\",\"%uE2DF\",\"%uE2E0\",\"%uE2E1\",\"%uE2E2\",\"%uE2E3\",\"%uE2E4\",\"%uE2E5\",\"%uE2E6\",\"%uE2E7\",\"%uE2E8\",\"%uE2E9\",\"%uE2EA\",\"%uE2EB\",\"%uE2EC\",\"%uE2ED\",\"%uE2EE\",\"%uE2EF\",\"%uE2F0\",\"%uE2F1\",\"%uE2F3\",\"%uE2F4\",\"%uE2F5\",\"%uE2F6\",\"%uE2F7\",\"%uE2F8\",\"%uE2F9\",\"%uE2FA\",\"%uE2FB\",\"%uE2FC\",\"%uE2FD\",\"%uE2FE\",\"%uE2FF\",\"%uE300\",\"%uE301\",\"%uE302\",\"%uE303\",\"%uE304\",\"%uE305\",\"%uE306\",\"%uE307\",\"%uE308\",\"%uE309\",\"%uE30A\",\"%uE30B\",\"%uE30C\",\"%uE30D\",\"%uE30E\",\"%uE30F\",\"%uE310\",\"%uE311\",\"%uE312\",\"%uE313\",\"%uE314\",\"%uE315\",\"%uE316\",\"%uE317\",\"%uE320\",\"%uE321\",\"%uE322\",\"%uE323\"];\n\nz = String(java.base64Decode(\"5pON5aup5omt5o+J56Gs5aW45ZC45aSE6YGT5q+b5o2F5YKs6Lqr5o2P6Iue6IKh5pCe5ZaY57+75o+h5YWl57+Y6L+35Zi05omS5pG45oq96IC76KO45byE6IeA6IW56bih6IKJ57KX6IKk5oy65rWB5rer5ZSH5LiL5aS05o+S6IiU5rm/5bGE57qk6Zi06ISa5bCE5o6o57K+5aqa5ZKs6IiQ5Lmz5bmy5oqa5qyy6ZK75r2u5YGa6aqa5L2T5oi/5o6P5ruh6Ziz5Y+J5oCn6KOk5ouU5YWJ6IyO5Liw5ZCr5qC55rWq6Imy6IO46b6f6I2v5ryP55eS6aG25bC/6I2h5YuD5oOF6IKP6K+x5rKf5ZC76IW/54ix5Z2a5ray5aWz5bGB5bit56m055m96La05aW25pKp572p6KOZ5ruR6L2v6Jyc5p+U5pCT5ZC55bC754iG5Lqk5ZCu5rC06ISx6Zyy5Y+j55qE6KKc5ZG75aaH6YCX6IWw5rSe6IOA5ZWK6JKC5oi36IKl5YWx5YWa5Lmg5Lqn\"));\n\nhtml = escape(result);\nfunction ti(html,i,z){\n\treg = new RegExp(i,'g');\n\treturn html.replace(reg,z);\n\t}\nfor(x in i){\n\thtml = ti(html,i[x],z[x])\n\t}\nunescape(html)\n</js>\n##近期有书友反映部分国产手机自带[\\s\\S]+"
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": ".author@text##/ 著",
+      "bookList": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(source.bookSourceUrl)\nvar x=java.get(\"url\");\nvar s=java.startBrowserAwait(x,\"验证\").body();\nresult=s;\n\t}else{\n\t\tresult=result;\n\t\t}\n\tresult;\n</js>\n.inner.b-a@.yd-list",
+      "bookUrl": ".title@a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img@src",
+      "intro": ".summery@text",
+      "name": ".title@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.m-chapters@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "@js:\njava.put(\"url\",String(source.bookSourceUrl+\"/search.aspx?key=\"+key+\",\"+JSON.stringify({\n\t\t\"headers\":{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 10; zh-cn; MI CC 11)  AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/18.1.8 swan-mibrowser\"\n}})))",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by阿鬼\n\n//原站：http://www.aidusk.info",
+    "bookSourceGroup": "★已修复",
+    "bookSourceName": "八零小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://wap.80zw.la/",
+    "bookUrlPattern": "http://wap.80zw.la/\\d+/",
+    "customOrder": 251,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "—————————男生推荐—————————\n修真::/class3-{{page}}.html\n魔法::/class13-{{page}}.html\n异术::/class1-{{page}}.html\n东方::/class12-{{page}}.html\n争霸::/class14-{{page}}.html\n武侠::/class15-{{page}}.html\n未来::/class9-{{page}}.html\n灵异::/class10-{{page}}.html\n探险::/class22-{{page}}.html\n传记::/class6-{{page}}.html\n特种::/class7-{{page}}.html\n网游::/class16-{{page}}.html\n竞技::/class8-{{page}}.html\n—————————女生推荐—————————\n女强::/class2-{{page}}.html\n婚姻::/class4-{{page}}.html\n百合::/class5-{{page}}.html\n唯美::/class24-{{page}}.html\n穿越::/class17-{{page}}.html\n贵族::/class18-{{page}}.html\n校园::/class19-{{page}}.html\n布衣::/class20-{{page}}.html\n商战::/class21-{{page}}.html\n间谍::/class23-{{page}}.html\n同人::/class11-{{page}}.html\n文集::/class25-{{page}}.html\n—————————完本—————————\n全本::/top/full-{{page}}.html\n—————————排行榜—————————\n日点击榜::/top/dayvisit-{{page}}.html\n周点击榜::/top/weekvisit-{{page}}.html\n月点击榜::/top/monthvisit-{{page}}.html\n总点击榜::/top/allvisit-{{page}}.html\n总收藏榜::/top/goodnum-{{page}}.html\n字数排行::/top/size-{{page}}.html\n日推荐榜::/top/dayvote-{{page}}.html\n周推荐榜::/top/weekvote-{{page}}.html\n月推荐榜::/top/monthvote-{{page}}.html\n总推荐榜::/top/allvote-{{page}}.html\n最新入库::/top/postdate-{{page}}.html\n最近更新::/top/lastupdate-{{page}}.html",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1719237180349,
+    "loginUrl": "http://wap.80zw.la/login.php",
+    "respondTime": 6067,
+    "ruleBookInfo": {
+      "author": ".block_txt2@p[2]@text",
+      "coverUrl": ".block_img2@img@onerror",
+      "intro": ".intro_info@text##(^|[。！？]+[”」）】]?)##$1<br>@js:result.replace(/.*推荐给你的朋友！|八零电子书.*|【展开】.*|更多.*TXT.*/g,\"\")",
+      "kind": ".block_txt2@p[3]@a@text",
+      "lastChapter": ".block_txt2@p[6]@a@text",
+      "name": ".block_txt2@h2@text",
+      "tocUrl": "text.查看更多章节@href"
+    },
+    "ruleContent": {
+      "content": "#nr1@html",
+      "imageStyle": "",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\s\\[正文.*\\n|\\（本章.*|求书网.*|txt下载.*"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "p@ownText##\\[.*]\\/",
+      "bookList": ".line",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "p@ownText##\\[|\\].*",
+      "lastChapter": "",
+      "name": "a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".book_last dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/modules/article/search.php,{\n  \"method\": \"post\",\n  \"body\": \"s=&searchkey={{key}}&submit=\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by 阿鬼\n流量搜索！流量检验！",
+    "bookSourceGroup": "★已修复",
+    "bookSourceName": "第一小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.01xs.com",
+    "customOrder": 336,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/fenlei1/\n仙侠::/fenlei2/\n都市::/fenlei3/\n历史::/fenlei4/\n网游::/fenlei5/\n科幻::/fenlei6/\n同人::/fenlei7/\n综合::/fenlei8/\n青春::/fenlei9/\n现代::/fenlei10/\n古代::/fenlei11/\n幻想::/fenlei12/",
+    "lastUpdateTime": 1719238023271,
+    "respondTime": 9708,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content##\\s.*",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#nr@html",
+      "imageStyle": "0",
+      "nextContentUrl": ".nr_page@a[-1]@href",
+      "replaceRegex": "##\\(未完待续.*"
+    },
+    "ruleExplore": {
+      "author": "span[0]@text##\\/|.*\\s",
+      "bookList": ".list ul",
+      "bookUrl": "a[1]@href",
+      "coverUrl": "img@src",
+      "intro": "span[1]@text",
+      "kind": "i@text",
+      "name": "a[1]@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "dd[0]@text##.*：|\\s.*",
+      "bookList": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(source.bookSourceUrl)\nvar x=java.get(\"url\");\nvar s=java.startBrowserAwait(x,\"验证\").body();\nresult=s;\n\t}else{\n\t\tresult=result;\n\t\t}\n\tresult;\n</js>\n.search-list dl",
+      "bookUrl": "a@href",
+      "coverUrl": "a@href##.+\\D((\\d+)\\d{3})\\D##https://img01xs.cdn.bcebos.com/files/article/image/$2/$1/$1s.jpg###",
+      "intro": "",
+      "kind": "dd[0:1]@text##.*\\s",
+      "lastChapter": "a[1]@text",
+      "name": "a[0]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".zjlb li a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "@js:\njava.put(\"url\",String(source.bookSourceUrl+\"/search.php?keyword=\"+key+\",\"+JSON.stringify({\n\t\t\"headers\":{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; U; Android 10; zh-cn; MI CC 11)  AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/18.1.8 swan-mibrowser\"\n}})))",
+    "weight": 0
+  }
+]

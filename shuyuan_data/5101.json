@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "20240624By_遇知完成代码\n20240624By_zhbyjm7783整理",
+    "bookSourceGroup": "自写0529",
+    "bookSourceName": "爱宝贝ibabyxs8",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.ibabyxs8.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": 1719244033021,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nif(/netUrl/.test(baseUrl)){\n  b = source.getKey();\n  url1 = String(baseUrl).replace(/netUrl\\//,'');\n  page = String(java.ajax(url1)).match(/\\(第1\\/(\\d+)页\\)/)[1];\n  url2 = String(url1).replace(/(\\d+).html/,\"$1_\"+page+\".html\");\n  url = b+java.ajax(url2).match(/<a href=\"([^\"]+)\">下一节<\\/a>/)[1];\n  java.put('url',url);\nresult=java.ajax(url);\n}\nresult\n</js>.RBGsectionThree-content p@textNodes",
+      "nextContentUrl": "@js:\ntry{\n\tif(/netUrl/.test(baseUrl)){\n  url1 = java.get('url');\n page = String(java.ajax(url1)).match(/\\(第1\\/(\\d+)页\\)/)[1];\n // java.log(page)\nlist=[];\nif(page>=2){\nfor(var i=2;i<=page;i++){\nhref = String(url1).replace(/(\\d+).html/,\"$1_\"+i+\".html\");\nlist.push(href);\n}\n}\nlist\n}else{\n\t java.getString(\"a:contains(下一页)@href\")\n\t}\n}catch(e){}",
+      "sourceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.1@text",
+      "bookList": ".CGsectionTwo-right-content-unit",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "红颜乱：我的男友是绿茶",
+      "intro": "p.-2@text",
+      "kind": "p.-1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nlist=[];\nbase = source.getKey();\nlis=java.getElements('section .BCsectionTwo-top-chapter a');\nfor(i in lis){\n\turl=lis[i].attr('href');\n\t/javascript/.test(url)?url='/netUrl'+lis[i-1].attr('href'):url;\n\turl=base+url;\n\tlist.push({\"text\":lis[i].text(),\"href\":url})\n}\nlist\n</js>",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "formatJs": "",
+      "isVolume": "",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search,{\n \"method\": \"POST\",\n \"body\": \"searchkey={{key}}&code=12345\"\n}",
+    "weight": 0
+  }
+]
