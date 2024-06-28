@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "20240626By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "完本小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wbxs.org/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1719399770609,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "text.作者：@em@text##作者：",
+      "coverUrl": ".lf@img@src",
+      "init": "",
+      "intro": ".intro@text",
+      "kind": ".place@a.1@text&&text.状态：@text&&text.更新时间：@text##状态：|更新时间：",
+      "lastChapter": "text.最新章节：@em@text##最新章节：",
+      "name": ".rt@h1@text"
+    },
+    "ruleContent": {
+      "content": ".yd_text2@p!-1:-2@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "td.1@text",
+      "bookList": ".grid@tr!0",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "kind": "td.4:3@text",
+      "name": "a@text",
+      "wordCount": "td.2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".mulu@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.wbxs.org/s?keyword={{key}}",
+    "weight": 0
+  }
+]

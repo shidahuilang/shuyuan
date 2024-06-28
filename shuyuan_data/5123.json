@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "20240627By_zhbyjm7783",
+    "bookSourceGroup": "自写0625,地址变动0622",
+    "bookSourceName": "云霄阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.yxgxs.org",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1719493212899,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "#booktxt@p@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".btm@a@text",
+      "bookList": ".item",
+      "bookUrl": "dt@a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-original",
+      "intro": "dd@text",
+      "kind": ".blue@text",
+      "name": "dt@a@text",
+      "wordCount": ".orange@text"
+    },
+    "ruleToc": {
+      "chapterList": "#content_1@a",
+      "chapterName": "dd@text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}@js:\nsource.key+org.jsoup.Jsoup.parse(java.ajax(source.key)).select(\"form\").attr(\"action\")+\"?searchkey={{key}}\"",
+    "weight": 0
+  }
+]

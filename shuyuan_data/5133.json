@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "20240628By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "热门小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.remenxsxs.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "{\n  'User-Agent': \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.2535.96\",\n  'referer': \"https://www.remenxsxs.com/\"\n}",
+    "lastUpdateTime": 1719563583283,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "wordCount": "#info@p.2@text##字 数："
+    },
+    "ruleContent": {
+      "content": "#content@p@text##喜欢.*请大家收藏.*",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "bookList": ".l@ul@li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "深空彼岸",
+      "kind": ".zi_t@text",
+      "name": "strong@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl!0@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/so/,{\n  \"method\": \"POST\",\n  \"body\": \"searchtype=novelname&searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "by阿鬼\n\n因为目录链接是用了动态加载，所以会稍微慢一点！",
+    "bookSourceGroup": "★笔趣阁",
+    "bookSourceName": "🔞顶点笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.ddbiquge.tw",
+    "bookUrlPattern": "https://m.ddbiquge.tw/\\D+/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "—————————常规分类—————————\n玄幻小说::/sort1/{{page}}.html\n仙侠小说::/sort2/{{page}}.html\n都市小说::/sort3/{{page}}.html\n历史小说::/sort4/{{page}}.html\n网游小说::/sort5/{{page}}.html\n科幻小说::/sort6/{{page}}.html\n灵异小说::/sort7/{{page}}.html\n言情小说::/sort8/{{page}}.html\n其他小说::/sort9/{{page}}.html\n—————————排行榜—————————\n周点击榜::/top/weekvisit/\n月点击榜::/top/monthvisit/\n总点击榜::/top/allvisit/\n收藏榜::/top/goodnum/\n—————————完本—————————\n玄幻小说::/quanben/sort1/{{page}}.html\n仙侠小说::/quanben/sort2/{{page}}.html\n都市小说::/quanben/sort3/{{page}}.html\n历史小说::/quanben/sort4/{{page}}.html\n网游小说::/quanben/sort5/{{page}}.html\n科幻小说::/quanben/sort6/{{page}}.html\n灵异小说::/quanben/sort7/{{page}}.html\n言情小说::/quanben/sort8/{{page}}.html\n其他小说::/quanben/sort9/{{page}}.html",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1719415429191,
+    "loginUrl": "https://m.ddbiquge.tw/login/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nc:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content\",\nd:\"[property$=description]@content\",\ni:\"[property$=image]@content\",\nt:\"text.章节目录@href||text.全部章节目录@href\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}"
+    },
+    "ruleContent": {
+      "content": ".readcontent@p@html",
+      "imageStyle": "TEXT",
+      "nextContentUrl": "text.下一章@onclick##location\\.href='(.*)'##$1,{'webView': true}",
+      "replaceRegex": "##\\s天才一秒记住.*\\n|\\s小说推荐.*\\n|\\s本章未完.*|\\s顶点笔趣阁.*\\n|\\s.*顶点笔趣阁.*\\n|\\s.*提示您\\：看后求收藏.*"
+    },
+    "ruleExplore": {
+      "author": "dd[1]@a@text",
+      "bookList": ".content dl",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-src",
+      "intro": "dd[0]@text",
+      "kind": "dd[1]@span[0]@text",
+      "name": "dt@text",
+      "wordCount": "dd[1]@span[1]@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "dd[1]@text",
+      "bookList": ".content dl",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-src",
+      "intro": "dd[0]@text",
+      "name": "dt@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul li a",
+      "chapterName": "text",
+      "chapterUrl": "onclick##location\\.href='(.*)'##$1,{'webView': true}",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/search/?searchkey={{key}},{\n  \"charset\": \"UTF-8\",\n  \"method\": \"GET\"\n}",
+    "weight": 0
+  }
+]

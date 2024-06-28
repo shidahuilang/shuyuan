@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "20240627By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "独步小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dbxsd.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n\t'User-Agent': \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari\\/537.36 EdgA/125.0.0.0\"\n}",
+    "lastUpdateTime": 1719501922233,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "#cont-body@p@text",
+      "nextContentUrl": "class.col-md-6 text-center@a.-1@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "td.1@text",
+      "bookList": "tbody@tr",
+      "bookUrl": "a@href##$##,{'webView': true}",
+      "checkKeyWord": "深空彼岸",
+      "name": "a.0@text##\\《|\\》"
+    },
+    "ruleToc": {
+      "chapterList": "class.col-md-6 item@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.dbxsd.com/plus/search.php?q={{key}}",
+    "weight": 0
+  }
+]

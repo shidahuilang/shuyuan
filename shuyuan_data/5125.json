@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "书趣阁com",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.22shuquge.com",
+    "bookUrlPattern": "https?://www.22shuquge.com/b/\\d+/\\d+/",
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1719526916200,
+    "respondTime": 1841,
+    "ruleBookInfo": {
+      "author": "class.info@tag.p.0@text##作.*者：",
+      "coverUrl": "class.imgbox@tag.img@src",
+      "intro": "class.desc@textNodes",
+      "kind": "class.info@tag.p.1@text##类.*别：",
+      "lastChapter": "class.info@tag.p.4@tag.a.0@text",
+      "name": "class.info@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "class.content@tag.p@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.s4@text",
+      "bookList": "class.txt-list@tag.li!0",
+      "bookUrl": "class.s2@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "class.s1@text##\\W",
+      "lastChapter": "class.s3@tag.a.0@text",
+      "name": "class.s2@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.section-list.1@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();cookie.removeCookie(url)}}/search/,{\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&Submit=搜索\"\n}",
+    "weight": 0
+  }
+]

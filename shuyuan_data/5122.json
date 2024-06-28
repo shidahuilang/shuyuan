@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceComment": "//搜索间隔30s",
+    "bookSourceGroup": "网页源",
+    "bookSourceName": "真香中文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.zxzw.com/",
+    "customOrder": 439,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1717972574195,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".fix@p.0@text",
+      "coverUrl": "class.imgbox@img@src",
+      "intro": "class.desc xs-hidden@text",
+      "name": ".info@h1@text"
+    },
+    "ruleContent": {
+      "content": ".content@p@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": "class.txt-list txt-list-row5@li!0",
+      "bookUrl": "a@href",
+      "kind": ".s1@text&&.s5@text",
+      "lastChapter": ".s3@a@text",
+      "name": ".s2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-box.1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}\n/search/,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

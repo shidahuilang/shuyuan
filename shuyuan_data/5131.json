@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceName": "顶点小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.23ddw.net",
+    "bookUrlPattern": "https?://www.23ddw.net/du/\\d+/\\d+/",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1719528400001,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.0@text##作者：",
+      "coverUrl": "id.fmimg@tag.img@src",
+      "intro": "id.intro@tag.p.0@textNodes",
+      "kind": "",
+      "lastChapter": "id.info@tag.p.2@tag.a.0@text",
+      "name": "id.info@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "id.content@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.odd.1@text",
+      "bookList": "class.grid@tag.tr!0",
+      "bookUrl": "class.odd.0@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "class.odd.0@tag.a.0@href##/du/(\\d+)/(\\d+)/##/files/article/image/$1/$2/$2s.jpg",
+      "intro": "",
+      "kind": "class.even.2@text",
+      "lastChapter": "class.even.0@tag.a.0@text",
+      "name": "class.odd.0@tag.a.0@text",
+      "wordCount": "class.even.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "https://www.23ddw.net/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\",\n  \"method\": \"get\"\n}",
+    "weight": 0
+  }
+]

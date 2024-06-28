@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceName": "83中文Z",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.83zwz.com",
+    "bookUrlPattern": "https?://www.83zwz.com/book/\\d+/\\d+/",
+    "customOrder": 8,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1719526463513,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.0@tag.a.0@text",
+      "coverUrl": "id.fmimg@tag.img@data-original",
+      "intro": "id.intro@textNodes",
+      "kind": "class.con_top@tag.a.1@text",
+      "lastChapter": "id.info@tag.p.2@tag.a.0@text",
+      "name": "id.info@tag.h1@text"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@tag.p@textNodes##本章未完，点击下一页继续阅读。|83中文网最新网址www.*com",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.btm@tag.a.0@text",
+      "bookList": "class.item",
+      "bookUrl": "tag.dl@tag.dt.0@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "class.image@tag.a.0@tag.img@data-original",
+      "intro": "tag.dl@tag.dd.0@textNodes",
+      "name": "tag.dl@tag.dt.0@tag.a.0@text",
+      "wordCount": "class.btm@tag.em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dl@tag.a!0:1:2:3:4:5:6:7",
+      "chapterName": "tag.dd@text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/ss/,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\",\n  \"charset\": \"UTF-8\"\n}",
+    "weight": 0
+  }
+]

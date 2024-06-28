@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "就爱言情",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.92yanqing.com",
+    "bookUrlPattern": "https?://m.92yanqing.com/read/\\d+/",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1718736290422,
+    "respondTime": 7391,
+    "ruleBookInfo": {
+      "author": "class.author@text##作者：",
+      "coverUrl": "class.synopsisArea_detail@tag.img@src",
+      "init": "",
+      "intro": "class.review@tag.p@textNodes",
+      "kind": "class.sort@text##类别：",
+      "lastChapter": "class.lastchapter@tag.a.0@text",
+      "name": "class.title@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@tag.p@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author.0@text##作者：",
+      "bookList": "class.bookbox",
+      "bookUrl": "tag.h4@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "class.bookimg@tag.a.0@tag.img@src",
+      "intro": "",
+      "kind": "class.author.1@text##类型：",
+      "lastChapter": "class.update@tag.a.0@text",
+      "name": "tag.h4@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.directoryArea.1@tag.p",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search/,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
