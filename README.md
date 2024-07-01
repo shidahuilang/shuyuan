@@ -20,7 +20,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
-#### 🚩 TTS-在线语音包生成[点我](https://tts.228088.xyz/)
+#### 🚩 TTS-在线语音包生成[点我](http://tts.228088.xyz/)
 
 #### 🚩 TTS-70种语音包
 ```
