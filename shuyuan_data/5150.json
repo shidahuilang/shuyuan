@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceComment": "无搜索",
+    "bookSourceName": "芳玉书院（仅发现）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.fsyxbz.cn/",
+    "customOrder": -43348,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::/sort/1/{{page}}/\n武侠修真::/sort/2/{{page}}/\n都市言情::/sort/3/{{page}}/\n历史军事::/sort/4/{{page}}/\n科幻灵异::/sort/5/{{page}}/\n游戏竞技::/sort/6/{{page}}/\n女生耽美::/sort/7/{{page}}/\n其他类型::/sort/8/{{page}}/",
+    "lastUpdateTime": 1719803502411,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.red@title",
+      "intro": "",
+      "lastChapter": "class.list-chapterAll",
+      "name": "li.active@text",
+      "tocUrl": "class.visible-xs@a@href"
+    },
+    "ruleContent": {
+      "content": "id.rtext@p@html"
+    },
+    "ruleExplore": {
+      "author": "class.author.0@text",
+      "bookList": "class.bookinfo",
+      "bookUrl": "class.bookinfo@a@href",
+      "intro": "class.update@text",
+      "lastChapter": "class.cat@a@text",
+      "name": "class.bookname@text",
+      "wordCount": "class.author.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": [],
+    "ruleToc": {
+      "chapterList": "id.list-chapterAll@dd@a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "weight": 0
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🎉 废纸文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sosadlook.com/",
+    "customOrder": 25265,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "                            📖 分  类 📖                          \n   全  部   ::/category/0/{{page}}.html\n原创小说::/category/32705821835333/{{page}}.html\n同人衍生 ::/category/32705821896774/{{page}}.html\n现代言情::/category/120486387867720/{{page}}.html\n幻想言情::/category/120486387892298/{{page}}.html\n🔥PO18  ::/category/168424383643717/{{page}}.html\n 现言 ::/category/32707451871302/{{page}}.html\n 古言 ::/category/32707451834437/{{page}}.html\n 幻言 ::/category/32707451850823/{{page}}.html\n 科幻 ::/category/32707451940936/{{page}}.html\n 青春 ::/category/32707451867206/{{page}}.html\n 幻情 ::/category/32707451850823/{{page}}.html\n 悬疑 ::/category/32707451912262/{{page}}.html\n 仙侠 ::/category/32707451842630/{{page}}.html\n 游戏 ::/category/32707451846727/{{page}}.html\n 现实 ::/category/32707452649544/{{page}}.html\n轻小说::/category/32707451932742/{{page}}.html\n 纯爱 ::/category/32707470028870/{{page}}.html\n 同人 ::/category/120486387884102/{{page}}.html\n 短篇 ::/category/32707469951046/{{page}}.html\n                            🌺 总  榜 🌺                          \n   全  部   ::/rank/all/0/{{page}}.html\n原创小说::/rank/all/32705821835333/{{page}}.html\n同人衍生 ::/rank/all/32705821896774/{{page}}.html\n现代言情::/rank/all/120486387867720/{{page}}.html\n幻想言情::/rank/all/120486387892298/{{page}}.html\n🔥PO18  ::/rank/all/168424383643717/{{page}}.html\n 现言 ::/rank/all/32707451871302/{{page}}.html\n 古言 ::/rank/all/32707451834437/{{page}}.html\n 幻言 ::/rank/all/32707451850823/{{page}}.html\n 科幻 ::/rank/all/32707451940936/{{page}}.html\n 青春 ::/rank/all/32707451867206/{{page}}.html\n 幻情 ::/rank/all/32707451850823/{{page}}.html\n 悬疑 ::/rank/all/32707451912262/{{page}}.html\n 仙侠 ::/rank/all/32707451842630/{{page}}.html\n 游戏 ::/rank/all/32707451846727/{{page}}.html\n 现实 ::/rank/all/32707452649544/{{page}}.html\n轻小说::/rank/all/32707451932742/{{page}}.html\n 纯爱 ::/rank/all/32707470028870/{{page}}.html\n 同人 ::/rank/all/120486387884102/{{page}}.html\n 短篇 ::/rank/all/32707469951046/{{page}}.html",
+    "lastUpdateTime": 1719843640133,
+    "respondTime": 5724,
+    "ruleBookInfo": {
+      "author": "class.author@text",
+      "coverUrl": "",
+      "intro": "class.BGsectionTwo-bottom@text",
+      "kind": "class.category@text##类别：",
+      "lastChapter": "class.newestChapter@text##最新章节：",
+      "name": "class.title@text",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": "class.time@text"
+    },
+    "ruleContent": {
+      "content": ".RBGsectionThree-content@html"
+    },
+    "ruleExplore": {
+      "author": "class.CGsectionTwo-right-content-unit@tag.p.1@tag.a@text",
+      "bookList": "class.CGsectionTwo-right-content-unit",
+      "bookUrl": "class.CGsectionTwo-right-content-unit@tag.p.0@tag.a.0@href",
+      "coverUrl": "@js:'https://area51.mitecdn.com/5b/b4/11/5bb4111cd396cf99f3dda6a62cb38bce5d615de0.jpg'",
+      "intro": "class.CGsectionTwo-right-content-unit@tag.p.2@text",
+      "kind": "",
+      "lastChapter": "class.CGsectionTwo-right-content-unit@tag.p.3@text##最近更新 ",
+      "name": "class.CGsectionTwo-right-content-unit@tag.p.0@tag.a.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.a.2@text",
+      "bookList": "class.SHsectionThree-middle@tag.p",
+      "bookUrl": "tag.a.1@href",
+      "coverUrl": "@js:'https://area51.mitecdn.com/5b/b4/11/5bb4111cd396cf99f3dda6a62cb38bce5d615de0.jpg'",
+      "kind": "tag.a.0@text##《|》",
+      "name": "tag.a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.BCsectionTwo-top@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href<js>result + \",{\\\"webView\\\": true}\"</js>",
+      "nextTocUrl": "text.下一页@href||text.下一頁@href"
+    },
+    "searchUrl": "/search/{{key}}/{{page}}/",
+    "weight": 0
+  }
+]

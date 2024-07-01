@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "//同站 笔趣阁tkxyk",
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "小皮小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.pixiaoshuo.com",
+    "bookUrlPattern": "https?://www.pixiaoshuo.com/shen/\\d+/",
+    "customOrder": -2085959041,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\":\"全部\",\n    \"url\":\"/category/all/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"玄幻魔幻\",\n    \"url\":\"/category/1/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"武侠仙侠\",\n    \"url\":\"/category/2/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"都市言情\",\n    \"url\":\"/category/3/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"历史军事\",\n    \"url\":\"/category/4/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"网游竞技\",\n    \"url\":\"/category/5/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"科幻灵异\",\n    \"url\":\"/category/6/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"其它类型\",\n    \"url\":\"/category/7/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"女生频道\",\n    \"url\":\"/category/8/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"全本小说\",\n    \"url\":\"/full/all/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  }\n]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9; MIX 2 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1718946055762,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "canReName": "1",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nw:\"#count span.1@text\",\nl:\"[property$=lastest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nt:\"text.章节目录@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "",
+      "wordCount": "@get:{w}字"
+    },
+    "ruleContent": {
+      "content": "#TextContent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span.2@text",
+      "bookList": "#sitebox dl",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@data-original||img@src",
+      "intro": "dd.book_des@text",
+      "kind": "span.0:1@text##.*：",
+      "lastChapter": "a.-1@text",
+      "name": "h3 a@text",
+      "wordCount": "span.-1@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterList li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href",
+      "preUpdateJs": "java.refreshTocUrl()"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search,{\n  \"body\": \"searchkey={{key}}&searchtype=all\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

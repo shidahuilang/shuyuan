@@ -1,0 +1,64 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "📖小说",
+    "bookSourceName": "青豆小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.800xs.tv/#🎃",
+    "bookUrlPattern": "https://www.800xs.tv//book_\\d+/",
+    "customOrder": -43334,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "本站推荐::/toptoptime/1.html\n最近更新::/toplastupdate/1.html\n热门小说::/fenlei6/1.html\n玄幻小说::/fenlei1/1.html\n武侠小说::/fenlei2/1.html\n都市小说::/fenlei3/1.html\n言情小说::/fenlei4/1.html\n网游小说::/fenlei5/1.html\n完本小说::/wanben/",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36\"\n}",
+    "lastUpdateTime": 1719781408276,
+    "respondTime": 1607,
+    "ruleBookInfo": {
+      "author": "[property=og:novel:author]@content",
+      "coverUrl": "[property=og:image]@content",
+      "init": "",
+      "intro": "[property=og:description]@content",
+      "kind": "[property=og:novel:update_time]@content&&\n[property=og:novel:category]@content&&\n[property=og:novel:status]@content",
+      "lastChapter": "[property=og:novel:latest_chapter_name]@content",
+      "name": "[property=og:title]@content",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.htmlContent@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##（本章未完，请翻页）|（本章完）|一秒记住.*窗免费阅读！|青豆小说网.*\\n.*(最新章节！|免费阅读！)",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tr@td.3@text||[property=og:novel:author]@content",
+      "bookList": "class.table@tr!0||tag.html",
+      "bookUrl": "tag.td.1@tag.a.0@href",
+      "checkKeyWord": "斗罗大陆之",
+      "coverUrl": "[property=og:image]@content||tag.td.0@tag.a.0@href##.+\\D((\\d+)\\d{3})\\D.*##https://www.qingdou.la/files/article/image/$2/$1/$1s.jpg",
+      "intro": "",
+      "kind": "tr@td.0@text",
+      "lastChapter": "tag.td.2@a@text||[property=og:novel:latest_chapter_name]@content##免费章节 |正文卷 |正文 |VIP章节 ",
+      "name": "tag.td.1@a@text||[property=og:novel:book_name]@content##\\（.*|\\(.*|免费阅读|全文.*阅读|最新章节|小说|笔趣阁",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "options[selectedIndex].value@href||option@value"
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}}&submit=%CB%D1%CB%F7&page={{page}},{\n'charset': 'gbk'\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "24.6.29\n移动打不开",
+    "bookSourceGroup": "🌾精选❷",
+    "bookSourceName": "🌾书迷楼",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.shumilou.tw/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\n    \"title\":\"༺ˇ»`ʚ排行榜ɞ´«ˇ༻\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"总排行榜\",\n    \"url\":\"topallvisit/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"月排行榜\",\n    \"url\":\"topmonthvisit/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"周排行榜\",\n    \"url\":\"topweekvisit/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"总推荐榜\",\n    \"url\":\"topallvote/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"月推荐榜\",\n    \"url\":\"topmonthvote/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"周推荐榜\",\n    \"url\":\"topweekvote/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本站推荐\",\n    \"url\":\"toptoptime/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"收藏排行\",\n    \"url\":\"topgoodnum/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"字数排行\",\n    \"url\":\"topsize/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"最近更新\",\n    \"url\":\"toplastupdate/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"最新小说\",\n    \"url\":\"toppostdate/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"————\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  \n  \n  {\n    \"title\":\"༺ˇ»`ʚ分类ɞ´«ˇ༻\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"玄幻小说\",\n    \"url\":\"fenlei1/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"武侠小说\",\n    \"url\":\"fenlei2/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"都市小说\",\n    \"url\":\"fenlei3/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"言情小说\",\n    \"url\":\"fenlei4/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"网游小说\",\n    \"url\":\"fenlei5/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"热门小说\",\n    \"url\":\"fenlei6/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  \n  {\n    \"title\":\"༺ˇ»`ʚ完本ɞ´«ˇ༻\",\n    \"url\":\"wanben/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  ]",
+    "lastUpdateTime": 1719658392869,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "🕰  更新时间：{{@@[property$=update_time]@content##\\s.*}}\n🔥  小说人气：{{@@##人气：([^<]+)<##$1###}}\n📜  内容简介：\n{{@@#bookIntro@textNodes##小说关键词：.*}}##(^|[。！？……；]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content##\\s.*",
+      "lastChapter": "{{@@[property$=chapter_name]@content##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求含理更谢乐发推票盟补加字].*?[】）\\)]}}•{{@@[property$=update_time]@content##\\s.*}}\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二两三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#htmlContent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##.本章完.|\\&n|\\.\\.\\. \\-\\-\\>\\>|书迷楼.*最快更新.*最新章节.|请点击.*然后点击.*主屏幕.|添加到主屏幕|终身免费阅读|下载APP|更新超快的免费小说APP|请安装我们的客户端|\\<img.*src\\=.*\\>|本章未完.*继续阅读|第.*章.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.-2@text",
+      "bookList": "table@tbody@tr!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "红温型",
+      "coverUrl": "a.0@href\n@js:\nvar id=result.match(/\\d+/);\nvar iid=parseInt(id/1000);\n`http://www.shumilou.tw/files/article/image/${iid}/${id}/${id}s.jpg`",
+      "kind": "td.0:-1@text##\\s.*",
+      "lastChapter": "{{@@td.2@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求含理更谢乐发推票盟补加字].*?[】）\\)]}}•{{@@td.-1@text##\\s.*}}\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二两三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": "td.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl.panel-chapterlist@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "modules/article/search.php?searchkey={{key}},{ \"charset\": \"gbk\"}",
+    "weight": 0
+  }
+]

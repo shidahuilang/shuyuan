@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "24.6.29",
+    "bookSourceGroup": "🌾精选❷",
+    "bookSourceName": "🌾同人圈",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tongrenquan.org/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\n    \"title\":\"同人小说\",\n    \"url\":\"tongren/<,index_{{page}}.html>\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.45\n    }\n  },\n  {\n    \"title\":\"全本同人\",\n    \"url\":\"tags-%C8%AB%B1%BE-{{page-1}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.45\n    }\n  },\n  {\n    \"title\":\"连载同人\",\n    \"url\":\"/tags-%C1%AC%D4%D8-{{page-1}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.45\n    }\n  },\n  {\n    \"title\":\"排行榜单\",\n    \"url\":\"hot/<,index_{{page}}.html>\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.45\n    }\n  },\n  ]",
+    "lastUpdateTime": 1719741801847,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "##作者：([^<]+)<##$1###",
+      "canReName": "1",
+      "coverUrl": ".pic@img@src",
+      "intro": "&nbsp;🕰  更新时间：\n{{@@##日期：([^<]+)<##$1###}}\n📜  内容简介：\n{{@@.infos@p.-1@html}}",
+      "kind": "##日期：([^<]+)<##$1###",
+      "lastChapter": "{{@@ul.clearfix@li.-1@a@text}}•{{@@##日期：([^<]+)<##$1###}}",
+      "name": ".infos@h1@text##\\(\\d+\\-\\d+\\)|\\(全本\\)"
+    },
+    "ruleContent": {
+      "content": ".read_chapterDetail@p@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "##作者：([^<]+)<##$1###",
+      "bookList": ".bk",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "原神",
+      "coverUrl": "img@src||.pic@img@src",
+      "intro": "p.-1@html",
+      "kind": ".data@text",
+      "name": "h3@text##\\(\\d+\\-\\d+\\)|\\(全本\\)"
+    },
+    "ruleToc": {
+      "chapterList": "ul.clearfix@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "e/search/indexstart.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  }
+]

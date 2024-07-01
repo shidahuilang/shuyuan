@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "20240630By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "天悦小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xtyxsw.org/",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n  'Cookie': \"{{cookie.getCookie(source.getKey())}}\"\n}",
+    "lastUpdateTime": 1719764069203,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": ".bread-crumbs@li.1@a@text&&.box_info@.top@span!1@textNodes",
+      "wordCount": ".box_info@.top@span.1@textNodes"
+    },
+    "ruleContent": {
+      "content": "#content@p@text##喜欢.*请大家收藏.*|.*请点击下一页.*",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span@a@text",
+      "bookList": "#alistbox",
+      "bookUrl": "h2@a@href",
+      "checkKeyWord": "深空彼岸",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "lastChapter": "li@a@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".link_14@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search.html,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "variableComment": "",
+    "weight": 0
+  }
+]

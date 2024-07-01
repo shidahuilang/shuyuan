@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "20240629By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "天籁小说tlxsw1",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.tlxsw1.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1719663711298,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property~=author]@content",
+      "coverUrl": "[property~=image]@content",
+      "intro": "[property~=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=latest_chapter_name]@content",
+      "name": "[property~=book_name]@content",
+      "tocUrl": "text.全部章节@href",
+      "wordCount": ".booktag@span.0@text"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@p@text##天籁小说网.*最新章节。|本章未完.*|.*提示您.*接着再看更方便。|小说推荐.*|若浏览器显示没有新章节了，请尝试点击右上角↗️或右下角↘️的菜单，退出阅读模式即可，谢谢！|.*转载请注明来源.*",
+      "nextContentUrl": "#next_url@onclick<js>##location.href='|'</js><js>##$##,{'webView': true}</js>"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "small@text",
+      "bookList": ".book-coverlist",
+      "bookUrl": "a@href",
+      "coverUrl": "a.0@style##background-image:url\\(|\\)",
+      "intro": "p@text",
+      "name": "h4@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".panel-chapterlist@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "onclick<js>##location.href='|'</js><js>##$##,{'webView': true}</js>",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "http://www.tlxsw1.com/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "20240701By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "修真堂",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xiuzhent.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1719807710317,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property~=author]@content",
+      "coverUrl": "[property~=image]@content",
+      "intro": "[property~=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=latest_chapter_name]@content",
+      "name": "[property~=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#nr@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "li[class=\"text-more\"]@a.-1@text",
+      "bookList": ".bread||li[class=\"text-more\"]",
+      "bookUrl": ".bread@a.2@href||li[class=\"text-more\"]@a.1@href",
+      "checkKeyWord": "",
+      "kind": "{{@@.bread@a.1@text}}{{@@li[class=\"text-more\"]@a.0@text&&.newlist-zj@textNodes}}##\\(|\\)",
+      "lastChapter": "li[class=\"text-more\"]@a.2@text",
+      "name": ".bread@a.2@text||li[class=\"text-more\"]@a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".dirlist@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/modules/article/search.php,{\n  \"charset\": \"GBK\",\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "bookSourceComment": "20240628By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "开心文学网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.kxwx.org",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1719586749845,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content"
+    },
+    "ruleContent": {
+      "content": ".mainContenr@p@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".grid@tr!0",
+      "bookUrl": "a.0@href",
+      "kind": "td.-1:-2@text",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text",
+      "wordCount": "td.-3@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapterNum@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/{{key}}.html",
+    "weight": 0
+  }
+]

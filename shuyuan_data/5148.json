@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceComment": "20240701By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "第八区小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.hotrydersffmc.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": 1719800768278,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "#bookIntro@text",
+      "wordCount": ".booktag@span.-1@text"
+    },
+    "ruleContent": {
+      "content": "#TextContent@p@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.-1@text",
+      "bookList": ".table@tr!0",
+      "bookUrl": "a.1@href##$##,{'webView': true}",
+      "checkKeyWord": "深空彼岸",
+      "kind": "a.0@text&&td.-1@text",
+      "lastChapter": "a.-2@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".col-md-3@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://www.hotrydersffmc.com/search/,{\n  \"body\": \"searchkey={{key}}&searchtype=all\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

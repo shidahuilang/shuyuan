@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceName": "骑士小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.74txts.com",
+    "bookUrlPattern": "https?://www.74txts.com/book/\\d+/\\d+/",
+    "customOrder": 9,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1719820941452,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.booktag@tag.a.0@text",
+      "coverUrl": "class.img-thumbnail@src",
+      "intro": "id.bookIntro@textNodes",
+      "kind": "class.breadcrumb@tag.li.1@tag.a.0@text",
+      "lastChapter": "text.最新章节@tag.a.0@text",
+      "name": "class.bookTitle@text",
+      "wordCount": "class.booktag@tag.span.0@text"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@tag.p@textNodes##请关闭浏览器的阅读/畅读/小说模式并且关闭广告屏蔽过滤功能，避免出现内容无法显示或者段落错乱。|章未完，点击下一页继续阅读。",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.small@text",
+      "bookList": "class.book-coverlist",
+      "bookUrl": "tag.h4@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "tag.a.0@style##background-image:url\\(|\\)",
+      "intro": "tag.p.0@text",
+      "name": "tag.h4@tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.newlist@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

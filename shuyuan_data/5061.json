@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "20240610By_zhbyjm7783",
+    "bookSourceGroup": "自写0625",
+    "bookSourceName": "神书网pi12345",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.pi12345.com/",
+    "bookUrlPattern": "https?://www.pi12345.com/shen/\\d+/",
+    "customOrder": 42,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": 1719817370863,
+    "loginUrl": "",
+    "respondTime": 5594,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": "span[class=\"blue\"].1@text"
+    },
+    "ruleContent": {
+      "content": "#booktxt@p@textNodes",
+      "nextContentUrl": "id.linkNext@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "small@text",
+      "bookList": ".book-coverlist",
+      "bookUrl": "h4@a@href",
+      "checkKeyWord": "乱世书",
+      "coverUrl": ".col-sm-5@a@style##background-image:url\\(|\\)",
+      "intro": "p@text",
+      "kind": "",
+      "name": "h4@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".panel-chapterlist.0@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}search/,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
