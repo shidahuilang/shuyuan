@@ -12,10 +12,7 @@
 ```
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
-- 未效验书源链接
-```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/book.json
-```
+
 #### 🚩 规则净化
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
