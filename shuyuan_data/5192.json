@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "全本小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.quanben3.com/",
+    "customOrder": -43373,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"❀最新小说❀\",\"url\":\"/toppostdate/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻\",\"url\":\"/fenlei1/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"修真\",\"url\":\"/fenlei2/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市\",\"url\":\"/fenlei3/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史\",\"url\":\"/fenlei4/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"网游\",\"url\":\"/fenlei5/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"/fenlei6/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"❀完本小说❀\",\"url\":\"/wanben/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"总排行榜\",\"url\":\"/topallvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"总推荐榜\",\"url\":\"/topallvote/{{page}}.html/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"总收藏榜\",\"url\":\"/topgoodnum/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1720340398146,
+    "respondTime": 9772,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "class.panel-body@html##全本小说网 www.quanben3.com，|最快更新|最新章节！",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "bookUrl": "class.col-md-12 visible-xs@tag.a@href"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.-2@text",
+      "bookList": "tbody@tr!0",
+      "bookUrl": "td.1@tag.a@href",
+      "checkKeyWord": "超级",
+      "kind": "class.hidden-xs.0@text&&td.-1@text",
+      "lastChapter": "class.hidden-xs@tag.a@text",
+      "name": "td.1@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.panel-body panel-chapterlist.1@class.col-md-3",
+      "chapterName": "text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/modules/article/search.php,\n{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

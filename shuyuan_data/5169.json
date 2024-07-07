@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "谷歌小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.gugexs.com",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "   玄幻   ::/menu.asp?id=1&page={{page}}\n   武侠   ::/menu.asp?id=2&page={{page}}\n   军事   ::/menu.asp?id=8&page={{page}}\n   网游   ::/menu.asp?id=9&page={{page}}\n   竞技   ::/menu.asp?id=10&page={{page}}\n   穿越   ::/menu.asp?id=11&page={{page}}\n   重生   ::/menu.asp?id=12&page={{page}}\n   官场   ::/menu.asp?id=13&page={{page}}\n   校园   ::/menu.asp?id=6&page={{page}}\n   历史   ::/menu.asp?id=7&page={{page}}\n   总裁   ::/menu.asp?id=25&page={{page}}\n   乡村   ::/menu.asp?id=21&page={{page}}\n   科幻   ::/menu.asp?id=16&page={{page}}\n   耽美   ::/menu.asp?id=15&page={{page}}\n   灵异   ::/menu.asp?id=17&page={{page}}\n   仙侠   ::/menu.asp?id=3&page={{page}}\n   都市   ::/menu.asp?id=4&page={{page}}\n   言情   ::/menu.asp?id=5&page={{page}}\n   推理   ::/menu.asp?id=18&page={{page}}\n   名著   ::/menu.asp?id=20&page={{page}}\n   架空   ::/menu.asp?id=14&page={{page}}\n   同人   ::/menu.asp?id=19&page={{page}}\n   短篇   ::/menu.asp?id=22&page={{page}}\n   其他   ::/menu.asp?id=23&page={{page}}",
+    "lastUpdateTime": 1720084684029,
+    "loginUrl": "",
+    "respondTime": 12007,
+    "ruleBookInfo": {
+      "kind": "class.jie@tag.span.0:2:3@text",
+      "lastChapter": "class.sso_a@tag.li.-1@a@text&&class.jie@tag.span.4@text##时间.",
+      "wordCount": "class.jie@tag.span.1@text"
+    },
+    "ruleContent": {
+      "content": "class.novelinfvie@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.span.1@text##作者.|时间.*",
+      "bookList": "class.list_a",
+      "bookUrl": "class.main@a@href",
+      "coverUrl": "class.img@a@img@src",
+      "intro": "class.intro@textNodes",
+      "kind": "tag.span.0@text&&tag.span.1@text##作者.*时间.",
+      "name": "class.main@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.sso_a@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/find.asp?word={{key}},{\n\"charset\": \"gbk\"\n}",
+    "weight": 0
+  }
+]

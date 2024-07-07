@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "全本小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.bond-y.com/",
+    "customOrder": -43353,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::/sort/1/{{page}}/\n武侠修真::/sort/2/{{page}}/\n都市言情::/sort/3/{{page}}/\n历史军事::/sort/4/{{page}}/\n网游竞技::/sort/5/{{page}}/\n科幻超能::/sort/6/{{page}}/\n恐怖灵异::/sort/7/{{page}}/\n女生耽美::/sort/8/{{page}}/\n其他类型::/sort/9/{{page}}/\n热门小说::/rank/allvisit/",
+    "lastUpdateTime": 1719948888346,
+    "respondTime": 13718,
+    "ruleBookInfo": {
+      "author": "id.info@p.0@text",
+      "coverUrl": "id.fmimg@class.lazy@data-original",
+      "intro": "id.intro@text",
+      "lastChapter": "class.lastchapter visible-xs@text",
+      "name": "h1@text",
+      "tocUrl": "class.readbtn@a.1@href",
+      "wordCount": "id.info@p.2@text"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "dl@a.1@text",
+      "bookList": "class.item",
+      "bookUrl": "dt@a@href",
+      "checkKeyWord": "斗罗",
+      "coverUrl": "class.image@class.lazy@data-original",
+      "intro": "dd@text",
+      "kind": "dl@dd@text",
+      "name": "dl@a.0@text",
+      "wordCount": "dl@class.orange visible-xs@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.content_1@a",
+      "chapterName": "dd@text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.bond-y.com/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

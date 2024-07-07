@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "369小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.369book.cc/search/",
+    "bookUrlPattern": "http://www.369book.cc/\\D+/\\d+/",
+    "customOrder": -43369,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"❀分类❀\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻\",\"url\":\"/sort/1/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠\",\"url\":\"/sort/2/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市\",\"url\":\"/sort/3/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史\",\"url\":\"/sort/4/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"/sort/5/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"游戏\",\"url\":\"/sort/6/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"女生\",\"url\":\"/sort/7/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"短篇\",\"url\":\"/sort/8/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"其他\",\"url\":\"/sort/9/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1720334054450,
+    "loginUrl": "http://www.369book.cc/login/",
+    "respondTime": 6177,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\"[property$=title]@content\",\na:\"[property$=author]@content\",\nc:\"[property~=category|status|update_time]@content\",\nw:\".am-text-sm@.am-badge.am-badge-secondary.am-radius@text\",\nl:\"[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content\",\nd:\"[property$=description]@content\",\ni:\"[property$=image]@content\",\nt:\"text.章节目录@href||text.点击查看全部章节目录@href\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}",
+      "wordCount": "@get:{w}"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@p@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\s\\《.*\\》转载请注明.*\\n|\\s本章未完.*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".book-list-1-author@text##\\/.*",
+      "bookList": ".am-u-sm-12.am-u-md-6.am-u-lg-4.book-list-1",
+      "bookUrl": "a@href",
+      "coverUrl": ".book-list-1-cover@img@data-src",
+      "intro": ".book-list-1-intro@text",
+      "kind": ".am-badge.am-badge-warning.am-radius@text",
+      "name": "h4@a@text",
+      "wordCount": ".am-badge.am-badge-secondary.am-radius@text&&.am-badge.am-badge-primary.am-radius@text"
+    },
+    "ruleToc": {
+      "chapterList": ".am-avg-sm-1.am-avg-md-2.am-avg-lg-4.am-list li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/?searchkey={{key}},{\n  \"charset\": \"UTF-8\",\n  \"method\": \"GET\"\n}",
+    "weight": 0
+  }
+]

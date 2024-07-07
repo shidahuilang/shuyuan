@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceName": "笔趣阁①",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.bg60.cc/",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"❀分类❀\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻奇幻\",\"url\":\"/xuanhuan/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠仙侠\",\"url\":\"/wuxia/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市言情\",\"url\":\"/dushi/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史军事\",\"url\":\"/lishi/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"网游竞技\",\"url\":\"/wangyou/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻奇幻\",\"url\":\"/kehuan/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"女生频道\",\"url\":\"/mm/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"完本小说\",\"url\":\"/finish/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": 1720285448326,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.small@span.0@text",
+      "coverUrl": "class.cover@img@src",
+      "intro": "class.intro@dd@text",
+      "kind": "class.small@span.1@text&&class.small@class.last.0@text##状态：|更新：",
+      "lastChapter": "class.small@class.last.1@text##最新：",
+      "name": "class.book@h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@html##请收藏本站.*https://www.bg60.cc。笔趣阁手机版.*https://m.bg60.cc|.*点此报错.*加入书签.*"
+    },
+    "ruleExplore": {
+      "author": "dt@span@text",
+      "bookList": "class.item",
+      "bookUrl": "dt@tag.a@href",
+      "coverUrl": "class.image@tag.a@tag.img@src",
+      "intro": "dl@dd@text",
+      "name": "dt@tag.a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.bookinfo@class.author@text",
+      "bookList": "class.bookbox",
+      "bookUrl": "class.bookinfo@h4@tag.a@href",
+      "checkKeyWord": "斗罗",
+      "coverUrl": "class.bookimg@tag.a@tag.img@src",
+      "intro": "class.bookinfo@class.uptime@text",
+      "name": "class.bookinfo@h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.listmain@dl@dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/s?q={{key}},{\n\"webView\": true\n}",
+    "weight": 0
+  }
+]

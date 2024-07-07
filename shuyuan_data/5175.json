@@ -1,0 +1,55 @@
+[
+  {
+    "ruleContent": {
+      "content": ".content@p@html##喜欢.*请大家收藏.*|小主，这个章节后面还有哦.*",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "a.-2@text",
+      "bookList": ".list li",
+      "lastChapter": "p.-1@text",
+      "intro": ".intro@text",
+      "kind": "span@text",
+      "coverUrl": "img@src",
+      "bookUrl": "a.0@href",
+      "name": "a.1@text"
+    },
+    "weight": 60,
+    "loginUrl": "https://m.51eshu.com/",
+    "searchUrl": "@js:\n  var head={\n\"User-Agent\": \"laobai_tv/1.1.6(Mozilla/5.0 (Linux; Android 9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36) \" ,\n    \"Referer\": \"https://m.51eshu.com/\",\n};\nvar so=\"search.html,\";\nvar body=`searchkey=${key}`;\nvar option={\"headers\":head, \"body\":body,\"method\":\"POST\"}\nso+JSON.stringify(option)\n",
+    "ruleSearch": {
+      "author": "a.-2@text",
+      "bookList": ".list li",
+      "lastChapter": "a.-1@text",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "span@text",
+      "checkKeyWord": "剑来",
+      "name": ".bookname@text",
+      "bookUrl": "a.0@href"
+    },
+    "providerType": 0,
+    "enabledExplore": true,
+    "ruleBookInfo": {
+      "tocUrl": "text.阅读@href"
+    },
+    "ruleToc": {
+      "chapterUrl": "href",
+      "chapterList": ".read li a",
+      "nextTocUrl": "text.下一页@href",
+      "chapterName": "text"
+    },
+    "bookSourceUrl": "https://m.51eshu.com",
+    "lastUpdateTime": 0,
+    "customOrder": 0,
+    "bookSourceType": 0,
+    "modificationDate": 1720183761732.1018,
+    "enabled": true,
+    "bookSourceName": "无忧小说",
+    "bookSourceComment": "搜索前请点击登录点完成",
+    "cloudRecordID": "9FF30A01-CB53-453E-AFE9-853C58302884",
+    "respondTime": 180000,
+    "exploreUrl": "玄幻奇幻::/XuanHuan/{{page}}.html\n武侠仙侠::/WuXia/{{page}}.html\n都市生活::/DuShi/{{page}}.html\n历史军事::/LiShi/{{page}}.html\n游戏竞技::/YouXi/{{page}}.html\n科幻未来::/KeHuan/{{page}}.html\n恐怖悬疑::/XuanYi/{{page}}.html\n古代言情::/GuYan/{{page}}.html\n现代言情::/XianYan/{{page}}.html\n幻想奇缘::/HuanYan/{{page}}.html\n浪漫青春::/QinɡChun/{{page}}.html\n言情美文::/NuShenɡ/{{page}}.html\n科幻灵异::/KeHuan/{{page}}.html\n其他类型::/QiTa/{{page}}.html",
+    "bookSourceGroup": "自写书源"
+  }
+]

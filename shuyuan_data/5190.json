@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "三五小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://350.ooo/",
+    "customOrder": -5,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1720306659726,
+    "respondTime": 3099,
+    "ruleBookInfo": {
+      "author": "class.diswap info-main-wap border3-1@p.1@a@text",
+      "coverUrl": "class.info-main@tag.img@data-original",
+      "intro": "class.info-main-intro@text",
+      "kind": "class.diswap info-main-wap border3-1@p.2@text",
+      "lastChapter": "class.diswap info-main-wap border3-1@a@p@text",
+      "name": "class.w100@h1@text",
+      "tocUrl": "class.diswap info-main-wap border3-1@p.0@a.-1@href"
+    },
+    "ruleContent": {
+      "content": "id.neirong@html##，最快更新|笔趣阁 ffeedd.cc"
+    },
+    "ruleExplore": {
+      "bookUrl": "class.flex flex-between commend-title@tag.a@href##1"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.flex flex-between commend-title@tag.span@text",
+      "bookList": "class.category-div",
+      "bookUrl": "class.flex flex-between commend-title@tag.a@href",
+      "checkKeyWord": "伪戒",
+      "coverUrl": "tag.a.0@tag.img.0@data-original",
+      "intro": "div@class.intro indent@text",
+      "name": "class.flex flex-between commend-title@tag.a@h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.zhangjie@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search/,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

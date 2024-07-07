@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceName": "txt520",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://txt520.com/",
+    "customOrder": -43357,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"修真\",\"url\":\"/xiuzhen/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"都市\",\"url\":\"/ds/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"言情\",\"url\":\"/yq/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"网游\",\"url\":\"/wangyou/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"科幻\",\"url\":\"/kehuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"穿越\",\"url\":\"/chuanyue/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"武侠\",\"url\":\"/wuxia/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"历史\",\"url\":\"/lishi/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"军事\",\"url\":\"/junshi/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"乡土\",\"url\":\"/xt/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"官场\",\"url\":\"/guanchang/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"奇幻\",\"url\":\"/qihuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"鬼话\",\"url\":\"/guihua/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"耽美\",\"url\":\"/danmei/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"同人\",\"url\":\"/erciyuan/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"精品\",\"url\":\"/xiaoshuo/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"传记\",\"url\":\"/zhuanji/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"名著\",\"url\":\"/mingzhu/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"精品\",\"url\":\"/ranking/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},\n\n{\"title\":\"最新\",\"url\":\"/latest/<,index_{{page}}.html>\",\"style\":{\"layout_flexBasisPercent\":0.2,\"layout_flexGrow\":1}},]",
+    "lastUpdateTime": 1720166878282,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".nav_autor@text",
+      "intro": "class.desc@text",
+      "kind": ".newsnav@a.1@text&&class.nav_time@text##更新时间：",
+      "name": ".nav_name@h1@text",
+      "tocUrl": "class.nav_op@tag.a.1@href"
+    },
+    "ruleContent": {
+      "content": "class.content@html"
+    },
+    "ruleExplore": {
+      "author": ".bookWriter@span.0@text",
+      "bookList": "class.list@li",
+      "bookUrl": "a.0@href",
+      "intro": "class.desc@text",
+      "kind": ".bookWriter@span.1@text",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "class.bookWriter@span.0@text",
+      "bookList": "class.list@li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "女人发",
+      "intro": "class.desc@text",
+      "kind": "class.bookWriter@span.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"post\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
+    "weight": 0
+  }
+]

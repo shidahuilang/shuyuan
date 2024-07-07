@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceName": "网络小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.lmywl.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1720103000402,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.booktag@tag.a.0@text",
+      "coverUrl": "class.text-muted@tag.img@src",
+      "intro": "class.text-muted.0@text",
+      "kind": "class.booktag@tag.a.1@text",
+      "lastChapter": "p@class.text-danger@text",
+      "name": "class.bookTitle@text",
+      "tocUrl": "class.col-md-12 visible-xs@tag.a@href",
+      "wordCount": "class.booktag@tag.span.0@text"
+    },
+    "ruleContent": {
+      "content": "class.panel-body contents@html##首发17K免费无弹窗阅读将第一时间在网络小▹说更新，记住域名ｌｍywl⊛com↵(请来网络小▹说▹看最新章节▹完整章节).*",
+      "replaceRegex": "##-->>*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.booktag@text",
+      "bookList": "class.col-md-10",
+      "bookUrl": "class.bookTitle@tag.a@href",
+      "checkKeyWord": "纯银",
+      "coverUrl": "src",
+      "intro": "class.text-muted hidden-xs@text",
+      "kind": "",
+      "lastChapter": "p@class.text-danger@text",
+      "name": "class.bookTitle@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.col-md-3",
+      "chapterName": "text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search/,{\n  \"body\": \"keyword={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

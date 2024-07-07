@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceGroup": "by伟",
+    "bookSourceName": "乐阅读网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.27k.net/",
+    "customOrder": -43372,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"❀排行榜❀\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"总排行榜\",\"url\":\"/rank/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":0.25}},\n{\"title\":\"月排行榜\",\"url\":\"/rank/monthvisit/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":0.25}},\n{\"title\":\"周排行榜\",\"url\":\"/rank/weekvisit/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":0.25}},\n{\"title\":\"总收藏榜\",\"url\":\"/rank/goodnum/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":0.25}},\n{\"title\":\"❀分类❀\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻\",\"url\":\"/sort/1/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市\",\"url\":\"/sort/2/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史\",\"url\":\"/sort/3/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"/sort/4/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"悬疑\",\"url\":\"/sort/5/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"网游\",\"url\":\"/sort/6/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"穿越\",\"url\":\"/sort/7/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"青春\",\"url\":\"/sort/18/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"其他\",\"url\":\"/sort/8/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"现代言情\",\"url\":\"/sort/15/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"古代言情\",\"url\":\"/sort/16/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"豪门总裁\",\"url\":\"/sort/17/{{page}}.htnl\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"全部小说\",\"url\":\"/sort/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},]",
+    "header": "{'User-Agent':'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36',\n\"Referer\":\"https://www.27k.net/\"}",
+    "lastUpdateTime": 1720333345099,
+    "loginCheckJs": "cookie.removeCookie(source.getKey())\nresult",
+    "respondTime": 12050,
+    "ruleBookInfo": {
+      "author": "class.booknav2@p.0@tag.a@text##分类：",
+      "coverUrl": "class.bookimg2@img@src",
+      "intro": "class.navtxt@text",
+      "kind": "class.booknav2@p.1@text##分类：",
+      "lastChapter": "class.catalog@h3@tag.a@text",
+      "name": "class.booknav2@h1@text",
+      "tocUrl": "class.addbtn@tag.a.1@href",
+      "wordCount": "class.booknav2@p.-2@text"
+    },
+    "ruleContent": {
+      "content": "class.txtnav@p@textNodes",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "class.labelbox@label.0@text",
+      "bookList": "id.article_list_content@li",
+      "bookUrl": "class.newnav@h3@tag.a@href",
+      "coverUrl": "tag.a.0@img@src",
+      "intro": "class.ellipsis_2@text",
+      "kind": "class.labelbox@label.1@text",
+      "lastChapter": "class.zxzj@p@tag.a@text",
+      "name": "class.newnav@h3@tag.a@text",
+      "wordCount": "class.piaos@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.labelbox@label.0@text",
+      "bookList": ".newbox ul li",
+      "bookUrl": "class.newnav@h3@a.1@href",
+      "checkKeyWord": "超级",
+      "coverUrl": "tag.a.0@img@src",
+      "intro": "class.ellipsis_2@text",
+      "kind": "class.labelbox@label.1@text&&class.labelbox@label.2@text&&class.zxzj@span.1@text",
+      "lastChapter": "class.zxzj@p@tag.a@text",
+      "name": "class.newnav@h3@a.1@text",
+      "wordCount": "class.piaos@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chaw_c@li",
+      "chapterName": "text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/search/,{\n\"charset\": \"utf-8\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}&searchtype=all\"\n}",
+    "weight": 0
+  }
+]
