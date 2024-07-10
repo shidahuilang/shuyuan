@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "色色漫画",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.sesemanhua.com",
+    "customOrder": 7,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "  全部  ::/index.php/category/order/addtime<,/page/{{page}}>\n  韩漫  ::/index.php/category/order/addtime/list/1<,/page/{{page}}>\n  日漫  ::/index.php/category/order/addtime/list/2<,/page/{{page}}>\n  热门  ::/index.php/category<,/page/{{page}}>",
+    "lastUpdateTime": 1720276579873,
+    "loginUrl": "",
+    "respondTime": 187787,
+    "ruleBookInfo": {
+      "author": "class.comic-author@class.name@tag.a@text",
+      "coverUrl": "class.de-info__cover@tag.img@src",
+      "intro": "class.comic-intro@class.intro@text",
+      "kind": "class.comic-status@class.text.0@tag.b@text",
+      "name": "class.de-info__box@class.comic-title j-comic-title@text"
+    },
+    "ruleContent": {
+      "content": "class.rd-article-wr clearfix@class.rd-article__pic hide@html",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.cate-comic-list clearfix@class.common-comic-item",
+      "bookUrl": "class.comic__title@tag.a@href",
+      "coverUrl": "class.cover@tag.img@data-original",
+      "intro": "class.cover@class.comic-feature@text",
+      "kind": "",
+      "lastChapter": "class.comic-update@tag.a@text",
+      "name": "class.comic__title@tag.a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.cate-comic-list clearfix@class.common-comic-item",
+      "bookUrl": "class.comic__title@tag.a@href",
+      "coverUrl": "class.cover@tag.img@data-original",
+      "intro": "class.cover@tag.p@text",
+      "kind": "",
+      "lastChapter": "class.comic-update@tag.a@text",
+      "name": "class.comic__title@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapter__list-box clearfix@tag.li@tag.a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/index.php/search?key={{key}}",
+    "weight": 0
+  }
+]

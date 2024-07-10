@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "//需挂梯\n//修复错别字\nvar s1 = '二丁入刀干工市亡之已弓勺元五屯切仁化父今凶欠丹六文尺未巧功世本丙右平的在叫用失生到分乎令成句主市年百同而行里回加制去好因然政社事重新明原利但向道公系很者直程果象毛白扯走抄裸赤交密娼共李游集操芽花器棒母着';\nvar s2 = '㟧㠬㣉㥕㥫㦂㦫㦱㦳㦵㦶㧜㨾㩙㩽㪏㪶㪸㫅㫇㫈㫠㫡㫦㫧㫯㮽㰙㰜㰱㰴㰷㱏㱒㱕㱗㳍㳎㳒㳓㳔㵑㵒㵔㵕㵙㹏㹐㹓䀱䀲䀴䃢䋢䋤䌠䑖䗙䗽䘓䛈䛊䛌䛍䛗䜥䜭䥉䥊䥍䦣䦤䭹䭻䭼䭾䮍䮹䯬䯮䲻䲾䶑䶓丳乀乁噷噸圙塿夌婈婖媱嵞嵟欜鼶齂著';\n  var src = result;\n\tfor(var i=0,result = '';i<src.length;i++){\n\t\tvar c = src.charAt(i);\n\t\tvar p = s2.indexOf(c);\n\t\tresult += p < 0 ? c : s1.charAt(p);\n\t}\nresult;",
+    "bookSourceName": "石头小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.twbook.cc/",
+    "concurrentRate": "",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1720442499011,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.author.0@text<js>java.t2s(result)</js>",
+      "coverUrl": "class.cover@tag.img@src",
+      "intro": "class.intro@text<js>java.t2s(result)</js>",
+      "kind": "class.iconf@tag.a@text<js>java.t2s(result)</js>",
+      "lastChapter": "class.chaplist@tag.li.0@text<js>java.t2s(result)</js>",
+      "name": "class.title@text<js>java.t2s(result)</js>",
+      "tocUrl": "class.more@tag.a.0@href"
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "replaceRegex": "<js>eval(String(source.bookSourceComment));</js>\n<js>java.t2s(result)</js>",
+      "title": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author@text<js>java.t2s(result)</js>",
+      "bookList": "class.mt-3@tag.li",
+      "bookUrl": "tag.h3@tag.a@href",
+      "coverUrl": "tag.img@src",
+      "intro": "class.desc@text<js>java.t2s(result)</js>",
+      "name": "tag.h3@text<js>java.t2s(result)</js>"
+    },
+    "ruleToc": {
+      "chapterList": "class.chaplist@tag.ul.1@tag.li@tag.a",
+      "chapterName": "text<js>java.t2s(result)</js>",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/{{key}}",
+    "weight": 0
+  }
+]

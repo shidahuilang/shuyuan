@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceGroup": "蜗牛",
+    "bookSourceName": "新八零电子书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.80txt.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 0,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "em:nth-of-type(1)@text##作者：",
+      "coverUrl": ".lf@img@src",
+      "intro": "div.intro@text",
+      "lastChapter": "em@a@text",
+      "name": "h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "div.yd_text2@html",
+      "nextContentUrl": "div:nth-of-type(4)@a#next_url@href"
+    },
+    "ruleExplore": {
+      "bookList": ".booklist@ul@li:nth-of-type(n+2)",
+      "name": "b@text",
+      "author": "li:nth-of-type(n+2)@span.zz@text",
+      "lastChapter": ".zj@a@text",
+      "bookUrl": ".sm@a@href",
+      "coverUrl": "img.lazy@src"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "dd@span@text",
+      "bookList": "dl",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img.lazy@src",
+      "intro": "dd@p@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "div:nth-of-type(7)@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://www.80txt.net/search,{\"method\":\"POST\";\"body\":\"searchkey={{key}}\"}",
+    "weight": 0,
+    "exploreUrl": "玄幻::https://www.80txt.net/sort/xuanhuan/{{page}}\n武侠::https://www.80txt.net/sort/wuxia/{{page}}\n仙侠::https://www.80txt.net/sort/xianxia/{{page}}\n都市::https://www.80txt.net/sort/dushi/{{page}}\n历史::https://www.80txt.net/sort/lishi/{{page}}\n科幻::https://www.80txt.net/sort/kehuan/{{page}}\n游戏::https://www.80txt.net/sort/youxi/{{page}}\n女生::https://www.80txt.net/sort/nvsheng/{{page}}\n其他::https://www.80txt.net/sort/qita/{{page}}"
+  }
+]

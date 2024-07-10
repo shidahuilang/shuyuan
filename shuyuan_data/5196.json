@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "修复正文获取\nby天天的鸟蛋蛋",
+    "bookSourceGroup": "源仓库,📝 笔趣阁",
+    "bookSourceName": "（新笔趣阁）· 笔趣阁45",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://wap2.xinbiquge.org/",
+    "customOrder": 5633,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{ \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1720362886076,
+    "respondTime": 93420,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+      "name": "class.name@text",
+      "wordCount": "{{@@class.dd_box.1@span.1@text##字数：}}##w|W##万"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@html",
+      "nextContentUrl": "text.下一@href||text.下一@href",
+      "replaceRegex": "##.*\\(.*\\).*\\s|\\s.*新笔趣阁.*|.*本章未完.*\\s|.*继续阅读.*\\s|.*阅读完毕，更多请搜索.*\\s|\\s*新笔趣阁阅读网址：.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.author@span@text",
+      "bookList": "class.hot_sale hot_saleEm",
+      "bookUrl": "a@href",
+      "name": "class.title@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.book_last.2@dl@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://wap2.xinbiquge.org/book/search.aspx?ie=utf-8&siteid=xinbiquge.org&s=000&key={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": "div.module-search-item",
+      "name": "h3@a@text",
+      "kind": "a.novel-serial@text",
+      "intro": "div.novel-info-item@text",
+      "coverUrl": ".module-item-pic@img@src",
+      "bookUrl": "h3@a@href"
+    },
+    "ruleBookInfo": {
+      "name": "h1@text",
+      "author": ".novel-tag-icon.0@text",
+      "kind": ".novel-tag-icon.1@text",
+      "wordCount": "span.tag-link@text",
+      "intro": ".novel-info-item@span@text",
+      "coverUrl": ".novel-cover@img@src",
+      "tocUrl": "a.catalog-more@href",
+      "lastChapter": "div.module-row-info:nth-of-type(2)@text"
+    },
+    "ruleToc": {
+      "chapterList": ".box > div.module-row-info",
+      "chapterName": ".box > div@.module-row-title@span@text",
+      "chapterUrl": ".box > div@a.module-row-text@href"
+    },
+    "ruleContent": {
+      "content": "div.article-content@html"
+    },
+    "ruleReview": [],
+    "ruleExplore": {
+      "bookList": "div.module-item",
+      "name": "a.module-item-title@text",
+      "author": "div.module-item-text@text",
+      "coverUrl": "",
+      "bookUrl": "a.module-item-title@href"
+    },
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.23qb.com",
+    "bookSourceName": "铅笔小说",
+    "bookSourceGroup": "蜗牛",
+    "searchUrl": "https://www.23qb.com/search.html?searchkey={{key}}",
+    "exploreUrl": "言情::https://www.23qb.com/book/lastupdate_0_1_0_0_0_0_0_{{page}}_0.html\n都市::https://www.23qb.com/book/lastupdate_0_2_0_0_0_0_0_{{page}}_0.html\n唯美::https://www.23qb.com/book/lastupdate_0_3_0_0_0_0_0_{{page}}_0.html\n穿越::https://www.23qb.com/book/lastupdate_0_4_0_0_0_0_0_{{page}}_0.html\n青春::https://www.23qb.com/book/lastupdate_0_5_0_0_0_0_0_{{page}}_0.html\n玄幻::https://www.23qb.com/book/lastupdate_0_6_0_0_0_0_0_{{page}}_0.html\n武侠::https://www.23qb.com/book/lastupdate_0_7_0_0_0_0_0_{{page}}_0.html\n军事::https://www.23qb.com/book/lastupdate_0_8_0_0_0_0_0_{{page}}_0.html\n竞技::https://www.23qb.com/book/lastupdate_0_9_0_0_0_0_0_{{page}}_0.html\n科幻::https://www.23qb.com/book/lastupdate_0_10_0_0_0_0_0_{{page}}_0.html\n悬疑::https://www.23qb.com/book/lastupdate_0_11_0_0_0_0_0_{{page}}_0.html\n同人::https://www.23qb.com/book/lastupdate_0_12_0_0_0_0_0_{{page}}_0.html\n职场::https://www.23qb.com/book/lastupdate_0_13_0_0_0_0_0_{{page}}_0.html"
+  }
+]
