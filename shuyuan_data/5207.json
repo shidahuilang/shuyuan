@@ -1,0 +1,40 @@
+[
+  {
+    "bookSourceName": "勤书网［自写］",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://member.iqinshu.cn/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "悬疑::/suspense\n都市::/live",
+    "lastUpdateTime": 1720693799858,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "",
+      "tocUrl": "text.目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.d_cont@p@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.s_name@text",
+      "bookList": "class.s_dl clearfix",
+      "bookUrl": "class.s_dl clearfix@tag.a@href",
+      "coverUrl": "class.lazy@tag.img@data-original",
+      "intro": "class.col898989@text",
+      "kind": "",
+      "name": "class.cola21812@text",
+      "wordCount": "class.zp_dl@gta.p"
+    },
+    "ruleToc": {
+      "chapterList": ".read_cont@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://member.iqinshu.cn/book/search?s={{key}}",
+    "weight": 0
+  }
+]

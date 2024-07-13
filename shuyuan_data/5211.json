@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "镜中月网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://hebitd.net/",
+    "bookUrlPattern": "",
+    "customOrder": -10,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\":\"❀分类❀\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":0,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n\n  {\n    \"title\":\"玄幻\",\n    \"url\":\"/sort/1/{{page}}/\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"武侠\",\n    \"url\":\"/sort/2/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"都市\",\n    \"url\":\"/sort/3/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"历史\",\n    \"url\":\"/sort/4/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"科幻\",\n    \"url\":\"/sort/5/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"游戏\",\n    \"url\":\"/sort/6/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"女生\",\n    \"url\":\"/sort/7/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n    },\n      {\n    \"title\":\"其他\",\n    \"url\":\"/sort/8/{{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n    \n},\n  {\n    \"title\":\"\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n\n  ]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9; MIX 2 Build/PKQ1.190118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1720752342993,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.p_author@a@text",
+      "canReName": "1",
+      "coverUrl": "id.bookimg@tag.img@src",
+      "init": "",
+      "intro": "id.bookintro@text",
+      "kind": "id.count@li.0@text&&id.count@li.2@span@text&&id.uptime@span@text##分类：",
+      "lastChapter": "class.chaw@li.0@text",
+      "name": "class.d_title@text",
+      "tocUrl": "",
+      "wordCount": "id.count@li.1@text##字数："
+    },
+    "ruleContent": {
+      "content": "#TextContent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span.2@text",
+      "bookList": "#sitebox dl",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@data-original||img@src",
+      "intro": "dd.book_des@text",
+      "kind": "span.0:1@text##.*：",
+      "lastChapter": "a.-1@text",
+      "name": "h3 a@text",
+      "wordCount": "span.-1@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterList li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href",
+      "preUpdateJs": "java.refreshTocUrl()"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)\njava.ajax(url).match(/search.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceName": "全本小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.bond-y.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "都市::/sort/3/1/\n玄幻::/sort/1/1/\n武侠::/sort/2/1/\n历史::/sort/4/1/\n网游::/sort/5/1/\n科幻::/sort/6/1/\n恐怖::/sort/7/1/\n女生::/sort/8/1/\n其他::/sort/9/1/\n热门::/rank/allvisit/",
+    "lastUpdateTime": 1720706267824,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": "",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.booktxt@p@text"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "tag.a.-1@title",
+      "bookList": "class.item",
+      "bookUrl": "class.item@tag.a@href",
+      "checkKeyWord": "",
+      "coverUrl": "class.lazy@tag.img@data-original",
+      "intro": "dd@text##关于",
+      "kind": "class.con_top@tag.a@href",
+      "name": "tag.a.0@title",
+      "wordCount": "class.visible-xs.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.content_1@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/?searchkey={{key}}{\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
