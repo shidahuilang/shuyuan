@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "顶点小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.idingdian.com",
+    "bookUrlPattern": "http?://www.idingdian.com/ddxs/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": 1721112172316,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@tag.p.0@text##作者：",
+      "coverUrl": "id.fmimg@tag.img@data-original",
+      "init": "",
+      "intro": "id.intro@textNodes",
+      "kind": "class.con_top@tag.a.1@text",
+      "lastChapter": "id.info@tag.p.2@tag.a.0@text",
+      "name": "id.info@tag.h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.booktxt@tag.p@textNodes##本章未完，点击下一页继续阅读。",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.btm@tag.a.0@text",
+      "bookList": "class.item",
+      "bookUrl": "tag.dt@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "tag.a.0@tag.img@data-original",
+      "intro": "tag.dd.0@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "tag.dt.0@tag.a.0@text",
+      "wordCount": "class.orange@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.dl@tag.a!0:1:2:3:4:5:6:7",
+      "chapterName": "tag.dd@text",
+      "chapterUrl": "href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

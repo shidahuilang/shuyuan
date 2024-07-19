@@ -1,0 +1,48 @@
+[
+  {
+    "ruleSearch": {
+      "bookList": "$.*",
+      "name": "$.articlename",
+      "author": "$.author",
+      "intro": "$.intro",
+      "coverUrl": "$.url_img",
+      "bookUrl": "$.url_list"
+    },
+    "ruleBookInfo": {
+      "name": ".book_box .name@text",
+      "author": "class.book_box.dd_box@tag.span.0@text##作者：",
+      "kind": "class.book_box.dd_box@tag.span.1@text##分类：",
+      "wordCount": "class.book_box.dl@tag.dd.1@tag.span.1@text##字数：",
+      "intro": "class.book_about.dd@text",
+      "lastChapter": "class.book_last.dl@tag.dd.0@text",
+      "coverUrl": "class.cover@tag.img@src",
+      "tocUrl": "class.book_more@tag.a@href"
+    },
+    "ruleToc": {
+      "chapterList": "class.book_last@tag.dl@tag.dd!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@textNodes"
+    },
+    "ruleReview": [],
+    "ruleExplore": {
+      "bookList": "$.*",
+      "name": "$.articlename",
+      "author": "$.author",
+      "lastChapter": "",
+      "intro": "$.intro",
+      "coverUrl": "$.url_img",
+      "bookUrl": "$.url_list"
+    },
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.tasim.net",
+    "bookSourceName": "笔趣阁小说yoke",
+    "bookSourceComment": "yoke",
+    "searchUrl": "https://m.tasim.net/user/search.html?q={{key}}",
+    "header": "{\n   \"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1\",\n    \":authority\":\"m.tasim.net\"\n}",
+    "exploreUrl": "[\n    {\n        \"title\": \"玄幻\",\n        \"url\": \"https://m.tasim.net/json?sortid=1&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"武侠\",\n        \"url\": \"https://m.tasim.net/json?sortid=2&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"都市\",\n        \"url\": \"https://m.tasim.net/json?sortid=3&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"历史\",\n        \"url\": \"https://m.tasim.net/json?sortid=4&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"网游\",\n        \"url\": \"https://m.tasim.net/json?sortid=5&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"科幻\",\n        \"url\": \"https://m.tasim.net/json?sortid=6&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"女生\",\n        \"url\": \"https://m.tasim.net/json?sortid=7&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"排行榜\",\n        \"url\": \"https://m.tasim.net/json?sortid=8&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    },\n    {\n        \"title\": \"全本\",\n        \"url\": \"https://m.tasim.net/json?sortid=9&page={{page}}\",\n        \"style\": {\n            \"layout_flexGrow\": 1,\n            \"layout_flexBasisPercent\": 0.25\n        }\n    }\n]",
+    "bookSourceGroup": "🔞 小说"
+  }
+]
