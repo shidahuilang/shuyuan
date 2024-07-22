@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "by哒哒哒\n\n息壤登陆后，抓包device和Authorization填到下方请求头",
+    "bookSourceGroup": "正版",
+    "bookSourceName": "息壤中文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://android-api.xrzww.com/#",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=1&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n仙侠::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=2&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n都市::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=3&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n历史::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=4&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n科幻::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=5&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n奇幻::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=6&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n军事::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=7&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n悬疑::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=11&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n轻小说::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=9&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n体育::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=12&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n游戏::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=13&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n武侠::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=14&page={{page}}&novel_sex=1&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n热销::/api/hotSaleListNew?page={{page}}&pageSize=20&novel_sex=1&type=1\n字数::/api/wordnumListNew?page={{page}}&pageSize=20&novel_sex=1&type=1\n更新::/api/wordsListNew?page={{page}}&pageSize=20&novel_sex=1&type=1\n现代言情::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=77&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n纯爱小说::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=82&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n无CP::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=83&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n古代言情::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=80&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=\n幻想言情::/api/getTypeNovel?novel_process=&novel_sell=&novel_sign_id=&time_type=&word_type=&second_type=81&page={{page}}&novel_sex=2&type_id=&pageSize=20&order=novel_wordnumber+&order_type=desc&tag=",
+    "header": "@js: \n(()=>{\n\t let device=\"webh51721491792120\"\n\t let Authorization=\"Bearer 7e6f692755e03ee35d02988393fdc7bc\"\n let timestamp = Math.round(Date.now()/1000)\n let key=\"9495ef469eb3e7ae8ef3\"\n let signature = java.md5Encode(device+timestamp+key)\n return JSON.stringify({\n \t\"Authorization\":Authorization,\n\t\"appVersion\":\"4.70\",\n\t\"deviceType\":\"android\",\n\t\"signature\":signature,\n\t\"site\":\"1\",\n\t\"content-type\":\"application/json\",\n\t\"headerRequestSource\":\"xirang\",\n\t\"Connection\":\"Keep-Alive\",\n\t\"User-Agent\":\"okhttp/4.8.0\",\n\t\"deviceIdentify\":device,\n\t\"timestamp\":timestamp\n\t})\n})()",
+    "lastUpdateTime": 1721495416991,
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "init": "$.data",
+      "intro": " &lrm;\n 🔖 标签：{{$.novel_tags}}\n &lrm;\n 🏷 简介：{{$.novel_info}}",
+      "kind": "",
+      "tocUrl": "/api/novelDirectory?nid={{$.novel_id}}&orderBy=asc"
+    },
+    "ruleContent": {
+      "content": "$..content\n<js>\njava.aesBase64DecodeToString(result,\"VT5aj59QCjf2J8F3\",\"AES/CBC/PKCS5Padding\",\"259c4e9881b5fe05\")\n</js>"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "novel_author",
+      "bookList": "$.data.data[*]",
+      "bookUrl": "/api/detail?novel_id={{$.novel_id}}",
+      "coverUrl": "https://oss.xrzww.com/{{$.novel_cover}}",
+      "intro": "",
+      "kind": "novel_tags",
+      "lastChapter": "{{java.timeFormat(java.getString(\"novel_uptime\")*1000)}} {{$.novel_newcname}}",
+      "name": "novel_name",
+      "wordCount": "novel_wordnumber"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nlet data=JSON.parse(result).data\nlet chapterList=[]\nfor(var volume of data){\n\tchapterList.push({\n\t\tname:volume.volume_name,\n\t\tisVolume:true,\n\t\tinfo:volume.volume_desc\n\t\t})\n\t\tfor(var chapter of volume.chapter_list){\n\t\t\tvar isVip=chapter.chapter_ispay==0?\"\":\"💰\"\n\t\t\tvar time=java.timeFormat(chapter.chapter_time*1000)\n\t\t\tchapterList.push({\n\t\t\t\tname:isVip+chapter.chapter_name,\n\t\t\t\tisVolume:false,\n\t\t\t\tinfo:`更新时间:`+time+` 字数:${chapter.chapter_number}`,\n\t\t\t\turl:`/api/readWithEncrypt?chapter_id=${chapter.chapter_id}&nid=${chapter.chapter_nid}&preload=0`\n\t\t\t\t})\n\t\t\t}\n\t}\nchapterList\n</js>",
+      "chapterName": "name",
+      "chapterUrl": "url",
+      "isVolume": "isVolume",
+      "updateTime": "info"
+    },
+    "searchUrl": "/api/searchAll?search_value={{key}}&search_type=novel&page={{page}}&pageSize=20",
+    "weight": 0
+  }
+]

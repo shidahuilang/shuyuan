@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "#novel-detail@a.1@text",
+    "bookSourceName": "zhsxs",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.zhswx.com/",
+    "bookUrlPattern": ".*/book/\\d+.html",
+    "customOrder": 71,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "lastUpdateTime": 1706947174251,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.style2.0@a.0@text",
+      "coverUrl": "#novel-detail@img@src",
+      "intro": ".desc@text",
+      "kind": "#novel-detail@a.5@text",
+      "lastChapter": "#novel-detail@a.7@text",
+      "name": "id.novel_title@text",
+      "tocUrl": "text.阅读目录@href"
+    },
+    "ruleContent": {
+      "content": "html",
+      "replaceRegex": "##设置X|手机扫码阅读.*|推荐小说.*|新入庫小說.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "dd.0@text",
+      "bookList": "class.figure-horizontal figure-1",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "天人图谱",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "lastChapter": "a.2@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "tbody tr td ",
+      "chapterName": "class.chapterlist@a@text",
+      "chapterUrl": "class.chapterlist@a@href"
+    },
+    "searchUrl": "http://www.zhswx.com/zhslist/{{key}}.html",
+    "weight": 0
+  }
+]

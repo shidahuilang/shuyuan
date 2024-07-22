@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "同站：\n污书屋 https://www.miaoquan2016.com",
+    "bookSourceGroup": "",
+    "bookSourceName": "🐟鲤鱼乡123[修正版]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.liyuxiang123.com",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "                               分  类                              \n    全部    ::/sort/{{page}}/\n高辣小说::/sort/1/{{page}}/\n百合肉文::/sort/2/{{page}}/\n言情小说::/sort/3/{{page}}/\n情欲小说::/sort/4/{{page}}/\n耽美小说::/sort/5/{{page}}/\n海棠耽美::/sort/6/{{page}}/\n其他类型::/sort/8/{{page}}/\n\t                              榜  单                              \n总排行榜::/rank/allvisit/\n月点击榜::/rank/monthvisit/\n周点击榜::/rank/weekvisit/\n  收藏榜  ::/rank/goodnum/\n    全本    ::/quanben/sort/{{page}}/",
+    "lastUpdateTime": 1721488515210,
+    "loginUrl": "",
+    "respondTime": 24181,
+    "ruleBookInfo": {
+      "coverUrl": "class.pic@img@src",
+      "init": "",
+      "intro": "class.intro@p@textNodes",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+      "lastChapter": "class.infotype@tag.p.3@a@text",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "id.novelcontent@p@html"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleSearch": {
+      "author": "class.author@text||class.p3@text",
+      "bookList": "class.searchresult@p||class.article||class.articlegeneral",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "class.content@p.simple@text",
+      "kind": "class.p1@text##\\[|]",
+      "name": "h6@a@text||tag.a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapters@li@a",
+      "chapterName": "text##.*vIP|.*мē|.*иéτ",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/search,{\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

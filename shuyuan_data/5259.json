@@ -1,0 +1,34 @@
+[
+  {
+    "ruleSearch": {
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "name": "a:nth-child(2)@text",
+      "author": "span@text",
+      "intro": "dd@text",
+      "coverUrl": "img@src",
+      "bookUrl": "a:nth-child(2)@href##$##,{\"webView\":true}"
+    },
+    "ruleBookInfo": {
+      "canReName": "",
+      "kind": ".am-text-sm:nth-child(3) :nth-child(n+1)@text",
+      "lastChapter": ".book-info-last > a@textg"
+    },
+    "ruleToc": {
+      "chapterList": ".am-show-md-up .am-avg-sm-1 > li",
+      "chapterName": ".am-text-truncate@text@js:result.replace('','');",
+      "chapterUrl": ".am-text-truncate@href"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent > p:nth-child(n+3)@html\n@js:result.replace(/(<p>一秒记住，精彩无弹窗免费！<\\/p>)|(<p>本章未完，请点击下一页继续阅读！<\\/p>)/,'');\n",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.28lu.net",
+    "bookSourceName": "28看书网-自制🐜",
+    "header": "{\n\"user-agent\":\"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36\"\n}",
+    "searchUrl": "https://www.sososhu.com/?site=28lu&q={{key}}##$##,{\"webView\":true}"
+  }
+]

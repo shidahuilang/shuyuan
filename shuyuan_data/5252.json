@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceGroup": "自制,源仓库,网页源",
+    "bookSourceName": "我的书城网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.5scw.com",
+    "bookUrlPattern": "https?://www.5scw.com/book_\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n排行::/rank/\n书库::/fenlei/{{page}}/\n完本::/quanben/fenlei/{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1695122258871,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=lastest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}"
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".txt-list li",
+      "bookUrl": "a.0@href",
+      "kind": "span.0:-1@text##\\[|\\]",
+      "lastChapter": "a.1@text",
+      "name": ".s2@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".txt-list li!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "剑来",
+      "kind": "span.0:-1@text##\\[|\\]",
+      "lastChapter": "a.1@text",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list.1@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}\n/search/,{\n  \"body\": \"searchkey={{key}}&Submit=搜索\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

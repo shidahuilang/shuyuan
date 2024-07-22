@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "网阅小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.beiwobook.cc/",
+    "customOrder": -3,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\":\"男频\",\n    \"url\":\"/books/special-t1.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"玄幻奇幻\",\n    \"url\":\"/books/list-t-3.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"武侠修真\",\n    \"url\":\"/books/list-t-8.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"都市小说\",\n    \"url\":\"/books/list-t-21.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"恐怖灵异\",\n    \"url\":\"/books/list-t-4.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"乡村生活\",\n    \"url\":\"/books/list-t-9.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"历史军事\",\n    \"url\":\"/books/list-t-11.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"科幻末世\",\n    \"url\":\"/books/list-t-12.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n\n    {\n    \"title\":\"侦探推理\",\n    \"url\":\"/books/list-t-23.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"游戏竞技\",\n    \"url\":\"/books/list-t-16.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n       {\n    \"title\":\"女频\",\n    \"url\":\"/books/special-t2.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n    {\n    \"title\":\"都市言情\",\n    \"url\":\"/books/list-t-5.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"古代言情\",\n    \"url\":\"/books/list-t-6.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n     {\n    \"title\":\"穿越小说\",\n    \"url\":\"/books/list-t-10.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"浪漫青春\",\n    \"url\":\"/books/list-t-7.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"二次元う\",\n    \"url\":\"/books/list-t-17.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n        {\n    \"title\":\"——\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n     {\n    \"title\":\"综合\",\n    \"url\":\"/books/special-t3.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n      {\n    \"title\":\"现代文学\",\n    \"url\":\"/books/list-t-14.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"外国文学\",\n    \"url\":\"/books/list-t-22.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"古典文学\",\n    \"url\":\"/books/list-t-15.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n       {\n    \"title\":\"排行榜\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n      {\n    \"title\":\"总榜\",\n    \"url\":\"/books/rank1.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"月榜\",\n    \"url\":\"/books/rank2.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"日榜\",\n    \"url\":\"/books/rank3.html?page={{page}}\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n]",
+    "lastUpdateTime": 1721485788598,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.book-info-list fh-f1@li.0@text",
+      "coverUrl": "class.book-info fh@img@src",
+      "intro": "class.book-intro text-hide2@text",
+      "kind": "class.book-info-list fh-f1@li.2@span.0@text&&class.book-info-list fh-f1@li.2@span.1@text&&class.book-info-list fh-f1@li.1@text##分类：|状态：|最后更新：",
+      "lastChapter": "class.fh-f1 text-hide.0@text",
+      "name": "class.text-hide1@text",
+      "tocUrl": "text.查看所有章节目录@href",
+      "wordCount": "class.book-info-list fh-f1@li.3@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chapter_content@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.jp-zuohe@text## .*",
+      "bookList": "class.fh book-one book-line",
+      "bookUrl": "class.fh-f1 text-hide@a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img@data-echo",
+      "intro": "class.jp-intro text-hide2@text",
+      "kind": "class.jp-zuohe@text&&class.fh jp-title@p.1@span.1@text##.* 类型:| 浏览.*",
+      "name": "class.fh-f1 text-hide@a@text",
+      "wordCount": "class.fh jp-title@p.1@span.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "-ul@a",
+      "chapterName": "class.text-hide.0@text&&class.fh-f1 text-hide@text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/books/search?kw={{key}}&page={{page}}",
+    "weight": 0
+  }
+]
