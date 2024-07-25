@@ -1,0 +1,65 @@
+[
+  {
+    "bookSourceComment": "// 关闭精确搜索，能搜索部分小说 头条搜索\nby_天天的鸟蛋蛋 修复\nps：原来by_旅途\n用的是搜狗搜索\n我不会弄 原这位大佬做的搜狗搜索接口崩了\n通用的搜狗也崩了\n我本来想弄成必应的\n 但是搜出来的结果太乱了\n我用另一个大佬的必应搜索的只有两个结果\n这个头条是我自己写的",
+    "bookSourceGroup": "🎴 小说,⌨ 自制",
+    "bookSourceName": "🎴 四库书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.4ksw.com##旅途",
+    "bookUrlPattern": "http://www.4ksw.com/\\d+/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"总排行榜\",\"url\":\"/book/allvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周排行榜\",\"url\":\"/book/weekvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月排行榜\",\"url\":\"/book/monthvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"总推荐榜\",\"url\":\"/book/allvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周推荐榜\",\"url\":\"/book/weekvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月推荐榜\",\"url\":\"/book/monthvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最近更新\",\"url\":\"/book/lastupdate-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"玄幻魔法\",\"url\":\"/list/1-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"仙侠修真\",\"url\":\"/list/2-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/list/3-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史军事\",\"url\":\"/list/4-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游动漫\",\"url\":\"/list/5-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/list/6-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖灵异\",\"url\":\"/list/7-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他类型\",\"url\":\"/list/8-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76\"}",
+    "jsLib": "",
+    "lastUpdateTime": 1721689762226,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property$=description]@content&&[name=\"description\"]content",
+      "kind": "[property~=(category|status|update_time)]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content##（.*订阅.*）",
+      "name": "[property$=title]@content",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content-body@html",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "author": ".book_author@text||a.-1@text",
+      "bookList": "<js>\nresult=result.replace(/<\\/li>\\s*<li class=\"(author|lastchapter|lastupdate|visit|fullflag)\">(.*?)/g,'')\n</js>\n.col-lg-6||.article li",
+      "bookUrl": ".book-title a@href||a@href",
+      "coverUrl": "a.0@href<js>\nvar id = result.match(/(\\d+)\\/(\\d+)/)[2];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "intro": ".book-intro-index@textNodes",
+      "kind": "textNodes##(.*-\\d{2})\\d+(.*)##$1,$2###",
+      "lastChapter": ".lastchapter@text||a.1@text##（.*求.*）",
+      "name": ".media-heading@text||a.0@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "class.l-view block l-text-split color-dark line-clamp-1 t2@span.0@text||class.l-view block l-text-split mb-4 color-dark line-clamp-1 t2@span.0@text||span.1@text",
+      "bookList": ".l-view",
+      "bookUrl": "class.l-view block l-card my-4 py-16 px-16 l-card-bg relative@data-log-click##.*\\\"url\\\"\\:\\\"(.*)\\\"\\}##$1",
+      "checkKeyWord": "",
+      "coverUrl": "class.l-view block l-card my-4 py-16 px-16 l-card-bg relative@data-log-click##.*\\\"url\\\"\\:\\\"(.*)\\\"\\}##$1\n@js:##.+\\D((\\d+)\\d{3})\\D##http://www.4ksw.com/files/article/image/$2/$1/$1s.jpg###",
+      "intro": "class.l-view block l-text line-clamp-2 color-dark l-paragraph t2@text||span.5@text##精彩小说推荐.*|nbsp\\;|全部章节",
+      "kind": "{{@@span.3@text}}\n{{@@span.1@text}}\n{{@@class.l-view block l-text line-clamp-2 color-dark l-paragraph t2@text##.*小说类别\\:(.*) / .*##$1###}}\n{{@@span.5@text##.*小说类别\\:(.*) / .*##$1###}}",
+      "lastChapter": "{{@@class.l-view block l-text line-clamp-1 color-dark l-paragraph t2.0@text}}·{{@@class.l-view block l-text line-clamp-1 color-dark l-paragraph t2.2@text}}",
+      "name": "a.0@text##\\-四库书屋|\\(.*\\)|最新章节吧",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.list-group.1@li",
+      "chapterName": "a@text##T|T|Ｔ## (图片文字)<js>##【.*】|加更规则.*|上架感言.*|（.*求.*）</js>",
+      "chapterUrl": "a@href",
+      "formatJs": ""
+    },
+    "searchUrl": "https://so.toutiao.com/search?keyword={{key}}%20site%3Awww.4ksw.com&offset={{(page-1)*10}}&start_index={{(page-1)*10}},{\"webView\": true}",
+    "weight": 0
+  }
+]

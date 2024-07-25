@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceName": "中华典藏",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.zhonghuadiancang.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\nJ = org.jsoup.Jsoup.parse(java.ajax(source.key));\npush(\"・分类・\", null, 1);\nX = J.select('.menu a');\nfor (i = 0; i < X.length; ++i) {\n  push(\n    X[i].text(),\n    X[i].attr('href') + \"<,index_{{page}}.html>\",\n    null\n  );\n};\npush(\"・标签・\", null, 1);\nY = J.select('.panel-default a');\nfor (i = 0; i < Y.length; ++i) {\n  push(\n    Y[i].text(),\n    String(Y[i].attr('href')).replace(/\\d+\\.html$/,'{{page-1}}.html'),\n    null\n  );\n};\n\nJSON.stringify(sort);",
+    "lastUpdateTime": "1721880646399",
+    "respondTime": 1150,
+    "ruleBookInfo": {
+      "author": "small@a@text",
+      "canReName": "1",
+      "coverUrl": ".fmpic@img@src",
+      "intro": ".m-summary@html",
+      "kind": ".alert@a@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "#content@html||.message@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "[href*=/renwu/]@text",
+      "bookList": "tr!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "intro": "p@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nString(result).match(/<div class=\"clearfix\"><\\/div>([\\s\\S]*?)<div class=\"clearfix\"><\\/div>/)[1];\n</js>\n@@h3,li",
+      "chapterName": "text",
+      "chapterUrl": "a@href",
+      "isVolume": "a@target"
+    },
+    "searchUrl": "/e/search/index.php,{\"body\": \"tbname=bookname&show=title,writer&tempid=1&keyboard={{key}}\", \"method\": \"POST\"}",
+    "weight": 0
+  }
+]

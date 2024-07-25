@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "笔趣阁",
+    "bookSourceName": "我的书城 （必应搜索）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qushucheng.com",
+    "bookUrlPattern": "https://www.qushucheng.com/book_\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n排行::/rank/\n书库::/fenlei/{{page}}\n完本::/quanben/fenlei/{{page}}",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\"}",
+    "lastUpdateTime": "1721811413621",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "{{@@[name=\"description\"]@content##《(.*)》\\/(.*)\\/简介：(.*)##书名：$1<br>作者：$2<br>简介：$3}}##(^|[。！？…]+[”」）】…]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content||[property$=title]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href",
+      "replaceRegex": "##\\(本章完\\)|第.*章.*\\n"
+    },
+    "ruleExplore": {
+      "author": ".s4@text||.s5@text",
+      "bookList": ".txt-list@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "span.0:-1@text##\\[|\\]",
+      "lastChapter": "",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "h2 a@text##.*\\((.*)\\).*##$1",
+      "bookList": "@js:jsoup=org.jsoup.Jsoup.parse;\nfor(i=0,r=jsoup(src);i<100;i++){\ner=r.select(\".b_algo:not(:has(:matches(^(广告|推广|手游)$)))\");\nif(er.size()){break\n}else r=jsoup(java.ajax(baseUrl));\n}er",
+      "bookUrl": ".b_tpcn a@href",
+      "coverUrl": "",
+      "intro": "链接：{{@@h2@a@href##[^/]+//}}\n简介：{{@@p@text##APP上阅读：}}",
+      "kind": "",
+      "lastChapter": "",
+      "name": "h2 a@text\n@js:re=String(src).replace(/\\s*(?:&nbsp;)+\\s*/g,\" \").replace(/\\s*<\\/?(?:strong|i)>\\s*/g,\"\");\nif(类=re.match(/(?:[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】》]|<[^a/][^>]*>|<\\/[^>]+>)(?:[分大]\\s*类|类\\s*[型别])(?:[:：\\s]|<[^>]+>)+([^\\s<\"./／｜|>]+)/))java.put(\"类\",类[1]);\nkey=java.get(\"key\");\nax=java.get(\"aut\");\njava.put(\"源\",r=(r=result.match(/(.{0,2})《([^《》]+)》(.{0,3})/))&&r[3]!=\"作品集\"&&!r[1].match(/新[书作]/)?r[2]:result);\n\nr=r.replace(/^(简介页|详情页|目录页|正版|全本|免费阅读|[\\s。.,_/|《「『【〖（(\\[\\])）〗】』」─—-]+)+/,\"\").replace(/(?!^)[^\\u4e00-\\u9fa5a-zA-Z0-9]*(?:笔趣阁|思路客|燃文|小说|漫画|手机)?(?:[.|,_/\\s「『【〖（(\\[\\])）〗】』」。─—-]|(?:人工|机器|电脑)?校正|精校|完[整结]|加料|番外|未删节|简介|全[文本集]|下载|(?:小说|漫画|大全|正版(?:小说|漫画)?|免费|免费小说|免费漫画|免费全[文本]|在线|最[新快]|全部|手机|电脑)(?:全[文本集部]|大全|免费|在线|阅读|下载|章节|小说|更新|漫画|\\.)|([^a-zA-Z0-9])(?:azw|mobi|epub|txt)(?![a-zA-Z0-9])|(?:最全)?(?:章节|目录|列表){2,}|更新章节最快|无广告|(?::顶点)?无弹窗|无防盗|小说网|手打全文|[纯全](?:手打|文字)|\\s*by\\s*(?=[\\u4e00-\\u9fa5]))[\\S\\s]*/i,\"$1\");\n\nif(ax==\"#\"||!~re.indexOf(ax)){\nax=re.match(/《([^《》]+)》作品集|[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】《》>]作\\s*者(?:[:：\\s“\"'(（]|<[^it\\/][^>]*>|<\\/[^>]+>)+(?![^\\s<(《“（）”》)>\\/\\[\\];?!,、，；？！。…─［］〖〗【】]*\\.{3}<)([^\\s<(《“（\"'）”》)>\\[\\];?!,、，；？！。…─［］〖〗【】/／｜|:：]+?)(?=(?:其[他它]|小说|[更最][快新]|\\.\\s*)?..[:：]|所?写?的《|[\\s<(《“（\"'）”》)>\\[\\];?!,、，；？！。─［］〖〗【】/／｜|])/);\nif(!ax){\nax=re.match(new RegExp(r+\"[^a-z0-9A-Z\\\\u4e00-\\\\u9fa5]*([^\\\\s]+?)\\\\s+著|(?:由|原创)(?:(?:原创|网络)?作[家者])?(?![\\\\u4e00-\\\\u9fa5a-zA-Z0-9_-]*(?:[书网]友|网)所?提供)([\\\\u4e00-\\\\u9fa5a-zA-Z0-9_-]+?)(?:为大家)?(?:所作|所?(?:(?:[精倾]心)?[创著]作|提供|写?的(?:《|\"+r+\")))\"));\nif(!ax)ax=result.match(/[^.|,_/\\s\\[\\]（()）【〖〗】。-]+[（(](?![^\\s]+[\\s、：；？！…─“‘《〖【，。:;?!\"'】〗》’”][^(（）)]+|(?:连载中?|完本|大结局|上|中|下|[\\s.一二三四五六七八九十百千万〇零0-9]+)[）)])([^（()）]+?)(?:(?:\\s+|所)?著|的?新书|[/／｜|][^)）]+)?[)）]/)}\nax=ax?ax[1]||ax[2]:\"\"}\n\nif(!ax.length&&~re.indexOf(key)&&!~r.indexOf(key))ax=key;\n\nif(r.indexOf(ax)>0&&!~key.indexOf(r))r=r.split(ax)[0].replace(/[:：]$/,'');\n\nzt=[(小说=key.indexOf(\"小说\"))&&小说^(长=key.length-2),(有声=key.indexOf(\"有声\"))&&有声^长];\nif(zt[0]&&zt[1]){\nrez=\"(?!^)(有声|小说|有声小说)$|^(有声|小说|有声小说)(?!$)\"\n}else if(zt[1]){\nrez=\"(?!^)有声$|^有声(?!$)\"\n}else if(zt[0]){\nrez=\"(?!^)小说$|^小说(?!$)\"\n}else rez=\"☯\";\nif((漫画=key.indexOf(\"漫画\"))&&漫画^长)rez+=\"|(?!^)漫画$|^漫画(?!$)\";\n\nix=r.replace(new RegExp(rez),\"\").split(/[：:]/);i=0;\nwhile(i<ix.length){x=ix[i];\nif(~x.indexOf(key)||~key.indexOf(x))break;i++}\nif(i==ix.length)i=0;\n\njava.put(\"au\",ax);\njava.put(\"bb\",ix.slice(i,i+2).join(\":\"))"
+    },
+    "ruleToc": {
+      "chapterList": "class.section-list fix@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href||text.下一@href"
+    },
+    "searchUrl": "@js:\ncookie.removeCookie(\"https://cn.bing.com\")\n\"https://cn.bing.com/search?q=site%3Awww.qushucheng.com%20{{java.encodeURI(key)}} &first={{(page-1)*10+1}},\"+JSON.stringify({\n  'webView': true\n})",
+    "weight": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "by:浮生",
+    "bookSourceGroup": "已完成",
+    "bookSourceName": "83中文S",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.x83zw.net",
+    "bookUrlPattern": "https?://www.83zws.com/book/\\d+/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "全部分类::/sort/{{page}}\n玄幻魔法::/sort/1_{{page}}/\n武侠修真::/sort/2_{{page}}/\n都市言情::/sort/3_{{page}}/\n历史军事::/sort/4_{{page}}/\n科幻灵异::/sort/5_{{page}}/\n游戏竞技::/sort/6_{{page}}/\n女生频道::/sort/9_{{page}}/\n其他类型::/sort/10_{{page}}/\n\n排行::/rank/\n总排行榜::/rank/allvisit/\n月排行榜::/rank/monthvisit/\n周排行榜::/rank/weekvisit/\n收藏榜::/rank/goodnum/\n\n全本::/quanben/sort/\n玄幻魔法::/quanben/sort/1_{{page}}/\n武侠修真::/quanben/sort/2_{{page}}/\n都市言情::/quanben/sort/3_{{page}}/\n历史军事::/quanben/sort/4_{{page}}/\n科幻灵异::/quanben/sort/5_{{page}}/\n游戏竞技::/quanben/sort/6_{{page}}/\n女生频道::/quanben/sort/9_{{page}}/\n其他类型::/quanben/sort/10_{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1721785151902",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".author@text##作者：",
+      "coverUrl": "img@src",
+      "intro": ".rebiew@text#最新章节推荐地址：.*",
+      "kind": ".sort@text##类别：",
+      "lastChapter": ".synopsisArea_detail@a.-1@text",
+      "name": ".synopsisArea_detail@p.0@text"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\s*『加入书签.*』|\\s*({{book.name}}|作者：|简介：|最新网址：|本还?章[未已]完).*\\n*"
+    },
+    "ruleExplore": {
+      "author": "p.1@text##作者：\n@js:\nresult.split(/ +/)[0]",
+      "bookList": "class.hot_sale",
+      "bookUrl": "a.0@href",
+      "intro": "p.-1@text",
+      "name": "p.0@text"
+    },
+    "ruleSearch": {
+      "author": ".author.0@text##作者：",
+      "bookList": "class.bookbox",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "",
+      "kind": ".author.1@text##类型：",
+      "lastChapter": "a.-1@text",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".directoryArea.1@p@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/s/,{\n  \"body\": \"searchkey={{key}}&submit=\",\n  \"method\": \"POST\",\n  \"charset\": \"UTF-8\"\n}",
+    "weight": 0
+  }
+]

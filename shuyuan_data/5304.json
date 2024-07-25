@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n20240725_修复搜索",
+    "bookSourceName": "优品小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.youpinbook.com",
+    "customOrder": 368,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "{\n\t\"token\": \"\",\n\t\"user-agent\":\"Mozilla/5.0 (Linux; Android 10.0; wv) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.110 Mobile Safari/537.36 T7/10.3 SearchCraft/2.6.2 (Baidu; P1 7.0)\"\n\t}",
+    "lastUpdateTime": "1721901740134",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "",
+      "intro": "[property$=description]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content##\\s\\d.*",
+      "lastChapter": "[property$=latest_chapter_name]@content##正文卷.|正文.|VIP章节.|免费章节.|VIP卷.|默认卷.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加].*?[】）\\)]",
+      "name": "[property$=book_name]@content",
+      "tocUrl": ".readbtn@a.1@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#content_main@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#content_1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一@href||text.下一页@href"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=youpin##$##,{\"webView\":true}",
+    "weight": 0
+  }
+]

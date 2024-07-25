@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩娓雅评书网[自写]",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://www.wpingshu.com##xsw8093",
+    "customOrder": 3356,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "单田芳::/stfps/\n袁阔成::/ykcps/\n刘兰芳::/llfps/\n连丽如::/llrps/\n田连元::/tlyps/\n田战义::/tzyps/",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\"}",
+    "jsLib": "",
+    "lastUpdateTime": 1721716965578,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.info-main@img@src",
+      "intro": "class.info-main-intro@text",
+      "name": "class.info-main@class.w100@h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": ".jp-jplayer@audio@src",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "bookList": "div.lastupdate>div.list-out",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": " .b_algo\n @js:\n function headUrl(url){\n       let urlReal = url.replace(\"https://\",\"\").replace(\"http://\",\"\")\n       if(urlReal.split(\"/\").length>=3){\n        return  \"http://\"+urlReal.split(\"/\").slice(0,3).join(\"/\")\n       }\n       return \"\"\n}\n  bookSourceUrl=String(source.bookSourceUrl).match(/([^\\#]+)\\#/)[1]\n    let a=result;\n    java.log('必应数量:'+a.length);\n    var b = [];\n    for (let i =0;i<a.length;i++) {\n        var str =org.jsoup.Jsoup.parse(a[i]);\n        var list={};\n        let realU=str.select('h2').select('a').attr('href').toString();\n        if(!realU.includes(bookSourceUrl)){\n            continue;\n        }else{\n          if(headUrl(realU)!=\"\"){\n             list[\"title\"]=str.select('h2').select('a').text();\n             list[\"intro\"]=str.select('.b_caption').html();\n             list[\"url\"] =headUrl(realU);\n             b.push(list);\n           }\n        \t\n        }\n    }\n    java.log('网站数量:'+b.length);\nresult=b;",
+      "bookUrl": "url",
+      "checkKeyWord": "红楼梦",
+      "intro": "intro",
+      "name": "title##第\\d.*.|\\d.*.##"
+    },
+    "ruleToc": {
+      "chapterList": ".mb20 .info-chapters > a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href##$##,{'webView': true}"
+    },
+    "searchUrl": "@js:\ncookie.removeCookie(\"https://cn.bing.com\")\n\"https://cn.bing.com/search?q=site%3Awww.wpingshu.com%20{{java.encodeURI(key)}} &first={{(page-1)*10+1}},\"+JSON.stringify({\n  'webView': true\n})",
+    "weight": 0
+  }
+]

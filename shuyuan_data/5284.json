@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "运营商屏蔽了\nby:浮生",
+    "bookSourceGroup": "已完成",
+    "bookSourceName": "玄幻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.emuxs.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "两性小说::http://m.emuxs.com/emulist.asp?id=17&page={{page}}\n诗歌散文::http://m.emuxs.com/emulist.asp?id=15&page={{page}}\n网游小说::http://m.emuxs.com/emulist.asp?id=2&page={{page}}\n科幻小说::http://m.emuxs.com/emulist.asp?id=11&page={{page}}\n都市小说::http://m.emuxs.com/emulist.asp?id=6&page={{page}}\n灵异小说::http://m.emuxs.com/emulist.asp?id=10&page={{page}}\n言情小说::http://m.emuxs.com/emulist.asp?id=7&page={{page}}\n历史小说::http://m.emuxs.com/emulist.asp?id=8&page={{page}}\n同人小说::http://m.emuxs.com/emulist.asp?id=12&page={{page}}\n竞技小说::http://m.emuxs.com/emulist.asp?id=13&page={{page}}\n军事小说::http://m.emuxs.com/emulist.asp?id=9&page={{page}}\n经典名著::http://m.emuxs.com/emulist.asp?id=14&page={{page}}\n仙侠小说::http://m.emuxs.com/emulist.asp?id=5&page={{page}}\n侦探小说::http://m.emuxs.com/emulist.asp?id=21&page={{page}}\n武侠小说::http://m.emuxs.com/emulist.asp?id=4&page={{page}}\n现代文学::http://m.emuxs.com/emulist.asp?id=19&page={{page}}\n穿越小说::http://m.emuxs.com/emulist.asp?id=3&page={{page}}\n重生小说::http://m.emuxs.com/emulist.asp?id=18&page={{page}}\n玄幻小说::http://m.emuxs.com/emulist.asp?id=1&page={{page}}\n官场小说::http://m.emuxs.com/emulist.asp?id=20&page={{page}}",
+    "header": "@js:\n(()=>{\n    var ua = \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.9999.99 Safari/537.36\";\n    var headers = {\n        \"User-Agent\": ua,\n        \"Referer\": baseUrl\n    };\n    return JSON.stringify(headers);\n})()",
+    "lastUpdateTime": "1721785193743",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".jie@span.-1@text",
+      "coverUrl": "img@src",
+      "intro": ".novelinfo@text##M.EｍuXｓ.CoM",
+      "kind": ".jie@a.0@text",
+      "name": ".selected.0@text",
+      "wordCount": ".jie@span.1@text##字数："
+    },
+    "ruleContent": {
+      "content": ".novelinfvie@html",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "span.1@text\n@js:\nresult.split(/ +/)[0]",
+      "bookList": ".booklist_a@li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "name": "a.1@text"
+    },
+    "ruleSearch": {
+      "author": "span.1@text\n@js:\nresult.split(\"时间:\")[0].trim()",
+      "bookList": ".booklist_a@li",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "span.0@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".sso_a@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "http://m.emuxs.com/search.asp?word={{key}},{\n  \"method\": \"get\",\n  \"charset\":\"gbk\"\n}",
+    "weight": 0
+  }
+]
