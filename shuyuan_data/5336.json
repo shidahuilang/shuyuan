@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "dy@天天的鸟蛋蛋",
+    "bookSourceGroup": " 笔趣阁 [蓝] （天天的鸟蛋蛋）",
+    "bookSourceName": "乐文小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.lwma.cc",
+    "bookUrlPattern": "https://.*.lwma.cc/book/.*/",
+    "customOrder": 90,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": "1722157972431",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "{{@@[property=\"og:novel:author\"]@content}}",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "书名： 《{{@@[property=\"og:novel:book_name\"]@content}}》\n作者： {{@@[property=\"og:novel:author\"]@content}}\n标签： {{@@[property~=status|update_time|category]@content}}  \n简介：\n  {{@@[property=\"og:description\"]@content}}\n！由乐文小说网提供『本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。』",
+      "kind": "{{@@[property~=status|update_time|category]@content}}",
+      "name": "{{@@[property=\"og:novel:book_name\"]@content}}",
+      "tocUrl": "text.查看更多章节@href"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@textNodes||class.Readarea ReadAjax_content@textNodes",
+      "nextContentUrl": "text.下一页@href||text.下一@href",
+      "replaceRegex": "##请收藏本站：.*ttps.*w.*a.*乐文小说网手机版.*h.*m.*c|首发网址.*c|请收藏.*c"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "author",
+      "bookList": "[*]",
+      "bookUrl": "url_list\n@js:##.+\\D((\\d+)\\d{3})\\D##https://m.lwma.cc/book/$1/###",
+      "coverUrl": "url_img",
+      "intro": "intro",
+      "name": "articlename"
+    },
+    "ruleToc": {
+      "chapterList": ".book_last@dl@dd",
+      "chapterName": "a@text##↓↓↓ 直达页面底部",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href||text.下一页@href||text.下一@href"
+    },
+    "searchUrl": "https://m.lwshu.cc/user/search.html?q={{key}}",
+    "weight": 0
+  }
+]

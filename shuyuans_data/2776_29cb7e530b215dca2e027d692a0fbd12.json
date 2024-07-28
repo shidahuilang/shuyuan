@@ -1,0 +1,117 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "漫画,R18",
+    "bookSourceName": "UAA禁漫",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.uaa.com/api/comic/app/comic/",
+    "customOrder": 23,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\n$ = (x) => `search?${x}&orderType=1&page={{page}}&searchType=1&size=36`;\nu = source.key;\npush(\"• 排行榜 •\", null, 1);\n[\"周榜\", \"月榜\", \"年榜\", \"总榜\"].map((p, q) => {\n  push(p, `rank?type=${q + 1}`, null);\n});\n[\"日本\", \"韩国\"].map((o, r) => {\n  g = r + 1;\n  push(`• ${o}H漫 •`, $(`origin=` + g), 1);\n  [[\"分类\", \"category\"],\n  [\"标签\", \"includeTags\"]].map([a, b] => {\n    push(`【 ${a} 】`, $(\"\"), 1);\n    d = /y/.test(b) ? \"categories\": \"tags\";\n    c = JSON.parse(java.ajax(u + d + `?type=` + g)).model;\n    for (i = 0; i < c.length; i++) {\n      push(\n        c[i].name,\n        $(b + \"=\" + encodeURIComponent(c[i].name)),\n        null\n      );\n    };\n  });\n});\nJSON.stringify(sort);",
+    "header": "{\"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODYwNzIxNzA0MDMxMzU4OTc2LCJ0eXBlIjoiY3VzdG9tZXIiLCJ0aW1lc3RhbXAiOjE2ODUzNzg1MTE1NzQsImV4cCI6MTY4NTk4MzMxMX0.-FX7rOJP7I10ApjeM5NVaGj57aeYnkVyopniC7U_Dv8\"}",
+    "lastUpdateTime": 1721631740162,
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".authors",
+      "canReName": "1",
+      "coverUrl": ".coverUrl",
+      "init": "",
+      "intro": "&nbsp;{{$..brief}}\n&shy;\n开坑：{{$..createTime##(.*?)T(.*?)\\.##$1 $2###}}\n更新：{{$..updateTime##(.*?)T(.*?)\\.##$1 $2###}}\n{{$..categories&&.tags##\\n|,##&nbsp;}}\n##^&nbsp;\\n&shy;",
+      "kind": "{{java.getString('.finished')==1?\"完结\":\"连载\"}}",
+      "lastChapter": ".latestUpdate",
+      "tocUrl": ".id##^##catalog/",
+      "wordCount": ".imageCount##$##P"
+    },
+    "ruleContent": {
+      "content": ".images[*]\n@js:\nresult.split('\\n').map(\n  x => `<img src=\"${x}\">`\n).join('\\n');",
+      "replaceRegex": "##[\\s\\S]*本文来自.*，请访问源网站！[\\s\\S]*"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "authors\n@js:\nr = result;\nr != \"\" ? r: \"UAA\";",
+      "bookList": ".[?(@.title)]",
+      "bookUrl": "id||comicId##^##intro?id=",
+      "checkKeyWord": "",
+      "coverUrl": "coverUrl",
+      "intro": "brief##\\s*",
+      "kind": "{{$.finished##1##完结}},{{$.categories&&tags&&updateTimeFormat}}##^0,##连载,",
+      "lastChapter": "latestUpdate",
+      "name": "title",
+      "wordCount": "imageCount##$##P\n<js>##^P</js>"
+    },
+    "ruleToc": {
+      "chapterList": ".[?(@.title)]",
+      "chapterName": "title",
+      "chapterUrl": "@js:\n`../chapter?force=false&id={{$.id}}&offset=0&viewId=` + new Date().getTime() + Math.round(Math.random() * (9999 - 1000) + 1000);",
+      "isPay": "purchased",
+      "isVip": "vip",
+      "isVolume": "",
+      "updateTime": "{{$.price}}U币  {{$.onlineTime##(.*?)T(.*?)\\.##$1 $2###}}##^0.0U币\\s*"
+    },
+    "searchUrl": "search?category=&keyword={{encodeURIComponent(key)}}&orderType=0&page={{page}}&searchType=1&size=36",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "正文图片〖关〗(开/关)别删这行\n*开启正文图片将使正文加载速度减慢\n*(甚至加载不出来)\n*正文图片可能是涩图🥵或者广告\n*长按图片点击显示可以放大\n*让动图动起来的方法见上一条",
+    "bookSourceGroup": "R18",
+    "bookSourceName": "UAA文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.uaa.com/api/novel/app/novel/",
+    "customOrder": 24,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\n$ = (x) => `search?${x}&orderType=2&page={{page}}&searchType=1&size=40`;\nu = source.key;\npush(\"• 排行榜 •\", null, 1);\n[\"周榜\", \"月榜\", \"年榜\", \"总榜\"].map((p, q) => {\n  push(p, `rank?type=${q + 1}`, null);\n});\n[[\"题材\", \"category\"],\n[\"标签\", \"includeTags\"]].map([a, b] => {\n  push(`• ${a} •`, $(\"\"), 1);\n  d = /y/.test(b) ? \"categories\": \"tags\";\n  c = JSON.parse(java.ajax(u + d)).model;\n  for (i = 0; i < c.length; ++i) {\n    push(\n      c[i].name,\n      $(b + \"=\" + encodeURIComponent(c[i].name)),\n      null\n    );\n  };\n});\nJSON.stringify(sort);",
+    "header": "{\"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODYwNzIxNzA0MDMxMzU4OTc2LCJ0eXBlIjoiY3VzdG9tZXIiLCJ0aW1lc3RhbXAiOjE2ODUzNzg1MTE1NzQsImV4cCI6MTY4NTk4MzMxMX0.-FX7rOJP7I10ApjeM5NVaGj57aeYnkVyopniC7U_Dv8\"}",
+    "lastUpdateTime": 1722013777420,
+    "loginCheckJs": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".authors",
+      "canReName": "1",
+      "coverUrl": ".coverUrl",
+      "init": "",
+      "intro": "&nbsp;{{$..brief}}\n&shy;\n开坑：{{$..createTime##(.*?)T(.*?)\\.##$1 $2###}}\n更新：{{$..updateTime##(.*?)T(.*?)\\.##$1 $2###}}\n{{$..orientationDesc&&.personDesc&&.##\\n##&nbsp;}}\n{{$..categories&&.tags##,|\\n##&nbsp;}}\n##^&nbsp;\\n&shy;",
+      "kind": "{{java.getString('.finished')==1?\"完结\":\"连载\"}},{{$..pornRateDesc##\\(.*\\)##肉}}",
+      "lastChapter": ".latestUpdate",
+      "name": "",
+      "tocUrl": ".id##^##catalog/",
+      "wordCount": ".wordCount"
+    },
+    "ruleContent": {
+      "content": "@js:\nart = java.getString('.lines[*]');\nif (source.bookSourceComment.match(/正文图片〖([\\s\\S]*?)〗/)[1] == \"开\") {\n  try {\n    img = `\\n<img src=\"${JSON.parse(result).model.illustration.imageUrl}\">`;\n  } catch (e) {\n    img = \"\";\n  };\n} else {\n  img = \"\";\n};\nart + img;",
+      "replaceRegex": "##[\\s\\S]*请访问源网站！[\\s\\S]*",
+      "title": ""
+    },
+    "ruleExplore": {},
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "authors\n@js:\nr = result;\nr != \"\" ? r: \"UAA\";",
+      "bookList": ".[?(@.title)]",
+      "bookUrl": "id||novelId##^##intro?id=",
+      "checkKeyWord": "",
+      "coverUrl": "coverUrl",
+      "intro": "shortBrief##\\s*",
+      "kind": "{{$.finished##1##完结}},{{$.pornRateDesc##.*\\(|\\)}},{{$.orientationDesc&&categories&&tags&&updateTimeFormat}}##^0,##连载,",
+      "lastChapter": "latestUpdate",
+      "name": "title",
+      "wordCount": "wordCount"
+    },
+    "ruleToc": {
+      "chapterList": ".[?(@.title)]",
+      "chapterName": "title",
+      "chapterUrl": "@js:\ntype = result.type == 2;\nif (!type) {\n\t`../chapter?force=false&id={{$.id}}&offset=0&viewId=` + new Date().getTime() + Math.round(Math.random() * (9999 - 1000) + 1000);\n} else { \"\"; }",
+      "isPay": "purchased",
+      "isVip": "vip",
+      "isVolume": "@js:\n{{$.type}} == 2 ? true: false;",
+      "updateTime": "{{$.price}}U币  {{$.onlineTime##(.*?)T(.*?)\\.##$1 $2###}}  {{$.volumeNum}}字##^0.0U币\\s*"
+    },
+    "searchUrl": "search?category=&excludeTags=&keyword={{encodeURIComponent(key)}}&orderType=0&page={{page}}&searchType=1&size=40",
+    "variableComment": "",
+    "weight": 0
+  }
+]

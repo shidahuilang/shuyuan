@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceGroup": "H漫画",
+    "bookSourceName": "每日色漫",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--oiji-k32hr15anv9f.155comic25.icu",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "最新::/new/page/{{page}}\n热门::/hot/page/{{page}}\n汉化::/category/hanhua/page/{{page}}\n长篇彩漫::/category/long/page/{{page}}\n精品::/category/rm/page/{{page}}\n同人::/category/doujin/page/{{page}}\n单行本::/category/everyday/page/{{page}}",
+    "lastUpdateTime": "1722098903844",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": ".contents-ad.1@src",
+      "kind": ".post-tag@text",
+      "name": ".post-data@text"
+    },
+    "ruleContent": {
+      "content": ".contents-ad@html",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "bookList": ".post-list@a",
+      "bookUrl": "href",
+      "coverUrl": "tag.img@src",
+      "name": "tag.span@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": ".post-list@a",
+      "bookUrl": "href",
+      "checkKeyWord": "cos",
+      "coverUrl": "tag.img@src",
+      "name": "tag.span@text"
+    },
+    "ruleToc": {
+      "chapterList": "tag.html",
+      "chapterName": "tag.title@text"
+    },
+    "searchUrl": "/?s={{key}}",
+    "weight": 0
+  }
+]

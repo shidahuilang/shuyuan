@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "po18run",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.po18.run",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "  总点击   ::/top/allvisit_{{page}}/\n  月点击   ::/top/monthvisit_{{page}}/\n  周点击   ::/top/weekvisit_{{page}}/\n 都市 ::/sort/1_{{page}}/\n 浓情 ::/sort/2_{{page}}/\n 言情 ::/sort/3_{{page}}/\n 校园 ::/sort/4_{{page}}/\n 武侠 ::/sort/5_{{page}}/\n 玄幻 ::/sort/6_{{page}}/\n 穿越 ::/sort/7_{{page}}/\n 惊悚 ::/sort/8_{{page}}/\n 悬疑 ::/sort/9_{{page}}/\n 重生 ::/sort/10_{{page}}/\n 历史 ::/sort/11_{{page}}/\n 网游 ::/sort/12_{{page}}/\n 科幻 ::/sort/13_{{page}}/\n 耽美 ::/sort/14_{{page}}/\n 高干 ::/sort/15_{{page}}/\n 种田 ::/sort/16_{{page}}/\n 百合 ::/sort/17_{{page}}/\n 其他 ::/sort/18_{{page}}/\n 完本 ::/full/{{page}}/",
+    "header": "{\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\n\"Referer\": \"{{baseUrl}}\"\n\t}",
+    "lastUpdateTime": "1721913925809",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".xx a.1@text",
+      "coverUrl": ".xsfm img@src",
+      "intro": ".jianjie@text",
+      "kind": ".xx li.1@text##分类：",
+      "lastChapter": ".xx a.-1@text",
+      "name": ".xx li.0@text",
+      "tocUrl": "text.更多章节@href##/$##_1/"
+    },
+    "ruleContent": {
+      "content": "#nr@html",
+      "nextContentUrl": "text.下一@href"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".fk ul",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "span.-2@text",
+      "kind": "span.-1@href",
+      "name": "a.1@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".fk li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "kind": "a.0@text##\\[|\\]",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".lb li!-1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".showpage a@href"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"type=articlename&s={{key}}\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

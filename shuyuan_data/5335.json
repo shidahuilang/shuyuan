@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n同站\n新御书屋：https://m.eyushuwu.com/",
+    "bookSourceName": "19书院",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.19shuyuan.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1722156939553",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".tab > .p1@text",
+      "coverUrl": "img@src",
+      "downloadUrls": "text.下载TXT@href",
+      "init": "",
+      "intro": ".jj > .p2@text",
+      "kind": ".tab1@p.0:1@text",
+      "lastChapter": ".p3 > a@text",
+      "name": ".catalog1 > h1@text",
+      "wordCount": ".p6@text##万##万字"
+    },
+    "ruleContent": {
+      "content": ".novelcontent@html||#novelcontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "sourceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.-1@text",
+      "bookList": ".search_box@.search_list",
+      "bookUrl": "a.0@href",
+      "kind": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".p2:nth-child(5) > li:nth-child(n+1) > a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "书满屋小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.shumw.com",
+    "customOrder": -337,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1722162003657",
+    "respondTime": 52981,
+    "ruleBookInfo": {
+      "author": "p@a@href##\\/.*.html|/.*/",
+      "coverUrl": "tag.img@src",
+      "intro": "class.intro_info@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "tag.img@alt",
+      "tocUrl": "text.查看目录@href"
+    },
+    "ruleContent": {
+      "content": "id.nr1@div@html##（本章未完，请翻页）",
+      "nextContentUrl": "text.下一页@href",
+      "title": "class.lie@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "p@a.2@text",
+      "bookList": "class.line",
+      "bookUrl": "p@a.1@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "p@a.0@text##\\[|\\]",
+      "name": "p@a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "li",
+      "chapterName": "class.lie@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "tag.div@a@href"
+    },
+    "searchUrl": "https://m.shumw.com/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
