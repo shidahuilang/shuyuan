@@ -1,0 +1,40 @@
+[
+  {
+    "ruleSearch": {
+      "bookList": ".u-list li",
+      "name": ".bname@text",
+      "bookUrl": ".l-img > a@href@js:java.put('id',result.match(/\\/(\\d+)\\//)[1])",
+      "lastChapter": ".l-last a@text",
+      "author": ".bauthor@text",
+      "kind": ".l-p1 > span:nth-child(3)@text",
+      "coverUrl": "img@src",
+      "intro": ".l-p2@text",
+      "wordCount": ".size@text"
+    },
+    "ruleBookInfo": {
+      "tocUrl": "@js:\n`https://ixdzs8.com/novel/clist,{\n\"method\":\"post\",\n\"body\":\"bid=${java.get('id')}\"\n}`;"
+    },
+    "ruleToc": {
+      "chapterList": "data[*]\n@js:JSON.parse(result).filter(item =>{\nif( item.ctype === \"0\"){\nitem.ordernum=`https://ixdzs8.com/read/${java.get('id')}/p${item.ordernum}.html`\nreturn true;\n}else{\nreturn false;\n}\n \n});",
+      "chapterUrl": "ordernum",
+      "chapterName": "title"
+    },
+    "ruleContent": {
+      "content": "section@html"
+    },
+    "ruleReview": [],
+    "ruleExplore": [],
+    "bookSourceUrl": "https://ixdzs8.com",
+    "bookSourceType": 0,
+    "searchUrl": "/bsearch?q={{key}}&page={{page}}",
+    "bookSourceName": "爱下电子书🐜",
+    "enabledExplore": true,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "lastUpdateTime": "1722341779770",
+    "respondTime": 180000,
+    "jsLib": "",
+    "header": "{\n\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36\"\n}",
+    "exploreUrl": "@js:\nvar url1=['https://ixdzs8.com/hot/UID?page={{page}}','https://ixdzs8.com/sort/UID/index-0-0-0-{{page}}.html',\n    'https://ixdzs8.com/sort/UID/index-0-2-0-{{page}}.html','https://ixdzs8.com/end/'];\nvar defaultTitle={'title': '','url': '','style': {'layout_flexGrow': 1, 'layout_flexBasisPercent': 1}};\nvar defaultContent={'title': '','url': '','style': {'layout_flexGrow': 1, 'layout_flexBasisPercent': 0.25}};\nvar tab1={'总榜':'','月榜':'month/','日榜':'day/'}\nvar tab2={'玄幻奇幻':'1','武侠小说':'10','修真仙侠':'2','都市青春':'3','军事历史':'4','网游竞技':'5','科幻灵异':'6','言情穿越':'7','耽美同人':'8','台言古言':'9','其他小说':'0'}\nvar reultJson=[];\nvar AddTab =function(title,listMap,url){\n    if(title!=='')AddSingleTab(title,'');\n    for (var key in listMap) {\n        if (listMap.hasOwnProperty(key)) {\n            tempContent=JSON.parse(JSON.stringify(defaultContent));\n            tempContent.title=key;\n            tempContent.url=url.replace('UID',listMap[key]);\n            reultJson.push(tempContent);\n        }\n    }\n}\nvar AddSingleTab =function(title,url){\n    tempTitle=JSON.parse(JSON.stringify(defaultTitle));\n    tempTitle.title=title;\n    tempTitle.url=url;\n    reultJson.push(tempTitle);\n}\n\nAddTab(\"༺ˇ»`ʚ榜单ɞ´«ˇ༻\",tab1,url1[0]);\nAddSingleTab(\"所有完结作品\",url1[3]);\nAddTab(\"༺ˇ»`ʚ分类ɞ´«ˇ༻\",tab2,url1[1]);\nAddTab(\"༺ˇ»`ʚ完结分类ɞ´«ˇ༻\",tab2,url1[2]);\n\nJSON.stringify(reultJson);"
+  }
+]

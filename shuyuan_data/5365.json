@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceName": "桃花小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.thjsl.org/##檬默默",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1722329954005",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.dd_box.0@span.0@text",
+      "coverUrl": "img@src",
+      "intro": "class.book_about@text##内容简介",
+      "kind": "class.dd_box.0@span.1@text##分类：",
+      "lastChapter": "",
+      "name": "img@alt",
+      "tocUrl": "{{$.}}list.html",
+      "wordCount": "class.dd_box.1@span.1@text##字数："
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@textNodes##请收藏：https://m.thjsl.org",
+      "nextContentUrl": "id.pb_next@href",
+      "title": " "
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "class.item",
+      "bookUrl": "tag.a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "img@alt"
+    },
+    "ruleToc": {
+      "chapterList": "dd@a",
+      "chapterName": "text##.*直达页面底部|正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/s?q={{key}},{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

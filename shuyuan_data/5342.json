@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "需要✈️",
+    "bookSourceGroup": "漫画,R18",
+    "bookSourceName": "✈️ JComic",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://jcomic.net",
+    "customOrder": 20,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\nX = org.jsoup.Jsoup.parse(java.ajax(source.key)).select(\"h3 a\");\nfor (i = 0; i < X.length; ++i) {\n  push(\n    java.t2s(X[i].text()),\n    X[i].attr(\"href\") + \"/{{page}}\",\n    null\n  );\n};\nJSON.stringify(sort);",
+    "lastUpdateTime": "1722175913747",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "",
+      "canReName": "1",
+      "coverUrl": ".comic-thumb@src",
+      "intro": ".comic-date@text##^最後##&nbsp;",
+      "name": ".comic-title@text"
+    },
+    "ruleContent": {
+      "content": ".img-responsive@html"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "button.0@text",
+      "bookList": ".row!0",
+      "bookUrl": "a.0@href##\\/page\\/##/eps/",
+      "checkKeyWord": "",
+      "coverUrl": ".comic-thumb@src",
+      "kind": "button!0@text",
+      "lastChapter": ".comic-date@text##最後更新:\\s*",
+      "name": ".comic-title@text"
+    },
+    "ruleToc": {
+      "chapterList": ".row.2@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/{{key}}/{{page}}",
+    "weight": 0
+  }
+]

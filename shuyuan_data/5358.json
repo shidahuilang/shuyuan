@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "by'`虚空大佬'`阿鬼'`天天下的鸟蛋'`筱'`",
+    "bookSourceGroup": "◎筱,js源",
+    "bookSourceName": "◎八一中文网[筱]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.x81zws.com/#",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": -16,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻魔法\",\"url\":\"/class/xuanhuan/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"武侠修真\",\"url\":\"/class/wuxia/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"都市言情\",\"url\":\"/class/dushi/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"历史军事\",\"url\":\"/class/lishi/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"科幻灵异\",\"url\":\"/class/kehuan/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"游戏竞技\",\"url\":\"/class/youxi/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"女生耽美\",\"url\":\"/class/nvsheng/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}},{\"title\":\"其他类型\",\"url\":\"/class/qita/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.3}}]",
+    "header": "",
+    "lastUpdateTime": "1722268381043",
+    "respondTime": 4641,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nc:\"[property~=category|status|update_time]@content\",\nw:\"#count@li[1]@span@text\",\nl:\"[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content\",\nd:\"class.hm-scroll@text\",\ni:\"[property$=image]@content\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "",
+      "wordCount": "@get:{w}"
+    },
+    "ruleContent": {
+      "content": "#TextContent@p@html",
+      "nextContentUrl": "text.下一页@href||#next_url@href",
+      "replaceRegex": "##\\s最近转码.*\\s*"
+    },
+    "ruleExplore": {
+      "bookList": "",
+      "bookUrl": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".book_other[0]@span[0]@text",
+      "bookList": "#nr||#sitebox dl",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": ".book_des@text",
+      "kind": ".book_other[0]@span[1]@text&&.uptime@text",
+      "lastChapter": ".book_other[1]@a@text",
+      "name": "h3 a@text",
+      "wordCount": ".book_other[0]@span[2]@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterList li a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey()),java.ajax(baseUrl).match(/action=\"(.*?)\"/)[1]}},\n{\n\"body\":\"searchkey={{key}}\",\n\"method\":\"POST\",\n\"charset\": \"UTF-8\"\n\t}",
+    "weight": 0
+  }
+]

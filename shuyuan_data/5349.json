@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "同站：秋风书屋\nhttps://www.qiufengshuwu.com\n\n四季书屋只余春秋两季，夏冬二季换成了霹雳书屋。。。\n夏日书屋\nhttps://www.xiarishuwu.com\n冬雪书屋\nhttps://www.dongxueshuwu.com",
+    "bookSourceGroup": "",
+    "bookSourceName": "🌸春雨书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.chunyushuwu.com",
+    "bookUrlPattern": "",
+    "customOrder": 2,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "                               分  类                                 \n男频小说::/sort/1_{{page}}/\n女频小说::/sort/2_{{page}}/\n中国文学::/sort/3_{{page}}/\n外国文学::/sort/4_{{page}}/\n  轻小说  ::/sort/5_{{page}}/\n百合小说::/sort/6_{{page}}/\n耽美小说::/sort/7_{{page}}/\n网盘资源::/sort/8_{{page}}/\n完本小说::/full/{{page}}/\n                               榜  单                                 \n最近更新::/top/lastupdate_{{page}}/\n最新入库::/top/postdate_{{page}}/\n总点击榜::/top/allvisit_{{page}}/\n月点击榜::/top/monthvisit_{{page}}/\n周点击榜::/top/weekvisit_{{page}}/\n日点击榜::/top/dayvisit_{{page}}/\n总推荐榜::/top/allvote_{{page}}/\n总收藏榜::/top/goodnum_{{page}}/\n字数排行::/top/size_{{page}}/",
+    "header": "{\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\n\"Referer\": \"{{baseUrl}}\"\n\t}",
+    "lastUpdateTime": "1722235688293",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 8947,
+    "ruleBookInfo": {
+      "author": ".infotype a@text",
+      "canReName": "1",
+      "coverUrl": ".infohead img@src",
+      "intro": "#intro p@text",
+      "kind": ".infotype p.1:2:3@text##.*：",
+      "lastChapter": ".list_xm a.0@text",
+      "name": ".cataloginfo h3@text",
+      "tocUrl": ".gochapter a@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#novelcontent p@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "a.0@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "a.1@text||p.author@text",
+      "bookList": "p.sone||.article||.full_content||.articlegeneral",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "a.0@href\n@js:\nvar id=result.match(/\\d+/)[0],\niid=parseInt(id/1000);\n`https://www.pilixiaoshuo.com/files/article/image/${iid}/${id}/${id}s.jpg`",
+      "intro": "p.simple@text",
+      "kind": ".p1@text##\\[|\\]",
+      "name": "h6@text||.p2@text||a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.chapters li ",
+      "chapterName": "text",
+      "chapterUrl": "a@href",
+      "isVolume": ".juan@text"
+    },
+    "searchUrl": "/s.html,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "variableComment": "",
+    "weight": 0
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceName": "西瓜小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.pdske.com/#檬默默",
+    "customOrder": -344,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1722336943299",
+    "respondTime": 7041,
+    "ruleBookInfo": {
+      "author": "class.xas645.red@text",
+      "coverUrl": "img@src",
+      "intro": "class.sc7f1w.bookintromore@text",
+      "kind": "li.1@a@text",
+      "name": "img@alt",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.TextContent@html",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author.0@text",
+      "bookList": "class.bookbox",
+      "bookUrl": "div@a@href",
+      "coverUrl": "img@src",
+      "intro": "class.update@text",
+      "kind": "class.author.1@text##分类：",
+      "name": "span@a@title",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "dd",
+      "chapterName": "dd@a@text",
+      "chapterUrl": " dd@a@href"
+    },
+    "searchUrl": "https://www.pdske.com/search.php?searchkey={{key}}&action=login&submit=,{\n  \"charset\": \"GBK\"\n},{'webView': true}",
+    "weight": 0
+  }
+]
