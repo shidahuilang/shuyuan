@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩晚安小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wananxs.com/#xsw8093",
+    "customOrder": 35,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36\",\"Cookie\":0\n}",
+    "lastUpdateTime": "1722477740579",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.maininfo@id.maininfo@p.0@a@text",
+      "coverUrl": "id.fmimg@img@src",
+      "intro": "id.intro@text",
+      "kind": "id.maininfo@id.maininfo@p.1@a@text&&id.maininfo@id.maininfo@p.2@text",
+      "lastChapter": "id.maininfo@id.maininfo@p.5@a@text",
+      "name": "h1@a@text",
+      "wordCount": "id.maininfo@id.maininfo@p.2@text"
+    },
+    "ruleContent": {
+      "content": "id.content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "id.newscontent@ul@li",
+      "bookUrl": ".zi_n@a@href",
+      "checkKeyWord": "剑来",
+      "kind": ".zi_t@text",
+      "lastChapter": ".zi_t@text",
+      "name": ".zi_n@a@title"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dl[-1,1]@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "@js:\nvar su=source.getKey()\nvar htmlUrl=java.get(su,{}).headers('Location')\njava.log(`重定向：${htmlUrl[0]}`)\nvar posturl=htmlUrl[0]?htmlUrl[0]:(su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su)\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\ncookie.removeCookie(posturl)\njava.log(`请求：${posturl}`)\n\ncookie.removeCookie(posturl)\nvar htmlurl=java.post(posturl+\"/search.html\", \"searchtype=novelname&searchkey=\"+key,{\"Referer\":\"https://m.xinbaolaixsw.com\",\"Content-Type\":\"application/x-www-form-urlencoded\"}).headers('Location')\n\nhtmlurl[0]+\",\"+JSON.stringify({\n  \"method\": \"GET\"\n})\n",
+    "weight": 0
+  }
+]

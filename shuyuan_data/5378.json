@@ -1,0 +1,67 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩泥古小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.nigubook.com/#xsw8093",
+    "bookUrlPattern": "",
+    "customOrder": -23049,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\n    'User-Agent': 'Mozilla/5.0 (Linux; Android 11; Pixel 3 XL Build/RQ3A.211001.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.4988.0 Mobile Safari/537.36 SearchCraft/3.9.2 (Baidu; P1 11) '\n}",
+    "jsLib": "",
+    "lastUpdateTime": "1722496312570",
+    "loginCheckJs": "var url=result.url()\nsrc = result.body()\nif(/加载页面中/.test(src) && /cookie/.test(src)){\t\n  if(key) url=java.get(\"url\");\n  cookie.removeCookie(url)\n  java.log(123)\n   java.webView(null,url,``);\n  Cookie={\n   \"Cookie\":java.getCookie(url,null),\n    'User-Agent': 'Mozilla/5.0 (Linux; Android 11; Pixel 3 XL Build/RQ3A.211001.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.4988.0 Mobile Safari/537.36 SearchCraft/3.9.2 (Baidu; P1 11) '\n  }\n   header = JSON.stringify(Cookie);\n   source.putLoginHeader(header);\n   result = java.ajax(url)\n   if(/加载页面中/.test(result) && /cookie/.test(result)){\n    java.toast(\"请点击登录！然后等待一会\")\n   }\n   /*\n   java.log(java.getCookie(url,null))\n   java.log(result)\n   */\n}\nresult",
+    "loginUi": "",
+    "loginUrl": "https://www.nigubook.com/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}##^\\d+.",
+      "name": "@get:{n}",
+      "tocUrl": "@js:\nbaseUrl.replace(\".html\",\"/index.html\")"
+    },
+    "ruleContent": {
+      "content": "<js>\nurl=\"https:\"+result.match(/initTxt\\(\"([^\"]+)\",\"[^\"]+\"\\)/)[1];\nr=String(java.ajax(url).match(/_txt_call\\(([\\s\\S]+\\})\\)/)[1]);\nvar r = eval('(' + r + ')');\n\t\t\t\tif(r.content!=null){\t\t\t\t\n      var e = r.replace;\n\t\t\t\tfor (var n in e) {\n\t\t\t\t\tvar i = new RegExp(e[n], \"ig\");\n\t\t\t\t\tr.content = r.content.replace(i, n)\n\t\t\t\t}\n\t\t\t\tresult=r.content\n\t\t\t\t\t}else{result=\"章节加载失败，或者容正在手打中，请【收藏本站】稍访问或者联系管理员更新~\"}\n</js>",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##{{try{chapter.title}catch(e){\"\"} }}|\\(本章完\\)|『加入书签，方便阅读』"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".sc-title@span.1@a@text",
+      "bookList": ".search-card",
+      "bookUrl": ".sc-title@span.0@a@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": ".sc-content@text",
+      "kind": ".sc-time@span.1@text",
+      "lastChapter": ".sc-time@span.0@text",
+      "name": ".sc-title@span.0@a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".chapter-list@li@a",
+      "chapterName": "text##^\\d+\\.",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href||text.下页@href"
+    },
+    "searchUrl": "@js:\nvar su=source.getKey()\n\nvar posturl=su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\n\nso =  posturl+\"/search/,\"+JSON.stringify({\n  \"body\": \"keyword={{key}}&searchtype=all&Submit=\",\n  \"method\": \"post\",\n  \"webView\":true\n})\n\njava.put(\"url\",String(so))\n\nso",
+    "weight": 0
+  }
+]

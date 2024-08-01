@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "独步小说[完结]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dbxsn.com/",
+    "bookUrlPattern": "",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻.奇幻::nav/xh-qh-{{page}}.html\n科幻.游戏::nav/kh-yx-{{page}}.html\n仙侠.武侠::nav/xx-wx-{{page}}.html\n女生.言情::nav/ns-yq-{{page}}.html\n都市.娱乐::nav/ds-yl-{{page}}.html\n历史.军事::nav/ls-js-{{page}}.html\n悬疑.灵异::nav/xy-ly-{{page}}.html\n耽美.纯爱::nav/dm-ca-{{page}}.html\n轻小说::nav/qxs-{{page}}.html",
+    "header": "{\n\t'User-Agent': \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36 EdgA/127.0.0.0\"\n}",
+    "lastUpdateTime": "1722488296792",
+    "respondTime": 3055,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "downloadUrls": "",
+      "init": "@put:{n:\"[property$=og:title]@content\",\na:\"[property$=author]@content\",\nc:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content\",\nd:\"class.book-detail@text\",\ni:\"[property$=image]@content\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "#cont-body@p@text",
+      "imageStyle": "",
+      "nextContentUrl": "class.col-md-6 text-center@a.-1@href",
+      "sourceRegex": "",
+      "title": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.col-md-12 b10@class.media",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": "class.media-info@text",
+      "name": "class.media-title@a@text"
+    },
+    "ruleSearch": {
+      "author": "td.1@text",
+      "bookList": "tbody@tr",
+      "bookUrl": "td.0@a@href",
+      "name": "td.0@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.col-md-6 item@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "/plus/search.php?q={{key}},\n{\"body\": \"id\"=\"search-form\"}",
+    "weight": 0
+  }
+]

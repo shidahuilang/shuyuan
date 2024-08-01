@@ -1,0 +1,67 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🙈 JM书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.jimoshuku.com",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "   全  部   ::/shuku/0/0/0/0/0/0/lastupdate/{{page}}.html                \n玄幻奇幻::/shuku/0/1/0/0/0/0/lastupdate/{{page}}.html\n武侠仙侠::/shuku/0/2/0/0/0/0/lastupdate/{{page}}.html\n都市生活::/shuku/0/3/0/0/0/0/lastupdate/{{page}}.html\n历史军事::/shuku/0/4/0/0/0/0/lastupdate/{{page}}.html\n网游竞技::/shuku/0/5/0/0/0/0/lastupdate/{{page}}.html\n科幻未来::/shuku/0/6/0/0/0/0/lastupdate/{{page}}.html\n恐怖悬疑::/shuku/0/7/0/0/0/0/lastupdate/{{page}}.html\n  二次元  ::/shuku/0/8/0/0/0/0/lastupdate/{{page}}.html\n古代言情::/shuku/0/9/0/0/0/0/lastupdate/{{page}}.html\n现代言情::/shuku/0/10/0/0/0/0/lastupdate/{{page}}.html\n幻想奇缘::/shuku/0/11/0/0/0/0/lastupdate/{{page}}.html\n浪漫青春::/shuku/0/12/0/0/0/0/lastupdate/{{page}}.html\n网络情缘::/shuku/0/13/0/0/0/0/lastupdate/{{page}}.html\n科幻空间::/shuku/0/14/0/0/0/0/lastupdate/{{page}}.html\n鬼怪灵异::/shuku/0/15/0/0/0/0/lastupdate/{{page}}.html\n  N 次元  ::/shuku/0/16/0/0/0/0/lastupdate/{{page}}.html\n言情美文::/shuku/0/17/0/0/0/0/lastupdate/{{page}}.html\n其他类型::/shuku/0/18/0/0/0/0/lastupdate/{{page}}.html\n  男点击  ::/top/rank.html\n  女点击  ::/top/nrank.html\n  收藏榜  ::/top/collect.html\n  推荐榜  ::/top/vote.html",
+    "header": "",
+    "lastUpdateTime": "1722420885775",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 20333,
+    "ruleBookInfo": {
+      "author": "class.xq_bookne@tag.div.2@text",
+      "coverUrl": "class.bookimg@img@src",
+      "init": "",
+      "intro": "class.bookintro@text",
+      "kind": "class.xq_bookne@tag.div.3@text&&class.xq_bookne@tag.div.4@text##类别：|状态：",
+      "lastChapter": "id.newlist@tag.ul@tag.li.0@tag.a@text",
+      "name": "class.one@text",
+      "tocUrl": "class.btn_book@tag.a.3@href",
+      "wordCount": "class.xq_bookne@tag.div.5@text##字数："
+    },
+    "ruleContent": {
+      "content": "id.YiJianZhan@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##(‘’)##\\\""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "class.book_other@textNodes",
+      "bookList": "id.sitebox@dl",
+      "bookUrl": "tag.a@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": "class.book_des@text",
+      "kind": "class.book_other@span@text##\\|",
+      "name": "h3@tag.a.0@text",
+      "wordCount": "class.tag-small blue@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.readerlist@tag.ul@tag.li",
+      "chapterName": "a@text##\\>",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href||option@value"
+    },
+    "searchUrl": "/modules/article/search.php,{\n'charset':'utf-8',\n'method':'POST',\n'body':'searchkey={{key}}'\n}",
+    "weight": 0
+  }
+]

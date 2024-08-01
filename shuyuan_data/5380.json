@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "⭕️ PO18d[修]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.po18d.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": " 耽 美 ::/list/1_{{page}}.html\n 百 合 ::/list/2_{{page}}.html\n 言 情 ::/list/3_{{page}}.html\n 高 辣 ::/list/4_{{page}}.html\n 腹 黑 ::/list/5_{{page}}.html\n 种 田 ::/list/6_{{page}}.html\n 高 干 ::/list/7_{{page}}.html\n 玄 幻 ::/list/8_{{page}}.html\n 修 真 ::/list/9_{{page}}.html\n 武 侠 ::/list/11_{{page}}.html\n 都 市 ::/list/12_{{page}}.html\n 科 幻 ::/list/13_{{page}}.html\n 网 游 ::/list/14_{{page}}.html\n 恐 怖 ::/list/15_{{page}}.html\n 历 史 ::/list/16_{{page}}.html\n 同 人 ::/list/17_{{page}}.html\n 其 他 ::/list/10_{{page}}.html\n 全 部 ::/list/0_{{page}}.html\n 完 本 ::/quanben_{{page}}.html",
+    "lastUpdateTime": "1722500999689",
+    "respondTime": 13062,
+    "ruleBookInfo": {
+      "author": "div.w100.dispc@span@a@text",
+      "coverUrl": "img.lazy@src",
+      "intro": "div.info-main-intro@p@text",
+      "kind": "div.info-title@a.1@text",
+      "lastChapter": "div.container.border3-2.mt8@div.info-chapters.flex.flex-wrap@a.0@text",
+      "name": "h1@text",
+      "tocUrl": "java.refreshBookUrl()"
+    },
+    "ruleContent": {
+      "content": "#article@textNodes",
+      "nextContentUrl": "#next_url@href"
+    },
+    "ruleExplore": {
+      "author": "span.gray@text",
+      "bookList": "div.border3-1@div||div.border3@div",
+      "bookUrl": "span.flex@em@a@href||span.0@a@href",
+      "coverUrl": "@js:'/modules/article/images/nocover.jpg'",
+      "intro": ".intro.indent@text",
+      "kind": ".w80@em.0@text##\\[|\\]",
+      "lastChapter": "",
+      "name": "a.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "div.flex.flex-between.commend-title > span.0@text",
+      "bookList": "class.border3.commend.flex.flex-between.category-commend@div",
+      "bookUrl": "h3@a@href",
+      "checkKeyWord": "",
+      "coverUrl": "@js:'/modules/article/images/nocover.jpg'",
+      "intro": "div.intro.indent.0@text",
+      "name": "div.flex.flex-between.commend-title > h3 > a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "div.container.border3-2.mt8.mb20@div.info-chapters.flex.flex-wrap@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVip": "true",
+      "updateTime": ""
+    },
+    "searchUrl": "/modules/article/search.php,{\n\t \"body\": \"searchkey={{key}}\",\n\t \"charset\": \"gbk\",\n\t \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

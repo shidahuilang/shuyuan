@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceGroup": "H漫画",
+    "bookSourceName": "漫香阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xn--ksp-mxgmxgcom-yp8ve33bkpevz1kpxq.mxgmh.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "单行本::/list-2-0-{{page}}.html\n同人志::/list-4-0-{{page}}.html\ncosplay::/list-3-0-{{page}}.html",
+    "lastUpdateTime": "1722507411279",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".contentmh@html"
+    },
+    "ruleExplore": {
+      "bookList": "a",
+      "bookUrl": "href",
+      "coverUrl": ".contentmh.0@html",
+      "intro": ".topgrid-desc@p@text",
+      "kind": "tag.span.0@text",
+      "lastChapter": ".dstate@text##更新",
+      "name": ".topgrid-desc@h3@text",
+      "wordCount": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": "a",
+      "bookUrl": "href",
+      "intro": ".topgrid-desc@p@text",
+      "kind": "tag.span.0@text",
+      "name": ".topgrid-desc@h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "tag.html",
+      "chapterName": "tag.title@text## - 漫香阁.com",
+      "chapterUrl": ""
+    },
+    "searchUrl": "/search.php?key={{key}}&typeid=0&p={{page}}",
+    "weight": 0
+  }
+]
