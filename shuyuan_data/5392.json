@@ -1,0 +1,38 @@
+[
+  {
+    "bookSourceGroup": "传说阅读",
+    "bookSourceName": "传说阅读-枇杷小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.djyru.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1722581932855",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": ""
+    },
+    "ruleContent": {
+      "content": "id.TextContent@tag.p@text##www.wysge.com 乌龟小说网"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.author@tag.a@text",
+      "bookList": "class.bookbox",
+      "bookUrl": "class.bookname@tag.a@href",
+      "coverUrl": "tag.img@data-original",
+      "intro": "class.update@text##简介：",
+      "kind": "class.bookinfo@tag.div.2@text",
+      "name": "class.bookname@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.y69qwg book chapterlist@dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "https://www.djyru.com/search.php?searchkey={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🎉 精选 🎉,发现规则为空",
+    "bookSourceName": "🎉手机TXT小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xiaxs.la/",
+    "bookUrlPattern": "",
+    "customOrder": 113,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1722644390270",
+    "loginUrl": "",
+    "respondTime": 8715,
+    "ruleBookInfo": {
+      "author": "class.detail_right@ul@tag.li.5@text##书籍作者：",
+      "coverUrl": "class.detail_pic@img@src",
+      "intro": "class.showInfo@p@text",
+      "kind": "class.detail_right@ul@tag.li.3@text##更新日期：",
+      "lastChapter": "class.detail_right@ul@tag.li.7@a@text",
+      "name": "class.detail_right@h1@text##《|》全集下载",
+      "tocUrl": "text.在线阅读@href"
+    },
+    "ruleContent": {
+      "content": "id.content1@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.block_txt@tag.p.3@text",
+      "bookList": "class.block",
+      "bookUrl": "h2@a@href@js:'https://www.xiaxs.la'+result",
+      "coverUrl": "img@src",
+      "kind": "",
+      "lastChapter": "tag.a.-1@text",
+      "name": "h2@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.pc_list.1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://m.xiaxs.la/search.php?keyword={{key}}&submit=",
+    "weight": 0
+  }
+]

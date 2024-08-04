@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "无发现",
+    "bookSourceGroup": "",
+    "bookSourceName": "77小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.77xs.org/",
+    "customOrder": -43332,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36\"",
+    "lastUpdateTime": "1722671064603",
+    "respondTime": 12606,
+    "ruleBookInfo": {
+      "author": ".dd_box.0@span.0@text##作者：",
+      "downloadUrls": "text.下一页@href",
+      "init": "",
+      "kind": ".dd_box.0@span.1@text&&.dd_box.1@span.0@text##分类：",
+      "lastChapter": ".book_last.0@tag.dd.0@a@text",
+      "name": ".book_box@class.name@text",
+      "wordCount": ".dd_box.1@span.1@text##字数："
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@html##第.*章\\S*.*\\S*\\(第\\d+\\/\\d+页\\)",
+      "nextContentUrl": "class.Readpage_down@href||text.下一@href",
+      "payAction": "null",
+      "replaceRegex": "##epzww.com\\s*3366xs.com\\s*80wx.com\\s*xsxs.cc\\s*yjxs.cc\\s*3jwx.com\\s*8pzw.com\\s*xiaohongshu.cc\\s*kanshuba.cc\\s*hmxsw.com\\s*7cct.com\\s*biquhe.com|",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "class.author@text##作者：",
+      "bookList": "class.bookbox@class.bookinfo",
+      "bookUrl": "class.bookname@a@href",
+      "coverUrl": "class.bookimg@img@src",
+      "intro": "",
+      "lastChapter": "class.update@a@text",
+      "name": "class.bookname@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".book_last@tag.a",
+      "chapterName": "text##\\d*、",
+      "chapterUrl": "href",
+      "nextTocUrl": "class.right@a@href"
+    },
+    "searchUrl": "http://m.77xs.org/dirfuohdriohgo.php?ie=gbk&s=5256649918672294880&q={{key}}",
+    "weight": 0
+  }
+]
