@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "abysses七七出品\n更新源url,◎筱,www好用,m不行",
+    "bookSourceGroup": "",
+    "bookSourceName": "爱读书◎",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xpshuku.com#借用",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "全部::/sort/all/{{page}}.html\n玄幻::/sort/xuanhuan/{{page}}.html\n奇幻::/sort/qihuan/{{page}}.html\n武侠::/sort/wuxia/{{page}}.html\n仙侠::/sort/xianxia/{{page}}.html\n都市::/sort/dushi/{{page}}.html\n历史::/sort/lishi/{{page}}.html\n军事::/sort/junshi/{{page}}.html\n游戏::/sort/youxi/{{page}}.html\n竞技::/sort/jingji/{{page}}.html\n科幻::/sort/kehuan/{{page}}.html\n灵异::/sort/lingyi/{{page}}.html\n同人::/sort/tongren/{{page}}.html\n女生::/sort/nvsheng/{{page}}.html\n其他::/sort/qita/{{page}}.html",
+    "header": "\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36\"",
+    "lastUpdateTime": "1722827013358",
+    "respondTime": 2595,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "meta",
+      "intro": "[property$=description]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content##\\s.*",
+      "lastChapter": "[property$=chapter_name]@content##[\\(（【].*?[求更谢乐发订合补加].*?[】）\\)]",
+      "name": "[property$=book_name]@content",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "$.info",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": "+@css:.librarylist li",
+      "bookUrl": "@get:{u}",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "a.3@text&&.last@text##.*\\(|\\)",
+      "lastChapter": ".last a@text",
+      "name": "a.1@text@put:{u:\"a.1@href\"}",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "+@css:.fulldir li a",
+      "chapterName": "text",
+      "chapterUrl": "href##^.*shu_(\\d+)\\/(\\d+)[^\\d]+##/novelsearch/reader/transcode/siteid/$1/$2/"
+    },
+    "searchUrl": "/search.html?searchtype=novelname&searchkey={{key}}",
+    "variableComment": "",
+    "weight": 0
+  }
+]

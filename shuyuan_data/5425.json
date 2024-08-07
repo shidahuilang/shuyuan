@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceName": "◎下书网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.txtdown.cc#◎",
+    "bookUrlPattern": "",
+    "customOrder": -43338,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": "1722998710566",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//*[@id=\"info\"]/p[1]/text()",
+      "coverUrl": "//*[@id=\"fmimg\"]/img//@src()",
+      "intro": "//*[@id=\"intro\"]/p[1]/text()",
+      "kind": "//*[@class=\"con_top\"]/a[2]/text()|//*[@id=\"info\"]/p[2]/span/text()|//*[@id=\"info\"]/p[3]/text()",
+      "lastChapter": "//*[@id=\"info\"]/p[4]/a/text()",
+      "name": "//*[@id=\"info\"]/h1/text()"
+    },
+    "ruleContent": {
+      "content": "#content@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "//*[@class=\"sp_name\"]/text()##\\/",
+      "bookList": "//*[@id=\"right_cont\"]/div",
+      "bookUrl": "//span[1]/a//@href",
+      "coverUrl": "//img//@src",
+      "intro": "//p/text()",
+      "kind": "//h4/span/text()",
+      "lastChapter": "//h4/a/text()",
+      "name": "//*[@class=\"sp_name\"]/a/text()"
+    },
+    "ruleToc": {
+      "chapterList": "//*[@class=\"box_con\"]/div[2]//dd",
+      "chapterName": "//a/text()",
+      "chapterUrl": "//a//@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}http://www.txtdown.cc/book.php?action=search&searchtype=novelname&searchkey={{key}},{\n  \"charset\": \"GBK\",\n  \"method\": \"GET\"\n}",
+    "weight": 0
+  }
+]

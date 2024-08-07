@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "◎筱:正文干净，可以关掉替换净化中#16 净化段落",
+    "bookSourceGroup": "",
+    "bookSourceName": "◎斋书苑",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.zsyxs.cc#◎筱",
+    "customOrder": -23057,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/category/xuanhuan_{{page}}.html\n武侠仙侠::/category/wuxia_{{page}}.html\n都市小说::\t/category/dushi_{{page}}.html\n网游竞技::/category/wangyou_{{page}}.html\n穿越小说::/category/chuanyue_{{page}}.html\n科幻小说\t::/category/kehuan_{{page}}.html\n悬疑推理::/category/xuanyi_{{page}}.html\n其他小说\t::/category/qita_{{page}}.html\n                 ",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1722868613074",
+    "loginUrl": "http://www.zsyxs.cc",
+    "respondTime": 2809,
+    "ruleBookInfo": {
+      "author": "class.border3-1@p.0@a.0@text##作.*者：",
+      "coverUrl": "img@data-original",
+      "init": "",
+      "intro": ".w100@class.info-main-intro@tag.p@text",
+      "kind": "class.info-title@a.1@text||class.border3-1@p.1@ownText##最后更新：",
+      "lastChapter": "class.border3-1@a.-1@text##最新章节：",
+      "name": "class.info-main@tag.h1@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content@p@html",
+      "nextContentUrl": "id.next_url@a@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".commend@class.category-div",
+      "bookUrl": "tag.a@href",
+      "coverUrl": "a@href\n@js:\nid=result.match(/\\/(\\d+)\\/$/)[1];\nx = id.length-3>0? id.substr(0, id.length-3) : 0;\nimg = `http://img.zsyxs.cc/${x}/${id}/${id}s.jpg`;",
+      "intro": "class.intro indent@text",
+      "lastChapter": "",
+      "name": "a@tag.h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.info-chapters@a",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)\njava.ajax(url).match(/search.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  }
+]
