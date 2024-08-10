@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "同皮站：\nPOPO https://www.popo.city\n PO文  https://www.po18ac.com\n            https://www.po18news.com\n            https://www.po18dd.com\n            https://www.rouwenwu.me            \n欲书文 https://www.yushuwen.com\n新御书 https://www.xyushuwu8.com\n            https://www.xyushuwu10.com ",
+    "bookSourceGroup": "",
+    "bookSourceName": "🏠新御宅",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.xyuzhaiwu.club",
+    "bookUrlPattern": "",
+    "customOrder": 32,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "总点击榜::/top/allvisit/{{page}}.html\n月点击榜::/top/monthvisit/{{page}}.html\n周点击榜::/top/weekvisit/{{page}}.html\n总推荐榜::/top/allvote/{{page}}.html\n月推荐榜::/top/monthvote/{{page}}.html\n周推荐榜::/top/weekvote/{{page}}.html\n总收藏榜::/top/goodnum/{{page}}.html\n总月票榜::/top/allvipvote/{{page}}.html\n字数排行::/top/size/{{page}}.html\n编辑推荐::/top/toptime/{{page}}.html\n最新入库::/top/postdate/{{page}}.html\n最近更新::/top/lastupdate/{{page}}.html",
+    "lastUpdateTime": "1723256859035",
+    "respondTime": 13709,
+    "ruleBookInfo": {
+      "author": "tag.span.1@a@text",
+      "coverUrl": "tag.img@src",
+      "intro": "#intro p@text",
+      "kind": "",
+      "lastChapter": "h3@text",
+      "name": "tag.span.0@text",
+      "tocUrl": ".b_hot@href"
+    },
+    "ruleContent": {
+      "content": "#content@textNodes"
+    },
+    "ruleExplore": {
+      "author": ".s3@text",
+      "bookList": ".right li!0",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": ".s6@text",
+      "lastChapter": ".s2 a@text",
+      "name": ".s1 a@text",
+      "wordCount": ".s4@text"
+    },
+    "ruleSearch": {
+      "author": "class.c_value.0@text",
+      "bookList": ".c_row",
+      "bookUrl": "a@href",
+      "coverUrl": "tag.img@src",
+      "intro": ".c_description@text",
+      "kind": "class.c_value.1@text",
+      "lastChapter": "tag.a.3@text",
+      "name": "tag.a.1@text",
+      "wordCount": "class.c_value.2@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "同站：  \nhttps://www.po18vip.cloud\nhttps://www.po18dz.com\nhttps://www.413g.com\nhttps://www.timixs.com\nhttps://www.roushuwu.me\nhttps://www.rouwenwo.com\n 肉书屋  https://www.roushuwu8.com\n 肉文屋  https://www.rouwenwu7.com\n肉文NP  https://www.rouwennp.me\n新御书屋 https://www.xyushuwu.one\n言语书吧 https://www.yanyushu8.com\n青色书吧 https://www.seporn8.com",
+    "bookSourceGroup": "",
+    "bookSourceName": "📖PO完本",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.po18vip.cloud",
+    "bookUrlPattern": "",
+    "customOrder": 32,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "                            全    部                            ::/sort/0/{{page}}.html\n校园言情::/sort/1/{{page}}.html\n都市言情::/sort/2/{{page}}.html\n古代言情::/sort/3/{{page}}.html\n罗曼史::/sort/4/{{page}}.html\n耽美::/sort/5/{{page}}.html\n百合::/sort/6/{{page}}.html\n同人::/sort/7/{{page}}.html\n奇幻玄幻::/sort/8/{{page}}.html\n网游竞技::/sort/9/{{page}}.html\n科幻异能::/sort/10/{{page}}.html\n恐怖灵异::/sort/11/{{page}}.html\n惊悚推理::/sort/12/{{page}}.html\n武侠仙侠::/sort/13/{{page}}.html\n历史军事::/sort/14/{{page}}.html\n穿越重生::/sort/15/{{page}}.html\n综合其他::/sort/16/{{page}}.html",
+    "lastUpdateTime": "1723222219547",
+    "respondTime": 61520,
+    "ruleBookInfo": {
+      "author": "tag.span.1@a@text",
+      "coverUrl": "tag.img.1@src",
+      "intro": ".tabcontent@tag.div.2@text",
+      "kind": ".hide@text",
+      "lastChapter": "h3@text",
+      "name": "tag.span.0@text",
+      "tocUrl": ".b_hot@href"
+    },
+    "ruleContent": {
+      "content": ".acontent@textNodes"
+    },
+    "ruleExplore": {
+      "author": "class.c_value.0@text",
+      "bookList": ".c_row",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": ".c_description@text",
+      "kind": "class.c_value.2@text",
+      "lastChapter": "tag.a.3@text",
+      "name": "tag.a.2@text",
+      "wordCount": "class.c_value.1@text"
+    },
+    "ruleSearch": {
+      "author": "class.c_value.0@text",
+      "bookList": ".c_row",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": ".c_description@text",
+      "kind": "class.c_value.1@text",
+      "lastChapter": "tag.a.3@text",
+      "name": "tag.a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

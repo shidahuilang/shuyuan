@@ -1,0 +1,39 @@
+[
+  {
+    "bookSourceGroup": "📻听书",
+    "bookSourceName": "📻 幸福听书",
+    "bookSourceType": 1,
+    "bookSourceUrl": "http://m.xfflim8.com/ ",
+    "customOrder": 113,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\": \"言情\",\"url\": \"/xf/1-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"武侠\",\"url\": \"/xf/2-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"悬疑\",\"url\": \"/xf/3-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"历史\",\"url\": \"/xf/4-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"军事\",\"url\": \"/xf/5-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"评书\",\"url\": \"/xf/6-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"相声\",\"url\": \"/xf/7-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"讲坛\",\"url\": \"/xf/8-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"财经\",\"url\": \"/xf/9-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.25\n}},\n{\"title\": \"养生\",\"url\": \"/xf/10-{{page}}.html\",\n\"style\": {\"layout_flexGrow\": -1,\n\"layout_flexBasisPercent\": 0.29\n}},\n]",
+    "lastUpdateTime": "1723067522744",
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "<js>result</js>",
+      "sourceRegex": ".*\\.(mp3|m4a).*"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": "#sitebox@dl",
+      "bookUrl": "dd@h3@a@href",
+      "checkKeyWord": "国色天香",
+      "coverUrl": "dt@a@img@data-original",
+      "intro": ".book_des@text",
+      "kind": "dt@span@text&&class.book_other@span.1@text&&class.book_other@span.2@text",
+      "name": "dd@h3@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterList1@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{'webView': true}",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search.php?page={{page}}&searchword={{key}}&searchtype=",
+    "weight": 0
+  }
+]

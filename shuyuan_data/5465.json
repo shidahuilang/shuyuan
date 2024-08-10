@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "2024.7.24 ○夜泽川○\n//搜索有验证码，可在书架右上角三点\"添加网址\"，输入书籍详情页链接\n//修复搜索重定向到书籍详情页出现的错误(实际是阅读的bug🤔) 2024.8.9",
+    "bookSourceGroup": "网络,自制",
+    "bookSourceName": "若水文学[验证]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.ruoshuiwx.com/",
+    "bookUrlPattern": "https?://www.ruoshuiwx.com/book/\\w+.html",
+    "customOrder": -12,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::https://www.ruoshuiwx.com/cat/xuanhuanmofa/{{page}}.html\n武侠修真::https://www.ruoshuiwx.com/cat/wuxiaxiuzhen/{{page}}.html\n都市言情::https://www.ruoshuiwx.com/cat/dushiyanqing/{{page}}.html\n历史军事::https://www.ruoshuiwx.com/cat/lishijunshi/{{page}}.html\n网游动漫::https://www.ruoshuiwx.com/cat/wangyoudongman/{{page}}.html\n科幻小说::https://www.ruoshuiwx.com/cat/kehuanxiaoshuo/{{page}}.html\n恐怖灵异::https://www.ruoshuiwx.com/cat/kongbulingyi/{{page}}.html\n其他类型::https://www.ruoshuiwx.com/cat/qita/{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1723199623270",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@js:\nbook.bookUrl = baseUrl;\n@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nt:\"[property~=category|status]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=image]@content\",\no:\"[property$=description]@content\",\ng:\"[property$=update_time]@content\",\nm:\"baseUrl\"\n}",
+      "intro": "&nbsp;&nbsp;🕰️更新：@get:{g}\n📜简介：@get:{o}",
+      "kind": "@get:{t}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{m}"
+    },
+    "ruleContent": {
+      "content": "class.content@html##.*若水文学无广告APP",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "td.-2@text",
+      "bookList": "tbody > tr",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "骑砍中亚",
+      "kind": "td.-1@text",
+      "lastChapter": "td.1@text",
+      "name": "td.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul[book-data=book] > li >a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.ruoshuiwx.com/v4.php,{\n  \"body\": \"search={{key}}&captcha={{u=source.getKey()+'captcha.php?'+new Date().getTime();java.ajax(u);java.getVerificationCode(u);}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

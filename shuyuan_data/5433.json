@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "20231123 整体修复-尐哖\n旧域名：https://api.aixdzs.com",
+    "bookSourceGroup": "番茄",
+    "bookSourceName": "🌙 爱下[尐哖]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://apiv2hans.aixdzs.com##@尐哖",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "<js>\nsort=[];\n\tpush=(title,url,type,fp)=>sort.push({\n\t\ttitle: title,\n\t\turl: url,\n\t\tstyle: {\n\t\t\t\tlayout_flexGrow: fp,\n\t\t\t\tlayout_flexBasisPercent: type\n\t\t\t}\n\t});\n\tu=\"https://apiv2hans.aixdzs.com/sort\"\n\txx=(a,b)=>{\n\t\treturn `list,{\"method\": \"POST\",\"body\":'{\"bookTypeId\":\"${a}\",\"type\": \"${b}\",\"pageNum\": \"{{page}}\"}'}`;\n\t}\n\tfls = JSON.parse(java.post(u,'',{}).body());\n\tpush(\"最新\",'',1,1)\n\tfor(f of fls.data.allType){\n\t\tpush(f.categoryName,u+xx(f.bookTypeId,1),0.25,0.25);\n\t}\n\tpush(\"——\",'',0.25,0.25)\n\tpush(\"——\",'',0.25,0.25)\n\tpush(\"大热\",'',1,1)\n\tfor(l of fls.data.allType){\n\t\tpush(l.categoryName,u+xx(l.bookTypeId,2),0.25,0.25);\n\t}\n\tpush(\"——\",'',0.25,0.25)\n\tpush(\"——\",'',0.25,0.25)\n\t//完本:3\n\tJSON.stringify(sort);\n</js>",
+    "header": "@js:\nJSON.stringify({\n\t\"User-Agent\":\"Dalvik/2.1.0 (Linux; U; Android 10; MIX  Build/PKQ1.190118.001)\"\n});",
+    "lastUpdateTime": "1723033662960",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.author",
+      "coverUrl": "https://img22.aixdzs.com/{{$.cover}}",
+      "init": "$.data.book",
+      "intro": "$.&nbsp;&nbsp;\n📕 源名：{{$.original_book_name}}\n📖 别名：{{$.book_flight_alias_name}}\n✏️ 开坑：{{$.create_time##T|\\+.*## }}\n🏷️ 标签：{{$.tags}}\n👤 主角：{{$.roles##\\[|\\\"|\\]}}\n👁️ 在线：{{$.read_count}}人在读{{\"\\n\"+\"​\"}}\n📜 简介：{{$.abstract}}{{\"\\n\"+\"​\"}}\n📍 {{$.copyright_info##，.*##。}}\n@js:result.replace(/.+：(人在读)?\\n/g,\"\")",
+      "kind": "{{$.updated##T.*}}\n{{$.cat}}\n{{$.zt}}",
+      "lastChapter": "{{$.last_chapter_title}} • {{java.timeFormat(java.getString(\"last_chapter_update_time\")*1000)}}",
+      "name": "$.title",
+      "tocUrl": "{{source.bookSourceUrl}}/catalog?book_id={{$.book_id}}",
+      "wordCount": "$.wordCount"
+    },
+    "ruleContent": {
+      "content": "<js>\ns=\"2c6689f91ee4d4e87d798397d47310ebbe1dad79ixdzs\";\nfor (i = 0, h = \"\"; i < 8; i++) {\n\tx=\"abcdefghijklmnopqrstuvwxyz0123456789\";\n\tr = parseInt(Math.random() * (36 - 0 +1) + 0, 10);\n\th += x.charAt(r);\n}\na=String(Math.round(new Date()));\nsha = s + h + a + h;\nsha1 = java.digestHex(sha,'SHA-1');\n\nb = baseUrl.match(/\"chapterId\":(\\d+),\"bookId\":\"(\\d+)\"/)\nu=source.getKey().match(/([^\\#]+)\\#/)[1];\nurl = u + \"/chapter/content,\";\npost=`{\n  \"method\": \"POST\",\n  \"body\":'{\"chapterId\": ${b[1]},\"bookId\":\"${b[2]}\"}',\n  \"headers\":{\"checkSumDTO\":'{\"appid\":\"ixdzs\",\"checksum\":\"${sha1}\",\"curtime\":\"${a}\",\"nonce\":\"${h}\"}'}\n}`\n\nresult = java.ajax(url+post);\n</js>$.data.chapter.chapterContent",
+      "replaceRegex": "##\\n\\s*[\\（(]本章完[\\)）]$|\\n\\s*第.*章.*\\n|.*武林中文网.*最新章节！"
+    },
+    "ruleExplore": {
+      "author": "$.author",
+      "bookList": "$.data.bookList",
+      "bookUrl": "{{source.getKey().match(/([^\\#]+)\\#/)[1]}}/book/detail,{\n  \"body\":'{\"bookId\":\"{{$.bookId}}\"}',\n  \"method\": \"POST\"\n}",
+      "coverUrl": "https://img22.aixdzs.com/{{$.cover}}",
+      "intro": "$.shortIntro",
+      "kind": "{{$.updated##T.*}}\n{{$.cat}}\n{{$.zt}}",
+      "lastChapter": "{{$.lastChapter##最新:}} • {{$.updated##T.*}}",
+      "name": "$.title"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data.bookList",
+      "bookUrl": "{{source.getKey().match(/([^\\#]+)\\#/)[1]}}/book/detail,{\n  \"body\":'{\"bookId\":\"{{$.bookId}}\"}',\n  \"method\": \"POST\"\n}",
+      "coverUrl": "https://img22.aixdzs.com/{{$.cover}}",
+      "intro": "$.shortIntro",
+      "kind": "{{$.updated##T.*}}\n{{$.cat}}\n{{$.zt}}",
+      "lastChapter": "{{$.lastChapter##最新[:：]}} • {{$.updated##T.*}}",
+      "name": "$.title"
+    },
+    "ruleToc": {
+      "chapterList": "data.item_data_list[*]",
+      "chapterName": "$.chapterName",
+      "chapterUrl": "{{source.getKey().match(/([^\\#]+)\\#/)[1]}}/chapter/content,{\n\t\"body\": '{\"chapterId\":{{$.chapterId}},\"bookId\":\"{{$.bookId}}\"}',\n  \"method\": \"POST\"\n}",
+      "updateTime": "{{$.volume_name}} | {{$.chapter_word_number}}字 | {{java.timeFormatUTC(java.getString(\"first_pass_time\") * 1000, 'yyyy-MM-dd HH:mm:ss', 12)}}##第一卷：默认\n@js:\nif (result.startsWith(\" |\")) result = result.slice(2)\nresult"
+    },
+    "searchUrl": "{{source.getKey().match(/([^\\#]+)\\#/)[1]}}/search,{\n  \"body\": '{\"searchTerms\":\"{{key}}\",\"pageSize\": \"20\",\"pageNum\":\"{{page}}\"}',\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

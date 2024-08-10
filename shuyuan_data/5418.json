@@ -12,7 +12,7 @@
     "enabledExplore": true,
     "exploreUrl": "全部小说::/sort/{{page}}/\n玄幻魔法::/sort/1/{{page}}/\n武侠修真::/sort/2/{{page}}/\n都市言情::/sort/3/{{page}}/\n历史军事::/sort/4/{{page}}/\n穿越架空::/sort/5/{{page}}/\n游戏竞技::/sort/6/{{page}}/\n科幻灵异::/sort/7/{{page}}/\n综合其他::/sort/8/{{page}}/",
     "header": "{\"User-Agent\": \"Mozilla/5.0 (Android 13; Mobile; rv:127.0) Gecko/127.0 Firefox/127.0\"}",
-    "lastUpdateTime": "1722929517770",
+    "lastUpdateTime": "1723159662705",
     "respondTime": 192519,
     "ruleBookInfo": {
       "author": "text.作者：@a@text",
@@ -20,7 +20,7 @@
       "intro": ".info_intro p@text",
       "kind": "text.类别：@text&&\ntext.状态：@text&&\ntext.更新：@text##.*：",
       "lastChapter": "text.最新：@a@text",
-      "name": "h1@text",
+      "name": "h1@text||text.书名：@text##.*：",
       "tocUrl": "text.章节目录@href"
     },
     "ruleContent": {
@@ -45,7 +45,7 @@
       "intro": ".intro@text",
       "kind": "0",
       "lastChapter": "a.-1@text",
-      "name": "span.hot@text"
+      "name": ".name@a.0@text"
     },
     "ruleToc": {
       "chapterList": ".info_newest ul li a",

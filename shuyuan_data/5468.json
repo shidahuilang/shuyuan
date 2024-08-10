@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🙈名熹小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.tjsyjjzs.com/",
+    "customOrder": 332,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "                                分  类                                 \n    全  部    ::/xclass/0/{{page}}.html\n 海棠耽美 ::/xclass/1/{{page}}.html\n 耽美小说 ::/xclass/2/{{page}}.html\n 男男色色 ::/xclass/3/{{page}}.html\n 海棠言情 ::/xclass/4/{{page}}.html\n 言情小说 ::/xclass/5/{{page}}.html\n 百合小说 ::/xclass/6/{{page}}.html\n 高辣小说 ::/xclass/7/{{page}}.html\n 情欲小说 ::/xclass/8/{{page}}.html\n 精品小说 ::/xclass/9/{{page}}.html\n 评书品书 ::/xclass/10/{{page}}.html\n 秘密趣事 ::/xclass/11/{{page}}.html\n                                总  榜                                 \n    全  部    ::/ph/all_{{page}}.html\n 海棠耽美 ::/ph/all1_{{page}}.html\n 耽美小说 ::/ph/all2_{{page}}.html\n 男男色色 ::/ph/all3_{{page}}.html\n 海棠言情 ::/ph/all4_{{page}}.html\n 言情小说 ::/ph/all5_{{page}}.html\n 百合小说 ::/ph/all6_{{page}}.html\n 高辣小说 ::/ph/all7_{{page}}.html\n 情欲小说 ::/ph/all8_{{page}}.html\n 精品小说 ::/ph/all9_{{page}}.html\n 评书品书 ::/ph/all10_{{page}}.html\n 秘密趣事 ::/ph/all11_{{page}}.html\n                                标  签                                 \n 快 穿 ::/tag/0/1/{{page}}.html\n 美 攻 ::/tag/0/2/{{page}}.html\n 肉 文 ::/tag/0/3/{{page}}.html\n 年 下 ::/tag/0/4/{{page}}.html\n 年 上 ::/tag/0/5/{{page}}.html\n 生 子 ::/tag/0/6/{{page}}.html\n 人 兽 ::/tag/0/7/{{page}}.html\n 强 强 ::/tag/0/8/{{page}}.html\n 穿 越 ::/tag/0/9/{{page}}.html\n 双 性 ::/tag/0/10/{{page}}.html\n 强 受 ::/tag/0/11/{{page}}.html\n ABO ::/tag/0/12/{{page}}.html\n 重 生 ::/tag/0/13/{{page}}.html\n  H P  ::/tag/0/14/{{page}}.html\n 虐 文 ::/tag/0/15/{{page}}.html\n 温 馨 ::/tag/0/16/{{page}}.html\n  N P  ::/tag/0/17/{{page}}.html\n 父 子 ::/tag/0/18/{{page}}.html\n 兄 弟 ::/tag/0/19/{{page}}.html\n 萌 文 ::/tag/0/20/{{page}}.html\n  B E  ::/tag/0/21/{{page}}.html\n 末 世 ::/tag/0/22/{{page}}.html\n 人 鱼 ::/tag/0/23/{{page}}.html\n 师 生 ::/tag/0/24/{{page}}.html\n 网 游 ::/tag/0/25/{{page}}.html\n娱乐圈::/tag/0/26/{{page}}.html\n 高 干 ::/tag/0/27/{{page}}.html\n金手指::/tag/0/28/{{page}}.html\n 反 攻 ::/tag/0/29/{{page}}.html\n 诱 受 ::/tag/0/30/{{page}}.html\n 种 田 ::/tag/0/31/{{page}}.html\n  S M  ::/tag/0/32/{{page}}.html\n 调 教 ::/tag/0/33/{{page}}.html\n  1V1  ::/tag/0/34/{{page}}.html\npovip ::/tag/0/35/{{page}}.html",
+    "lastUpdateTime": "1723278180482",
+    "respondTime": 16886,
+    "ruleBookInfo": {
+      "author": ".author a.1@text",
+      "coverUrl": ".synopsisArea_detail@img@src",
+      "intro": ".review@html",
+      "kind": ".synopsisArea_detail p.1:2:4@text",
+      "lastChapter": ".directoryArea@a.1@text",
+      "name": ".title@text",
+      "tocUrl": "text.查看完整目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##本章尚未完.*|本章已阅读.*"
+    },
+    "ruleExplore": {
+      "author": "p.1@text",
+      "bookList": ".hot_sale",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": "p.2@text##简介：",
+      "kind": "",
+      "lastChapter": "",
+      "name": "p.0@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "p.1@text",
+      "bookList": ".hot_sale",
+      "bookUrl": "a@href",
+      "checkKeyWord": "",
+      "coverUrl": "@js:\"http://www.tjsyjjzs.com/images/defaultimg.png\"",
+      "intro": "",
+      "kind": "p.1@text",
+      "lastChapter": "p.2@text##连载 | 更新：",
+      "name": "p.0@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".directoryArea p!0@a",
+      "chapterName": "text",
+      "chapterUrl": "href\n<js>\na=result.replace(/.*\\b(\\d{7})\\b.*/g,\"$1\");\nurl=baseUrl.replace(/all/g,a);\n</js>",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/s.html,{\n  'method': 'POST',\n  'body': 'keyword={{key}}'\n}",
+    "weight": 61
+  }
+]
