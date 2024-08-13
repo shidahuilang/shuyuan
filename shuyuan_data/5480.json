@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "投稿网站，我会做好上传\n地址：xilingaini@qq.com\n_By-[曦灵]",
+    "bookSourceGroup": "💎曦灵",
+    "bookSourceName": "瓜机书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.zjsw.org/##@曦灵",
+    "customOrder": 156,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "lastUpdateTime": "1723391790552",
+    "respondTime": 183525,
+    "ruleBookInfo": {
+      "author": "class.author@a.0@text",
+      "coverUrl": "class.detail@img@src",
+      "intro": "class.intro!p.-1@text",
+      "kind": "class.layui-btn!2@text##搜索",
+      "lastChapter": "class.new@a@text&&class.detail@p.-1@text##最后更新：",
+      "name": "class.name@text",
+      "tocUrl": "text.查看全部章节列表@href",
+      "wordCount": "class.layui-btn.2@text"
+    },
+    "ruleContent": {
+      "content": "class.content@p@text##[请大家收藏：].*",
+      "nextContentUrl": "text.下一页@href||text.下一章@href||class.pager@a.2@href",
+      "title": "class.headline@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.data.0@a.0@text",
+      "bookList": "class.list@li",
+      "bookUrl": "li@a@href##$##,{'webView': true}",
+      "checkKeyWord": "疯了吧？抢亲抢到大帝头上",
+      "coverUrl": "img@src",
+      "intro": "class.intro@text",
+      "kind": "class.data@span",
+      "lastChapter": "class.data.1@a.0@text",
+      "name": "class.bookname@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.read@li",
+      "chapterName": "li@a@text",
+      "chapterUrl": "li@a@href",
+      "nextTocUrl": "text.下一页@href||class.pagelist@a@href"
+    },
+    "searchUrl": "/search.html,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\",\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

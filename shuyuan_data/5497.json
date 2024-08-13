@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "搜索不到就清除Cookie",
+    "bookSourceGroup": "",
+    "bookSourceName": "69书吧",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.69haoshu.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1723448433278",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "id.info@p.0@text##作者：",
+      "intro": "id.info@p.2@text&&\nid.info@p.3@text&&\nid.intro@text",
+      "kind": "id.info@p.1@text##状态：",
+      "lastChapter": "id.info@p.2@a@text",
+      "name": "id.info@h1@text"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@p@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.btm@a@text",
+      "bookList": "class.item",
+      "bookUrl": "dl@dt@a@href",
+      "checkKeyWord": "都重生了谁谈恋爱啊",
+      "coverUrl": "img@data-original",
+      "intro": "dl@dd@text",
+      "name": "dl@dt@text",
+      "wordCount": "class.btm@em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dl@a!0:1:2:3:4:5:6:7",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "https://www.69haoshu.net/ss/?searchkey={{key}},{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

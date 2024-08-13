@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "书名规则还可用：\n .articlename@text||h3@text\n  \n作者规则还可用：strong@text\n  \n分类规则还可用：\n .lastupdate@text 或者 time@text\n \n此类站有的不再带标签内容，部分规则拿掉\n \n同站：\nhttps://m.popofree.com\nhttps://m.po18n.com\nhttps://m.po18me.com\nhttps://wap.po18.city\nhttps://m.po18club.com",
+    "bookSourceGroup": "",
+    "bookSourceName": "🙈肉色屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.rousewu.cc",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "   全 部   ::/wapsort/0_{{page}}.html\n玄幻奇幻::/wapsort/1_{{page}}.html\n武侠修真::/wapsort/2_{{page}}.html\n都市言情::/wapsort/3_{{page}}.html\n历史军事::/wapsort/4_{{page}}.html\n网游竞技::/wapsort/5_{{page}}.html\n科幻异能::/wapsort/6_{{page}}.html\n恐怖灵异::/wapsort/7_{{page}}.html\n其他类型::/wapsort/8_{{page}}.html",
+    "lastUpdateTime": "1723528410892",
+    "respondTime": 13832,
+    "ruleBookInfo": {
+      "author": "h2.-1@text",
+      "init": "",
+      "intro": "pre@text",
+      "kind": ".article_info_td@div.1:3@text##类别：|更新时间：",
+      "lastChapter": ".article_info_td.0@a.1@text",
+      "name": "[style=\"background:none;\"]@text",
+      "tocUrl": "[style=\"color:red;\"]@href",
+      "wordCount": "##总字数：([^<]+)<##$1###@js:result+'字'"
+    },
+    "ruleContent": {
+      "content": "#nr1@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "p.0@text##作者：",
+      "bookList": ".common-bookele",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "@js:'https://img.gb84.com/image/1/1024/1024s.jpg'",
+      "intro": ".abstract@text",
+      "kind": "p.1@text##栏目：",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul@li!-1@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s.php,{\n'charset': '',\n'method': 'POST',\n'body': 'type=articlename&s={{key}}'\n}",
+    "weight": 0
+  }
+]

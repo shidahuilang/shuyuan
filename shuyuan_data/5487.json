@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "投稿网站，我会做好上传\n地址：xilingaini@qq.com\n我不是搬运工！！\n_By-[曦灵]",
+    "bookSourceGroup": "💎曦灵",
+    "bookSourceName": "阅读库_By-曦灵",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.yuedsk.com/",
+    "customOrder": 58,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "                           书籍分类                         \n玄幻魔法::/sort/1/1.html\n武侠修真::/sort/2/1.html\n都市言情::/sort/3/1.html\n历史军事::/sort/4/1.html\n侦探推理::/sort/5/1.html\n网游动漫::/sort/6/1.html\n科幻小说::/sort/7/1.html\n恐怖灵异::/sort/8/1.html\n言情小说::/sort/9/1.html\n  经  部   ::/sort/11/1.html\n  史  书   ::/sort/12/1.html\n  子  部   ::/sort/13/1.html\n  集  部   ::/sort/14/1.html\n四库之外::/sort/15/1.html\n古典书籍::/sort/16/1.html\n  诗  歌   ::/sort/17/1.html\n  宋. 词   ::/sort/18/1.html\n其他类型::/sort/10/1.html\n                            排行榜                           \n日排行榜::/top/dayvisit/1.html\n周排行榜::/top/weekvisit/1.html\n月排行榜::/top/monthvisit/1.html\n总排行榜::/top/allvisit/1.html\n总收藏榜::/top/goodnum/1.html\n字数排行::/top/size/1.html\n日推荐榜::/top/dayvote/1.html\n周推荐榜::/top/weekvote/1.html\n月推荐榜::/top/monthvote/1.html\n总推荐榜::/top/allvote/1.html\n最新入库::/top/postdate/1.html\n最近更新::/top/lastupdate/1.html\n                               完本                           \n                               完本                           ::/fulltop/allvisit/1.html",
+    "lastUpdateTime": "1723424872262",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.infotype@p.0@text##[作者：]*",
+      "coverUrl": "class.pic@img@src",
+      "intro": "class.cataloginfo@h3@text&&\nclass.infotype@p.0@text&&\nclass.infotype@p.1@text&&\nclass.infotype@p.3@text&&\nclass.infotype@p.2@text&&\nclass.intro@text",
+      "kind": "class.infotype@p.1@text##[类型：]*",
+      "lastChapter": "class.infotype@p.3@text",
+      "name": "class.cataloginfo@h3@text"
+    },
+    "ruleContent": {
+      "content": "class.novelcontent@text",
+      "imageStyle": "FULL ",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##最新网址：m.yuedsk.com##",
+      "title": ""
+    },
+    "ruleExplore": {
+      "author": "class.author@text",
+      "bookList": "class.article",
+      "bookUrl": "class.pic@a@href",
+      "coverUrl": "class.pic@img@src",
+      "name": "h6@text"
+    },
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": "class.sone",
+      "bookUrl": "class.sone@a@href",
+      "checkKeyWord": "都判出宗门了，谁还惯着你啊",
+      "name": "class.sone@a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.list_xm.1@ul@li",
+      "chapterName": "li@a@text ",
+      "chapterUrl": "li@a@href",
+      "nextTocUrl": "text.下一页@href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "<js> \nvar url = baseUrl;\nif (!baseUrl.match(/^https?:/i)) {\n    java.log('\\n\\n\\n\\n‼️请填入正确的Url‼️\\n\\n\\n\\n');\n}\nvar html = java.ajax(url + \",{'webView': true}\");\n//java.log(html);\nvar doc = org.jsoup.Jsoup.parse(html);\nvar form = doc.select('form[action]:not([name~=login]):not([class~=login]):not([id~=login])')[0];\n//java.log(form);\nvar method = form.attr('method');\nvar action = form.attr('action');\nvar charset = doc.select('head>meta[charset]').attr('charset');\nif (charset == '')\n{\n    charset = String(doc.select('head>meta[content~=charset=]').attr('content')).replace(/^.*charset=([a-z0-9\\-]+).*$/i, \n    '$1');\n}\n//java.log(method);\n//java.log(action);\n//java.log(charset);\n//桌面版UA\nvar uaw = \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\";\n//手机版UA\nvar uam = \"Mozilla/5.0 (Linux; Android 7.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.3 SearchCraft/2.6.2 (baiduboxapp; P1 7.0)\";\nvar headers = {\n    //请自行选择UA，↓↓↓填入此处\n    \"User-Agent\" : uaw, \"Referer\" : String(baseUrl)\n};\nurl = baseUrl.replace(/([^\\/])$/i, '$1/') + String(action).replace(/^\\//, '');\nvar body = '';\nvar option = {};\nvar sk = form.select('input[name][type=\"text\"],input[name][class=\"text\"]').attr('name');\n//java.log(sk);\nvar es = form.select('input[name]:not([type=\"submit\"])');\nfor (var it in es)\n{\n    var e = es[it];\n    var k = e.attr('name');\n    var v = e.attr('value');\n    if (k == sk) {\n        //body+=sk+'={{java.encodeURI(key,\\''+ charset+'\\');}}&';\n        body += sk + '={{key}}&';\n    }\n    else {\n        body += k + '=' + v + '&';\n    }\n}\nes = form.select('select[name]');\nfor (it in es)\n{\n    var e = es[it];\n    var k = e.attr('name');\n    var v = e.select('option')[0].attr('value');\n    body += k + '=' + v + '&';\n}\nbody = String(body).replace(/&$/, '');\njava.log(body);\nif (method.match(/post/i))\n{\n    option = \n    {\n        \"charset\" : String(charset), \"method\" : String(method), \"body\" : String(body), \"headers\" : headers, \n        \"webView\" : true \n    };\n    url += ',' + JSON.stringify(option);\n}\nelse\n{\n    //get\n    option = {\n        \"charset\" : String(charset), \"headers\" : headers, \"webView\" : true \n    };\n    url += '?' + body + ',' + JSON.stringify(option);\n}\njava.log(url);\n</js>",
+    "weight": 0
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "bookSourceComment": "不稳定，但能用",
+    "bookSourceGroup": "◎筱",
+    "bookSourceName": "◎手机小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.shoujix.com#◎",
+    "bookUrlPattern": "https://m.shoujix.com/shoujixs_\\d+",
+    "concurrentRate": "1/666",
+    "customOrder": -7385,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::xhqh_{{page}}.html;\n武侠小说::wx_{{page}}.html;\n仙侠小说::xx_{{page}}.html;\n都市现实::ds_{{page}}.html;\n军事小说::js_{{page}}.html;\n历史小说::ls_{{page}}.html;\n游戏体育::yxty_{{page}}.html;\n科幻小说::kh_{{page}}.html;\n灵异小说::ly_{{page}}.html;\n二次元类::ecy_{{page}}.html;\n言情小说::yq_{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1723295420912",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//meta[@property='og:novel:author']/@content",
+      "coverUrl": "//meta[@property='og:image']/@content",
+      "downloadUrls": "",
+      "intro": "//meta[@property='og:description']/@content",
+      "kind": "//meta[@property='og:novel:category']/@content",
+      "lastChapter": "//meta[@property='og:novel:latest_chapter_name']/@content",
+      "name": "//meta[@property='og:novel:book_name']/@content"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html\n##『加入书签，方便阅读』",
+      "imageStyle": "0",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": ".author@text##作者：",
+      "bookList": "#main@class.hot_sale",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": ".review@text",
+      "name": ".title@text"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author.0@text",
+      "bookList": "class.hot_sale",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "class.author.1@text",
+      "lastChapter": "class.update@a@text",
+      "name": "class.title@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.recommend[-1]@class.directoryArea@p",
+      "chapterName": "a@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/s.php,{'charset':'utf-8',\n'body':'keyword={{key}}&t=1',\n'method':'POST'}",
+    "weight": 0
+  }
+]

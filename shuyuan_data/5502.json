@@ -1,0 +1,37 @@
+[
+  {
+    "bookSourceName": "茶马小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.chamabooks.net/##@曦灵",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1723514371522",
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "id.novel-content@p!0@text",
+      "nextContentUrl": "text.下一章@href||text.下一页@href",
+      "title": "id.novel-content@p.0@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.misc-value@text",
+      "bookList": "class.novel-item pure-g",
+      "bookUrl": "h4@a@href",
+      "checkKeyWord": "我的",
+      "intro": "class.novel-desc-container@text",
+      "kind": "class.category@text",
+      "name": "h4@text",
+      "wordCount": "class.word-count misc-name@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.pg-sel@option",
+      "chapterName": "option@text",
+      "chapterUrl": "option@value"
+    },
+    "searchUrl": "https://www.chamabooks.net/main?s={{key}}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "投稿网站，我会做好上传\n地址：xilingaini@qq.com\n_By-[曦灵]",
+    "bookSourceGroup": "💎曦灵",
+    "bookSourceName": "完美小说_By-[曦灵]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.umixs.info",
+    "bookUrlPattern": "",
+    "customOrder": 138,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "exploreUrl": "哦哦哦",
+    "header": "",
+    "lastUpdateTime": "1723391449151",
+    "loginUrl": "",
+    "respondTime": 16387,
+    "ruleBookInfo": {
+      "author": "@get:{x}",
+      "canReName": "true",
+      "coverUrl": "@js:(s=java.getStringList('img[alt*='+book.name+']@src||meta[property$=image]@content||img[src~=(cover|file|article)[^a-z]|/\\\\d+[/_-]\\\\d+(s?\\\\.|$)]@src||img[data-src~=\\\\S]@data-src||img[src*=/img]@src||img[src~=^(data|https?):|^[^:]+/]@src')).size()?/^data:/.test(s=s.get(0))?java.base64Encode(s):s:null",
+      "init": "",
+      "intro": "@js:'　　'+java.get(\"g\")",
+      "kind": "@js:java.get(\"v\")",
+      "lastChapter": "@get:{z}",
+      "name": "@js:\nj=String(java.get(\"custom\")).match(/^ *((?:[录原单动静直全跳逆字图]|\\[[^\\[\\]]+\\]|\\d+#[^#]+#)+)/);\n\nkey=String((u=(baseUrl=String(book.bookUrl).replace(/,{[^{}]+}$/,'')).match(/^(.+)\\?((?:[录原单动静直全跳逆字图]|\\[[^\\[\\]]+\\]|\\d+#[^#]+#)+)$/))&&(baseUrl=u[1])&&j?j[1]+u[2]:u?u[2]:j?j[1]:'');\n\n$=it=>(fn=r.select(it)).size()&&(fn=fn.first());\n\nr=org.jsoup.Jsoup.parse(result);\nr.select(\"script,noscript,style,head>:not(meta,title),footer,[class~=^foot],[id~=^foot],a:has(>:last-child:matchesOwn(^分类$)),[value]\").remove();\n\nm=String(r).replace(/(?:&nbsp;)+/g,\" \");\n\n书=false;\nn=($('[property$=book_name]')&&(书=String(fn.attr('content')).replace(/^[\\s「『【〖（(\\[]+/,\"\"))\n||(function(){\nif($('title')&&(书=String(fn.text()).replace(/^(简介页|详情页|目录页|正版|全本|免费阅读|[\\s。.,_/|「『【〖（(\\[\\])）〗】』」─—-]+)+/,\"\"))){\nfor(x=0,c=r.select(\"h1,h2,h3,strong\").eachText();x<c.size();x++)if(\n(y=c.get(x))!=''&&(u=书.indexOf(y),~u&&u<4))return String(y)}return 书}())||\"请自行修改书名\")\n.replace(/(?!^)[^\\u4e00-\\u9fa5a-zA-Z0-9《》]*(?:笔趣阁|思路客|燃文|小说|漫画|手机)?(?:[.|,_/\\s「『【〖（(\\[\\])）〗】』」。─—-]|(?:人工|机器|电脑)?校正|精校|完[整结]|加料|番外|未删节|简介|全[文本集]|下载|(?:小说|漫画|大全|正版(?:小说|漫画)?|免费|免费小说|免费漫画|免费全[文本]|在线|最[新快]|全部|手机|电脑)(?:全[文本集部]|大全|免费|在线|阅读|下载|章节|小说|更新|漫画|\\.)|([^a-zA-Z0-9])(?:azw|mobi|epub|txt)(?![a-zA-Z0-9])|(?:最全)?(?:章节|目录|列表){2,}|更新章节最快|无广告|(?::顶点)?无弹窗|无防盗|小说网|手打全文|[纯全](?:手打|文字)|\\s*by\\s*(?=[\\u4e00-\\u9fa5]))[\\S\\s]*/i,\"$1\");\n\nif(n[0]==\"《\"&&n[n.length-1]==\"》\")n=n.slice(1,-1);\n\nif($('[property$=author]')){\nx=String(fn.attr(\"content\")).replace(/^作\\s*[者家][\\s:：]*|(?!^)[/／｜|，,\\s][^⚙️]*$/,\"\")\n}else{\nx=m.match(/>\\s*([^>]+?)(?:\\s*<\\/[a-z]+>\\s*|\\s+)著\\s*<|[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】>《》](?:小说|漫画)?作\\s*者(?![^>]+->)(?:[:：\\s〖【（《［\\[\\(]|<[^it\\/][^>]*>|<\\/[^>]+>)+([^\\s<\">,，/／｜|\\)\\]］》）】〗]+)/);\nx=x?x[1]?x[1]:x[2]:$('#author,.author')?String(fn.text()).replace(/(?!^)[/／｜|，,\\s][^⚙️]*$/,\"\"):\"\"}\njava.put(\"x\",x);\n\nc=(fn=r.select(\"meta[property~=category$]\")).size()?String(fn.attr(\"content\"))\n.replace(/(?!^)\\s*[，,./／｜|]\\s*/,\",\"):(fn=m.match(/(?:[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】》]|<[^a/][^>]*>|<\\/[^>]+>)(?:[分大]\\s*类|类\\s*[型别])(?:[:：\\s]|<[^>]+>)+([^\\s<.\"/／｜|>]+)/))&&fn[1];\nif(c)java.put(\"v\",c);\n\nc=(fn=r.select(\"meta[property~=status$]\")).size()?fn.attr(\"content\"):(fn=m.match(/(?:[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】》]|<[^a/][^>]*>|<\\/[^>]+>)状\\s*态(?:[:：\\s]|<[^>]+>)+([^\\s<.\"/／｜|>]+)/))&&fn[1];\nif(c)java.put(\"s\",c);\n\nc=$('meta[property~=latest_chapter_name$]')?fn.attr(\"content\"):(fn=m.match(/>(?:\\s*[更最]\\s*[新近])+(?:\\s*章\\s*节)?(?:[:：\\s\\[]|<[^>]+>)+(?!\\s*(?:-|&gt;)\\s*<|[:：\\s0-9T年月日时分秒*-]{5,}<|[^:：]+[^章\\s]\\s*[:：]\\s*<|更新(?:时间)?[:：])([^<\"/／｜|\\]>]+)/))&&fn[1];\nif(c)java.put(\"z\",c);\n\n正=true;\nif(key.length){\nif(~key.indexOf(\"全\"))java.put(\"全\",1);\nif((\nu=key.match(/[^\\[\\]]+(?=\\])/),\nc=~key.indexOf(\"录\"),\ny=~key.indexOf(\"单\"),\nbaseUrl=u?u[0]:baseUrl,\n(c||u)&&(baseUrl=c||y?(baseUrl=String((c=baseUrl.match(/(.+[^\\d])(\\d+)([^\\d]*)$/))[1]+1+c[3]),\nc=c[2]+'🌕'+c[1]+'🌕'+2+'🌕'+c[3],\nbaseUrl):baseUrl)\n)||~key.indexOf(\"直\")\n)java.put(\"目\",1),正=1;\nif(~key.indexOf(\"录\"))java.put(\"录\",c),正=1;\nif(y||~key.indexOf(\"#\")){\nif(!u){\nif((网=key.match(/(\\d+)#([^#]+)/))\n&&(尾=网[1],网=网[2].match(/^(.*[^\\d])([12])([^/?\\d]*)$/))\n||(尾=r.select('a[href~=\\\\d[^/?\\\\d]*$]:matches(^(尾|末|最后一)[頁页篇章回节節话話]$)')).size()\n&&(网=r.select('a:matches(^2$)')).size()\n&&(网=String(网.first().attr('href')).match(/^(.*[^\\d])([12])([^/?\\d]*)$/))\n&&(尾=String(尾.first().attr('href')).match(/\\d+(?=[^/?\\d]*$)/)[0])){\nc=尾+'🌕'+网[1]+'🌕'+网[2]+'🌕'+网[3]\n}else if((c=r.select('a:matches(^(\\\\d+|…+|\\\\.+)$)')).size()){\nif((网=String(c).split(/<a[^>]+>[^\\d<]+<\\/a>/)).length==2){\nfor(c=网[0],尾=网[1],x=+网[1].match(/>([^<]+)/)[1],网=网[0].match(/href=\"([^\"]*[^\\d])(\\d+)([^/?\\d\"]*)\"[^>]*>([^<]+)<[^<]+$/),j=+网[4],i=+网[2]-j;j<x;j++)c+=\"<a href='\"+网[1]+(j+i)+网[3]+\"'>\"+j+\"</a>\";\nc+=尾}\n}else c=1}\njava.put(\"单\",c),正=false}\nif(~key.indexOf(\"跳\"))java.put(\"跳\",1);\nif(~key.indexOf(\"逆\"))book.setReverseToc(true);\nelse book.setReverseToc(false);\nif((u=~key.indexOf(\"图\"))||~key.indexOf(\"原\"))java.put(\"原\",1);\nif(~key.indexOf(\"动\"))java.put(\"动\",',{\"webView\":true}');\nelse if(~key.indexOf(\"静\"))java.put(\"静\",1);\nif(u||~key.indexOf(\"字\"))java.put(\"文\",u?1:2)\n}else book.setReverseToc(false);\n\nc=(fn=r.select(\"meta[property$=description][content~=\\\\S]\")).size()?fn.get(fn.size()-1).attr(\"content\"):(r.select(':matchesOwn([\\\\u4e00-\\\\u9fa5]{2,})>:not(br),:not(body,br,:matchesOwn([\\\\s\\\\S]{50}),:has(body,:matchesOwn([\\\\s\\\\S]{50})))').remove(),r.select(\":matchesOwn(\\\\S)\").text());\n\njava.put(\"g\",c=String(c).replace(/[\\snbsp;]*(?:&nbsp;|\\s){2,}|\\s*([？！。]+[”」』\\]\\}\\)）｝】〗〕〉]?)\\s*/g,\"$1　　\").replace(/(?=　　)/g,\"\\n\"));\n\nif(c.length&&(c=c.match(/(.{0,2})《([^《》]+)》(.{0,3})/))&&c[3]!=\"作品集\"&&!c[1].match(/新[书作]/)&&(c=c[2],书?~String(书).indexOf(c)&&!~c.indexOf(n):true))n=c;\n\nif(正==1)m=java.ajax(baseUrl);\njava.setContent(m,baseUrl);\n\nif(正){\nzl=java.getStringList(\"[property$=latest_chapter_url]@content||:matches(^最新章节)>a:only-child:not([href~=^$|#|javascript:])@href||a:matches(^正文\\\\s*[\\\\d第一二三四五六七八九十〇零百千]|^[【《]?(\"+n+\")?[\\\\s》】（\\\\u0028:：＿_－-]*(第[\\\\s0〇零]*[一1]\\\\s*[\\\\u4e00-\\\\u9fa5]|([\\\\u4e00-\\\\u9fa5]{2}阅读[（\\\\u0028:：＿_－-]?)?(0*1([）\\\\u0029.、:：_-]|$)|[〇零]*一([）\\\\u0029\\\\s.、:：_-]|$)))):not([href~=(^|[^/])/[vV][iI][pP]|([A-Za-z]\\\\d+|\\\\d[A-Za-z]+|[A-Z][a-z]+|[a-z][A-Z]+){3,}[^/?&_-]*$|^$|#|javascript:|\"+(bas=baseUrl.replace(/\\/+$|\\.[a-zA-Z]+$/,'')).match(/[^?/]+$/)[0].replace(/([*$|?+\\\\\\^\\[\\](){}])/g,'\\\\$1')+\"(?:[/_-]1)?(?:\\\\/|\\\\.[a-zA-Z]+)?$])@href||a:matches(^[^\\\\u4e00-\\\\u9fa5]*(免费|在线|开始|立即|全文|正文|从头)+[试阅]读[^\\\\u4e00-\\\\u9fa5]*$):not([href~=^$|#|javascript:])@href||a:matches(^0*1[^\\\\d]):not([href~=(^|[^/])/[vV][iI][pP]|([A-Za-z]\\\\d+|\\\\d[A-Za-z]+|[A-Z][a-z]+|[a-z][A-Z]+){3,}[^/?&_-]*$|^$|#|javascript:])@href\");\n\nif(zl.size()&&(ck=String(zl.get(0)).match(/^(.*\\/\\/[^/]+)?([/?]?[^/].+[?&/_-])[^&/_-]+\\/?$/)))(jd=ck[1])&&(h=baseUrl.lastIndexOf('/',baseUrl.indexOf(jd.match(/(?:\\.[^.]+){2,}$|[^./]+\\.[^.]+$/)[0])))>8&&(\nq=baseUrl.indexOf(':'),\n(bas=java.get(baseUrl=baseUrl.slice(0,q+2)+baseUrl.slice(h),{})).statusCode()==200&&java.setContent(bas.body(),baseUrl)\n),java.put(\"ck\",ck[2])}\nn",
+      "tocUrl": "text.章节列表@href",
+      "wordCount": "@get:{s}"
+    },
+    "ruleContent": {
+      "content": "class.content@dd@text",
+      "imageStyle": "FULL",
+      "nextContentUrl": "text.下一章@href||text.下一页@href",
+      "replaceRegex": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "bookList": "",
+      "bookUrl": ""
+    },
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.bd@li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "都判出宗门了，谁还惯着你啊",
+      "kind": "li@a@span@text## \\[]",
+      "name": "li@a@ownText##[(].*"
+    },
+    "ruleToc": {
+      "chapterList": "class.list@div",
+      "chapterName": "id.chapter.0@text",
+      "chapterUrl": "id.chapter.0@a@href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}=\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

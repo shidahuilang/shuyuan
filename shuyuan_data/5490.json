@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "同站：https://m.hongxiu.com/",
+    "bookSourceGroup": "",
+    "bookSourceName": "潇湘书院",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xxsy.net",
+    "customOrder": 120,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "                                 排行                                \n潇湘票榜::/rank/xxyuepiao\n新书榜::/rank/new\n畅销榜::/rank/bestsales\n完结榜::/rank/finish\n阅读榜::/rank/reading\n收藏榜::/rank/collections",
+    "lastUpdateTime": "1723426985427",
+    "respondTime": 191446,
+    "ruleBookInfo": {
+      "author": "class.book-author@text",
+      "coverUrl": "img@src",
+      "intro": "class.book-summary@text",
+      "kind": "class.book-tatus@text##/",
+      "lastChapter": "class.chapterlist-item.0@text##[App限免]*",
+      "name": "class.book-title.0@text",
+      "tocUrl": "class.chapterlist-box@class.chapter-icon@href",
+      "wordCount": "class.book-metas@text"
+    },
+    "ruleContent": {
+      "content": "id.content@p@text",
+      "nextContentUrl": "text.下一章@href"
+    },
+    "ruleExplore": {
+      "author": "class.book-module@ownText",
+      "bookList": "a",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "class.book-profile@text",
+      "kind": "class.book-module@span.0@text",
+      "name": "class.book-title@text",
+      "wordCount": "class.book-module@span.1@text"
+    },
+    "ruleSearch": {
+      "author": "class.book-module@text##[·].*",
+      "bookList": "class.common-list common-list-one@a",
+      "bookUrl": "a@href",
+      "checkKeyWord": "簪星",
+      "coverUrl": "img@src",
+      "intro": "class.book-profile@text",
+      "kind": "",
+      "name": "class.book-title@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "ul@li",
+      "chapterName": "li@a@text",
+      "chapterUrl": "li@a@href"
+    },
+    "searchUrl": "https://m.xxsy.net/search/{{key}}",
+    "weight": 0
+  }
+]

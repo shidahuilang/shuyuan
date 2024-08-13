@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "2024年8月12日",
+    "bookSourceGroup": "https://rensr.site/shuyuan,任尚仁",
+    "bookSourceName": "碧曲书库@静白",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://wap.biqugewx.info/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"玄幻小说\",\"url\":\"/categor/1_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"修真小说\",\"url\":\"/categor/2_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"言情都市\",\"url\":\"/categor/3_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"穿越小说\",\"url\":\"/categor/4_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"纯爱小说\",\"url\":\"/categor/5_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"网游小说\",\"url\":\"/categor/6_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"科幻小说\",\"url\":\"/categor/7_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"灵异小说\",\"url\":\"/categor/8_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"散文诗词\",\"url\":\"/categor/9_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"综合小说\",\"url\":\"/categor/10_{{page}}.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"排行榜\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"月点击\",\"url\":\"/top/monthvisit_{{page}}/\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"周点击\",\"url\":\"/top/weekvisit_{{page}}/\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"总点击\",\"url\":\"/top/allvisit_{{page}}/\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"完本\",\"url\":\"/full/{{page}}.html\",\"style\":{\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": "1723467007756",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "img@src",
+      "intro": "🕰  更新时间：{{@@.xsinfo li:nth-of-type(5)@text##更新时间：}}\n📒  作品Tags：{{@@.xsinfo li:nth-of-type(2) a@text}}\n📜  内容简介：\n{{@@div.jianjie@text## 亲爱的书友：您好，本站.*}}##(^|[。！？……；]+[”」）】]?)##$1<br>\n",
+      "lastChapter": ".xsinfo li:nth-of-type(4) a@text"
+    },
+    "ruleContent": {
+      "content": "article@html##最新网址：wap.biqugewx.info",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##--.*）"
+    },
+    "ruleExplore": {
+      "author": "span:nth-of-type(2)@text##作者：",
+      "bookList": "ul.xbk",
+      "bookUrl": "span.xsm a@href",
+      "coverUrl": "img@src",
+      "intro": "span:nth-of-type(3)@text",
+      "kind": "",
+      "name": "span.xsm a@text",
+      "wordCount": "i@text"
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".fk li",
+      "bookUrl": "a.1@href",
+      "kind": "a.0@text##\\[|\\]",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "section:nth-of-type(3) li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "http://wap.biqugewx.info/s.php,{\n\"method\":\"post\",\n\"body\":\"submit=&type=articlename&s={{key}}\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "投稿网站，我会做好上传\n地址：xilingaini@qq.com\n我不是搬运工！！\n_By-[曦灵]",
+    "bookSourceGroup": "💎曦灵",
+    "bookSourceName": "书旗小说_By-曦灵",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.shuqi.cc/",
+    "customOrder": 103,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "exploreUrl": "                         分        类                         \n玄幻::/xuanhuan/\n武侠::/wuxia/\n言情::/yanqing/\n历史::/lishi/\n网游::/wangyou/\n科幻::/kehuan/\n恐怖::/kongbu/\n排行榜::/top/\n全本::/quanben/",
+    "lastUpdateTime": "1723424962127",
+    "respondTime": 31104,
+    "ruleBookInfo": {
+      "author": "class.dd_box.0@span.0@text",
+      "coverUrl": "img@src",
+      "intro": "class.name@text&&\nclass.dd_box.0@span.0@text&&\nclass.dd_box.0@span.1@text&&class.dd_box.1@span.0@text&&\nclass.dd_box.1@span.1@text&&\nclass.book_box@dl@dd.3@text&&\nclass.book_about@dl@dd@text",
+      "kind": "class.dd_box.0@span.1@text&&class.dd_box.1@span.0@text##[状态：分类]*",
+      "lastChapter": "class.book_box@dl@dd.3@text##[最新：]*",
+      "name": "class.name@text",
+      "wordCount": "class.dd_box.1@span.1@text##[字数：]*"
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@text",
+      "nextContentUrl": "text.下一章@href",
+      "title": "id.chaptercontent@br.0@text"
+    },
+    "ruleExplore": {
+      "author": "dl@dt@span@text",
+      "bookList": "class.item",
+      "bookUrl": "class.image@a@href",
+      "coverUrl": "img@src",
+      "intro": "dl@dd@text",
+      "name": "dl@dt@a@text"
+    },
+    "ruleSearch": {
+      "author": "class.author@text##[作者：]*",
+      "bookList": "class.bookinfo",
+      "bookUrl": "h4@a@href",
+      "checkKeyWord": "犯罪游戏：我真没有绑架女明星",
+      "coverUrl": "img@src",
+      "kind": "class.cat@text##[分类：]*",
+      "lastChapter": "class.update@text##[最新章节：]*",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.book_last.1@dl@dd",
+      "chapterName": "dd@text",
+      "chapterUrl": "dd@a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "http://m.shuqi.cc/dsgfusdgfuseg.php?ie=gbk&s=5256649918672294880&q={{key}}",
+    "weight": 0
+  }
+]
