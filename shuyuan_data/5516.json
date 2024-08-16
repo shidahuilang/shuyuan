@@ -1,0 +1,66 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "-自制,✨极速",
+    "bookSourceName": "齐鲁文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qiluwx.com##测试",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/xuanhuan/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"仙侠\",\"url\":\"/xianxia/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市\",\"url\":\"/dushi/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史\",\"url\":\"/lishi/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游\",\"url\":\"/wangyou/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻\",\"url\":\"/kehuan/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖\",\"url\":\"/kongbu/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"热门\",\"url\":\"/rank/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"推荐\",\"url\":\"/votelist/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"全本\",\"url\":\"/quanben/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "{\n\t\"x-requested-with\": \"XMLHttpRequest\",\n\t\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; SK) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": "1723690887322",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=og:novel:author]@content",
+      "coverUrl": "[property$=og:image]@content",
+      "downloadUrls": ".addbookcase@href",
+      "init": "",
+      "intro": "{{@@#intro@text}}##(^|[。！？……；]+[」）】》”]?)##$1<br>",
+      "kind": "[property$=og:novel:category]@content&&[property$=og:novel:status]@content&&[property$=og:novel:update_time]@content",
+      "lastChapter": "[property$=og:novel:latest_chapter_name]@content",
+      "name": "[property$=og:title]@content",
+      "tocUrl": "[property$=og:url]@content@js:result.replace(\"_\",\"/\")",
+      "wordCount": ".visible-xs.1@text##字数："
+    },
+    "ruleContent": {
+      "content": "#booktxt@html",
+      "imageStyle": "",
+      "nextContentUrl": "@js:\nnext = result.match(/next_page = \"(.+)\"/) || [];\nurl = next[1];\n/_\\d+/.test(url) && url",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": ".btm@a@title",
+      "bookList": "#hotcontent@.item",
+      "bookUrl": "a@href",
+      "checkKeyWord": "副本需要我这样的人才",
+      "coverUrl": ".lazy@src",
+      "intro": "dl@dd@text",
+      "kind": ".blue@text",
+      "lastChapter": "",
+      "name": "dt@a@text",
+      "wordCount": ".orange@text"
+    },
+    "ruleToc": {
+      "chapterList": "#content_1@a",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}\nhttps://www.qiluwx.com/search/,{\n  \"body\": \"keyword={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "amp-img@html",
+    "bookSourceName": "包子漫画",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://cn.baozimh.com/##@曦灵",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1723547314275",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.comics-detail__author@text",
+      "coverUrl": "class.pure-g de-info__box@div.0@amp-img.0@src",
+      "intro": "class.comics-detail__desc overflow-hidden@text",
+      "kind": "class.tag-list@text",
+      "lastChapter": "class.supporting-text mt-2@div.1@span@text##最新：",
+      "name": "class.comics-detail__title@text"
+    },
+    "ruleContent": {
+      "content": "img@html",
+      "imageStyle": "FULL",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.tags text-truncate.-1@text",
+      "bookList": "class.comics-card",
+      "bookUrl": "class.comics-card@a.0@href",
+      "checkKeyWord": "反派大师兄，师妹们全是病娇",
+      "coverUrl": "class.comics-card@a.0@amp-img.0@src",
+      "kind": "class.text-truncate!2:3@text",
+      "name": "class.text-truncate.2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.pure-u-1-1!0:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23",
+      "chapterName": "class.pure-u-1-1@a@text",
+      "chapterUrl": "class.pure-u-1-1@a@href##$##,{'webView': true}"
+    },
+    "searchUrl": "https://cn.baozimh.com/search?q={{key}}",
+    "weight": 0
+  }
+]

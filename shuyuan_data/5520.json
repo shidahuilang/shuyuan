@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "通过抓包获取\n建议把请求头里面的Authorization换成自己的",
+    "bookSourceName": "🎉猫眼看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://api.jmlldsc.com##@曦灵",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "{\n'User-Agent': 'okhttp/4.9.2','client-device': '2d37f6b5b6b2605373092c3dc65a3b39','client-brand': 'Redmi','client-version': '2.3.0','client-name': 'app.maoyankanshu.novel','client-source': 'android','Authorization': 'bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNzIzNzI2NTkyLCJleHAiOjE4MTcwMzg1OTIsIm5iZiI6MTcyMzcyNjU5MiwianRpIjoiMHJaS05IdlRVelR4Vm15SCIsInN1YiI6ODAyMzcyLCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.w9vCdsWWqnD5pTz5aluSDb8WxeLZqrZsqX06CYC_J1A'\n}",
+    "lastUpdateTime": "1723729921486",
+    "loginUrl": "http://api.jmlldsc.com/auth/me",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.authorName",
+      "canReName": "",
+      "coverUrl": "$.cover",
+      "init": "$.data",
+      "intro": "📕书名：{{$.novelName}}\n👩‍💻作者：{{$.novelName}}\n🔥热度：{{$.hotInfo}}，{{$.readInfo}}人在读\n💮更新：{{$.chapterName}}{{$.lastUpdatedAt}}\n📖简介：{{$.summary}}",
+      "kind": "",
+      "lastChapter": "{{$.chapterName}}{{$.decTime}}",
+      "name": "$.novelName",
+      "tocUrl": "http://api.jmlldsc.com/novel/{{$.novelId}}/chapters",
+      "wordCount": "$.wordNum"
+    },
+    "ruleContent": {
+      "content": "$.content"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "$.authorName",
+      "bookList": "$.data[*]",
+      "bookUrl": "/novel/{{$.novelId}}?isSearch=1",
+      "checkKeyWord": "我不是戏神",
+      "coverUrl": "$.cover",
+      "intro": "$.summary",
+      "kind": "$.className",
+      "name": "$.novelName",
+      "wordCount": "$.wordNum"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.list[*]",
+      "chapterName": "$.chapterName",
+      "chapterUrl": "$.path@js:java.aesBase64DecodeToString(result,\"f041c49714d39908\",\"AES/CBC/PKCS5Padding\",\"0123456789abcdef\")",
+      "preUpdateJs": "",
+      "updateTime": "{{$.updatedAt}}字数：{{$.updatedAt}}"
+    },
+    "searchUrl": "http://api.jmlldsc.com/search?keyword={{key}}&page={{page}}",
+    "weight": 0
+  }
+]

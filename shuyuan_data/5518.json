@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "通过抓包获取",
+    "bookSourceName": "豆腐阅读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://api.doufuyuedu.com/##@曦灵",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1723701881272",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "init": "",
+      "intro": "📕书名：{{$..topic_title}}\n📆更新时间：{{$..updated_at}}\n📖简介：{{$..description}}",
+      "kind": "",
+      "name": "",
+      "tocUrl": "http://api.doufuyuedu.com/index.php/novel/chapter_list?novel_id={{$..id}}"
+    },
+    "ruleContent": {
+      "content": "$..content",
+      "title": "$..title"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$..data.*",
+      "bookUrl": "http://api.doufuyuedu.com/relating/relating_novel?user_id={{$..userId}}&novel_id=0&size=15&begin=0",
+      "checkKeyWord": "在童话世界做大佬",
+      "coverUrl": "$..imgUrl",
+      "intro": "{{$.des}}\n{{$.recommend_text}}",
+      "kind": "",
+      "name": "$.title"
+    },
+    "ruleToc": {
+      "chapterList": "$..list[*]",
+      "chapterName": "$.title",
+      "chapterUrl": "http://api.doufuyuedu.com/index.php/post/view/{{$.id}}?with_ids=1&type=read",
+      "updateTime": "$.add_time"
+    },
+    "searchUrl": "http://api.doufuyuedu.com/search/content?keyword={{key}}&start=0&rows=20&types=18&order=&is_finished=&vip=&single_page={{page-1}}",
+    "weight": 0
+  }
+]

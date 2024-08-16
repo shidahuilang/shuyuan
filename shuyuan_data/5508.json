@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "修",
+    "bookSourceName": "🌸海棠77",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.haitang77.com",
+    "customOrder": 1184,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"排  行\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"总点击榜\",\"url\":\"/top/allvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月点击榜\",\"url\":\"/top/monthvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周点击榜\",\"url\":\"/top/weekvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"总推荐榜\",\"url\":\"/top/allvote/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"本站推荐\",\"url\":\"/top/toptime/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"收藏排行\",\"url\":\"/top/goodnum/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"字数排行\",\"url\":\"/top/size/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最近更新\",\"url\":\"/top/lastupdate/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最新小说\",\"url\":\"/top/postdate/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"分  类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻魔法\",\"url\":\"/list/1/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"武侠修真\",\"url\":\"/list/2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/list/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游动漫\",\"url\":\"/list/4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/list/5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖灵异\",\"url\":\"/list/6/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"完本小说\",\"url\":\"/wanben/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": "1723595902317",
+    "loginUrl": "https://www.haitang77.com/login.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=img]@content||[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property$=category]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "wordCount": "[property$=status]@content&&[property$=update_time]@content"
+    },
+    "ruleContent": {
+      "content": ".panel-body@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "small@text##/.*",
+      "bookList": ".col-md-4.col-xs-4.book-coverlist",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": ".panel-body@dd a",
+      "chapterName": "text##全部章节目录",
+      "chapterUrl": "href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]

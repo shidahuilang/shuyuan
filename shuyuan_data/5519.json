@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceComment": "//曦灵",
+    "bookSourceName": "仙域书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xianyuandisplay.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1723726336113",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "class.imgbox@img@src",
+      "intro": "class.xdesc@text",
+      "kind": "class.xs-show!2:3@text##[类别状态：]*"
+    },
+    "ruleContent": {
+      "content": "class.content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.s4@text",
+      "bookList": "class.txt-list txt-list-row5@li!0",
+      "bookUrl": "class.s2@a@href",
+      "kind": "class.s1@text##[\\[\\]]*",
+      "lastChapter": "class.s3@text",
+      "name": "class.s2@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.section-box.1@class.section-list fix@li",
+      "chapterName": "li@text",
+      "chapterUrl": "li@a@href"
+    },
+    "searchUrl": "http://www.xianyuandisplay.com/search.php?keyWord={{key}}",
+    "weight": 0
+  }
+]
