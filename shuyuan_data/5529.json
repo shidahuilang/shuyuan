@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "//修改搜索\n原搜索地址：(不知是否动态变化)\n{{cookie.removeCookie(source.getKey())}}\n/search42.html,{\n\"charset\": \"\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}",
+    "bookSourceGroup": "",
+    "bookSourceName": "📖免费电子书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.ibookben.net/",
+    "customOrder": 4767,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻小说::/category/xuanhuan/{{page}}.html\n修真小说::/category/xiuzhen/{{page}}.html\n都市小说::/category/dushi/{{page}}.html\n穿越小说::/category/chuanyue/{{page}}.html\n网游小说::/category/wangyou/{{page}}.html\n科幻小说::/category/kehuan/{{page}}.html\n其他小说::/category/qita/{{page}}.html\n全本小说::/quanben/category/{{page}}.html",
+    "header": "{ 'referer':'http://www.ibookben.net/' }",
+    "lastUpdateTime": "1723813647749",
+    "loginCheckJs": "",
+    "respondTime": 186005,
+    "ruleBookInfo": {
+      "author": "class.novel_info_title@i@tag.a@text",
+      "coverUrl": "class.novel_info_main@tag.img@src",
+      "intro": "class.intro@p@text",
+      "kind": "class.novel_info_title@p@span.0:2@text",
+      "lastChapter": "class.flex to100@tag.a@text",
+      "name": "class.novel_info_title@h1@text",
+      "tocUrl": "class.act@a@href"
+    },
+    "ruleContent": {
+      "content": "id.article@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "class.li_bottom@tag.a@tag.i@text",
+      "bookList": "class.flex@li",
+      "bookUrl": "class.w100@tag.a@href",
+      "coverUrl": "tag.img@data-original",
+      "intro": "class.w100@tag.p@text",
+      "kind": "class.li_bottom@div.0@tag.em.0@text",
+      "name": "class.w100@tag.a@h2@text",
+      "wordCount": "class.li_bottom@div.0@tag.em.1@text"
+    },
+    "ruleSearch": {
+      "author": "div@p@span.hot@text",
+      "bookList": "class.searchresult",
+      "bookUrl": "div@a@href",
+      "checkKeyWord": "伪戒",
+      "coverUrl": "tag.img@data-original",
+      "intro": "div@p.searchresult_p@text",
+      "kind": "div@p@span.s_gray@text",
+      "lastChapter": "div@p.2@text",
+      "name": "div@tag.a@h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.ul_all_chapters@li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)\njava.ajax(url).match(/search.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  }
+]

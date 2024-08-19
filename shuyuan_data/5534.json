@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceName": "中华典藏",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.zhonghuadiancang.com",
+    "customOrder": 13,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nu = source.key;\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\nJ = org.jsoup.Jsoup.parse(java.ajax(u));\npush(\"・分类・\", null, 1);\nX = J.select('.menu a');\nfor (i = 0; i < X.length; ++i) {\n  push(\n    X[i].text(),\n    X[i].attr('href') + \"<,index_{{page}}.html>\",\n    null\n  );\n};\npush(\"・标签・\", null, 1);\nY = J.select('.panel-default a');\nfor (i = 0; i < Y.length; ++i) {\n  push(\n    Y[i].text(),\n    String(Y[i].attr('href')).replace(/\\d+\\.html$/,'{{page-1}}.html'),\n    null\n  );\n};\npush(\"・书单・\", null, 1);\nK = org.jsoup.Jsoup.parse(java.ajax(u + \"/shudan\"));\nZ = K.select('.panel-warning .list-group-item a');\nfor (i = 0; i < Z.length; ++i) {\n  push(\n    Z[i].text(),\n    Z[i].attr('href'),\n    null\n  );\n};\np = K.select('.m-page .disabled').text().match(/\\/(\\d+)/)[1];\nfor (i = 2; i <= p; ++i) {\n  M = org.jsoup.Jsoup.parse(java.ajax(u + `/shudan/index_${i}.html`));\n  N = M.select('.panel-warning .list-group-item a');\n  for (o = 0; o < N.length; ++o) {\n    push(\n    N[o].text(),\n    N[o].attr('href'),\n    null\n    );\n  };\n};\nJSON.stringify(sort);",
+    "lastUpdateTime": "1723969833097",
+    "respondTime": 1150,
+    "ruleBookInfo": {
+      "author": "@js:\nr = java.getString('small@a@text');\nr != \"\" ? r: \"中华典藏\";",
+      "canReName": "1",
+      "coverUrl": ".fmpic@img@src",
+      "intro": ".m-summary@html",
+      "kind": ".alert@a@text",
+      "name": "h1@text"
+    },
+    "ruleContent": {
+      "content": "#content@html||.message@html||.panel-body@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "@js:\nr = java.getString('[href*=/renwu/]@text');\nr != \"\" ? r: \"中华典藏\";",
+      "bookList": "tr!0||.panel-body > div",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": ".m-text@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\ntry {\n  java.setContent(String(result).match(/<div class=\"clearfix\"><\\/div>([\\s\\S]*?)<div class=\"clearfix\"><\\/div>/)[1]);\n  java.getElements('h3,li');\n} catch (e) {\n  java.setContent(`<a href=\"${baseUrl}\">正文</a>`);\n  java.getElements('body');\n};",
+      "chapterName": "text",
+      "chapterUrl": "a@href",
+      "isVolume": "a@target"
+    },
+    "searchUrl": "/e/search/index.php,{\"body\": \"tbname=bookname&show=title,writer&tempid=1&keyboard={{key}}\", \"method\": \"POST\"}",
+    "weight": 0
+  }
+]

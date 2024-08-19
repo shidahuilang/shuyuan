@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "一程大佬书源，\n稳定每日动态搜索",
+    "bookSourceGroup": "🎉 精选",
+    "bookSourceName": "🎉 久久小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.5299txt.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"首页\",\"url\":\"/\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻魔法\",\"url\":\"/html/xuanhuanmofa/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"仙侠修真\",\"url\":\"/html/xianxiaxiuzhen/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/html/dushiyanqing/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/html/lishijunshi/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游动漫\",\"url\":\"/html/wangyoudongman/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻小说\",\"url\":\"/html/kehuanxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"女生小说\",\"url\":\"/html/nvshengxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他小说\",\"url\":\"/html/qitaxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本小说\",\"url\":\"/quanben/html/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": "1723813096838",
+    "respondTime": 15044,
+    "ruleBookInfo": {
+      "author": "id.info@a.0@text",
+      "coverUrl": "id.fmimg@img@data-original",
+      "intro": "id.intro@text",
+      "kind": ".con_top@a.1@text&&id.info@p.3:6@text##.*：|小说|\\s..:.*",
+      "lastChapter": "id.info@a.1@text",
+      "name": "id.info@h1@text",
+      "tocUrl": ".readbtn@a.1@href",
+      "wordCount": "id.info@p.2@text##.*："
+    },
+    "ruleContent": {
+      "content": "id.booktxt@p@text",
+      "imageStyle": "",
+      "nextContentUrl": ".bottem1@a.2@href",
+      "replaceRegex": "##\\s*本章未完.*\\s*",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".l@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href##.+\\D((\\d+)\\d{3})\\D##http://img.5299txt.net/$2/$1/$1s.jpg###",
+      "intro": "",
+      "kind": ".s1,.s5@text",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-original",
+      "intro": "dd@text",
+      "kind": "em.1@text",
+      "name": "a.1@text",
+      "wordCount": "em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.content_1@a",
+      "chapterName": "dd@text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)\njava.ajax(url).match(/search.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  }
+]
