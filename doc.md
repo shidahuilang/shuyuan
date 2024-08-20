@@ -1,7 +1,7 @@
 源阅读配置
 打开源阅读，我的 -> 语音管理 -> 右上角 -> 创建语音，名称自己起，内容先粘贴这个：
 ```sh
-https://baidu.com/api/aiyue?text={{speakText}}&voiceName=zh-CN-XiaoxiaoNeural&speed={{speakSpeed*4}},{
+http://155.248.167.37:3008/api/aiyue?text={{speakText}}&voiceName=zh-CN-XiaoxiaoNeural&speed={{speakSpeed*4}},{
     "method": "GET",
     "headers": {"authorization": "Bearer TOKEN"}
 }
