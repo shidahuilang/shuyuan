@@ -17,7 +17,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
-#### 🚩 TTS-在线语音包生成[点我](http://155.248.167.37:3008)
+#### 🚩 TTS-在线语音包生成[点我](https://tts.228088.xyz/)
 详见[文档](https://github.com/shidahuilang/shuyuan/blob/shuyuan/doc.md)
 #### 🚩 TTS-70种语音包
 ```
