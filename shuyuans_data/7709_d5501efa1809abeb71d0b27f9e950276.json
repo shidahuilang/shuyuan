@@ -1,0 +1,324 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "28看次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.28lu.net/",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724139714440,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=28lu##$##,{\"webView\":true}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "搜书次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sokanshu.com/",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724139821887,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=sokanshu2##$##,{\"webView\":true}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "天喜 次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tianxibook.com/",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724140063598,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=xtxxs##$##,{\"webView\":true}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "小说虎 次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xshbook.com/",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724140078545,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=mxshbook##$##,{\"webView\":true}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "当阅读 次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dangyuedu.com",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724140118242,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=dangyuedu##$##,{\"webView\":true}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "二次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.cyxsw.com",
+    "customOrder": 96,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724140146330,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=rcyxsw##$##,{\"webView\":true}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋",
+    "bookSourceGroup": "同人",
+    "bookSourceName": "二次元",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.2cyxs.com/",
+    "customOrder": 156,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1724140151652,
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=status|ategory|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": ".content@html||#content@html",
+      "nextContentUrl": "text.下一页@href||text.下一@href"
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?site=2cyxswnet&q={{key}}##$##,{\"webView\":true}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceComment": "*在关键词前加##可按文案/简介搜索\n*不加则按书名/作者搜索",
+    "bookSourceName": "久久小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.jjjjxs.com",
+    "customOrder": 6,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"・排行・\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"女生\",\"url\":\"/txt/hot/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"纯美\",\"url\":\"/danmeixiaoshuo/hot/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"男生\",\"url\":\"/nanshengxiaoshuo/hot/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"・分类・\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"穿越\",\"url\":\"/txt/chuanyue/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"重生\",\"url\":\"/txt/chongshengxiaoshuo/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"架空\",\"url\":\"/txt/lsjs/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"总裁\",\"url\":\"/txt/qinggan/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"现言\",\"url\":\"/txt/young/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"修仙\",\"url\":\"/txt/wuxia/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"纯美\",\"url\":\"/txt/dmtr/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"玄幻\",\"url\":\"/txt/xuanhuan/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"都市\",\"url\":\"/txt/dushi/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}},\n{\"title\":\"惊悚\",\"url\":\"/txt/kongbu/index_{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":null}}]",
+    "lastUpdateTime": "1724128138224",
+    "respondTime": 7388,
+    "ruleBookInfo": {
+      "intro": ".novelinfo@html",
+      "kind": ".jie@span!2:3@text##^.*：",
+      "tocUrl": "#htmldianjiyuedu@href##$##,{\"webView\": true}"
+    },
+    "ruleContent": {
+      "content": "#Content@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "[href*=/zuozhe/]@text||:containsOwn(作者: )@text",
+      "bookList": ".list_a",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": ":containsOwn(作者: )+br+span@a@text",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "option",
+      "chapterName": "text",
+      "chapterUrl": "value"
+    },
+    "searchUrl": "@js:\nk = key;\nt = /^##/.test(k) ? \"softsay\": \"writer,title\";\n`/e/search/index.php,{\"body\": \"show=${t}&keyboard=${k.replace(/^##/, '')}\",\"method\": \"POST\"}`;",
+    "weight": 0
+  }
+]

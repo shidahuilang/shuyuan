@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "//需要下载将类型文本改成文件\n\n//需要在线将类型文件改成文本",
+    "bookSourceGroup": "💾导入",
+    "bookSourceName": "💾 书书小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.1pwx.com",
+    "customOrder": 1206,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"热门\",\"url\":\"/top/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻\",\"url\":\"/xuanhuan/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市\",\"url\":\"/dushi/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史\",\"url\":\"/lishi/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"网游\",\"url\":\"/wangyou/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻\",\"url\":\"/kehuan/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"恐怖\",\"url\":\"/kongbu/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠\",\"url\":\"/wuxia/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"全本\",\"url\":\"/quanben/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
+    "header": "@js:\n(() => {\nvar headers = {\n\"User-Agent\": java.getWebViewUA(),\n\"Referer\": baseUrl,\n\"X-Requested-With\": \"\"\n};\nreturn JSON.stringify(headers);\n})();",
+    "lastUpdateTime": "1724290678866",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.lb_fm@td.1@div.1@a@text",
+      "coverUrl": "td@img@src",
+      "downloadUrls": "text.Txt下载@href",
+      "intro": "class.intro@text",
+      "lastChapter": "class.lb_fm@td.1@div.2@a@text",
+      "name": "class.lb_fm@td.1@div.0@text",
+      "tocUrl": "text.全部章节@href"
+    },
+    "ruleContent": {
+      "content": "#content@html",
+      "replaceRegex": "##书书网手机版|m.1pwx.com"
+    },
+    "ruleExplore": {
+      "author": "span.0@text##作者：",
+      "bookList": ".mlist",
+      "bookUrl": "a.0@href",
+      "intro": ".intro@text",
+      "kind": "span.1@text",
+      "name": ".booktt@text"
+    },
+    "ruleSearch": {
+      "author": "span.0@text##作者：",
+      "bookList": ".msearch",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "kind": "span.0@text",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter9@.zhang0@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下页@href"
+    },
+    "searchUrl": "https://m.1pwx.com/bookso.php?searchtype=book&so={{key}}&fromwap=1&p={{page}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]

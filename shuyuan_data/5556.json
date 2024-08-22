@@ -1,0 +1,58 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n \n同站：\n我的书城1(已关闭搜索)\nhttps://www.qushucheng.com\n  \n我的书城2\nhttps://www.5scw.com\n搜索地址：https://www.sososhu.com/?q={{key}}&site=5scw",
+    "bookSourceGroup": "",
+    "bookSourceName": "🌸当阅读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dangyuedu.com",
+    "bookUrlPattern": "",
+    "customOrder": 52,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "最近更新::/fenlei/{{page}}\n玄幻小说::/fenlei/1/{{page}}\n奇幻小说::/fenlei/2/{{page}}\n武侠小说::/fenlei/3/{{page}}\n仙侠小说::/fenlei/4/{{page}}\n都市小说::/fenlei/5/{{page}}\n军事小说::/fenlei/6/{{page}}\n历史小说::/fenlei/7/{{page}}\n游戏小说::/fenlei/8/{{page}}\n竞技小说::/fenlei/9/{{page}}\n科幻小说::/fenlei/10/{{page}}\n悬疑小说::/fenlei/11/{{page}}\n灵异小说::/fenlei/12/{{page}}\n其他小说::/fenlei/13/{{page}}\n古代言情::/fenlei/14/{{page}}\n仙侠奇缘::/fenlei/15/{{page}}\n现代言情::/fenlei/16/{{page}}\n浪漫青春::/fenlei/17/{{page}}\n玄幻言情::/fenlei/18/{{page}}\n悬疑灵异::/fenlei/19/{{page}}\n科幻空间::/fenlei/20/{{page}}\n游戏竞技::/fenlei/21/{{page}}\nBL文小说::/fenlei/22/{{page}}\nGL文小说::/fenlei/23/{{page}}\n二次元小说::/fenlei/24/{{page}}\n完本小说::/quanben/fenlei/{{page}}",
+    "header": "@js:\nJSON.stringify({\"Referer\": baseUrl,\n\"X-Requested-With\": \"mark.via\",\n\"Accept-Language\": \"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\",\n\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; PACM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.79 Mobile Safari/537.36\"})",
+    "lastUpdateTime": "1724257563314",
+    "loginCheckJs": "var src = result.body();\nif(key && /ge_ua/.test(src)){\n\turl = java.ruleUrl;\n\tresult = java.startBrowserAwait(url, \"验证\");\n\t}\nresult",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#content@html"
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".txt-list@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "@js:\"/static/qula/nocover.jpg\"",
+      "kind": "span.0:-1@text##\\[|\\]",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": ".block > div > div:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=dangyuedu",
+    "weight": 0
+  }
+]

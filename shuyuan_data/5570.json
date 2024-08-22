@@ -1,0 +1,67 @@
+[
+  {
+    "bookSourceComment": "账号自备",
+    "bookSourceGroup": "飞卢",
+    "bookSourceName": "奇·阅读（需要登录，可看部分飞卢，刺猬猫，菠萝包的小说）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://novel.qiyuedu8.top",
+    "customOrder": -260,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\":\"排行榜（top20）\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"最新入库\",\n    \"url\":\"/module/novel/toplist.php?tid=0&type=1&limit=20&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"最多点击\",\n    \"url\":\"/module/novel/toplist.php?tid=0&type=2&limit=20&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"最多收藏\",\n    \"url\":\"/module/novel/toplist.php?tid=0&type=7&limit=20&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"最多推荐\",\n    \"url\":\"/module/novel/toplist.php?tid=0&type=12&limit=20&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"章节数量\",\n    \"url\":\"/module/novel/toplist.php?tid=0&type=22&limit=20&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"全本字数\",\n    \"url\":\"/module/novel/toplist.php?tid=0&type=21&limit=20&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"分类\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n    {\n    \"title\":\"玄幻·奇幻\",\n    \"url\":\"/module/novel/type.php?tid=1&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"武侠·仙侠\",\n    \"url\":\"/module/novel/type.php?tid=2&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n   {\n    \"title\":\"都市·言情\",\n    \"url\":\"/module/novel/type.php?tid=3&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n   {\n    \"title\":\"历史·军事\",\n    \"url\":\"/module/novel/type.php?tid=4&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n   {\n    \"title\":\"科幻·网游\",\n    \"url\":\"/module/novel/type.php?tid=9&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n   {\n    \"title\":\"恐怖·灵异\",\n    \"url\":\"/module/novel/type.php?tid=10&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n   {\n    \"title\":\"同人·其它\",\n    \"url\":\"/module/novel/type.php?tid=11&page={{page}}&process=0&word=0&chapter=0&copy=0&cost=0&letter=0&order=0&pt=wap\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  }\n]",
+    "header": "{\n    \"User-Agent\": \"Mozilla/5.0 (Linux; Android 10; MI 8 Lite Build/QKQ1.190910.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.62 Mobile Safari/537.36\",\n    \"ismobile\": 0\n  }",
+    "lastUpdateTime": "1724307583313",
+    "loginUi": "",
+    "loginUrl": "/module/user/login.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.author",
+      "coverUrl": "$.src@put:{nid:nid}@//@put:{tid:tid}",
+      "init": "$.data.info",
+      "intro": "$.text",
+      "kind": "{{$.type}}\n{{$.state}}\n{{$.tags}}",
+      "lastChapter": "$.newChapterName",
+      "name": "$.name",
+      "tocUrl": "/module/novel/menu.php?nid={{$.nid}}&tid={{$.tid}}&size=999999&pt=wap",
+      "wordCount": "$.zishu"
+    },
+    "ruleContent": {
+      "content": "$.data.chapter.content",
+      "title": "$.name"
+    },
+    "ruleExplore": {
+      "author": "$.author",
+      "bookList": "$.data.list",
+      "bookUrl": "/module/novel/info.php?nid={{$.nid}}&tid={{$.tid}}&pt=wap",
+      "coverUrl": "$.src",
+      "intro": "$.text",
+      "kind": "{{$.type}}\n{{$.state}}",
+      "lastChapter": "$.newChapterName",
+      "name": "$.name",
+      "wordCount": "$.zishu"
+    },
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "$.data.list",
+      "bookUrl": "/module/novel/info.php?nid={{$.nid}}&tid={{$.tid}}&pt=wap",
+      "checkKeyWord": "系统",
+      "coverUrl": "$.src",
+      "intro": "$.text",
+      "kind": "{{$.type}}\n{{$.state}}",
+      "lastChapter": "$.newChapterName",
+      "name": "$.name",
+      "wordCount": "$.zishu"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.list",
+      "chapterName": "$.name",
+      "chapterUrl": "/module/novel/read.php?tid=@get:{tid}&nid=@get:{nid}&cid={{$.chapterId}}&pt=wap",
+      "isVip": "",
+      "isVolume": "",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/module/novel/search.php?key={{key}}&type=1&pt=wap",
+    "weight": 0
+  }
+]

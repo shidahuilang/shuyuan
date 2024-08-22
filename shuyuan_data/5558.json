@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xgbqiuge.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/category/xuanhuanxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"修真\",\"url\":\"/category/xiuzhenxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"都市\",\"url\":\"/category/dushixiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"穿越\",\"url\":\"/category/chuanyuexiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"网游\",\"url\":\"/category/wangyouxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"科幻\",\"url\":\"/category/kehuanxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"其他\",\"url\":\"/category/qitaxiaoshuo/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"热门\",\"url\":\"/rank/allvisit/\",\"style\":{\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"全本\",\"url\":\"/quanben/category/\",\"style\":{\"layout_flexBasisPercent\":0.2}}]",
+    "lastUpdateTime": "1724248486527",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "id.fmimg@img@data-original",
+      "intro": "id.intro@text",
+      "kind": "[property=og:novel:update_time]@content&&[property=og:novel:category]@content&&[property=og:novel:status]@content",
+      "lastChapter": "class.lastchapter visible-xs@text##.*：",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": "text.字数：@p@text##字数："
+    },
+    "ruleContent": {
+      "content": "id.booktxt@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".btm@a@text",
+      "bookList": ".l@class.item",
+      "bookUrl": "dt@a@href",
+      "coverUrl": "img@data-original",
+      "intro": "dd@text",
+      "kind": "class.blue visible-xs@text",
+      "name": "dt@text",
+      "wordCount": "class.orange visible-xs@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.content_1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)\njava.ajax(url).match(/search.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  }
+]

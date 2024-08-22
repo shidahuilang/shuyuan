@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "by@zhongerxll@咔咔龙",
+    "bookSourceGroup": "不可描述",
+    "bookSourceName": "🔞 kadokado 角角者",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.kadokado.com.tw/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": "1724301084371",
+    "loginUrl": "https://www.kadokado.com.tw/",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "ownerDisplayName",
+      "canReName": "",
+      "coverUrl": "coverUrls",
+      "init": "",
+      "intro": "logline",
+      "kind": "tags&&isSerialized<js>\nresult[result.length - 1]= result[result.length - 1] ? \"连载中\" : \"已完结\";\nresult = result\n</js>",
+      "name": "displayName",
+      "tocUrl": "titleId<js>\nresult = \"https://api.kadokado.com.tw/v1/work/collection-episode?titleId=\" + result\n</js>",
+      "wordCount": "wordCount"
+    },
+    "ruleContent": {
+      "content": "content||errors",
+      "title": "displayName"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "ownerDisplayName",
+      "bookList": "data",
+      "bookUrl": "id<js>\nresult = \"https://api.kadokado.com.tw/v2/titles/\" + result\n</js>",
+      "coverUrl": "coverPath<js>\nresult = \"https://img.kadokado.com.tw/insecure/s:384/plain/\" + result\n</js>",
+      "intro": "logline",
+      "kind": "serialized<js>\nresult  = result ? \"连载中\" : \"已完结\";\n</js>",
+      "name": "displayName",
+      "wordCount": "wordCount"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nresult = JSON.parse(result)\nresultlength = result.length\nfor (var i=0; i<resultlength; resultlength--){\n let chapter = JSON.parse(java.ajax(\"https://api.kadokado.com.tw/v2/collection/withIsPurchased?publishedOnly=true&collectionId=\" + result[resultlength - 1][\"id\"].match(/\\d+/)[0]))\n Array.prototype.splice.apply(result, [resultlength, 0].concat(chapter))\n }\nfor (var i = 0; i < result.length; i++) {\n  if (!isNaN(result[i].id)) {\n  result[i].id = \"https://api.kadokado.com.tw/v2/chapter/\" + result[i].id\n  } else {\n  result[i].id = \"\"\n  }\n if (result[i].hasOwnProperty('free')) {\n result[i].free = !result[i].free\n }\n}\nresult = result\n</js>",
+      "chapterName": "displayName",
+      "chapterUrl": "id",
+      "isPay": "isPurchased",
+      "isVip": "free",
+      "isVolume": "region",
+      "updateTime": "updatedTime"
+    },
+    "searchUrl": "https://api.kadokado.com.tw/v1/main/search/page-v2,{\n  \"body\": {\n    \"keyword\": \"{{key}} {{java.t2s(key)}} {{java.s2t(key)}}\",\n    \"order\": \"LatestChapterListingFrom\",\n    \"genreIds\": [],\n    \"typeFilter\": \"All\",\n    \"statusFilter\": \"All\",\n    \"rRatedFilter\": \"All\",\n    \"paidContentFilter\": \"All\",\n    \"current\": {{page}},\n    \"limit\": 96\n  },\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

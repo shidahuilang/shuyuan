@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "目录未完整，正文下页规则未完整",
+    "bookSourceGroup": "",
+    "bookSourceName": "🙈YYDS小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.yydsxs.com",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": 1496,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"分类\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"玄幻奇幻\",\"url\":\"/fenlei/1-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠仙侠\",\"url\":\"/fenlei/2-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市青春\",\"url\":\"/fenlei/3-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻悬疑\",\"url\":\"/fenlei/4-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"穿越历史\",\"url\":\"/fenlei/5-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"浪漫浓情\",\"url\":\"/fenlei/6-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"游戏竞技\",\"url\":\"/fenlei/7-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"精品其他\",\"url\":\"/fenlei/8-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"藏经阁\",\"url\":\"/fenlei/9-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"综合其他\",\"url\":\"/fenlei/10-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"完本小说\",\"url\":\"/wanben/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"排行榜\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"总点击榜\",\"url\":\"/allvisit-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"月点击榜\",\"url\":\"/monthvisit-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"周点击榜\",\"url\":\"/weekvisit-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"总推荐榜\",\"url\":\"/allvote-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"月推荐榜\",\"url\":\"/monthvote-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"收藏排行\",\"url\":\"/goodnum-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"最近更新\",\"url\":\"/lastupdate-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"新书上架\",\"url\":\"/postdate-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"字数排行\",\"url\":\"/size-{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "header": "",
+    "lastUpdateTime": "1724230268035",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".booktag a@text",
+      "coverUrl": "img@src",
+      "intro": ".bookintro@text",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "",
+      "name": ".booktitle@text",
+      "tocUrl": "",
+      "wordCount": ".blue.0@text"
+    },
+    "ruleContent": {
+      "content": ".readcontent@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author a@text",
+      "bookList": "class.bookbox@class.p10",
+      "bookUrl": ".bookname a@href",
+      "coverUrl": "@js:\"http://www.yydsxs.com/images/nocover.jpg\"",
+      "intro": ".update@textNodes",
+      "kind": "",
+      "lastChapter": ".cat a@text",
+      "name": ".bookname a@text",
+      "wordCount": ".author.1@text##字数："
+    },
+    "ruleToc": {
+      "chapterList": "#list-chapterAll@dd a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isVolume": "//javascript:gotochapter('2332','577419')"
+    },
+    "searchUrl": "/searchok.html,{\n'charset': 'utf-8',\n'method': 'POST',\n'body': 'token=&searchkey={{key}}&action=login&submit='\n}",
+    "weight": 0
+  }
+]

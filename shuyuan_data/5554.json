@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "//搜索10s间隔,清楚一下cookie\n@寿衡",
+    "bookSourceName": "笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.chiuhagi.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔幻::/category/xhtxt/{{page}}.html\n武侠仙侠::/category/wxtxt/{{page}}.html\n都市言情::category/dstxt/{{page}}.html\n历史军事::/category/lstxt/{{page}}.html\n网游竞技::/category/wytxt/{{page}}.html\n科幻灵异::/category/khtxt/{{page}}.html\n其它类型::/category/qttxt/{{page}}.html\n女生频道::/category/nstxt/{{page}}.html",
+    "header": "{User-Agent:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36\"}",
+    "lastUpdateTime": "1724231486189",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{\nn:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property~=las?test_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\",\nt:\"text.章节目录@href\"}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}"
+    },
+    "ruleContent": {
+      "content": "#booktxt@html",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".fs-14@text",
+      "bookList": ".book-coverlist",
+      "bookUrl": "h4 a@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "a.0@style##.*?\\((.*?)\\).*?##$1###",
+      "intro": ".fs-12@text",
+      "name": "h4 a@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl dd",
+      "chapterName": "a@ownText",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://www.chiuhagi.com/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\",\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]
