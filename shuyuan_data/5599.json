@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩800小说[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.texasreadyblog.net#xsw8093",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',\"Cookie\":\"0\",\"Origin\":\"https://www.texasreadyblog.net\",\"Referer\":\"https://www.texasreadyblog.net/\"\n}",
+    "jsLib": "",
+    "lastUpdateTime": "1724580654847",
+    "loginUrl": "",
+    "respondTime": 10987,
+    "ruleBookInfo": {
+      "author": ".caption-bookinfo@p.0@a@title",
+      "coverUrl": ".thumbnail@href",
+      "init": "",
+      "intro": "",
+      "kind": ".caption-bookinfo@span@textNodes",
+      "lastChapter": "p[class^=lastchapter-]@a@title||p[^lastchapter-]@a@title",
+      "name": "h1@text",
+      "tocUrl": ".bookmore@a.1@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html##看后求收藏.*.再看更方便|本章未完.*.退出阅读模式即可，谢谢！|更多内容.*.请稍候|本站只支持手机浏览器访问.*.其他浏览器阅读！##\n@js:\nvar data = src.match(/\\$\\('#booktxthtml'\\).html\\(x\\((.+)\\)\\)/)[1].replace(/\"|'/g,'').split(\",\")\n\nresult + java.createSymmetricCrypto(\n\"AES/CBC/ZeroPadding\",\n`${data[1].replace(/^\\s+|\\s+$/g,\"\")}`,\n`${data[2].replace(/^\\s+|\\s+$/g,\"\").slice(0,16)}`\n).decryptStr(`${data[0]}`)",
+      "nextContentUrl": "text.下一页@text\n@js:\nnext=((src.match(/const next_page+( = |=)+(\"(.+)\"|'(.+)')/)||[])[2]||'').replace(/\"|'/g,'')\nif(next.includes(\"_\")){\nresult = next\n}else{\nresult = ''\n}\nresult",
+      "replaceRegex": "##.*{{book.name}}.*|.*{{book.author}}.*|.*{{chapter.title}}.*|本章未完.*"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".book-coverlist",
+      "bookUrl": "h4@a@href",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": ".status .label@text",
+      "lastChapter": "",
+      "name": "h4@a@title",
+      "checkKeyWord": "三国之我的霸业在三国"
+    },
+    "ruleToc": {
+      "chapterList": ".panel-chapterlist@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "@js:\nvar su=source.getKey()\nvar htmlUrl=java.get(su,{}).headers('Location')\njava.log(`重定向：${htmlUrl[0]}`)\nvar posturl=htmlUrl[0]?htmlUrl[0]:(su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su)\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\ncookie.removeCookie(posturl)\njava.log(`请求：${posturl}`)\n\nck=cookie.getCookie(posturl);\n\ncookie.setCookie(posturl,String(ck).replace(/search_delay=.*/,\"\"));\n\nso=posturl+\"/search,\"+JSON.stringify({\n  \"body\": \"searchkey=\"+key,\n  \"method\": \"POST\"\n});\njava.put(\"url\",String(so))\nso",
+    "weight": 0
+  }
+]

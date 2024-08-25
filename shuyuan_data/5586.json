@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "//发现只显示24",
+    "bookSourceGroup": "🎉精选",
+    "bookSourceName": "🎉 新笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.bqg369.com/",
+    "bookUrlPattern": "https://m.bqg369.com/Novel/\\D+",
+    "customOrder": 81,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻奇幻\",\"url\":\"/Category/XuanHuanQiHuan\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠仙侠\",\"url\":\"/Category/WuXiaXianXia\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市娱乐\",\"url\":\"/Category/DuShiYuLe\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史军事\",\"url\":\"/Category/LiShiJunShi\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻末世\",\"url\":\"/Category/KeHuanMoShi\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"游戏竞技\",\"url\":\"/Category/YouXiJingJi\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"言情小说\",\"url\":\"/Category/YanQingXiaoShuo\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"其他小说\",\"url\":\"/Category/QiTaXiaoShuo\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"全本小说\",\"url\":\"/QuanBen.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n\n]",
+    "lastUpdateTime": "1724428818576",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.book-meta a@a.1@text",
+      "coverUrl": "class.book-layout.0@img@src",
+      "intro": "&nbsp;\n⏰时间：{{@@#newtime@textNodes##时间：}}\n💡简介：{{@@class.book-summary@text}}",
+      "kind": "class.book-meta a@a.0@text&&#newtime@a@text##【|】",
+      "lastChapter": "#newchapter@a@text",
+      "name": "h1.book-title@text##\\(.*\\)"
+    },
+    "ruleContent": {
+      "content": "#bodybox@p@textNodes"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.book-author@text",
+      "bookList": "ol@class.book-li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "头狼",
+      "coverUrl": "a.0@img@crs",
+      "intro": "class.book-desc@text",
+      "kind": "class.book-meta-r@em[0,1]@text",
+      "name": "class.book-title@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.novel-text-list.1@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "https://m.bqg369.com/Search/{{key}}.html",
+    "weight": 0
+  }
+]

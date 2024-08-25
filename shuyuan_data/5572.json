@@ -1,0 +1,76 @@
+[
+  {
+    "bookSourceComment": "同站：\n小强小说 https://www.xiaoqiangla.com",
+    "bookSourceGroup": "",
+    "bookSourceName": "你的地址",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.nidedizhi.com",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "coverDecodeJs": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "高辣小说::/sort/1/{{page}}/\n百合小说::/sort/2/{{page}}/\n言情小说::/sort/3/{{page}}/\n情欲小说::/sort/4/{{page}}/\n耽美小说::/sort/5/{{page}}/\n海棠小说::/sort/6/{{page}}/\n其他小说::/sort/8/{{page}}/\n完本小说::/quanben/sort/{{page}}/",
+    "header": "",
+    "lastUpdateTime": "1724336138220",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 20160,
+    "ruleBookInfo": {
+      "author": ".bookinfo@td.1@p.1@text##作者：",
+      "canReName": "",
+      "coverUrl": "tag.img@src",
+      "init": "",
+      "intro": ".intro@p@text",
+      "kind": ".bookinfo@td.1@p.2@text##类别：",
+      "lastChapter": "valign.top@p.5@text",
+      "name": "strong@text",
+      "tocUrl": "class.more@a@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.nr1@text",
+      "imageStyle": "",
+      "nextContentUrl": ".next@a@href",
+      "replaceRegex": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": ".article@p@text##作者:",
+      "bookList": ".list-item",
+      "bookUrl": ".article@a.0@href",
+      "coverUrl": "@js:\"/images/10/10283/10283s.jpg\"",
+      "intro": ".article@a.1@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": ".article@a.0@text"
+    },
+    "ruleSearch": {
+      "author": "span.0@text",
+      "bookList": ".list-item",
+      "bookUrl": "a.0@href",
+      "coverUrl": "@js:\"/images/10/10283/10283s.jpg\"",
+      "intro": "span.2@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".last9@li!0",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "isVip": "",
+      "isVolume": "",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "/search,{\n\t\"charset\":\"UTF-8\",\n \"method\": \"POST\",\n \"body\": \"searchkey={{key}}&searchtype=all\"\n}",
+    "variableComment": "",
+    "weight": 0
+  }
+]

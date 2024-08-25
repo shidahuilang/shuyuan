@@ -1,0 +1,66 @@
+[
+  {
+    "bookSourceComment": "https://h.x360xs.com/index.php?m=user/login\n理论上不需要登陆的\n/*legado&&coolapk by:\nxsw8093*/",
+    "bookSourceGroup": "小说 书源",
+    "bookSourceName": "忙小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://h.x360xs.com/",
+    "bookUrlPattern": "",
+    "customOrder": 5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": "1724437906419",
+    "loginUrl": "https://h.x360xs.com/index.php?m=user/login",
+    "respondTime": 1333,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "class.chapter_list@tag.ul@tag.li.-1@tag.a@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\n var arr=title;\n var srt=title.replace(/ /g,\"\");\n var sft=title.replace(/第.*?章./g,\"第.*?\");\n var sfc=sft.replace(/$/g,\".*?页\");\n var sfn=sft.replace(/$/g,\".*?继续阅读。\");\n var srf=title.replace(/ /g,\"　\");\n var fdr=title.replace(/[0-9]+[\\s|\\u3000]/g,\"\");\n var dff=src.replace(new RegExp(arr,\"g\"),\"\");\n var dfc=dff.replace(new RegExp(\"\\n.{1,7}\"+fdr,\"g\"),\"\");\n result=dfc.replace(new RegExp(srf,\"g\"),\"\").replace(new RegExp(srt,\"g\"),\"\").replace(new RegExp(sfn,\"g\"),\"\").replace(new RegExp(sfc,\"g\"),\"\");\n</js>\nclass.chapter@html\n##本章由熱門小說網\\(\\.Remenxs\\.\\)提供免費閱讀！|（第[0-9]页）",
+      "imageStyle": "0",
+      "nextContentUrl": "##\\_\\_\\_XSXSXS\\|[0-9]+\\|book\\|([0-9a-zA-Z\\-\\_\\/+]{6,30})\\|x360xs##\\/$1###\n<js>\nlet bookId=baseUrl.replace(\"https://h.x360xs.com/book/\",\"\").split(\"/\")[0];\nlet arr= \"https://h.x360xs.com/book/\"+bookId+\"/\"\nvar srt=result\nresult=arr + srt + '.html';\n</js>",
+      "replaceRegex": "##\\u3000+（第[0-9]页）\\n|（本章节完结）[\\s\\S]*|\\n\\u3000{2}（本章节未完结，点击下一页翻页继续阅读）\\n\\u3000{2}"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "tag.a.1@href",
+      "coverUrl": "img@src",
+      "intro": "tag.p.1@text##简介.|各位书友.*",
+      "kind": "",
+      "lastChapter": "tag.a.3@text##.*\\.",
+      "name": "",
+      "wordCount": "tag.p.0@text##.*字数.|K\n@js:'约' + parseInt(result*0.052) + '万'"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "$.authorname",
+      "bookList": "$.Data.search_response.books[*]",
+      "bookUrl": "https://h.x360xs.com/book/{{$.bookid}}/",
+      "coverUrl": "$.coverurl",
+      "intro": "$.description",
+      "kind": "$.raw_categoryname##\\|##,",
+      "lastChapter": "$.lastvipchaptername",
+      "name": "$.bookname",
+      "wordCount": "$.wordscount"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterlist@class.dtl-cell",
+      "chapterName": "class.dc-cap@tag.a@text",
+      "chapterUrl": "class.dc-cap@tag.a@href",
+      "isVip": "class.dc-point red",
+      "nextTocUrl": "class.pageselect@tag.select@option@value"
+    },
+    "searchUrl": "@js:\nvar  cookieString=java.getCookie(\"https://h.x360xs.com/\", null)+\";\"\n\nif(java.getCookie(\"https://h.x360xs.com/\", \"uid\")==\"\"){\ncookieString+=`uid=1032907;`\n}\n\nif(java.getCookie(\"https://h.x360xs.com/\", \"sid\")==\"\"){\ncookieString+=`sid=4zDZCyeudiUJxiXRDourLyAaUzZGmBsN;`\n}\n\nif(java.getCookie(\"https://h.x360xs.com/\", \"Hm_lpvt_26a65df6e271260d5efd7ee44f1af7dc\")==\"\"){\ncookieString+=`Hm_lpvt_26a65df6e271260d5efd7ee44f1af7dc=${Date.parse(new Date())/1000};`\n}\nif(java.getCookie(\"https://h.x360xs.com/\", \"Hm_lvt_26a65df6e271260d5efd7ee44f1af7dc\")==\"\"){\ncookieString+=`Hm_lvt_26a65df6e271260d5efd7ee44f1af7dc=${Date.parse(new Date())/1000};`\n}\n\"/book/,\"+JSON.stringify({\n  \"method\": \"POST\",\n  \"body\": \"ajaxMethod=getsearchbooks&page={{page}}&pagesize=10&isvip=-1&cid=-1&sort=0&flag=-1&searchkey={{key}}&site=-1&again=0&range=-1\",\n\"headers\":{\n     \"Cookie\":cookieString\n  }\n})",
+    "weight": 0
+  }
+]

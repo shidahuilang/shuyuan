@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "原地址：https://www.69shuba.info",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍒69书吧②",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.69haoshu.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻魔法\",\"url\":\"/class/1_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"武侠修真\",\"url\":\"/class/2_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市言情\",\"url\":\"/class/3_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史军事\",\"url\":\"/class/4_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"侦探推理\",\"url\":\"/class/5_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"游戏竞技\",\"url\":\"/class/6_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻小说\",\"url\":\"/class/7_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"女生耽美\",\"url\":\"/class/8_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"精品推荐\",\"url\":\"/class/10_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": "1724402250383",
+    "respondTime": 14686,
+    "ruleBookInfo": {
+      "author": "id.info@a.0@text",
+      "coverUrl": "id.fmimg@img@data-original",
+      "intro": "id.intro@text",
+      "kind": "id.info@p.1@text&&.con_top@a.1@text",
+      "lastChapter": "id.info@a.1@text",
+      "name": "id.info@h1@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.booktxt@p@text",
+      "imageStyle": "",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": ".s4@text",
+      "bookList": ".l@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href##.+\\D((\\d+)\\d{3})\\D##https://img.69shuba.info/$2/$1/$1s.jpg###",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".item",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-src",
+      "intro": "dd@text",
+      "kind": "em.1@text",
+      "name": "a.1@text",
+      "wordCount": "em.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list@dl@a!0:1:2:3:4:5:6:7",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)}}/ss/?searchkey={{key}}",
+    "weight": 0
+  }
+]
