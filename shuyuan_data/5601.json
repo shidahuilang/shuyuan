@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "                    \"error:timeout\n                                        \"error:timeout\n                    \"error:failed to connect to www.maxreader.net/31.13.88.169 (port 80) from /192.168.10.3 (port 51420) after 15000ms\n\"\"\"",
+    "bookSourceGroup": "",
+    "bookSourceName": "🌸 文墨中文网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.maxreader.net/",
+    "bookUrlPattern": "",
+    "customOrder": -5,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": "1724585145875",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "",
+      "intro": "",
+      "lastChapter": "",
+      "tocUrl": "text.目录@href"
+    },
+    "ruleContent": {
+      "content": "class.size16 color5 pt-read-text@html## |本章未完.*|百度搜索阅读最新最全.*|猫扑中文|[()]|.*最新章节第一时间免费.*",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.fl color7@class.mr30@tag.a.0@title",
+      "bookList": "class.pt-rank-detail",
+      "bookUrl": "class.pt-rank-detail@tag.a.0@href",
+      "coverUrl": "tag.img.0@src",
+      "kind": "text.分类@text",
+      "lastChapter": "class.fl lh100@tag.a@title",
+      "name": "class.pt-rank-detail@tag.a.0@title"
+    },
+    "ruleToc": {
+      "chapterList": "id.readerlists@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "http://www.maxreader.net/search/result.html?searchkey={{key}}",
+    "weight": 0
+  }
+]

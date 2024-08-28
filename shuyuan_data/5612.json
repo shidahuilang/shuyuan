@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🔞第一版主buzz",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.diyibanzhu.buzz",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "最近更新::http://m.diyibanzhu.buzz/top/lastupdate_{{page}}/\n最新入库::http://m.diyibanzhu.buzz/top/postdate_{{page}}/\n总点击榜::http://m.diyibanzhu.buzz/top/allvisit_{{page}}/\n总收藏榜::http://m.diyibanzhu.buzz/top/goodnum_{{page}}/\n总推荐榜::http://m.diyibanzhu.buzz/top/allvote_{{page}}/\n总字数榜::http://m.diyibanzhu.buzz/top/size_{{page}}/\n完本小说::http://m.diyibanzhu.buzz/full/{{page}}/\n玄幻小说::http://m.diyibanzhu.buzz/sort/1_{{page}}/\n仙侠小说::http://m.diyibanzhu.buzz/sort/2_{{page}}/\n都市小说::http://m.diyibanzhu.buzz/sort/3_{{page}}/\n军史小说::http://m.diyibanzhu.buzz/sort/4_{{page}}/\n网游小说::http://m.diyibanzhu.buzz/sort/5_{{page}}/\n科幻小说::http://m.diyibanzhu.buzz/sort/6_{{page}}/\n耽美小说::http://m.diyibanzhu.buzz/sort/7_{{page}}/\n辣文合集::http://m.diyibanzhu.buzz/sort/8_{{page}}/",
+    "lastUpdateTime": "1724834829296",
+    "loginUrl": "",
+    "respondTime": 33399,
+    "ruleBookInfo": {
+      "coverUrl": "class.pic@img@src",
+      "intro": "class.intro@p@textNodes",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+      "lastChapter": "class.infotype@tag.p.3@a@text",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": ".articlecontent@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author@a@text||class.p3@text",
+      "bookList": "class.searchresult@p||class.article||class.articlegeneral||class.full_content",
+      "bookUrl": "a@href",
+      "checkKeyWord": "出轨",
+      "coverUrl": "img@src||tag.a.0@href##.*/(\\d+)/(\\d+)/##http://www.diyibanzhu.buzz/files/article/image/$1/$2/$2s.jpg",
+      "intro": "class.simple@textNodes",
+      "kind": "class.p1@text##\\[|]",
+      "name": "h6@a@text||tag.a.0@text##《|》"
+    },
+    "ruleToc": {
+      "chapterList": "class.chapters@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href##//m##//www",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/s.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"s={{key}}&type=articlename\"\n}",
+    "weight": 0
+  }
+]

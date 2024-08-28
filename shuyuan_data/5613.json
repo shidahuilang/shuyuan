@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🔞18文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://wap.po18.in",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "全部分类::/sort/{{page}}/\n校园言情::/sort/xiaoyuan/{{page}}/\n都市言情::/sort/dushi/{{page}}/\n罗曼史::/sort/luoman/{{page}}/\n耽美::/sort/danmei/{{page}}/\n百合::/sort/baihe/{{page}}/\n同人::/sort/tongren/{{page}}/\n古代爱情::/sort/gudai/{{page}}/\n奇幻玄幻::/sort/qihuan/{{page}}/\n网游竞技::/sort/wangyou/{{page}}/\n科幻异能::/sort/kehuan/{{page}}/\n恐怖灵异::/sort/kongbu/{{page}}/\n惊悚推理::/sort/jingsong/{{page}}/\n武侠仙侠::/sort/wuxia/{{page}}/\n历史军事::/sort/lishi/{{page}}/\n穿越重生::/sort/chuanyue/{{page}}/\n综合其他::/sort/qita/{{page}}/\n全本小说::/quanben/{{page}}/\n周点击榜::/rank/weekvisit/\n月点击榜::/rank/monthvisit/\n总点击榜::/rank/allvisit/\n 收藏榜  ::/rank/goodnum/",
+    "header": "",
+    "lastUpdateTime": "1724836281503",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".booktitle@a.1@text",
+      "coverUrl": ".book-cover@img@src",
+      "intro": "##小说简介.([^<]+)##$1###",
+      "kind": ".breadcrumb@a.1@text&&.bookdes@p.0:3@text",
+      "lastChapter": ".bookdes@a@text",
+      "name": ".booktitle@a.0@text",
+      "tocUrl": ".btn@a.0@href",
+      "wordCount": ".bookdes@p.0@text"
+    },
+    "ruleContent": {
+      "content": "id.booktxt@html",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".content dl",
+      "bookUrl": "a.1@href##/kan/##/info/",
+      "checkKeyWord": "凡人",
+      "coverUrl": "img@data-original",
+      "intro": "dd.0@text",
+      "kind": "span.0@text",
+      "name": "a.1@text",
+      "wordCount": "span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": ".bookchapter@ul li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]
