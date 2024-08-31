@@ -1,0 +1,452 @@
+[
+  {
+    "ruleExplore": {
+      "author": "class.line@tag.a.2@text",
+      "kind": "class.line@tag.a.0@text",
+      "bookUrl": "class.blue@href",
+      "name": "class.blue@text",
+      "bookList": ".cover@p"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "author": "class.line@tag.a.2@text",
+      "kind": "class.line@tag.a.0@text",
+      "bookUrl": "class.blue@href",
+      "name": "class.blue@text",
+      "bookList": "class.cover@tag.p"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "id.nr1@textNodes",
+      "nextContentUrl": "id.pb_next@href"
+    },
+    "searchUrl": "http://m.111bz.cc/s.php,{\n  \"method\" : \"POST\",\n  \"body\" : \"type=articlename&s={{key}}\",\n  \"charset\" : \"gbk\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterUrl": "href",
+      "chapterList": "class.chapter.0@tag.li@tag.a",
+      "nextTocUrl": "class.page@tag.a.0@href",
+      "chapterName": "text"
+    },
+    "enabled": true,
+    "bookSourceUrl": "http://m.111bz.cc",
+    "bookSourceName": "第一版主小说网-新",
+    "exploreUrl": "日点击榜::/top/dayvisit_{{page}}/\n周点击榜::/top/weekvisit_{{page}}/\n月点击榜::/top/monthvisit_{{page}}/\n总点击榜::/top/allvisit_{{page}}/\n总收藏榜::/top/goodnum_{{page}}/\n字数排行::/top/size_{{page}}/\n日推荐榜::/top/dayvote_{{page}}/\n周推荐榜::/top/weekvote_{{page}}/\n月推荐榜::/top/monthvote_{{page}}/\n总推荐榜::/top/allvote_{{page}}/\n最新入库::/top/postdate_{{page}}/\n最近更新::/top/lastupdate_{{page}}/",
+    "bookSourceGroup": "",
+    "ruleBookInfo": {
+      "coverUrl": "class.block_img2@tag.img@src",
+      "author": "class.block_txt2@tag.p.1@tag.a@text",
+      "name": "tag.h2@text",
+      "intro": "class.intro_info@text",
+      "tocUrl": "class.ablum_read@tag.span.1@tag.a@href"
+    }
+  },
+  {
+    "ruleExplore": {
+      "author": "tag.td.1@text",
+      "kind": "tag.td.2@text",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text",
+      "bookList": "tbody@tag.tr||.list-group-item"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "author": "tag.td.2@text",
+      "bookList": "tbody@tag.tr",
+      "lastChapter": "tag.td.1@text",
+      "coverUrl": "tag.a.0@tag.img@src",
+      "kind": "tag.td.3@text",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "id.content@html"
+    },
+    "searchUrl": "https://www.xiangtxsw.com/e/search/index.php,{\n  \"body\" : \"keyboard={{key}}&tbname=bookname&show=title,writer&tempid=1&page={{page}}\",\n  \"method\" : \"POST\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "chapterList": "id.booklist@tag.li"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://www.xiangtxsw.com",
+    "bookSourceName": "乡村小说-新",
+    "exploreUrl": "总排行榜::/book\n总推荐榜::/top",
+    "bookSourceGroup": "18禁",
+    "ruleBookInfo": {
+      "intro": ".m-summary@html",
+      "lastChapter": "id.booklist@tag.a.-1@text",
+      "coverUrl": "[property=\"og:image\"]@content"
+    }
+  },
+  {
+    "ruleExplore": {
+      "coverUrl": "class.pic@tag.a@img@src",
+      "author": "class.author@tag.a.0@text",
+      "bookUrl": "class.p2@tag.a.0@href",
+      "name": "class.p2@tag.a.0@text",
+      "bookList": "class.articlegeneral",
+      "intro": "class.simple@text"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "coverUrl": "a@href",
+      "author": "class.author@text||class.p3@text",
+      "bookUrl": "a@href",
+      "name": "h6@a@text||tag.a.0@text",
+      "bookList": "class.searchresult@p||class.article||class.articlegeneral"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "class.novelcontent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.myshuge.org/search/,{\n  \"method\" : \"POST\",\n  \"body\" : \"searchkey={{key}}&submit=&type=articlename\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterUrl": "href",
+      "chapterList": "class.chapters@li@a",
+      "nextTocUrl": "text.下一页@href",
+      "chapterName": "text##.*vIP|.*мē|.*иéτ"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://www.myshuge.org",
+    "bookSourceName": "🔞我的书阁",
+    "exploreUrl": "周排行榜::/rank/weekvisit/\n最近更新::/rank/monthvisit/\n总排行榜::/rank/\n总收藏榜::/rank/goodnum/",
+    "bookSourceGroup": "18",
+    "ruleBookInfo": {
+      "author": "class.infotype@tag.a.0@text",
+      "tocUrl": "a@text.章节目录@a@href",
+      "lastChapter": "class.infotype@tag.p.3@a@text",
+      "intro": "class.intro@tag.p@text##",
+      "coverUrl": "class.pic@img@src",
+      "kind": "class.infotype@tag.p.1@text##类型：",
+      "name": "class.cataloginfo@tag.h3@text"
+    }
+  },
+  {
+    "ruleExplore": {
+      "coverUrl": "tag.img@src||tag.a.1@href##.+\\D((\\d+)\\d{3})\\D##https://www.wmp8.com/files/article/image/$2/$1/$1s.jpg###",
+      "author": ".p4@text||.p3 a@text",
+      "kind": "p@.p2@text&&.p1 a@text##\\[|\\]",
+      "bookUrl": "tag.a.1@href",
+      "name": "tag.a.1@text##\\_.*",
+      "bookList": ".tt||.content_link"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "coverUrl": "tag.a.0@href##.+\\D((\\d+)\\d{3})\\D##https://www.wmp8.com/files/article/image/$2/$1/$1s.jpg###",
+      "author": "tag.a.2@text",
+      "kind": "tag.a.1@text",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text##\\_.*",
+      "bookList": ".search_list"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "id.novelcontent@html"
+    },
+    "searchUrl": "https://m.wmp8.com/s.php,{\n  \"charset\" : \"gbk\",\n  \"method\" : \"POST\",\n  \"body\" : \"s={{key}}&type=articlename\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterUrl": "tag.a@href",
+      "chapterList": "class.info_chapters@tag.ul.1@tag.a",
+      "nextTocUrl": "text.下一页@href",
+      "chapterName": "tag.a@text"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://m.wmp8.com",
+    "bookSourceName": "🔞 御书屋①",
+    "exploreUrl": "总榜::/top/allvisit_{{page}}/\n月榜::/top/monthvisit_{{page}}/\n周榜::/top/weekvisit_{{page}}/\n总推::/top/allvote_{{page}}/\n月推::/top/monthvote_{{page}}/\n周推::/top/weekvote_{{page}}/\n站推::/top/toptime_{{page}}/\n收藏::/top/goodnum_{{page}}/\n字数::/top/size_{{page}}/\n最近::/top/lastupdate_{{page}}/\n最新::/top/postdate_{{page}}/\n耽美::/sort/1_{{page}}/\n百合::/sort/2_{{page}}/\n言情::/sort/3_{{page}}/\n高辣::/sort/4_{{page}}/\n腹黑::/sort/5_{{page}}/\n种田::/sort/6_{{page}}/\n高干::/sort/7_{{page}}/\n玄幻::/sort/8_{{page}}/\n修真::/sort/9_{{page}}/\n其他::/sort/10_{{page}}/\n武侠::/sort/11_{{page}}/\n都市::/sort/12_{{page}}/\n科幻::/sort/13_{{page}}/\n网游::/sort/14_{{page}}/\n恐怖::/sort/15_{{page}}/\n历史::/sort/16_{{page}}/\n同人::/sort/17_{{page}}/",
+    "bookSourceGroup": "18",
+    "ruleBookInfo": {
+      "coverUrl": ".tu@img@src",
+      "author": ".tab@tag.p.0@text##.*：",
+      "kind": ".tab1@tag.p.0@text&&.tab1@tag.p.1@text##小说",
+      "name": "tag.h1.0@text##\\_.*",
+      "intro": ".jj@p@html",
+      "lastChapter": ".tab@a@text"
+    }
+  },
+  {
+    "ruleExplore": {
+      "author": "tag.td.1@text",
+      "kind": "tag.td.2@text",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text",
+      "bookList": "tbody@tag.tr||.list-group-item"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "lastChapter": "tag.li1@tag.a@text",
+      "author": "tag.li.2@text",
+      "bookUrl": "tag.li.0@tag.a@href",
+      "name": "tag.li.0@tag.a@text",
+      "bookList": "class.mySearch@ul",
+      "intro": "class.gray.1@text"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "id.htmlContent@textNodes",
+      "nextContentUrl": "text.下一章@href"
+    },
+    "searchUrl": "http://www.yuwangshe.net/modules/article/search.php?searchkey={{key}}&page={{page}},{\n  \"charset\" : \"gbk\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "chapterList": "class.panel-body panel-chapterlist@tag.dd@tag.a"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://www.yuwangshe.net",
+    "bookSourceName": "🔞 欲望社",
+    "exploreUrl": "总排行榜::/top/allvisit/{{page}}.html\n总推荐榜::/top/allvote/{{page}}.html\n月排行榜::/top/monthvisit/{{page}}.html\n月推荐榜::/top/monthvote/{{page}}.html\n周排行榜::/top/weekvisit/{{page}}.html\n周推荐榜::/top/weekvote/{{page}}.html\n",
+    "bookSourceGroup": "18",
+    "ruleBookInfo": {
+      "coverUrl": "class.img-thumbnail@src",
+      "author": "class.bookTitle@class.red@text",
+      "name": "class.bookTitle@tag.a.0@text",
+      "intro": "id.bookIntro@text",
+      "lastChapter": "class.col-md-10@tag.p.2@tag.a@text"
+    }
+  },
+  {
+    "ruleExplore": {},
+    "bookSourceType": 0,
+    "ruleSearch": {
+      "coverUrl": "@JSon:$.cover",
+      "author": "@JSon:$.author",
+      "bookUrl": "@JSon:$.id@js:\"https://api.rouwenapp.com/reader/book/detail?bookId=\"+result",
+      "name": "@JSon:$.title",
+      "bookList": "@JSon:$.data.*",
+      "lastChapter": "@JSon:$.last_update_chapter_name||$..intro"
+    },
+    "ruleBookInfo": {
+      "intro": "@JSon:$.data.intro",
+      "tocUrl": "@JSon:https://api.rouwenapp.com/reader/book/chapter?bookId={$.data.id}&number=0"
+    },
+    "bookUrlPattern": "",
+    "ruleContent": {
+      "content": "class.novelcontent@html"
+    },
+    "loginUrl": "",
+    "searchUrl": "https://api.rouwenapp.com/reader/book/search?app_key=4037465544&page=<{{page}}>&keyword={{key}}&bookSource=read52v2",
+    "weight": 0,
+    "header": "{\n  \"User-Agent\" : \"okhttp\\/3.11.0\"\n}",
+    "ruleToc": {
+      "chapterUrl": "@JSon:$.contentUrl",
+      "chapterList": "@JSon:$.data.chapterList.*",
+      "nextTocUrl": "https://api.rouwenapp.com/reader/book/chapter/next?chapterId={$.data.chapterId}",
+      "chapterName": "@JSon:$.title"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://api.rouwenapp.com",
+    "bookSourceName": "自制书源[18禁][永久有效]🔥",
+    "bookSourceGroup": "18",
+    "exploreUrl": "都市言情::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=14\n校园言情::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=11\n穿越重生::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=12\n综合其他::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=7\n奇幻玄幻::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=10\n百合::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=8\n武侠仙侠::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=5\n科幻异能::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=13\n古代言情::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=6\n同人::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=3\n罗曼史::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=4\n恐怖灵异::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=1\n",
+    "customOrder": 0
+  },
+  {
+    "ruleExplore": {},
+    "bookSourceType": 0,
+    "ruleSearch": {
+      "coverUrl": "@JSon:$.cover",
+      "author": "@JSon:$.author",
+      "bookUrl": "@JSon:$.id@js:\"https://api.rouwenapp.com/reader/book/detail?bookId=\"+result",
+      "name": "@JSon:$.title",
+      "bookList": "@JSon:$.data.*",
+      "lastChapter": "@JSon:$.last_update_chapter_name||$..intro"
+    },
+    "ruleBookInfo": {
+      "intro": "@JSon:$.data.intro",
+      "tocUrl": "@JSon:https://api.rouwenapp.com/reader/book/chapter?bookId={$.data.id}&number=0"
+    },
+    "bookUrlPattern": "",
+    "ruleContent": {
+      "content": "id.rtext@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "loginUrl": "",
+    "searchUrl": "https://api.rouwenapp.com/reader/book/search?app_key=4037465544&page=<{{page}}>&keyword={{key}}&bookSource=po18xyz",
+    "weight": 0,
+    "header": "{\n  \"User-Agent\" : \"okhttp\\/3.11.0\"\n}",
+    "ruleToc": {
+      "chapterUrl": "@JSon:$.contentUrl",
+      "chapterList": "@JSon:$.data.chapterList.*",
+      "nextTocUrl": "https://api.rouwenapp.com/reader/book/chapter/next?chapterId={$.data.chapterId}",
+      "chapterName": "@JSon:$.title"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://po18.rouwenapp.com",
+    "bookSourceName": "🔞自制书源2【永久有效】",
+    "bookSourceGroup": "18",
+    "exploreUrl": "都市言情::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=15\n奇幻玄幻::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=17\n武侠仙侠::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=18\n穿越重生::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=19\n综合其他::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=20\n",
+    "customOrder": 0
+  },
+  {
+    "ruleExplore": {},
+    "bookSourceType": 0,
+    "ruleSearch": {
+      "coverUrl": "@JSon:$.cover",
+      "author": "@JSon:$.author",
+      "bookUrl": "@JSon:$.id@js:\"https://api.rouwenapp.com/reader/book/detail?bookId=\"+result",
+      "name": "@JSon:$.title",
+      "bookList": "@JSon:$.data.*",
+      "lastChapter": "@JSon:$.last_update_chapter_name||$..intro"
+    },
+    "ruleBookInfo": {
+      "intro": "@JSon:$.data.intro",
+      "tocUrl": "@JSon:https://api.rouwenapp.com/reader/book/chapter?bookId={$.data.id}&number=0"
+    },
+    "bookUrlPattern": "",
+    "ruleContent": {
+      "content": "id.rtext@textNodes",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "loginUrl": "",
+    "searchUrl": "https://api.rouwenapp.com/reader/book/search?app_key=4037465544&page=<{{page}}>&keyword={{key}}&bookSource=po18to",
+    "weight": 0,
+    "header": "{\n  \"User-Agent\" : \"okhttp\\/3.11.0\"\n}",
+    "ruleToc": {
+      "chapterUrl": "@JSon:$.contentUrl",
+      "chapterList": "@JSon:$.data.chapterList.*",
+      "nextTocUrl": "https://api.rouwenapp.com/reader/book/chapter/next?chapterId={$.data.chapterId}",
+      "chapterName": "@JSon:$.title"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://po18to.rouwenapp.com",
+    "bookSourceName": "🔞自制书源3【永久有效】",
+    "bookSourceGroup": "18",
+    "exploreUrl": "都市言情::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=22\n奇幻玄幻::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=25\n武侠仙侠::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=27\n穿越重生::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=28\n综合其他::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=29\n校园言情::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=21\n科幻异能::https://api.rouwenapp.com/reader/book/category/book?app_key=4037465544&page=<{{page}}>&cateId=26\n",
+    "customOrder": 0
+  },
+  {
+    "ruleExplore": {
+      "coverUrl": "tag.dl.a.0@img@src",
+      "author": "tag.dl.dd.1.a@text",
+      "bookUrl": "tag.dl@dt@a@href",
+      "name": "tag.dl@dt@a@text",
+      "bookList": "class.content@tag.dl",
+      "intro": "tag.dl.dd.0@text"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "coverUrl": "tag.dl.a.0@img@src",
+      "author": "tag.dl.dd.1.a@text",
+      "bookUrl": "tag.dl@dt@a@href",
+      "name": "tag.dl@dt@a@text",
+      "bookList": "class.content@tag.dl",
+      "intro": "tag.dl.dd.0@text"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "id.booktxt@html##追·更.*cᴏm.*"
+    },
+    "searchUrl": "https://www.po18.in/modules/article/search.php?searchkey={{key}}&page={{page}},{\n  \"charset\" : \"gbk\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "chapterList": "class.all@ul@li"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://www.po18.in",
+    "bookSourceName": "🤶🏻脸红心跳",
+    "exploreUrl": "日点击榜::https://www.po18.in/rank/dayvisit/\n周点击榜::https://www.po18.in/rank/weekvisit/\n月点击榜::https://www.po18.in/rank/monthvisit/\n总点击榜::https://www.po18.in/rank/allvisit/",
+    "bookSourceGroup": "18",
+    "ruleBookInfo": {
+      "intro": "class.bookintro.@tag.p@text"
+    }
+  },
+  {
+    "ruleExplore": {
+      "author": "tag.strong@text||class.list_author@tag.span@text",
+      "bookList": "class.common-bookele||id.list_ul@tag.li",
+      "intro": "class.abstract@tag.a@textNodes",
+      "coverUrl": "@js:'https://m.kanshujun.com/style/noimg.jpg'",
+      "kind": "tag.li@tag.a.0@text",
+      "bookUrl": "h3@tag.a.0@href||tag.a.1@href",
+      "name": "h3@tag.a.0@text||tag.a.1@text##_PO18"
+    },
+    "customOrder": 0,
+    "ruleSearch": {
+      "coverUrl": "@js:'https://m.kanshujun.com/style/noimg.jpg'",
+      "author": "tag.strong@text",
+      "kind": "tag.p.1@text##栏目.",
+      "bookUrl": "tag.a.0@href",
+      "name": "tag.a.0@text",
+      "bookList": "class.common-bookele"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "id.nr1@html",
+      "nextContentUrl": "//*[@id=\"pt_next\"]/@href"
+    },
+    "searchUrl": "https://m.po18.xyz/s.php,{\n  \"method\" : \"POST\",\n  \"body\" : \"type=articlename&s={{key}}\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterUrl": "href",
+      "chapterList": "tag.div.0@tag.ul@tag.li!-1@a",
+      "nextTocUrl": "//*[@style=\"color:red;\"]/@href",
+      "chapterName": "text"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://m.po18.xyz/",
+    "bookSourceName": "po18⁵",
+    "exploreUrl": "都市::/wapsort/1_{{page}}.html\n浓情::/wapsort/2_{{page}}.html\n言情::/wapsort/3_{{page}}.html\n校园::/wapsort/4_{{page}}.html\n武侠::/wapsort/5_{{page}}.html\n玄幻::/wapsort/6_{{page}}.html\n穿越::/wapsort/7_{{page}}.html\n惊悚::/wapsort/8_{{page}}.html\n悬疑::/wapsort/9_{{page}}.html\n重生::/wapsort/10_{{page}}.html\n历史::/wapsort/11_{{page}}.html\n网游::/wapsort/12_{{page}}.html\n科幻::/wapsort/13_{{page}}.html\n耽美::/wapsort/14_{{page}}.html\n高干::/wapsort/15_{{page}}.html\n种田::/wapsort/16_{{page}}.html\n百合::/wapsort/17_{{page}}.html\n其他::/wapsort/18_{{page}}.html\n快穿::/tag/kc/p_{{page}}.html\n美攻::/tag/mg/p_{{page}}.html\n肉文::/tag/rw/p_{{page}}.html\n年下::/tag/nx/p_{{page}}.html\n年上::/tag/ns/p_{{page}}.html\n网游::/tag/wy/p_{{page}}.html\n人兽::/tag/rs/p_{{page}}.html\n强强::/tag/qq/p_{{page}}.html\n穿越::/tag/cy/p_{{page}}.html\n双性::/tag/sx/p_{{page}}.html\n强受::/tag/qs/p_{{page}}.html\n疗愈::/tag/ly/p_{{page}}.html\n重生::/tag/cs/p_{{page}}.html\n百合::/tag/bh/p_{{page}}.html\n虐文::/tag/nw/p_{{page}}.html\n温馨::/tag/wx/p_{{page}}.html\nＮＰ::/tag/np/p_{{page}}.html\n萌文::/tag/mw/p_{{page}}.html\n耽美::/tag/dm/p_{{page}}.html\n末世::/tag/ms/p_{{page}}.html\n校园::/tag/xy/p_{{page}}.html\n师生::/tag/ss/p_{{page}}.html\nＢＧ::/tag/bg/p_{{page}}.html\n高干::/tag/gg/p_{{page}}.html\n反攻::/tag/fg/p_{{page}}.html\n诱受::/tag/ys/p_{{page}}.html\n不限::/tag/bx/p_{{page}}.html\nＳＭ::/tag/sm/p_{{page}}.html\n女性向 ::/tag/nv/p_{{page}}.html\n男性向 ::/tag/nan/p_{{page}}.html\n娱乐圈 ::/tag/ylq/p_{{page}}.html\n",
+    "bookSourceGroup": "18",
+    "ruleBookInfo": {
+      "author": "//*[@id=\"novelMain\"]/div[1]/table/tbody/tr/td[1]/div[1]/h2/text()",
+      "kind": "class.article_info_td@tag.a.0@text&&class.article_info_td@tag.time@text",
+      "name": "//*[@id=\"nr_body\"]/nav/ul/li[2]/text()##\\_.*",
+      "intro": "//*[@id=\"novelMain\"]/div[3]/div/pre/text()@js:result.replace(/^/,'    ')",
+      "lastChapter": "class.article_info_td@tag.a.1@text"
+    }
+  },
+  {
+    "ruleExplore": {
+      "coverUrl": "class.pic@tag.a@img@src",
+      "author": "class.author@tag.a.0@text",
+      "bookUrl": "tag.h6@tag.a.0@href",
+      "name": "tag.h6@tag.a.0@text",
+      "bookList": "class.article",
+      "intro": "class.simple@text"
+    },
+    "customOrder": 11,
+    "ruleSearch": {
+      "coverUrl": "a@href",
+      "author": "class.author@text||class.p3@text",
+      "bookUrl": "a@href",
+      "name": "h6@a@text||tag.a.0@text",
+      "bookList": "class.searchresult@p||class.article||class.articlegeneral"
+    },
+    "bookSourceType": 0,
+    "ruleContent": {
+      "content": "class.novelcontent@tag.p.0@html"
+    },
+    "searchUrl": "https://m.read52.com/s.php,{\n  \"method\" : \"POST\",\n  \"body\" : \"s={{key}}&submit=&type=articlename\",\n  \"charset\" : \"gbk\"\n}",
+    "weight": 0,
+    "ruleToc": {
+      "chapterUrl": "href",
+      "chapterList": "class.chapters@li@a",
+      "nextTocUrl": "text.下一页@href",
+      "chapterName": "text##.*vIP|.*мē|.*иéτ"
+    },
+    "enabled": true,
+    "bookSourceUrl": "https://m.read52.com",
+    "bookSourceName": "🔞看小说网",
+    "exploreUrl": "玄幻小说::/sort/1_{{page}}/\n武侠小说::/sort/2_{{page}}/\n言情小说::/sort/3_{{page}}/\n穿越小说::/sort/4_{{page}}/\n都市小说::/sort/5_{{page}}/\n科幻小说::/sort/6_{{page}}/\n网游小说::/sort/7_{{page}}/\n恐怖小说::/sort/8_{{page}}/\n耽美小说::/sort91_{{page}}/\n校园小说::/sort/10_{{page}}/\n高辣小说::/sort/11_{{page}}/\n腹黑小说::/sort/12_{{page}}/\n种田小说::/sort/13_{{page}}/\n高干小说::/sort/14_{{page}}/\n百合小说::/sort/15_{{page}}/\n其他小说::/sort/16_{{page}}/",
+    "bookSourceGroup": "18",
+    "ruleBookInfo": {
+      "author": "class.infotype@tag.a.0@text",
+      "tocUrl": "a@text.章节目录@a@href",
+      "lastChapter": "class.infotype@tag.p.3@a@text",
+      "intro": "class.intro@tag.p@text##",
+      "coverUrl": "class.pic@img@src",
+      "kind": "class.infotype@tag.p.1@text##类型：",
+      "name": "class.cataloginfo@tag.h3@text"
+    }
+  }
+]

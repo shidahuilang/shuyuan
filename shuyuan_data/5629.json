@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceComment": "//2024.8.31  ◎夜泽川◎",
+    "bookSourceGroup": "",
+    "bookSourceName": "华东看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.ahdzxtd.com/",
+    "bookUrlPattern": "http://www.ahdzxtd.com/shu/\\d+.html",
+    "customOrder": 60,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/xh_{{page}}/\n武侠仙侠::/wx_{{page}}/\n都市言情::/ds_{{page}}/\n历史军事::/ls_{{page}}/\n网游竞技::/wy_{{page}}/\n科幻灵异::/kj_{{page}}/\n女生频道::/ns_{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1725066307780",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nt:\"[property~=category|status]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=image]@content\",\no:\"[property$=description]@content\",\ng:\"[property$=update_time]@content\",\nm:\"baseUrl\"\n}",
+      "intro": "@get:{o}",
+      "kind": "@get:{t}",
+      "lastChapter": "@get:{l}◎@get:{g}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{m}"
+    },
+    "ruleContent": {
+      "content": "#content@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##{{chapter.title}}\\s\\(第\\d+/\\d+页\\)|.*本章未完.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".txt-list > li!0",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "a.0@href##.*/shu/((\\d{2})\\d+)\\.html##http://www.ahdzxtd.com/files/article/image/$2/$1/$1s.jpg###",
+      "kind": ".s1@text&&.s5@text##\\[|\\]",
+      "lastChapter": ".s3@text",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".section-list.1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/search.html?keyWord={{key}}",
+    "weight": 0
+  }
+]

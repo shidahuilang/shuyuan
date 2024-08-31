@@ -1,0 +1,36 @@
+[
+  {
+    "bookSourceComment": "只能下载 by天天鸟蛋蛋 \n/*（有的看就行） 章节可能不全*/",
+    "bookSourceGroup": "api找小说",
+    "bookSourceName": "找小说api",
+    "bookSourceType": 3,
+    "bookSourceUrl": "https://www.hhlqilongzhu.cn",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1724939213325",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "author",
+      "coverUrl": "img",
+      "downloadUrls": "download",
+      "intro": "js",
+      "kind": "type",
+      "name": "title"
+    },
+    "ruleContent": [],
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": "[*]",
+      "bookUrl": "/api/novel_1.php?name={{$.key}}&n={{$.n}}&type=json",
+      "checkKeyWord": "总裁",
+      "coverUrl": "",
+      "name": "name"
+    },
+    "ruleToc": [],
+    "searchUrl": "/api/novel_1.php?name={{key}}&n&type=json",
+    "weight": 0
+  }
+]

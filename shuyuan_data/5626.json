@@ -1,0 +1,49 @@
+[
+  {
+    "ruleSearch": {
+      "checkKeyWord": "我的",
+      "bookList": ".list_ul > li:nth-child(n+1)",
+      "name": ".p1 > a@text",
+      "author": ".p3@text",
+      "lastChapter": ".p2 > a@text",
+      "wordCount": ".p4@text",
+      "bookUrl": ".p1 > a@href"
+    },
+    "ruleBookInfo": {
+      "name": ".novelname@text",
+      "author": ".novelauthor > a@text",
+      "kind": ".catalognovel_type > .p2@text",
+      "wordCount": ".p3:nth-child(3)@text",
+      "lastChapter": ".catalognovel_newest > a@text",
+      "intro": ".catalognovel_intro@text",
+      "coverUrl": ".catalog_pic > img@src"
+    },
+    "ruleToc": {
+      "chapterList": ".index_listbox:nth-child(6) li:nth-child(n+1)",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "ruleContent": {
+      "content": ".chapter_content@html"
+    },
+    "ruleReview": [],
+    "ruleExplore": {
+      "bookList": ".novel_box:nth-child(n+1)||.list_ul > li:nth-child(n+1)",
+      "name": ".novel_name > a@text||.p1 > a@text",
+      "author": ".novel_author > a@text||.p3@text",
+      "lastChapter": ".novel_newest > a@text||.p2 > a@text",
+      "intro": ".novel_intro@text",
+      "coverUrl": "img@src",
+      "bookUrl": ".novel_name > a@href||.p1 > a@href",
+      "kind": "h3@text",
+      "wordCount": ".p4@text"
+    },
+    "bookSourceType": 0,
+    "searchUrl": "/modules/article/search.php,{\n\"charset\":\"gbk\",\n\"method\":\"POST\",\n\"body\":\"searchkey={{key}}&type=articlename\"\n}",
+    "bookSourceUrl": "https://www.rourouwu.in",
+    "bookSourceName": "肉肉屋",
+    "bookSourceGroup": "自制",
+    "exploreUrl": "                                 分类                               \n玄幻奇幻::https://www.rourouwu.in/xuanhuan/{{page}}.html\n武侠仙侠::https://www.rourouwu.in/wuxia/{{page}}.html\n都市言情::https://www.rourouwu.in/dushi/{{page}}.html\n穿越历史::https://www.rourouwu.in/lishi/{{page}}.html\n网游竞技::https://www.rourouwu.in/wangyou/{{page}}.html\n其他类型::https://www.rourouwu.in/qita/{{page}}.html\n完结小说::https://www.rourouwu.in/wanben/{{page}}.html\n                              排行榜                            \n总点击榜::https://www.rourouwu.in/ph/allvisit_{{page}}.html\n月点击榜::https://www.rourouwu.in/ph/monthvisit_{{page}}.html\n周点击榜::https://www.rourouwu.in/ph/weekvisit_{{page}}.html\n总推荐榜::https://www.rourouwu.in/ph/allvote_{{page}}.html\n月推荐榜::https://www.rourouwu.in/ph/monthvote_{{page}}.html\n周推荐榜::https://www.rourouwu.in/ph/weekvote_{{page}}.html\n  收藏榜  ::https://www.rourouwu.in/ph/goodnum_{{page}}.html\n  字数榜  ::https://www.rourouwu.in/ph/size_{{page}}.html\n最新入库::https://www.rourouwu.in/ph/postdate_{{page}}.html\n最近更新::https://www.rourouwu.in/ph/lastupdate_{{page}}.html",
+    "lastUpdateTime": "1725006427942"
+  }
+]

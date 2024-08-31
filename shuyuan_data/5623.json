@@ -1,0 +1,38 @@
+[
+  {
+    "bookSourceComment": "dy天天的鸟蛋蛋\n//\t可搜索猫耳的广播剧\n//  并获取免费音频\n//\t分三步获取",
+    "bookSourceGroup": "猫耳FM",
+    "bookSourceName": "猫耳FM广播剧",
+    "bookSourceType": 1,
+    "bookSourceUrl": "https://www.hhlqilongzhu.cn##猫耳FM广播剧",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1724940525551",
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "url"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "Nickname",
+      "bookList": "data[*]",
+      "bookUrl": "https://www.hhlqilongzhu.cn/api/ximalaya/maoer_app.php?albumId={{$.albumId}}",
+      "coverUrl": "cover",
+      "intro": "intro",
+      "kind": "type",
+      "name": "title"
+    },
+    "ruleToc": {
+      "chapterList": "data[*]",
+      "chapterName": "title",
+      "chapterUrl": "/api/ximalaya/maoer_app.php?soundid={{$.soundid}}",
+      "formatJs": "",
+      "updateTime": "intro"
+    },
+    "searchUrl": "/api/ximalaya/maoer_app.php?name={{key}}",
+    "weight": 0
+  }
+]

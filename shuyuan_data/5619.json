@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "正文下一页规则选填：\ntext.下一章@href",
+    "bookSourceName": "零点看书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.rhmm18.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\": \"💮                  分类                  💮\",\"url\": \"\",\n\"style\": {\"layout_flexGrow\": 0,\n\"layout_flexBasisPercent\": 1\n}},\n{\"title\": \"热门\",\"url\": \"/top\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"玄幻\",\"url\": \"/sort/1/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"武侠\",\"url\": \"/sort/2/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"都市\",\"url\": \"/sort/3/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"历史\",\"url\": \"/sort/4/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"网游\",\"url\": \"/sort/5/1{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"科幻\",\"url\": \"/sort/6/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"其他\",\"url\": \"/sort/7/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"女生\",\"url\": \"/sort/8/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}},\n{\"title\": \"全本\",\"url\": \"/full/all/{{page}}.html\",\n\"style\": {\"layout_flexGrow\": 1,\n\"layout_flexBasisPercent\": 0.29\n}}]",
+    "lastUpdateTime": "1724908474691",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.bookdes@p.0@text##作者：",
+      "coverUrl": "img@src",
+      "intro": "class.bookintro@text",
+      "kind": "class.bookdes@p.1@span@text",
+      "lastChapter": "class.bookdes@p.2@a@text&&class.bookdes@p.3@text##最后更新：",
+      "name": "class.booktitle@h1@text",
+      "tocUrl": "text.更多章节列表@href||class.morechapter@href",
+      "wordCount": "{{@@class.bookdes@p.1@text}}##[状态：连载\\| ]"
+    },
+    "ruleContent": {
+      "content": "class.content@p@text",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "dl@dd.1@a@text",
+      "bookList": "class.content@dl",
+      "bookUrl": "dl@a.0@href",
+      "checkKeyWord": "酒剑仙：叛出师门了，谁还惯着你",
+      "coverUrl": "img@data-src",
+      "intro": "dl@dd.0@text",
+      "kind": "dl@dd.1@span!1@text",
+      "lastChapter": "",
+      "name": "dl@dt.0@text",
+      "wordCount": "dl@dd.1@span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.all@ul@li",
+      "chapterName": "li@text",
+      "chapterUrl": "{{@@li@a@onclick##[location.href\\=''m]*}}.html",
+      "nextTocUrl": "text.下一页@href||class.right@href"
+    },
+    "searchUrl": "/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
