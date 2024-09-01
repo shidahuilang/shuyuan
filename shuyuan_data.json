@@ -111,6 +111,52 @@
     "weight": 0
   },
   {
+    "bookSourceComment": "第一次搜有DDOS验证，重新搜索一次就行了。",
+    "bookSourceName": "E小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sososhu.com/",
+    "bookUrlPattern": "https://www.exiaos.com/index/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1725172487286",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.fix@p.0@a@text",
+      "coverUrl": "class.imgbox@img@src",
+      "init": "class.detail-box",
+      "intro": "class.m-desc xs-show@text##简介：",
+      "kind": "{{@@class.fix@p.1@text}}{{@@class.opt@span.0@text}}{{@@class.fix@p.2@text}}##[类别状态：]*",
+      "lastChapter": "class.section-box.0class.section-list fix@li.0@text&&class.fix@p.5@text@text",
+      "name": "class.top@h1@text",
+      "wordCount": "class.fix@p.4@text"
+    },
+    "ruleContent": {
+      "content": "class.content@p@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "dl@dt@span@text",
+      "bookList": "class.item",
+      "bookUrl": "class.item@a@href",
+      "checkKeyWord": "属性点慈善家",
+      "coverUrl": "img@src",
+      "intro": "dl@dd@text",
+      "kind": "",
+      "name": "dl@dt@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.layout layout-col1@class.section-box.1@class.section-list fix@li",
+      "chapterName": "li@text",
+      "chapterUrl": "li@a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=exiaos&Submit=%E6%90%9C%E7%B4%A2,{\n  \"webView\": true\n}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "",
     "bookSourceGroup": "",
     "bookSourceName": "🔞18文学",
@@ -724,51 +770,6 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "最新地址发布页 xiaohuangshu.me\n永久地址(墙) xchina.co\n单章由于没有目录，我让它直接简介中显示了",
-    "bookSourceGroup": "",
-    "bookSourceName": "🔞小黄书 xChina",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://xchina.biz",
-    "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "lastUpdateTime": "1725096508883",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "tocUrl": "",
-      "intro": "//*[@class='brief']/text()||//*[@class='content']/html()##（看精彩成人小说上《小黄书》.*[a-z]*）",
-      "author": "//*[@class='author']/span[1]/a/text()"
-    },
-    "ruleContent": {
-      "content": "//*[@class='content']/html()##（看精彩成人小说上《小黄书》.*[a-z]*）"
-    },
-    "ruleExplore": {
-      "bookList": "//*[@class='list']/div",
-      "name": "/div[2]/a[1]/text()",
-      "author": "/*[@class=\"tag\"]/div[1]/text()",
-      "bookUrl": "/div[2]/a[1]/@href",
-      "intro": "//*[@class=\"brief\"]/a/text()"
-    },
-    "ruleReview": [],
-    "ruleSearch": {
-      "checkKeyWord": "少妇白洁",
-      "bookList": "//*[@class='list']/div",
-      "name": "/div[2]/a[1]/text()",
-      "bookUrl": "/div[2]/a[1]/@href",
-      "intro": "//*[@class=\"brief\"]/a/text()",
-      "author": "/*[@class=\"tag\"]/div[1]/text()"
-    },
-    "ruleToc": {
-      "chapterList": "//*[@class='chapters']/div",
-      "chapterName": "/a/text()",
-      "chapterUrl": "/a/@href"
-    },
-    "weight": 0,
-    "searchUrl": "https://xchina.biz/fictions/keyword-{{key}}/{{page}}.html",
-    "exploreUrl": "        分类：不限-更新时间          \n全部小说::/fictions/{{page}}.html\n编辑推荐::/fictions/tag-编辑推荐/{{page}}.html\n人妻女友::/fictions/tag-人妻女友/{{page}}.html\n学生校园::/fictions/tag-学生校园/{{page}}.html\n伴侣交换::/fictions/tag-伴侣交换/{{page}}.html\n都市生活::/fictions/tag-都市生活/{{page}}.html\n动漫游戏::/fictions/tag-动漫游戏/{{page}}.html\n名人明星::/fictions/tag-名人明星/{{page}}.html\n经验故事::/fictions/tag-经验故事/{{page}}.html\n古典玄幻::/fictions/tag-古典玄幻/{{page}}.html\n家庭乱伦::/fictions/tag-家庭乱伦/{{page}}.html\n多人群交::/fictions/tag-多人群交/{{page}}.html\n公司职场::/fictions/tag-公司职场/{{page}}.html\n露出暴露::/fictions/tag-露出暴露/{{page}}.html\n强暴性虐::/fictions/tag-强暴性虐/{{page}}.html\n西方主题::/fictions/tag-西方主题/{{page}}.html\n同性主题::/fictions/tag-同性主题/{{page}}.html\n绿帽主题::/fictions/tag-绿帽主题/{{page}}.html\n长篇连载::/fictions/tag-长篇连载/{{page}}.html\n经典回忆::/fictions/tag-经典回忆/{{page}}.html\n有声小说::/fictions/tag-有声小说/{{page}}.html\n        分类：不限-浏览最多        \n全部小说::/fictions/sort-read/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/{{page}}.html\n        分类：短篇-更新时间        \n全部小说::/fictions/sort-read/length-1/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-1/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-1/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-1/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-1/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-1/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-1/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-1/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-1/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-1/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-1/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-1/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-1/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-1/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-1/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-1/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-1/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-1/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-1/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-1/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-1/{{page}}.html\n        分类：中篇-更新时间        \n全部小说::/fictions/sort-read/length-2/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-2/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-2/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-2/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-2/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-2/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-2/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-2/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-2/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-2/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-2/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-2/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-2/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-2/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-2/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-2/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-2/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-2/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-2/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-2/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-2/{{page}}.html\n        分类：超长篇-更新时间        \n全部小说::/fictions/sort-read/length-3/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-3/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-3/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-3/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-3/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-3/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-3/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-3/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-3/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-3/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-3/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-3/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-3/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-3/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-3/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-3/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-3/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-3/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-3/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-3/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-3/{{page}}.html\n        分类：短篇-浏览最多        \n全部小说::/fictions/sort-read/length-1/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-1/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-1/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-1/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-1/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-1/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-1/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-1/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-1/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-1/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-1/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-1/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-1/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-1/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-1/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-1/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-1/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-1/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-1/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-1/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-1/{{page}}.html\n        分类：中篇-浏览最多        \n全部小说::/fictions/sort-read/length-2/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-2/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-2/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-2/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-2/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-2/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-2/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-2/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-2/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-2/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-2/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-2/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-2/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-2/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-2/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-2/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-2/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-2/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-2/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-2/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-2/{{page}}.html\n        分类：长篇-浏览最多        \n全部小说::/fictions/sort-read/length-3/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-3/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-3/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-3/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-3/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-3/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-3/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-3/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-3/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-3/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-3/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-3/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-3/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-3/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-3/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-3/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-3/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-3/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-3/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-3/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-3/{{page}}.html"
-  },
-  {
     "ruleSearch": {
       "checkKeyWord": "我的",
       "bookList": ".list_ul > li:nth-child(n+1)",
@@ -866,6 +867,52 @@
       "nextTocUrl": "option@value"
     },
     "searchUrl": "{{url=source.getKey();\ncookie.removeCookie(url)\njava.ajax(url).match(/search.*action=\"(.+?)\"/)[1]}}?searchkey={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "最新地址发布页 xiaohuangshu.me\n永久地址(墙) xchina.co\n",
+    "bookSourceGroup": "",
+    "bookSourceName": "🔞小黄书 xChina",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://xchina.biz",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "        分类：不限-更新时间          \n全部小说::/fictions/{{page}}.html\n编辑推荐::/fictions/tag-编辑推荐/{{page}}.html\n人妻女友::/fictions/tag-人妻女友/{{page}}.html\n学生校园::/fictions/tag-学生校园/{{page}}.html\n伴侣交换::/fictions/tag-伴侣交换/{{page}}.html\n都市生活::/fictions/tag-都市生活/{{page}}.html\n动漫游戏::/fictions/tag-动漫游戏/{{page}}.html\n名人明星::/fictions/tag-名人明星/{{page}}.html\n经验故事::/fictions/tag-经验故事/{{page}}.html\n古典玄幻::/fictions/tag-古典玄幻/{{page}}.html\n家庭乱伦::/fictions/tag-家庭乱伦/{{page}}.html\n多人群交::/fictions/tag-多人群交/{{page}}.html\n公司职场::/fictions/tag-公司职场/{{page}}.html\n露出暴露::/fictions/tag-露出暴露/{{page}}.html\n强暴性虐::/fictions/tag-强暴性虐/{{page}}.html\n西方主题::/fictions/tag-西方主题/{{page}}.html\n同性主题::/fictions/tag-同性主题/{{page}}.html\n绿帽主题::/fictions/tag-绿帽主题/{{page}}.html\n长篇连载::/fictions/tag-长篇连载/{{page}}.html\n经典回忆::/fictions/tag-经典回忆/{{page}}.html\n有声小说::/fictions/tag-有声小说/{{page}}.html\n        分类：不限-浏览最多        \n全部小说::/fictions/sort-read/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/{{page}}.html\n        分类：短篇-更新时间        \n全部小说::/fictions/sort-read/length-1/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-1/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-1/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-1/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-1/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-1/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-1/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-1/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-1/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-1/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-1/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-1/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-1/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-1/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-1/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-1/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-1/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-1/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-1/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-1/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-1/{{page}}.html\n        分类：中篇-更新时间        \n全部小说::/fictions/sort-read/length-2/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-2/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-2/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-2/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-2/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-2/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-2/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-2/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-2/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-2/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-2/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-2/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-2/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-2/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-2/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-2/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-2/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-2/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-2/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-2/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-2/{{page}}.html\n        分类：超长篇-更新时间        \n全部小说::/fictions/sort-read/length-3/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-3/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-3/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-3/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-3/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-3/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-3/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-3/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-3/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-3/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-3/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-3/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-3/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-3/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-3/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-3/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-3/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-3/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-3/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-3/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-3/{{page}}.html\n        分类：短篇-浏览最多        \n全部小说::/fictions/sort-read/length-1/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-1/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-1/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-1/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-1/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-1/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-1/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-1/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-1/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-1/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-1/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-1/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-1/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-1/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-1/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-1/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-1/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-1/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-1/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-1/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-1/{{page}}.html\n        分类：中篇-浏览最多        \n全部小说::/fictions/sort-read/length-2/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-2/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-2/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-2/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-2/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-2/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-2/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-2/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-2/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-2/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-2/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-2/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-2/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-2/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-2/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-2/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-2/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-2/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-2/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-2/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-2/{{page}}.html\n        分类：长篇-浏览最多        \n全部小说::/fictions/sort-read/length-3/{{page}}.html\n编辑推荐::/fictions/sort-read/tag-编辑推荐/length-3/{{page}}.html\n人妻女友::/fictions/sort-read/tag-人妻女友/length-3/{{page}}.html\n学生校园::/fictions/sort-read/tag-学生校园/length-3/{{page}}.html\n伴侣交换::/fictions/sort-read/tag-伴侣交换/length-3/{{page}}.html\n都市生活::/fictions/sort-read/tag-都市生活/length-3/{{page}}.html\n动漫游戏::/fictions/sort-read/tag-动漫游戏/length-3/{{page}}.html\n名人明星::/fictions/sort-read/tag-名人明星/length-3/{{page}}.html\n经验故事::/fictions/sort-read/tag-经验故事/length-3/{{page}}.html\n古典玄幻::/fictions/sort-read/tag-古典玄幻/length-3/{{page}}.html\n家庭乱伦::/fictions/sort-read/tag-家庭乱伦/length-3/{{page}}.html\n多人群交::/fictions/sort-read/tag-多人群交/length-3/{{page}}.html\n公司职场::/fictions/sort-read/tag-公司职场/length-3/{{page}}.html\n露出暴露::/fictions/sort-read/tag-露出暴露/length-3/{{page}}.html\n强暴性虐::/fictions/sort-read/tag-强暴性虐/length-3/{{page}}.html\n西方主题::/fictions/sort-read/tag-西方主题/length-3/{{page}}.html\n同性主题::/fictions/sort-read/tag-同性主题/length-3/{{page}}.html\n绿帽主题::/fictions/sort-read/tag-绿帽主题/length-3/{{page}}.html\n长篇连载::/fictions/sort-read/tag-长篇连载/length-3/{{page}}.html\n经典回忆::/fictions/sort-read/tag-经典回忆/length-3/{{page}}.html\n有声小说::/fictions/sort-read/tag-有声小说/length-3/{{page}}.html",
+    "lastUpdateTime": "1725138645560",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//*[@class='author']/span[1]/a/text()",
+      "intro": "//*[@class='brief']/text()",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "//*[@class='content']/html()##（看精彩成人小说上《小黄书》.*[a-z]*）"
+    },
+    "ruleExplore": {
+      "author": "/*[@class=\"tag\"]/div[1]/text()",
+      "bookList": "//*[@class='list']/div",
+      "bookUrl": "/div[2]/a[1]/@href",
+      "intro": "//*[@class=\"brief\"]/a/text()",
+      "name": "/div[2]/a[1]/text()"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "/*[@class=\"tag\"]/div[1]/text()",
+      "bookList": "//*[@class='list']/div",
+      "bookUrl": "/div[2]/a[1]/@href",
+      "checkKeyWord": "少妇白洁",
+      "intro": "//*[@class=\"brief\"]/a/text()",
+      "name": "/div[2]/a[1]/text()"
+    },
+    "ruleToc": {
+      "chapterList": "@js: flags = result.match(/chapters/g);\n//判断是否存在目录\nif (flags == null) {\n    var list = [];\n    list.push({\n        m: baseUrl,\n        n: \"正文\"\n    });\n    list;\n} else {\n    var regex = /<div class=\"chapters\">([\\s\\S]*?)上一章/i;\n    var matches = regex.exec(result);\n    if (matches) {\n        var content = matches[1];\n    }\n    var regex = /<a href=\"([^\"]+)\"><i class=\"fa fa-book\"><\\/i>([^<]+)/g;\n    var list = [];\n    var match;\n    while ((match = regex.exec(content)) !== null) {\n        list.push({\n            m: match[1],\n            n: match[2]\n        });\n    }\n}\nlist",
+      "chapterName": "n",
+      "chapterUrl": "m",
+      "updateTime": ""
+    },
+    "searchUrl": "/fictions/keyword-{{key}}/{{page}}.html",
     "weight": 0
   },
   {

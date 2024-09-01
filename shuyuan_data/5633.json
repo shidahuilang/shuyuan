@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "第一次搜有DDOS验证，重新搜索一次就行了。",
+    "bookSourceName": "E小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sososhu.com/",
+    "bookUrlPattern": "https://www.exiaos.com/index/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1725172487286",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.fix@p.0@a@text",
+      "coverUrl": "class.imgbox@img@src",
+      "init": "class.detail-box",
+      "intro": "class.m-desc xs-show@text##简介：",
+      "kind": "{{@@class.fix@p.1@text}}{{@@class.opt@span.0@text}}{{@@class.fix@p.2@text}}##[类别状态：]*",
+      "lastChapter": "class.section-box.0class.section-list fix@li.0@text&&class.fix@p.5@text@text",
+      "name": "class.top@h1@text",
+      "wordCount": "class.fix@p.4@text"
+    },
+    "ruleContent": {
+      "content": "class.content@p@text",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "dl@dt@span@text",
+      "bookList": "class.item",
+      "bookUrl": "class.item@a@href",
+      "checkKeyWord": "属性点慈善家",
+      "coverUrl": "img@src",
+      "intro": "dl@dd@text",
+      "kind": "",
+      "name": "dl@dt@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.layout layout-col1@class.section-box.1@class.section-list fix@li",
+      "chapterName": "li@text",
+      "chapterUrl": "li@a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://www.sososhu.com/?q={{key}}&site=exiaos&Submit=%E6%90%9C%E7%B4%A2,{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]
