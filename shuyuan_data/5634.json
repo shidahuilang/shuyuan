@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "🔞漫香阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://漫香阁.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "单行本::/list-2-0-{{page}}.html\n同人志::/list-4-0-{{page}}.html\n韩漫::/list-1-0-{{page}}.html\ncosplay::/list-3-0-{{page}}.html",
+    "lastUpdateTime": "1725217861231",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".contentmh@html@js:\nvar context;\nresult=decodeURIComponent(result);\nregex=/https?.+manxiangge.+\\/ref\\/\\?r=/g;\nresult=result.replace(regex,\"\");\nresult=result.replace(/http:\\/\\//g,\"https://\");\nresult=result.replace(/www\\.comicimgs\\.com/g,\"img.comicimgs.com\");\nresult\n"
+    },
+    "ruleExplore": {
+      "bookList": "//*[@class=\"section group\"]/a",
+      "bookUrl": "@href##content-(.*)-1.html##book-$1.html",
+      "coverUrl": "@js:\nvar url;\nregex=/: url\\('(.*)'\\)/;\nresult=JSON.stringify(result);\nresult=result.match(regex);\nresult=result[1];\nresult=decodeURIComponent(result);\nresult=result.replace(\"http://\",\"https://\");\nresult=result.replace(\"www.comicimgs.com\",\"img.comicimgs.com\");\nresult=result.replace(/.*\\/ref\\/\\?r=/,\"\");\nresult;",
+      "intro": "//p",
+      "kind": "//span[@class=\"pcount\"]/text()",
+      "lastChapter": "//*[@class=\"dstate\"]/text()##更新",
+      "name": "//h3/text()",
+      "wordCount": ""
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": "//*[@class=\"section group\"]/a",
+      "bookUrl": "@href##content-(.*)-1.html##book-$1.html",
+      "checkKeyWord": "",
+      "coverUrl": "@js:\nvar url;\nregex=/: url\\('(.*)'\\)/;\nresult=JSON.stringify(result);\nresult=result.match(regex);\nresult=result[1];\nresult=decodeURIComponent(result);\nresult=result.replace(\"http://\",\"https://\");\nresult=result.replace(\"www.comicimgs.com\",\"img.comicimgs.com\");\nresult=result.replace(/.*\\/ref\\/\\?r=/,\"\");\nresult;",
+      "intro": "",
+      "kind": "//span[@class=\"pcount\"]/text()",
+      "name": "//h3/text()",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nvar list = [];\nif (result.match(\"开始浏览\") == null) { //判断目录\n    var regex = /href=\"(content-.+-\\d+.html)\">(.*)<\\/a>/g;\n    var match;\n    while ((match = regex.exec(result)) !== null) {\n        list.push({\n            m: match[1],\n            n: match[2]\n        })\n    }\n} else {\n    var regex = /href=\"(.*)\" s.*(开始浏览)/;\n    var match = result.match(regex);\n    list.push({\n        m: match[1],\n        n: match[2]\n    });\n}\nlist",
+      "chapterName": "n",
+      "chapterUrl": "m"
+    },
+    "searchUrl": "/search.php?key={{key}}&typeid=0&p={{page}}",
+    "weight": 0
+  }
+]
