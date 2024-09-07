@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceName": "bl文库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.blwenla.org",
+    "customOrder": -2,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"玄幻仙侠\",\"url\":\"/sort/1_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"都市言情\",\"url\":\"/sort/2_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"穿越重生\",\"url\":\"/sort/3_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"科幻灵异\",\"url\":\"/sort/4_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"游戏竞技\",\"url\":\"/sort/5_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"B L 同人\",\"url\":\"/sort/6_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"G L 百合\",\"url\":\"/sort/7_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},\n\n]",
+    "lastUpdateTime": "1725642939089",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": ".pic@img@src",
+      "intro": "{{@@.intro@p@text}}",
+      "kind": ".infotype@p[1,2]@text##更新时间：|类型：",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@p@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##.*点击下一章继续阅读。|.*\\)\\,点击|继续阅读。"
+    },
+    "ruleExplore": {
+      "author": ".author@a@text",
+      "bookList": ".branch_menu@.article",
+      "bookUrl": "h6@a@href",
+      "coverUrl": ".pic@a@img@src",
+      "intro": ".simple@text",
+      "name": "h6@a@text"
+    },
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": ".searchresult@.sone",
+      "bookUrl": "a.0@href",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapters@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"method\": \"POST\",\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]
