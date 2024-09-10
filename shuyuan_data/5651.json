@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceName": "话本小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.qxbbt.com/",
+    "customOrder": -261,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::/category/xhmf/{{page}}.html\n同人小说::/category/trxs/{{page}}.html\n武侠修真::/category/wuxia/{{page}}.html\n言情小说::/category/cyxs/{{page}}.html\n现代都市::/category/dsyq/{{page}}.html\n历史军事::/category/lsjs/{{page}}.html\n网游动漫::/category/wydm/{{page}}.html\n科幻灵异::/category/khxs/{{page}}.html\n综合其他::/category/zhqt/{{page}}.html",
+    "lastUpdateTime": "1725868888606",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "kind": ".block_txt2@p[-2,-3,-4]@text##更新：|状态：|分类：",
+      "tocUrl": "text.查看完整目录@href"
+    },
+    "ruleContent": {
+      "content": "#nr@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##本章未完，点击下一页继续~|此页为本章.*|如内容不全或提示是.*|.*请退出阅读模式.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(source.bookSourceUrl)\nvar x=java.get(\"url\");\nvar s=java.startBrowserAwait(x,\"验证\").body();\nresult=s;\n\t}else{\n\t\tresult=result;\n\t\t}\n\tresult;\n</js>\n.bookbox",
+      "bookUrl": ".bookname@a@href",
+      "coverUrl": ".bookimg@img@src",
+      "intro": ".intro_line@textNodes",
+      "lastChapter": ".update@a@text",
+      "name": ".bookname@a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "class.pt-dir-sel@ul@li@a@href"
+    },
+    "searchUrl": "@js:\nvar so=\"/search/result.html?searchkey=\"+key+\",\";\njava.put(\"url\",String(source.bookSourceUrl+so+JSON.stringify({\n\t\t\"headers\":{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 14; LGE-AN00 Build/HONORLGE-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.193 Mobile Safari/537.36\"\n}})))",
+    "weight": 0
+  }
+]

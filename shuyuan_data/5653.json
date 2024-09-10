@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "amp-img@html",
+    "bookSourceName": "包子漫画",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://cn.baozimh.com/##@okou",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1725880019648",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.comics-detail__author@text",
+      "coverUrl": "class.pure-g de-info__box@div.0@amp-img.0@src",
+      "intro": "class.comics-detail__desc overflow-hidden@text",
+      "kind": "class.tag-list@text",
+      "lastChapter": "class.supporting-text mt-2@div.1@span@text##最新：",
+      "name": "class.comics-detail__title@text"
+    },
+    "ruleContent": {
+      "content": "img@html",
+      "imageStyle": "FULL",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.tags text-truncate.-1@text",
+      "bookList": "class.comics-card",
+      "bookUrl": "class.comics-card@a.0@href",
+      "checkKeyWord": "反派大师兄，师妹们全是病娇",
+      "coverUrl": "class.comics-card@a.0@amp-img.0@src",
+      "kind": "class.text-truncate!2:3@text",
+      "name": "class.text-truncate.2@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nlet elements = java.getElements(\"@css:.l-box .pure-g[id] .pure-u-1-1\");\nif (elements.size() == 0) {\n    elements = java.getElements(\"@css:.l-box div.pure-g  .pure-u-1-1\");\n    let array = [];\n    for(let i = 0; i < elements.size(); i++) {\n        let item = elements.get(i);\n        array.push(item);\n    }\n    array.reverse();\n    array;\n} else {\n    elements;\n}\n",
+      "chapterName": "class.pure-u-1-1@a@text",
+      "chapterUrl": "class.pure-u-1-1@a@href##$##,{'webView': true}"
+    },
+    "searchUrl": "https://cn.baozimh.com/search?q={{key}}",
+    "weight": 0
+  }
+]

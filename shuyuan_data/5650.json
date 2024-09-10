@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceName": "粉翼书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.fenyisw.com",
+    "customOrder": -5068,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "言情小说::/store/0_0_0_0_3_{{page}}_0.html\n穿越架空::/store/0_0_0_0_4_{{page}}_0.html\n灵异悬疑::/store/0_0_0_0_5_{{page}}_0.html\n现代都市::/store/0_0_0_0_6_{{page}}_0.html\n惊悚小说::/store/0_0_0_0_7_{{page}}_0.html\n仙侠小说::/store/0_0_0_0_8_{{page}}_0.html\n武侠修真::/store/0_0_0_0_9_{{page}}_0.html\n奇幻小说::store/0_0_0_0_10_{{page}}_0.html\n虚拟网游::store/0_0_0_0_11_{{page}}_0.html\n衍生同人::store/0_0_0_0_12_{{page}}_0.html\n推荐::/day/",
+    "header": "{\n\"user-agent\":\"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36\"\n}",
+    "lastUpdateTime": "1725858061643",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content##的小说",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content##小说|\\s.*",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content##正文.|[\\(（【].*?[求更谢乐发订合补加].*?[】）\\)]",
+      "name": "[property=\"og:novel:book_name\"]@content##\\-.*|\\_.*|\\s.*",
+      "tocUrl": "text.进入目录@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nurl=\"https:\"+result.match(/initTxt\\(\"([^\"]+)\",\"[^\"]+\"\\)/)[1];\nr=String(java.ajax(url).match(/_txt_call\\(([\\s\\S]+\\})\\)/)[1]);\nvar r = eval('(' + r + ')');\n\t\t\t\tif(r.content!=null){\t\t\t\t\n      var e = r.replace;\n\t\t\t\tfor (var n in e) {\n\t\t\t\t\tvar i = new RegExp(e[n], \"ig\");\n\t\t\t\t\tr.content = r.content.replace(i, n)\n\t\t\t\t}\n\t\t\t\tresult=r.content\n\t\t\t\t\t}else{result=\"章节加载失败，或者内容正在手打中，请【收藏本站】稍访问或者联系管理员更新~\"}\n</js>",
+      "nextContentUrl": ".next@href"
+    },
+    "ruleExplore": {
+      "author": ".gray@text##\\/\\s|的小说",
+      "bookList": ".list-item",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-lazy",
+      "intro": "class.topic-cmt f12@text",
+      "kind": "",
+      "lastChapter": "p.2@text##.*\\/\\s|正文.|",
+      "name": ".book-cover@alt"
+    },
+    "ruleSearch": {
+      "author": ".green@text",
+      "bookList": ".search-card",
+      "bookUrl": "a@href",
+      "intro": ".sc-content@text",
+      "kind": ".gray@text&&.sc-time span.1@text##\\[|\\]|\\(|\\s..:.*",
+      "lastChapter": ".sc-time span.0@text##正文.|[\\(（【].*?[求更谢乐发订合补加].*?[】）\\)]",
+      "name": "a.0@text##\\-.*|\\_.*|\\s.*"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter-list@li@a",
+      "chapterName": "text##正文.|[\\(（【].*?[求更谢乐发订合补加].*?[】）\\)]",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下页@href"
+    },
+    "searchUrl": "https://m.fenyisw.com/search/,{\"charset\":\"utf-8\",\"method\":\"post\",\"body\":\"keyword={{key}}&submit=\",\"headers\":{\"Referer\":\"https://m.fenyisw.com/\",'Cookie': 'articlevisited=1'}}",
+    "weight": 0
+  }
+]

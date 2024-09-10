@@ -1,0 +1,62 @@
+[
+  {
+    "bookSourceComment": "正文规则：\n①：id.acontent@p@text||img@html\n②：class.acontent@html\n搜索地址：\n①：\n/search.html,{\n  \"body\": \"searchkey={{key}}&searchtype=all\",\n  \"charset\": \"UTF-8\",\n  \"headers\": {\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\",\n    \"referer\": \"https://m.wenkuchina.com/\"\n  },\n  \"method\": \"GET\"\n}\n②：\nhttps://m.wenkuchina.com/search.html?searchkey={{key}}&searchtype=all\n选择一种用",
+    "bookSourceName": "哔哩哔哩轻小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.wenkuchina.com/##@曦灵",
+    "bookUrlPattern": "https://m.wenkuchina.com/lightnovel/\\d+/",
+    "coverDecodeJs": "",
+    "customOrder": 11,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "                        排    行   榜                        \n总点击榜::https://m.wenkuchina.com/top/allvisit/{{page}}.html\n月点击榜::https://m.wenkuchina.com/top/monthvisit/{{page}}.html\n总推荐榜::https://m.wenkuchina.com/top/allvote/{{page}}.html\n月推荐榜::https://m.wenkuchina.com/top/monthvote/{{page}}.html\n最近更新::https://m.wenkuchina.com/top/lastupdate/{{page}}.html\n最新入库::https://m.wenkuchina.com/top/postdate/{{page}}.html\n最新上架::https://m.wenkuchina.com/top/toptime/{{page}}.html\n收藏榜::https://m.wenkuchina.com/top/goodnum/{{page}}.html\n字数榜::https://m.wenkuchina.com/top/words/{{page}}.html\n新书榜::https://m.wenkuchina.com/top/newhot/{{page}}.html\n                        其          他                        \n                        文          库                       ::https://m.wenkuchina.com/wenku/\n                         完本排行榜                       \n总点击榜::https://m.wenkuchina.com/top/allvisit/{{page}}.html\n月点击榜::https://m.wenkuchina.com/top/monthvisit/{{page}}.html\n总推荐榜::https://m.wenkuchina.com/top/allvote/{{page}}.html\n月推荐榜::https://m.wenkuchina.com/top/monthvote/{{page}}.html\n最近更新::https://m.wenkuchina.com/top/lastupdate/{{page}}.html\n最新入库::https://m.wenkuchina.com/top/postdate/{{page}}.html\n最新上架::https://m.wenkuchina.com/top/toptime/{{page}}.html\n收藏榜::https://m.wenkuchina.com/top/goodnum/{{page}}.html\n字数榜::https://m.wenkuchina.com/top/words/{{page}}.html\n新书榜::https://m.wenkuchina.com/top/newhot/{{page}}.html",
+    "header": "{\n\"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\",\n\"referer\": \"https://m.wenkuchina.com/\"\n}",
+    "lastUpdateTime": "1725789144455",
+    "loginUrl": "https://m.wenkuchina.com/login.php",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.authorname@a@text",
+      "coverUrl": "class.module-item-cover@img@src",
+      "intro": "id.bookSummary@content@text",
+      "kind": "class.tag-small-group origin-left@text",
+      "name": "class.book-cell@h2@text",
+      "tocUrl": "text.开始阅读@href||class.btn-normal@href",
+      "wordCount": "class.book-meta book-layout-inline.1@textNodes##[万字].*"
+    },
+    "ruleContent": {
+      "content": "id.acontent@p@text||img@html",
+      "imageDecode": "",
+      "imageStyle": "FULL",
+      "nextContentUrl": "text.下一页@href||text.下一章@href"
+    },
+    "ruleExplore": {
+      "author": "class.book-author@text||class.book-author@text",
+      "bookList": "class.book-li",
+      "bookUrl": "class.book-li@a@href",
+      "coverUrl": "img@data-src",
+      "intro": "class.book-intro@text||class.book-desc@text",
+      "kind": "class.book-meta-r@text##\\d+.*",
+      "lastChapter": "",
+      "name": "class.book-title@text",
+      "wordCount": "class.tag-small blue@text"
+    },
+    "ruleSearch": {
+      "author": "class.book-author@text",
+      "bookList": "class.book-li",
+      "bookUrl": "class.book-li@a@href",
+      "checkKeyWord": "青春",
+      "coverUrl": "img@data-src",
+      "intro": "class.book-desc@text",
+      "kind": "class.tag-small-group origin-right@text",
+      "name": "class.book-title@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.volumes@class.chapter-li jsChapter||tag.html",
+      "chapterName": "class.chapter-li jsChapter@text||tag.title@text",
+      "chapterUrl": "class.chapter-li jsChapter@a@href##$##,{'webView': true}"
+    },
+    "searchUrl": "https://m.wenkuchina.com/search.html?searchkey={{key}}&searchtype=all",
+    "weight": 0
+  }
+]
