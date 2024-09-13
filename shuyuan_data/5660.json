@@ -1,0 +1,68 @@
+[
+  {
+    "bookSourceComment": "//改by源仓库和酷安大佬@肆意希",
+    "bookSourceGroup": "🎴 小说,⌨ 自制",
+    "bookSourceName": "🎴 UAA·小说-改",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.uaa.com/",
+    "bookUrlPattern": "",
+    "customOrder": -44016,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{'title':'分类·全部','url':'https://www.uaa.com/api/novel/app/novel/search?&orderType=2&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'都市激情','url':'https://www.uaa.com/api/novel/app/novel/search?category=都市激情&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'校园春色','url':'https://www.uaa.com/api/novel/app/novel/search?category=校园春色&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'家庭乱伦','url':'https://www.uaa.com/api/novel/app/novel/search?category=家庭乱伦&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'系统异能','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E7%B3%BB%E7%BB%9F%E5%BC%82%E8%83%BD&orderType=2&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'穿越重生','url':'https://www.uaa.com/api/novel/app/novel/search?category=穿越重生&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'东方玄幻','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E4%B8%9C%E6%96%B9%E7%8E%84%E5%B9%BB&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'贤者小说','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E8%B4%A4%E8%80%85%E5%B0%8F%E8%AF%B4&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'科学幻想','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E7%A7%91%E5%AD%A6%E5%B9%BB%E6%83%B3&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'乡村爱情','url':'https://www.uaa.com/api/novel/app/novel/search?category=乡村爱情&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'同人改编','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E5%90%8C%E4%BA%BA%E6%94%B9%E7%BC%96&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'经典武侠','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E7%BB%8F%E5%85%B8%E6%AD%A6%E4%BE%A0&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'网红明星','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E5%A8%B1%E4%B9%90%E6%98%8E%E6%98%9F&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'西方魔幻','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E8%A5%BF%E6%96%B9%E9%AD%94%E5%B9%BB&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'历史架空\n','url':'https://www.uaa.com/api/novel/app/novel/search?category=%E5%8E%86%E5%8F%B2%E6%9E%B6%E7%A9%BA\n&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'篇幅·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'短篇','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&space=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'中篇','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&space=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'长篇','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&space=3','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'状态·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'已完结','url':'https://www.uaa.com/api/novel/app/novel/search?finished=1&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'连载中','url':'https://www.uaa.com/api/novel/app/novel/search?finished=0&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'人称视角·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'男性视角','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&person=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'女性视角','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&person=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'第二人称','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&person=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'第三人称','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&person=4&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'肉量·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'少肉','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&porn=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'中肉','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&porn=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'多肉','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&porn=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'超多','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&porn=4&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'取向·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'直男','url':'https://www.uaa.com/api/novel/app/novel/search?orientation=1&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'女主','url':'https://www.uaa.com/api/novel/app/novel/search?orientation=2&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'男男','url':'https://www.uaa.com/api/novel/app/novel/search?orientation=3&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'女女','url':'https://www.uaa.com/api/novel/app/novel/search?orientation=4&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'来源·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'原创首发','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&source=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'会员上传','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&source=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'时段·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'今日','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&period=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'本周','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&period=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'本月','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&period=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'评分·全部','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'＞4','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&score=4&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'＞3','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&score=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'＞2','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&score=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'＞1','url':'https://www.uaa.com/api/novel/app/novel/search?page={{page}}&score=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}}\n\n]",
+    "header": "{\"User-Agent\":\"NokiaN97/21.1.107 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4\",\"cookie\":\"token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODk0NzYyMTA4MDc0NDYzMjMyLCJ0eXBlIjoiY3VzdG9tZXIiLCJ0aW1lc3RhbXAiOjE3MjU5ODg0MzQ2NjksImV4cCI6MTcyNjU5MzIzNH0.TSIyaBB0Lo6w729Hdj7Kqj6R321eH-9e7dYPCBg6wF0;\"}",
+    "lastUpdateTime": "1726033068022",
+    "loginUrl": "https://www.uaa.com",
+    "respondTime": 7107,
+    "ruleBookInfo": {
+      "author": "{{$.authors}}",
+      "coverUrl": "coverUrl",
+      "init": "<js>\nif(result.match(/IE=Edge/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>model",
+      "intro": "&nbsp;\n📖 书名：{{$.title}}\n👤 作者：{{$.authors}}\n👤 上传：{{$.uploader}}\n👀 视角：{{$.personDesc}}\n📜 篇幅：{{$.lengthTypeDesc}}\n🔖 标签：{{$.categories&&orientationDesc&&tags##[,\\n]##&nbsp;}}\n🕰 上架：{{$.onlineTimeFormat}}\n🗿 肉量：{{$.pornRateDesc}}\n✏  评分：{{$.score}}\n🕰 最新：{{$.latestUpdate}}({{$.updateTimeFormat}})\n👁 观看：{{$.viewCount}}\n🏷 简介：{{$.brief}}",
+      "kind": "{{$.finished##0##连载}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}##1##完结",
+      "lastChapter": "{{$.latestUpdate}}",
+      "name": "title",
+      "tocUrl": "https://www.uaa.com/api/novel/app/novel/catalog/{{$.id}}",
+      "wordCount": "{{$.wordCount}}"
+    },
+    "ruleContent": {
+      "content": "//div[@class='line']&&\n//div[contains(@class, 'line')]&&\n//div[starts-with(@id, 'line')]&&\n//*[@class=\"article\"]@js:result",
+      "imageStyle": "DEFAULT"
+    },
+    "ruleExplore": {
+      "author": "$.authors",
+      "bookList": "$.model.data",
+      "bookUrl": "https://www.uaa.com/api/novel/app/novel/intro?id={{$.id}}",
+      "coverUrl": "$.coverUrl",
+      "intro": "$.brief",
+      "kind": "{{$.finished##0##连载}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}##1##完结",
+      "lastChapter": "$.latestUpdate",
+      "name": "$.title",
+      "wordCount": "$.wordCount"
+    },
+    "ruleSearch": {
+      "author": "$.authors",
+      "bookList": "<js>\nif(result.match(/IE=Edge/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>$.model.data",
+      "bookUrl": "https://www.uaa.com/api/novel/app/novel/intro?id={{$.id}}",
+      "checkKeyWord": "",
+      "coverUrl": "$.coverUrl",
+      "intro": "$.brief",
+      "kind": "{{$.finished##0##连载}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}##1##完结",
+      "lastChapter": "$.latestUpdate",
+      "name": "$.title",
+      "wordCount": "$.wordCount"
+    },
+    "ruleToc": {
+      "chapterList": ".[?(@.title)]",
+      "chapterName": "title",
+      "chapterUrl": "https://www.uaa.com/novel/chapter?id= {{$.id}}",
+      "isVip": "",
+      "isVolume": "@js:{{$.type}}=='2'?true:false;",
+      "preUpdateJs": "",
+      "updateTime": "{{$.limit}} {{$.onlineTime##T.*}} {{$.volumeNum}}字"
+    },
+    "searchUrl": "https://www.uaa.com/api/novel/app/novel/search?category=&excludeTags=&keyword={{key}}&orderType=0&page={{page}}&searchType=1&size=40",
+    "weight": 0
+  }
+]

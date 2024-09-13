@@ -1,0 +1,39 @@
+[
+  {
+    "bookSourceName": "言情小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.yanqingtu.com",
+    "customOrder": -261,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"最新\",\"url\":\"https://m.yanqingtu.com/list_news_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"完本\",\"url\":\"https://m.yanqingtu.com/list_end_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n\n]",
+    "lastUpdateTime": "1725976041617",
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": ".content@html",
+      "replaceRegex": "##.*全文在线阅读结束.*|继续在线阅读.*",
+      "sourceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".title@a.1@text",
+      "bookList": ".p_list@dl",
+      "bookUrl": ".title@a.0@href",
+      "checkKeyWord": "我的",
+      "coverUrl": ".s_img@a@img@src",
+      "intro": ".info@p@textNodes##\\]",
+      "kind": ".cc@text##系列：|完结时间：|时代：|情节：",
+      "name": ".title@a.0@text##《|》"
+    },
+    "ruleToc": {
+      "chapterList": ".c_list@dd@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/?keywords={{key}}&searchtype=title&page={{page}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]
