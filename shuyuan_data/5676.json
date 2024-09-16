@@ -1,0 +1,40 @@
+[
+  {
+    "bookSourceName": "书客吧",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.shuke8.dlbeauty.cn",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n  {\n    \"title\":\"❀分类❀\",\n    \"url\":\"/list_f_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"玄幻魔法\",\n    \"url\":\"/list_1_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n    {\n    \"title\":\"其他类型\",\n    \"url\":\"/list_2_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"科幻灵异\",\n    \"url\":\"/list_4_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"都市言情\",\n    \"url\":\"/list_5_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"仙侠修真\",\n    \"url\":\"/list_6_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"历史军事\",\n    \"url\":\"/list_7_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"网游竞技\",\n    \"url\":\"/list_8_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"恐怖惊悚\",\n    \"url\":\"/list_9_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"全部类型\",\n    \"url\":\"/list_f_f_f_f_f_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n     {\n    \"title\":\"❀排行❀\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n     {\n    \"title\":\"点击\",\n    \"url\":\"/list_f_f_f_f_2_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.2\n    }\n  },\n      {\n    \"title\":\"时间\",\n    \"url\":\"/list_f_f_f_f_3_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n      {\n    \"title\":\"字数\",\n    \"url\":\"/list_f_f_f_f_1_{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  ]",
+    "lastUpdateTime": "1726408161099",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "tocUrl": "class.book-meta book-status@href"
+    },
+    "ruleContent": {
+      "content": "class.chapter-content@html",
+      "replaceRegex": "##书客吧shuke8.dlbeauty.cn，最快更新.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".book-meta-l@text",
+      "bookList": "#books-0@.book-li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": ".book-desc@text",
+      "kind": ".book-meta-r@em[0,1]@text",
+      "name": ".book-title@text",
+      "wordCount": ".book-meta-r@em.2@text"
+    },
+    "ruleToc": {
+      "chapterList": "#volumes@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/list_f_f_f_f_f_{{page}}.html?title={{key}}",
+    "weight": 0
+  }
+]
