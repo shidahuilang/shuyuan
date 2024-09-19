@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceGroup": "🌠图源",
+    "bookSourceName": "🌠 野蛮漫画",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://yemancomic.com",
+    "customOrder": 136,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"❀按地区❀\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"日漫\",\"url\":\"/comiclists/1/全部/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"国漫\",\"url\":\"/comiclists/4/全部/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"韩漫\",\"url\":\"/comiclists/5/全部/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n\n{\"title\":\"❀按标签❀\",\"url\":\"/comiclists/9/全部/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"长条\",\"url\":\"/comiclists/9/长条/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"大女主\",\"url\":\"/comiclists/9/大女主/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"百合\",\"url\":\"/comiclists/9/百合/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"耽美\",\"url\":\"/comiclists/9/耽美/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"纯爱\",\"url\":\"/comiclists/9/纯爱/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"后宫\",\"url\":\"/comiclists/9/后宫/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"韩漫\",\"url\":\"/comiclists/9/韩漫/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"奇幻\",\"url\":\"/comiclists/9/奇幻/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"轻小说\",\"url\":\"/comiclists/9/轻小说/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"生活\",\"url\":\"/comiclists/9/生活/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"悬疑\",\"url\":\"/comiclists/9/悬疑/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"格斗\",\"url\":\"/comiclists/9/格斗/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"搞笑\",\"url\":\"/comiclists/9/搞笑/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"伪娘\",\"url\":\"/comiclists/9/伪娘/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"竞技\",\"url\":\"/comiclists/9/竞技/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"职场\",\"url\":\"/comiclists/9/职场/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"萌系\",\"url\":\"/comiclists/9/萌系/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"冒险\",\"url\":\"/comiclists/9/冒险/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"治愈\",\"url\":\"/comiclists/9/治愈/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"都市\",\"url\":\"/comiclists/9/都市/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"霸总\",\"url\":\"/comiclists/9/霸总/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"神鬼\",\"url\":\"/comiclists/9/神鬼/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"侦探\",\"url\":\"/comiclists/9/侦探/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"爱情\",\"url\":\"/comiclists/9/爱情/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"古风\",\"url\":\"/comiclists/9/古风/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"欢乐向\",\"url\":\"/comiclists/9/欢乐向/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"科幻\",\"url\":\"/comiclists/9/科幻/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"穿越\",\"url\":\"/comiclists/9/穿越/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"性转换\",\"url\":\"/comiclists/9/性转换/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"校园\",\"url\":\"/comiclists/9/校园/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"美食\",\"url\":\"/comiclists/9/美食/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"悬疑\",\"url\":\"/comiclists/9/悬疑/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"剧情\",\"url\":\"/comiclists/9/剧情/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"热血\",\"url\":\"/comiclists/9/热血/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"节操\",\"url\":\"/comiclists/9/节操/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"励志\",\"url\":\"/comiclists/9/励志/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"历史\",\"url\":\"/comiclists/9/历史/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"战争\",\"url\":\"/comiclists/9/战争/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"恐怖\",\"url\":\"/comiclists/9/恐怖/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n]",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Linux; Android 14; LGE-AN00 Build/HONORLGE-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.193 Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1726556763442",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".name@.author@text",
+      "coverUrl": ".thumbnail@img@src",
+      "intro": "#js_desc_content@text",
+      "kind": ".types@.type@text&&.thumbnail@.origin@text&&#js_chapter-reverse@.update_time@text",
+      "lastChapter": ".last-chapter@text",
+      "name": ".name@textNodes"
+    },
+    "ruleContent": {
+      "content": "#imgsec@img@data-src@js:headers={\"headers\":{\"Referer\":baseUrl}};\nresult.split(\"\\n\").map(x=>'<img src=\\\"'+x+','+JSON.stringify(headers)+'\\\">').join(\"\\n\")"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "bookList": "#js_comicSortList@li",
+      "bookUrl": "a.0@href",
+      "coverUrl": ".img@src",
+      "lastChapter": ".chapter@text",
+      "name": ".title@text"
+    },
+    "ruleToc": {
+      "chapterList": "#js_chapters@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search?searchkey={{key}}",
+    "weight": 0
+  }
+]

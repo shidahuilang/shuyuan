@@ -1,0 +1,39 @@
+[
+  {
+    "bookSourceGroup": "🌠图源",
+    "bookSourceName": "🌠 奇漫屋网",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://m.qimanwu.org/",
+    "customOrder": 132,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"状态\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"排行\",\"url\":\"/custom/top/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"完结\",\"url\":\"/custom/end/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"连载\",\"url\":\"/custom/serialize/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"排行\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"日榜\",\"url\":\"/custom/day/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"周榜\",\"url\":\"/custom/week/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"月榜\",\"url\":\"/custom/month/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"地区\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"中国\",\"url\":\"/category/list/1/page/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"日本\",\"url\":\"/category/list/2/page/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"韩国\",\"url\":\"/category/list/3/page/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n{\"title\":\"欧美\",\"url\":\"/category/list/4/page/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},\n]",
+    "lastUpdateTime": "1726556690630",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": ".detailContent@p@textNodes",
+      "kind": "class.top@text##更新时间："
+    },
+    "ruleContent": {
+      "content": ".lazy-read@img@data-src@js:\nheader={\"Referer\":baseUrl};\nheaders={\"headers\":JSON.stringify(header)};\nresult.split(\"\\n\").map(x=>'<img src=\\\"'+x+','+JSON.stringify(headers)+'\\\">').join(\"\\n\")"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".bottom@textNodes",
+      "bookList": "#rankList_1@li",
+      "bookUrl": ".info@a.0@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "a.0@img@src",
+      "lastChapter": ".subtitle@text",
+      "name": ".info@a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapterList@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{'webView': true}"
+    },
+    "searchUrl": "https://m.qimanwu.org/index.php/search?key={{key}}",
+    "weight": 0
+  }
+]
