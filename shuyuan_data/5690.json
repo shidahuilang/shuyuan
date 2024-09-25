@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceName": "红豆文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.hdwx.net",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"❀排行榜❀\",\"url\":\"/rank\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"热文推荐\",\"url\":\"#\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"周点击榜\",\"url\":\"/rank/weekvisit/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"月点击榜\",\"url\":\"/rank/monthvisit{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"总点击榜\",\"url\":\"/rank/allvisit/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"推荐榜单\",\"url\":\"/rank/allvote/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"完本小说\",\"url\":\"/finish/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
+    "lastUpdateTime": "1727157381339",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".tab@.author@text",
+      "coverUrl": ".tu@a@img@src",
+      "intro": ".text@textNodes",
+      "kind": ".tab@.p2.-1@text&&.info_chapters@h3.0@em@text##更新时间：",
+      "lastChapter": ".info_chapters@class.p2.0@li.0@text",
+      "name": ".tab@h1@text",
+      "wordCount": ".num2@text"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@html"
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": ".xbk",
+      "bookUrl": "h2@a@href",
+      "coverUrl": ".listimg@a@img@data-src",
+      "intro": ".intro@text",
+      "kind": ".listtext@span.1@text",
+      "name": "h2@a@text"
+    },
+    "ruleSearch": {
+      "author": "em@text",
+      "bookList": ".search_list",
+      "bookUrl": "a@href",
+      "name": "a@text"
+    },
+    "ruleToc": {
+      "chapterList": ".info_chapters@class.p2.1@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&submit=搜索&type=articlename\",\n  \"method\": \"POST\",\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]
