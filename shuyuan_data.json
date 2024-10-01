@@ -1,200 +1,66 @@
 [
   {
-    "bookSourceName": "总裁小说",
+    "bookSourceName": "369小说网",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.zongcaixiaoshuow.com/",
-    "customOrder": -1,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "[{\"title\":\"❀排行❀\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"推荐小说\",\"url\":\"/isgood/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"热门小说\",\"url\":\"/hot/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"❀分类❀\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"都市言情\",\"url\":\"/qing/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"现代小说\",\"url\":\"/xdxiaoshuo/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"历史小说\",\"url\":\"/ls/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"当代小说\",\"url\":\"/dangdaixiaoshuo/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"古典文学\",\"url\":\"/gudianwenxue/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"侦探推理\",\"url\":\"/zhentantuili/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
-    "lastUpdateTime": "1727159199184",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "coverUrl": ".panel-body@.pic@img@src",
-      "intro": "class.m-summary@text"
-    },
-    "ruleContent": {
-      "content": "#content@html"
-    },
-    "ruleExplore": {
-      "author": "class.col-md-4 col-sm-4 col-xs-4@text",
-      "bookList": "tbody@tr",
-      "bookUrl": "class.col-md-5 col-sm-8 col-xs-8@a@href",
-      "kind": "class.col-md-3 hidden-sm hidden-xs@text",
-      "name": "class.col-md-5 col-sm-8 col-xs-8@a@text"
-    },
-    "ruleSearch": {
-      "author": "class.col-md-2 col-sm-4 col-xs-4@text",
-      "bookList": "tbody@tr",
-      "bookUrl": "class.col-md-2 col-sm-8 col-xs-8@a@href",
-      "kind": "class.col-md-2 hidden-sm hidden-xs@text",
-      "lastChapter": "class.col-md-6 hidden-sm hidden-xs@text",
-      "name": "class.col-md-2 col-sm-8 col-xs-8@a@text"
-    },
-    "ruleToc": {
-      "chapterList": "#booklist@li@a",
-      "chapterName": "text",
-      "chapterUrl": "href##$##,{'webView': true}"
-    },
-    "searchUrl": "/e/search/index.php,{\n  \"body\": \"tbname=bookname&show=title,writer&tempid=1&keyboard={{key}}\",\n  \"method\": \"POST\"\n}",
-    "weight": 0
-  },
-  {
-    "bookSourceName": "同人小说",
-    "bookSourceType": 0,
-    "bookSourceUrl": "http://trxs.cc/",
-    "customOrder": -1,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "[\n{\"title\":\"同人小说\",\"url\":\"/tongren/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"全本同人\",\"url\":\"/tags-150-{{page-1}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"连载同人\",\"url\":\"/tags-151-{{page-1}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n{\"title\":\"排行榜单\",\"url\":\"/hot/{{page==1?'':'index_'+page+'.html'}}\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},\n]",
-    "lastUpdateTime": "1727162290270",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "downloadUrls": ""
-    },
-    "ruleContent": {
-      "content": ".read_chapterDetail@html"
-    },
-    "ruleExplore": {
-      "author": ".booknews@textNodes",
-      "bookList": ".bk",
-      "bookUrl": "a.0@href",
-      "coverUrl": ".pic@img@src",
-      "intro": ".infos@p.-1@text",
-      "kind": ".size@text&&.date@text",
-      "name": "h3@text"
-    },
-    "ruleSearch": {
-      "author": ".booknews@textNodes",
-      "bookList": ".bk",
-      "bookUrl": "h3@a@href",
-      "coverUrl": ".pic@a@img@src",
-      "intro": ".bk_right@p.-1@text",
-      "kind": ".booknews@.date@text",
-      "name": "h3@a@text"
-    },
-    "ruleToc": {
-      "chapterList": ".clearfix@li@a",
-      "chapterName": "text",
-      "chapterUrl": "href"
-    },
-    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/e/search/index.php,{\n  \"body\": \"keyboard={{key}}&show=title&classid=0&submit=搜索\",\n  \"method\": \"POST\",\n  \"charset\": \"GB2312\"\n}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "//改by源仓库和酷安大佬@肆意希",
-    "bookSourceGroup": "uaa",
-    "bookSourceName": "🎴 UAA·小说-改",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.uaa004.com/",
+    "bookSourceUrl": "https://www.369book.cc/",
     "bookUrlPattern": "",
-    "customOrder": 567,
+    "customOrder": 0,
     "enabled": true,
-    "enabledCookieJar": true,
+    "enabledCookieJar": false,
     "enabledExplore": true,
-    "exploreUrl": "[\n{'title':'分类·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?&orderType=2&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'都市激情','url':'https://m.uaa004.com/api/novel/app/novel/search?category=都市激情&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'校园春色','url':'https://m.uaa004.com/api/novel/app/novel/search?category=校园春色&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'家庭乱伦','url':'https://m.uaa004.com/api/novel/app/novel/search?category=家庭乱伦&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'系统异能','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E7%B3%BB%E7%BB%9F%E5%BC%82%E8%83%BD&orderType=2&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'穿越重生','url':'https://m.uaa004.com/api/novel/app/novel/search?category=穿越重生&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'东方玄幻','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E4%B8%9C%E6%96%B9%E7%8E%84%E5%B9%BB&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'贤者小说','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E8%B4%A4%E8%80%85%E5%B0%8F%E8%AF%B4&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'科学幻想','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E7%A7%91%E5%AD%A6%E5%B9%BB%E6%83%B3&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'乡村爱情','url':'https://m.uaa004.com/api/novel/app/novel/search?category=乡村爱情&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'同人改编','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E5%90%8C%E4%BA%BA%E6%94%B9%E7%BC%96&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'经典武侠','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E7%BB%8F%E5%85%B8%E6%AD%A6%E4%BE%A0&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'网红明星','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E5%A8%B1%E4%B9%90%E6%98%8E%E6%98%9F&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'西方魔幻','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E8%A5%BF%E6%96%B9%E9%AD%94%E5%B9%BB&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'历史架空\n','url':'https://m.uaa004.com/api/novel/app/novel/search?category=%E5%8E%86%E5%8F%B2%E6%9E%B6%E7%A9%BA\n&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'篇幅·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'短篇','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&space=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'中篇','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&space=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'长篇','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&space=3','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'状态·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'已完结','url':'https://m.uaa004.com/api/novel/app/novel/search?finished=1&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'连载中','url':'https://m.uaa004.com/api/novel/app/novel/search?finished=0&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'人称视角·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'男性视角','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&person=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'女性视角','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&person=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'第二人称','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&person=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'第三人称','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&person=4&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'肉量·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'少肉','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&porn=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'中肉','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&porn=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'多肉','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&porn=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'超多','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&porn=4&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'取向·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'直男','url':'https://m.uaa004.com/api/novel/app/novel/search?orientation=1&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'女主','url':'https://m.uaa004.com/api/novel/app/novel/search?orientation=2&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'男男','url':'https://m.uaa004.com/api/novel/app/novel/search?orientation=3&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'女女','url':'https://m.uaa004.com/api/novel/app/novel/search?orientation=4&page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'来源·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'原创首发','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&source=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'会员上传','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40&source=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n\n{'title':'时段·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'今日','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&period=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'本周','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&period=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'本月','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&period=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n\n{'title':'评分·全部','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n\n{'title':'＞4','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&score=4&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'＞3','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&score=3&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'＞2','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&score=2&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n\n{'title':'＞1','url':'https://m.uaa004.com/api/novel/app/novel/search?page={{page}}&score=1&searchType=1&size=40','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}}\n\n]",
-    "header": "{\"User-Agent\":\"NokiaN97/21.1.107 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4\",\"cookie\":\"token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODk0NzYyMTA4MDc0NDYzMjMyLCJ0eXBlIjoiY3VzdG9tZXIiLCJ0aW1lc3RhbXAiOjE3MjU5ODg0MzQ2NjksImV4cCI6MTcyNjU5MzIzNH0.TSIyaBB0Lo6w729Hdj7Kqj6R321eH-9e7dYPCBg6wF0;\"}",
-    "lastUpdateTime": "1727308783512",
-    "loginUrl": "https://m.uaa004.com",
-    "respondTime": 7107,
+    "exploreScreen": "",
+    "exploreUrl": "[\n    \n    {\"title\": \"热读榜\",\"url\":\"/rank/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n       {\"title\": \"❀  书库  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"❀  完结小说  ❀\",\"url\": \"\",\"style\": {\"layout_flexGrow\": 0,\n    \"layout_flexBasisPercent\": 1\n    }},\n    {\"title\": \"全部小说\",\"url\":\"/quanben/sort/{{page}}/\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"玄幻\",\"url\":\"/quanben/sort/1/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"武侠\",\"url\":\"/quanben/sort/2/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"都市\",\"url\":\"/quanben/sort/3/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"历史\",\"url\":\"/quanben/sort/4/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"科幻\",\"url\":\"/quanben/sort/5/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"游戏\",\"url\":\"/quanben/sort/6/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"女生\",\"url\":\"/quanben/sort/7/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"短篇\",\"url\":\"/quanben/sort/8/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }},\n    {\"title\": \"其他\",\"url\":\"/quanben/sort/9/{{page}}.html\",\"style\": {\"layout_flexGrow\": 0.25,\n    \"layout_flexBasisPercent\": -1\n    }}\n]",
+    "header": "{\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\",\n    \"Accept-Language\":\"zh-CN,zh;q=0.9\"\n}",
+    "lastUpdateTime": "1727576680671",
+    "respondTime": 180000,
     "ruleBookInfo": {
-      "author": "{{$.authors}}",
-      "coverUrl": "coverUrl",
-      "init": "<js>\nif(result.match(/IE=Edge/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>model",
-      "intro": "&nbsp;\n📖 书名：{{$.title}}\n👤 作者：{{$.authors}}\n👤 上传：{{$.uploader}}\n👀 视角：{{$.personDesc}}\n📜 篇幅：{{$.lengthTypeDesc}}\n🔖 标签：{{$.categories&&orientationDesc&&tags##[,\\n]##&nbsp;}}\n🕰 上架：{{$.onlineTimeFormat}}\n🗿 肉量：{{$.pornRateDesc}}\n✏  评分：{{$.score}}\n🕰 最新：{{$.latestUpdate}}({{$.updateTimeFormat}})\n👁 观看：{{$.viewCount}}\n🏷 简介：{{$.brief}}",
-      "kind": "{{$.finished##0##连载}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}##1##完结",
-      "lastChapter": "{{$.latestUpdate}}",
-      "name": "title",
-      "tocUrl": "https://m.uaa004.com/api/novel/app/novel/catalog/{{$.id}}",
-      "wordCount": "{{$.wordCount}}"
+      "author": "",
+      "coverUrl": "",
+      "intro": "#bookintro@text",
+      "kind": ".am-badge-danger@text&&.am-text-sm > .am-badge-warning@text",
+      "lastChapter": ".book-info-last > a@text",
+      "name": "",
+      "tocUrl": ".am-show-sm-only > .am-list-news-bd .am-list-news-more@href",
+      "wordCount": ".am-text-sm > .am-badge-secondary@text"
     },
     "ruleContent": {
-      "content": "//div[@class='line']&&\n//div[contains(@class, 'line')]&&\n//div[starts-with(@id, 'line')]&&\n//*[@class=\"article\"]@js:result",
-      "imageStyle": "DEFAULT"
+      "content": "#chaptercontent@html\n<js>\nresult=result.replace(/(<p>《.+\\(www.369book.cc\\)<\\/p>)/, '');\nresult=result.replace(/(<div class=\"book-read-link.+\\n.+\\n.+\\n.<\\/div>)/, '');\nresult=result.replace(/(<p>本章未完.+继续阅读<\\/p>)/,'');\njava.log(result)\n</js>",
+      "nextContentUrl": "class.am-btn-default.-1@href",
+      "replaceRegex": ""
     },
     "ruleExplore": {
-      "author": "$.authors",
-      "bookList": "$.model.data",
-      "bookUrl": "https://www.uaa.com/api/novel/app/novel/intro?id={{$.id}}",
-      "coverUrl": "$.coverUrl",
-      "intro": "$.brief",
-      "kind": "{{$.finished##0##连载}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}##1##完结",
-      "lastChapter": "$.latestUpdate",
-      "name": "$.title",
-      "wordCount": "$.wordCount"
+      "author": ".book-list-1-author@text## / 文",
+      "bookList": ".am-g > div",
+      "bookUrl": "h4 > a@href",
+      "coverUrl": ".am-thumbnail@data-src",
+      "intro": ".book-list-1-intro@text",
+      "kind": ".am-badge-warning@text",
+      "lastChapter": ".am-badge-secondary@text",
+      "name": "h4 > a@text",
+      "wordCount": ".am-badge-primary@text"
     },
     "ruleReview": [],
     "ruleSearch": {
-      "author": "$.authors",
-      "bookList": "<js>\nif(result.match(/IE=Edge/)){\njava.startBrowserAwait(baseUrl,\"验证\");\nresult=java.ajax(baseUrl);\n}result;\n</js>$.model.data",
-      "bookUrl": "https://m.uaa004.com/api/novel/app/novel/intro?id={{$.id}}",
+      "author": ".book-list-1-author@text## / 文",
+      "bookList": ".am-g > div",
+      "bookUrl": "h4 > a@href",
       "checkKeyWord": "",
-      "coverUrl": "$.coverUrl",
-      "intro": "$.brief",
-      "kind": "{{$.finished##0##连载}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}##1##完结",
-      "lastChapter": "$.latestUpdate",
-      "name": "$.title",
-      "wordCount": "$.wordCount"
+      "coverUrl": ".am-thumbnail@data-src",
+      "intro": ".book-list-1-intro@text",
+      "kind": ".am-badge-warning@text",
+      "lastChapter": ".am-badge-secondary@text",
+      "name": "h4 > a@text",
+      "wordCount": ".am-badge-primary@text"
     },
     "ruleToc": {
-      "chapterList": ".[?(@.title)]",
-      "chapterName": "title@text",
-      "chapterUrl": "https://m.uaa004.com/novel/chapter?id= {{$.id}}",
-      "isVip": "",
-      "isVolume": "@js:{{$.type}}=='2'?true:false;",
-      "preUpdateJs": "",
-      "updateTime": "{{$.limit}} {{$.onlineTime##T.*}} {{$.volumeNum}}字"
+      "chapterList": "class.am-avg-md-2@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "formatJs": "",
+      "nextTocUrl": ".index-container:nth-child(4) > .index-container-btn:nth-child(3)@href",
+      "updateTime": ""
     },
-    "searchUrl": "https://m.uaa004.com/api/novel/app/novel/search?category=&excludeTags=&keyword={{key}}&orderType=0&page={{page}}&searchType=1&size=40",
-    "weight": 0
-  },
-  {
-    "bookSourceName": "红豆文学",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://www.hdwx.net",
-    "customOrder": -1,
-    "enabled": true,
-    "enabledCookieJar": true,
-    "enabledExplore": true,
-    "exploreUrl": "[{\"title\":\"❀排行榜❀\",\"url\":\"/rank\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"热文推荐\",\"url\":\"#\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"周点击榜\",\"url\":\"/rank/weekvisit/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"月点击榜\",\"url\":\"/rank/monthvisit{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"总点击榜\",\"url\":\"/rank/allvisit/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"推荐榜单\",\"url\":\"/rank/allvote/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n{\"title\":\"完本小说\",\"url\":\"/finish/{{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},\n]",
-    "lastUpdateTime": "1727157381339",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "author": ".tab@.author@text",
-      "coverUrl": ".tu@a@img@src",
-      "intro": ".text@textNodes",
-      "kind": ".tab@.p2.-1@text&&.info_chapters@h3.0@em@text##更新时间：",
-      "lastChapter": ".info_chapters@class.p2.0@li.0@text",
-      "name": ".tab@h1@text",
-      "wordCount": ".num2@text"
-    },
-    "ruleContent": {
-      "content": "#novelcontent@html"
-    },
-    "ruleExplore": {
-      "author": ".author@text",
-      "bookList": ".xbk",
-      "bookUrl": "h2@a@href",
-      "coverUrl": ".listimg@a@img@data-src",
-      "intro": ".intro@text",
-      "kind": ".listtext@span.1@text",
-      "name": "h2@a@text"
-    },
-    "ruleSearch": {
-      "author": "em@text",
-      "bookList": ".search_list",
-      "bookUrl": "a@href",
-      "name": "a@text"
-    },
-    "ruleToc": {
-      "chapterList": ".info_chapters@class.p2.1@li@a",
-      "chapterName": "text",
-      "chapterUrl": "href",
-      "nextTocUrl": "option@value"
-    },
-    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&submit=搜索&type=articlename\",\n  \"method\": \"POST\",\n  \"charset\": \"GBK\"\n}",
+    "searchUrl": "/search/?searchkey={{key}}",
     "weight": 0
   },
   {
@@ -252,50 +118,6 @@
       "preUpdateJs": ""
     },
     "searchUrl": "https://69shuba.cx/modules/article/search.php,{\n\t\"charset\": \"gbk\", \"method\": \"POST\", \"body\": \"searchkey={{key}}&searchtype=all\"}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "",
-    "bookSourceGroup": "🔰普通",
-    "bookSourceName": "🔰 全本小说",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://www.quanben.so/",
-    "bookUrlPattern": "https://www.quanben.so/\\d+_\\d+/",
-    "customOrder": -1,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36\"}",
-    "lastUpdateTime": "1727159421112",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "author": "id.info@tag.p.0@tag.a.0@text",
-      "coverUrl": "id.fmimg@tag.img@src",
-      "intro": "id.intro@text",
-      "kind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content",
-      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
-      "name": "id.info@tag.h1@text"
-    },
-    "ruleContent": {
-      "content": "id.content@html",
-      "replaceRegex": "##全本小说网.*"
-    },
-    "ruleExplore": [],
-    "ruleSearch": {
-      "author": "class.s4@text",
-      "bookList": "class.novelslistss@tag.li",
-      "bookUrl": "class.s2@tag.a@href",
-      "coverUrl": "class.s2@tag.a@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\nsource.bookSourceUrl + 'files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
-      "lastChapter": "class.s3@tag.a@text",
-      "name": "class.s2@tag.a@text"
-    },
-    "ruleToc": {
-      "chapterList": "id.list@tag.dd@tag.a",
-      "chapterName": "text",
-      "chapterUrl": "href",
-      "nextTocUrl": "option@value"
-    },
-    "searchUrl": "modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"gbk\"\n}",
     "weight": 0
   }
 ]
