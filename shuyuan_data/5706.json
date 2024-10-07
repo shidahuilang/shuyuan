@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "by阿鬼\n\n🉑选择在原网站复制详情页链接粘贴到书架！步骤：从原网站复制你要看的书的详情页→复制网址链接→进入到阅读的书架→右上角三个点→添加网址！亲测🉑用！",
+    "bookSourceGroup": "★网页源",
+    "bookSourceName": "盘古小说网[搜索垃圾]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.panguxs.org/",
+    "bookUrlPattern": "https?://m.panguxs.org/book/\\w+.html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "{\n\t\"Accept-Language\":\"zh-CN\"\n}",
+    "lastUpdateTime": "1727938925635",
+    "loginUrl": "https://m.panguxs.org/login.php?jumpurl=%2Fnewmessage.php%3Ftosys%3D1%26from%3Dhttps%3A%2F%2Fm.panguxs.org%2F%26title%3D%25E3%2580%258A%25E3%2580%258B%25E5%25A0%25B1%25E9%258C%25AF%26content%3Dhttps%3A%2F%2Fm.panguxs.org%2F",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{i}",
+      "init": "@put:{n:\".base.clearfix@h2@text\",\na:\".info@span[0]@a@text\",\nc:\".info@span[1]@a@text&&.info@span[3]@text\",\nl:\".info@span[4]@a@text\",\nd:\".intro.clearfix[0]@text\",\ni:\".base.clearfix@img@src\",\nt:\"text.章节目录@href\"}",
+      "intro": "@get:{d}",
+      "kind": "@get:{c}##最近更新：",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "@get:{t}"
+    },
+    "ruleContent": {
+      "content": "#txt@p@html",
+      "replaceRegex": "##\\s阅读.*盘古小说.*\\s*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".info@span@text",
+      "bookList": ".clearfix li",
+      "bookUrl": "a@href",
+      "coverUrl": "img@data-original",
+      "intro": ".intro@text",
+      "kind": "em@text",
+      "name": ".tit@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapter a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s.php?s={{key}}&s=,{\n  \"charset\": \"UTF-8\",\n  \"method\": \"GET\"\n}",
+    "weight": 0
+  }
+]

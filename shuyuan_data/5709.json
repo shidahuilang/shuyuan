@@ -1,0 +1,44 @@
+[
+  {
+    "bookSourceComment": "by@咔咔龙",
+    "bookSourceName": "玩文学小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.wanwx.com/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": "1728222052479",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".booktag@a.0@text",
+      "coverUrl": ".img-thumbnail@src",
+      "intro": "#bookIntro@html",
+      "kind": ".booktag@a.1@text&&.booktag@span[!0]@text",
+      "lastChapter": "{{@@.text-danger.0@text}} {{@@.text-danger~span@text}}",
+      "name": ".bookTitle@text",
+      "wordCount": ".booktag@span.0@text"
+    },
+    "ruleContent": {
+      "content": "#htmlContent@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".booktag@text",
+      "bookList": ".col-md-10",
+      "bookUrl": ".bookTitle@a@href",
+      "checkKeyWord": "++https://www.wanwx.com/book/hxs.html",
+      "intro": "#bookIntro@html",
+      "kind": ".visible-xs@text",
+      "lastChapter": ".text-danger@text",
+      "name": ".bookTitle@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list-chapterAll@a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "search,{\n  \"body\": \"keyword={{key}}&page={{page}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

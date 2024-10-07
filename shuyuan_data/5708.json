@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceComment": "*当前网址〖https://www.lansebook.com〗\n*备用：\nhttps://www.gosealib.com\nhttps://www.mylanhai.org\nhttps://www.mylanhai.com\n*书籍变量切换单本书线路",
+    "bookSourceGroup": "R18",
+    "bookSourceName": "蓝海搜书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "搜书搜书搜书",
+    "customOrder": -44027,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nu = source.bookSourceComment.match(/网址〖([^〗]*)〗/)[1];\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\nX = org.jsoup.Jsoup.parse(java.ajax(u)).select(\".SHsectionTwo-top .SHsectionTwo-bottom-content li a[href*=/s/]\");\nfor (i = 0; i < X.length; ++i) {\n  push(X[i].text(), u + X[i].attr('href') + `/{{page}}/`, null)\n};\nJSON.stringify(sort);",
+    "lastUpdateTime": "1728204290598",
+    "respondTime": 7866,
+    "ruleBookInfo": {
+      "author": "",
+      "canReName": "",
+      "coverUrl": "img.1@src",
+      "init": "",
+      "intro": "@js:\nt = book.getVariable(\"custom\");\nt = t != \"\" ? t: 0;\nJ = org.jsoup.Jsoup.parse(result);\nsite = J.select('.site');\nlist = \"\";\nfor (i = 0; i < site.length; ++i) {\n  T = (x) => site[i].select(x).text();\n  list += `〖${i}〗${T('a:eq(1)')}\\n${T('a:eq(0)')}・${String(T('span')).replace(/更新\\s*/, '')}\\n&shy;\\n`;\n};\njava.put(\"url\", site[t].select('a:eq(1)').attr('href'));\n`&nbsp;🌸当前线路〖${t}〗🌸\\n&shy;\\n` + list + J.select('#intro').html();",
+      "kind": ".category@a@text&&.time@span@text",
+      "lastChapter": ".newestChapter@a@text",
+      "name": "",
+      "tocUrl": "@get:{url}"
+    },
+    "ruleContent": {
+      "content": ".RBGsectionThree-content@p@text",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleSearch": {
+      "author": ".g@title",
+      "bookList": ".SHsectionThree-middle@p:not(.intro)",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "a!0:1@text",
+      "name": "a.0@title"
+    },
+    "ruleToc": {
+      "chapterList": "ol@a\n@js:\nJ = result;\nlist = [];\nfor (i = 0; i < J.length; ++i) {\n  u = J[i].attr('href');\n  list.push({\n    name: J[i].text(),\n    url: u,\n    num: u.split('/')[3].slice(0, -5)\n  });\n};\nRule = (a, b) => a.num - b.num;\nlist.sort(Rule);",
+      "chapterName": "name",
+      "chapterUrl": "url##$##,{\"webView\": true}",
+      "nextTocUrl": "#next@href",
+      "updateTime": ""
+    },
+    "searchUrl": "{{source.bookSourceComment.match(/网址〖([^〗]*)〗/)[1]}}/s/{{key}}/{{page}}/",
+    "variableComment": "*书籍变量切换单本书线路\n*请填入阿拉伯数字",
+    "weight": 0
+  }
+]
