@@ -1,0 +1,65 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩新笔趣阁xbqgxs[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.xbqgxs.vip/#xsw8093",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\n    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',\n    \"Cookie\":\"0\"\n}",
+    "lastUpdateTime": "1728545281851",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{\nn:\"[property$=book_name|title]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"\n}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#article@html",
+      "nextContentUrl": "text.下一@href\n@js:\nif(result){\n result=result[0].includes(\"_\")?result:\"\";\n}",
+      "replaceRegex": "##{{book.author}}.*.接着再看更方便|本章没完.*继续阅读！如果被转码.*更换浏揽器即可。|本章未完.*退出阅读模式即可，谢谢|.*提醒.*看完记得.*|\\s*温馨提示.?亲爱的读者.*\\s*|\\d+。。",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": ".commend-title@span@text",
+      "bookList": ".category-div",
+      "bookUrl": ".commend-title@a@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": ".intro@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "h3@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".info-chapters.1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value",
+      "updateTime": ""
+    },
+    "searchUrl": "@js:\nvar su=source.getKey()\nvar htmlUrl=java.get(su,{}).headers('Location')\njava.log(`重定向：${htmlUrl[0]}`)\nvar posturl=htmlUrl[0]?htmlUrl[0]:(su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su)\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\ncookie.removeCookie(posturl)\njava.log(`请求：${posturl}`)\n\nso=posturl+\"/search,\"+JSON.stringify({\n  \"body\": \"searchkey=\"+key,\n  \"method\": \"POST\"\n});\njava.put(\"url\",String(so))\nso",
+    "weight": 0
+  }
+]
