@@ -23,7 +23,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
-- TG交流群「新群人数较少」[点我](https://t.me/dahuilang888)
+- TG交流群[点我](https://t.me/dahuilang888)
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
