@@ -1,27 +1,118 @@
 [
   {
-    "bookSourceName": "无极小说",
+    "bookSourceComment": "",
+    "bookSourceName": "笔趣阁",
     "bookSourceType": 0,
-    "bookSourceUrl": "http://m.wujixsw.org/",
-    "customOrder": 0,
+    "bookSourceUrl": "https://www.fd80s.com",
+    "bookUrlPattern": "https?://www.fd80s.com/\\d+/\\d+/",
+    "customOrder": 19,
     "enabled": true,
     "enabledCookieJar": true,
-    "enabledExplore": true,
-    "lastUpdateTime": "1728349590877",
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": "1728612616779",
     "respondTime": 180000,
-    "ruleBookInfo": [],
-    "ruleContent": [],
-    "ruleExplore": [],
-    "ruleSearch": {
-      "author": "a.2@text",
-      "bookList": ".hot_sale",
-      "bookUrl": "a.1htef",
-      "kind": "p.2@text",
-      "lastChapter": "a.3@text",
-      "name": "p.1@text"
+    "ruleBookInfo": {
+      "author": "class.bookdes@tag.p.0@tag.a.0@text",
+      "coverUrl": "class.book@tag.a.0@tag.img@src",
+      "init": "",
+      "intro": "class.bookintro@tag.p@textNodes",
+      "kind": "class.bookdes@tag.p.1@tag.span.0@text",
+      "lastChapter": "class.bookdes@tag.p.2@tag.a.0@text",
+      "name": "class.booktitle@text",
+      "tocUrl": "",
+      "wordCount": "class.bookdes@tag.p.1@text##.*\\|"
     },
-    "ruleToc": [],
-    "searchUrl": "http://m.wujixsw.org/SearchBook.php?keyword={{key}}",
+    "ruleContent": {
+      "content": "id.chaptercontent@tag.p@textNodes",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.dd.1@tag.a.0@text",
+      "bookList": "class.content pc-pl pc-pr@tag.dl",
+      "bookUrl": "tag.dt.0@tag.a.0@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "tag.a.0@tag.img@data-src",
+      "intro": "tag.dd.0@textNodes",
+      "kind": "tag.dd.1@tag.span.0@text%%tag.dd.1@tag.span.2@text",
+      "name": "tag.dt.0@tag.a.0@text",
+      "wordCount": "tag.dd.1@tag.span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.all@tag.ul@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "class.morechapter@href||option@value"
+    },
+    "searchUrl": "https://www.fd80s.com/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\",\n  \"webView\": true\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "vip章节请登录后更新目录",
+    "bookSourceGroup": "🛍️   正 版 源   🛍️",
+    "bookSourceName": "📖💵书耽🆔🅰",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://app.shubl.com",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "全部纯爱::https://www.baidu.com/category_type=1&order=week_click&page={{page}}\n现纯::https://www.baidu.com/category_type=4&order=week_click&page={{page}}\n幻纯::https://www.baidu.com/category_type=5&order=week_click&page={{page}}\n古纯::https://www.baidu.com/category_type=6&order=week_click&page={{page}}\n百合::https://www.baidu.com/category_type=3&order=week_click&page={{page}}\n全部言情::https://www.baidu.com/category_type=20&order=week_click&page={{page}}\n现言::https://www.baidu.com/category_type=8&order=week_click&page={{page}}\n幻言::https://www.baidu.com/category_type=9&order=week_click&page={{page}}\n古言::https://www.baidu.com/category_type=10&order=week_click&page={{page}}\n无CP::https://www.baidu.com/category_type=21&order=week_click&page={{page}}\n付费&连载&更新时间::https://www.baidu.com/category_type=1&order=uptime&up_status=0&is_paid=1&page={{page}}\n付费&完本&更新时间::https://www.baidu.com/category_type=1&order=uptime&up_status=1&is_paid=1&page={{page}}\n每日签到::https://www.baidu.com/get_daily_task_bonus",
+    "header": "{\"app-version\":\"4.1.1\"}",
+    "jsLib": "",
+    "lastUpdateTime": "1728722031921",
+    "loginUi": "[\n    {\n        name: \"账号\",\n        type: \"text\"\n    },\n    {\n        name: \"密码\",\n        type: \"password\"\n    }\n    \n     \n]",
+    "loginUrl": "<js>\nfunction getToken(){\treturn (source.getLoginHeaderMap()!=null && source.getLoginHeaderMap()!=\"\")?source.getLoginHeaderMap().get(\"login_token\"):\"0f6bd1d063f202f71c3b84678027ce81\"\n\t}\nfunction getA(){\n\treturn (source.getLoginHeaderMap()!=null && source.getLoginHeaderMap()!=\"\")?source.getLoginHeaderMap().get(\"account\"):\"萌友521068519938\";\n\t}\nfunction encode(word){\n  \treturn java.createSymmetricCrypto(\"AES/CBC/PKCS5Padding\", java.base64DecodeToByteArray(\"L6alxSR4ttjXvcGpZozYtdcJtG4l0tSnQplRUONIRsw=\"), java.base64DecodeToByteArray(\"AAAAAAAAAAAAAAAAAAAAAA==\")).encryptBase64(word);\n\t}\nfunction decode(word){\n    \treturn java.createSymmetricCrypto(\"AES/CBC/PKCS5Padding\", java.base64DecodeToByteArray(\"L6alxSR4ttjXvcGpZozYtdcJtG4l0tSnQplRUONIRsw=\"), java.base64DecodeToByteArray(\"AAAAAAAAAAAAAAAAAAAAAA==\")).decryptStr(word);\n}\n    \t\n function login(){\n \tlogin_name=source.getLoginInfoMap().get(\"账号\")\npasswd=source.getLoginInfoMap().get(\"密码\");\n    let jsonStr = {\n        \"login_name\": login_name,\n        \"passwd\": passwd,\n        \"app_signature_md5\": \"f73576612783f8ed8b68cdf73a56be94\",\n        \"app_version\": \"4.1.1\",\n        \"channel\": \"default\"\n    }\n    let body = \"secret_content=\" + encode(JSON.stringify(jsonStr));\n    let option = {\n        \"method\": \"POST\",\n        \"body\": String(body)\n    };\n    \n    url = \"https://app.shubl.com/signup/login,\" + JSON.stringify(option)\n    resp = JSON.parse(decode(java.ajax(url)))\n    if (resp.code == \"100000\") {\n     body = {\n     \t\"login_token\":resp.data.login_token,\n     \t\"account\":encodeURI(resp.data.reader_info.account)\n     \t}\n     source.putLoginHeader(JSON.stringify(body)) \n    } else {\n        java.toast('❗️ ' + resp.tip + ' ❗️')\n    }\n}\n</js>",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "$.author_name",
+      "coverUrl": "$.cover",
+      "init": "<js>\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\ndecode(result)\n</js>\n$.data.book_info",
+      "intro": "$.description",
+      "kind": "$.tag",
+      "lastChapter": "{{$.last_chapter_info.chapter_title}} / {{$.last_chapter_info.uptime}}",
+      "name": "$.book_name",
+      "tocUrl": "@js:\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\nlet jsonObj={\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"4.1.1\",\"channel\":\"default\",\"last_update_time\":\"0\",\"book_id\":{{$.book_id}},\"login_token\":String(getToken()),\"account\":String(getA())}\nlet body = \"secret_content=\"+encode(JSON.stringify(jsonObj));\nlet option = {\"method\": \"POST\",\"body\": String(body)};\n\"https://app.shubl.com/chapter/get_chapter_list_group_by_division,\" + JSON.stringify(option)",
+      "wordCount": "$.total_word_count"
+    },
+    "ruleContent": {
+      "content": "<js>\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\n\ndecode(result)\n</js>\n$.data.chapter_info.txt_content"
+    },
+    "ruleExplore": {
+      "author": "$.author_name",
+      "bookList": "<js>\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\n\nresponse=null\nif(!baseUrl.match(/get_daily_task_bonus/)){\ncategory_type=baseUrl.match(/category_type=(\\d+)/)?baseUrl.match(/category_type=(\\d+)/)[1]:\"\"\norder=baseUrl.match(/order=(.+?)&/)?baseUrl.match(/order=(.+?)&/)[1]:\"\"\nis_paid=baseUrl.match(/is_paid=(\\d)&/)?baseUrl.match(/is_paid=(\\d)&/)[1]:\"\"\nup_status=baseUrl.match(/up_status=(\\d)&/)?baseUrl.match(/up_status=(\\d)&/)[1]:\"\"\njsonObj={\"category_type\":category_type,\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"2.1.6\",\"channel\":\"default\",\"order\":order,\"count\":\"15\",\"is_paid\":is_paid,\"page\":String(baseUrl.match(/page=(\\d+)/)[1]-1),\"up_status\":up_status,\"login_token\":String(getToken()),\"account\":String(getA())}\n//java.log(JSON.stringify(jsonObj))\noption={\"method\":\"POST\",\"body\":\"secret_content=\"+encodeURIComponent(encode(JSON.stringify(jsonObj)))}\nurl=\"https://app.shubl.com/bookcity/get_filter_search_book_list,\"+JSON.stringify(option)\nresponse=decode(java.ajax(url))\n}else{\njsonObj={\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"2.1.6\",\"channel\":\"default\",\"task_type\":\"1\",\"login_token\":String(getToken()),\"account\":String(getA())}\noption={\"method\":\"POST\",\"body\":\"secret_content=\"+encodeURIComponent(encode(JSON.stringify(jsonObj)))}\nurl=\"https://app.shubl.com/reader/get_daily_task_bonus,\"+JSON.stringify(option)\nresponse=decode(java.ajax(url))\n}\n\n// 打印解密结果\n//java.log(JSON.stringify(JSON.parse(response)))\nresponse\n</js>\n$.data.book_list||$.[*]",
+      "bookUrl": "@js:\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\n\nif(!baseUrl.match(/get_daily_task_bonus/)){\nlet jsonObj={\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"2.1.6\",\"channel\":\"default\",\"book_id\":String(java.getString('$.book_id')),\"login_token\":String(getToken()),\"account\":String(getA())}\nlet body = \"secret_content=\"+encode(JSON.stringify(jsonObj));\nlet option = {\"method\": \"POST\",\"body\": String(body)};\n\"https://app.shubl.com/book/get_info_by_id,\" + JSON.stringify(option)\n}else{\nbaseUrl\n}",
+      "coverUrl": "$.cover",
+      "intro": "$.description",
+      "kind": "$.tag",
+      "lastChapter": "{{$.last_chapter_info.chapter_title}} / {{$.last_chapter_info.uptime}}",
+      "name": "$.book_name@put:{bid:book_id}||$",
+      "wordCount": "$.total_word_count"
+    },
+    "ruleSearch": {
+      "author": "$.author_name",
+      "bookList": "<js>\n\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\n\nresponse=decode(result)\n// 打印解密结果\n//java.log(JSON.stringify(JSON.parse(response)))\nresponse\n</js>\n$.data.book_list",
+      "bookUrl": "@js:\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\nlet jsonObj={\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"4.1.1\",\"channel\":\"default\",\"book_id\":{{$.book_id}},\"login_token\":String(getToken()),\"account\":String(getA())}\nlet body = \"secret_content=\"+encode(JSON.stringify(jsonObj));\nlet option = {\"method\": \"POST\",\"body\": String(body)};\n\"https://app.shubl.com/book/get_info_by_id,\" + JSON.stringify(option)",
+      "coverUrl": "$.cover",
+      "intro": "$.description",
+      "kind": "$.tag",
+      "lastChapter": "{{$.last_chapter_info.chapter_title}} / {{$.last_chapter_info.uptime}}",
+      "name": "$.book_name@put:{bid:book_id}",
+      "wordCount": "$.total_word_count"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\ndecode(result)\n</js>\n$.data.chapter_list_group[*].chapter_list[*]",
+      "chapterName": "$.chapter_title",
+      "chapterUrl": "@js:\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\n\nlet jsonObj={\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"4.1.1\",\"channel\":\"default\",\"chapter_id\":{{$.chapter_id}},\"login_token\":String(getToken()),\"account\":String(getA())}\n\nlet body = \"secret_content=\"+encode(JSON.stringify(jsonObj));\nlet option = {\"method\": \"POST\",\"body\": String(body)};\n\"https://app.shubl.com/chapter/get_chapter_info,\" + JSON.stringify(option)",
+      "isVip": "@js:!{{$.auth_access}}",
+      "updateTime": "{{$.word_count}} 字 发布于 {{$.uptime}}"
+    },
+    "searchUrl": "@js:\neval(String(source.loginUrl).replace(/<\\/*js>|function login[\\s\\S]+/g,''));\n\nlet jsonObj={\"app_signature_md5\":\"f73576612783f8ed8b68cdf73a56be94\",\"app_version\":\"4.1.1\",\"channel\":\"default\",\"order\":\"week_click\",\"count\":\"15\",\"category_type\":\"1\",\"page\":page-1,\"key\":key,\"login_token\":String(getToken()),\"account\":String(getA())}\nlet body = \"secret_content=\"+encode(JSON.stringify(jsonObj));\n\nlet option = {\"method\": \"POST\",\"body\": String(body)};\n\n\"https://app.shubl.com/bookcity/get_filter_search_book_list,\" + JSON.stringify(option)",
     "weight": 0
   },
   {
@@ -88,48 +179,6 @@
     "weight": 0
   },
   {
-    "bookSourceComment": "by@咔咔龙",
-    "bookSourceName": "玩文学小说网",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://www.wanwx.com/",
-    "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "lastUpdateTime": "1728222052479",
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "author": ".booktag@a.0@text",
-      "coverUrl": ".img-thumbnail@src",
-      "intro": "#bookIntro@html",
-      "kind": ".booktag@a.1@text&&.booktag@span[!0]@text",
-      "lastChapter": "{{@@.text-danger.0@text}} {{@@.text-danger~span@text}}",
-      "name": ".bookTitle@text",
-      "wordCount": ".booktag@span.0@text"
-    },
-    "ruleContent": {
-      "content": "#htmlContent@html"
-    },
-    "ruleExplore": [],
-    "ruleSearch": {
-      "author": ".booktag@text",
-      "bookList": ".col-md-10",
-      "bookUrl": ".bookTitle@a@href",
-      "checkKeyWord": "++https://www.wanwx.com/book/hxs.html",
-      "intro": "#bookIntro@html",
-      "kind": ".visible-xs@text",
-      "lastChapter": ".text-danger@text",
-      "name": ".bookTitle@text"
-    },
-    "ruleToc": {
-      "chapterList": "#list-chapterAll@a",
-      "chapterName": "text",
-      "chapterUrl": "href"
-    },
-    "searchUrl": "search,{\n  \"body\": \"keyword={{key}}&page={{page}}\",\n  \"method\": \"POST\"\n}",
-    "weight": 0
-  },
-  {
     "bookSourceComment": "",
     "bookSourceGroup": "",
     "bookSourceName": "🍩新笔趣阁xbqgxs[自写]",
@@ -190,6 +239,169 @@
       "updateTime": ""
     },
     "searchUrl": "@js:\nvar su=source.getKey()\nvar htmlUrl=java.get(su,{}).headers('Location')\njava.log(`重定向：${htmlUrl[0]}`)\nvar posturl=htmlUrl[0]?htmlUrl[0]:(su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su)\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\ncookie.removeCookie(posturl)\njava.log(`请求：${posturl}`)\n\nso=posturl+\"/search,\"+JSON.stringify({\n  \"body\": \"searchkey=\"+key,\n  \"method\": \"POST\"\n});\njava.put(\"url\",String(so))\nso",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "🍩爱读书吧[自写]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.aidushu8.com/#xsw8093",
+    "customOrder": -71564,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\n    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',\n    \"Cookie\":\"0\"\n}",
+    "lastUpdateTime": "1728610543014",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "@get:{a}",
+      "coverUrl": "@get:{c}",
+      "init": "@put:{\nn:\"[property~=book_name|title]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property~=lastest_chapter_name|latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"\n}",
+      "intro": "@get:{i}",
+      "kind": "@get:{k}",
+      "lastChapter": "@get:{l}",
+      "name": "@get:{n}",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#article@html",
+      "nextContentUrl": "text.下一@href\n@js:\nif(result){\n result=result[0].includes(\"_\")?result:\"\";\n}",
+      "replaceRegex": "##{{book.author}}.*.接着再看更方便|本章没完.*继续阅读！如果被转码.*更换浏揽器即可。|本章未完.*退出阅读模式即可，谢谢|.*提醒.*看完记得.*|\\s*温馨提示.?亲爱的读者.*\\s*|\\d+。。",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "p.0@textNodes",
+      "bookList": ".searchresult",
+      "bookUrl": ".img_span@a@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": ".searchresult_p@text",
+      "kind": ".s_gray@text",
+      "lastChapter": "p.2@a@text",
+      "name": "h3@span@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "#ul_all_chapters@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value",
+      "updateTime": ""
+    },
+    "searchUrl": "@js:\nvar su=source.getKey()\nvar htmlUrl=java.get(su,{}).headers('Location')\njava.log(`重定向：${htmlUrl[0]}`)\nvar posturl=htmlUrl[0]?htmlUrl[0]:(su.includes(\"#\")?su.match(/([^\\#]+)\\#/)[1]:su)\nposturl = posturl.slice(-1)=='/'?posturl.slice(0,-1):posturl\ncookie.removeCookie(posturl)\njava.log(`请求：${posturl}`)\n\nck=cookie.getCookie(posturl);\n\ncookie.setCookie(posturl,String(ck).replace(/ss_search_delay=.*/,\"\"));\n\nso=posturl+\"/search,\"+JSON.stringify({\n  \"body\": \"searchtype=all&searchkey=\"+key,\n  \"method\": \"POST\"\n});\njava.put(\"url\",String(so))\nso",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "搜索间隔60秒",
+    "bookSourceGroup": "lai",
+    "bookSourceName": "BL小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.bl5xs.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10;  Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1728735313808",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//meta[@property='og:novel:author']/@content",
+      "coverUrl": "//meta[@property='og:image']/@content",
+      "intro": "//meta[@property=‘og:description’]/@content",
+      "kind": "//meta[@property='og:novel:category']/@content&&//meta[@property='og:novel:status']/@content&&//meta[@property='og:novel:update_time']/@content",
+      "lastChapter": "//meta[@property='og:novel:latest_chapter_name']/@content",
+      "name": "//meta[@property='og:novel:book_name']/@content",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.txt@p@html",
+      "nextContentUrl": "#pb_next@href",
+      "replaceRegex": "",
+      "title": "class.chapter-title@text"
+    },
+    "ruleExplore": {
+      "bookList": "",
+      "intro": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.index_body.0@a",
+      "bookUrl": "//a[@class='list']/@href",
+      "checkKeyWord": "剑来",
+      "coverUrl": "//a[@class='list']/div[@class='img']/img/@data-original",
+      "intro": "class.info@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul.1@li||ul@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.查看更多章节@href||option@value"
+    },
+    "searchUrl": "https://www.bl5xs.net/search.html,{\n  \"body\": \"s={{key}}\",\n  \"method\": \"POST\",\n  \"webView\": true\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "图书世界@S_LIN",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://losqo2.9ap7f7xm9.xy930m.sbs/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": "1728701663882",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".catalog .tab .p1@text",
+      "coverUrl": ".catalog .tu@img@src",
+      "intro": ".catalog .jj .p2@text",
+      "kind": ".catalog .tab1 .p4@text",
+      "lastChapter": ".info_chapters li.0@text",
+      "name": ".catalog h1@text",
+      "tocUrl": "text.全部章节@href",
+      "wordCount": ".catalog .tab1 .p6@text"
+    },
+    "ruleContent": {
+      "content": ".nr_function .novelcontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\s\\《第.*章.*》\\n*章节内容未完，点击下一页继续阅读。",
+      "webJs": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".search_list@a.2@text",
+      "bookList": ".search_list",
+      "bookUrl": ".search_list@a.0@href",
+      "checkKeyWord": "",
+      "kind": ".search_list@a.1@text",
+      "name": ".search_list@a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".info_chapters .p2.1@li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "http://losqo2.9ap7f7xm9.xy930m.sbs/s.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\":\"s={{key}}&type=articlename\"\n}",
     "weight": 0
   }
 ]

@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "图书世界@S_LIN",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://losqo2.9ap7f7xm9.xy930m.sbs/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "",
+    "lastUpdateTime": "1728701663882",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".catalog .tab .p1@text",
+      "coverUrl": ".catalog .tu@img@src",
+      "intro": ".catalog .jj .p2@text",
+      "kind": ".catalog .tab1 .p4@text",
+      "lastChapter": ".info_chapters li.0@text",
+      "name": ".catalog h1@text",
+      "tocUrl": "text.全部章节@href",
+      "wordCount": ".catalog .tab1 .p6@text"
+    },
+    "ruleContent": {
+      "content": ".nr_function .novelcontent@html",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##\\s\\《第.*章.*》\\n*章节内容未完，点击下一页继续阅读。",
+      "webJs": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".search_list@a.2@text",
+      "bookList": ".search_list",
+      "bookUrl": ".search_list@a.0@href",
+      "checkKeyWord": "",
+      "kind": ".search_list@a.1@text",
+      "name": ".search_list@a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".info_chapters .p2.1@li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "http://losqo2.9ap7f7xm9.xy930m.sbs/s.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\":\"s={{key}}&type=articlename\"\n}",
+    "weight": 0
+  }
+]
