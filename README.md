@@ -39,7 +39,7 @@ http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/shuyuan/ai
 
 #### 🚩 IPTV源
  ```
-http://iptv.228088.xyz:3008/cn.m3u
+https://iptv.228088.xyz/cn.m3u
  ```
  ```
 https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
