@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "by_金樽\n\nhttp://www.yinghuadm.org/\nhttp://m.yinghuadm.org/",
+    "bookSourceGroup": "🧩特殊源",
+    "bookSourceName": "🌸 樱花动漫",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.yinghuadm.org",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\"title\":\"国产动漫\",\"url\":\"/guochandongman/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"斗破苍穹年番\",\"url\":\"/show/5660.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n{\"title\":\"斗罗大陆\",\"url\":\"/show/4066.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n{\"title\":\"武神主宰\",\"url\":\"/show/4939.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n{\"title\":\"妖神记\",\"url\":\"/show/3878.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n{\"title\":\"遮天\",\"url\":\"/show/5907.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n,{\"title\":\"神墓\",\"url\":\"/show/5650.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n\n{\"title\":\"日本动漫\",\"url\":\"/ribendongman/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"秘密的偶像公主\",\"url\":\"/show/6188.html\",\"style\":{\"layout_flexGrow\":1}},{\"title\":\"妻子变成小学生\",\"url\":\"/show/6360.html\",\"style\":{\"layout_flexGrow\":1}},\n{\"title\":\"海贼王\",\"url\":\"/show/2.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},{\"title\":\"暗杀女仆冥土小姐\",\"url\":\"/show/6357.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},\n\n{\"title\":\"美国动漫\",\"url\":\"/meiguodongman/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"我与超人的冒险\",\"url\":\"/show/5955.html\",\"style\":{\"layout_flexGrow\":1}},{\"title\":\"狼之噩梦\",\"url\":\"/show/5367.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},{\"title\":\"大炮破坏者\",\"url\":\"/show/4407.html\",\"style\":{\"layout_flexBasisPercent\":0.46}},{\"title\":\"怪诞小镇第一季\",\"url\":\"/show/4582.html\",\"style\":{\"layout_flexGrow\":1}},\n\n{\"title\":\"动漫电影\",\"url\":\"/movie/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n\n{\"title\":\"亲子动漫\",\"url\":\"/qinzi/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}}\n]",
+    "lastUpdateTime": "1728885454072",
+    "loginUrl": "",
+    "respondTime": 1278,
+    "ruleBookInfo": {
+      "coverUrl": "div[class=\"thumb l\"]>img@src",
+      "downloadUrls": "[class~=download|Ynlf6YeR5qi9]@href",
+      "intro": ".info@text",
+      "name": "div[class=\"rate r\"]>h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "<js>\ntitle=java.getElements('div[class=\"gohome l\"]>h1').text();\nmr=String(result).match(/data\\-vid\\=\\\"(.*?\\.(m3u8|mp4))\\$mp4\\\"/);\n\nif(mr){\nif(book.durChapterIndex==chapter.index){url=mr[1];\njava.startBrowser(url,title)}\n}else{java.log(\"匹配失败\")}\n\nhtml=`<br>【标题】${title}</br>\\n<br>【地址】${url}</br>\\n<br>【刷新正文】播放</br>\\n<br>【点击章节地址】跳转到浏览器播放\\n</br>`\n</js>",
+      "title": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "",
+      "bookList": ".lpic>ul>li||.imgs>ul>li",
+      "bookUrl": "h2>a@href||.tname>a@href",
+      "checkKeyWord": "斗破",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "kind": "span.1@text##类型：",
+      "lastChapter": "span.0@text||tag.p.-1@tag.a@text",
+      "name": "h2>a@title||.tname>a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "-.movurl>ul>li>a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/search/{{key}}/",
+    "weight": 66
+  }
+]
