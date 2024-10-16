@@ -39,7 +39,7 @@ https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
 
 #### 🚩 IPTV源
  ```
-https://iptv.228088.xyz/cn.m3u
+http://iptv.228088.xyz:3008/cn.m3u
  ```
  ```
 https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
