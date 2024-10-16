@@ -15,13 +15,13 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 
 #### 🚩 规则净化
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 #### 🚩 TTS-在线语音包生成[点我](http://tts.228088.xyz:3009)
 详见[文档](https://github.com/shidahuilang/shuyuan/blob/shuyuan/doc.md)
 #### 🚩 TTS-70种语音包
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
 - TG交流群[点我](https://t.me/dahuilang888)
 
@@ -30,11 +30,11 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 **自动更新时间** 2024-10-16 18:38:01 CST+0800
  
  ``` bash
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
+http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
 
 #### 🚩 IPTV源
