@@ -41,9 +41,7 @@ http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/shuyuan/ai
  ```
 https://iptv.228088.xyz/cn.m3u
  ```
- ```
-https://cdn.jsdelivr.net/gh/shidahuilang/shuyuan@shuyuan/iptv.txt
- ```
+
 #### 🚩 ESign/AltStore/SideStore/锤子助手 巨魔商店应用
 导入链接
 ```
