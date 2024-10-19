@@ -1,0 +1,229 @@
+[
+  {
+    "bookSourceComment": "by阿鬼\n\n流量浏览！流量检验！\n\n同站：\nhttps://yzwpub.com",
+    "bookSourceGroup": "★POST请求,★御宅书屋",
+    "bookSourceName": "🔞一曲书斋xseeo",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xseeo.com/",
+    "bookUrlPattern": "https?://m.xseeo.com/novel/\\d+.html",
+    "customOrder": 29,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "耽美::/wapsort/9_{{page}}.html\n腹黑::/wapsort/12_{{page}}.html\n其他::/wapsort/8_{{page}}.html",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1729170430633,
+    "loginUrl": "http://m.xseeo.com/login.php",
+    "respondTime": 9261,
+    "ruleBookInfo": {
+      "author": ".article_info_td[0]@div[0]@h2@text",
+      "intro": "pre@text",
+      "kind": ".article_info_td[0]@div[1]@a@text",
+      "lastChapter": ".article_info_td[0]@div[2]@a@text",
+      "name": ".h_nav_items@li[1]@text",
+      "tocUrl": "{{baseUrl}}##.*novel/(\\d+).html?##/novel/list/$1/1.html",
+      "wordCount": ".article_info_td[1]@div[0]@text##总字数："
+    },
+    "ruleContent": {
+      "content": "#nr1@html",
+      "nextContentUrl": "text.下一章@href",
+      "replaceRegex": "##\\s书名：.*\\n*|\\s作者：.*\\s*"
+    },
+    "ruleExplore": {
+      "author": "p[0]@strong@text",
+      "bookList": ".common-bookele",
+      "bookUrl": "a@href",
+      "intro": ".abstract@text",
+      "kind": "a[0]@text",
+      "lastChapter": "",
+      "name": "h3@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "p[0]@strong@text",
+      "bookList": ".common-bookele",
+      "bookUrl": "a@href",
+      "kind": ".lastupdate@text##栏目：",
+      "name": ".articlename@text"
+    },
+    "ruleToc": {
+      "chapterList": "div[style=\"overflow: hidden;margin-bottom:10px;\"] li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "preUpdateJs": "Java.refreshTocUrl()"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"type=articlename&s={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by阿鬼\n\n正文有书名的请自行忽略！阿鬼不知道如何处理那里！",
+    "bookSourceGroup": "★POST请求,★御宅书屋",
+    "bookSourceName": "🔞御宅书屋备用mxbxs",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.mxbxs.com",
+    "bookUrlPattern": "https?://m.mxbxs.com/book/\\d+/",
+    "customOrder": 35,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::/sort/1_{{page}}/\n仙侠修真::/sort/2_{{page}}/\n都市言情::/sort/3_{{page}}/\n历史军事::/sort/4_{{page}}/\n网游竞技::/sort/5_{{page}}/\n科幻灵异::/sort/6_{{page}}/\n恐怖惊悚::/sort/7_{{page}}/\n其他小说::/sort/8_{{page}}/\n耽美小说::/sort/9_{{page}}/\n女频小说::/sort/10_{{page}}/\n高辣::/sort/11_{{page}}/\n腹黑::/sort/12_{{page}}/\n种田::/sort/13_{{page}}/\n肉文::/sort/14_{{page}}/\n短篇合集::/sort/15_{{page}}/",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1729170189921,
+    "loginUrl": "https://m.mxbxs.com/login.php",
+    "respondTime": 19628,
+    "ruleBookInfo": {
+      "author": "p[2]@text",
+      "coverUrl": ".pic@img@src",
+      "intro": ".intro@text##本书简介：",
+      "kind": "p[3]@text##类型：",
+      "lastChapter": "p[5]@text##最新章节：",
+      "name": ".cataloginfo@h3@text",
+      "tocUrl": ".gochapter@a@href||text.查看全部章节@href"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@p[0]@html##{{book.name}}|{{book.author}}",
+      "nextContentUrl": "text.下一章@href",
+      "replaceRegex": "##.*作者:.*\\n*"
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": ".article",
+      "bookUrl": "a@href",
+      "coverUrl": "img@src",
+      "intro": ".simple@text",
+      "name": "h6@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "a[1]@text",
+      "bookList": ".sone",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "name": "a[0]@text"
+    },
+    "ruleToc": {
+      "chapterList": "ul li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by阿鬼",
+    "bookSourceGroup": "★POST请求,★御宅书屋",
+    "bookSourceName": "🔞新御宅屋xshay",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.xshay.com",
+    "bookUrlPattern": "http?://m.xshay.com/book/\\d+/",
+    "customOrder": 37,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻魔法::http://m.xshay.com/sort/1_{{page}}/\n仙侠修真::http://m.xshay.com/sort/2_{{page}}/\n都市言情::http://m.xshay.com/sort/3_{{page}}/\n历史军事::http://m.xshay.com/sort/4_{{page}}/\n网游竞技::http://m.xshay.com/sort/5_{{page}}/\n科幻灵异::http://m.xshay.com/sort/6_{{page}}/\n恐怖惊悚::http://m.xshay.com/sort/7_{{page}}/\n其他小说::http://m.xshay.com/sort/8_{{page}}/\n耽美小说::http://m.xshay.com/sort/9_{{page}}/\n女频小说::http://m.xshay.com/sort/10_{{page}}/\n高辣::http://m.xshay.com/sort/11_{{page}}/\n腹黑::http://m.xshay.com/sort/12_{{page}}/\n种田::http://m.xshay.com/sort/13_{{page}}/\n肉文::http://m.xshay.com/sort/14_{{page}}/\n短篇合集::http://m.xshay.com/sort/15_{{page}}/",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1729170084747,
+    "loginUrl": "http://m.xshay.com/login.php",
+    "respondTime": 32467,
+    "ruleBookInfo": {
+      "author": ".infotype@p[0]@a@text",
+      "coverUrl": ".pic@img@src",
+      "intro": ".intro@p@text",
+      "kind": ".infotype@p[1]@text##类型：",
+      "lastChapter": ".infotype@p[3]@a@text",
+      "name": "h3[0]@text",
+      "tocUrl": "text.查看全部章节@href"
+    },
+    "ruleContent": {
+      "content": ".novelcontent@p[0]@html",
+      "nextContentUrl": "text.下一章@href",
+      "replaceRegex": "##\\-\\-.*"
+    },
+    "ruleExplore": {
+      "author": ".author@a@text",
+      "bookList": ".article",
+      "bookUrl": "a@href",
+      "coverUrl": ".pic@img@src",
+      "intro": ".simple@text",
+      "name": "h6@a@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "author": "a[1]@text",
+      "bookList": ".sone",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "name": "a[0]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapters li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href",
+      "preUpdateJs": "Java.refreshTocUrl()"
+    },
+    "searchUrl": "/s.php,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"charset\": \"GBK\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "by阿鬼\n\n备用站：\nhttps://www.xyuzhaiwu2.com\nhttps://www.xyuzhaiwu2.com",
+    "bookSourceGroup": "★POST请求,★御宅书屋",
+    "bookSourceName": "🔞新御宅屋po18mx",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.po18mx.com",
+    "bookUrlPattern": "https?://www.po18mx.com/book/\\d+",
+    "customOrder": 39,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "校园言情::https://www.po18mx.com/book_lastupdate_0_1_0_0_0_0_0_0_{{page}}.html\n都市言情::https://www.po18mx.com/book_lastupdate_0_2_0_0_0_0_0_0_{{page}}.html\n古代言情::https://www.po18mx.com/book_lastupdate_0_3_0_0_0_0_0_0_{{page}}.html\n罗曼史::https://www.po18mx.com/book_lastupdate_0_4_0_0_0_0_0_0_{{page}}.html\n耽美::https://www.po18mx.com/book_lastupdate_0_5_0_0_0_0_0_0_{{page}}.html\n百合::https://www.po18mx.com/book_lastupdate_0_6_0_0_0_0_0_0_{{page}}.html\n同人::https://www.po18mx.com/book_lastupdate_0_7_0_0_0_0_0_0_{{page}}.html\n奇幻玄幻::https://www.po18mx.com/book_lastupdate_0_8_0_0_0_0_0_0_{{page}}.html\n网游竞技::https://www.po18mx.com/book_lastupdate_0_9_0_0_0_0_0_0_{{page}}.html\n科幻异能::https://www.po18mx.com/book_lastupdate_0_10_0_0_0_0_0_0_{{page}}.html\n恐怖灵异::https://www.po18mx.com/book_lastupdate_0_11_0_0_0_0_0_0_{{page}}.html\n惊悚推理::https://www.po18mx.com/book_lastupdate_0_12_0_0_0_0_0_0_{{page}}.html\n武侠仙侠::https://www.po18mx.com/book_lastupdate_0_13_0_0_0_0_0_0_{{page}}.html\n历史军事::https://www.po18mx.com/book_lastupdate_0_14_0_0_0_0_0_0_{{page}}.html\n穿越重生::https://www.po18mx.com/book_lastupdate_0_15_0_0_0_0_0_0_{{page}}.html\n综合其它::https://www.po18mx.com/book_lastupdate_0_16_0_0_0_0_0_0_{{page}}.html\n\n\n总点击::https://www.po18mx.com/book_allvisit_0_0_0_0_0_0_0_0_{{page}}.html\n总推荐::https://www.po18mx.com/book_allvote_0_0_0_0_0_0_0_0_{{page}}.html\n总鲜花::https://www.po18mx.com/book_allflower_0_0_0_0_0_0_0_0_{{page}}.html\n总月票::https://www.po18mx.com/book_allvipvote_0_0_0_0_0_0_0_0_{{page}}.html\n字数::https://www.po18mx.com/book_words_0_0_0_0_0_0_0_0_{{page}}.html\n收藏数::https://www.po18mx.com/book_goodnum_0_0_0_0_0_0_0_0_{{page}}.html\n更新时间::https://www.po18mx.com/book_lastupdate_0_0_0_0_0_0_0_0_{{page}}.html\n入库时间::https://www.po18mx.com/book_postdate_0_0_0_0_0_0_0_0_{{page}}.html\n编辑推荐::https://www.po18mx.com/book_toptime_0_0_0_0_0_0_0_0_{{page}}.html\n\n\n新书上传::https://www.po18mx.com/book_lastupdate_0_0_0_0_0_0_1_0_{{page}}.html",
+    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
+    "lastUpdateTime": 1729170445190,
+    "respondTime": 3488,
+    "ruleBookInfo": {
+      "author": ".p_author@a@text",
+      "coverUrl": ".bookimg@img@src",
+      "downloadUrls": ".b2d@a@href",
+      "intro": ".hm-scroll@p[0]@text",
+      "kind": "#count@li[0]@span[0]@text",
+      "lastChapter": ".chaw@li[0]@a@text",
+      "name": ".d_title@h1@text",
+      "wordCount": "#count@li[1]@span[1]@text"
+    },
+    "ruleContent": {
+      "content": "#mlfy_main_text@#TextContent@html",
+      "nextContentUrl": "text.下一章@href"
+    },
+    "ruleExplore": {
+      "bookList": "#sitebox@#nr",
+      "bookUrl": "a@href",
+      "coverUrl": "dt@img@_src",
+      "intro": ".book_des@text",
+      "kind": "dt@span@text",
+      "lastChapter": ".book_other[1]@a@text",
+      "name": "dd[0]@h3@a@text",
+      "wordCount": "dd[1]@span[2]@text"
+    },
+    "ruleReview": {},
+    "ruleSearch": {
+      "bookList": "#sitebox@#nr",
+      "bookUrl": "a@href",
+      "coverUrl": "dt@img@_src",
+      "intro": ".book_des@text",
+      "kind": "dt@span@text",
+      "lastChapter": "dd[2]@a@text",
+      "name": "dd[0]@h3@a@text",
+      "wordCount": "dd[1]@span[2]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chaw_c@li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "preUpdateJs": "Java.refreshTocUrl()"
+    },
+    "searchUrl": "/modules/article/search.php,{\n  \"body\": \"searchkey={{key}}&searchtype=articlename&Submit=\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

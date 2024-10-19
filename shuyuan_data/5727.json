@@ -1,0 +1,35 @@
+[
+  {
+    "bookSourceComment": "//by：ZeroWorld",
+    "bookSourceName": "3ff小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.3ff.cc/",
+    "customOrder": -92900,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": "1729309186122",
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "class.readcontent@html##↑返回顶部↑",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.author@text##作者：",
+      "bookList": "class.bookbox",
+      "bookUrl": "class.bookname@tag.a@href",
+      "intro": "class.update@text",
+      "lastChapter": "class.cat@tag.a@text",
+      "name": "class.bookname@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "id.list-chapterAll@tag.dd",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "https://www.3ff.cc/search/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&submit=\"\n}",
+    "weight": 0
+  }
+]
