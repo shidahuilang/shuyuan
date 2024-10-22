@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "uaa地址发布页：\nhttps://uaadizhi.com\n可自行更改源域名：\nhttps://www.uaa.com\nhttps://www.uaa001.com\nhttps://www.uaa002.com\nhttps://www.uaa003.com\nhttps://www.uaa004.com\nhttps://www.uaa005.com\nhttps://www.uaa202410.com\nby_tlyanyu",
+    "bookSourceGroup": "🔞",
+    "bookSourceName": "UAA漫画，友漫",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://www.uaa001.com##漫画",
+    "customOrder": 242,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "[{'title':'分类 • 全部','url':'/api/comic/app/comic/search?page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'日漫','url':'/api/comic/app/comic/search?origin=1&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'短篇','url':'/api/comic/app/comic/search?category=短篇&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'单本','url':'/api/comic/app/comic/search?category=单本&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'同人','url':'/api/comic/app/comic/search?category=同人&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'韩漫','url':'/api/comic/app/comic/search?origin=2&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'剧情','url':'/api/comic/app/comic/search?category=剧情&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'校园','url':'/api/comic/app/comic/search?category=校园&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'爱情','url':'/api/comic/app/comic/search?category=爱情&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'BL','url':'/api/comic/app/comic/search?category=BL&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'奇幻','url':'/api/comic/app/comic/search?category=奇幻&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'调教','url':'/api/comic/app/comic/search?category=调教&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'乱伦','url':'/api/comic/app/comic/search?category=乱伦&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.25}},\n{'title':'色彩 • 全部','url':'/api/comic/app/comic/search?page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'彩色','url':'/api/comic/app/comic/search?color=2&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'黑白','url':'/api/comic/app/comic/search?color=1&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'篇幅 • 全部','url':'/api/comic/app/comic/search?page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'多话','url':'/api/comic/app/comic/search?page={{page}}&size=25&space=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'单话','url':'/api/comic/app/comic/search?page={{page}}&size=25&space=3','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'取向 • 全部','url':'/api/comic/app/comic/search?page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'直男','url':'/api/comic/app/comic/search?orientation=1&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'女主','url':'/api/comic/app/comic/search?orientation=2&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'男男','url':'/api/comic/app/comic/search?orientation=3&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'女女','url':'/api/comic/app/comic/search?orientation=4&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'来源 • 全部','url':'/api/comic/app/comic/search?page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'原创首发','url':'/api/comic/app/comic/search?page={{page}}&size=25&source=1','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'会员上传','url':'/api/comic/app/comic/search?page={{page}}&size=25&source=2','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'状态 • 全部','url':'/api/comic/app/comic/search?page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'已完结','url':'/api/comic/app/comic/search?finished=1&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'连载中','url':'/api/comic/app/comic/search?finished=0&page={{page}}&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.4}},\n{'title':'排行','url':'','style':{layout_flexGrow:1,layout_flexBasisPercent:1}},\n{'title':'周榜','url':'/api/comic/app/comic/rank?page={{page}}&type=1&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'月榜','url':'/api/comic/app/comic/rank?page={{page}}&type=2&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'年榜','url':'/api/comic/app/comic/rank?page={{page}}&type=3&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}},\n{'title':'收藏','url':'/api/comic/app/comic/rank?page={{page}}&type=4&size=25','style':{layout_flexGrow:1,layout_flexBasisPercent:0.2}}]",
+    "lastUpdateTime": "1729513221673",
+    "loginUrl": "/",
+    "respondTime": 11015,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "init": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\nlet doc = org.jsoup.Jsoup.parse(result);\nlet imgs = doc.select(\"#content.content_box img\");\nconst srcList = [];\nimgs.forEach(img => {\n            const src = img.attr('src');\n            src0='<img src=\"'+String(src)+'\">';\n            srcList.push(src0);\n        });\nString(srcList)\n</js>##,",
+      "imageStyle": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "authors",
+      "bookList": ".[?(@.title)]",
+      "bookUrl": "/comic/intro?id={{$.id}}",
+      "checkKeyWord": "",
+      "coverUrl": "coverUrl",
+      "intro": "brief",
+      "kind": "categories",
+      "lastChapter": "latestUpdate&&updateTimeFormat",
+      "name": "title",
+      "wordCount": "@js:{{$.finished}}==0?'连载':'完结';"
+    },
+    "ruleToc": {
+      "chapterList": ".catalog_ul@li.menu",
+      "chapterName": "@a@text",
+      "chapterUrl": "@a@href",
+      "isVip": "<js>\nlet span = result.select(\"span\");\nspan.text().contains(\"U币\");\n</js>",
+      "isVolume": "",
+      "preUpdateJs": "",
+      "updateTime": "@span@text"
+    },
+    "searchUrl": "/api/comic/app/comic/search?keyword={{key}}&page={{page}}&size=10",
+    "weight": 0
+  }
+]
